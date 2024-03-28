@@ -1,0 +1,627 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+%\usepackage[spanish]{babel}
+\usepackage[spanish,es-tabla]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[lmargin=3cm,rmargin=3cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage{amsmath, amsthm, amssymb, tabu}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{breakurl}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{tocloft} % Añadido el paquete tocloft
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{gray}{rgb}{0.5, 0.5, 0.5}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen}\ttfamily,
+    keywordstyle=\bfseries\color{blue},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\ttfamily\color{red},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    %numbers=left,                    
+    %numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+\pagestyle{fancy}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\fancyfoot{}
+\setlength{\headheight}{15.71667pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyfoot[R]{\thepage}
+
+\setcounter{secnumdepth}{3}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}}
+
+% Redefine el nombre del índice
+\addto\captionsspanish{\renewcommand{\contentsname}{Índice general}}
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+
+        {\phantom{a}\par}
+
+        \includegraphics[width=0.6\textwidth]{imagenes/logo.jpg}
+        %\vspace*{1cm}
+
+        \scshape\Large\textbf{UNIVERSIDAD DE MURCIA}
+        \\\scshape\Large Facultad de Informática
+
+        \rule{\linewidth}{0.1pt}
+        \rule{\linewidth}{0.1pt}
+
+        \vspace{1cm}
+        \scshape\huge\textbf{App para pedidos de impresión}\\
+        \scshape\Large Trabajo de fin de grado
+
+
+        \vspace{1.5cm}
+
+        \itshape\large
+        Rubén Sánchez Fernández\\
+        21067018F\\
+
+        \vspace{0.5cm}
+        \textbf{Tutor}\\
+        \itshape\large
+        Francisco García Sánchez\\
+
+
+
+        \vfill
+        {\large Convocatoria de Junio 2024}
+    \end{center}
+\end{titlepage}
+
+\pagestyle{empty}
+\tableofcontents
+% Agrega un espacio en el índice
+\addtocontents{toc}{\vspace{\baselineskip}}
+\newpage
+\listoffigures
+\newpage
+\clearpage
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+\section{Resumen}
+Este es el resumen…
+ESTILO DE REDACCIÓN APLICABLE A TODO EL DOCUMENTO: evitaremos el uso de la primera persona; en su lugar se suele emplear el reflexivo (“hemos desarrollado” “se ha desarrollado”).
+
+
+\section{Extended abstract}
+Resumen extendido en inglés (2000 palabras). En el abstract conviene replicar de algún modo la estructura de la memoria en sí: (i) introducción, (ii) estado del arte, (iii) objetivos y metodología, (iv) diseño y resolución del trabajo, (v) conclusiones y trabajo futuro. El contenido del abstract tiene que abarcar todos esos conceptos en ese orden.
+
+\section{Introducción}
+Esto se escribe lo último, junto con el resumen y el abstract. Se establece el contexto en el que se sitúa el proyecto introduciendo claramente la problemática e indicando el objetivo general del proyecto (como consecuencia de esos problemas que se quieren resolver). Suele venir acompañado de numerosas referencias bibliográficas relevantes sobre los distintos conceptos tratados. En el último párrafo de la introducción hay que indicar la estructura/organización del resto del documento (un párrafo indicando brevemente en qué secciones se ha dividido el documento y el contenido de cada sección).
+
+\section{Estado del arte}
+Se describe en detalle todo lo relacionado con el contexto del problema a solucionar. En particular, en caso de existir herramientas/soluciones similares a la que es objeto de este proyecto conviene explicar sus características y principales deficiencias. También se suele incluir en esta sección una descripción de las tecnologías (lenguaje de programación, entornos de desarrollo, librerías, etc.) que se han decidido emplear para realizar el proyecto. Es habitual incluir en esta sección numerosas referencias bibliográficas relevantes sobre los distintos conceptos tratados. No tengáis en cuenta estas subsecciones:
+
+\subsection{Contexto y análisis de la situación de partida}
+Este trabajo de Fin de Grado, ha sido desarrollado en colaboración con Upango, empresa especializada en transformaciones digitales B2B. 
+Durante años, Upango, ha trabajado con uno de los proveedores de soluciones de tiendas online más populares del mundo como es ePages, 
+desarrollando aplicaciones y tiendas online a medida para los clientes en el ámbito del comercio electrónico. A lo largo del tiempo, 
+se ha observado en esta empresa, una creciente demanda de incorporar al desarrollo de tiendas personalizadas, funcionalidades que permitan a los clientes
+personalizar los productos para su posterior compra, es decir en el mercado actual hay una gran cantidad de clientes potenciales que podrían solicitar desarrollos de comercio
+electrónico personalizados con funcionalidades de personalización de productos.
+
+Recientemente se ha decidido migrar de ePages a otra plataforma de comercio electrónico como es Shopify que ofrece otras tecnologías y herramientas
+para el desarrollo personalizado de tiendas online. Debido a esta migración, los desarrollos a medida y aplicaciones estandarizadas de la otra plataforma quedan obsoletas para nuevos desarrollos
+y surge la necesidad de adaptarse a estas nuevas herramientas y funcionalidades que nos proporciona Shopify para conseguir crear estos desarrollos de comercio a medida. Por lo que si
+bien en las tiendas de ePages de los actuales clientes existen ya desarrollos y funcionalidades para la personalización de artículos, la transición a Shopify requiere la creación de
+una nueva solución y adaptación para esta plataforma.
+
+Debido a la necesidad que se crea propulsada por este gran cambio, nuestro objetivo con este proyecto es crear una aplicación para la plataforma Shopify, versátil y escalable
+que pueda integrarse en las tiendas de Shopify de nuestros nuevos clientes para ofrecerles la capacidad de proporcionar experiencias de compra personalizadas y diferenciadas,
+manteniendo nuestro compromiso con la excelencia en el desarrollo de soluciones digitales para comercio electrónico.
+
+\subsection{Tecnologías empleadas}
+\subsection{Pymes}
+
+\section{Análisis de objetivos y metodología}
+En esta sección se describen los objetivos que se persiguen con el desarrollo de este proyecto, así como la metodología empleada (tareas y temporalización) para alcanzar estos objetivos.
+
+\subsection{Objetivos}
+Hipótesis inicial, objetivo principal y subobjetivos planteados.
+\subsection{Metodología}
+Etapas en las que se ha divido la realización del TFG, con indicación de fechas de inicio/fin.
+
+\section{Diseño y resolución del trabajo realizado}
+Parte más extensa del trabajo donde se describe lo que se ha hecho paso por paso y el resultado final.
+
+\subsection{Análisis}
+Requisitos textuales o la definición de casos de uso o las historias de usuario
+
+\subsubsection{Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}\label{sec:historia1}
+
+Como administrador de la tienda, quiero poder observar en las páginas de producto un botón que posteriormente servirá para activar una funcionalidad de personalización del producto.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Cuando visualizo la ficha de un producto en la tienda,
+          \begin{itemize}[label=--]
+              \item Debe haber un botón claramente identificable como "Personalizar".
+          \end{itemize}
+    \item El botón "Personalizar" solo debe mostrarse si el producto es de impresión,
+          \begin{itemize}[label=--]
+              \item Un producto se considerará de impresión si tiene información específica en su metafield denominado \textit{upng.areas\_impresion}.
+          \end{itemize}
+    \item El título del botón debe ser recuperado de los archivos de locales,
+          \begin{itemize}[label=--]
+              \item Se deben preparar traducciones en inglés y español para el texto del botón y cualquier otro texto relevante en la aplicación.
+          \end{itemize}
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 2: Configuración de Opciones de Envío Internacional}\label{sec:historia2}
+
+Como administrador de la tienda,
+quiero poder configurar opciones de envío internacional
+para poder ofrecer servicios de envío a clientes de todo el mundo y gestionar eficazmente los envíos internacionales.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Debe existir una sección en el panel de administración para configurar opciones de envío internacional.
+          \begin{itemize}[label=--]
+              \item Los administradores deben poder acceder fácilmente a esta sección desde el panel de control de la tienda.
+          \end{itemize}
+    \item Se deben ofrecer diferentes métodos de envío internacional,
+          \begin{itemize}[label=--]
+              \item Los métodos de envío deben incluir opciones como correo prioritario, envío estándar, envío exprés, entre otros.
+          \end{itemize}
+    \item Los administradores deben poder establecer tarifas de envío específicas para cada región internacional,
+          \begin{itemize}[label=--]
+              \item Se debe proporcionar un formulario donde los administradores puedan ingresar tarifas de envío para diferentes regiones del mundo.
+          \end{itemize}
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}\label{sec:historia3}
+
+Como administrador de la tienda, deseo poder configurar la impresión de productos antes de añadirlos al pedido, para poder personalizarlos según las necesidades de los clientes.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Al pulsar el botón de "Añadir al Pedido de Impresión", se debe abrir un modal que permita al usuario configurar la impresión del producto.
+    \item El modal debe mostrar toda la información relevante sobre la impresión y permitir al usuario ajustar la configuración según sea necesario.
+    \item Se debe crear una estructura JavaScript utilizando Liquid para tener preparados todos los datos de áreas, trabajos, clichés, etc., de manera que no sea necesario realizar llamadas adicionales al Admin API para obtener la información.
+    \item En el modal, se debe mostrar un resumen claro y detallado de los elementos seleccionados por el usuario, incluyendo el nombre del producto, la cantidad, las áreas seleccionadas, los trabajos en cada área, los clichés, los precios individuales y el importe total.
+    \item El usuario debe poder ingresar la cantidad de productos a imprimir, empleando el selector de cantidad por defecto.
+    \item Se deben mostrar las áreas de impresión que tenga el producto y de cada área de impresión debe mostrarse una imagen, su nombre y medidas ajustables (ancho y largo) en inputs. Estos inputs deben validar que el valor máximo sea el de la medida del área y el mínimo sea cero.
+    \item Se debe mostrar un checkbox junto a cada área para que el usuario pueda seleccionar en cuáles desea imprimir.
+    \item Las imágenes de las áreas que no tengan una definida deben mostrar una imagen por defecto, configurable a través del Theme App Extension.
+    \item Cada área debe mostrar los trabajos disponibles en un desplegable para que el usuario pueda seleccionar el que desee.
+    \item Cada trabajo tiene un número máximo de colores, por lo que al lado del desplegable de trabajos debe aparecer un desplegable de colores para que el usuario elija el número de colores que necesita. Y cada vez que se actualice el trabajo seleccionado deberá refrescarse este desplegable.
+    \item Los selectores de trabajo y colores de las áreas que el usuario no haya seleccionado deberán aparecer como desactivadas.
+    \item Se debe habilitar un campo de observaciones en cada área donde el usuario pueda agregar las notas pertinentes.
+    \item Para cada trabajo, se debe permitir al usuario seleccionar el número de colores y especificar los colores deseados. Para ello según la selección del usuario en el desplegable de colores se deberán añadir tantos selectores de colores como colores se hayan seleccionado en el mismo. Además del selector de colores se añadirán campos de texto libre para que el usuario pueda especificar cada color mediante esta forma.
+    \item Se debe incluir la opción de marcar si un cliché es de repetición, afectando al precio final.
+    \item Se debe actualizar dinámicamente la información del resumen al seleccionar o deseleccionar áreas, trabajos y colores.
+    \item El diseño del modal debe ser responsive para una experiencia óptima en dispositivos móviles.
+    \item Los trabajos deben tener precios diferentes para el color principal y el resto de colores, con posibilidad de seleccionar variantes según sea necesario.
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 4: Mejora en la Funcionalidad de Añadir al Carrito}\label{sec:historia4}
+
+Como administrador de la tienda,
+quiero que al añadir productos relacionados (productos normales, trabajos y clichés) al carrito, estos estén agrupados y vinculados de manera que no se puedan borrar o editar por separado,
+para mejorar la experiencia de compra y facilitar la gestión de los productos de impresión.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Se debe investigar si el uso de customized bundles es adecuado para agrupar y vincular los productos relacionados en el carrito.
+    \item Estos productos tienen que estar agrupados y de forma que no se puedan eliminar o editar por separado.
+    \item Toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) debe guardarse al añadir al carrito, para que pueda transferirse al pedido durante el proceso de checkout.
+    \item Al añadir productos al carrito, se deben incluir:
+          \begin{itemize}
+              \item El producto "normal".
+              \item Los productos "trabajos" seleccionados en diferentes áreas, con la variante adecuada según el número de colores seleccionados.
+              \item Los productos "clichés" asociados al trabajo, con la variante adecuada según si es de repetición o no.
+          \end{itemize}
+    \item La cantidad de cada producto añadido al carrito debe ser considerada y reflejada correctamente.
+\end{enumerate}
+
+\subsubsection{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}\label{sec:historia5}
+
+Como comerciante en la plataforma,
+quiero que los productos de impresión, junto con sus trabajos y clichés asociados, se visualicen de forma agrupada en el carrito de la tienda,
+para proporcionar una experiencia de compra clara y comprensible para mis clientes.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Los productos de impresión deben aparecer agrupados en el carrito, mostrando claramente sus trabajos y clichés asociados.
+    \item El detalle de estos paquetes de productos de impresión en el carrito debe ser similar a la visualización que se presenta durante el proceso de checkout.
+    \item La visualización agrupada en el carrito debe ser coherente con el diseño y la funcionalidad general de la tienda.
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 6: Personalización Dinámica de Precios para Trabajos Específicos}\label{sec:historia6}
+
+Como administrador de la tienda,
+quiero que algunos trabajos puedan cambiar su precio de forma dinámica en función de ciertas condiciones,
+para ofrecer precios precisos y competitivos a mis clientes según las características específicas de cada trabajo.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Se debe poder personalizar dinámicamente el precio de ciertos trabajos en función de condiciones específicas.
+    \item Los precios personalizados deben ser precisos y reflejar adecuadamente cualquier cambio en las condiciones que afecten al precio del trabajo.
+\end{enumerate}
+
+\subsubsection{Historia de Usuario 7: Visualización Atractiva del Logo del Cliente en el Producto}\label{sec:historia7}
+
+Como administrador de la tienda,
+quiero poder mostrar al cliente una representación visual atractiva de cómo quedaría su logo en el producto,
+para ofrecer una experiencia de compra más personalizada y satisfactoria.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Se debe poder mostrar una imagen del logo del cliente en el producto de forma atractiva y realista.
+    \item La visualización del logo debe reflejar fielmente su posición y tamaño en relación con las áreas designadas del producto.
+    \item La implementación de la visualización del logo debe ser viable y práctica dentro del contexto de la tienda en línea.
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 8: Automatización de la Creación de Metafields Necesarios}\label{sec:historia8}
+
+Como administrador de la tienda,
+quiero una opción para crear automáticamente los metafields necesarios para la app,
+para simplificar y agilizar el proceso de configuración y evitar posibles errores manuales.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Se debe proporcionar una opción en el panel de configuración de la app para crear automáticamente los metafields necesarios.
+    \item La creación de los metafields debe realizarse de manera controlada y asegurarse de no duplicar campos ya existentes.
+    \item Después de ejecutar la creación de metafields, se debe mostrar un mensaje de feedback al usuario indicando el resultado de la operación.
+    \item La configuración de qué metafields se crearán debe ser configurable para facilitar la expansión y reutilización de la funcionalidad en otras aplicaciones.
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 9: Gestión de Casuística "Doble Pasada" en Productos y Trabajos}\label{sec:historia9}
+
+Como administrador de la tienda,
+quiero poder gestionar la casuística de "doble pasada" en productos y trabajos,
+para aplicar recargos adicionales en caso de que tanto el producto como el trabajo seleccionados tengan la opción de "doble pasada" activada.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Debe existir un nuevo metafield booleano llamado "DOBLE PASADA" para los productos y los trabajos.
+    \item Si se selecciona un producto con la opción "DOBLE PASADA" activada y se elige un trabajo que también tenga esta opción activada, se debe mostrar en el presupuestador un check para permitir al usuario seleccionar la opción de "doble pasada".
+    \item Si se cambia el trabajo seleccionado a uno que no tenga la opción de "doble pasada", el check debe ocultarse automáticamente.
+    \item Este recargo adicional debe mostrarse en el resumen del pedido del presupuestador.
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 10: Gestión del Canon Digital en Productos}\label{sec:historia10}
+
+Como administrador de la tienda,
+quiero poder gestionar el canon digital en ciertos productos,
+para aplicar un importe fijo adicional al precio de algunos productos específicos.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Debe existir un metafield llamado "Importe Canon" para los productos, que permita indicar si un producto tiene canon digital y especificar el importe correspondiente.
+    \item Se debe crear un producto especial con un precio de un céntimo, que se utilizará para añadir el importe del canon digital al carrito de compra.
+\end{enumerate}
+
+
+\subsubsection{Historia de Usuario 11: Adición Automática de Línea de Canon al Añadir un Producto al Carrito}\label{sec:historia11}
+
+Como administrador de la tienda,
+quiero que al añadir un producto al carrito, se agregue automáticamente una línea de canon digital correspondiente al producto seleccionado,
+para reflejar correctamente el importe del canon asociado a los productos en mi carrito de compra.
+
+\vspace{0.5cm}
+\textbf{Criterios de Aceptación:}
+\begin{enumerate}[label=\arabic*.]
+    \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto.
+    \item La línea de canon digital debe estar vinculada al producto correspondiente y reflejar el importe del canon establecido para ese producto.
+    \item Se debe utilizar bundles para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
+\end{enumerate}
+
+
+\subsection{Diseño}
+\subsubsection{Modelo de datos}
+Esquema de la base de datos
+\subsubsection{Diseño de back-end}
+Describir el API REST
+\subsubsection{Diseño de front-end}
+Mock-ups
+Diagrama de navegación
+
+\subsection{Implementación}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia1]{Historia de usuario 1}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Crear una Aplicación y una Extensión de Tema:
+          \begin{itemize}[label=--]
+              \item Descripción: Crear una aplicación e instalarla en la tienda y crear un theme app extensión para poder añadir el botón a las plantillas de ficha de producto a través del personalizador del theme.
+          \end{itemize}
+    \item \textbf{Tarea 2:} Crear el botón y mostrarlo si el Producto es de Impresión:
+          \begin{itemize}[label=--]
+              \item Descripción: Utilizar liquid para verificar si el producto es de impresión. Un producto se considerará de impresión si tiene información específica en su metafield denominado \textit{upng.areas\_impresion}.
+              \item Mostrar el botón "Personalizar" si el producto cumple con los criterios establecidos; de lo contrario, ocultar el botón.
+          \end{itemize}
+    \item \textbf{Tarea 3:} Recuperar el Texto del Botón de los Archivos de Locales:
+          \begin{itemize}[label=--]
+              \item Descripción: Configurar la aplicación para que el texto del botón y cualquier otro texto relacionado se recupere de los archivos de locales. Preparar traducciones en inglés y español para garantizar una experiencia multilingüe completa.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia2]{Historia de usuario 2}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Crear Sección de Configuración de Envío Internacional:
+          \begin{itemize}[label=--]
+              \item Descripción: Implementar una sección en el panel de administración de la tienda para que los administradores puedan configurar opciones de envío internacional de manera intuitiva.
+          \end{itemize}
+    \item \textbf{Tarea 2:} Definir Métodos de Envío Internacional:
+          \begin{itemize}[label=--]
+              \item Descripción: Establecer diferentes métodos de envío internacional disponibles para los clientes, incluyendo opciones de envío prioritario, estándar y exprés, entre otros.
+          \end{itemize}
+    \item \textbf{Tarea 3:} Establecer Tarifas de Envío por Región:
+          \begin{itemize}[label=--]
+              \item Descripción: Crear un formulario en la sección de configuración de envío internacional donde los administradores puedan ingresar tarifas de envío específicas para cada región del mundo.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia3]{Historia de usuario 3}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Abrir un modal:
+          \begin{itemize}[label=--]
+              \item Descripción: Al pulsar el botón "Añadir al Pedido de Impresión", se debe abrir un modal que contenga toda la información necesaria para configurar la impresión del producto.
+          \end{itemize}
+    \item \textbf{Tarea 2:} Crear estructura JavaScript para datos de impresión:
+          \begin{itemize}[label=--]
+              \item Descripción: Utilizar Liquid para crear una estructura JavaScript que contenga todos los datos relevantes de áreas, trabajos, clichés, etc., necesarios para la configuración de la impresión. Esto permitirá tener los datos disponibles en el modal sin necesidad de realizar llamadas adicionales al Admin API.
+          \end{itemize}
+    \item \textbf{Tarea 3:} Mostrar datos del resumen:
+          \begin{itemize}[label=--]
+              \item Descripción: En el modal, mostrar una sección de resumen que presente de manera clara y detallada todos los elementos seleccionados por el usuario, incluyendo el nombre del producto, cantidad, áreas seleccionadas con trabajos y clichés, precios individuales y el importe total. Esta sección debe actualizarse dinámicamente al configurar diferentes elementos de la impresión.
+          \end{itemize}
+    \item \textbf{Tarea 4:} Ajustar la cantidad de productos:
+          \begin{itemize}[label=--]
+              \item Descripción: Permitir al usuario ingresar la cantidad de productos que desea imprimir. Esta cantidad se multiplicará por el precio de la impresión para calcular el importe total.
+          \end{itemize}
+    \item \textbf{Tarea 5:} Mostrar áreas de impresión:
+          \begin{itemize}[label=--]
+              \item Descripción: Mostrar todas las áreas de impresión disponibles para el producto, incluyendo una imagen, nombre y medidas ajustables (ancho y largo). Habilitar un checkbox para que el usuario pueda seleccionar las áreas en las que desea imprimir.
+          \end{itemize}
+    \item \textbf{Tarea 6:} Imagen por defecto para áreas sin imagen:
+          \begin{itemize}[label=--]
+              \item Descripción: Configurar una imagen por defecto para las áreas que no tengan una imagen definida. Permitir al usuario personalizar esta imagen a través del Theme App Extension.
+          \end{itemize}
+    \item \textbf{Tarea 7:} Mostrar trabajos para cada área:
+          \begin{itemize}[label=--]
+              \item Descripción: Para cada área de impresión seleccionada, mostrar los trabajos disponibles en un desplegable. Permitir al usuario seleccionar el trabajo deseado y especificar el número de colores.
+          \end{itemize}
+    \item \textbf{Tarea 8:} Incluir campo de observaciones:
+          \begin{itemize}[label=--]
+              \item Descripción: En cada área de impresión, incluir un campo de observaciones donde el usuario pueda agregar notas pertinentes relacionadas con la impresión.
+          \end{itemize}
+    \item \textbf{Tarea 9:} Seleccionar colores:
+          \begin{itemize}[label=--]
+              \item Descripción: Permitir al usuario seleccionar el número de colores para cada trabajo en un desplegable. Además, proporcionar campos de texto para que el usuario especifique los colores. Estos campos estarán habilitados solo si el cliente selecciona el área correspondiente.
+          \end{itemize}
+    \item \textbf{Tarea 10:} Marcar cliché de repetición:
+          \begin{itemize}[label=--]
+              \item Descripción: Incluir un checkbox para que el usuario pueda indicar si el cliché es de repetición o no. Este factor afectará al precio final de la impresión.
+          \end{itemize}
+    \item \textbf{Tarea 11:} Seleccionar áreas:
+          \begin{itemize}[label=--]
+              \item Descripción: Habilitar y deshabilitar los campos de trabajos, colores, medidas, etc., según las áreas seleccionadas por el usuario. Actualizar dinámicamente la información del resumen con los precios correspondientes.
+          \end{itemize}
+    \item \textbf{Tarea 12:} Seleccionar un trabajo:
+          \begin{itemize}[label=--]
+              \item Descripción: Actualizar la información del resumen al seleccionar un trabajo para un área específica. Además, actualizar las opciones del selector de colores según el trabajo seleccionado.
+          \end{itemize}
+    \item \textbf{Tarea 13:} Seleccionar número de colores:
+          \begin{itemize}[label=--]
+              \item Descripción: Al escoger el número de colores en el desplegable, proporcionar campos de texto para que el usuario especifique los colores. Actualizar la cantidad de clichés y multiplicar su precio en el resumen.
+          \end{itemize}
+    \item \textbf{Tarea 14:} Adjuntar imagen por área:
+          \begin{itemize}[label=--]
+              \item Descripción: Permitir al usuario adjuntar una imagen para cada área de impresión. Crear un método API propio en la aplicación para gestionar la subida de imágenes al servidor. Generar un ID aleatorio asociado al producto de impresión y guardar la imagen junto con los demás datos configurados.
+          \end{itemize}
+    \item \textbf{Tarea 15:} Diseño responsive:
+          \begin{itemize}[label=--]
+              \item Descripción: Asegurar que el diseño del modal y la forma de mostrar los elementos sea óptima y clara en la vista móvil.
+          \end{itemize}
+    \item \textbf{Tarea 16:} Precios diferenciados para trabajos según colores:
+          \begin{itemize}[label=--]
+              \item Descripción: Implementar precios diferenciados para los trabajos en función del color principal y el resto de colores seleccionados por el usuario. Utilizar variantes para gestionar los precios según sea necesario.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia4]{Historia de usuario 4}:}
+\begin{enumerate}
+    \item \textbf{Tarea 1:} Investigar el Uso de Customized Bundles para Agrupar y Vincular Productos:
+          \begin{itemize}
+              \item Descripción: Investigar si los customized bundles son una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado.
+              \item Considerar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos.
+              \item Si no se considera viable el uso de customized bundles, explorar la posibilidad de utilizar un Theme App Extension de JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
+          \end{itemize}
+    \item \textbf{Tarea 2:} Guardar Información de Impresión en el Carrito:
+          \begin{itemize}
+              \item Descripción: Desarrollar la funcionalidad para guardar toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) en el carrito al añadir productos relacionados.
+              \item Utilizar las properties de los LineItems para almacenar esta información de manera adecuada.
+          \end{itemize}
+    \item \textbf{Tarea 3:} Añadir Productos Relacionados al Carrito:
+          \begin{itemize}
+              \item Descripción: Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto "normal", los trabajos seleccionados y los clichés asociados, teniendo en cuenta la cantidad y las variantes adecuadas según las selecciones del usuario.
+              \item Utilizar el ajax API para añadir los productos al carrito.
+          \end{itemize}
+    \item \textbf{Tarea 4:} Actualizar la Forma de Añadir al Carrito según Conclusiones sobre Customized Bundles (Tarea Pendiente):
+          \begin{itemize}
+              \item Descripción: Dependiendo de las conclusiones de la investigación sobre customized bundles, ajustar la forma de añadir productos al carrito según sea necesario.
+          \end{itemize}
+\end{enumerate}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia5]{Historia de usuario 5}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Modificar el Theme para Mostrar el Detalle de los Bundles de Impresión en el Carrito:
+          \begin{itemize}[label=--]
+              \item Descripción: Desarrollar una sección en el Theme que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de los bundles de impresión de manera similar a la visualización en el proceso de checkout.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia6]{Historia de usuario 6}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Investigar el Uso de \texttt{cart-transform} para Personalizar Precios de Líneas:
+          \begin{itemize}[label=--]
+              \item Descripción: Realizar una investigación exhaustiva sobre el uso de \texttt{cart-transform} para determinar cómo personalizar los precios de las líneas de productos de forma dinámica.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia7]{Historia de usuario 7}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Investigar Opciones para Mostrar el Logo del Cliente en la Zona Adecuada del Producto e implementarlo:
+          \begin{itemize}[label=--]
+              \item Descripción: Realizar una investigación exhaustiva para identificar opciones, librerías u herramientas que nos permitan mostrar una imagen del logo del cliente en la zona adecuada del producto de forma atractiva.
+              \item Evaluar la viabilidad de cada opción en función de la información disponible sobre el producto de impresión y las necesidades específicas del cliente.
+              \item Implementar la solución elegida.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia8]{Historia de usuario 8}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Limpiar la Interfaz del Administrador de la App:
+          \begin{itemize}[label=--]
+              \item Descripción: Eliminar las opciones demo y botones relacionados en la parte frontal de la interfaz de administración de la app para eliminar funcionalidad innecesaria.
+          \end{itemize}
+    \item \textbf{Tarea 2:} Agregar un Botón "Crear Campos Necesarios" en la Interfaz de Administración:
+          \begin{itemize}[label=--]
+              \item Descripción: Incorporar un botón en la interfaz de administración de la app que llame a un método de la app para crear los metafields necesarios.
+          \end{itemize}
+    \item \textbf{Tarea 3:} Desarrollar el Método para Crear los Metafields Necesarios:
+          \begin{itemize}[label=--]
+              \item Descripción: Crear un método en la app que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen.
+          \end{itemize}
+    \item \textbf{Tarea 4:} Implementar la Funcionalidad de Feedback para el Usuario:
+          \begin{itemize}[label=--]
+              \item Descripción: Desarrollar una funcionalidad para mostrar un mensaje de feedback al usuario después de la ejecución del método de creación de metafields, informando sobre el éxito o posibles errores.
+          \end{itemize}
+    \item \textbf{Tarea 5:} Hacer Configurable la Creación de Metafields:
+          \begin{itemize}[label=--]
+              \item Descripción: Crear un fichero de configuración o constantes que defina qué metafields se crearán, para qué entidad y de qué tipo. Adaptar el código para usar esta configuración, permitiendo así una fácil expansión y reutilización de la funcionalidad en otras aplicaciones.
+          \end{itemize}
+    \item \textbf{Tarea 6:} Crear el objeto \texttt{cartTransform} Automáticamente:
+          \begin{itemize}[label=--]
+              \item Descripción: Implementar la funcionalidad para crear automáticamente el objeto \texttt{cartTransform} si es necesario. Esto simplificaría aún más el proceso de configuración para el administrador de la tienda, permitiendo una mayor automatización y reduciendo la carga de trabajo manual.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia9]{Historia de usuario 9}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Crear Metafields para "Doble Pasada" en Productos:
+          \begin{itemize}[label=--]
+              \item Descripción: Utilizar la funcionalidad de creación automática de metafields para crear un metafield booleano llamado "DOBLE PASADA" para los productos.
+          \end{itemize}
+    \item \textbf{Tarea 2:} Mostrar el Check para "Doble Pasada":
+          \begin{itemize}[label=--]
+              \item Descripción: Implementar la lógica para mostrar un check junto al trabajo seleccionado en el presupuestador si tanto el producto como el trabajo tienen la opción de "doble pasada" activada. Asegurarse de que el check se oculte automáticamente si se cambia el trabajo seleccionado a uno que no tenga la opción de "doble pasada".
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia10]{Historia de usuario 10}:}
+\begin{itemize}
+    \item \textbf{Tarea 1:} Crear Metafield para el Importe del Canon Digital:
+          \begin{itemize}[label=--]
+              \item Descripción: Crear un metafield de tipo número decimal, llamado "Importe Canon", utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente.
+          \end{itemize}
+    \item \textbf{Tarea 2:} Crear Producto Especial para Añadir el Importe al Carrito:
+          \begin{itemize}[label=--]
+              \item Descripción: Crear un producto especial con un precio de un céntimo, que se utilizará únicamente para añadir el importe del canon digital al carrito de compra. Este producto especial asegurará que el importe del canon se aplique correctamente al total del carrito de compra.
+          \end{itemize}
+\end{itemize}
+
+\textbf{Tareas relacionadas con la \hyperref[sec:historia11]{Historia de usuario 11}:}
+\begin{itemize}
+    \item \textbf{Tarea 1386:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con Bundles:
+          \begin{itemize}[label=--]
+              \item Descripción: Desarrollar la lógica para añadir automáticamente líneas de canon digital al carrito cuando se añada un producto con canon. Utilizar bundles para asociar cada línea de producto con su línea de canon correspondiente.
+              \item Iniciar con la implementación para productos "normales" y luego extender la funcionalidad para productos de impresión.
+              \item Controlar la adición de líneas de canon desde la ficha de producto inicialmente, y luego expandir la funcionalidad para otros puntos de entrada al carrito.
+              \item Considerar la utilización del cartTransform existente para integrar esta nueva lógica de bundles, y evaluar la posibilidad de separarlo en una aplicación independiente en el futuro.
+          \end{itemize}
+\end{itemize}
+
+
+\subsubsection{Arquitectura}
+\subsubsection{Implementación de back-end}
+\subsubsection{Implementación de front-end}
+\subsection{Pruebas}
+\subsection{Despliegue}
+
+
+\section{Conclusiones y vías futuras}
+Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. El trabajo futuro se refiere a carencias actuales del trabajo que están sujetas a mejoras en el futuro, posibles extensiones para dotar de mayor funcionalidad, etc.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.6\textwidth]{imagenes/logo.jpg}
+    \caption{\label{fig:1}Prueba ejemplo}
+    \vspace{\fill}
+\end{figure}
+
+
+\section{Bibliografía}
+Normalmente se organiza de una de las siguientes dos formas: (1) ordenado por orden de aparición en el documento; (2) ordenado alfabéticamente por el apellido del primer autor. ¡Todas las entradas en el apartado de bibliografía tienen que aparecer referenciadas en el texto!
+
+[1]	Juárez, J. M. (2007). El arte de soñar. Colima, México: Ediciones Luminosas.
+
+
+\end{document}
+
