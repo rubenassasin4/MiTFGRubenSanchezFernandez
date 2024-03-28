@@ -6,6 +6,7 @@
 %\usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{graphicx}
+\usepackage{url}
 \usepackage{float}
 \usepackage[lmargin=3cm,rmargin=3cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{fancyvrb}
@@ -140,9 +141,9 @@ Esto se escribe lo último, junto con el resumen y el abstract. Se establece el 
 Se describe en detalle todo lo relacionado con el contexto del problema a solucionar. En particular, en caso de existir herramientas/soluciones similares a la que es objeto de este proyecto conviene explicar sus características y principales deficiencias. También se suele incluir en esta sección una descripción de las tecnologías (lenguaje de programación, entornos de desarrollo, librerías, etc.) que se han decidido emplear para realizar el proyecto. Es habitual incluir en esta sección numerosas referencias bibliográficas relevantes sobre los distintos conceptos tratados. No tengáis en cuenta estas subsecciones:
 
 \subsection{Contexto y análisis de la situación de partida}
-Este trabajo de Fin de Grado, ha sido desarrollado en colaboración con Upango, empresa especializada en transformaciones digitales B2B. 
-Durante años, Upango, ha trabajado con uno de los proveedores de soluciones de tiendas online más populares del mundo como es ePages, 
-desarrollando aplicaciones y tiendas online a medida para los clientes en el ámbito del comercio electrónico. A lo largo del tiempo, 
+Este trabajo de Fin de Grado, ha sido desarrollado en colaboración con Upango, empresa especializada en transformaciones digitales B2B.
+Durante años, Upango, ha trabajado con uno de los proveedores de soluciones de tiendas online más populares del mundo como es ePages,
+desarrollando aplicaciones y tiendas online a medida para los clientes en el ámbito del comercio electrónico. A lo largo del tiempo,
 se ha observado en esta empresa, una creciente demanda de incorporar al desarrollo de tiendas personalizadas, funcionalidades que permitan a los clientes
 personalizar los productos para su posterior compra, es decir en el mercado actual hay una gran cantidad de clientes potenciales que podrían solicitar desarrollos de comercio
 electrónico personalizados con funcionalidades de personalización de productos.
@@ -154,11 +155,35 @@ bien en las tiendas de ePages de los actuales clientes existen ya desarrollos y 
 una nueva solución y adaptación para esta plataforma.
 
 Debido a la necesidad que se crea propulsada por este gran cambio, nuestro objetivo con este proyecto es crear una aplicación para la plataforma Shopify, versátil y escalable
-que pueda integrarse en las tiendas de Shopify de nuestros nuevos clientes para ofrecerles la capacidad de proporcionar experiencias de compra personalizadas y diferenciadas,
+que pueda integrarse en las tiendas de Shopify de nuestros nuevos clientes para ofrecerles la capacidad de proporcionar experiencias de compra de productos personalizados,
 manteniendo nuestro compromiso con la excelencia en el desarrollo de soluciones digitales para comercio electrónico.
 
-\subsection{Tecnologías empleadas}
-\subsection{Pymes}
+\subsection{Herramientas y tecnologías empleadas}
+(EXTENDER cada parte y añadir las tecnologías que faltan como DevOps, express, visualStudioCode....)
+En el desarrollo de aplicaciones web modernas, la elección de las tecnologías adecuadas desempeña un papel crucial en la creación de soluciones
+efectivas y eficientes. En este contexto, hemos seleccionado cuidadosamente un conjunto de tecnologías que nos permitirán crear una aplicación 
+robusta y escalable para la plataforma Shopify.
+
+La plataforma Shopify, con su amplia gama de herramientas y funcionalidades para el comercio electrónico, 
+proporciona una base sólida para el desarrollo de tiendas en línea personalizadas. Originaria de Canadá y 
+fundada en 2006, Shopify se ha convertido en uno de los proveedores líderes en el mercado de comercio electrónico, 
+atendiendo a millones de comerciantes en todo el mundo [1]. \cite{angular}
+
+Para el desarrollo del tema de la tienda en Shopify (extensión de tema), hemos utilizado principalmente Liquid, un lenguaje de plantillas desarrollado
+por Shopify. Originario de la misma empresa y diseñado específicamente para la creación de temas personalizados en Shopify, 
+Liquid ofrece una sintaxis simple y flexible que permite la creación de diseños y experiencias de usuario altamente personalizados [2]. Añadir también js...css
+
+En el front de la parte administración de la tienda, hemos empleado React, un framework de JavaScript desarrollado por Facebook. 
+Surgido en 2013, React se ha convertido en una de las herramientas más populares para la creación de interfaces de usuario interactivas 
+y dinámicas. Su enfoque en la construcción de componentes reutilizables y su rendimiento optimizado lo hacen ideal para aplicaciones web modernas [3].
+
+En el backend de la aplicación, hemos utilizado Node.js, un entorno de ejecución de JavaScript del lado del servidor. Originario de 2009, 
+Node.js ha revolucionado el desarrollo web al permitir a los desarrolladores utilizar JavaScript tanto en el lado del cliente como en el lado del servidor, 
+lo que facilita la creación de aplicaciones web escalables y de alto rendimiento [4].
+
+Complementando Node.js, hemos empleado GraphQL, un lenguaje de consulta para API desarrollado por Facebook. Introducido en 2015, GraphQL permite 
+a los clientes solicitar datos específicos a través de una sola consulta, lo que lo hace ideal para el desarrollo de APIs flexibles y eficientes [5].
+
 
 \section{Análisis de objetivos y metodología}
 En esta sección se describen los objetivos que se persiguen con el desarrollo de este proyecto, así como la metodología empleada (tareas y temporalización) para alcanzar estos objetivos.
@@ -616,12 +641,26 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
     \vspace{\fill}
 \end{figure}
 
-
 \section{Bibliografía}
 Normalmente se organiza de una de las siguientes dos formas: (1) ordenado por orden de aparición en el documento; (2) ordenado alfabéticamente por el apellido del primer autor. ¡Todas las entradas en el apartado de bibliografía tienen que aparecer referenciadas en el texto!
 
 [1]	Juárez, J. M. (2007). El arte de soñar. Colima, México: Ediciones Luminosas.
 
+[1] Shopify - Acerca de nosotros: https://www.shopify.com/company
+[2] Liquid - Documentación oficial de Shopify: https://shopify.github.io/liquid/
+[3] React - Documentación oficial de React: https://reactjs.org/docs/getting-started.html
+[4] Node.js - Sitio web oficial de Node.js: https://nodejs.org/
+[5] GraphQL - Sitio web oficial de GraphQL: https://graphql.org/
+
+
+% Redefine el comando \refname para que no imprima ningún título
+\renewcommand{\refname}{}
+\begin{thebibliography}{100} % Elige 9 si tienes menos de 10 referencias
+    
+    \bibitem{angular} 
+    Angular. 
+    \textit{Angular}, dirección: \texttt{https://angular.io/} (visitado 12-07-2021).
+\end{thebibliography}
 
 \end{document}
 

@@ -5,33 +5,32 @@
 \contentsline {section}{\numberline {3}Introducción}{1}{section.3}%
 \contentsline {section}{\numberline {4}Estado del arte}{1}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Contexto y análisis de la situación de partida}{1}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Tecnologías empleadas}{2}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Pymes}{2}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Análisis de objetivos y metodología}{2}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Objetivos}{2}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Metodología}{2}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Diseño y resolución del trabajo realizado}{2}{section.6}%
+\contentsline {subsection}{\numberline {4.2}Herramientas y tecnologías empleadas}{2}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Análisis de objetivos y metodología}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Objetivos}{3}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Metodología}{3}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Diseño y resolución del trabajo realizado}{3}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Análisis}{3}{subsection.6.1}%
 \contentsline {subsubsection}{\numberline {6.1.1}Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}{3}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Historia de Usuario 2: Configuración de Opciones de Envío Internacional}{3}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2}Historia de Usuario 2: Configuración de Opciones de Envío Internacional}{4}{subsubsection.6.1.2}%
 \contentsline {subsubsection}{\numberline {6.1.3}Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}{4}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Historia de Usuario 4: Mejora en la Funcionalidad de Añadir al Carrito}{5}{subsubsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.4}Historia de Usuario 4: Mejora en la Funcionalidad de Añadir al Carrito}{6}{subsubsection.6.1.4}%
 \contentsline {subsubsection}{\numberline {6.1.5}Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}{6}{subsubsection.6.1.5}%
-\contentsline {subsubsection}{\numberline {6.1.6}Historia de Usuario 6: Personalización Dinámica de Precios para Trabajos Específicos}{6}{subsubsection.6.1.6}%
-\contentsline {subsubsection}{\numberline {6.1.7}Historia de Usuario 7: Visualización Atractiva del Logo del Cliente en el Producto}{6}{subsubsection.6.1.7}%
+\contentsline {subsubsection}{\numberline {6.1.6}Historia de Usuario 6: Personalización Dinámica de Precios para Trabajos Específicos}{7}{subsubsection.6.1.6}%
+\contentsline {subsubsection}{\numberline {6.1.7}Historia de Usuario 7: Visualización Atractiva del Logo del Cliente en el Producto}{7}{subsubsection.6.1.7}%
 \contentsline {subsubsection}{\numberline {6.1.8}Historia de Usuario 8: Automatización de la Creación de Metafields Necesarios}{7}{subsubsection.6.1.8}%
-\contentsline {subsubsection}{\numberline {6.1.9}Historia de Usuario 9: Gestión de Casuística "Doble Pasada" en Productos y Trabajos}{7}{subsubsection.6.1.9}%
+\contentsline {subsubsection}{\numberline {6.1.9}Historia de Usuario 9: Gestión de Casuística "Doble Pasada" en Productos y Trabajos}{8}{subsubsection.6.1.9}%
 \contentsline {subsubsection}{\numberline {6.1.10}Historia de Usuario 10: Gestión del Canon Digital en Productos}{8}{subsubsection.6.1.10}%
-\contentsline {subsubsection}{\numberline {6.1.11}Historia de Usuario 11: Adición Automática de Línea de Canon al Añadir un Producto al Carrito}{8}{subsubsection.6.1.11}%
-\contentsline {subsection}{\numberline {6.2}Diseño}{8}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Modelo de datos}{8}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Diseño de back-end}{8}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Diseño de front-end}{8}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.1.11}Historia de Usuario 11: Adición Automática de Línea de Canon al Añadir un Producto al Carrito}{9}{subsubsection.6.1.11}%
+\contentsline {subsection}{\numberline {6.2}Diseño}{9}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Modelo de datos}{9}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Diseño de back-end}{9}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Diseño de front-end}{9}{subsubsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.3}Implementación}{9}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Arquitectura}{15}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Implementación de back-end}{15}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}Implementación de front-end}{15}{subsubsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.4}Pruebas}{15}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Despliegue}{15}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{15}{section.7}%
-\contentsline {section}{\numberline {8}Bibliografía}{15}{section.8}%
+\contentsline {subsubsection}{\numberline {6.3.1}Arquitectura}{16}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Implementación de back-end}{16}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Implementación de front-end}{16}{subsubsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.4}Pruebas}{16}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Despliegue}{16}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{16}{section.7}%
+\contentsline {section}{\numberline {8}Bibliografía}{16}{section.8}%
