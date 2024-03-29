@@ -159,15 +159,88 @@ que pueda integrarse en las tiendas de Shopify de nuestros nuevos clientes para 
 manteniendo nuestro compromiso con la excelencia en el desarrollo de soluciones digitales para comercio electrónico.
 
 \subsection{Herramientas y tecnologías empleadas}
-(EXTENDER cada parte y añadir las tecnologías que faltan como DevOps, express, visualStudioCode....)
-En el desarrollo de aplicaciones web modernas, la elección de las tecnologías adecuadas desempeña un papel crucial en la creación de soluciones
-efectivas y eficientes. En este contexto, hemos seleccionado cuidadosamente un conjunto de tecnologías que nos permitirán crear una aplicación 
-robusta y escalable para la plataforma Shopify.
+En el desarrollo de aplicaciones web modernas, concretamente en la creación de tiendas personalizadas, la selección de los proveedores de soluciones
+y las tecnologías apropiadas desempeña un papel fundamental para garantizar el desarrollo de soluciones efectivas y personalizadas para los clientes.
+En este contexto, la decisión más trascendental ha sido la de seleccionar el mejor proveedor de soluciones, en nuestro caso Shopify.
+
+Es importante destacar que la elección de parte de las tecnologías ha estado fuertemente influenciada por nuestra decisión de emplear Shopify
+como base para nuestros desarrollos, pues debido a esto la búsqueda de las tecnologías necesarias para desarrollar el proyecto se han limitado a
+tecnologías que se integren y estén aceptadas sin problemas con la plataforma para conseguir aprovechar al máximo sus capacidades, si bien es cierto
+que Shopify es una plataforma que está en continua mejora y crecimiento y no se queda atrás en cuanto a las tecnologías.
 
 La plataforma Shopify, con su amplia gama de herramientas y funcionalidades para el comercio electrónico, 
 proporciona una base sólida para el desarrollo de tiendas en línea personalizadas. Originaria de Canadá y 
 fundada en 2006, Shopify se ha convertido en uno de los proveedores líderes en el mercado de comercio electrónico, 
-atendiendo a millones de comerciantes en todo el mundo [1]. \cite{angular}
+atendiendo a millones de comerciantes en todo el mundo. 
+
+Esta, cuenta con multitud de ventajas frente a otras plataformas de comercio electrónico muy populares en el mercado. Una de las ventajas
+mas trascendentales y que ha influenciado fuertemente  la decisión de Upango de migrar de ePages a esta tecnología, es el hecho de que Shopify elimina
+las barreras iniciales al ofrecer un servicio completo que incluye registro de dominio y hosting web ilimitado. Esto nos simplifica el proceso de lanzamiento y mantenimiento
+de una tienda al eliminar la necesidad de buscar proveedores de hosting externos, además de dotarnos de tecnologías avanzadas como servidores de alta
+calidad, redes optimizadas y un CDN global para garantizar una velocidad de carga rápida. Esto no solo mejora la experiencia del usuario, sino que también 
+tiene un impacto positivo en el posicionamiento SEO y en la tasa de conversión. Cabe destacar que Shopify cuenta con una tasa de conversión de las más
+elevadas del mercado. \cite{shopify}
+
+Una de las funcionalidades con las que cuenta Shopify, es la capacidad de poder crear aplicaciones que puedan ampliar la funcionalidad existente 
+de esta plataforma. Esto nos permite agregar funcionalidades a las tiendas, ampliar la experiencia de la parte de administración
+o crear experiencias de compra únicas para nuestros clientes. Gracias a esto los usuarios pueden instalar estas aplicaciones para ayudar a desarrollar
+su negocio, integrarse con servicios externos y agregar funciones a su panel de control de Shopify.
+
+Estas aplicaciones se integran con Shopify de varias maneras, o bien conectándose con las APIs de Shopify para leer y escribir datos de la tienda en respuesta a la 
+entrada del usuario o a las notificaciones de eventos de webhooks. Ampliando las nuevas funciones dentro de las partes existentes del panel de control
+de Shopify o el punto de venta. O mejorando la forma en la que las tiendas muestran la información a los clientes. \cite{shopify-dev}
+
+
+
+\subsubsection{Frontend}
+En cuanto al frontend de nuestra aplicación podemos observar dos partes. 
+Por un lado tenemos el frontend de la parte de Administración de Shopify, 
+esta parte hace referencia a la interfaz del usuario que los administradores de la tienda emplean para gestionar y controlar los diversos aspectos de
+la tienda, como la gestión de productos, pedidos, clientes, configuración de temas, traducciones y otros muchos aspectos de configuración de la tienda.
+Al integrar nuestra aplicación con las tiendas que necesiten de sus funcionalidades esta parte del front se integrará con la página de administración de 
+cada tienda proporcionando la interfaz y las funcionalidades que configuremos en nuestro desarrollo.
+
+Esta parte del front será desarrollada empleando la biblioteca de JavaScript React. Esta es una libería de código abierto creada por el equipo de la
+compañia Facebook (Meta), junto a una gran comunidad de desarrolladores independientes que desde su lanzamiento en 2013 se ha convertido en una
+de las tecnologías de Fron End más usadas, ya que permite construir interfaces de usuario dinámicas y escalables. Esta se usa en el desarrollo de aplicaciones web y móviles. \cite{react-pag-1}
+Toda aplicación web React, se compone de componentes reutilizables que conforman partes de la interfaz de usuario, podemos tener un componente distinto para
+nuestra barra de navegación, otro para el pie de página, otro para el contenido principal, etc.
+Tener estos componentes reutilizables facilita el desarrollo ya que no tenemos que repetir el código reiterativo, solo tendríamos que crear su lógica e
+importar el componente en cualquier parte del código donde se necesite. Estos componentes representan una fusión de la estructura HTML con la funcionalidad de JavaScript.
+React también conforma una aplicación de una sola página, por tanto, en lugar de enviar una petición al servidor cada vez que hay que renderizar una nueva página,
+el contenido de la misma se carga directamente desde los componentes de React conduciendo de este modo a una renderización más rápida sin recargas de página. \cite{react-pag-2}
+
+Para la integración de nuestra aplicación con el panel de administración de las tiendas Shopify se empleará App Bridge, una biblioteca de JavaScript
+desarrollada por Shopify que permite a los desarrolladores integrar las aplicaciones personalizadas para las tiendas. Es una interfaz
+de programcaión diseñada para facilitar la comunicación entre la tienda y las aplicaciones externas que proporciona herramientas y funcionalidades
+que permiten a los desarrolladores que sus aplicaciones se integren de forma nativa en el panel de administración de Shopify y en la experiencia de compra
+del cliente. Permitiendo la capacidad de acceder a datos de la tienda como productos, pedidos y clientes así como la capacidad de interactuar con la interfaz
+de usuario de la tienda agregando componentes y paneles personalizados. \cite{shopify-dev}
+
+Además se empleará el sistema de diseño Polaris, una biblioteca de React que define los componentes necesarios para el panel de administración de Shopify.
+El panel de control de Shopify proporciona una superficie para que las aplicaciones integradas rendericen su interfaz de usuario. y el empleo de Polaris
+es fundamental para crear experiencias de usuario familiares y coherentes.
+Polaris incluye una Guía de diseño, con instrucciones sobre accesibilidad, colores, tipografía, espaciado, nomenclatura y lenguaje práctico para ayudarnos 
+a crear experiencias que se parezcan al resto del panel de administración. Nos proporciona componentes, es decir bloques de construcción reutilizables compuestos de 
+elementos y estilos de interfaz y empaquetados a través de código. Además nos proporciona tokens, es decir valores CSS con nombre que representan decisiones
+de diseño para elementos como el color, el espaciado y la tipografía que podemos aplicar a los diseños para ayudar a unificar las experiencias de los usuarios.
+También nos proporciona iconos cuidadosamente diseñados que se centran en el comercio y el emprendimiento, que podemos emplear como ayudas visuales para ayudar a los 
+usuarios a completar tareas. Y por último nos proporciona patrones, soluciones repetibles a problemas comunes de UX en una situación expecífica del usuario
+El buen uso de estos patrones hace que el panel de administración sea familiar y facil de usar. \cite{shopify-dev}
+
+
+
+
+
+
+
+\subsubsection{Backend}
+
+
+\subsubsection{Otras tecnologías}
+EXTENDER cada parte y añadir las tecnologías que faltan como DevOps, express, visualStudioCode....
+
+
 
 Para el desarrollo del tema de la tienda en Shopify (extensión de tema), hemos utilizado principalmente Liquid, un lenguaje de plantillas desarrollado
 por Shopify. Originario de la misma empresa y diseñado específicamente para la creación de temas personalizados en Shopify, 
@@ -644,8 +717,6 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
 \section{Bibliografía}
 Normalmente se organiza de una de las siguientes dos formas: (1) ordenado por orden de aparición en el documento; (2) ordenado alfabéticamente por el apellido del primer autor. ¡Todas las entradas en el apartado de bibliografía tienen que aparecer referenciadas en el texto!
 
-[1]	Juárez, J. M. (2007). El arte de soñar. Colima, México: Ediciones Luminosas.
-
 [1] Shopify - Acerca de nosotros: https://www.shopify.com/company
 [2] Liquid - Documentación oficial de Shopify: https://shopify.github.io/liquid/
 [3] React - Documentación oficial de React: https://reactjs.org/docs/getting-started.html
@@ -657,9 +728,21 @@ Normalmente se organiza de una de las siguientes dos formas: (1) ordenado por or
 \renewcommand{\refname}{}
 \begin{thebibliography}{100} % Elige 9 si tienes menos de 10 referencias
     
-    \bibitem{angular} 
-    Angular. 
-    \textit{Angular}, dirección: \texttt{https://angular.io/} (visitado 12-07-2021).
+    \bibitem{shopify} 
+    Shopify. 
+    \textit{Shopify}, dirección: \url{https://www.shopify.com/es/blog/tutorial-shopify} (visitado 29-03-2024).
+
+    \bibitem{shopify-dev} 
+    Shopify Developers. 
+    \textit{Shopify.dev}, dirección: \url{https://shopify.dev/} (visitado 29-03-2024).
+
+    \bibitem{react-pag-1} 
+    React
+    \textit{React}, dirección: \url{https://ebac.mx/blog/que-es-react} (visitado 29-03-2024).
+
+    \bibitem{react-pag-2} 
+    Funcionamiento React
+    \textit{Funcionamiento React}, dirección: \url{https://kinsta.com/es/base-de-conocimiento/que-es-react-js/#qu-es-react} (visitado 29-03-2024).
 \end{thebibliography}
 
 \end{document}
