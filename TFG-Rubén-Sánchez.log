@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  31 MAR 2024 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  31 MAR 2024 20:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -755,7 +755,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ... {6.3}Implementación}{12}{subsection.6.3}
+l.32 ... {6.3}Implementación}{13}{subsection.6.3}
                                                   % [1])
 \tf@toc=\write5
 \openout5 = `TFG-Rubén-Sánchez.toc'.
@@ -808,191 +808,191 @@ LaTeX Info: Redefining \% on input line 272.
 LaTeX Info: Redefining \. on input line 272.
 LaTeX Info: Redefining \% on input line 272.
  [5]
-LaTeX Info: Redefining \. on input line 305.
-LaTeX Info: Redefining \% on input line 305.
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
  [6]
-LaTeX Info: Redefining \. on input line 350.
-LaTeX Info: Redefining \% on input line 350.
-LaTeX Info: Redefining \. on input line 350.
-LaTeX Info: Redefining \% on input line 350.
+LaTeX Info: Redefining \. on input line 348.
+LaTeX Info: Redefining \% on input line 348.
+LaTeX Info: Redefining \. on input line 348.
+LaTeX Info: Redefining \% on input line 348.
  [7]
-LaTeX Info: Redefining \. on input line 363.
-LaTeX Info: Redefining \% on input line 363.
-LaTeX Info: Redefining \. on input line 363.
-LaTeX Info: Redefining \% on input line 363.
+LaTeX Info: Redefining \. on input line 365.
+LaTeX Info: Redefining \% on input line 365.
+LaTeX Info: Redefining \. on input line 365.
+LaTeX Info: Redefining \% on input line 365.
  [8]
-LaTeX Info: Redefining \. on input line 399.
-LaTeX Info: Redefining \% on input line 399.
-LaTeX Info: Redefining \. on input line 399.
-LaTeX Info: Redefining \% on input line 399.
+LaTeX Info: Redefining \. on input line 398.
+LaTeX Info: Redefining \% on input line 398.
+LaTeX Info: Redefining \. on input line 398.
+LaTeX Info: Redefining \% on input line 398.
  [9]
-LaTeX Info: Redefining \. on input line 442.
-LaTeX Info: Redefining \% on input line 442.
-LaTeX Info: Redefining \. on input line 442.
-LaTeX Info: Redefining \% on input line 442.
+LaTeX Info: Redefining \. on input line 433.
+LaTeX Info: Redefining \% on input line 433.
+LaTeX Info: Redefining \. on input line 433.
+LaTeX Info: Redefining \% on input line 433.
  [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 448.
+(hyperref)                removing `\setbox' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 448.
+(hyperref)                removing `\z@' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 448.
+(hyperref)                removing `\hbox' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 448.
+(hyperref)                removing `\dimen@' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ht' on input line 448.
+(hyperref)                removing `\ht' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 448.
+(hyperref)                removing `\z@' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\globaldefs' on input line 448.
+(hyperref)                removing `\globaldefs' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\m@ne' on input line 448.
+(hyperref)                removing `\m@ne' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 448.
+(hyperref)                removing `\<def>-command' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\tf@size' on input line 448.
+(hyperref)                removing `\tf@size' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 448.
+(hyperref)                removing `\<def>-command' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sf@size' on input line 448.
+(hyperref)                removing `\sf@size' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 448.
+(hyperref)                removing `\<def>-command' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ssf@size' on input line 448.
+(hyperref)                removing `\ssf@size' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\globaldefs' on input line 448.
+(hyperref)                removing `\globaldefs' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 448.
+(hyperref)                removing `\z@' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 448.
+(hyperref)                removing `\<def>-command' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@tempa' on input line 448.
+(hyperref)                removing `\@tempa' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\advance' on input line 448.
+(hyperref)                removing `\advance' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 448.
+(hyperref)                removing `\dimen@' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 448.
+(hyperref)                removing `\let' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\raise' on input line 448.
+(hyperref)                removing `\raise' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\dimen@' on input line 448.
+(hyperref)                removing `\dimen@' on input line 452.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 448.
+(hyperref)                removing `\hbox' on input line 452.
 
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
 [11]
-LaTeX Info: Redefining \. on input line 517.
-LaTeX Info: Redefining \% on input line 517.
-LaTeX Info: Redefining \. on input line 517.
-LaTeX Info: Redefining \% on input line 517.
+LaTeX Info: Redefining \. on input line 512.
+LaTeX Info: Redefining \% on input line 512.
+LaTeX Info: Redefining \. on input line 512.
+LaTeX Info: Redefining \% on input line 512.
  [12]
-LaTeX Info: Redefining \. on input line 550.
-LaTeX Info: Redefining \% on input line 550.
-LaTeX Info: Redefining \. on input line 550.
-LaTeX Info: Redefining \% on input line 550.
+LaTeX Info: Redefining \. on input line 549.
+LaTeX Info: Redefining \% on input line 549.
+LaTeX Info: Redefining \. on input line 549.
+LaTeX Info: Redefining \% on input line 549.
  [13]
-LaTeX Info: Redefining \. on input line 582.
-LaTeX Info: Redefining \% on input line 582.
-LaTeX Info: Redefining \. on input line 582.
-LaTeX Info: Redefining \% on input line 582.
+LaTeX Info: Redefining \. on input line 577.
+LaTeX Info: Redefining \% on input line 577.
+LaTeX Info: Redefining \. on input line 577.
+LaTeX Info: Redefining \% on input line 577.
  [14]
-LaTeX Info: Redefining \. on input line 616.
-LaTeX Info: Redefining \% on input line 616.
-LaTeX Info: Redefining \. on input line 616.
-LaTeX Info: Redefining \% on input line 616.
+LaTeX Info: Redefining \. on input line 614.
+LaTeX Info: Redefining \% on input line 614.
+LaTeX Info: Redefining \. on input line 614.
+LaTeX Info: Redefining \% on input line 614.
  [15]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 633.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 637.
  (C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (29.38023pt too wide) in paragraph at lines 641--642
+Overfull \hbox (29.38023pt too wide) in paragraph at lines 645--646
 []\T1/lmr/m/n/12 Descripci�n: Rea-li-zar una in-ves-ti-ga-ci�n exhaus-ti-va so-bre el uso de \T1/lmtt/m/n/12 cart-transform
  []
 
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
+LaTeX Info: Redefining \. on input line 646.
+LaTeX Info: Redefining \% on input line 646.
+LaTeX Info: Redefining \. on input line 646.
+LaTeX Info: Redefining \% on input line 646.
 [16]
-LaTeX Info: Redefining \. on input line 692.
-LaTeX Info: Redefining \% on input line 692.
-LaTeX Info: Redefining \. on input line 692.
-LaTeX Info: Redefining \% on input line 692.
+LaTeX Info: Redefining \. on input line 683.
+LaTeX Info: Redefining \% on input line 683.
+LaTeX Info: Redefining \. on input line 683.
+LaTeX Info: Redefining \% on input line 683.
  [17]
-LaTeX Info: Redefining \. on input line 728.
-LaTeX Info: Redefining \% on input line 728.
-LaTeX Info: Redefining \. on input line 728.
-LaTeX Info: Redefining \% on input line 728.
+LaTeX Info: Redefining \. on input line 716.
+LaTeX Info: Redefining \% on input line 716.
+LaTeX Info: Redefining \. on input line 716.
+LaTeX Info: Redefining \% on input line 716.
  [18]
 File: imagenes/logo.jpg Graphic file (type jpg)
 <use imagenes/logo.jpg>
-Package pdftex.def Info: imagenes/logo.jpg  used on input line 732.
+Package pdftex.def Info: imagenes/logo.jpg  used on input line 736.
 (pdftex.def)             Requested size: 266.14978pt x 266.16095pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 744--746
+Underfull \hbox (badness 10000) in paragraph at lines 749--751
 []\T1/lmr/m/n/12 Shopify. \T1/lmr/m/it/12 Sho-pify\T1/lmr/m/n/12 , di-rec-ci�n: [][]$\T1/lmtt/m/n/12 https : / / www . shopify . com / es / blog /
  []
 
-LaTeX Info: Redefining \. on input line 751.
-LaTeX Info: Redefining \% on input line 751.
-LaTeX Info: Redefining \. on input line 751.
-LaTeX Info: Redefining \% on input line 751.
+LaTeX Info: Redefining \. on input line 767.
+LaTeX Info: Redefining \% on input line 767.
+LaTeX Info: Redefining \. on input line 767.
+LaTeX Info: Redefining \% on input line 767.
 [19]
-LaTeX Info: Redefining \. on input line 760.
-LaTeX Info: Redefining \% on input line 760.
-LaTeX Info: Redefining \. on input line 760.
-LaTeX Info: Redefining \% on input line 760.
+LaTeX Info: Redefining \. on input line 769.
+LaTeX Info: Redefining \% on input line 769.
+LaTeX Info: Redefining \. on input line 769.
+LaTeX Info: Redefining \% on input line 769.
  [20] (TFG-Rubén-Sánchez.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
@@ -1006,20 +1006,20 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `TFG-Rubén-Sánchez.out' has not changed.
-(rerunfilecheck)             Checksum: ED5B7009C09A2DC56751D403B0311862;9405.
+(rerunfilecheck)             Checksum: F67692663FAF12574D06FBCFD4AC8390;9370.
  ) 
 Here is how much of TeX's memory you used:
- 17085 strings out of 474486
- 271161 string characters out of 5736203
+ 17087 strings out of 474486
+ 271176 string characters out of 5736203
  1938542 words of memory out of 5000000
- 38975 multiletter control sequences out of 15000+600000
+ 38976 multiletter control sequences out of 15000+600000
  622290 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1121b,743s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsco10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on TFG-Rubén-Sánchez.pdf (24 pages, 411023 bytes).
+Output written on TFG-Rubén-Sánchez.pdf (24 pages, 414392 bytes).
 PDF statistics:
- 460 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
+ 465 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
  302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

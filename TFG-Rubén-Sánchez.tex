@@ -243,7 +243,7 @@ sin necesidad de que los comerciantes tengan que editar manualmente el código d
 
 Los theme app extension tienen una estructura similar a los temas, ya que son como una prolongación de ellos. Estos contienen los siguientes recursos. 
 Por un lado contienen los Bloques, que son archivos en Liquid que actúan como punto de entrada para lo que se desea inyectar en un tema. Por otro lado
-tienen los recursos, que contienen los ficheros CSS, JavaScript y otros contenidos estáticos de la aplicación que se inserta en los temas. Además tienen
+tienen los recursos, que contienen los ficheros CSS, JavaScript y otros contenidos estáticos de la aplicación que se insertan en los temas. Además tienen
 los snippets o fragmentos, que son fragmentos de código Liquid reutilizables que se pueden emplear en varios bloques. Y por último tienen una estructura de archivos locales
 para implementar un sistema de traducciones en los idiomas que se configuren. \cite{shopify-dev}
 
@@ -253,29 +253,33 @@ Por ejemplo, podemos crear plantillas de producto que alojen todos los atributos
 plantilla puede representar dinámicamente esos atributos con el contenido adecuando en función del valor actual que se esté viendo. \cite{shopify-dev}
 Además en las plantillas junto con Liquid emplearemos HTML, CSS y JavaScript para completar el desarrollo de la interfaz del tema. Emplearemos HTML para estructurar
 el contenido y crear elementos de las páginas, CSS para definir y dar estilos visuales a los elementos y JavaScript para agregar la interactividad y la 
-funcionalidad dinámica a la página. Aunque como párte de los elementos del desarrollo que queremos desarrollar van a ser dinámicos cabe destacar que serán creados
+funcionalidad dinámica a la página. Aunque como párte de los elementos del desarrollo que queremos llevar a cabo van a ser dinámicos cabe destacar que serán creados
 dinámicamente y refrescados con JavaScript e incluidos en el DOM.
 
 \subsubsection{Backend}
+En cuanto al Backend de nuestra aplicación vamos a usar Node.js. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
+que permite a los desarrolladores crear toda clase de herramientas del lado del servidor y aplicaciones en JavaScript. 
+Este nos proporciona un gran numero de ventajas. Ofrece un gran rendimiento, pues ha sido diseñado específicamente para optimizar el rendimiento y la
+escalabilidad en aplicaciones web, lo que lo convierte en un excelente complemento para resolver problemas comunes de desarrollo web como aplicaciones
+en tiempo real. Todo el código se escribe en JavaScript, lo que nos simplifica trabajo y ahorra tiempo al no tener que preocuparse por las conmutaciones
+de contexto entre diferentes lenguajes al escribir tanto el código del navegador como del servidor. Además JavaSCript es un lenguaje relativamente nuevo
+y se beneficia de los avances en diseño de lenguajes en comparación con otros lenguajes tradicionales. Node cuenta con NPM (Node Packet Manager), un gestor 
+de paquetes que nos proporciona acceso a una amplia gama de paquetes reutilizables, ofrece una excelente resolución de dependencias y nos permite automatizar
+gran parte de la cadena de herramientas de compilación. También Node es portable y compatible con multitud de sistemas operativos y está soportado por muchos
+proveedores de alojamiento web, contando con un gran ecosistema y una comunidad de desarrolladores muy activa. Por último este entorno nos brinda muchas facilidades
+para crear servidores web básicos capaces de responder a cualquier solicitud empleando el paquete HTTP de Node y simplificando el proceso de desarrollo y despliegue de
+aplicaciones Web.\cite{node}
 
+Además vamos a emplear Express, el framework web más popular de Node, este simplifica enormemente el desarrollo de aplicaciones web al proporcionar
+una serie de características esenciales. Con Express, los desarrolladores pueden escribir fácilmente manejadores de peticiones para diferentes 
+verbos HTTP en diversas rutas URL, integrar motores de renderización de vistas para generar respuestas dinámicas y establecer configuraciones de 
+aplicaciones web de manera intuitiva. Además, permite la adición de procesamiento de middleware adicional en cualquier punto de la tubería de manejo de 
+la petición, brindando flexibilidad y modularidad al desarrollo. \cite{node}
 
 \subsubsection{Otras tecnologías}
-EXTENDER cada parte y añadir las tecnologías que faltan como DevOps, express, visualStudioCode....
+EXTENDER cada parte y añadir las tecnologías que faltan como DevOps visualStudioCode....
 
-Para el desarrollo del tema de la tienda en Shopify (extensión de tema), hemos utilizado principalmente Liquid, un lenguaje de plantillas desarrollado
-por Shopify. Originario de la misma empresa y diseñado específicamente para la creación de temas personalizados en Shopify, 
-Liquid ofrece una sintaxis simple y flexible que permite la creación de diseños y experiencias de usuario altamente personalizados [2]. Añadir también js...css
 
-En el front de la parte administración de la tienda, hemos empleado React, un framework de JavaScript desarrollado por Facebook. 
-Surgido en 2013, React se ha convertido en una de las herramientas más populares para la creación de interfaces de usuario interactivas 
-y dinámicas. Su enfoque en la construcción de componentes reutilizables y su rendimiento optimizado lo hacen ideal para aplicaciones web modernas [3].
-
-En el backend de la aplicación, hemos utilizado Node.js, un entorno de ejecución de JavaScript del lado del servidor. Originario de 2009, 
-Node.js ha revolucionado el desarrollo web al permitir a los desarrolladores utilizar JavaScript tanto en el lado del cliente como en el lado del servidor, 
-lo que facilita la creación de aplicaciones web escalables y de alto rendimiento [4].
-
-Complementando Node.js, hemos empleado GraphQL, un lenguaje de consulta para API desarrollado por Facebook. Introducido en 2015, GraphQL permite 
-a los clientes solicitar datos específicos a través de una sola consulta, lo que lo hace ideal para el desarrollo de APIs flexibles y eficientes [5].
 
 
 \section{Análisis de objetivos y metodología}
@@ -734,8 +738,9 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
     \vspace{\fill}
 \end{figure}
 
-\section{Bibliografía}
 
+
+\section{Bibliografía}
 % Redefine el comando \refname para que no imprima ningún título
 \renewcommand{\refname}{}
 \begin{thebibliography}{100} % Elige 9 si tienes menos de 10 referencias
@@ -755,6 +760,10 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
     \bibitem{react-pag-2} 
     Funcionamiento React
     \textit{Funcionamiento React}, dirección: \url{https://kinsta.com/es/base-de-conocimiento/que-es-react-js/#qu-es-react} (visitado 29-03-2024).
+
+    \bibitem{node} 
+    Node y Express
+    \textit{Node y express}, dirección: \url{https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs/Introduction} (visitado 31-03-2024).
 \end{thebibliography}
 
 \end{document}
