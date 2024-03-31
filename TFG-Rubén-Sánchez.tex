@@ -190,8 +190,6 @@ Estas aplicaciones se integran con Shopify de varias maneras, o bien conectándo
 entrada del usuario o a las notificaciones de eventos de webhooks. Ampliando las nuevas funciones dentro de las partes existentes del panel de control
 de Shopify o el punto de venta. O mejorando la forma en la que las tiendas muestran la información a los clientes. \cite{shopify-dev}
 
-
-
 \subsubsection{Frontend}
 En cuanto al frontend de nuestra aplicación podemos observar dos partes. 
 Por un lado tenemos el frontend de la parte de Administración de Shopify, 
@@ -214,7 +212,7 @@ Para la integración de nuestra aplicación con el panel de administración de l
 desarrollada por Shopify que permite a los desarrolladores integrar las aplicaciones personalizadas para las tiendas. Es una interfaz
 de programcaión diseñada para facilitar la comunicación entre la tienda y las aplicaciones externas que proporciona herramientas y funcionalidades
 que permiten a los desarrolladores que sus aplicaciones se integren de forma nativa en el panel de administración de Shopify y en la experiencia de compra
-del cliente. Permitiendo la capacidad de acceder a datos de la tienda como productos, pedidos y clientes así como la capacidad de interactuar con la interfaz
+del cliente, permitiendo la capacidad de acceder a datos de la tienda como productos, pedidos y clientes así como la capacidad de interactuar con la interfaz
 de usuario de la tienda agregando componentes y paneles personalizados. \cite{shopify-dev}
 
 Además se empleará el sistema de diseño Polaris, una biblioteca de React que define los componentes necesarios para el panel de administración de Shopify.
@@ -228,19 +226,41 @@ También nos proporciona iconos cuidadosamente diseñados que se centran en el c
 usuarios a completar tareas. Y por último nos proporciona patrones, soluciones repetibles a problemas comunes de UX en una situación expecífica del usuario
 El buen uso de estos patrones hace que el panel de administración sea familiar y facil de usar. \cite{shopify-dev}
 
+En cuanto a la otra parte del frontend de nuestra aplicación, tenemos la parte relacionada con el tema de la tienda. Un tema en Shopify es un conjunto de recursos
+y archivos que determinan la apariencia, funcionalidad y sensación de una tienda en línea en esta plataforma, tanto para los comerciantes como para
+sus clientes. Estos temas se construyen empleando un lenguaje de plantillas llamado Liquid que junto con HTML, CSS y JavaScript conforman la apariencia
+y funcionalidades del frontend de la tienda online. Los desarrolladores pueden crear temas personalidados para las tiendas y ajustar los temas existentes 
+para adaptarse a las necesidades de los comerciantes. \cite{shopify-dev}
 
+Para ampliar el tema de las tiendas en las que se instale la aplicación que vamos a desarrollar y así poder dotarla de las funcionalidades de personalización de 
+artículos, vamos a crear en la aplicación lo que se conoce como App theme extension. Las extensiones de aplicaciones de temas permiten a los comerciantes
+agregar fácilmente elementos dinámicos a sus temas sin tener que interactuar directamente con las plantillas o el código Liquid del tema. Estas extensiones
+de aplicaciones de tema se integran con el tema de la tienda exponiendo automáticamente en el editor de temas las secciones y elementos que haya programados en la aplicación. \cite{shopify-dev}
+Una de las ventajas de desarrollar estas partes del tema en la aplicación que vamos a desarrollar y no directamente en el tema de la tienda, es que las secciones de código y funcionalidades
+que programemos en la aplicación pasarán a estar disponibles en el tema de la tienda en la que se instale directamente sin necesidad de tener que ir modificando el tema
+de cada tienda en la que queramos instalar nuestra aplicación, es decir, puede implementarse la aplicación al mismo tiempo en todas las tiendas que la usan,
+sin necesidad de que los comerciantes tengan que editar manualmente el código del tema.
 
+Los theme app extension tienen una estructura similar a los temas, ya que son como una prolongación de ellos. Estos contienen los siguientes recursos. 
+Por un lado contienen los Bloques, que son archivos en Liquid que actúan como punto de entrada para lo que se desea inyectar en un tema. Por otro lado
+tienen los recursos, que contienen los ficheros CSS, JavaScript y otros contenidos estáticos de la aplicación que se inserta en los temas. Además tienen
+los snippets o fragmentos, que son fragmentos de código Liquid reutilizables que se pueden emplear en varios bloques. Y por último tienen una estructura de archivos locales
+para implementar un sistema de traducciones en los idiomas que se configuren. \cite{shopify-dev}
 
-
-
+Como se ha comentado anteriormente, para el desarrollo de estas interfaces del tema se emplea Liquid, un lenguaje de plantillas creado por shopify que
+permite crear una sola plantilla para alojar el contenido estático e insertar información dinámicamente en función de dónde se representa la plantilla.
+Por ejemplo, podemos crear plantillas de producto que alojen todos los atributos estándar del producto como la imagen, el título, el precio y demás, y esta 
+plantilla puede representar dinámicamente esos atributos con el contenido adecuando en función del valor actual que se esté viendo. \cite{shopify-dev}
+Además en las plantillas junto con Liquid emplearemos HTML, CSS y JavaScript para completar el desarrollo de la interfaz del tema. Emplearemos HTML para estructurar
+el contenido y crear elementos de las páginas, CSS para definir y dar estilos visuales a los elementos y JavaScript para agregar la interactividad y la 
+funcionalidad dinámica a la página. Aunque como párte de los elementos del desarrollo que queremos desarrollar van a ser dinámicos cabe destacar que serán creados
+dinámicamente y refrescados con JavaScript e incluidos en el DOM.
 
 \subsubsection{Backend}
 
 
 \subsubsection{Otras tecnologías}
 EXTENDER cada parte y añadir las tecnologías que faltan como DevOps, express, visualStudioCode....
-
-
 
 Para el desarrollo del tema de la tienda en Shopify (extensión de tema), hemos utilizado principalmente Liquid, un lenguaje de plantillas desarrollado
 por Shopify. Originario de la misma empresa y diseñado específicamente para la creación de temas personalizados en Shopify, 
@@ -715,14 +735,6 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
 \end{figure}
 
 \section{Bibliografía}
-Normalmente se organiza de una de las siguientes dos formas: (1) ordenado por orden de aparición en el documento; (2) ordenado alfabéticamente por el apellido del primer autor. ¡Todas las entradas en el apartado de bibliografía tienen que aparecer referenciadas en el texto!
-
-[1] Shopify - Acerca de nosotros: https://www.shopify.com/company
-[2] Liquid - Documentación oficial de Shopify: https://shopify.github.io/liquid/
-[3] React - Documentación oficial de React: https://reactjs.org/docs/getting-started.html
-[4] Node.js - Sitio web oficial de Node.js: https://nodejs.org/
-[5] GraphQL - Sitio web oficial de GraphQL: https://graphql.org/
-
 
 % Redefine el comando \refname para que no imprima ningún título
 \renewcommand{\refname}{}
