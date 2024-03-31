@@ -256,6 +256,11 @@ el contenido y crear elementos de las páginas, CSS para definir y dar estilos v
 funcionalidad dinámica a la página. Aunque como párte de los elementos del desarrollo que queremos llevar a cabo van a ser dinámicos cabe destacar que serán creados
 dinámicamente y refrescados con JavaScript e incluidos en el DOM.
 
+En el desarrollo frontend de la parte del tema, se hará uso de una de las herramientas de las que nos proporciona Shopify, La Shopify Ajax API. La API de Ajax
+proporciona un conjunto de puntos finales ligeros para el desarrollo de temas, esta nos permite agregar productos al carrito y actualizar el contador
+de artículos del mismo, mostrar recomendaciones de productos relaccionados, sugerir productos y colecciones a los visitantes a medida que escriben
+en un campo de búsqueda y una larga lista de funcionalidades que nos serán útiles para interactuar con la tienda.\cite{shopify-dev}
+
 \subsubsection{Backend}
 En cuanto al Backend de nuestra aplicación vamos a usar Node.js. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
 que permite a los desarrolladores crear toda clase de herramientas del lado del servidor y aplicaciones en JavaScript. 
@@ -276,9 +281,27 @@ verbos HTTP en diversas rutas URL, integrar motores de renderización de vistas 
 aplicaciones web de manera intuitiva. Además, permite la adición de procesamiento de middleware adicional en cualquier punto de la tubería de manejo de 
 la petición, brindando flexibilidad y modularidad al desarrollo. \cite{node}
 
-\subsubsection{Otras tecnologías}
-EXTENDER cada parte y añadir las tecnologías que faltan como DevOps visualStudioCode....
+En esta parte de la aplicación, haremos uso de la API de administración GraphQL que nos proporciona Shopify. Esta consituye la principal forma en la que 
+las aplicaciones pueden interactuar con la tienda, permitiendonos leer y escribir la información de la tienda incluidos los productos, inventario, pedidos,
+los envíos y mucho más, permitiendonos ampliar la funcionalidad existente de Shopify con aplicaciones. Gracias a esta API podemos conectar el inventario
+de la tienda con otros marketplaces y nos ofrece infinidad de posibilidades, pudiendo añadir nuevas funcionalidades en el panel de control de Shopify.
+Esta API es compatible tanto con GraphQL como con REST aunque para nuestsro desarrollo emplearemos GraphQL. Para interactuar con esta API las aplicaciones
+deben autenticarse además de contar con los ámbitos de acceso pertinentes para acceder a los datos que se necesiten o se quieran modificar. \cite{shopify-dev}
 
+
+\subsubsection{Otras tecnologías}
+Para la elaboración de este TFG hemos empleado Visual Studio Code como entorno de desarrollo tanto para la creación de la aplicación como para
+la redación del propio TFG en LaTeX, empleando una serie de extensiones que nos han facilitado el trabajo. 
+Hemos aprovechado extensiones como Shopify Liquid Templates, Shopify Liquid, 
+Polaris for VS Code, JavaScript (ES6), GraphQL, Latex Language support, Latex Workshop y ESLint para garantizar un desarrollo y documentación
+fluida y eficaz. Estas extensiones han proporcionado una serie de funcionalidades como resaltado de sintaxis, autocompletado y validación de código, 
+acceso rápido a la documentación, formateo de código y una serie de ventajas que nos han facilitado significativamente la creación de la aplicación.
+
+Hemos empleado Git para llevar un control de versiones de la aplicación junto con Azure DevOps, una plataforma de Microsoft que nos ofrece una amplia
+gama de características y funcionalidades que nos permiten a los equipos de desarrolo colaborar de manera efectiva en equipo y optimizar el proceso de desarrollo
+de software. Esta herramienta nos ofrece gestión del código fuente, permitiendonos almacenar y administrar el código fuente de nuestro proyecto en 
+repositorios de código. También nos facilita la planificación, asignación y seguimiento de las tareas, problemas y requisitos del proyecto, haciendo
+un seguimiento del trabajo y muchas otras funcionalidades útiles para el desarrollo, seguimiento pruebas y gestión del ciclo de vida de los proyectos. \cite{devOps}
 
 
 
@@ -764,6 +787,11 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
     \bibitem{node} 
     Node y Express
     \textit{Node y express}, dirección: \url{https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs/Introduction} (visitado 31-03-2024).
+
+    \bibitem{devOps} 
+    Azure DevOps
+    \textit{Azure DevOps}, dirección: \url{https://aodatacloud.es/blog/que-es-azure-devops-y-para-que-sirve/#%C2%BFQue_es_Azure_DevOps} (visitado 31-03-2024).
+
 \end{thebibliography}
 
 \end{document}
