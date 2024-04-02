@@ -326,9 +326,31 @@ un seguimiento del trabajo, y muchas otras fucionalidades útiles para el desarr
 En esta sección se describen los objetivos que se persiguen con el desarrollo de este proyecto, así como la metodología empleada (tareas y temporalización) para alcanzar estos objetivos.
 
 \subsection{Objetivos}
-Hipótesis inicial, objetivo principal y subobjetivos planteados.
+
+El objetivo principal de este TFG consiste en el análisis, diseño y desarrollo de una aplicación para la plataforma Shopify que nos permita
+la personalización de productos para su posterior compra en las tiendas en las que se acople dicha aplicación. Para conseguir lograr este objetivo 
+principal, se han propuesto los siguientes objetivos específicos.
+
+\begin{enumerate}
+    \item Realizar el análisis y estudio de las tecnologías y herramientas necesarias para el desarrollo de esta aplicación
+    \item Analizar las funcionalidades y requisitos necesarios que debe tener la aplicación.
+    \item Habiendo hecho el estudio de tecnologías y análisis de requisitos, realizar una división de tareas para obtener una serie de pasos a seguir para lograr el desarrollo. (Diseño)
+    \item Implementar la aplicación siguiendo la división de tareas establecida.
+    \item Desplegar la aplicación en una tienda de pruebas para comprobar su funcionamiento, realizar pruebas manuales y compras ficticias.
+    \item Documentar todo este procedimiento para plasmarlo en el TFG
+\end{enumerate}
+
 \subsection{Metodología}
 Etapas en las que se ha divido la realización del TFG, con indicación de fechas de inicio/fin.
+
+\subsubsection{Temporalización}
+En este apartado vamos a enumerar las etapas en las que se ha dividido el desarrollo de este proyecto.
+
+\begin{enumerate}[label={\textbf{\textbullet}}]
+    \item Etapa 1.
+    \item Etapa 2.
+    \item Etapa 3.
+\end{enumerate}
 
 \section{Diseño y resolución del trabajo realizado}
 Parte más extensa del trabajo donde se describe lo que se ha hecho paso por paso y el resultado final.
@@ -336,7 +358,9 @@ Parte más extensa del trabajo donde se describe lo que se ha hecho paso por pas
 \subsection{Análisis}
 Requisitos textuales o la definición de casos de uso o las historias de usuario
 
-\subsubsection{Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}\label{sec:historia1}
+\subsubsection{Historias de usuario}
+
+\subsubsubsection{Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}\label{sec:historia1}
 
 Como administrador de la tienda, quiero poder observar en las páginas de producto un botón que posteriormente servirá para activar una funcionalidad de personalización del producto.
 
@@ -358,7 +382,7 @@ Como administrador de la tienda, quiero poder observar en las páginas de produc
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 2: Configuración de Opciones de Envío Internacional}\label{sec:historia2}
+\subsubsubsection{Historia de Usuario 2: Configuración de Opciones de Envío Internacional}\label{sec:historia2}
 
 Como administrador de la tienda,
 quiero poder configurar opciones de envío internacional
@@ -382,7 +406,7 @@ para poder ofrecer servicios de envío a clientes de todo el mundo y gestionar e
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}\label{sec:historia3}
+\subsubsubsection{Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}\label{sec:historia3}
 
 Como administrador de la tienda, deseo poder configurar la impresión de productos antes de añadirlos al pedido, para poder personalizarlos según las necesidades de los clientes.
 
@@ -409,7 +433,7 @@ Como administrador de la tienda, deseo poder configurar la impresión de product
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 4: Mejora en la Funcionalidad de Añadir al Carrito}\label{sec:historia4}
+\subsubsubsection{Historia de Usuario 4: Mejora en la Funcionalidad de Añadir al Carrito}\label{sec:historia4}
 
 Como administrador de la tienda,
 quiero que al añadir productos relacionados (productos normales, trabajos y clichés) al carrito, estos estén agrupados y vinculados de manera que no se puedan borrar o editar por separado,
@@ -430,7 +454,7 @@ para mejorar la experiencia de compra y facilitar la gestión de los productos d
     \item La cantidad de cada producto añadido al carrito debe ser considerada y reflejada correctamente.
 \end{enumerate}
 
-\subsubsection{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}\label{sec:historia5}
+\subsubsubsection{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}\label{sec:historia5}
 
 Como comerciante en la plataforma,
 quiero que los productos de impresión, junto con sus trabajos y clichés asociados, se visualicen de forma agrupada en el carrito de la tienda,
@@ -445,7 +469,7 @@ para proporcionar una experiencia de compra clara y comprensible para mis client
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 6: Personalización Dinámica de Precios para Trabajos Específicos}\label{sec:historia6}
+\subsubsubsection{Historia de Usuario 6: Personalización Dinámica de Precios para Trabajos Específicos}\label{sec:historia6}
 
 Como administrador de la tienda,
 quiero que algunos trabajos puedan cambiar su precio de forma dinámica en función de ciertas condiciones,
@@ -458,7 +482,7 @@ para ofrecer precios precisos y competitivos a mis clientes según las caracter�
     \item Los precios personalizados deben ser precisos y reflejar adecuadamente cualquier cambio en las condiciones que afecten al precio del trabajo.
 \end{enumerate}
 
-\subsubsection{Historia de Usuario 7: Visualización Atractiva del Logo del Cliente en el Producto}\label{sec:historia7}
+\subsubsubsection{Historia de Usuario 7: Visualización Atractiva del Logo del Cliente en el Producto}\label{sec:historia7}
 
 Como administrador de la tienda,
 quiero poder mostrar al cliente una representación visual atractiva de cómo quedaría su logo en el producto,
@@ -473,7 +497,7 @@ para ofrecer una experiencia de compra más personalizada y satisfactoria.
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 8: Automatización de la Creación de Metafields Necesarios}\label{sec:historia8}
+\subsubsubsection{Historia de Usuario 8: Automatización de la Creación de Metafields Necesarios}\label{sec:historia8}
 
 Como administrador de la tienda,
 quiero una opción para crear automáticamente los metafields necesarios para la app,
@@ -489,7 +513,7 @@ para simplificar y agilizar el proceso de configuración y evitar posibles error
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 9: Gestión de Casuística "Doble Pasada" en Productos y Trabajos}\label{sec:historia9}
+\subsubsubsection{Historia de Usuario 9: Gestión de Casuística "Doble Pasada" en Productos y Trabajos}\label{sec:historia9}
 
 Como administrador de la tienda,
 quiero poder gestionar la casuística de "doble pasada" en productos y trabajos,
@@ -505,7 +529,7 @@ para aplicar recargos adicionales en caso de que tanto el producto como el traba
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 10: Gestión del Canon Digital en Productos}\label{sec:historia10}
+\subsubsubsection{Historia de Usuario 10: Gestión del Canon Digital en Productos}\label{sec:historia10}
 
 Como administrador de la tienda,
 quiero poder gestionar el canon digital en ciertos productos,
@@ -519,7 +543,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \end{enumerate}
 
 
-\subsubsection{Historia de Usuario 11: Adición Automática de Línea de Canon al Añadir un Producto al Carrito}\label{sec:historia11}
+\subsubsubsection{Historia de Usuario 11: Adición Automática de Línea de Canon al Añadir un Producto al Carrito}\label{sec:historia11}
 
 Como administrador de la tienda,
 quiero que al añadir un producto al carrito, se agregue automáticamente una línea de canon digital correspondiente al producto seleccionado,
@@ -535,15 +559,8 @@ para reflejar correctamente el importe del canon asociado a los productos en mi 
 
 
 \subsection{Diseño}
-\subsubsection{Modelo de datos}
-Esquema de la base de datos
-\subsubsection{Diseño de back-end}
-Describir el API REST
-\subsubsection{Diseño de front-end}
-Mock-ups
-Diagrama de navegación
 
-\subsection{Implementación}
+\subsubsection{Tareas}
 
 \textbf{Tareas relacionadas con la \hyperref[sec:historia1]{Historia de usuario 1}:}
 \begin{itemize}
@@ -759,10 +776,17 @@ Diagrama de navegación
           \end{itemize}
 \end{itemize}
 
+\subsubsection{Diseño de back-end}
+Describir el API REST
+\subsubsection{Diseño de front-end}
+Mock-ups
+Diagrama de navegación
 
-\subsubsection{Arquitectura}
-\subsubsection{Implementación de back-end}
+\subsection{Implementación}
+
 \subsubsection{Implementación de front-end}
+\subsubsection{Implementación de back-end}
+
 \subsection{Pruebas}
 \subsection{Despliegue}
 
@@ -800,6 +824,16 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
     \textit{Azure DevOps}, dirección: \url{https://aodatacloud.es/blog/que-es-azure-devops-y-para-que-sirve/#%C2%BFQue_es_Azure_DevOps} (visitado 31-03-2024).
 
 \end{thebibliography}
+
+\section{Anexos}
+
+\subsection{Manual de usuario}
+En este apartado se mostrará de una forma visual la funcionalidad de la aplicación y su funcionamiento dentro de una tienda de desarrollo.
+
+
+
+
+
 
 \end{document}
 
