@@ -972,8 +972,10 @@ y comprarlo sin personalización, o podemos seleccionar la cantidad que deseemos
     \vspace{\fill}
 \end{figure}
 
-Si pulsamos en el botón de Personalizar, se nos abrirá este personalizador de artículos. En este, como puede en la Figura~\ref{fig:Personalizador}, nos encontramos 
+Si pulsamos en el botón de Personalizar, se nos abrirá el personalizador de artículos. En este, como puede en la Figura~\ref{fig:Personalizador}, nos encontramos 
 las distintas areas de impresión con las que cuenta el producto con sus atributos personalizables y a la derecha podemos ir viendo el resumen del pedido presonalizado actualizado.
+Como se puede observar, ahora mismo en el resumen del pedido solamente nos aparece el producto con las unidades, el precio por unidad y el precio total, pues todavía no hemos seleccionado ni configurado
+ningún area del producto.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -982,6 +984,10 @@ las distintas areas de impresión con las que cuenta el producto con sus atribut
     \caption{\label{fig:Personalizador}Pantalla del personalizador del producto seleccionado}
     \vspace{\fill}
 \end{figure}
+
+Si seleccionamos un área de impresión, como podemos observar en la Figura~\ref{fig:PersonalizadorAreaMarcada}, podemos ver como se refresca el resumen de pedido y se le agrega tanto el trabajo de impresión
+seleccionado por defecto, como su cliche asociado. Una vez seleccionada el área podemos configurar todos los elementos que contiene. Además también se pueden seleccionar varias áreas en una misma personalización, como 
+podemos ver en la Figura~\ref{fig:PersonalizadorVariasAreas}. En ella aparecen varias áreas del producto seleccionadas y en el resumen aparecen reflejados los trabajos y cliches de dichas áreas y su importe total.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -999,6 +1005,13 @@ las distintas areas de impresión con las que cuenta el producto con sus atribut
     \vspace{\fill}
 \end{figure}
 
+En cuanto a la configuración de cada área, como se puede apreciar en la Figura~\ref{fig:PersonalizadorColores}, tenemos un par de inputs para introducir las medidas de la impresión que deseamos 
+realizar en el artículo, uno para el ancho y otro para el alto. Además podemos observar un select para seleccionar el tipo de trabajo a aplicar en el producto seleccionado, es decir el tipo de marcaje. El tipo de trabajo seleccionado
+afectará al selector de colores de su derecha, pues cada trabajo de impresión cuenta con un número máximo de colores con los que puede trabajar, y al modificar el trabajo se renderizará automáticamente el selector de colores.
+También tenemos unos inputs en los que podemos introducir los colores con los que queremos que se realice la impresión, existen tantos inputs como colores hayamos seleccionado en el select de colores y estos
+se refrescan al modificar el valor de ese select. En este caso hemos seleccionado el tipo de trabajo \textit{transfer serigráfico}, también hemos introducido que queremos una impresión en 3 colores y hemos seleccionado dichos colores en los inputs.
+En el resumen de pedido podemos observar como aparece el trabajo de impresión, su cliche asociado y un cargo extra por la adicción de 2 colores extra.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -1006,6 +1019,11 @@ las distintas areas de impresión con las que cuenta el producto con sus atribut
     \caption{\label{fig:PersonalizadorColores}Personalizador con trabajo de impresión y colores seleccionados}
     \vspace{\fill}
 \end{figure}
+
+En la personalización del área de impresión, también podemos observar dos checks, uno check de repetición de cliche para marcar si ya hemos realizado algún otro pedido similar con el mismo tipo de impresión
+y otro check de doble pasada para indicar si queremos que la impresión se aplique dos veces. En la Figura~\ref{fig:PersonalizadorCheckboxes} podemos apreciar estos dos checks marcados y como puede verse, estos
+afectan al precio total de impresión. En el resumen puede observarse como al haber marcado el check de repetición de cliche, el precio del cliche se ha reducido debido a que la empresa ahorraría costes al no tener que 
+fabricar un nuevo cliche. Además al haber marcado el check de doble pasada podemos observar como en el resumen aparece un cargo extra por doble pasada.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1015,6 +1033,12 @@ las distintas areas de impresión con las que cuenta el producto con sus atribut
     \vspace{\fill}
 \end{figure}
 
+También podemos seleccionar el logo que se desee imprimir en el producto. En la imagen~\ref{fig:PersonalizadorLogo} podemos observar como se ha seleccionado dicha imagen y se nos muestra de forma visual en el personalizador una 
+aproximación de como quedaría ese logo impreso en la prenda que queremos comprar. Esta funcionalidad permite al cliente observar una imagen lo mas realista posible de cual sería el resultado final
+de la personalización del artículo. Además el cliente también puede introducir unas observaciones referidas a la personalización para dar mas detalles de la misma y tratar ciertos detalles que se nos puedan
+estar escapando. Una vez personalizada a nuestro gusto la prenda, podemos pulsar el botón de añadir el carrito para añadir los productos con toda su personalización asociada y acorde con
+lo visualizado en el resumen del pedido.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -1022,6 +1046,16 @@ las distintas areas de impresión con las que cuenta el producto con sus atribut
     \caption{\label{fig:PersonalizadorLogo}Personalizador con selección de logo}
     \vspace{\fill}
 \end{figure}
+
+
+Una vez añadido el producto personalizado al carrito podemos pulsar el botón de la cesta de la compra ubicado en la parte superior de la página (Figura~\ref{fig:BotonCarrito}) para dirigirnos a la página del carrito.
+En dicha página (Figura~\ref{fig:Carrito}) podemos observar los productos que han sido añadidos. Estos productos que han sido personalizados se añaden al carrito en forma de un solo paquete que contiene
+tanto las unidades de los artículos, como todos los elementos y atributos de la personalización.
+En la Figura~\ref{fig:Carrito} puede observarse un paquete de personalización que hemos añadido, en el cual se han seleccionado 3 unidades del producto, con el trabajo \textit{transfer serigráfico} y una serie de configuraciones 
+que pueden verse mejor detalladas en la página del Checkout. Por último vamos a pulsar el botón del carrito para completar la compra y vamos a dirigirnos al checkout donde se podrá realizar el pedido.
+Por último, en la Figura~\ref{fig:Checkout} podemos observar dicha interfaz para completar el proceso de compra, en la cual se puede visualizar con todo detalle el resumen de todo el pedido, introducir los datos de pago, facturación y dirección de envío
+y completar el pedido.
+
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
