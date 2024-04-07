@@ -328,6 +328,7 @@ INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
 INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
 INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
 INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
 INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
 INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
@@ -447,5 +448,7 @@ INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\p
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmro12.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmro12.pfb
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb

@@ -885,7 +885,13 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
 \section{Anexos}
 
 \subsection{Manual de usuario}
-En este apartado se mostrará de una forma visual la funcionalidad de la aplicación y su funcionamiento dentro de una tienda de desarrollo.
+En este apartado se mostrará y explicará de una forma visual la forma de uso de la aplicación desarrollada. Se mostrará tanto el proceso para integrar la aplicación con una tienda, como
+su funcionamiento dentro de la misma.
+
+En primer lugar, una vez instalada la aplicación en la tienda, debemos dirigirnos al panel de administración. En la Figura~\ref{fig:PersonalizarTema} podemos observar este panel de administración, donde
+debemos ir al apartado \textit{Canales de venta} $\rightarrow$  \textit{Tienda online} $\rightarrow$  \textit{Tema}. En esta pantalla podemos ver y configurar toda la libería de temas que tenemos disponible.
+En nustro caso tenemos publicado el tema \textit{upango-impresion-theme}, por lo que vamos a pulsar en el botón personalizar de este tema para que se nos muestre el configurador de tema y poder
+añadir al tema las funcionalidades de nuestra aplicación.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -895,6 +901,11 @@ En este apartado se mostrará de una forma visual la funcionalidad de la aplicac
     \vspace{\fill}
 \end{figure}
 
+Al instalar la app, se nos habilitan en el configurador todos aquellos componentes de tema que se han desarrollado en la aplicación.
+En la Figura~\ref{fig:ThemeAppExtension} podemos observar la pantalla del configurador del tema, en ella debemos ir a la plantilla de la página de producto y añadir
+en el lugar que consideremos más apropiado el bloque que hemos desarrollado en la extensión de tema de la aplicación. Como puede verse, al instroducir este elemento, se nos muestra en la pantalla de producto
+el botón para abrir el personalizador de artículos que lleva detrás toda la funcionalidad.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -902,6 +913,11 @@ En este apartado se mostrará de una forma visual la funcionalidad de la aplicac
     \caption{\label{fig:ThemeAppExtension}Añadir la extensión de tema de la App en el tema de la tienda}
     \vspace{\fill}
 \end{figure}
+
+Una vez añadida la extensión del tema, debemos dirigirnos a la pantalla del panel de administración que hemos desarrollado en la aplicación. En la Figura~\ref{fig:PanelAdministracion} podemos
+ver un enlace a esta pantalla en la sección \textit{Aplicaciones} $\rightarrow$  \textit{upango\_pedidos\_impresion}. En la Figura~\ref{fig:FuncionalidadAdministracion} observamos dicha pantalla, en ella podemos pulsar el botón \textit{Crear Metadatos} para que se creen 
+automáticamente los metacampos de producto necesarios, y el botón \textit{cart-transform} para que se cree automáticamente en la tienda el objeto cart-transform, el cual hara uso de una función de la aplicación, que 
+dotará al carrito y al checkout de la tienda de una funcionalidad y apariencia de paquetes customizados.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -919,6 +935,13 @@ En este apartado se mostrará de una forma visual la funcionalidad de la aplicac
     \vspace{\fill}
 \end{figure}
 
+Una vez realizadas estas configuraciones y creados en la tienda todos los productos necesarios, trabajos de impresión, tipos de cliche, asociados los productos con sus areas de impresión, y todos los elementos necesarios relacionados con
+la impresión de artículos, ya podemos hacer uso de la tienda con las funcionalidades de personalización de productos integrada.
+
+En la Figura~\ref{fig:HomeTiendaDemo} podemos observar la página principal de la tienda, en ella podemos navegar hacia otros apartados de la tienda, como el catálogo de productos, podemos buscar secciones y productos con el buscador, ir al carrito, seleccionar el idioma y otras funcionalidades.También
+podemos seleccionar cualquier producto de los que nos aparece en destacados para ir a la página de producto y poder añadirlo al carrito o personalizarlo si se trata de un producto
+personalizable.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -927,6 +950,11 @@ En este apartado se mostrará de una forma visual la funcionalidad de la aplicac
     \vspace{\fill}
 \end{figure}
 
+En la imagen~\ref{fig:ProductoNoPersonalizable} podemos ver como hemos navegado hacia una página de producto. En esta, como puede verse, no aparece el botón para personalizar este
+artículo, lo que significa que el producto no es personalizable y en este caso solo podríamos seleccionar la cantidad deseada y añadir al carrito o comprar directamente.
+En la siguiente imagen (Figura~\ref{fig:ProductoPersonalizable}) podemos ver otra página de producto, y en este caso si nos aparece el botón de Personalizar, lo que nos indica que este producto
+si sería personalizable y cuenta con sus áreas de impresión correspondientes y todos sus atributos de personalización. En esta pantalla podemos comprar este producto y tratarlo como en el caso anterior,
+y comprarlo sin personalización, o podemos seleccionar la cantidad que deseemos y pulsar el botón de personalizar para configurar y añadir al carrito los productos a través de la interfaz de personalización.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -943,6 +971,9 @@ En este apartado se mostrará de una forma visual la funcionalidad de la aplicac
     \caption{\label{fig:ProductoPersonalizable}Página de producto personalizable}
     \vspace{\fill}
 \end{figure}
+
+Si pulsamos en el botón de Personalizar, se nos abrirá este personalizador de artículos. En este, como puede en la Figura~\ref{fig:Personalizador}, nos encontramos 
+las distintas areas de impresión con las que cuenta el producto con sus atributos personalizables y a la derecha podemos ir viendo el resumen del pedido presonalizado actualizado.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
