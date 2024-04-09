@@ -845,6 +845,42 @@ Diagrama de navegación
 \subsubsection{Implementación de back-end}
 
 \subsection{Pruebas}
+En cuanto a las pruebas realizadas, a lo largo de todo el proceso de desarrollo de la aplicación, se han ido llevando a cabo pruebas continuas
+con el objetivo de verificar el correcto funcionamiento de las funcionalidades implementadas. Estas pruebas se han ido realizando de manera manual 
+a medida que se iban complentando las diferentes tareas definidas para cada historia de usuario, de modo que la aplicación iba creciendo en funcionalidades 
+a la par que se comprobaba su correcto funcionamiento.
+
+Cada vez que se implementaba una nueva funcionalidad, se realizaban pruebas exhaustivas para asegurar su correcto funcionamiento antes de proceder con la 
+siguiente tarea. Estas pruebas se han enfocado en verificar el correcto funcionamiento tanto del frontend como del backend, pues como hemos comentado anteriormente, 
+el desarrollo de ambas partes de ha ido realizando de forma conjunta.
+
+Es importante destacar que se optó por la realización de pruebas manuales en lugar de la implementación de pruebas automatizadas debido a que se 
+trata de una aplicación relativamente pequeña y con una funcionalidad en la parte de backend bastante limitada, se consideró que el esfuerzo necesario y la inversión
+en tiempo y recursos para establecer pruebas automatizadas no justificaba su implementación. Esta decisión nos permitio una mayor flexibilidad y agilidad durante
+el proceso de desarrollo de nuestra aplicación.
+
+Para realizar las pruebas manuales a la par que ibamos desarrollando las funcionalidades de la aplicación, hemos hecho uso de \textbf{Nodemon}. 
+Esta es una herramienta de línea de comandos para Node.js, cuya función principal es monitorizar los archivos del proyecto y reiniciar autómaticamente
+la aplicación cuando se detectan cambios en el código fuente \cite{nodemon}. 
+Esta herramienta nos ha eliminado la necesidad de detener y reiniciar manualmente el servidor cada vez que hemos realizado modificaciones en el código, 
+lo que ha agilizado el proceso de desarrollo y nos ha permitido comprobar el funcionamiento de cada tarea a la par que se implementaba, pues podíamos observar como
+cada cambio reciente se reflejaba automáticamente.
+
+El uso de nodemon, nos ha facilitado tanto la implementación y pruebas de la parte de frontend como la de backend. En cuanto a la parte del frontend
+nos ha permitido ir creando funcionalidades y dando diseño a esta parte, puediendo observar los resultados de cada cambio en el código en tiempo real,
+lo que nos ha agilizado muchisimo el desarrollo. Por lo que respecta al backend mas de lo mismo, hemos podido ir realizando modificaciones y pruebas de las funcionalidades
+hasta conseguir el resultado esperado, permitiendonos solucionar los errores, mejorar el código y probarlo de forma muy agil y rápida. 
+
+Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los EndPoint de la parte del backend, esta plataforma nos ha permitido enviar 
+solicitudes HTTP a los EndPoints de nuestra aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
+las llamadas desde la parte del frontend, se realizaron pruebas adicionales para garantizar la correcta comunicación entre backend y frontend y asegurando una
+experiencia del usuario fluida y sin errores.
+
+Por último añadir que durante todo el proceso de desarrollo, se han ido realizando pruebas de la parte del front del tema (theme app extensión) en diversos
+navegadores para probar la aplicación desde diferentes entornos y permitirnos identificar problemas de compatibilidad y rendimiento.
+Además hemos hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que nos proporciona la capacidad de simular diferentes 
+tamaños de pantalla y dispositivos actuales, lo que nos ha facilitado el poder probar el diseño responsive de nuestra aplicación a lo largo del desarrollo.
+
 \subsection{Despliegue}
 
 
@@ -879,6 +915,10 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
     \bibitem{devOps} 
     Azure DevOps
     \textit{Azure DevOps}, dirección: \url{https://aodatacloud.es/blog/que-es-azure-devops-y-para-que-sirve/#%C2%BFQue_es_Azure_DevOps} (visitado 31-03-2024).
+
+    \bibitem{nodemon} 
+    Nodemon
+    \textit{Nodemon}, dirección: \url{https://geeknomada.blog/nodejs/que-es-nodemon-en-node-js/} (visitado 09-04-2024).
 
 \end{thebibliography}
 
