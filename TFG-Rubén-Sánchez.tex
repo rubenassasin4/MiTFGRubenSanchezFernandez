@@ -882,7 +882,24 @@ Además hemos hecho uso de una herramienta clave con la que cuentan la mayoría 
 tamaños de pantalla y dispositivos actuales, lo que nos ha facilitado el poder probar el diseño responsive de nuestra aplicación a lo largo del desarrollo.
 
 \subsection{Despliegue}
+Hasta la fecha, en Upango no se ha recibido ninguna solicitud por parte de los clientes que requiera hacer uso de las funciones de personalización de productos
+que ofrece esta aplicación. Dado que no hemos tenido la necesidad de implementar esta aplicación en las tiendas en desarrollo para nuestros clientes hasta el momento, tampoco ha sido 
+necesario contratar los servicios de una empresa de hosting y desplegarla en un servidor privado. Del mismo modo, tampoco hemos adquirido un dominio web público 
+específico para esta aplicación.
 
+Por esta razón, hemos desplegado nuestra aplicación de manera local y haciendo uso de las herramientas de las que nos proporciona Shopify. Para desplegar nuestra aplicación,
+hemos aprovechado las funcionalidades de la Shopify CLI. Esta herramienta cuenta con una interfaz de línea de comandos que nos proporciona diversas funcionalidades para desplegar nuestra aplicación.
+Empleando la Shopify CLI, hemos ejecutado el comando \textit{shopify app dev}, este al ejecutarse inicia un servidor local tanto para el backend como para el frontend, proporcionando
+una dirección URL pública temporal que la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL nos permite lanzar y compartir nuestra aplicación para probarla durante el desarrollo, con la ventaja de que 
+Shopify se encarga de gestionar su seguridad y privacidad.
+
+En este proceso de despliegue, se hace uso de Cloudflare, concretamente de la funcionalidad Cloudflare Tunnel. Esta funcionalidad permite exponer servicios que se ejecutan
+en nuestra infraestructura local a través de la red de Cloudflare, lo que nos proporciona de una capa adicional de seguridad y rendimiento, pues en lugar de 
+exponer directamente nuestros servidores locales a internet, los túneles de Cloudflare establecen una conexión segura a través de la red de Cloudflare y protege nuestros
+servidores de posibles ataques maliciosos, proporcionando una mayor confiabilidad en la entrega de contenido \cite{cloudflare}. 
+
+Al crear un túnel entre nuestro entorno local y la tienda de desarrollo y pruebas empleando Cloudflare, podemos permitir que los servicios que se ejecutan en nuestra infraestructura local
+sean accesibles a través de internet de una manera segura y aprovechándonos de la gran infraestructura de red global con la que cuenta Coudflare para enrrutar el tráfico. 
 
 \section{Conclusiones y vías futuras}
 Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. El trabajo futuro se refiere a carencias actuales del trabajo que están sujetas a mejoras en el futuro, posibles extensiones para dotar de mayor funcionalidad, etc.
@@ -919,6 +936,10 @@ Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. 
     \bibitem{nodemon} 
     Nodemon
     \textit{Nodemon}, dirección: \url{https://geeknomada.blog/nodejs/que-es-nodemon-en-node-js/} (visitado 09-04-2024).
+
+    \bibitem{cloudflare} 
+    Cloudflare
+    \textit{Cloudflare}, dirección: \url{https://www.cloudflare.com/es-es/products/tunnel/} (visitado 11-04-2024).
 
 \end{thebibliography}
 
