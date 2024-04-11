@@ -889,9 +889,18 @@ específico para esta aplicación.
 
 Por esta razón, hemos desplegado nuestra aplicación de manera local y haciendo uso de las herramientas de las que nos proporciona Shopify. Para desplegar nuestra aplicación,
 hemos aprovechado las funcionalidades de la Shopify CLI. Esta herramienta cuenta con una interfaz de línea de comandos que nos proporciona diversas funcionalidades para desplegar nuestra aplicación.
-Empleando la Shopify CLI, hemos ejecutado el comando \textit{shopify app dev}, este al ejecutarse inicia un servidor local tanto para el backend como para el frontend, proporcionando
+Empleando la Shopify CLI, hemos ejecutado el comando \textit{npm run dev} que ejecuta el script definido en el archivo package.json bajo la clave dev. En nuestro caso como se muestra en la Figura~\ref{fig:scriptsPackageJson} estaríamos ejecutando \textit{shopify app dev} el cual es el comando específico para lanzar la aplicación.
+Este al ejecutarse inicia un servidor local tanto para el backend como para el frontend, proporcionando
 una dirección URL pública temporal que la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL nos permite lanzar y compartir nuestra aplicación para probarla durante el desarrollo, con la ventaja de que 
 Shopify se encarga de gestionar su seguridad y privacidad.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes/package.json.scripts.png}
+    \caption{\label{fig:scriptsPackageJson}package.json}
+    \vspace{\fill}
+\end{figure}
 
 En este proceso de despliegue, se hace uso de Cloudflare, concretamente de la funcionalidad Cloudflare Tunnel. Esta funcionalidad permite exponer servicios que se ejecutan
 en nuestra infraestructura local a través de la red de Cloudflare, lo que nos proporciona de una capa adicional de seguridad y rendimiento, pues en lugar de 
