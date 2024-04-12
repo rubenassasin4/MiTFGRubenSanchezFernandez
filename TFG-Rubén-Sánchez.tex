@@ -12,6 +12,7 @@
 \usepackage{fancyvrb}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
+\usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{datetime}
 \usepackage{hyperref}
@@ -891,7 +892,7 @@ Por esta razón, hemos desplegado nuestra aplicación de manera local y haciendo
 hemos aprovechado las funcionalidades de la Shopify CLI. Esta herramienta cuenta con una interfaz de línea de comandos que nos proporciona diversas funcionalidades para desplegar nuestra aplicación.
 Empleando la Shopify CLI, hemos ejecutado el comando \textit{npm run dev} que ejecuta el script definido en el archivo package.json bajo la clave dev. En nuestro caso como se muestra en la Figura~\ref{fig:scriptsPackageJson} estaríamos ejecutando \textit{shopify app dev} el cual es el comando específico para lanzar la aplicación.
 Este al ejecutarse inicia un servidor local tanto para el backend como para el frontend, proporcionando
-una dirección URL pública temporal que la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL nos permite lanzar y compartir nuestra aplicación para probarla durante el desarrollo, con la ventaja de que 
+una dirección URL pública temporal la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL nos permite lanzar y compartir nuestra aplicación para probarla durante el desarrollo, con la ventaja de que 
 Shopify se encarga de gestionar su seguridad y privacidad.
 
 \begin{figure}[ht]
@@ -908,7 +909,37 @@ exponer directamente nuestros servidores locales a internet, los túneles de Clo
 servidores de posibles ataques maliciosos, proporcionando una mayor confiabilidad en la entrega de contenido \cite{cloudflare}. 
 
 Al crear un túnel entre nuestro entorno local y la tienda de desarrollo y pruebas empleando Cloudflare, podemos permitir que los servicios que se ejecutan en nuestra infraestructura local
-sean accesibles a través de internet de una manera segura y aprovechándonos de la gran infraestructura de red global con la que cuenta Coudflare para enrrutar el tráfico. 
+sean accesibles a través de internet de una manera segura y aprovechándonos de la gran infraestructura de red global con la que cuenta Coudflare para enrrutar el tráfico.
+
+En el caso de que nuestros clientes solicitasen los servicios de esta aplicación y necesitasemos hacer un despliegue real, seguiríamos el siguiente procendimiento que ya hemos utilizado para
+desplegar otro tipo de aplicaciones.
+En primer lugar contrataríamos los servicios de hosting para alojar nuestra aplicación en un servidor y nos haríamos con un dominio o subdominio
+que esté apuntando a ese servidor. Una vez tenemos el servidor, nos conectamos a el mediante SSH para proceder a configurarlo. En nuestro caso para trabajar cómodamente en este servidor remoto,
+hacemos uso de herramientas como \textbf{Remote Explorer} y \textbf{Remote SSH}, estas son extensiones de Visual Studio Code que nos permiten trabajar de una manera mas eficiente y comoda con los archivos del
+servidor empleando el editor de código. Estas herramientas nos facilitan la conexión al servidor, las configuraciones y despliegue de aplicaciones que realizamos en el, y a la hora 
+de tener que analizar errores y solucionarlos una vez la aplicación está en producción, nos amenizan estas tareas de manipular el código.
+
+Estando ya dentro del servidor, necesitamos instalar varias herramientas esenciales, si no están presentes en este. Entre ellas podemos destacar un servidor web como \textbf{Apache}, que es fundamental para servir nuestra aplicación
+al público; \textbf{npm} y \textbf{Node.js} que nos permitirán ejecutar el código JavaScript en el servidor y administrar las dependencias de nuestro proyecto a través de npm; \textbf{Git}, para poder descargar el código fuente de la aplicación desde 
+nuestro repositorio remoto y en caso realizar modificaciones en el código del servidor poder actualizarlo en el repositorio; y \textbf{pm2}, un administrador de 
+procesos para aplicaciones Node.js que garantiza que nuestras aplicaciones se ejecuten de manera continua gestionando múltiples instancias y permitiendo su reinicio en caso de fallos.
+Una vez vez tenemos preparado el entorno, descargamos la aplicación desde el repositorio remoto e instalamos las dependencias necesarias ejecutando \textit{npm install}. Despues debemos buscar las variables de entorno que genera y configura Shopify al crear una aplicación,
+estas se pueden obtener de varias maneras, o bien a través del panel de partners de Shopify o introduciendo el comando \textbf{npm run shopify app env show}. En la Figura~\ref{fig:VariablesEntorno} podemos observar dichos tokens. Para poder 
+tener diferentes aplicaciones en el servidor con distintas variables, en lugar de crear variables de entorno como tal, se las pasaremos como parámetros al proceso de node.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes/variablesEntornoDespliegue.png}
+    \caption{\label{fig:VariablesEntorno}Variables de entorno de la aplicación}
+    \vspace{\fill}
+\end{figure}
+
+A continuación debemos compilar los archivos del frontend, pues en producción debemos compilar los ficheros de react que hay en el directorio \textit{web/frontend} 
+para generar la carpeta \textit{web/frontend/dist} que contiene los compilados. Al hacer esto, ejecutamos \textit{npm install} para instalar las dependencias del frontend como vite,
+indicamos el valor de la siguiente variable de entorno que necesita para compilar \textit{export SHOPIFY\_API\_KEY=193f58fc9600c8084a97860c490eeb41} y por último ejecutamos \textit{npm run build} para realizar
+la compilación.
+
 
 \section{Conclusiones y vías futuras}
 Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. El trabajo futuro se refiere a carencias actuales del trabajo que están sujetas a mejoras en el futuro, posibles extensiones para dotar de mayor funcionalidad, etc.
