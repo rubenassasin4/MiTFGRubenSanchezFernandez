@@ -940,6 +940,44 @@ para generar la carpeta \textit{web/frontend/dist} que contiene los compilados. 
 indicamos el valor de la siguiente variable de entorno que necesita para compilar \textit{export SHOPIFY\_API\_KEY=193f58fc9600c8084a97860c490eeb41} y por último ejecutamos \textit{npm run build} para realizar
 la compilación.
 
+Una vez hecho esto ya podemos ejecutar la aplicación en modo producción, para ello debemos ejecutar el comando \textit{npm run serve} desde el directorio \textit{web}. Debemos acompañar
+a este comando de unos parámetros para que cuente con sus variables de entorno, estas variables son la SHOPIFY\_API\_KEY, el SHOPIFY\_API\_SECRET, los SCOPES,  el host, es decir la url de la app y el puerto.
+
+Además para que la app esté siempre en ejecución, debemos lanzar el comando npm run serve con sus variables a través de un pm2 start y añadiendo un parámetro name al final para
+darle un nombre al proceso y poder identificarlo y gestionarlo. 
+
+Llegados a este punto nos quedaría configurar el dominio de la aplicación en el servidor, para ello primero debemos modificar la configuración del servidor web Apache en nuestro caso, para que 
+el dominio apunte al servidor y se haga un mapeo al puerto correspondiente de la aplicación. Esto implica editar archivos de configuración del servidor como el archivo \textit{http\_node.conf}. 
+A continuación se deben crear y configurar los certificados SSL para admitir HTTPS, empleando herramientas como Let's Encrypt para generar certificados gratuitos, y una vez configurados los
+certificados, actualizamos la configuración del servidor para que acepte conexiones HTTPS en el puerto 443. Una vez hecho esto debemos reiniciar Apache para que los cambios surtan
+efecto y la aplicación pueda ser accedida correctamente a través del dominio configurado.
+
+Por último, debemos ajustar la configuración de la aplicación desde el panel de administración de partners para que la aplicación reconozca el nuevo dominio (Figura~\ref{fig:ConfiguracionAppPartner}) y generar un enlace de instalación de esta aplicación
+para instalarla en la tienda que lo solicite (Figura~\ref{fig:DistributionAppPartners}, Figura~\ref{fig:generarLinkDistribution}).
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes/panelPartnersDistribution.png}
+    \caption{\label{fig:ConfiguracionAppPartners}Configuración de la aplicación}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes/distribucionAppEnlace.png}
+    \caption{\label{fig:DistributionAppPartners}Distribución de la aplicación}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes/generarLinkDistribution.png}
+    \caption{\label{fig:generarLinkDistribution}Generar link de distribución}
+    \vspace{\fill}
+\end{figure}
 
 \section{Conclusiones y vías futuras}
 Puede estar subdividido en dos apartados: (1) conclusiones, (2) trabajo futuro. El trabajo futuro se refiere a carencias actuales del trabajo que están sujetas a mejoras en el futuro, posibles extensiones para dotar de mayor funcionalidad, etc.
