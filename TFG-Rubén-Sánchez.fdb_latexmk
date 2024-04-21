@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1713723293.7889 "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" "TFG-Rubén-Sánchez.pdf" "TFG-Rubén-Sánchez" 1713723299.48684 0
+["pdflatex"] 1713737840.58691 "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" "TFG-Rubén-Sánchez.pdf" "TFG-Rubén-Sánchez" 1713737846.25954 0
   "C:/Users/RubénSanchezFernande/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1710356275 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/RubénSanchezFernande/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710354637 24232598 b087d821289dcfad177ae35441a81227 ""
   "C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -142,12 +142,12 @@
   "C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "TFG-Rubén-Sánchez.aux" 1713723299 15027 5cfae401e66a65035711af09868aa2d5 "pdflatex"
-  "TFG-Rubén-Sánchez.lof" 1713723299 2868 b07d5ba12107b67804ee582f169d704e "pdflatex"
-  "TFG-Rubén-Sánchez.out" 1713723299 4744 608b394d01cf099a455c475fa5c84e53 "pdflatex"
-  "TFG-Rubén-Sánchez.tex" 1713723286 100253 4a49b9df4ad845a6351d9df8c914586f ""
-  "TFG-Rubén-Sánchez.toc" 1713723299 4183 58d99ea4d35bf5dc90c71b6f8cc1132c "pdflatex"
-  "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" 1713723286 100253 4a49b9df4ad845a6351d9df8c914586f ""
+  "TFG-Rubén-Sánchez.aux" 1713737845 15115 14f1402fe4f979dbe604d8944e06aa5d "pdflatex"
+  "TFG-Rubén-Sánchez.lof" 1713737845 2868 b07d5ba12107b67804ee582f169d704e "pdflatex"
+  "TFG-Rubén-Sánchez.out" 1713737845 4744 608b394d01cf099a455c475fa5c84e53 "pdflatex"
+  "TFG-Rubén-Sánchez.tex" 1713737834 100535 8f9f9d19786aab986162fdae487f09ce ""
+  "TFG-Rubén-Sánchez.toc" 1713737845 4183 629b127353005760f112ffbe6dd05dab "pdflatex"
+  "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" 1713737834 100535 8f9f9d19786aab986162fdae487f09ce ""
   "imagenes/Backlogs de Devops.png" 1712267377 91423 a935f3b0b510ef4edb5ae6712ba937a2 ""
   "imagenes/Estados y prioridad de tarea.png" 1712268351 44668 eaa2c199b553c2399e3f49b4bfb66364 ""
   "imagenes/Interfaz de administración.png" 1712058233 141254 c5a661de95205408d9d7b71aa9785f2e ""
