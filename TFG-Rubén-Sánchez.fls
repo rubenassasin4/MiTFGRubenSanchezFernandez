@@ -228,6 +228,7 @@ INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\pub
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT .\TFG-Rubén-Sánchez.toc
 INPUT .\TFG-Rubén-Sánchez.toc
 INPUT TFG-Rubén-Sánchez.toc
@@ -266,13 +267,14 @@ INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\ams
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx8.tfm
 OUTPUT TFG-Rubén-Sánchez.toc
 INPUT .\TFG-Rubén-Sánchez.lof
 INPUT .\TFG-Rubén-Sánchez.lof
 INPUT TFG-Rubén-Sánchez.lof
 OUTPUT TFG-Rubén-Sánchez.lof
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmro12.tfm
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT .\imagenes\Interfaz de administración.png
 INPUT .\imagenes\Interfaz de administración.png
 INPUT .\imagenes\Interfaz de administración.png
@@ -309,7 +311,6 @@ INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx8.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
@@ -356,28 +357,28 @@ INPUT .\imagenes\ManualUsuario\PantallaDePersonalizarTema.png
 INPUT .\imagenes\ManualUsuario\PantallaDePersonalizarTema.png
 INPUT .\imagenes\ManualUsuario\PantallaDePersonalizarTema.png
 INPUT .\imagenes\ManualUsuario\PantallaDePersonalizarTema.png
+INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
+INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
+INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
-INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
-INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
-INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
-INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
-INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
-INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
-INPUT .\imagenes\ManualUsuario\AñadirBloqueThemeExtension.png
-INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\PaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
-INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
 INPUT .\imagenes\ManualUsuario\HomeTiendaDemo.png
 INPUT .\imagenes\ManualUsuario\HomeTiendaDemo.png
 INPUT .\imagenes\ManualUsuario\HomeTiendaDemo.png
