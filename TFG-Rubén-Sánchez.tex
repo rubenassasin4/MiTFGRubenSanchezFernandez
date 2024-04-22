@@ -154,8 +154,8 @@ Esto se escribe lo último, junto con el resumen y el abstract. Se establece el 
 
 \newpage
 \section{Estado del arte}
-En este apartado se expondrá por un lado el contexto inicial y la situación de partida junto con el problema a solucionar que se nos plantea y por 
-otro lado se realizará un análisis de las herramientas y tecnologías que hemos decidido emplear para el desarrollo de la solución al problema.
+En este apartado se expondrá por un lado el contexto inicial y la situación de partida junto con el problema a solucionar que se plantea y por 
+otro lado se realizará un análisis de las herramientas y tecnologías que se han decidido emplear para el desarrollo de la solución al problema.
 \subsection{Contexto y análisis de la situación de partida}
 Este Trabajo de Fin de Grado (TFG) ha sido desarrollado en colaboración con Upango, empresa especializada en transformaciones digitales B2B.
 Durante años ha trabajado con uno de los proveedores de soluciones de tiendas online más populares del mundo como es ePages \cite{epages},
@@ -166,7 +166,7 @@ electrónico a medida con funcionalidades de personalización de productos.
 
 Recientemente se ha decidido migrar de ePages a otra plataforma de comercio electrónico como es Shopify\cite{shopify} que ofrece otras tecnologías y herramientas
 para el desarrollo personalizado de tiendas online. Debido a esta migración, los desarrollos a medida y aplicaciones estandarizadas de la otra plataforma quedan obsoletas para nuevos desarrollos
-y surge la necesidad de adaptarse a estas nuevas herramientas y funcionalidades que nos proporciona Shopify para conseguir crear estos desarrollos de comercio a medida. Por lo que, si
+y surge la necesidad de adaptarse a estas nuevas herramientas y funcionalidades que proporciona Shopify para conseguir crear estos desarrollos de comercio a medida. Por lo que, si
 bien en las tiendas de ePages de los actuales clientes existen ya desarrollos y funcionalidades para la personalización de artículos, la transición a Shopify requiere la creación de
 una nueva solución y adaptación para esta plataforma.
 
@@ -197,8 +197,8 @@ tiene un impacto positivo en el posicionamiento SEO y en la tasa de conversión.
 elevadas del mercado. \cite{shopify}
 
 Una de las características con las que cuenta Shopify, es la habilidad de poder crear aplicaciones que puedan ampliar las capacidades existentes 
-de esta plataforma. Esto nos permite agregar funcionalidades a las tiendas, ampliar la experiencia de la parte de administración
-o crear experiencias de compra únicas para nuestros clientes. Gracias a esto los usuarios pueden instalar estas aplicaciones para ayudar a desarrollar
+de esta plataforma. Esto permite agregar funcionalidades a las tiendas, ampliar la experiencia de la parte de administración
+o crear experiencias de compra únicas para los clientes. Gracias a esto los usuarios pueden instalar estas aplicaciones para ayudar a desarrollar
 su negocio, integrarse con servicios externos y agregar funciones a su panel de control de Shopify. \cite{shopify-dev}
 
 \subsubsection{Frontend}
@@ -207,7 +207,7 @@ Por un lado se puede encontrar el frontend asociado a la parte de administració
 Esta parte hace referencia a la interfaz del usuario que los administradores de la tienda emplean para gestionar y controlar los diversos aspectos de
 la misma, como la gestión de productos, pedidos, clientes, configuración de temas, traducciones y otros muchos aspectos de configuración de la tienda.
 Al instalar la aplicación en las tiendas que necesiten de sus funcionalidades esta parte del frontend se integrará con la página de administración de 
-cada tienda, proporcionando la interfaz y las funcionalidades que se configuren en esta parte del desarrollo. En la Figura~\ref{fig:1} podemos observar la 
+cada tienda, proporcionando la interfaz y las funcionalidades que se configuren en esta parte del desarrollo. En la Figura~\ref{fig:1} se puede observar la 
 interfaz de administración de una tienda Shopify en desarrollo.
 
 \begin{figure}[ht]
@@ -222,14 +222,14 @@ Esta parte del frontend ha sido desarrollada empleando la biblioteca de JavaScri
 compañia Facebook (Meta) junto a una gran comunidad de desarrolladores independientes que, desde su lanzamiento en 2013, se ha convertido en una
 de las tecnologías de frontend más usadas, ya que permite construir interfaces de usuario dinámicas y escalables. Esta se usa en el desarrollo de aplicaciones web y móviles \cite{react-pag-1}. 
 
-Toda aplicación web React, se compone de componentes reutilizables que conforman partes de la interfaz de usuario. Podemos tener un componente distinto para
-nuestra barra de navegación, otro para el pie de página, otro para el contenido principal, etc.
+Toda aplicación web React, se compone de componentes reutilizables que conforman partes de la interfaz de usuario. Permite tener un componente distinto para
+la barra de navegación, otro para el pie de página, otro para el contenido principal, etc.
 Tener estos componentes reutilizables facilita el desarrollo ya que no es necesario repetir el código reiterativo, solo habría que crear su lógica e
 importar el componente en cualquier parte del código donde se necesite. Estos componentes representan una fusión de la estructura \textbf{HTML} con la funcionalidad de \textbf{JavaScript}.
 React también conforma una aplicación de una sola página, por tanto, en lugar de enviar una petición al servidor cada vez que hay que renderizar una nueva página,
 el contenido de la misma se carga directamente desde los componentes de React conduciendo de este modo a una renderización más rápida sin recargas de página. \cite{react-pag-2}
 
-Para la integración de nuestra aplicación con el panel de administración de las tiendas Shopify se ha hecho uso de \textbf{App Bridge}, una biblioteca de JavaScript
+Para la integración de la aplicación con el panel de administración de las tiendas Shopify se ha hecho uso de \textbf{App Bridge}, una biblioteca de JavaScript
 desarrollada por Shopify que permite a los desarrolladores integrar las aplicaciones personalizadas para las tiendas. Se trata de una interfaz
 de programación diseñada para facilitar la comunicación entre la tienda y las aplicaciones externas, que proporciona herramientas y funcionalidades
 que permiten a los desarrolladores que sus aplicaciones se integren de forma nativa en el panel de administración y en la experiencia de compra
@@ -258,7 +258,7 @@ ya sean los temas que proporciona Shopify o temas desarrollados y personalizados
 configurados desde la interfaz de administración por los comerciantes.
 En la Figura~\ref{fig:2} se muestra la pantalla de la interfaz de administración en la que aparece el tema seleccionado; además se puede observar una 
 biblioteca de temas con otros temas sin publicar. También se puede destacar el botón de personalizar que aparece
-sobre el tema que está activo; este nos abriría un editor que nos permitiría ajustar ciertos aspectos visuales y detalles funcionales del tema establecido.
+sobre el tema que está activo; este abriría un editor que permitiría ajustar ciertos aspectos visuales y detalles funcionales del tema establecido.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -268,13 +268,13 @@ sobre el tema que está activo; este nos abriría un editor que nos permitiría 
     \vspace{\fill}
 \end{figure}
 
-Para ampliar el tema de las tiendas en las que se instale la aplicación que hemos desarrollado y así poder dotarla de las funcionalidades de personalización de 
-artículos, hemos creado en la aplicación lo que se conoce como \textbf{App Theme Extension}. Las extensiones de aplicaciones de temas permiten a los comerciantes
+Para ampliar el tema de las tiendas en las que se instale la aplicación que se ha desarrollado y así poder dotarla de las funcionalidades de personalización de 
+artículos, se ha creado en la aplicación lo que se conoce como \textbf{App Theme Extension}. Las extensiones de aplicaciones de temas permiten a los comerciantes
 agregar fácilmente elementos dinámicos a sus temas sin tener que interactuar directamente con las plantillas o el código \textbf{Liquid} del tema. Estas extensiones
 se integran con el tema de la tienda exponiendo automáticamente en el editor de temas las secciones y elementos que haya programados en la aplicación. \cite{shopify-dev}
 Una de las ventajas de desarrollar estas partes del tema en la aplicación y no directamente en el tema de la tienda, es que las secciones de código y funcionalidades
-que programemos en la aplicación pasarán a estar disponibles en el tema de la tienda en la que se instale directamente sin necesidad de tener que ir modificando el tema
-de cada tienda en la que queramos instalar la aplicación. Es decir, puede implementarse la aplicación al mismo tiempo en todas las tiendas que la usan,
+que se progarmen en la aplicación pasarán a estar disponibles en el tema de la tienda en la que se instale directamente sin necesidad de tener que ir modificando el tema
+de cada tienda en la que se necesite instalar la aplicación. Es decir, puede implementarse la aplicación al mismo tiempo en todas las tiendas que la usan,
 sin necesidad de que los comerciantes tengan que editar manualmente el código del tema.
 
 Los \textbf{App Theme Extension} tienen una estructura similar a los temas, ya que son como una prolongación de ellos. Estos contienen los siguientes recursos. 
@@ -285,7 +285,7 @@ para implementar un sistema de traducciones en los idiomas que se configuren. \c
 
 Como se ha comentado anteriormente, para el desarrollo de estas interfaces del tema se emplea \textbf{Liquid}, un lenguaje de plantillas creado por Shopify que
 permite crear una sola plantilla para alojar el contenido estático e insertar información dinámicamente en función de dónde se representa la plantilla.
-Por ejemplo, podemos crear plantillas de producto que alojen todos los atributos estándar de este, como la imagen, el título, el precio y demás, y esta 
+Por ejemplo, se pueden crear plantillas de producto que alojen todos los atributos estándar de este, como la imagen, el título, el precio y demás, y esta 
 plantilla puede representar dinámicamente esos atributos con el contenido adecuado en función del valor actual que se esté viendo. \cite{shopify-dev}
 Además, en las plantillas junto con Liquid se ha empleado \textbf{HTML}, \textbf{CSS} y \textbf{JavaScript} para completar el desarrollo de la extensión del tema. Se hace uso de HTML para estructurar
 el contenido y crear elementos de las páginas, CSS para definir y dar estilos visuales a los elementos, y JavaScript para agregar la interactividad y la 
@@ -297,7 +297,7 @@ de artículos del mismo, mostrar recomendaciones de productos relaccionados, sug
 en un campo de búsqueda y una larga lista de funcionalidades que serán útiles para interactuar con la tienda.\cite{shopify-dev}
 
 \subsubsection{Backend}
-En cuanto al Backend de la aplicación vamos a usar \textbf{Node.js}. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
+En cuanto al Backend de la aplicación se ha hecho uso de \textbf{Node.js}. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
 que permite a los desarrolladores crear toda clase de herramientas del lado del servidor y aplicaciones en \textbf{JavaScript}. 
 Además proporciona un gran numero de ventajas. 
 
@@ -305,7 +305,7 @@ Además proporciona un gran numero de ventajas.
 \item Ofrece un gran rendimiento, pues ha sido diseñado específicamente para optimizar el rendimiento y la
 escalabilidad en aplicaciones web, lo que lo convierte en un excelente complemento para resolver problemas comunes de desarrollo web como aplicaciones
 en tiempo real. 
-\item Todo el código se escribe en JavaScript, lo que nos simplifica trabajo y ahorra tiempo al no tener que preocuparse por las conmutaciones
+\item Todo el código se escribe en JavaScript, lo que simplifica trabajo y ahorra tiempo al no tener que preocuparse por las conmutaciones
 de contexto entre diferentes lenguajes al escribir tanto el código del navegador como del servidor. 
 \item JavaScript es un lenguaje relativamente nuevo y se beneficia de los avances en diseño de lenguajes en comparación con otros lenguajes tradicionales. 
 \item \textbf{Node} cuenta con \textbf{NPM} (Node Packet Manager), un gestor de paquetes que proporciona acceso a una amplia gama de paquetes reutilizables, ofrece una excelente resolución de dependencias y permite automatizar
@@ -331,16 +331,16 @@ deben autenticarse además de contar con los ámbitos de acceso pertinentes para
 
 \subsubsection{Otras tecnologías}
 Para la elaboración de este TFG se ha empleado \textbf{Visual Studio Code} como entorno de desarrollo tanto para la creación de la aplicación como para
-la redación del propio TFG en \textbf{LaTeX}, empleando una serie de extensiones que nos han facilitado el trabajo. 
-Hemos aprovechado extensiones como Shopify Liquid Templates, Shopify Liquid, 
+la redación del propio TFG en \textbf{LaTeX}, empleando una serie de extensiones que han facilitado el trabajo. 
+Se han aprovechado extensiones como Shopify Liquid Templates, Shopify Liquid, 
 Polaris for VS Code, JavaScript (ES6), GraphQL, Latex Language support, Latex Workshop y ESLint para garantizar un desarrollo y documentación
 fluida y eficaz. Estas extensiones han proporcionado una serie de funcionalidades como resaltado de sintaxis, autocompletado y validación de código, 
-acceso rápido a la documentación, formateo de código y una serie de ventajas que nos han facilitado significativamente la creación y documentación de la aplicación.
+acceso rápido a la documentación, formateo de código y una serie de ventajas que han facilitado significativamente la creación y documentación de la aplicación.
 
-Hemos empleado \textbf{Git} para llevar un control de versiones de la aplicación junto con \textbf{Azure DevOps}, una plataforma de Microsoft que nos ofrece una amplia
-gama de características y funcionalidades que nos permiten a los equipos de desarrolo colaborar de manera efectiva en equipo y optimizar el proceso de desarrollo
-de software. Esta herramienta nos ofrece gestión del código fuente, permitiendonos almacenar y administrar el código fuente de nuestro proyecto en 
-repositorios de código. También nos facilita la planificación, asignación y seguimiento de las tareas, problemas y requisitos del proyecto, haciendo
+Se ha empleado \textbf{Git} para llevar un control de versiones de la aplicación junto con \textbf{Azure DevOps}, una plataforma de Microsoft que ofrece una amplia
+gama de características y funcionalidades que permiten a los equipos de desarrolo colaborar de manera efectiva en equipo y optimizar el proceso de desarrollo
+de software. Esta herramienta ofrece gestión del código fuente, permitiendonos almacenar y administrar el código fuente de nuestro proyecto en 
+repositorios de código. También facilita la planificación, asignación y seguimiento de las tareas, problemas y requisitos del proyecto, haciendo
 un seguimiento del trabajo, y muchas otras fucionalidades útiles para el desarrollo como seguimiento, pruebas y gestión del ciclo de vida de los proyectos. \cite{devOps}
 
 \newpage
@@ -349,14 +349,13 @@ En esta sección se describen los objetivos que se persiguen con el desarrollo d
 
 \subsection{Objetivos}
 
-El objetivo principal de este TFG consiste en el análisis, diseño y desarrollo de una aplicación para la plataforma Shopify que nos permita
+El objetivo principal de este TFG consiste en el análisis, diseño y desarrollo de una aplicación para la plataforma Shopify que permita
 la personalización de productos para su posterior compra en las tiendas en las que se acople dicha aplicación. Para conseguir lograr este objetivo 
 principal, se han propuesto los siguientes objetivos específicos.
 
 \begin{enumerate}
-    \item Realizar el análisis y estudio de las tecnologías y herramientas necesarias para el desarrollo de esta aplicación. \label{item:objetivo1}
+    \item Estudiar las tecnologías y herramientas útiles para el desarrollo de esta aplicación. \label{item:objetivo1}
     \item Analizar las funcionalidades y requisitos necesarios que debe tener la aplicación en base a los requisitos solicitados por antiguos clientes. \label{item:objetivo2}
-    \item Habiendo hecho el estudio de tecnologías y análisis de requisitos, realizar una división de tareas para obtener una serie de pasos a seguir para lograr el desarrollo. (Diseño) \label{item:objetivo3}
     \item Implementar la aplicación siguiendo la división de tareas establecida. \label{item:objetivo4}
     \item Analizar algunas funcionalidades o requisitos adicionales que puedan requerir los futuros clientes y diseñar y dividir su implementación en tareas. \label{item:objetivo5}
     \item Implementar estas nuevas funcionalidades siguiendo las tareas para mejorar la aplicación. \label{item:objetivo6}
@@ -365,24 +364,25 @@ principal, se han propuesto los siguientes objetivos específicos.
 \end{enumerate}
 
 \subsection{Metodología}
-Etapas en las que se ha divido la realización del TFG, con indicación de fechas de inicio/fin.
+En este apartado se expondrán las distintas etapas en las que se ha dividido la realización de este TFG y el proceso de desarrollo que se ha 
+llevado a cabo durante todo este periodo.
 
 \subsubsection{Temporalización}
 
 \begin{enumerate}[label={\textbf{\textbullet}}]
     \item \textbf{Etapa 1. Análisis inicial.} Esta primera etapa comprende el objetivo \ref{item:objetivo1}. En este periodo se realiza un estudio de las tecnologías
-    que necesitamos para llevar a cabo el desarrollo y en base al estudio se va realizando un primer planteamiento de la solución a desarrollar. Esta etapa se puede dividir en las siguientes fases.
+    necesarias para llevar a cabo el desarrollo y en base al estudio se va realizando un primer planteamiento de la solución a desarrollar. Esta etapa se puede dividir en las siguientes fases.
     \begin{enumerate}
         \item Estudiar la plataforma Shopify y todas sus funcionalidades, como controlar la parte de administración de una tienda, aprender a crear aplicaciones, desarrollar temas y configurarlos y demás.
         \item Estudiar las tecnologías para la primera parte del Frontend en este caso React y sus bibliotecas.
         \item Estudiar las tecnologías para la segunda parte del Frontend (Extensión de tema), ponerse al día con Liquid, HTML, CSS y JavaScript.
         \item Estudiar las tecnologías para la parte del Backend en nuestro caso Node.js y su libería Express. 
     \end{enumerate}
-    \item \textbf{Etapa 2. Análisis de requisitos y diseño funcionalidades principales.} Esta etapa comprende los objetivos \ref{item:objetivo2} y \ref{item:objetivo3}.
+    \item \textbf{Etapa 2. Análisis de requisitos y diseño funcionalidades principales.} Esta etapa comprende el objetivo \ref{item:objetivo2}.
     Durante esta estapa se realiza un análisis de requisitos básicos que debe tener la aplicación, se crean las historias de usuario correspondientes en base a esos requisitos y se realiza un diseño de cada
     funcionalidad a implementar dividiendo su desarrollo en tareas.
     \item \textbf{Etapa 3. Implementación de la aplicación.} Esta etapa comprende los objetivos \ref{item:objetivo4}, \ref{item:objetivo5} y \ref{item:objetivo6}.
-    Esta es la etapa mas larga del desarrollo, en ella se implementan las tareas diseñadas, y vamos cumpliendo todas esas historias de usuario y requisitos analizados previamente.
+    Esta es la etapa mas larga del desarrollo, en ella se implementan las tareas diseñadas, y se van cumpliendo todas esas historias de usuario y requisitos analizados previamente.
     La implementación tanto de la parte Backend como del Frontend se ha ido alternando y desarrollando correlativamente según estaba diseñado en las tareas. Cabe destacar que el desarrollo de esta aplicación se ha focalizado
     más en el Frontend que en el Backend, pues la mayor parte de funcionalidades de la misma recaen sobre la parte Front. En esta etapa se ha ido probando en una tienda de desarrollo cada una de las funcionalidades implementadas en las tareas, 
     para ir comprobando el funcionamiento de la aplicación. Una vez desarrolladas y comprobadas todas las tareas se han diseñado, implementado y probado unas casuísticas y funcionalidades
@@ -390,8 +390,8 @@ Etapas en las que se ha divido la realización del TFG, con indicación de fecha
     \item \textbf{Etapa 4. Despliegue en tienda de muestra.} Esta etapa comprende el objetivo \ref{item:objetivo7}. 
     Durante esta etapa, se instala la aplicación en una tienda de muestra y se realiza el diseño y maquetación del tema de la misma. Además se rediseña el frontend (extensión de tema) de la aplicación de modo que el diseño del personalizador de artículos
     encaje con el diseño general de la tienda. En esta etapa también se realizan pruebas de todo el funcionamiento del personalizador y se realizan pedidos ficticios para comprobar el correcto
-    funcionamiento de todo el desarrollo. Gracias al trabajo de esta etapa hemos conseguido desarrollar una tienda de demostración con la funcionalidad de personalización de artículos, que podemos
-    mostrar a esos posibles clientes para realizarles una demostración del potencial de las funcionalidades de personalización de artículos.
+    funcionamiento de todo el desarrollo. Gracias al trabajo de esta etapa se ha conseguido desarrollar una tienda de demostración con la funcionalidad de personalización de artículos, que permite
+    mostrar esta aplicación a esos posibles clientes para realizarles una demostración del potencial de las funcionalidades de personalización de artículos.
     \item \textbf{Etapa 5. Documentación y desarrollo del TFG.} Esta última estapa comprende el objetivo \ref{item:objetivo8}. Durante esta etapa
     se lleva a acabo la documentación del Trabajo de Fin de Grado, se redacta de una forma estructurada todo el procedimiento llevado a cabo para desarrollar
     la aplicación y se llevan cabo reuniones con el tutor para ir revisando y compartiendo opiniones sobre la documentación.
@@ -399,18 +399,18 @@ Etapas en las que se ha divido la realización del TFG, con indicación de fecha
 
 \subsubsection{Proceso de desarrollo}
 En la implementación de este proyecto se ha seguido un proceso de desarrollo enfocado en las metodologías ágiles, caracterizado por su naturaleza iterativa e incremental y por su fácil adaptabilidad a los cambios. Como se ha podido observar en las etapas del desarrollo,
-hemos implementado las funcionalidades de manera iterativa, lo que nos ha permitido construir las distintas partes de la aplicación paso a paso e ir probándolas en varios ciclos.
-Esta práctica nos ha permitido la obtención de retroalimentación y la capacidad de realizar ajustes a lo largo del desarrollo según ha sido necesario.
-Además una vez implementamos y probamos las funcionalidades básicas de la aplicación, estas se ampliaron y se desarrollaron una serie de casuísticas y funciones adicionales para preaparar la aplicación a posibles
+se han implementado las funcionalidades de manera iterativa, lo que ha permitido construir las distintas partes de la aplicación paso a paso e ir probándolas en varios ciclos.
+Esta práctica ha permitido la obtención de retroalimentación y la capacidad de realizar ajustes a lo largo del desarrollo según ha sido necesario.
+Además una vez implementadas y probadas las funcionalidades básicas de la aplicación, estas se ampliaron y se desarrollaron una serie de casuísticas y funciones adicionales para preaparar la aplicación a posibles
 requisitos futuros. Esto demuestra la capacidad de adaptación a los cambios según las necesidades de los clientes. De hecho esta es una aplicación con una funcionalidad estandarizada, pero 
 cada cliente solicita desarrollos personalizados que difieren bastante unos de otros, por lo que la adaptabilidad a los cambios de esta aplicación es una característica fundamental para el ámbito en el que se ha creado.
 Además el uso de Azure DevOps para gestionar, las historias de usuario y las tareas asociadas a esas historias, añade otro elemento característico y fundamental de las metodologías ágiles, especialmente con un enfoque como Kanban o Scrum.
 Esto se debe a que Azure DevOps, proporciona una interfaz visual para organizar las tareas de este proyecto, y donde todo el equipo tiene visible el progreso y desarrollo del mismo.
-Nos ofrece una funcionalidad de backlogs \ref{fig:3}, en la cual podemos crear y gestionar una lista prioritaria de elementos que representan el trabajo pendiente de un proyecto, en nuestro caso la aplicación de personalización de artículos. En nuestro marco de trabajo, este backlog contiene todas las funcionalidades, características, mejoras y correcciones que se desean implementar
+Ofrece una funcionalidad de backlogs \ref{fig:3}, en la cual se permite crear y gestionar una lista prioritaria de elementos que representan el trabajo pendiente de un proyecto, en este caso la aplicación de personalización de artículos. En el marco de trabajo, este backlog contiene todas las funcionalidades, características, mejoras y correcciones que se desean implementar
 en el producto y estos elementos están descritos en forma de historias de usuario que representan las necesidades del cliente y que contienen las tareas que se deben seguir para el desarrollo.
 Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el producto \ref{fig:4} y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto.
-Además esta herramienta cuenta también con una funcionalidad que nos permite marcar las tareas con diferentes estados como ``Nueva'', ``Activa'', ``Lista para pruebas'', ``Testing'', ``Resuelta'' y ``Cerrada'' \ref{fig:4}. Esto nos permite un seguimiento claro y conciso del flujo de trabajo de cada tarea
-y nos permite una gestión eficiente del trabajo pendiente. También hay que destacar en cuanto al proceso de desarrollo, que tanto la parte de frontend como de backend se ha ido desarrollando y probando correlativamente en función de las necesidades de cada tarea y las funcionalidades a implementar, por lo que como se puede ver, 
+Además esta herramienta cuenta también con una funcionalidad que nos permite marcar las tareas con diferentes estados como ``Nueva'', ``Activa'', ``Lista para pruebas'', ``Testing'', ``Resuelta'' y ``Cerrada'' \ref{fig:4}. Esto permite un seguimiento claro y conciso del flujo de trabajo de cada tarea
+y permite una gestión eficiente del trabajo pendiente. También hay que destacar en cuanto al proceso de desarrollo, que tanto la parte de frontend como de backend se ha ido desarrollando y probando correlativamente en función de las necesidades de cada tarea y las funcionalidades a implementar, por lo que como se puede ver, 
 este desarrollo ha ido creciendo iteración tras iteración y tarea tras tarea en todo su conjunto, mejorando en funcionalidad. Este ha sido creado de tal manera que está preparado para crecer en un futuro continuando con este proceso incremental.
 
 \begin{figure}[ht]
@@ -436,12 +436,12 @@ este desarrollo ha ido creciendo iteración tras iteración y tarea tras tarea e
 \subsection{Análisis}
 El análisis de este proyecto se ha centrado en la creación de historias de usuario, estas son narrativas 
 concisas que describen la funcionalidad deseada desde la perspectiva del usuario final. 
-Estas historias de usuario nos han servido como guía para entender las necesidades de los usuarios y traducirlas en 
-funcionalidades concretas que nuestra aplicación debe proporcionar. Nos hemos basado en ellas para crear
-las tareas que hemos ido siguiendo para implementar esta aplicación.
+Estas historias de usuario han servido como guía para entender las necesidades de los usuarios y traducirlas en 
+funcionalidades concretas que  la aplicación debe proporcionar. Se ha hecho uso de ellas para crear
+las tareas que se han ido siguiendo para implementar esta aplicación.
 
 Cada historia de usuario está compuesta por una descripción detallada de la funcionalidad requerida, así como por criterios de aceptación que 
-nos permiten validar que la funcionalidad ha sido implementada de manera adecuada. Estas son la base sobre la cual hemos construido y hemos evaluado el éxito de nuestra aplicación.
+permiten validar que la funcionalidad ha sido implementada de manera adecuada. Estas son la bases sobre las cuales se ha construido y evaluado el éxito de esta aplicación.
 
 \subsubsection{Historias de usuario}
 
@@ -884,42 +884,42 @@ el desarrollo de ambas partes de ha ido realizando de forma conjunta.
 
 Es importante destacar que se optó por la realización de pruebas manuales en lugar de la implementación de pruebas automatizadas debido a que se 
 trata de una aplicación relativamente pequeña y con una funcionalidad en la parte de backend bastante limitada, se consideró que el esfuerzo necesario y la inversión
-en tiempo y recursos para establecer pruebas automatizadas no justificaba su implementación. Esta decisión nos permitio una mayor flexibilidad y agilidad durante
-el proceso de desarrollo de nuestra aplicación.
+en tiempo y recursos para establecer pruebas automatizadas no justificaba su implementación. Esta decisión permitio una mayor flexibilidad y agilidad durante
+el proceso de desarrollo de la aplicación.
 
-Para realizar las pruebas manuales a la par que ibamos desarrollando las funcionalidades de la aplicación, hemos hecho uso de \textbf{Nodemon}. 
+Para realizar las pruebas manuales a la par que se iban desarrollando las funcionalidades de la aplicación, se ha hecho uso de \textbf{Nodemon}. 
 Esta es una herramienta de línea de comandos para Node.js, cuya función principal es monitorizar los archivos del proyecto y reiniciar autómaticamente
 la aplicación cuando se detectan cambios en el código fuente \cite{nodemon}. 
-Esta herramienta nos ha eliminado la necesidad de detener y reiniciar manualmente el servidor cada vez que hemos realizado modificaciones en el código, 
-lo que ha agilizado el proceso de desarrollo y nos ha permitido comprobar el funcionamiento de cada tarea a la par que se implementaba, pues podíamos observar como
+Esta herramienta ha eliminado la necesidad de detener y reiniciar manualmente el servidor cada vez que se han realizado modificaciones en el código, 
+lo que ha agilizado el proceso de desarrollo y ha permitido comprobar el funcionamiento de cada tarea a la par que se implementaba, pues permitía observar como
 cada cambio reciente se reflejaba automáticamente.
 
-El uso de nodemon, nos ha facilitado tanto la implementación y pruebas de la parte de frontend como la de backend. En cuanto a la parte del frontend
-nos ha permitido ir creando funcionalidades y dando diseño a esta parte, puediendo observar los resultados de cada cambio en el código en tiempo real,
-lo que nos ha agilizado muchisimo el desarrollo. Por lo que respecta al backend mas de lo mismo, hemos podido ir realizando modificaciones y pruebas de las funcionalidades
-hasta conseguir el resultado esperado, permitiendonos solucionar los errores, mejorar el código y probarlo de forma muy agil y rápida. 
+El uso de nodemon, ha facilitado tanto la implementación y pruebas de la parte de frontend como la de backend. En cuanto a la parte del frontend
+ha permitido ir creando funcionalidades y dando diseño a esta parte, puediendo observar los resultados de cada cambio en el código en tiempo real,
+lo que ha agilizado muchisimo el desarrollo. Por lo que respecta al backend mas de lo mismo, se han podido ir realizando modificaciones y pruebas de las funcionalidades
+hasta conseguir el resultado esperado, permitiendo solucionar los errores, mejorar el código y probarlo de forma muy agil y rápida. 
 
-Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los EndPoint de la parte del backend, esta plataforma nos ha permitido enviar 
+Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los EndPoint de la parte del backend, esta plataforma ha permitido enviar 
 solicitudes HTTP a los EndPoints de nuestra aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
 las llamadas desde la parte del frontend, se realizaron pruebas adicionales para garantizar la correcta comunicación entre backend y frontend y asegurando una
 experiencia del usuario fluida y sin errores.
 
-Por último añadir que durante todo el proceso de desarrollo, se han ido realizando pruebas de la parte del front del tema (theme app extensión) en diversos
+Por último añadir que durante todo el proceso de desarrollo, se han ido realizando pruebas de la parte del frontend del tema (theme app extensión) en diversos
 navegadores para probar la aplicación desde diferentes entornos y permitirnos identificar problemas de compatibilidad y rendimiento.
-Además hemos hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que nos proporciona la capacidad de simular diferentes 
-tamaños de pantalla y dispositivos actuales, lo que nos ha facilitado el poder probar el diseño responsive de nuestra aplicación a lo largo del desarrollo.
+Además se ha hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que nos proporciona la capacidad de simular diferentes 
+tamaños de pantalla y dispositivos actuales, lo que ha facilitado el poder probar el diseño responsive de nuestra aplicación a lo largo del desarrollo.
 
 \subsection{Despliegue}
 Hasta la fecha, en Upango no se ha recibido ninguna solicitud por parte de los clientes que requiera hacer uso de las funciones de personalización de productos
-que ofrece esta aplicación. Dado que no hemos tenido la necesidad de implementar esta aplicación en las tiendas en desarrollo para nuestros clientes hasta el momento, tampoco ha sido 
-necesario contratar los servicios de una empresa de hosting y desplegarla en un servidor privado. Del mismo modo, tampoco hemos adquirido un dominio web público 
+que ofrece esta aplicación. Dado que no se ha tenido la necesidad de implementar esta aplicación en las tiendas en desarrollo para los clientes hasta el momento, tampoco ha sido 
+necesario contratar los servicios de una empresa de hosting y desplegarla en un servidor privado. Del mismo modo, tampoco se ha adquirido un dominio web público 
 específico para esta aplicación.
 
-Por esta razón, hemos desplegado nuestra aplicación de manera local y haciendo uso de las herramientas de las que nos proporciona Shopify. Para desplegar nuestra aplicación,
-hemos aprovechado las funcionalidades de la Shopify CLI. Esta herramienta cuenta con una interfaz de línea de comandos que nos proporciona diversas funcionalidades para desplegar nuestra aplicación.
-Empleando la Shopify CLI, hemos ejecutado el comando \textit{npm run dev} que ejecuta el script definido en el archivo package.json bajo la clave dev. En nuestro caso como se muestra en la Figura~\ref{fig:scriptsPackageJson} estaríamos ejecutando \textit{shopify app dev} el cual es el comando específico para lanzar la aplicación.
+Por esta razón, se ha desplegado esta aplicación de manera local y haciendo uso de las herramientas que proporciona Shopify. Para desplegar la aplicación,
+se han aprovechado las funcionalidades de la Shopify CLI. Esta herramienta cuenta con una interfaz de línea de comandos que proporciona diversas funcionalidades para desplegar la aplicación.
+Empleando la Shopify CLI, se ha ejecutado el comando \textit{npm run dev} que ejecuta el script definido en el archivo package.json bajo la clave dev. En este caso como se muestra en la Figura~\ref{fig:scriptsPackageJson} se estaría ejecutando \textit{shopify app dev} el cual es el comando específico para lanzar la aplicación.
 Este al ejecutarse inicia un servidor local tanto para el backend como para el frontend, proporcionando
-una dirección URL pública temporal la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL nos permite lanzar y compartir nuestra aplicación para probarla durante el desarrollo, con la ventaja de que 
+una dirección URL pública temporal la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL permite lanzar y compartir esta aplicación para probarla durante el desarrollo, con la ventaja de que 
 Shopify se encarga de gestionar su seguridad y privacidad.
 
 \begin{figure}[ht]
@@ -931,20 +931,20 @@ Shopify se encarga de gestionar su seguridad y privacidad.
 \end{figure}
 
 En este proceso de despliegue, se hace uso de Cloudflare, concretamente de la funcionalidad Cloudflare Tunnel. Esta funcionalidad permite exponer servicios que se ejecutan
-en nuestra infraestructura local a través de la red de Cloudflare, lo que nos proporciona de una capa adicional de seguridad y rendimiento, pues en lugar de 
-exponer directamente nuestros servidores locales a internet, los túneles de Cloudflare establecen una conexión segura a través de la red de Cloudflare y protege nuestros
+en una infraestructura local a través de la red de Cloudflare, lo que proporciona una capa adicional de seguridad y rendimiento, pues en lugar de 
+exponer directamente los servidores locales a internet, los túneles de Cloudflare establecen una conexión segura a través de la red de Cloudflare y protege los
 servidores de posibles ataques maliciosos, proporcionando una mayor confiabilidad en la entrega de contenido \cite{cloudflare}. 
 
-Al crear un túnel entre nuestro entorno local y la tienda de desarrollo y pruebas empleando Cloudflare, podemos permitir que los servicios que se ejecutan en nuestra infraestructura local
+Al crear un túnel entre el entorno local y la tienda de desarrollo y pruebas empleando Cloudflare, se puede permitir que los servicios que se ejecutan en la infraestructura local
 sean accesibles a través de internet de una manera segura y aprovechándonos de la gran infraestructura de red global con la que cuenta Coudflare para enrrutar el tráfico.
 
-En el caso de que nuestros clientes solicitasen los servicios de esta aplicación y necesitasemos hacer un despliegue real, seguiríamos el siguiente procendimiento que ya hemos utilizado para
+En el caso de que los clientes de Upango solicitasen los servicios de esta aplicación y se necesitase hacer un despliegue real, seguiríamos el siguiente procendimiento que ya se ha utilizado para
 desplegar otro tipo de aplicaciones.
-En primer lugar contrataríamos los servicios de hosting para alojar nuestra aplicación en un servidor y nos haríamos con un dominio o subdominio
-que esté apuntando a ese servidor. Una vez tenemos el servidor, nos conectamos a el mediante SSH para proceder a configurarlo. En nuestro caso para trabajar cómodamente en este servidor remoto,
-hacemos uso de herramientas como \textbf{Remote Explorer} y \textbf{Remote SSH}, estas son extensiones de Visual Studio Code que nos permiten trabajar de una manera mas eficiente y comoda con los archivos del
-servidor empleando el editor de código. Estas herramientas nos facilitan la conexión al servidor, las configuraciones y despliegue de aplicaciones que realizamos en el, y a la hora 
-de tener que analizar errores y solucionarlos una vez la aplicación está en producción, nos amenizan estas tareas de manipular el código.
+En primer lugar se contratarían los servicios de hosting para alojar la aplicación en un servidor y  habría que hacerse con un dominio o subdominio
+que esté apuntando a ese servidor. Una vez obtenido el servidor, habría que conectarse a el mediante SSH para proceder a configurarlo. En este caso para trabajar cómodamente en este servidor remoto,
+haríamos uso de herramientas como \textbf{Remote Explorer} y \textbf{Remote SSH}, estas son extensiones de Visual Studio Code que permiten trabajar de una manera mas eficiente y comoda con los archivos del
+servidor empleando el editor de código. Estas herramientas facilitan la conexión al servidor, las configuraciones y despliegue de aplicaciones que se realizan en el, y a la hora 
+de tener que analizar errores y solucionarlos una vez la aplicación está en producción, amenizan estas tareas de manipular el código.
 
 Estando ya dentro del servidor, necesitamos instalar varias herramientas esenciales, si no están presentes en este. Entre ellas podemos destacar un servidor web como \textbf{Apache}, que es fundamental para servir nuestra aplicación
 al público; \textbf{npm} y \textbf{Node.js} que nos permitirán ejecutar el código JavaScript en el servidor y administrar las dependencias de nuestro proyecto a través de npm; \textbf{Git}, para poder descargar el código fuente de la aplicación desde 
