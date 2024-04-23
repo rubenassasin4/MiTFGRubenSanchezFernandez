@@ -880,10 +880,10 @@ a la par que se comprobaba su correcto funcionamiento.
 
 Cada vez que se implementaba una nueva funcionalidad, se realizaban pruebas exhaustivas para asegurar su correcto funcionamiento antes de proceder con la 
 siguiente tarea. Estas pruebas se han enfocado en verificar el correcto funcionamiento tanto del frontend como del backend, pues como hemos comentado anteriormente, 
-el desarrollo de ambas partes de ha ido realizando de forma conjunta.
+el desarrollo de ambas partes se ha ido realizando de forma conjunta.
 
 Es importante destacar que se optó por la realización de pruebas manuales en lugar de la implementación de pruebas automatizadas debido a que se 
-trata de una aplicación relativamente pequeña y con una funcionalidad en la parte de backend bastante limitada, se consideró que el esfuerzo necesario y la inversión
+trata de una aplicación relativamente pequeña y con una funcionalidad en la parte de backend bastante limitada. Se consideró que el esfuerzo necesario y la inversión
 en tiempo y recursos para establecer pruebas automatizadas no justificaba su implementación. Esta decisión permitio una mayor flexibilidad y agilidad durante
 el proceso de desarrollo de la aplicación.
 
@@ -897,17 +897,17 @@ cada cambio reciente se reflejaba automáticamente.
 El uso de nodemon, ha facilitado tanto la implementación y pruebas de la parte de frontend como la de backend. En cuanto a la parte del frontend
 ha permitido ir creando funcionalidades y dando diseño a esta parte, puediendo observar los resultados de cada cambio en el código en tiempo real,
 lo que ha agilizado muchisimo el desarrollo. Por lo que respecta al backend mas de lo mismo, se han podido ir realizando modificaciones y pruebas de las funcionalidades
-hasta conseguir el resultado esperado, permitiendo solucionar los errores, mejorar el código y probarlo de forma muy agil y rápida. 
+hasta conseguir el resultado esperado, permitiendo solucionar los errores, mejorar el código y probarlo de forma muy ágil y rápida. 
 
-Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los EndPoint de la parte del backend, esta plataforma ha permitido enviar 
-solicitudes HTTP a los EndPoints de nuestra aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
+Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los EndPoints de la parte del backend, esta plataforma ha permitido enviar 
+solicitudes HTTP a los EndPoints de la aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
 las llamadas desde la parte del frontend, se realizaron pruebas adicionales para garantizar la correcta comunicación entre backend y frontend y asegurando una
 experiencia del usuario fluida y sin errores.
 
 Por último añadir que durante todo el proceso de desarrollo, se han ido realizando pruebas de la parte del frontend del tema (theme app extensión) en diversos
-navegadores para probar la aplicación desde diferentes entornos y permitirnos identificar problemas de compatibilidad y rendimiento.
-Además se ha hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que nos proporciona la capacidad de simular diferentes 
-tamaños de pantalla y dispositivos actuales, lo que ha facilitado el poder probar el diseño responsive de nuestra aplicación a lo largo del desarrollo.
+navegadores para probar la aplicación desde diferentes entornos y permitir identificar problemas de compatibilidad y rendimiento.
+Además se ha hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que proporciona la capacidad de simular diferentes 
+tamaños de pantalla y dispositivos actuales, lo que ha facilitado el poder probar el diseño responsive de esta aplicación a lo largo del desarrollo.
 
 \subsection{Despliegue}
 Hasta la fecha, en Upango no se ha recibido ninguna solicitud por parte de los clientes que requiera hacer uso de las funciones de personalización de productos
@@ -936,23 +936,23 @@ exponer directamente los servidores locales a internet, los túneles de Cloudfla
 servidores de posibles ataques maliciosos, proporcionando una mayor confiabilidad en la entrega de contenido \cite{cloudflare}. 
 
 Al crear un túnel entre el entorno local y la tienda de desarrollo y pruebas empleando Cloudflare, se puede permitir que los servicios que se ejecutan en la infraestructura local
-sean accesibles a través de internet de una manera segura y aprovechándonos de la gran infraestructura de red global con la que cuenta Coudflare para enrrutar el tráfico.
+sean accesibles a través de internet de una manera segura y aprovechándo la gran infraestructura de red global con la que cuenta Coudflare para enrrutar el tráfico.
 
-En el caso de que los clientes de Upango solicitasen los servicios de esta aplicación y se necesitase hacer un despliegue real, seguiríamos el siguiente procendimiento que ya se ha utilizado para
+En el caso de que los clientes de Upango solicitasen los servicios de esta aplicación y se necesitase hacer un despliegue real, se seguiría el siguiente procendimiento que ya se ha utilizado para
 desplegar otro tipo de aplicaciones.
-En primer lugar se contratarían los servicios de hosting para alojar la aplicación en un servidor y  habría que hacerse con un dominio o subdominio
+En primer lugar se contratarían los servicios de hosting para alojar la aplicación en un servidor y habría que hacerse con un dominio o subdominio
 que esté apuntando a ese servidor. Una vez obtenido el servidor, habría que conectarse a el mediante SSH para proceder a configurarlo. En este caso para trabajar cómodamente en este servidor remoto,
 haríamos uso de herramientas como \textbf{Remote Explorer} y \textbf{Remote SSH}, estas son extensiones de Visual Studio Code que permiten trabajar de una manera mas eficiente y comoda con los archivos del
-servidor empleando el editor de código. Estas herramientas facilitan la conexión al servidor, las configuraciones y despliegue de aplicaciones que se realizan en el, y a la hora 
+servidor empleando el editor de código. Estas herramientas facilitan la conexión al servidor, las configuraciones y despliegue de aplicaciones que se realizan en él, y a la hora 
 de tener que analizar errores y solucionarlos una vez la aplicación está en producción, amenizan estas tareas de manipular el código.
 
-Estando ya dentro del servidor, necesitamos instalar varias herramientas esenciales, si no están presentes en este. Entre ellas podemos destacar un servidor web como \textbf{Apache}, que es fundamental para servir nuestra aplicación
-al público; \textbf{npm} y \textbf{Node.js} que nos permitirán ejecutar el código JavaScript en el servidor y administrar las dependencias de nuestro proyecto a través de npm; \textbf{Git}, para poder descargar el código fuente de la aplicación desde 
-nuestro repositorio remoto y en caso realizar modificaciones en el código del servidor poder actualizarlo en el repositorio; y \textbf{pm2}, un administrador de 
-procesos para aplicaciones Node.js que garantiza que nuestras aplicaciones se ejecuten de manera continua gestionando múltiples instancias y permitiendo su reinicio en caso de fallos.
-Una vez vez tenemos preparado el entorno, descargamos la aplicación desde el repositorio remoto e instalamos las dependencias necesarias ejecutando \textit{npm install}. Despues debemos buscar las variables de entorno que genera y configura Shopify al crear una aplicación,
-estas se pueden obtener de varias maneras, o bien a través del panel de partners de Shopify o introduciendo el comando \textbf{npm run shopify app env show}. En la Figura~\ref{fig:VariablesEntorno} podemos observar dichos tokens. Para poder 
-tener diferentes aplicaciones en el servidor con distintas variables, en lugar de crear variables de entorno como tal, se las pasaremos como parámetros al proceso de node.
+Estando ya dentro del servidor, es necesario instalar varias herramientas esenciales, si no están presentes en este. Entre ellas se pueden destacar un servidor web como \textbf{Apache}, que es fundamental para servir la aplicación
+al público; \textbf{npm} y \textbf{Node.js} que permitirán ejecutar el código JavaScript en el servidor y administrar las dependencias del proyecto a través de npm; \textbf{Git}, para poder descargar el código fuente de la aplicación desde 
+el repositorio remoto y en caso realizar modificaciones en el código del servidor poder actualizarlo en el repositorio; y \textbf{pm2}, un administrador de 
+procesos para aplicaciones Node.js que garantiza que las aplicaciones se ejecuten de manera continua gestionando múltiples instancias y permitiendo su reinicio en caso de fallos.
+Una vez vez preparado el entorno, se descarga la aplicación desde el repositorio remoto y se instalan las dependencias necesarias ejecutando \textit{npm install}. Despues se deben buscar las variables de entorno que genera y configura Shopify al crear una aplicación,
+estas se pueden obtener de varias maneras, o bien a través del panel de partners de Shopify o introduciendo el comando \textbf{npm run shopify app env show}. En la Figura~\ref{fig:VariablesEntorno} se pueden observar dichos tokens. Para poder 
+tener diferentes aplicaciones en el servidor con distintas variables, en lugar de crear variables de entorno como tal, se deben pasar como parámetros al proceso de node.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -962,24 +962,24 @@ tener diferentes aplicaciones en el servidor con distintas variables, en lugar d
     \vspace{\fill}
 \end{figure}
 
-A continuación debemos compilar los archivos del frontend, pues en producción debemos compilar los ficheros de react que hay en el directorio \textit{web/frontend} 
-para generar la carpeta \textit{web/frontend/dist} que contiene los compilados. Al hacer esto, ejecutamos \textit{npm install} para instalar las dependencias del frontend como vite,
-indicamos el valor de la siguiente variable de entorno que necesita para compilar \textit{export SHOPIFY\_API\_KEY=193f58fc9600c8084a97860c490eeb41} y por último ejecutamos \textit{npm run build} para realizar
+A continuación se procede a compilar los archivos del frontend, pues en producción es necesario compilar los ficheros de react que hay en el directorio \textit{web/frontend} 
+para generar la carpeta \textit{web/frontend/dist} que contiene los compilados. Al hacer esto, hay que ejecutar \textit{npm install} para instalar las dependencias del frontend como vite,
+se indica el valor de la siguiente variable de entorno que necesita para compilar \textit{export SHOPIFY\_API\_KEY=193f58fc9600c8084a97860c490eeb41} y por último hay que ejecutar \textit{npm run build} para realizar
 la compilación.
 
-Una vez hecho esto ya podemos ejecutar la aplicación en modo producción, para ello debemos ejecutar el comando \textit{npm run serve} desde el directorio \textit{web}. Debemos acompañar
+Una vez hecho esto ya se puede ejecutar la aplicación en modo producción, para ello se debe ejecutar el comando \textit{npm run serve} desde el directorio \textit{web}. Se debe acompañar
 a este comando de unos parámetros para que cuente con sus variables de entorno, estas variables son la SHOPIFY\_API\_KEY, el SHOPIFY\_API\_SECRET, los SCOPES,  el host, es decir la url de la app y el puerto.
 
-Además para que la app esté siempre en ejecución, debemos lanzar el comando npm run serve con sus variables a través de un pm2 start y añadiendo un parámetro name al final para
+Además para que la app esté siempre en ejecución, es necesario lanzar el comando npm run serve con sus variables a través de un pm2 start y añadiendo un parámetro name al final para
 darle un nombre al proceso y poder identificarlo y gestionarlo. 
 
-Llegados a este punto nos quedaría configurar el dominio de la aplicación en el servidor, para ello primero debemos modificar la configuración del servidor web Apache en nuestro caso, para que 
+Llegados a este punto quedaría configurar el dominio de la aplicación en el servidor, para ello primero es necesario modificar la configuración del servidor web Apache en este caso, para que 
 el dominio apunte al servidor y se haga un mapeo al puerto correspondiente de la aplicación. Esto implica editar archivos de configuración del servidor como el archivo \textit{http\_node.conf}. 
-A continuación se deben crear y configurar los certificados SSL para admitir HTTPS, empleando herramientas como Let's Encrypt para generar certificados gratuitos, y una vez configurados los
-certificados, actualizamos la configuración del servidor para que acepte conexiones HTTPS en el puerto 443. Una vez hecho esto debemos reiniciar Apache para que los cambios surtan
+A continuación se deben crear y configurar los certificados SSL para admitir HTTPS, empleando herramientas como Let's Encrypt para generar certificados gratuitos. Una vez configurados los
+certificados, se actualiza la configuración del servidor para que acepte conexiones HTTPS en el puerto 443. Una vez hecho esto hay que reiniciar Apache para que los cambios surtan
 efecto y la aplicación pueda ser accedida correctamente a través del dominio configurado.
 
-Por último, debemos ajustar la configuración de la aplicación desde el panel de administración de partners para que la aplicación reconozca el nuevo dominio (Figura~\ref{fig:ConfiguracionAppPartner}) y generar un enlace de instalación de esta aplicación
+Por último, se debe ajustar la configuración de la aplicación desde el panel de administración de partners para que la aplicación reconozca el nuevo dominio (Figura~\ref{fig:ConfiguracionAppPartner}) y generar un enlace de instalación de esta aplicación
 para instalarla en la tienda que lo solicite (Figura~\ref{fig:DistributionAppPartners}, Figura~\ref{fig:generarLinkDistribution}).
 
 \begin{figure}[ht]
@@ -1010,20 +1010,20 @@ para instalarla en la tienda que lo solicite (Figura~\ref{fig:DistributionAppPar
 \section{Conclusiones y vías futuras}
 
 \subsection{Conclusiones}
-A modo de conclusión podemos decir que en este Trabajo de Fin de Grado hemos logrado cumplir todos
-los objetivos propuestos inicialmente. Hemos diseñado y desarrollado una aplicación para la plataforma Shopify que 
+A modo de conclusión se puede decir que en este Trabajo de Fin de Grado (TFG) se han logrado cumplir todos
+los objetivos propuestos inicialmente. Se ha diseñado y desarrollado una aplicación para la plataforma Shopify que 
 permite la personalización de productos para su posterior compra en las tiendas de los clientes que la empleen.
-Desde el análisis inicial hasta la implementación y despliegue, hemos seguido una metodología estructurada que nos ha permitido
-alcanzar cad ahito de manera efectiva y eficiente.
+Desde el análisis inicial hasta la implementación y despliegue, se ha seguido una metodología estructurada que ha permitido
+alcanzarar cada hito de manera efectiva y eficiente.
 
-Además hemos desarrollado una aplicación con unas funcionalidades estandar al mercado y a los posibles requisitos que nos pueden solicitar en un futuro
-los clientes. La hemos implementado de tal manera que está preparada para añadir y modificar las funcionalidades facilmente, lo que la hace
+Además se ha desarrollado una aplicación con unas funcionalidades estandar al mercado y a los posibles requisitos que podrían solicitar en un futuro
+los clientes. Se ha implementado de tal manera que está preparada para añadir y modificar las funcionalidades facilmente, lo que la hace
 adaptable a los requisitos de futuros clientes que pueden necesitar características especificas de esta herramienta de personalización de productos.
-Hemos creado una base sólida sobre la cual podemos construir y expandir la aplicación según las necesidades del mercado y los clientes.
+Se ha creado una base sólida sobre la cual poder construir y expandir la aplicación según las necesidades del mercado y los clientes.
 
-El análisis detallado de los objetivos, la metodología ágil implementada y el enfoque iterativo e incremental que hemos aplicado,
-nos han permitido no solo cumplir con los requisitos establecidos, sino que también anticiparnos a posibles necesidades futuras y
-preparar la aplicación para seguir crediendo de manera continua, aplicando mas iteraciones.
+El análisis detallado de los objetivos, la metodología ágil implementada y el enfoque iterativo e incremental que se ha aplicado,
+ha permitido no solo cumplir con los requisitos establecidos, sino que también anticiparse a posibles necesidades futuras y
+preparar la aplicación para seguir creciendo de manera continua, aplicando mas iteraciones.
 
 \subsection{Trabajo futuro}
 
@@ -1080,13 +1080,13 @@ preparar la aplicación para seguir crediendo de manera continua, aplicando mas 
 \section{Anexos}
 
 \subsection{Manual de usuario}
-En este apartado se mostrará y explicará de una forma visual la forma de uso de la aplicación desarrollada. Se mostrará tanto el proceso para integrar la aplicación con una tienda, como
+En este apartado se mostrará y explicará de una forma visual la manera de uso de la aplicación desarrollada. Se mostrará tanto el proceso para integrar la aplicación con una tienda, como
 su funcionamiento dentro de la misma.
 
-En primer lugar, una vez instalada la aplicación en la tienda, debemos dirigirnos al panel de administración. En la Figura~\ref{fig:PersonalizarTema} podemos observar este panel de administración, donde
-debemos ir al apartado \textit{Canales de venta} $\rightarrow$  \textit{Tienda online} $\rightarrow$  \textit{Tema}. En esta pantalla podemos ver y configurar toda la libería de temas que tenemos disponible.
-En nustro caso tenemos publicado el tema \textit{upango-impresion-theme}, por lo que vamos a pulsar en el botón personalizar de este tema para que se nos muestre el configurador de tema y poder
-añadir al tema las funcionalidades de nuestra aplicación.
+En primer lugar, una vez instalada la aplicación en la tienda, el administrador se debe dirigir al panel de administración. En la Figura~\ref{fig:PersonalizarTema} se puede observar este panel de administración, donde
+se debe ir al apartado \textit{Canales de venta} $\rightarrow$  \textit{Tienda online} $\rightarrow$  \textit{Tema}. En esta pantalla se puede ver y configurar toda la libería de temas que hay disponible.
+En este caso está publicado el tema \textit{upango-impresion-theme}, por lo que se puede pulsar en el botón personalizar de este tema para que se muestre el configurador del mismo y poder
+añadir al tema las funcionalidades de la aplicación.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1096,9 +1096,9 @@ añadir al tema las funcionalidades de nuestra aplicación.
     \vspace{\fill}
 \end{figure}
 
-Al instalar la app, se nos habilitan en el configurador todos aquellos componentes de tema que se han desarrollado en la aplicación.
-En la Figura~\ref{fig:ThemeAppExtension} podemos observar la pantalla del configurador del tema, en ella debemos ir a la plantilla de la página de producto y añadir
-en el lugar que consideremos más apropiado el bloque que hemos desarrollado en la extensión de tema de la aplicación. Como puede verse, al instroducir este elemento, se nos muestra en la pantalla de producto
+Al instalar la app, se habilitan en el configurador todos aquellos componentes de tema que se han desarrollado en la aplicación.
+En la Figura~\ref{fig:ThemeAppExtension} se puede observar la pantalla del configurador del tema, en ella el administrador deber ir a la plantilla de la página de producto y añadir
+en el lugar que considere más apropiado el bloque que se ha desarrollado en la extensión de tema de la aplicación. Como puede verse, al instroducir este elemento, se muestra en la pantalla de producto
 el botón para abrir el personalizador de artículos que lleva detrás toda la funcionalidad.
 
 \begin{figure}[ht]
@@ -1109,9 +1109,9 @@ el botón para abrir el personalizador de artículos que lleva detrás toda la f
     \vspace{\fill}
 \end{figure}
 
-Una vez añadida la extensión del tema, debemos dirigirnos a la pantalla del panel de administración que hemos desarrollado en la aplicación. En la Figura~\ref{fig:PanelAdministracion} podemos
-ver un enlace a esta pantalla en la sección \textit{Aplicaciones} $\rightarrow$  \textit{upango\_pedidos\_impresion}. En la Figura~\ref{fig:FuncionalidadAdministracion} observamos dicha pantalla, en ella podemos pulsar el botón \textit{Crear Metadatos} para que se creen 
-automáticamente los metacampos de producto necesarios, y el botón \textit{cart-transform} para que se cree automáticamente en la tienda el objeto cart-transform, el cual hara uso de una función de la aplicación, que 
+Una vez añadida la extensión del tema, hay que dirigirse a la pantalla del panel de administración que se ha desarrollado en la aplicación. En la Figura~\ref{fig:PanelAdministracion} se puede
+ver un enlace a esta pantalla en la sección \textit{Aplicaciones} $\rightarrow$  \textit{upango\_pedidos\_impresion}. En la Figura~\ref{fig:FuncionalidadAdministracion} se observa dicha pantalla, en ella se puede pulsar el botón \textit{Crear Metadatos} para que se creen 
+automáticamente los metacampos de producto necesarios, y el botón \textit{cart-transform} para que se cree automáticamente en la tienda el objeto cart-transform, el cuál hara uso de una función de la aplicación, que 
 dotará al carrito y al checkout de la tienda de una funcionalidad y apariencia de paquetes customizados.
 
 \begin{figure}[ht]
@@ -1131,10 +1131,10 @@ dotará al carrito y al checkout de la tienda de una funcionalidad y apariencia 
 \end{figure}
 
 Una vez realizadas estas configuraciones y creados en la tienda todos los productos necesarios, trabajos de impresión, tipos de cliche, asociados los productos con sus areas de impresión, y todos los elementos necesarios relacionados con
-la impresión de artículos, ya podemos hacer uso de la tienda con las funcionalidades de personalización de productos integrada.
+la impresión de artículos, ya se puede hacer uso de la tienda con las funcionalidades de personalización de productos integrada.
 
-En la Figura~\ref{fig:HomeTiendaDemo} podemos observar la página principal de la tienda, en ella podemos navegar hacia otros apartados de la tienda, como el catálogo de productos, podemos buscar secciones y productos con el buscador, ir al carrito, seleccionar el idioma y otras funcionalidades.También
-podemos seleccionar cualquier producto de los que nos aparece en destacados para ir a la página de producto y poder añadirlo al carrito o personalizarlo si se trata de un producto
+En la Figura~\ref{fig:HomeTiendaDemo} se puede observar la página principal de la tienda, en ella el usuario puede navegar hacia otros apartados de la tienda, como el catálogo de productos, se puede buscar secciones y productos con el buscador, ir al carrito, seleccionar el idioma y otras funcionalidades.También
+es posible seleccionar cualquier producto de los que aparecen en destacados para ir a la página de producto y poder añadirlo al carrito o personalizarlo si se trata de un producto
 personalizable.
 
 \begin{figure}[ht]
@@ -1145,11 +1145,11 @@ personalizable.
     \vspace{\fill}
 \end{figure}
 
-En la imagen~\ref{fig:ProductoNoPersonalizable} podemos ver como hemos navegado hacia una página de producto. En esta, como puede verse, no aparece el botón para personalizar este
-artículo, lo que significa que el producto no es personalizable y en este caso solo podríamos seleccionar la cantidad deseada y añadir al carrito o comprar directamente.
-En la siguiente imagen (Figura~\ref{fig:ProductoPersonalizable}) podemos ver otra página de producto, y en este caso si nos aparece el botón de Personalizar, lo que nos indica que este producto
-si sería personalizable y cuenta con sus áreas de impresión correspondientes y todos sus atributos de personalización. En esta pantalla podemos comprar este producto y tratarlo como en el caso anterior,
-y comprarlo sin personalización, o podemos seleccionar la cantidad que deseemos y pulsar el botón de personalizar para configurar y añadir al carrito los productos a través de la interfaz de personalización.
+En la imagen~\ref{fig:ProductoNoPersonalizable} se puede ver como se ha navegado hacia una página de producto. En esta, como puede observarse, no aparece el botón para personalizar este
+artículo, lo que significa que el producto no es personalizable y en este caso solo se podría seleccionar la cantidad deseada y añadir al carrito o comprar directamente.
+En la siguiente imagen (Figura~\ref{fig:ProductoPersonalizable}) se puede ver otra página de producto, y en este caso si aparece el botón de personalizar, lo que indica que este producto
+si sería personalizable y cuenta con sus áreas de impresión correspondientes y todos sus atributos de personalización. En esta pantalla se puede comprar este producto y tratarlo como en el caso anterior,
+y comprarlo sin personalización, o es posible seleccionar la cantidad que se desee y pulsar el botón de personalizar para configurar y añadir al carrito los productos a través de la interfaz de personalización.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1167,9 +1167,9 @@ y comprarlo sin personalización, o podemos seleccionar la cantidad que deseemos
     \vspace{\fill}
 \end{figure}
 
-Si pulsamos en el botón de Personalizar, se nos abrirá el personalizador de artículos. En este, como puede en la Figura~\ref{fig:Personalizador}, nos encontramos 
-las distintas areas de impresión con las que cuenta el producto con sus atributos personalizables y a la derecha podemos ir viendo el resumen del pedido presonalizado actualizado.
-Como se puede observar, ahora mismo en el resumen del pedido solamente nos aparece el producto con las unidades, el precio por unidad y el precio total, pues todavía no hemos seleccionado ni configurado
+Si se pulsa en el botón de personalizar, se abrirá el personalizador de artículos. En este, como se puede ver en la Figura~\ref{fig:Personalizador}, encontramos 
+las distintas areas de impresión con las que cuenta el producto con sus atributos personalizables y a la derecha se puede ir viendo el resumen del pedido presonalizado actualizado.
+Como se puede observar, ahora mismo en el resumen del pedido solamente aparece el producto con las unidades, el precio por unidad y el precio total, pues todavía se ha seleccionado ni configurado
 ningún area del producto.
 
 \begin{figure}[ht]
@@ -1180,9 +1180,9 @@ ningún area del producto.
     \vspace{\fill}
 \end{figure}
 
-Si seleccionamos un área de impresión, como podemos observar en la Figura~\ref{fig:PersonalizadorAreaMarcada}, podemos ver como se refresca el resumen de pedido y se le agrega tanto el trabajo de impresión
-seleccionado por defecto, como su cliche asociado. Una vez seleccionada el área podemos configurar todos los elementos que contiene. Además también se pueden seleccionar varias áreas en una misma personalización, como 
-podemos ver en la Figura~\ref{fig:PersonalizadorVariasAreas}. En ella aparecen varias áreas del producto seleccionadas y en el resumen aparecen reflejados los trabajos y cliches de dichas áreas y su importe total.
+Si se selecciona un área de impresión, como se puede observar en la Figura~\ref{fig:PersonalizadorAreaMarcada}, se observa como se refresca el resumen de pedido y se le agrega tanto el trabajo de impresión
+seleccionado por defecto, como su cliche asociado. Una vez seleccionada el área se pueden configurar todos los elementos que contiene. Además también permite seleccionar varias áreas en una misma personalización, como 
+se puede ver en la Figura~\ref{fig:PersonalizadorVariasAreas}. En ella aparecen varias áreas del producto seleccionadas y en el resumen aparecen reflejados los trabajos y cliches de dichas áreas y su importe total.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1200,12 +1200,12 @@ podemos ver en la Figura~\ref{fig:PersonalizadorVariasAreas}. En ella aparecen v
     \vspace{\fill}
 \end{figure}
 
-En cuanto a la configuración de cada área, como se puede apreciar en la Figura~\ref{fig:PersonalizadorColores}, tenemos un par de inputs para introducir las medidas de la impresión que deseamos 
-realizar en el artículo, uno para el ancho y otro para el alto. Además podemos observar un select para seleccionar el tipo de trabajo a aplicar en el producto seleccionado, es decir el tipo de marcaje. El tipo de trabajo seleccionado
+En cuanto a la configuración de cada área, como se puede apreciar en la Figura~\ref{fig:PersonalizadorColores}, existen un par de inputs para introducir las medidas de la impresión que se deseen 
+realizar en el artículo, uno para el ancho y otro para el alto. Además se puede observar un select para seleccionar el tipo de trabajo a aplicar en el producto seleccionado, es decir el tipo de marcaje. El tipo de trabajo seleccionado
 afectará al selector de colores de su derecha, pues cada trabajo de impresión cuenta con un número máximo de colores con los que puede trabajar, y al modificar el trabajo se renderizará automáticamente el selector de colores.
-También tenemos unos inputs en los que podemos introducir los colores con los que queremos que se realice la impresión, existen tantos inputs como colores hayamos seleccionado en el select de colores y estos
-se refrescan al modificar el valor de ese select. En este caso hemos seleccionado el tipo de trabajo \textit{transfer serigráfico}, también hemos introducido que queremos una impresión en 3 colores y hemos seleccionado dichos colores en los inputs.
-En el resumen de pedido podemos observar como aparece el trabajo de impresión, su cliche asociado y un cargo extra por la adicción de 2 colores extra.
+También hay unos inputs en los que se pueden introducir los colores con los que se desea que se realice la impresión, existen tantos inputs como colores se hayan seleccionado en el select de colores y estos
+se refrescan al modificar el valor de ese select. En este caso se ha seleccionado el tipo de trabajo \textit{transfer serigráfico}, también se ha introducido que se desea una impresión en 3 colores y se han seleccionado dichos colores en los inputs.
+En el resumen de pedido se puede observar como aparece el trabajo de impresión, su cliche asociado y un cargo extra por la adicción de 2 colores extra.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1215,10 +1215,10 @@ En el resumen de pedido podemos observar como aparece el trabajo de impresión, 
     \vspace{\fill}
 \end{figure}
 
-En la personalización del área de impresión, también podemos observar dos checks, uno check de repetición de cliche para marcar si ya hemos realizado algún otro pedido similar con el mismo tipo de impresión
-y otro check de doble pasada para indicar si queremos que la impresión se aplique dos veces. En la Figura~\ref{fig:PersonalizadorCheckboxes} podemos apreciar estos dos checks marcados y como puede verse, estos
+En la personalización del área de impresión, también se pueden observar dos checks. Un check de repetición de cliche para marcar si ya se ha realizado algún otro pedido similar con el mismo tipo de impresión,
+y otro check de doble pasada para indicar si se desea que la impresión se aplique dos veces. En la Figura~\ref{fig:PersonalizadorCheckboxes} se pueden apreciar estos dos checks marcados y como estos
 afectan al precio total de impresión. En el resumen puede observarse como al haber marcado el check de repetición de cliche, el precio del cliche se ha reducido debido a que la empresa ahorraría costes al no tener que 
-fabricar un nuevo cliche. Además al haber marcado el check de doble pasada podemos observar como en el resumen aparece un cargo extra por doble pasada.
+fabricar un nuevo cliche. Además al haber marcado el check de doble pasada se observa como en el resumen aparece un cargo extra por doble pasada.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1228,10 +1228,10 @@ fabricar un nuevo cliche. Además al haber marcado el check de doble pasada pode
     \vspace{\fill}
 \end{figure}
 
-También podemos seleccionar el logo que se desee imprimir en el producto. En la imagen~\ref{fig:PersonalizadorLogo} podemos observar como se ha seleccionado dicha imagen y se nos muestra de forma visual en el personalizador una 
-aproximación de como quedaría ese logo impreso en la prenda que queremos comprar. Esta funcionalidad permite al cliente observar una imagen lo mas realista posible de cual sería el resultado final
-de la personalización del artículo. Además el cliente también puede introducir unas observaciones referidas a la personalización para dar mas detalles de la misma y tratar ciertos detalles que se nos puedan
-estar escapando. Una vez personalizada a nuestro gusto la prenda, podemos pulsar el botón de añadir el carrito para añadir los productos con toda su personalización asociada y acorde con
+También es posible seleccionar el logo que se desee imprimir en el producto. En la imagen~\ref{fig:PersonalizadorLogo} se observa como se ha seleccionado dicha imagen y se muestra de forma visual en el personalizador una 
+aproximación de como quedaría ese logo impreso en la prenda que queremos comprar. Esta funcionalidad permite al cliente observar una imagen lo mas realista posible del resultado final
+de la personalización del artículo. Además el cliente también puede introducir unas observaciones referidas a la personalización para dar mas detalles de la misma y tratar ciertos detalles que se puedan
+estar escapando. Una vez personalizada la prenda, se puede pulsar el botón de añadir el carrito para añadir los productos con toda su personalización asociada y acorde con
 lo visualizado en el resumen del pedido.
 
 \begin{figure}[ht]
@@ -1243,12 +1243,12 @@ lo visualizado en el resumen del pedido.
 \end{figure}
 
 
-Una vez añadido el producto personalizado al carrito podemos pulsar el botón de la cesta de la compra ubicado en la parte superior de la página (Figura~\ref{fig:BotonCarrito}) para dirigirnos a la página del carrito.
-En dicha página (Figura~\ref{fig:Carrito}) podemos observar los productos que han sido añadidos. Estos productos que han sido personalizados se añaden al carrito en forma de un solo paquete que contiene
+Una vez añadido el producto personalizado al carrito se puede pulsar el botón de la cesta de la compra ubicado en la parte superior de la página (Figura~\ref{fig:BotonCarrito}), al pulsarlo se redirigiría a la página del carrito.
+En dicha página (Figura~\ref{fig:Carrito}) se pueden observar los productos que han sido añadidos. Estos productos que han sido personalizados se añaden al carrito en forma de un solo paquete que contiene
 tanto las unidades de los artículos, como todos los elementos y atributos de la personalización.
-En la Figura~\ref{fig:Carrito} puede observarse un paquete de personalización que hemos añadido, en el cual se han seleccionado 3 unidades del producto, con el trabajo \textit{transfer serigráfico} y una serie de configuraciones 
-que pueden verse mejor detalladas en la página del Checkout. Por último vamos a pulsar el botón del carrito para completar la compra y vamos a dirigirnos al checkout donde se podrá realizar el pedido.
-Por último, en la Figura~\ref{fig:Checkout} podemos observar dicha interfaz para completar el proceso de compra, en la cual se puede visualizar con todo detalle el resumen de todo el pedido, introducir los datos de pago, facturación y dirección de envío
+En la Figura~\ref{fig:Carrito} se observa un paquete de personalización que se ha añadido, en el cual se han seleccionado 3 unidades del producto, con el trabajo \textit{transfer serigráfico} y una serie de configuraciones 
+que pueden verse mejor detalladas en la página del Checkout. Por último se puede pulsar el botón del carrito para completar la compra y se dirigiría al checkout donde se podrá completar el pedido.
+Por último, en la Figura~\ref{fig:Checkout} se puede observar dicha interfaz para completar el proceso de compra, en la cual se puede visualizar con todo detalle el resumen de todo el pedido, introducir los datos de pago, facturación y dirección de envío
 y completar el pedido.
 
 
