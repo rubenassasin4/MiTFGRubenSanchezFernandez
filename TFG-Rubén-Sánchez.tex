@@ -164,7 +164,7 @@ se ha observado en esta empresa, una creciente demanda de incorporar al desarrol
 personalizar los productos para su posterior compra; es decir en el mercado actual hay una gran cantidad de clientes potenciales que podrían solicitar desarrollos de comercio
 electrónico a medida con funcionalidades de personalización de productos.
 
-Recientemente se ha decidido migrar de ePages a otra plataforma de comercio electrónico como es Shopify\cite{shopify} que ofrece otras tecnologías y herramientas
+Recientemente se ha decidido migrar de ePages a otra plataforma de comercio electrónico como es Shopify \cite{shopify} que ofrece otras tecnologías y herramientas
 para el desarrollo personalizado de tiendas online. Debido a esta migración, los desarrollos a medida y aplicaciones estandarizadas de la otra plataforma quedan obsoletas para nuevos desarrollos
 y surge la necesidad de adaptarse a estas nuevas herramientas y funcionalidades que proporciona Shopify para conseguir crear estos desarrollos de comercio a medida. Por lo que, si
 bien en las tiendas de ePages de los actuales clientes existen ya desarrollos y funcionalidades para la personalización de artículos, la transición a Shopify requiere la creación de
@@ -192,14 +192,14 @@ Cuenta con multitud de ventajas frente a otras plataformas de comercio electrón
 mas trascendentales y que ha influenciado fuertemente  la decisión de Upango de migrar de \textbf{ePages} a esta tecnología, es el hecho de que Shopify elimina
 las barreras iniciales al ofrecer un servicio completo que incluye registro de dominio y hosting web ilimitado. Esto simplifica el proceso de lanzamiento y mantenimiento
 de una tienda al eliminar la necesidad de buscar proveedores de hosting externos, además de dotar a los usuarios de tecnologías avanzadas como servidores de alta
-calidad, redes optimizadas y un CDN global para garantizar una velocidad de carga rápida. Esto no solo mejora la experiencia del usuario, sino que también 
+calidad, redes optimizadas y un CDN global para garantizar una velocidad de carga rápida \cite{shopify-tutorial}. Esto no solo mejora la experiencia del usuario, sino que también 
 tiene un impacto positivo en el posicionamiento SEO y en la tasa de conversión. Cabe destacar que Shopify cuenta con una tasa de conversión de las más
-elevadas del mercado. \cite{shopify}
+elevadas del mercado \cite{shopify-tasa-conversion}. 
 
 Una de las características con las que cuenta Shopify, es la habilidad de poder crear aplicaciones que puedan ampliar las capacidades existentes 
 de esta plataforma. Esto permite agregar funcionalidades a las tiendas, ampliar la experiencia de la parte de administración
 o crear experiencias de compra únicas para los clientes. Gracias a esto los usuarios pueden instalar estas aplicaciones para ayudar a desarrollar
-su negocio, integrarse con servicios externos y agregar funciones a su panel de control de Shopify. \cite{shopify-dev}
+su negocio, integrarse con servicios externos y agregar funciones a su panel de control de Shopify \cite{shopify-dev}. 
 
 \subsubsection{Frontend}
 En cuanto al frontend de la aplicación se pueden observar dos partes. 
@@ -218,25 +218,25 @@ interfaz de administración de una tienda Shopify en desarrollo.
     \vspace{\fill}
 \end{figure}
 
-Esta parte del frontend ha sido desarrollada empleando la biblioteca de JavaScript \textbf{React}. Se trata de una libería de código abierto creada por el equipo de la
+Esta parte del frontend ha sido desarrollada empleando la biblioteca de JavaScript \textbf{React} \cite{react-pag-1}. Se trata de una libería de código abierto creada por el equipo de la
 compañia Facebook (Meta) junto a una gran comunidad de desarrolladores independientes que, desde su lanzamiento en 2013, se ha convertido en una
-de las tecnologías de frontend más usadas, ya que permite construir interfaces de usuario dinámicas y escalables. Esta se usa en el desarrollo de aplicaciones web y móviles \cite{react-pag-1}. 
+de las tecnologías de frontend más usadas, ya que permite construir interfaces de usuario dinámicas y escalables. Esta se usa en el desarrollo de aplicaciones web y móviles. 
 
 Toda aplicación web React, se compone de componentes reutilizables que conforman partes de la interfaz de usuario. Permite tener un componente distinto para
 la barra de navegación, otro para el pie de página, otro para el contenido principal, etc.
 Tener estos componentes reutilizables facilita el desarrollo ya que no es necesario repetir el código reiterativo, solo habría que crear su lógica e
-importar el componente en cualquier parte del código donde se necesite. Estos componentes representan una fusión de la estructura \textbf{HTML} con la funcionalidad de \textbf{JavaScript}.
+importar el componente en cualquier parte del código donde se necesite. Estos componentes representan una fusión de la estructura \textbf{HTML} \cite{html} con la funcionalidad de \textbf{JavaScript} \cite{javascript}.
 React también conforma una aplicación de una sola página, por tanto, en lugar de enviar una petición al servidor cada vez que hay que renderizar una nueva página,
 el contenido de la misma se carga directamente desde los componentes de React conduciendo de este modo a una renderización más rápida sin recargas de página. \cite{react-pag-2}
 
-Para la integración de la aplicación con el panel de administración de las tiendas Shopify se ha hecho uso de \textbf{App Bridge}, una biblioteca de JavaScript
+Para la integración de la aplicación con el panel de administración de las tiendas Shopify se ha hecho uso de \textbf{App Bridge} \cite{app-bridge}, una biblioteca de JavaScript
 desarrollada por Shopify que permite a los desarrolladores integrar las aplicaciones personalizadas para las tiendas. Se trata de una interfaz
 de programación diseñada para facilitar la comunicación entre la tienda y las aplicaciones externas, que proporciona herramientas y funcionalidades
 que permiten a los desarrolladores que sus aplicaciones se integren de forma nativa en el panel de administración y en la experiencia de compra
 del cliente. De esta forma se proporciona la capacidad de acceder a datos de la tienda como productos, pedidos y clientes, así como la capacidad de interactuar con la interfaz
-de usuario de la tienda agregando componentes y paneles personalizados. \cite{shopify-dev}
+de usuario de la tienda agregando componentes y paneles personalizados \cite{shopify-dev}. 
 
-Además se ha empleado el sistema de diseño \textbf{Polaris}, una biblioteca de React que define los componentes necesarios para el panel de administración.
+Además se ha empleado el sistema de diseño \textbf{Polaris} \cite{polaris}, una biblioteca de React que define los componentes necesarios para el panel de administración.
 El panel de control de Shopify proporciona una superficie para que las aplicaciones integradas rendericen su interfaz de usuario, y el empleo de Polaris
 es fundamental para crear experiencias de usuario familiares y coherentes.
 Polaris incluye una guía de diseño, con instrucciones sobre accesibilidad, colores, tipografía, espaciado, nomenclatura y lenguaje práctico para ayudar 
@@ -245,13 +245,13 @@ elementos y estilos de interfaz empaquetados a través de código. Además propo
 de diseño para elementos como el color, el espaciado y la tipografía se puede aplicar a los diseños para ayudar a unificar las experiencias de los usuarios.
 También proporciona iconos cuidadosamente diseñados que se centran en el comercio y el emprendimiento, que se pueden emplear como ayudas visuales para ayudar a los 
 usuarios a completar tareas. Y por último proporciona patrones, soluciones repetibles a problemas comunes de experiencia de usuario (UX, en ingles "User eXperience") en una situación expecífica del usuario
-El buen uso de estos patrones hace que el panel de administración sea familiar y facil de usar. \cite{shopify-dev}
+El buen uso de estos patrones hace que el panel de administración sea familiar y facil de usar \cite{shopify-dev}.
 
 La otra parte del frontend de esta aplicación, es la extensión del tema de la tienda. Un tema en Shopify es un conjunto de recursos
 y archivos que determinan la apariencia, funcionalidad y sensación de una tienda en línea en esta plataforma, tanto para los comerciantes como para
-sus clientes. Estos temas se construyen empleando un lenguaje de plantillas llamado \textbf{Liquid} que, junto con \textbf{HTML}, \textbf{CSS} y \textbf{JavaScript}, conforman la apariencia
+sus clientes \cite{theme}. Estos temas se construyen empleando un lenguaje de plantillas llamado \textbf{Liquid} \cite{liquid} que, junto con \textbf{HTML}, \textbf{CSS} y \textbf{JavaScript}, conforman la apariencia
 y funcionalidades del frontend de la tienda online. Los desarrolladores pueden crear temas personalizados para las tiendas y ajustar los temas existentes 
-para adaptarse a las necesidades de los comerciantes. \cite{shopify-dev}
+para adaptarse a las necesidades de los comerciantes \cite{shopify-dev}. 
 
 Los administradores tienen la posibilidad de elegir entre varios temas para aplicar a su tienda desde la propia interfaz de administración,
 ya sean los temas que proporciona Shopify o temas desarrollados y personalizados por otros usuarios como es el caso de Upango. Estos temas pueden ser
@@ -269,7 +269,7 @@ sobre el tema que está activo; este abriría un editor que permitiría ajustar 
 \end{figure}
 
 Para ampliar el tema de las tiendas en las que se instale la aplicación que se ha desarrollado y así poder dotarla de las funcionalidades de personalización de 
-artículos, se ha creado en la aplicación lo que se conoce como \textbf{App Theme Extension}. Las extensiones de aplicaciones de temas permiten a los comerciantes
+artículos, se ha creado en la aplicación lo que se conoce como \textbf{App Theme Extension} \cite{theme-app-extension}. Las extensiones de aplicaciones de temas permiten a los comerciantes
 agregar fácilmente elementos dinámicos a sus temas sin tener que interactuar directamente con las plantillas o el código \textbf{Liquid} del tema. Estas extensiones
 se integran con el tema de la tienda exponiendo automáticamente en el editor de temas las secciones y elementos que haya programados en la aplicación. \cite{shopify-dev}
 Una de las ventajas de desarrollar estas partes del tema en la aplicación y no directamente en el tema de la tienda, es que las secciones de código y funcionalidades
@@ -277,27 +277,27 @@ que se progarmen en la aplicación pasarán a estar disponibles en el tema de la
 de cada tienda en la que se necesite instalar la aplicación. Es decir, puede implementarse la aplicación al mismo tiempo en todas las tiendas que la usan,
 sin necesidad de que los comerciantes tengan que editar manualmente el código del tema.
 
-Los \textbf{App Theme Extension} tienen una estructura similar a los temas, ya que son como una prolongación de ellos. Estos contienen los siguientes recursos. 
+Los App Theme Extension tienen una estructura similar a los temas, ya que son como una prolongación de ellos. Estos contienen los siguientes recursos. 
 los \textit{bloques}, son archivos en Liquid que actúan como punto de entrada para lo que se desea inyectar en un tema.
 Recursos, contienen los ficheros CSS, JavaScript y otros contenidos estáticos de la aplicación que se insertan en los temas.
 Los snippets, son fragmentos de código Liquid reutilizables que se pueden emplear en varios bloques. Por último, una estructura de archivos locales
-para implementar un sistema de traducciones en los idiomas que se configuren. \cite{shopify-dev}
+para implementar un sistema de traducciones en los idiomas que se configuren \cite{shopify-dev}. 
 
 Como se ha comentado anteriormente, para el desarrollo de estas interfaces del tema se emplea \textbf{Liquid}, un lenguaje de plantillas creado por Shopify que
 permite crear una sola plantilla para alojar el contenido estático e insertar información dinámicamente en función de dónde se representa la plantilla.
 Por ejemplo, se pueden crear plantillas de producto que alojen todos los atributos estándar de este, como la imagen, el título, el precio y demás, y esta 
-plantilla puede representar dinámicamente esos atributos con el contenido adecuado en función del valor actual que se esté viendo. \cite{shopify-dev}
+plantilla puede representar dinámicamente esos atributos con el contenido adecuado en función del valor actual que se esté viendo \cite{shopify-dev}. 
 Además, en las plantillas junto con Liquid se ha empleado \textbf{HTML}, \textbf{CSS} y \textbf{JavaScript} para completar el desarrollo de la extensión del tema. Se hace uso de HTML para estructurar
 el contenido y crear elementos de las páginas, CSS para definir y dar estilos visuales a los elementos, y JavaScript para agregar la interactividad y la 
 funcionalidad dinámica a la página. 
 
-En el desarrollo frontend de la parte del tema, se ha hecho uso de una de las herramientas que proporciona Shopify, la \textbf{Shopify Ajax API}. La API de Ajax
+En el desarrollo frontend de la parte del tema, se ha hecho uso de una de las herramientas que proporciona Shopify, la \textbf{Shopify Ajax API} \cite{shopify-ajax-api}. La API de Ajax
 proporciona un conjunto de puntos finales ligeros para el desarrollo de temas: permite agregar productos al carrito y actualizar el contador
 de artículos del mismo, mostrar recomendaciones de productos relaccionados, sugerir productos y colecciones a los visitantes a medida que escriben
-en un campo de búsqueda y una larga lista de funcionalidades que serán útiles para interactuar con la tienda.\cite{shopify-dev}
+en un campo de búsqueda y una larga lista de funcionalidades que serán útiles para interactuar con la tienda \cite{shopify-dev}.
 
 \subsubsection{Backend}
-En cuanto al Backend de la aplicación se ha hecho uso de \textbf{Node.js}. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
+En cuanto al Backend de la aplicación se ha hecho uso de \textbf{Node.js} \cite{node}. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
 que permite a los desarrolladores crear toda clase de herramientas del lado del servidor y aplicaciones en \textbf{JavaScript}. 
 Además proporciona un gran numero de ventajas. 
 
@@ -315,13 +315,13 @@ gran parte de la cadena de herramientas de compilación.
 aplicaciones Web \cite{node-express}.
 \end{itemize}
 
-Además se ha empleado \textbf{Express}, el framework web más popular de Node, que simplifica enormemente el desarrollo de aplicaciones web al proporcionar
+Además se ha empleado \textbf{Express} \cite{express}, el framework web más popular de Node \cite{express-popular}, que simplifica enormemente el desarrollo de aplicaciones web al proporcionar
 una serie de características esenciales. Con Express, los desarrolladores pueden escribir fácilmente manejadores de peticiones para diferentes 
 verbos HTTP (esto es 'GET', 'POST', 'PUT', 'DELETE', etc.) en diversas rutas URL, integrar motores de renderización de vistas para generar respuestas dinámicas y establecer configuraciones de 
 aplicaciones web de manera intuitiva. Además, permite la adición de procesamiento de middleware adicional en cualquier punto de la tubería de manejo de 
-la petición, brindando flexibilidad y modularidad al desarrollo. \cite{node-express}
+la petición, brindando flexibilidad y modularidad al desarrollo \cite{node-express}. 
 
-En esta parte de la aplicación, se ha hecho uso de la API de administración \textbf{GraphQL} que proporciona Shopify. Esta consituye la principal forma en la que 
+En esta parte de la aplicación, se ha hecho uso de la API de administración \textbf{GraphQL} que proporciona Shopify \cite{api-administracion-graphql}. Esta consituye la principal forma en la que 
 las aplicaciones pueden interactuar con la tienda, permitiendo leer y escribir la información de la tienda incluidos los productos, inventario, pedidos,
 envíos y mucho más, y facilitando ampliar la funcionalidad existente de Shopify. Gracias a esta API es posible conectar el inventario
 de la tienda con otros marketplaces, ofreciendo infinidad de posibilidades para incluir nuevas funcionalidades en el panel de control.
@@ -330,18 +330,18 @@ deben autenticarse además de contar con los ámbitos de acceso pertinentes para
 
 
 \subsubsection{Otras tecnologías}
-Para la elaboración de este TFG se ha empleado \textbf{Visual Studio Code} como entorno de desarrollo tanto para la creación de la aplicación como para
-la redación del propio TFG en \textbf{LaTeX}, empleando una serie de extensiones que han facilitado el trabajo. 
+Para la elaboración de este TFG se ha empleado \textbf{Visual Studio Code} \cite{vsc} como entorno de desarrollo tanto para la creación de la aplicación como para
+la redación del propio TFG en \textbf{LaTeX} \cite{latex}, empleando una serie de extensiones que han facilitado el trabajo. 
 Se han aprovechado extensiones como Shopify Liquid Templates, Shopify Liquid, 
 Polaris for VS Code, JavaScript (ES6), GraphQL, Latex Language support, Latex Workshop y ESLint para garantizar un desarrollo y documentación
 fluida y eficaz. Estas extensiones han proporcionado una serie de funcionalidades como resaltado de sintaxis, autocompletado y validación de código, 
 acceso rápido a la documentación, formateo de código y una serie de ventajas que han facilitado significativamente la creación y documentación de la aplicación.
 
-Se ha empleado \textbf{Git} para llevar un control de versiones de la aplicación junto con \textbf{Azure DevOps}, una plataforma de Microsoft que ofrece una amplia
+Se ha empleado \textbf{Git} \cite{git} para llevar un control de versiones de la aplicación junto con \textbf{Azure DevOps} \cite{azure-devops}, una plataforma de Microsoft que ofrece una amplia
 gama de características y funcionalidades que permiten a los equipos de desarrolo colaborar de manera efectiva en equipo y optimizar el proceso de desarrollo
 de software. Esta herramienta ofrece gestión del código fuente, permitiendo almacenar y administrar el código fuente de nuestro proyecto en 
 repositorios de código. También facilita la planificación, asignación y seguimiento de las tareas, problemas y requisitos del proyecto, haciendo
-un seguimiento del trabajo, y muchas otras fucionalidades útiles para el desarrollo como seguimiento, pruebas y gestión del ciclo de vida de los proyectos. \cite{devOps}
+un seguimiento del trabajo, y muchas otras fucionalidades útiles para el desarrollo como seguimiento, pruebas y gestión del ciclo de vida de los proyectos \cite{devOps}. 
 
 \newpage
 \section{Análisis de objetivos y metodología}
