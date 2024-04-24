@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  24 APR 2024 23:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  25 APR 2024 00:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -996,18 +996,38 @@ LaTeX Info: Redefining \% on input line 1030.
 LaTeX Info: Redefining \. on input line 1030.
 LaTeX Info: Redefining \% on input line 1030.
  [30 <./imagenes/generarLinkDistribution.png>]
-Underfull \hbox (badness 4229) in paragraph at lines 1045--1048
-[]\T1/lmr/m/n/12 Shopify Tu-to-rial. \T1/lmr/m/it/12 Sho-pify\T1/lmr/m/n/12 , di-rec-ción: [][]$\T1/lmtt/m/n/12 https : / / www . shopify . com / es / blog /
+Underfull \hbox (badness 1137) in paragraph at lines 1050--1052
+\T1/lmtt/m/n/12 com / es / blog / guia-[]de-[]optimizacion-[]de-[]tasa-[]de-[]conversion$[][] \T1/lmr/m/n/12 (vi-si-ta-do 29-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1076
-[]\T1/lmr/m/n/12 App Brid-ge \T1/lmr/m/it/12 App Brid-ge\T1/lmr/m/n/12 , di-rec-ción: [][]$\T1/lmtt/m/n/12 https : / / shopify . dev / docs / api /
+Underfull \hbox (badness 10000) in paragraph at lines 1066--1068
+\T1/lmr/m/n/12 di-rec-ción: [][]$\T1/lmtt/m/n/12 https : / / developer . mozilla . org / es / docs / Learn / JavaScript /
  []
 
-LaTeX Info: Redefining \. on input line 1105.
-LaTeX Info: Redefining \% on input line 1105.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1092
+[]\T1/lmr/m/n/12 Shopify. \T1/lmr/m/it/12 "The-me app ex-ten-sion over-view"\T1/lmr/m/n/12 , úl-ti-ma ac-tua-li-za-ción: 25
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1092
+\T1/lmr/m/n/12 enero 2022, di-rec-ción: [][]$\T1/lmtt/m/n/12 https : / / shopify . dev / docs / apps / online-[]store /
+ []
+
+LaTeX Info: Redefining \. on input line 1092.
+LaTeX Info: Redefining \% on input line 1092.
 [31]
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1100
+[]\T1/lmr/m/n/12 Nodejs.org \T1/lmr/m/it/12 Ïn-tro-duc-tion to No-de.js"\T1/lmr/m/n/12 , úl-ti-ma ac-tua-li-za-ción: 25 enero
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1100
+\T1/lmr/m/n/12 2022, di-rec-ción: [][]$\T1/lmtt/m/n/12 https : / / nodejs . org / en / learn / getting-[]started /
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1130--1132
 []\T1/lmr/m/n/12 Azure De-vOps Pá-gi-na ofi-cial \T1/lmr/m/it/12 Azu-re De-vOps Pá-gi-na ofi-cial\T1/lmr/m/n/12 , di-rec-
  []
@@ -1173,15 +1193,15 @@ Package rerunfilecheck Info: File `TFG-RubÃ©n-SÃ¡nchez.out' has not changed.
 (rerunfilecheck)             Checksum: 608B394D01CF099A455C475FA5C84E53;4744.
  ) 
 Here is how much of TeX's memory you used:
- 17445 strings out of 474486
- 283608 string characters out of 5736203
+ 17454 strings out of 474486
+ 283752 string characters out of 5736203
  1941542 words of memory out of 5000000
- 39234 multiletter control sequences out of 15000+600000
+ 39243 multiletter control sequences out of 15000+600000
  625681 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1121b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsco10.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/RubÃ©nSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on TFG-RubÃ©n-SÃ¡nchez.pdf (45 pages, 3474765 bytes).
+Output written on TFG-RubÃ©n-SÃ¡nchez.pdf (45 pages, 3477509 bytes).
 PDF statistics:
  794 PDF objects out of 1000 (max. 8388607)
  211 named destinations out of 1000 (max. 500000)
