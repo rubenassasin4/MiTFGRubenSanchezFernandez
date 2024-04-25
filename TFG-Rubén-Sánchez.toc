@@ -40,6 +40,6 @@
 \contentsline {section}{\numberline {7}Conclusiones y vías futuras}{29}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Conclusiones}{29}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Trabajo futuro}{30}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Bibliografía}{31}{section.8}%
-\contentsline {section}{\numberline {9}Anexos}{34}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Manual de usuario}{34}{subsection.9.1}%
+\contentsline {section}{\numberline {8}Bibliografía}{32}{section.8}%
+\contentsline {section}{\numberline {9}Anexos}{35}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Manual de usuario}{35}{subsection.9.1}%
