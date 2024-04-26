@@ -309,8 +309,9 @@ INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT .\imagenes\Estados y prioridad de tarea.png
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
@@ -378,7 +379,6 @@ INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
 INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
 INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
 INPUT .\imagenes\ManualUsuario\FuncionalidadPaginaAdministracion.png
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT .\imagenes\ManualUsuario\HomeTiendaDemo.png
 INPUT .\imagenes\ManualUsuario\HomeTiendaDemo.png
 INPUT .\imagenes\ManualUsuario\HomeTiendaDemo.png

@@ -454,9 +454,9 @@ Como administrador de la tienda, quiero poder observar en las páginas de produc
 \begin{enumerate}[label=\arabic*.]
     \item Cuando visualizo la ficha de un producto en la tienda,
           \begin{itemize}[label=--]
-              \item Debe haber un botón claramente identificable como "Personalizar".
+              \item Debe haber un botón claramente identificable como ``Personalizar''.    
           \end{itemize}
-    \item El botón "Personalizar"  solo debe mostrarse si el producto es de impresión,
+    \item El botón ``Personalizar'' solo debe mostrarse si el producto es de impresión,
           \begin{itemize}[label=--]
               \item Un producto se considerará de impresión si tiene información específica en su metafield denominado \textit{upng.areas\_impresion}.
           \end{itemize}
@@ -467,27 +467,16 @@ Como administrador de la tienda, quiero poder observar en las páginas de produc
 \end{enumerate}
 
 
-\subsubsubsection{Historia de Usuario 2: Configuración de Opciones de Envío Internacional}\label{sec:historia2}
+\subsubsubsection{Historia de Usuario 2: Creación de Metafields y Metaobjects para la Gestión de Trabajos de Impresión}\label{sec:historia2}
 
 Como administrador de la tienda,
-quiero poder configurar opciones de envío internacional
-para poder ofrecer servicios de envío a clientes de todo el mundo y gestionar eficazmente los envíos internacionales.
+quiero tener los metafields y metaobjects necesarios para gestionar los trabajos de impresión,
+poder personalizar y administrar eficientemente los productos disponibles de la tienda.
 
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Debe existir una sección en el panel de administración para configurar opciones de envío internacional.
-          \begin{itemize}[label=--]
-              \item Los administradores deben poder acceder fácilmente a esta sección desde el panel de control de la tienda.
-          \end{itemize}
-    \item Se deben ofrecer diferentes métodos de envío internacional,
-          \begin{itemize}[label=--]
-              \item Los métodos de envío deben incluir opciones como correo prioritario, envío estándar, envío exprés, entre otros.
-          \end{itemize}
-    \item Los administradores deben poder establecer tarifas de envío específicas para cada región internacional,
-          \begin{itemize}[label=--]
-              \item Se debe proporcionar un formulario donde los administradores puedan ingresar tarifas de envío para diferentes regiones del mundo.
-          \end{itemize}
+    \item Deben existir los metafields y metaobjects requeridos para la gestión de trabajos de impresión.
 \end{enumerate}
 
 
@@ -498,7 +487,7 @@ Como administrador de la tienda, deseo poder configurar la impresión de product
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Al pulsar el botón de "Añadir al Pedido de Impresión", se debe abrir un modal que permita al usuario configurar la impresión del producto.
+    \item Al pulsar el botón de ``Añadir al Pedido de Impresión'', se debe abrir un modal que permita al usuario configurar la impresión del producto.
     \item El modal debe mostrar toda la información relevante sobre la impresión y permitir al usuario ajustar la configuración según sea necesario.
     \item Se debe crear una estructura JavaScript utilizando Liquid para tener preparados todos los datos de áreas, trabajos, clichés, etc., de manera que no sea necesario realizar llamadas adicionales al Admin API para obtener la información.
     \item En el modal, se debe mostrar un resumen claro y detallado de los elementos seleccionados por el usuario, incluyendo el nombre del producto, la cantidad, las áreas seleccionadas, los trabajos en cada área, los clichés, los precios individuales y el importe total.
@@ -508,7 +497,7 @@ Como administrador de la tienda, deseo poder configurar la impresión de product
     \item Las imágenes de las áreas que no tengan una definida deben mostrar una imagen por defecto, configurable a través del Theme App Extension.
     \item Cada área debe mostrar los trabajos disponibles en un desplegable para que el usuario pueda seleccionar el que desee.
     \item Cada trabajo tiene un número máximo de colores, por lo que al lado del desplegable de trabajos debe aparecer un desplegable de colores para que el usuario elija el número de colores que necesita. Y cada vez que se actualice el trabajo seleccionado deberá refrescarse este desplegable.
-    \item Los selectores de trabajo y colores de las áreas que el usuario no haya seleccionado deberán aparecer como desactivadas.
+    \item Los selectores de trabajo y colores de las áreas que el usuario no haya seleccionado deberán aparecer como desactivados.
     \item Se debe habilitar un campo de observaciones en cada área donde el usuario pueda agregar las notas pertinentes.
     \item Para cada trabajo, se debe permitir al usuario seleccionar el número de colores y especificar los colores deseados. Para ello según la selección del usuario en el desplegable de colores se deberán añadir tantos selectores de colores como colores se hayan seleccionado en el mismo. Además del selector de colores se añadirán campos de texto libre para que el usuario pueda especificar cada color mediante esta forma.
     \item Se debe incluir la opción de marcar si un cliché es de repetición, afectando al precio final.
@@ -666,17 +655,19 @@ para reflejar correctamente el importe del canon asociado a los productos en mi 
 
 \textbf{Tareas relacionadas con la \hyperref[sec:historia2]{Historia de usuario 2}:}
 \begin{itemize}
-    \item \textbf{Tarea 1:} Crear Sección de Configuración de Envío Internacional:
+    \item \textbf{Tarea 1:} Crear Manualmente los Metafields y Metaobjects Necesarios (Tarea 3):
           \begin{itemize}[label=--]
-              \item Descripción: Implementar una sección en el panel de administración de la tienda para que los administradores puedan configurar opciones de envío internacional de manera intuitiva.
+              \item \textbf{Descripción:} Crear manualmente los metafields y metaobjects necesarios para la gestión de trabajos de impresión.
           \end{itemize}
-    \item \textbf{Tarea 2:} Definir Métodos de Envío Internacional:
+          
+    \item \textbf{Tarea 2:} Mejora: Creación Automática de Metafields y Metaobjects por parte de la Aplicación (Tarea 4):
           \begin{itemize}[label=--]
-              \item Descripción: Establecer diferentes métodos de envío internacional disponibles para los clientes, incluyendo opciones de envío prioritario, estándar y exprés, entre otros.
-          \end{itemize}
-    \item \textbf{Tarea 3:} Establecer Tarifas de Envío por Región:
-          \begin{itemize}[label=--]
-              \item Descripción: Crear un formulario en la sección de configuración de envío internacional donde los administradores puedan ingresar tarifas de envío específicas para cada región del mundo.
+              \item \textbf{Descripción:} Implementar una funcionalidad mejorada en la aplicación que permita la creación automática de todos los metafields y metaobjects necesarios.
+              \item \textbf{Pasos:}
+              \begin{itemize}
+                  \item Crear un botón en el panel de administración de la aplicación para iniciar el proceso de creación automática.
+                  \item Realizar una verificación previa para comprobar si los metafields y metaobjects ya existen; en caso afirmativo, la aplicación no realizará ninguna acción adicional.
+              \end{itemize}
           \end{itemize}
 \end{itemize}
 
