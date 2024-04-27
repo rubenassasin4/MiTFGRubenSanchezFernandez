@@ -22,24 +22,22 @@
 \contentsline {paragraph}{Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}{14}{paragraph*.5}%
 \contentsline {paragraph}{Historia de Usuario 4: Funcionalidad de Añadir al Carrito}{15}{paragraph*.6}%
 \contentsline {paragraph}{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}{16}{paragraph*.7}%
-\contentsline {paragraph}{Historia de Usuario 6: Personalización Dinámica de Precios para Trabajos Específicos}{16}{paragraph*.8}%
-\contentsline {paragraph}{Historia de Usuario 7: Visualización Atractiva del Logo del Cliente en el Producto}{17}{paragraph*.9}%
-\contentsline {paragraph}{Historia de Usuario 8: Automatización de la Creación de Metafields Necesarios}{17}{paragraph*.10}%
-\contentsline {paragraph}{Historia de Usuario 9: Gestión de Casuística "Doble Pasada" en Productos y Trabajos}{17}{paragraph*.11}%
-\contentsline {paragraph}{Historia de Usuario 10: Gestión del Canon Digital en Productos}{18}{paragraph*.12}%
-\contentsline {paragraph}{Historia de Usuario 11: Adición Automática de Línea de Canon al Añadir un Producto al Carrito}{18}{paragraph*.13}%
-\contentsline {subsection}{\numberline {6.2}Diseño}{19}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Tareas}{19}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Diseño de back-end}{25}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Diseño de front-end}{25}{subsubsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.3}Implementación}{25}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Implementación de front-end}{25}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Implementación de back-end}{25}{subsubsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.4}Pruebas}{25}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Despliegue}{26}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{31}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conclusiones}{31}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{31}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Bibliografía}{33}{section.8}%
-\contentsline {section}{\numberline {9}Anexos}{36}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Manual de usuario}{36}{subsection.9.1}%
+\contentsline {paragraph}{Historia de Usuario 6: Visualización Atractiva del Logo del Cliente en el Producto}{16}{paragraph*.8}%
+\contentsline {paragraph}{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios}{17}{paragraph*.9}%
+\contentsline {paragraph}{Historia de Usuario 8: Gestión de Casuística ``Doble Pasada'' en Productos y Trabajos}{17}{paragraph*.10}%
+\contentsline {paragraph}{Historia de Usuario 9: Gestión del Canon Digital y Adición Automática al Carrito}{17}{paragraph*.11}%
+\contentsline {subsection}{\numberline {6.2}Diseño}{18}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Tareas}{18}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Diseño de back-end}{24}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Diseño de front-end}{24}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Implementación}{24}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Implementación de front-end}{24}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Implementación de back-end}{24}{subsubsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.4}Pruebas}{24}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Despliegue}{25}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conclusiones}{30}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{30}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Bibliografía}{32}{section.8}%
+\contentsline {section}{\numberline {9}Anexos}{35}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Manual de usuario}{35}{subsection.9.1}%
