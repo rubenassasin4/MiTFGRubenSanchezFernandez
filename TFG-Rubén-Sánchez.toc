@@ -16,20 +16,22 @@
 \contentsline {subsubsection}{\numberline {5.2.2}Proceso de desarrollo}{11}{subsubsection.5.2.2}%
 \contentsline {section}{\numberline {6}Diseño y resolución del trabajo realizado}{13}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Análisis}{13}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Historias de usuario}{13}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Historias de usuario de las funcionalidades básicas}{13}{subsubsection.6.1.1}%
 \contentsline {paragraph}{Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}{13}{paragraph*.3}%
 \contentsline {paragraph}{Historia de Usuario 2: Creación de Metafields y Metaobjects para la Gestión de Trabajos de Impresión}{13}{paragraph*.4}%
 \contentsline {paragraph}{Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}{14}{paragraph*.5}%
 \contentsline {paragraph}{Historia de Usuario 4: Funcionalidad de Añadir al Carrito}{15}{paragraph*.6}%
+\contentsline {subsubsection}{\numberline {6.1.2}Historias de usuario de las funcionalidades adicionales}{16}{subsubsection.6.1.2}%
 \contentsline {paragraph}{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}{16}{paragraph*.7}%
 \contentsline {paragraph}{Historia de Usuario 6: Visualización Atractiva del Logo del Cliente en el Producto}{16}{paragraph*.8}%
 \contentsline {paragraph}{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios}{17}{paragraph*.9}%
 \contentsline {paragraph}{Historia de Usuario 8: Gestión de Casuística ``Doble Pasada'' en Productos y Trabajos}{17}{paragraph*.10}%
 \contentsline {paragraph}{Historia de Usuario 9: Gestión del Canon Digital y Adición Automática al Carrito}{17}{paragraph*.11}%
 \contentsline {subsection}{\numberline {6.2}Diseño}{18}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Tareas}{18}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Diseño de back-end}{24}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Diseño de front-end}{24}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.1}Tareas principales}{18}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Tareas adicionales}{22}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Diseño de back-end}{24}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Diseño de front-end}{24}{subsubsection.6.2.4}%
 \contentsline {subsection}{\numberline {6.3}Implementación}{24}{subsection.6.3}%
 \contentsline {subsubsection}{\numberline {6.3.1}Implementación de front-end}{24}{subsubsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.2}Implementación de back-end}{24}{subsubsection.6.3.2}%

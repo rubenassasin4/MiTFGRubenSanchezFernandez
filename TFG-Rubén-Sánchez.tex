@@ -384,9 +384,9 @@ llevado a cabo durante todo este periodo.
     \item \textbf{Etapa 3. Implementación de la aplicación.} Esta etapa comprende los objetivos \ref{item:objetivo4}, \ref{item:objetivo5} y \ref{item:objetivo6}.
     Esta es la etapa mas larga del desarrollo, en ella se implementan las tareas diseñadas, y se van cumpliendo todas esas historias de usuario y requisitos analizados previamente.
     La implementación tanto de la parte Backend como del Frontend se ha ido alternando y desarrollando correlativamente según estaba diseñado en las tareas. Cabe destacar que el desarrollo de esta aplicación se ha focalizado
-    más en el Frontend que en el Backend, pues la mayor parte de funcionalidades de la misma recaen sobre la parte Front. En esta etapa se ha ido probando en una tienda de desarrollo cada una de las funcionalidades implementadas en las tareas, 
-    para ir comprobando el funcionamiento de la aplicación. Una vez desarrolladas y comprobadas todas las tareas se han diseñado, implementado y probado unas casuísticas y funcionalidades
-    extra que los futuros clientes pueden necesitar en sus desarrollos personalizados.
+    más en el Frontend que en el Backend, pues la mayor parte de funcionalidades de la misma recaen sobre la parte Frontend. En esta etapa se han ido probando en una tienda de desarrollo cada una de las funcionalidades implementadas en las tareas, 
+    para ir comprobando el funcionamiento de la aplicación. Una vez desarrolladas y comprobadas todas las tareas de la funcionalidad principal de la aplicación, se han llevado a cabo nuevas historias de usuario de funcionalidad adicional y se han diseñado, implementado y probado estas casuísticas y funcionalidades
+    extra que los futuros clientes podrían solicitar en sus desarrollos personalizados.
     \item \textbf{Etapa 4. Despliegue en tienda de muestra.} Esta etapa comprende el objetivo \ref{item:objetivo7}. 
     Durante esta etapa, se instala la aplicación en una tienda de muestra y se realiza el diseño y maquetación del tema de la misma. Además se rediseña el frontend (extensión de tema) de la aplicación de modo que el diseño del personalizador de artículos
     encaje con el diseño general de la tienda. En esta etapa también se realizan pruebas de todo el funcionamiento del personalizador y se realizan pedidos ficticios para comprobar el correcto
@@ -443,7 +443,7 @@ las tareas que se han ido siguiendo para implementar esta aplicación.
 Cada historia de usuario está compuesta por una descripción detallada de la funcionalidad requerida, así como por criterios de aceptación que 
 permiten validar que la funcionalidad ha sido implementada de manera adecuada. Estas son la bases sobre las cuales se ha construido y evaluado el éxito de esta aplicación.
 
-\subsubsection{Historias de usuario}
+\subsubsection{Historias de usuario de las funcionalidades básicas}
 
 \subsubsubsection{Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}\label{sec:historia1}
 
@@ -530,6 +530,8 @@ para mejorar la experiencia de compra y facilitar la gestión de los productos d
     \item La cantidad de cada producto añadido al carrito debe ser considerada y reflejada correctamente.
 \end{enumerate}
 
+\subsubsection{Historias de usuario de las funcionalidades adicionales}
+
 \subsubsubsection{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}\label{sec:historia5}
 
 Como administrador de la plataforma,
@@ -610,7 +612,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 
 \subsection{Diseño}
 
-\subsubsection{Tareas}
+\subsubsection{Tareas principales}
 
 \textbf{Tareas relacionadas con la \hyperref[sec:historia1]{Historia de usuario 1}:}
 \begin{itemize}
@@ -734,6 +736,8 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
               \item Si no se considera viable el uso de customized bundles, explorar la posibilidad de utilizar un Theme App Extension de JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
           \end{itemize} 
 \end{itemize}
+
+\subsubsection{Tareas adicionales}
 
 \textbf{Tareas relacionadas con la \hyperref[sec:historia5]{Historia de usuario 5}:}
 \begin{itemize}
