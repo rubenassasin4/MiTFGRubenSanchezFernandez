@@ -497,34 +497,36 @@ Como administrador de la tienda, deseo poder configurar la impresión de product
     \item Las imágenes de las áreas que no tengan una definida deben mostrar una imagen por defecto, configurable a través del Theme App Extension.
     \item Cada área debe mostrar los trabajos disponibles en un desplegable para que el usuario pueda seleccionar el que desee.
     \item Cada trabajo tiene un número máximo de colores, por lo que al lado del desplegable de trabajos debe aparecer un desplegable de colores para que el usuario elija el número de colores que necesita. Y cada vez que se actualice el trabajo seleccionado deberá refrescarse este desplegable.
-    \item Los selectores de trabajo y colores de las áreas que el usuario no haya seleccionado deberán aparecer como desactivados.
+    \item Todos los elementos configurables de las areas, como selectores, inputs, checkbox que el usuario no haya seleccionado deberán aparecer como desactivados.
     \item Se debe habilitar un campo de observaciones en cada área donde el usuario pueda agregar las notas pertinentes.
     \item Para cada trabajo, se debe permitir al usuario seleccionar el número de colores y especificar los colores deseados. Para ello según la selección del usuario en el desplegable de colores se deberán añadir tantos selectores de colores como colores se hayan seleccionado en el mismo. Además del selector de colores se añadirán campos de texto libre para que el usuario pueda especificar cada color mediante esta forma.
     \item Se debe incluir la opción de marcar si un cliché es de repetición, afectando al precio final.
     \item Se debe actualizar dinámicamente la información del resumen al seleccionar o deseleccionar áreas, trabajos y colores.
+    \item El usuario debe poder adjuntar una imagen que represente el logo a imprimir para cada área de impresión desde el modal de configuración de del producto. Esta imagen debe ser almacenada en el servidor del administrador.
     \item El diseño del modal debe ser responsive para una experiencia óptima en dispositivos móviles.
-    \item Los trabajos deben tener precios diferentes para el color principal y el resto de colores, con posibilidad de seleccionar variantes según sea necesario.
+    \item Los trabajos deben tener precios diferentes para el color principal (la elección de un solo color) y el resto de colores, con posibilidad de emplear variantes del producto trabajo según sea necesario. Cada color extra que se seleccione debe aplicar un valor añadido al precio base del trabajo.
 \end{enumerate}
 
 
-\subsubsubsection{Historia de Usuario 4: Mejora en la Funcionalidad de Añadir al Carrito}\label{sec:historia4}
+\subsubsubsection{Historia de Usuario 4: Funcionalidad de Añadir al Carrito}\label{sec:historia4}
 
 Como administrador de la tienda,
-quiero que al añadir productos relacionados (productos normales, trabajos y clichés) al carrito, estos estén agrupados y vinculados de manera que no se puedan borrar o editar por separado,
+quiero poder añadir productos al carrito con su configuración y que al añadir estos productos relacionados (productos normales, trabajos y clichés), estos estén agrupados y vinculados de manera que no se puedan borrar o editar por separado,
 para mejorar la experiencia de compra y facilitar la gestión de los productos de impresión.
 
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
+    \item Los productos, junto con su configuración completa (productos normales, trabajos y clichés relacionados), deben agregarse correctamente al carrito al seleccionar la opción ``Añadir al Carrito''.
+    \item Al añadir productos al carrito, se deben incluir:
+          \begin{itemize}
+              \item El producto ``normal''.
+              \item Los productos ``trabajo'' seleccionados en diferentes áreas, con la variante adecuada según el número de colores seleccionados.
+              \item Los productos ``clichés'' asociados al trabajo, con la variante adecuada según si es de repetición o no.
+          \end{itemize}
     \item Se debe investigar si el uso de customized bundles es adecuado para agrupar y vincular los productos relacionados en el carrito.
     \item Estos productos tienen que estar agrupados y de forma que no se puedan eliminar o editar por separado.
     \item Toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) debe guardarse al añadir al carrito, para que pueda transferirse al pedido durante el proceso de checkout.
-    \item Al añadir productos al carrito, se deben incluir:
-          \begin{itemize}
-              \item El producto "normal".
-              \item Los productos "trabajos" seleccionados en diferentes áreas, con la variante adecuada según el número de colores seleccionados.
-              \item Los productos "clichés" asociados al trabajo, con la variante adecuada según si es de repetición o no.
-          \end{itemize}
     \item La cantidad de cada producto añadido al carrito debe ser considerada y reflejada correctamente.
 \end{enumerate}
 
