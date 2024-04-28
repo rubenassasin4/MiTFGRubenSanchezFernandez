@@ -378,14 +378,14 @@ llevado a cabo durante todo este periodo.
         \item Estudiar las tecnologías para la segunda parte del Frontend (Extensión de tema), ponerse al día con Liquid, HTML, CSS y JavaScript.
         \item Estudiar las tecnologías para la parte del Backend en nuestro caso Node.js y su libería Express. 
     \end{enumerate}
-    \item \textbf{Etapa 2. Análisis de requisitos y diseño funcionalidades principales.} Esta etapa comprende el objetivo \ref{item:objetivo2}.
+    \item \textbf{Etapa 2. Análisis de requisitos y diseño de funcionalidades principales.} Esta etapa comprende el objetivo \ref{item:objetivo2}.
     Durante esta estapa se realiza un análisis de requisitos básicos que debe tener la aplicación, se crean las historias de usuario correspondientes en base a esos requisitos y se realiza un diseño de cada
     funcionalidad a implementar dividiendo su desarrollo en tareas.
     \item \textbf{Etapa 3. Implementación de la aplicación.} Esta etapa comprende los objetivos \ref{item:objetivo4}, \ref{item:objetivo5} y \ref{item:objetivo6}.
     Esta es la etapa mas larga del desarrollo, en ella se implementan las tareas diseñadas, y se van cumpliendo todas esas historias de usuario y requisitos analizados previamente.
     La implementación tanto de la parte Backend como del Frontend se ha ido alternando y desarrollando correlativamente según estaba diseñado en las tareas. Cabe destacar que el desarrollo de esta aplicación se ha focalizado
     más en el Frontend que en el Backend, pues la mayor parte de funcionalidades de la misma recaen sobre la parte Frontend. En esta etapa se han ido probando en una tienda de desarrollo cada una de las funcionalidades implementadas en las tareas, 
-    para ir comprobando el funcionamiento de la aplicación. Una vez desarrolladas y comprobadas todas las tareas de la funcionalidad principal de la aplicación, se han llevado a cabo nuevas historias de usuario de funcionalidad adicional y se han diseñado, implementado y probado estas casuísticas y funcionalidades
+    para ir comprobando el funcionamiento de la aplicación. Una vez desarrolladas y comprobadas todas las tareas de la funcionalidad básica de la aplicación, se han llevado a cabo nuevas historias de usuario de funcionalidad adicional y se han diseñado, implementado y probado estas casuísticas y funcionalidades
     extra que los futuros clientes podrían solicitar en sus desarrollos personalizados.
     \item \textbf{Etapa 4. Despliegue en tienda de muestra.} Esta etapa comprende el objetivo \ref{item:objetivo7}. 
     Durante esta etapa, se instala la aplicación en una tienda de muestra y se realiza el diseño y maquetación del tema de la misma. Además se rediseña el frontend (extensión de tema) de la aplicación de modo que el diseño del personalizador de artículos
@@ -612,22 +612,22 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 
 \subsection{Diseño}
 
-\subsubsection{Tareas principales}
+\subsubsection{Tareas básicas}
 
 \textbf{Tareas relacionadas con la \hyperref[sec:historia1]{Historia de usuario 1}:}
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear una Aplicación y una Extensión de Tema:
           \begin{itemize}[label=--]
-              \item Descripción: Crear una aplicación para Shopify con el template Node e instalarla en la tienda. Crear un theme app extensión en la aplicación para poder añadir una nueva sección con el botón a las plantillas de ficha de producto a través del personalizador del theme.
+              \item \textbf{Descripción:} Crear una aplicación para Shopify con el template Node e instalarla en la tienda. Crear un theme app extensión en la aplicación para poder añadir una nueva sección con el botón y toda su funcionalidad a las plantillas de ficha de producto a través del personalizador del theme en la tienda.
           \end{itemize}
-    \item \textbf{Tarea 2:} Crear la sección y el botón y mostrarlo solo si el Producto es de Impresión:
+    \item \textbf{Tarea 2:} Crear la sección con el botón y mostrarlo solo si el Producto es de Impresión:
           \begin{itemize}[label=--]
-              \item Descripción: Utilizar liquid para verificar si el producto es de impresión. Un producto se considerará de impresión si tiene información específica en su metafield denominado \textit{upng.areas\_impresion}.
+              \item \textbf{Descripción:} Crear una sección en el theme app extension y añadir en ella un botón. Utilizar liquid para verificar si el producto de la página en la que se ejecute es de impresión. Un producto se considerará de impresión si tiene información específica en su metafield denominado \textit{upng.areas\_impresion}.
               \item Mostrar el botón ``Personalizar'' si el producto cumple con los criterios establecidos; de lo contrario, ocultar el botón.
           \end{itemize}
     \item \textbf{Tarea 3:} Recuperar el Texto del Botón de los Archivos de Locales:
           \begin{itemize}[label=--]
-              \item Descripción: Configurar la aplicación para que el texto del botón y cualquier otro texto relacionado se recupere de los archivos de locales. Preparar traducciones en inglés y español para garantizar una experiencia multilingüe completa.
+              \item \textbf{Descripción:} Configurar la aplicación para que el texto del botón y cualquier otro texto relacionado se recupere de los archivos de locales. Preparar traducciones en inglés y español para garantizar una experiencia multilingüe completa.
           \end{itemize}
 \end{itemize}
 
@@ -635,17 +635,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Manualmente los Metafields y Metaobjects Necesarios:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear manualmente los metafields y metaobjects necesarios para la gestión de trabajos de impresión.
-          \end{itemize}
-          
-    \item \textbf{Tarea 2:} Mejora: Creación Automática de Metafields y Metaobjects por parte de la Aplicación:
-          \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Implementar una funcionalidad mejorada en la aplicación que permita la creación automática de todos los metafields y metaobjects necesarios.
-              \item \textbf{Pasos:}
-              \begin{itemize}
-                  \item Crear un botón en el panel de administración de la aplicación para iniciar el proceso de creación automática.
-                  \item Realizar una verificación previa para comprobar si los metafields y metaobjects ya existen; en caso afirmativo, la aplicación no realizará ninguna acción adicional.
-              \end{itemize}
+              \item \textbf{Descripción:} Crear manualmente los metafields y metaobjects necesarios para la gestión de trabajos de impresión. Habrá que crear un metaobjeto area de impresión, que contenga todos los atributos necesarios que se van a necesitar (nombre, imagen, alto, ancho y trabajos). Se crearán metacampos para la entidad producto que contengan una lista de metaobjetos del tipo area de impresión, el número de colores para los productos de tipo trabajo y una metacampo que sea una referencia al cliche (producto especial).
           \end{itemize}
 \end{itemize}
 
@@ -818,16 +808,12 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \end{itemize}
 
 
-\subsubsection{Diseño de back-end}
-Describir el API REST
-\subsubsection{Diseño de front-end}
-Mock-ups
-Diagrama de navegación
-
 \subsection{Implementación}
 
-\subsubsection{Implementación de front-end}
-\subsubsection{Implementación de back-end}
+\subsubsection{Implementación de las tareas básicas}
+
+\subsubsection{Implementación de las tareas adicionales}
+
 
 \subsection{Pruebas}
 En cuanto a las pruebas realizadas, a lo largo de todo el proceso de desarrollo de la aplicación, se han ido llevando a cabo pruebas continuas
