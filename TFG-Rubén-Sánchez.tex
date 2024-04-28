@@ -676,19 +676,19 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
     
     \item \textbf{Tarea 9:} Marcar cliché de repetición:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Incluir un checkbox para que el usuario pueda indicar si el cliché es de repetición o no. Este factor afectará al precio final de la impresión. El cliche será un producto especial que contará con dos variantes, una con su precio normal y otra con un precio más económico correspondiente a la repetición de cliche. En caso de marcar este checkbox se tendrá en cuenta la variante de repetición y en caso contrario su variante normal, aplicando de este modo un precio u otro al pedido.
+              \item \textbf{Descripción:} En cada area, debe aparecer un checkbox para que el usuario pueda indicar si el cliché es de repetición (no es la primera vez que se hace una impresión con la imagen que desea el cliente) o no. Este factor afectará al precio final de la impresión. El cliche será un producto especial que contará con dos variantes, una con su precio normal (variante: NO) y otra con un precio más económico (variante: SI) correspondiente a la repetición de cliche. En caso de marcar este checkbox se tendrá en cuenta la variante de repetición y en caso contrario su variante normal, aplicando de este modo un precio u otro al pedido. Además, hay que tener en cuenta que en un área de impresión configurada, se añadiran tantos cliches al pedido de personalización como colores haya seleccionado el usuario. Esto se debe a que el proveedor de la tienda deberá fabricar un cliche por cada color en el que se desee imprimir, por lo que el cliente debe acarrear con su coste.
           \end{itemize}
     \item \textbf{Tarea 10:} Seleccionar áreas:
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Cuando se marque un area se deben habilitar y deshabilitar todos los elementos configurables de la misma (campos de trabajos, colores, medidas, etc.). Se debe actualizar la información del resumen con los elementos y precios correspondientes, sumando los precios del trabajo seleccionado, colores, cliche y demás elementos. En caso de que se desmarque la opción no se tendrán en cuenta los elementos y configuracions de esta area y no aparecerá en el resumen.
           \end{itemize}
-    \item \textbf{Tarea 11:} Mostrar select de colores:
+    \item \textbf{Tarea 11:} Mostrar selectores de colores:
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Al seleccionar un número de colores en el desplegable, se debe añadir un campo de texto por cada uno de estos colores, para que el usuario pueda indicar en que color se debe imprimir. Este será un campo de texto libre. Además se ofrecerá un selector para que el usuario pueda escoger entre varios colores. Actualizar la cantidad de clichés y multiplicar su precio en el resumen.
           \end{itemize}
     \item \textbf{Tarea 12:} Adjuntar imagen por área:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Permitir al usuario adjuntar una imagen para cada área de impresión. Crear un método API propio en la aplicación para gestionar la subida de imágenes al servidor. Generar un ID aleatorio asociado al producto de impresión y guardar la imagen junto con los demás datos configurados.
+              \item \textbf{Descripción:} Para cada area, se mostrará un campo para poder adjuntar una imagen. Se deberá crear un método de API en nuestra aplicación, para que el usuario pueda subir la imagen realizando una llamada a la misma y almacenando la imagen en el servidor del administrador. Se deberá nombrar a la imagen en el servidor con un nombre que nos permita identificarla y asociarla al area del pedido del cliente. Para ello se generará un identificador aleatorio que se asociará al producto de impresión y que deberá almacenarse junto con el resto de datos de impresión que se configuran. Se empleará este identificador como parte del nombre de la imagen. Para mejor clasificación se puede crear una subcarpeta con la fecha actual en el directorio de imagenes del servidor, de este modo se realizará un almacenamiento de las imagenes más ordenado de cara al administrador de la tienda.
           \end{itemize}
     \item \textbf{Tarea 13:} Diseño responsive:
           \begin{itemize}[label=--]
@@ -696,7 +696,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
           \end{itemize}
     \item \textbf{Tarea 14:} Precios diferenciados para trabajos según colores:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Implementar precios diferenciados para los trabajos en función del color principal y el resto de colores seleccionados por el usuario. Utilizar variantes para gestionar los precios según sea necesario.
+              \item \textbf{Descripción:} En este tipo de pedidos de impresión, los trabajos serán productos especiales que han de tener dos variantes con dos precios distintos. Habrá una variante ``Primer color'' y otra variante ``Resto colores''. Si el usuario selecciona un color en el area, se le cobrará un trabajo principal, pero si ha seleccionado más de un color, se le cobrará el primero como trabajo principal y el resto con el precio del trabajo secundario, que es más económico pero representa un coste adicional de trabajo al tener que imprimir en varios colores. Es decir se deberá añadir una variante de trabajo de resto colores por cada color adicional.
           \end{itemize}
 \end{itemize}
 
@@ -704,13 +704,11 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Añadir Productos Relacionados al Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto "normal", los trabajos seleccionados y los clichés asociados, teniendo en cuenta la cantidad y las variantes adecuadas según las selecciones del usuario.
-              \item Utilizar el ajax API para añadir los productos al carrito.
+              \item \textbf{Descripción:} Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto ``normal'', los ``trabajos'' seleccionados en las diferentes areas con la variante adecuada según el número de colores seleccionados y los ``clichés'' asociados, teniendo en cuenta las cantidades según las selecciones del usuario. Investigar y utilizar el ajax API para añadir todos los elementos al carrito.
           \end{itemize}
     \item \textbf{Tarea 2:} Guardar Información de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Desarrollar la funcionalidad para guardar toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) en el carrito al añadir productos relacionados.
-              \item Utilizar las properties de los LineItems para almacenar esta información de manera adecuada.
+              \item \textbf{Descripción:} Desarrollar la funcionalidad para guardar toda la información de impresión configurada (medidas, colores, identificador de la imagen adjunta, observaciones de cada área y todos los atributos necesarios) en el carrito al añadir productos relacionados. Estos datos deben almacenarse junto con el pedido de impresión realizado y que estos  pasen al checkout y al pedido que se recibirá en el administrador de la tienda. Para ello una buena opción es usar las propiedades de líneas de pedido que proporciona Shopify para almacenar atributos de un producto en el carrito \cite{properties-lineitem}.
           \end{itemize}
     \item \textbf{Tarea 3:} Investigar el Uso de Customized Bundles para Agrupar y Vincular Productos:
           \begin{itemize}[label=--]
@@ -1097,6 +1095,10 @@ es muy poco intuitiva y atractiva para los clientes.
     \bibitem{devOps} 
     Eric Martinez. AO Data Cloud.
     \textit{``Azure DevOps: La herramienta esencial para el desarrollo de software''}, última actualización: 26 enero 2024, dirección: \url{https://aodatacloud.es/blog/que-es-azure-devops-y-para-que-sirve/#%C2%BFQue_es_Azure_DevOps} (visitado 31-03-2024).
+
+    \bibitem{properties-lineitem} 
+    Shopify.
+    \textit{``Cart API reference''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/api/ajax/reference/cart#private-properties-and-attributes} (visitado 25-11-2023).
 
     \bibitem{nodemon} 
     José Luis
