@@ -643,67 +643,60 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Abrir un modal:
           \begin{itemize}[label=--]
-              \item Descripción: Al pulsar el botón ``Añadir al Pedido de Impresión'', se debe abrir un modal que contenga toda la información necesaria para configurar la impresión del producto.
+              \item \textbf{Descripción:} Al pulsar el botón ``Añadir al Pedido de Impresión'', se debe abrir un modal que contenga toda la información necesaria para configurar la impresión del producto.
           \end{itemize}
     \item \textbf{Tarea 2:} Crear estructura JavaScript para datos de impresión:
           \begin{itemize}[label=--]
-              \item Descripción: Utilizar Liquid para crear una estructura JavaScript que contenga todos los datos relevantes de áreas, trabajos, clichés, etc., necesarios para la configuración de la impresión. Esto permitirá tener los datos disponibles en el modal sin necesidad de realizar llamadas adicionales al Admin API.
+              \item \textbf{Descripción:} Utilizar Liquid para crear una estructura JavaScript que contenga todos los datos relevantes de áreas, trabajos, clichés, etc., necesarios para la configuración de la impresión. Esto permitirá tener los datos disponibles en el modal sin necesidad de realizar llamadas adicionales al Admin API.
           \end{itemize}
     \item \textbf{Tarea 3:} Mostrar datos del resumen:
           \begin{itemize}[label=--]
-              \item Descripción: En el modal, mostrar una sección de resumen que presente de manera clara y detallada todos los elementos seleccionados por el usuario, incluyendo el nombre del producto, cantidad, áreas seleccionadas con trabajos y clichés, precios individuales y el importe total. Esta sección debe actualizarse dinámicamente al configurar diferentes elementos de la impresión.
+              \item \textbf{Descripción:} En el modal, mostrar una sección de resumen que presente de manera clara y detallada todos los elementos seleccionados por el usuario, incluyendo el nombre del producto, cantidad, áreas seleccionadas con sus trabajos y clichés asociados, precios individuales y el importe total. Esta sección debe actualizarse dinámicamente al configurar diferentes elementos de la impresión.
           \end{itemize}
     \item \textbf{Tarea 4:} Ajustar la cantidad de productos:
           \begin{itemize}[label=--]
-              \item Descripción: Permitir al usuario ingresar la cantidad de productos que desea imprimir. Esta cantidad se multiplicará por el precio de la impresión para calcular el importe total.
+              \item \textbf{Descripción:} Se pueden configurar a la vez tantas unidades de producto como se quieran. En principio se compartira el mismo input de cantidad ya existente en la ficha del producto. Al ingresar un número de unidades en la ficha de producto y pulsar el botón del configurador, se tendrá en cuenta el valor de dicho input para establecer el número de productos a configurar. Se hará uso del valor del mismo a la hora de hacer los cálculos del resumen y añadir los elementos necesarios al carrito.
           \end{itemize}
     \item \textbf{Tarea 5:} Mostrar áreas de impresión:
           \begin{itemize}[label=--]
-              \item Descripción: Mostrar todas las áreas de impresión disponibles para el producto, incluyendo una imagen, nombre y medidas ajustables (ancho y largo). Habilitar un checkbox para que el usuario pueda seleccionar las áreas en las que desea imprimir.
+              \item \textbf{Descripción:} Mostrar todas las áreas de impresión disponibles para el producto, incluyendo todos sus elementos imagen, nombre y medidas ajustables (ancho y largo). Estos datos se obtendran del la estructura javascript que se habrá preparado con todos los datos del prodcuto actual y estarán disponibles en el modal. Se habilitará un checkbox junto a cada nombre para que el usuario pueda seleccionar las áreas en las que desea imprimir.
           \end{itemize}
     \item \textbf{Tarea 6:} Imagen por defecto para áreas sin imagen:
           \begin{itemize}[label=--]
-              \item Descripción: Configurar una imagen por defecto para las áreas que no tengan una imagen definida. Permitir al usuario personalizar esta imagen a través del Theme App Extension.
+              \item \textbf{Descripción:} Configurar una imagen por defecto para las áreas que no tengan una imagen definida. Para ello en el Schema de la configuración de la sección, se añadira una settings de imagen, para que el administrador de la tienda pueda escoger esta imagen desde el panel de administración del tema. En los assets de la aplicación se incluirá otra imagen de reserva por si el administrador no hubiera configurado esta opción. A la hora de mostrar las areas se comprobará si tienen o no imagen, en caso negativo se empleará la configurada en esta setting y como último recurso la almacenada en assets.
           \end{itemize}
-    \item \textbf{Tarea 7:} Mostrar trabajos para cada área:
+    \item \textbf{Tarea 7:} Mostrar trabajos para cada área y número de colores del trabajo:
           \begin{itemize}[label=--]
-              \item Descripción: Para cada área de impresión seleccionada, mostrar los trabajos disponibles en un desplegable. Permitir al usuario seleccionar el trabajo deseado y especificar el número de colores.
+              \item \textbf{Descripción:} En cada área, se debe presentar un desplegable con los trabajos disponibles para que el cliente pueda elegir el deseado. Cada trabajo tiene un número máximo de colores. Junto al desplegable de trabajos, se mostrará un desplegable de colores para que el usuario seleccione el número necesario de colores con el que quiere realizar el trabajo de impresión. Al cambiar el trabajo seleccionado, se actualizarán dinámicamente las opciones disponibles en el desplegable de colores, pues cada trabajo cuenta con un límite de colores. Al seleccionar un trabajo para un área específica, se actualizará automáticamente la información del resumen con su nombre y precio correspondiente. El precio del trabajo será calculado multiplicando el precio del trabajo por el número de productos que se están personalizando, pues a cada unidad hay que aplicarle un trabajo.
           \end{itemize}
     \item \textbf{Tarea 8:} Incluir campo de observaciones:
           \begin{itemize}[label=--]
-              \item Descripción: En cada área de impresión, incluir un campo de observaciones donde el usuario pueda agregar notas pertinentes relacionadas con la impresión.
+              \item \textbf{Descripción:} En cada área de impresión, incluir un campo de observaciones donde el usuario pueda agregar notas pertinentes relacionadas con la impresión.
           \end{itemize}
-    \item \textbf{Tarea 9:} Seleccionar colores:
+    
+    \item \textbf{Tarea 9:} Marcar cliché de repetición:
           \begin{itemize}[label=--]
-              \item Descripción: Permitir al usuario seleccionar el número de colores para cada trabajo en un desplegable. Además, proporcionar campos de texto para que el usuario especifique los colores. Estos campos estarán habilitados solo si el cliente selecciona el área correspondiente.
+              \item \textbf{Descripción:} Incluir un checkbox para que el usuario pueda indicar si el cliché es de repetición o no. Este factor afectará al precio final de la impresión. El cliche será un producto especial que contará con dos variantes, una con su precio normal y otra con un precio más económico correspondiente a la repetición de cliche. En caso de marcar este checkbox se tendrá en cuenta la variante de repetición y en caso contrario su variante normal, aplicando de este modo un precio u otro al pedido.
           \end{itemize}
-    \item \textbf{Tarea 10:} Marcar cliché de repetición:
+    \item \textbf{Tarea 10:} Seleccionar áreas:
           \begin{itemize}[label=--]
-              \item Descripción: Incluir un checkbox para que el usuario pueda indicar si el cliché es de repetición o no. Este factor afectará al precio final de la impresión.
+              \item \textbf{Descripción:} Cuando se marque un area se deben habilitar y deshabilitar todos los elementos configurables de la misma (campos de trabajos, colores, medidas, etc.). Se debe actualizar la información del resumen con los elementos y precios correspondientes, sumando los precios del trabajo seleccionado, colores, cliche y demás elementos. En caso de que se desmarque la opción no se tendrán en cuenta los elementos y configuracions de esta area y no aparecerá en el resumen.
           \end{itemize}
-    \item \textbf{Tarea 11:} Seleccionar áreas:
+    \item \textbf{Tarea 11:} Mostrar select de colores:
           \begin{itemize}[label=--]
-              \item Descripción: Habilitar y deshabilitar los campos de trabajos, colores, medidas, etc., según las áreas seleccionadas por el usuario. Actualizar dinámicamente la información del resumen con los precios correspondientes.
+              \item \textbf{Descripción:} Al seleccionar un número de colores en el desplegable, se debe añadir un campo de texto por cada uno de estos colores, para que el usuario pueda indicar en que color se debe imprimir. Este será un campo de texto libre. Además se ofrecerá un selector para que el usuario pueda escoger entre varios colores. Actualizar la cantidad de clichés y multiplicar su precio en el resumen.
           \end{itemize}
-    \item \textbf{Tarea 12:} Seleccionar un trabajo:
+    \item \textbf{Tarea 12:} Adjuntar imagen por área:
           \begin{itemize}[label=--]
-              \item Descripción: Actualizar la información del resumen al seleccionar un trabajo para un área específica. Además, actualizar las opciones del selector de colores según el trabajo seleccionado.
+              \item \textbf{Descripción:} Permitir al usuario adjuntar una imagen para cada área de impresión. Crear un método API propio en la aplicación para gestionar la subida de imágenes al servidor. Generar un ID aleatorio asociado al producto de impresión y guardar la imagen junto con los demás datos configurados.
           \end{itemize}
-    \item \textbf{Tarea 13:} Seleccionar número de colores:
+    \item \textbf{Tarea 13:} Diseño responsive:
           \begin{itemize}[label=--]
-              \item Descripción: Al escoger el número de colores en el desplegable, proporcionar campos de texto para que el usuario especifique los colores. Actualizar la cantidad de clichés y multiplicar su precio en el resumen.
+              \item \textbf{Descripción:} Asegurar que el diseño del modal y la forma de mostrar los elementos sea óptima y clara en la vista móvil.
           \end{itemize}
-    \item \textbf{Tarea 14:} Adjuntar imagen por área:
+    \item \textbf{Tarea 14:} Precios diferenciados para trabajos según colores:
           \begin{itemize}[label=--]
-              \item Descripción: Permitir al usuario adjuntar una imagen para cada área de impresión. Crear un método API propio en la aplicación para gestionar la subida de imágenes al servidor. Generar un ID aleatorio asociado al producto de impresión y guardar la imagen junto con los demás datos configurados.
-          \end{itemize}
-    \item \textbf{Tarea 15:} Diseño responsive:
-          \begin{itemize}[label=--]
-              \item Descripción: Asegurar que el diseño del modal y la forma de mostrar los elementos sea óptima y clara en la vista móvil.
-          \end{itemize}
-    \item \textbf{Tarea 16:} Precios diferenciados para trabajos según colores:
-          \begin{itemize}[label=--]
-              \item Descripción: Implementar precios diferenciados para los trabajos en función del color principal y el resto de colores seleccionados por el usuario. Utilizar variantes para gestionar los precios según sea necesario.
+              \item \textbf{Descripción:} Implementar precios diferenciados para los trabajos en función del color principal y el resto de colores seleccionados por el usuario. Utilizar variantes para gestionar los precios según sea necesario.
           \end{itemize}
 \end{itemize}
 
@@ -711,17 +704,17 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Añadir Productos Relacionados al Carrito:
           \begin{itemize}[label=--]
-              \item Descripción: Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto "normal", los trabajos seleccionados y los clichés asociados, teniendo en cuenta la cantidad y las variantes adecuadas según las selecciones del usuario.
+              \item \textbf{Descripción:} Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto "normal", los trabajos seleccionados y los clichés asociados, teniendo en cuenta la cantidad y las variantes adecuadas según las selecciones del usuario.
               \item Utilizar el ajax API para añadir los productos al carrito.
           \end{itemize}
     \item \textbf{Tarea 2:} Guardar Información de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item Descripción: Desarrollar la funcionalidad para guardar toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) en el carrito al añadir productos relacionados.
+              \item \textbf{Descripción:} Desarrollar la funcionalidad para guardar toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) en el carrito al añadir productos relacionados.
               \item Utilizar las properties de los LineItems para almacenar esta información de manera adecuada.
           \end{itemize}
     \item \textbf{Tarea 3:} Investigar el Uso de Customized Bundles para Agrupar y Vincular Productos:
           \begin{itemize}[label=--]
-              \item Descripción: Investigar si los customized bundles son una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado.
+              \item \textbf{Descripción:} Investigar si los customized bundles son una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado.
               \item Considerar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos.
               \item Si no se considera viable el uso de customized bundles, explorar la posibilidad de utilizar un Theme App Extension de JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
           \end{itemize} 
@@ -733,7 +726,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Modificar el Theme para Mostrar el Detalle de los Bundles de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item Descripción: Desarrollar una sección en el Theme que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de los bundles de impresión de manera similar a la visualización en el proceso de checkout.
+              \item \textbf{Descripción:} Desarrollar una sección en el Theme que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de los bundles de impresión de manera similar a la visualización en el proceso de checkout.
           \end{itemize}
 \end{itemize}
 
@@ -742,7 +735,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Investigar Opciones para Mostrar el Logo del Cliente en la Zona Adecuada del Producto e implementarlo:
           \begin{itemize}[label=--]
-              \item Descripción: Realizar una investigación exhaustiva para identificar opciones, librerías u herramientas que permitan mostrar una imagen del logo del cliente en la zona adecuada del producto de forma atractiva.
+              \item \textbf{Descripción:} Realizar una investigación exhaustiva para identificar opciones, librerías u herramientas que permitan mostrar una imagen del logo del cliente en la zona adecuada del producto de forma atractiva.
               \item Evaluar la viabilidad de cada opción en función de la información disponible sobre el producto de impresión y las necesidades específicas del cliente.
               \item Implementar la solución elegida.
           \end{itemize}
@@ -752,27 +745,27 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Limpiar la Interfaz del Administrador de la App:
           \begin{itemize}[label=--]
-              \item Descripción: Eliminar las opciones demo y botones relacionados en la parte frontal de la interfaz de administración de la app para eliminar funcionalidad innecesaria.
+              \item \textbf{Descripción:} Eliminar las opciones demo y botones relacionados en la parte frontal de la interfaz de administración de la app para eliminar funcionalidad innecesaria.
           \end{itemize}
     \item \textbf{Tarea 2:} Agregar un Botón "Crear Campos Necesarios" en la Interfaz de Administración:
           \begin{itemize}[label=--]
-              \item Descripción: Incorporar un botón en la interfaz de administración de la app que llame a un método de la app para crear los metafields necesarios.
+              \item \textbf{Descripción:} Incorporar un botón en la interfaz de administración de la app que llame a un método de la app para crear los metafields necesarios.
           \end{itemize}
     \item \textbf{Tarea 3:} Desarrollar el Método para Crear los Metafields Necesarios:
           \begin{itemize}[label=--]
-              \item Descripción: Crear un método en la app que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen.
+              \item \textbf{Descripción:} Crear un método en la app que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen.
           \end{itemize}
     \item \textbf{Tarea 4:} Implementar la Funcionalidad de Feedback para el Usuario:
           \begin{itemize}[label=--]
-              \item Descripción: Desarrollar una funcionalidad para mostrar un mensaje de feedback al usuario después de la ejecución del método de creación de metafields, informando sobre el éxito o posibles errores.
+              \item \textbf{Descripción:} Desarrollar una funcionalidad para mostrar un mensaje de feedback al usuario después de la ejecución del método de creación de metafields, informando sobre el éxito o posibles errores.
           \end{itemize}
     \item \textbf{Tarea 5:} Hacer Configurable la Creación de Metafields:
           \begin{itemize}[label=--]
-              \item Descripción: Crear un fichero de configuración o constantes que defina qué metafields se crearán, para qué entidad y de qué tipo. Adaptar el código para usar esta configuración, permitiendo así una fácil expansión y reutilización de la funcionalidad en otras aplicaciones.
+              \item \textbf{Descripción:} Crear un fichero de configuración o constantes que defina qué metafields se crearán, para qué entidad y de qué tipo. Adaptar el código para usar esta configuración, permitiendo así una fácil expansión y reutilización de la funcionalidad en otras aplicaciones.
           \end{itemize}
     \item \textbf{Tarea 6:} Crear el objeto \texttt{cartTransform} Automáticamente:
           \begin{itemize}[label=--]
-              \item Descripción: Implementar la funcionalidad para crear automáticamente el objeto \texttt{cartTransform} si es necesario. Esto simplificaría aún más el proceso de configuración para el administrador de la tienda, permitiendo una mayor automatización y reduciendo la carga de trabajo manual.
+              \item \textbf{Descripción:} Implementar la funcionalidad para crear automáticamente el objeto \texttt{cartTransform} si es necesario. Esto simplificaría aún más el proceso de configuración para el administrador de la tienda, permitiendo una mayor automatización y reduciendo la carga de trabajo manual.
           \end{itemize}
 \end{itemize}
 
@@ -780,11 +773,11 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Metafields para "Doble Pasada" en Productos:
           \begin{itemize}[label=--]
-              \item Descripción: Utilizar la funcionalidad de creación automática de metafields para crear un metafield booleano llamado "DOBLE PASADA" para los productos.
+              \item \textbf{Descripción:} Utilizar la funcionalidad de creación automática de metafields para crear un metafield booleano llamado "DOBLE PASADA" para los productos.
           \end{itemize}
     \item \textbf{Tarea 2:} Mostrar el Check para "Doble Pasada":
           \begin{itemize}[label=--]
-              \item Descripción: Implementar la lógica para mostrar un check junto al trabajo seleccionado en el presupuestador si tanto el producto como el trabajo tienen la opción de "doble pasada" activada. Asegurarse de que el check se oculte automáticamente si se cambia el trabajo seleccionado a uno que no tenga la opción de "doble pasada".
+              \item \textbf{Descripción:} Implementar la lógica para mostrar un check junto al trabajo seleccionado en el presupuestador si tanto el producto como el trabajo tienen la opción de "doble pasada" activada. Asegurarse de que el check se oculte automáticamente si se cambia el trabajo seleccionado a uno que no tenga la opción de "doble pasada".
           \end{itemize}
 \end{itemize}
 
@@ -792,15 +785,15 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Metafield para el Importe del Canon Digital:
           \begin{itemize}[label=--]
-              \item Descripción: Crear un metafield de tipo número decimal, llamado "Importe Canon", utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente.
+              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado "Importe Canon", utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente.
           \end{itemize}
     \item \textbf{Tarea 2:} Crear Producto Especial para Añadir el Importe al Carrito:
           \begin{itemize}[label=--]
-              \item Descripción: Crear un producto especial con un precio de un céntimo, que se utilizará únicamente para añadir el importe del canon digital al carrito de compra. Este producto especial asegurará que el importe del canon se aplique correctamente al total del carrito de compra.
+              \item \textbf{Descripción:} Crear un producto especial con un precio de un céntimo, que se utilizará únicamente para añadir el importe del canon digital al carrito de compra. Este producto especial asegurará que el importe del canon se aplique correctamente al total del carrito de compra.
           \end{itemize}
     \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con Bundles:
           \begin{itemize}[label=--]
-              \item Descripción: Desarrollar la lógica para añadir automáticamente líneas de canon digital al carrito cuando se añada un producto con canon. Utilizar bundles para asociar cada línea de producto con su línea de canon correspondiente.
+              \item \textbf{Descripción:} Desarrollar la lógica para añadir automáticamente líneas de canon digital al carrito cuando se añada un producto con canon. Utilizar bundles para asociar cada línea de producto con su línea de canon correspondiente.
               \item Iniciar con la implementación para productos "normales" y luego extender la funcionalidad para productos de impresión.
               \item Controlar la adición de líneas de canon desde la ficha de producto inicialmente, y luego expandir la funcionalidad para otros puntos de entrada al carrito.
               \item Considerar la utilización del cartTransform existente para integrar esta nueva lógica de bundles, y evaluar la posibilidad de separarlo en una aplicación independiente en el futuro.
