@@ -562,18 +562,19 @@ para ofrecer una experiencia de compra más personalizada y satisfactoria.
 \end{enumerate}
 
 
-\subsubsubsection{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios}\label{sec:historia7}
+\subsubsubsection{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios y objeto cart-transform}\label{sec:historia7}
 
 Como administrador de la tienda,
-quiero una opción para crear automáticamente los metafields necesarios para la app,
-para simplificar y agilizar el proceso de configuración y evitar posibles errores manuales.
+quiero unas opciones en el panel de administración de la tienda para crear automáticamente los metafields necesarios para la app y el objeto cart-transform,
+para simplificar y agilizar el proceso de configuración al instalar la app en una nueva tienda y evitar posibles errores manuales.
 
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Se debe proporcionar una opción en el panel de configuración de la app para crear automáticamente los metafields necesarios.
-    \item La creación de los metafields debe realizarse de manera controlada y asegurarse de no duplicar campos ya existentes.
-    \item Después de ejecutar la creación de metafields, se debe mostrar un mensaje de feedback al usuario indicando el resultado de la operación.
+    \item Se debe proporcionar una opción en el panel de configuración de la tienda para crear automáticamente los metafields necesarios.
+    \item Se debe proporcionar una opción en el panel de configuración de la tienda para crear automáticamente el objeto cart-transform.
+    \item La creación de estos elementos debe realizarse de manera controlada y asegurarse de no duplicar campos ya existentes.
+    \item Después de ejecutar la creación de metafields y el cart-transform, se debe mostrar un mensaje de feedback al usuario indicando el resultado de la operación.
     \item La configuración de los metafields que se crearán debe ser configurable para facilitar la expansión y reutilización de la funcionalidad en otras aplicaciones.
 \end{enumerate}
 
@@ -590,7 +591,7 @@ para aplicar recargos adicionales en caso de que tanto el producto como el traba
     \item Debe existir un nuevo metafield booleano llamado ``DOBLE PASADA'' para los productos y los trabajos.
     \item Si se selecciona un producto con la opción ``DOBLE PASADA'' activada y se elige un trabajo que también tenga esta opción activada, se debe mostrar en el presupuestador un check para permitir al usuario seleccionar la opción de ``doble pasada''.
     \item Si se cambia el trabajo seleccionado a uno que no tenga la opción de ``doble pasada'', el check debe ocultarse automáticamente.
-    \item Este recargo adicional debe mostrarse en el resumen del pedido del presupuestador.
+    \item Este recargo adicional debe mostrarse en el resumen del pedido del presupuestador y aplicarse al pedido debidamente.
 \end{enumerate}
 
 
@@ -607,7 +608,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
     \item Se debe crear un producto especial con un precio de un céntimo, que se utilizará para añadir el importe del canon digital al carrito de compra.
     \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto.
     \item La línea de canon digital debe estar vinculada al producto correspondiente y reflejar el importe del canon establecido para ese producto.
-    \item Se debe utilizar bundles para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
+    \item Se deben utilizar customize bundles para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
 \end{enumerate}
 
 \subsection{Diseño}
@@ -708,13 +709,11 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
           \end{itemize}
     \item \textbf{Tarea 2:} Guardar Información de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Desarrollar la funcionalidad para guardar toda la información de impresión configurada (medidas, colores, identificador de la imagen adjunta, observaciones de cada área y todos los atributos necesarios) en el carrito al añadir productos relacionados. Estos datos deben almacenarse junto con el pedido de impresión realizado y que estos  pasen al checkout y al pedido que se recibirá en el administrador de la tienda. Para ello una buena opción es usar las propiedades de líneas de pedido que proporciona Shopify para almacenar atributos de un producto en el carrito \cite{properties-lineitem}.
+              \item \textbf{Descripción:} Desarrollar la funcionalidad para guardar toda la información de impresión configurada (medidas, colores, identificador de la imagen adjunta, observaciones de cada área y todos los atributos necesarios) en el carrito al añadir productos relacionados. Estos datos deben almacenarse junto con el pedido de impresión realizado y estar disponibles en el checkout y el pedido final que se recibirá en el panel de administración de la tienda. Para ello una buena opción es usar las propiedades de líneas de pedido \cite{properties-lineitem} que proporciona Shopify para almacenar atributos de un producto en el carrito.
           \end{itemize}
     \item \textbf{Tarea 3:} Investigar el Uso de Customized Bundles para Agrupar y Vincular Productos:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Investigar si los customized bundles son una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado.
-              \item Considerar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos.
-              \item Si no se considera viable el uso de customized bundles, explorar la posibilidad de utilizar un Theme App Extension de JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
+              \item \textbf{Descripción:} Investigar si los \textbf{customized bundles} \cite{paquete-personalizado} son una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado. Analizar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos. Si no se considera viable el uso de customized bundles, explorar la posibilidad de utilizar JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
           \end{itemize} 
 \end{itemize}
 
@@ -724,7 +723,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Modificar el Theme para Mostrar el Detalle de los Bundles de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Desarrollar una sección en el Theme que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de los bundles de impresión de manera similar a la visualización en el proceso de checkout.
+              \item \textbf{Descripción:} Como se ha podido observar, los paquetes de productos de personalización que se muestran en el carrito (customized bundles), no muestran los detalles de los artículos que contienen con sus precios. Estos paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no se puede visualizar. El objetivo de esta tarea es desarrollar una sección en el tema de una tienda estandar, que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de estos paquetes de impresión de manera similar a la visualización en el proceso de checkout.
           \end{itemize}
 \end{itemize}
 
@@ -733,9 +732,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Investigar Opciones para Mostrar el Logo del Cliente en la Zona Adecuada del Producto e implementarlo:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Realizar una investigación exhaustiva para identificar opciones, librerías u herramientas que permitan mostrar una imagen del logo del cliente en la zona adecuada del producto de forma atractiva.
-              \item Evaluar la viabilidad de cada opción en función de la información disponible sobre el producto de impresión y las necesidades específicas del cliente.
-              \item Implementar la solución elegida.
+              \item \textbf{Descripción:} Realizar una investigación exhaustiva para identificar opciones, librerías u herramientas que permitan mostrar la imagen del logo que adjunta el cliente para cada area en el personalizador de productos. Esta imagen se debe mostrar en la zona adecuada del producto de una forma atractiva y en la posición adecuada. Evaluar la viabilidad de cada opción en función de la información disponible sobre el producto de impresión y las necesidades específicas del cliente. Por último, implementar la solución elegida.
           \end{itemize}
 \end{itemize}
 
@@ -743,39 +740,43 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Limpiar la Interfaz del Administrador de la App:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Eliminar las opciones demo y botones relacionados en la parte frontal de la interfaz de administración de la app para eliminar funcionalidad innecesaria.
+              \item \textbf{Descripción:} Eliminar las opciones demo y botones relacionados en la parte frontal de la interfaz de administración de la app para eliminar funcionalidad innecesaria (al crear la app con el template Node, este viene con una funcionalidad de ejemplo en la interfaz de administración de la app).
           \end{itemize}
-    \item \textbf{Tarea 2:} Agregar un Botón "Crear Campos Necesarios" en la Interfaz de Administración:
+    \item \textbf{Tarea 2:} Agregar un Botón ``Crear Metacampos Necesarios'' y otro ``Crear objeto cart-transform'' en la Interfaz de Administración :
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Incorporar un botón en la interfaz de administración de la app que llame a un método de la app para crear los metafields necesarios.
+              \item \textbf{Descripción:} Incorporar un botón en la interfaz de administración por cada acción que se desea realizar. Uno para activar la creación de metadatos y otro para activar la creación del objeto cart-transform. Cada botón llamará al método de la app correspondiente para crear los elementos adecuados.
           \end{itemize}
-    \item \textbf{Tarea 3:} Desarrollar el Método para Crear los Metafields Necesarios:
+    \item \textbf{Tarea 3:} Desarrollar el Endpoint y el Método para Crear los Metafields Necesarios y asociarlo al botón correspondiente:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un método en la app que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen.
+              \item \textbf{Descripción:} Crear un endpoint y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen. Además realizar la llamada correspondiente desde la parte del frontend para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
           \end{itemize}
-    \item \textbf{Tarea 4:} Implementar la Funcionalidad de Feedback para el Usuario:
+    \item \textbf{Tarea 4:} Desarrollar el Endpoint y el Método para Crear el objeto cart-transform y asociarlo al botón correspondiente:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Desarrollar una funcionalidad para mostrar un mensaje de feedback al usuario después de la ejecución del método de creación de metafields, informando sobre el éxito o posibles errores.
+              \item \textbf{Descripción:} Crear un endpoint y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear el objeto cart-transform, controlando si ya existe. Además realizar la llamada correspondiente desde la parte del frontend para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
           \end{itemize}
-    \item \textbf{Tarea 5:} Hacer Configurable la Creación de Metafields:
+    \item \textbf{Tarea 5:} Implementar la Funcionalidad de Feedback para el Usuario:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un fichero de configuración o constantes que defina qué metafields se crearán, para qué entidad y de qué tipo. Adaptar el código para usar esta configuración, permitiendo así una fácil expansión y reutilización de la funcionalidad en otras aplicaciones.
+              \item \textbf{Descripción:} Desarrollar una funcionalidad en la interfaz de administración de la app para mostrar un mensaje de feedback al usuario después de la ejecución de los métodos implementados, informando sobre el éxito o posibles errores.
           \end{itemize}
-    \item \textbf{Tarea 6:} Crear el objeto \texttt{cartTransform} Automáticamente:
+    \item \textbf{Tarea 6:} Hacer Configurable la Creación de Metafields:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Implementar la funcionalidad para crear automáticamente el objeto \texttt{cartTransform} si es necesario. Esto simplificaría aún más el proceso de configuración para el administrador de la tienda, permitiendo una mayor automatización y reduciendo la carga de trabajo manual.
+              \item \textbf{Descripción:} Crear un fichero de configuración o constantes que definan los metafields que se crearán, para qué entidad y de qué tipo. Adaptar el código para usar esta configuración, permitiendo así una fácil expansión y reutilización de la funcionalidad en otras aplicaciones.
           \end{itemize}
 \end{itemize}
 
 \textbf{Tareas relacionadas con la \hyperref[sec:historia8]{Historia de usuario 8}:}
 \begin{itemize}
-    \item \textbf{Tarea 1:} Crear Metafields para "Doble Pasada" en Productos:
+    \item \textbf{Tarea 1:} Crear Metafields para ``Doble Pasada'' en Productos:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Utilizar la funcionalidad de creación automática de metafields para crear un metafield booleano llamado "DOBLE PASADA" para los productos.
+              \item \textbf{Descripción:} Utilizar la funcionalidad de creación automática de metafields para crear un metafield booleano llamado ``DOBLE PASADA'' para los productos.
           \end{itemize}
-    \item \textbf{Tarea 2:} Mostrar el Check para "Doble Pasada":
+    \item \textbf{Tarea 2:} Mostrar el Check para ``Doble Pasada'':
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Implementar la lógica para mostrar un check junto al trabajo seleccionado en el presupuestador si tanto el producto como el trabajo tienen la opción de "doble pasada" activada. Asegurarse de que el check se oculte automáticamente si se cambia el trabajo seleccionado a uno que no tenga la opción de "doble pasada".
+              \item \textbf{Descripción:} Implementar la lógica para mostrar un check junto al trabajo seleccionado en el presupuestador si tanto el producto como el trabajo tienen la opción de ``doble pasada'' activada. Asegurarse de que el check se oculte automáticamente si se cambia el trabajo seleccionado a uno que no tenga la opción de ``doble pasada''.
+          \end{itemize}
+    \item \textbf{Tarea 3:} Aplicar cargo extra de ``Doble Pasada'':
+          \begin{itemize}[label=--]
+              \item \textbf{Descripción:} Si el usuario marca el check de doble pasada, se deberá aplicar al pedido, un cargo por doble pasada equivalente a añadir un color más (añadir una variante ``Resto colores'' del tabajo al pedido). En el resumen de impresión debe mostrarse este concepto y el importe añadido correspondiente. Además al añadir este cargo al carrito, se debe reflejar de algún modo que esta variante de trabajo añadida corresponde a este tipo de cargo adicional, para ello sería conveniente usar las propiedades de la API de carrito de Shopify.
           \end{itemize}
 \end{itemize}
 
@@ -783,7 +784,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Metafield para el Importe del Canon Digital:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado "Importe Canon", utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente.
+              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado ``Importe Canon'', utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente.
           \end{itemize}
     \item \textbf{Tarea 2:} Crear Producto Especial para Añadir el Importe al Carrito:
           \begin{itemize}[label=--]
@@ -791,10 +792,10 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
           \end{itemize}
     \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con Bundles:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Desarrollar la lógica para añadir automáticamente líneas de canon digital al carrito cuando se añada un producto con canon. Utilizar bundles para asociar cada línea de producto con su línea de canon correspondiente.
-              \item Iniciar con la implementación para productos "normales" y luego extender la funcionalidad para productos de impresión.
-              \item Controlar la adición de líneas de canon desde la ficha de producto inicialmente, y luego expandir la funcionalidad para otros puntos de entrada al carrito.
-              \item Considerar la utilización del cartTransform existente para integrar esta nueva lógica de bundles, y evaluar la posibilidad de separarlo en una aplicación independiente en el futuro.
+              \item \textbf{Descripción:} Desarrollar la lógica para añadir automáticamente líneas de canon digital al carrito cuando se añada un producto con canon. Utilizar customize bundles para asociar cada línea de producto con su línea de canon correspondiente.
+              Iniciar con la implementación para productos ``normales'' y luego extender la funcionalidad para productos de impresión.
+              Controlar la adición de líneas de canon desde la ficha de producto inicialmente, y luego expandir la funcionalidad para otros puntos de entrada al carrito.
+              Considerar la utilización del cart-transform existente para integrar esta nueva lógica de bundles, y evaluar la posibilidad de separarlo en una aplicación independiente en el futuro.
           \end{itemize}
 \end{itemize}
 
@@ -1099,6 +1100,10 @@ es muy poco intuitiva y atractiva para los clientes.
     \bibitem{properties-lineitem} 
     Shopify.
     \textit{``Cart API reference''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/api/ajax/reference/cart#private-properties-and-attributes} (visitado 25-11-2023).
+
+    \bibitem{paquete-personalizado} 
+    Shopify.
+    \textit{``Add a customized bundle''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/apps/selling-strategies/bundles/add-a-customized-bundle} (visitado 25-11-2023).
 
     \bibitem{nodemon} 
     José Luis
