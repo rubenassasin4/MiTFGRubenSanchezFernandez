@@ -606,7 +606,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{enumerate}[label=\arabic*.]
     \item Debe existir un metafield llamado ``Importe Canon'' para los productos, que permita indicar si un producto tiene canon digital y especificar el importe correspondiente.
     \item Se debe crear un producto especial con un precio de un céntimo, que se utilizará para añadir el importe del canon digital al carrito de compra.
-    \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto.
+    \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto (ya sea un producto normal o uno personalizado).
     \item La línea de canon digital debe estar vinculada al producto correspondiente y reflejar el importe del canon establecido para ese producto.
     \item Se deben utilizar customize bundles para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
 \end{enumerate}
@@ -784,18 +784,20 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Metafield para el Importe del Canon Digital:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado ``Importe Canon'', utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente.
+              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado ``Importe Canon'', utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente. Los productos sin canon no tendrán nada en este metacampo, y los productos con canon tendrán en este metacampo el importe correspondiente.
           \end{itemize}
     \item \textbf{Tarea 2:} Crear Producto Especial para Añadir el Importe al Carrito:
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Crear un producto especial con un precio de un céntimo, que se utilizará únicamente para añadir el importe del canon digital al carrito de compra. Este producto especial asegurará que el importe del canon se aplique correctamente al total del carrito de compra.
           \end{itemize}
-    \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con Bundles:
+    \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con customize bundles:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Desarrollar la lógica para añadir automáticamente líneas de canon digital al carrito cuando se añada un producto con canon. Utilizar customize bundles para asociar cada línea de producto con su línea de canon correspondiente.
-              Iniciar con la implementación para productos ``normales'' y luego extender la funcionalidad para productos de impresión.
-              Controlar la adición de líneas de canon desde la ficha de producto inicialmente, y luego expandir la funcionalidad para otros puntos de entrada al carrito.
-              Considerar la utilización del cart-transform existente para integrar esta nueva lógica de bundles, y evaluar la posibilidad de separarlo en una aplicación independiente en el futuro.
+              \item \textbf{Descripción:} Cuando se añada un producto con canon al carrito, se deberá añadir una línea de canon digital (producto especial creado) para repercutir el canon.
+              Cómo el producto especial tiene un precio de un céntimo, se deberá jugar con la cantidad de este artículo para conseguir obtener el importe del canon de producto al que se le está aplicando. Por ejemplo
+              si un producto tiene 1,20€ de canon digital, se añadirá el producto especial con cantidad 120.
+              Este canon digital se deberá añadir tanto como los productos ``normales'' que no sean de impresión, como para los productos de impresión.
+              Para los productos de impresión se deberá realizar una configuración adicional para que en caso de que el producto personalizado cuente con canon digital, se añada la cantidad adecuada de productos canon de un céntimo.
+              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente, se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
           \end{itemize}
 \end{itemize}
 
