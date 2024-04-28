@@ -612,6 +612,19 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
 \end{enumerate}
 
 \subsection{Diseño}
+En el desarrollo de este Trabajo de Fin de Grado, el diseño de la aplicación ha sido una parte fundamental que ha sentado las bases para la implementación
+de las funcionalidades requeridas. Este diseño se ha basado en un minucioso estudio de las tecnologías pertinentes, así como en la comprensión detallada de las
+historias de usuario que definían los objetivos y requisitos del proyecto. Este diseño se ha estructurado en torno a la definición de diversas tareas que han sido cuidadosamente 
+elaboradas.
+
+Estas tareas de diseño abarcan desde la creación de la estructura inicial de la aplicación, hasta la implementación de características específicas que 
+garantizan una experiencia fluida y eficiente para los usuarios finales. Se han tenido en consideración, tanto las necesidades básicas de funcionamiento, como aquellas funcionalidades
+adicionales que agregan más valor al sistema.
+
+Es importante destacar, que en este apartado las tareas de diseño se dividen en dos categorías: las tareas básicas, que se centran en la implementación de la funcionalidad
+principal de la aplicación y en conseguir cumplir con éxito los criterios de aceptación de las historias de usuario de funcionalidad básica. Y las tareas adicionales, que 
+añaden una funcionalidad y complejidad adicional, y se centran en cumplir los criterios de aceptación de las historias de usuario de la funcionalidad adicional.
+
 
 \subsubsection{Tareas básicas}
 
@@ -795,9 +808,9 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
               \item \textbf{Descripción:} Cuando se añada un producto con canon al carrito, se deberá añadir una línea de canon digital (producto especial creado) para repercutir el canon.
               Cómo el producto especial tiene un precio de un céntimo, se deberá jugar con la cantidad de este artículo para conseguir obtener el importe del canon de producto al que se le está aplicando. Por ejemplo
               si un producto tiene 1,20€ de canon digital, se añadirá el producto especial con cantidad 120.
-              Este canon digital se deberá añadir tanto como los productos ``normales'' que no sean de impresión, como para los productos de impresión.
-              Para los productos de impresión se deberá realizar una configuración adicional para que en caso de que el producto personalizado cuente con canon digital, se añada la cantidad adecuada de productos canon de un céntimo.
-              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente, se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
+              Este canon digital se deberá añadir tanto a los productos ``normales'' que no sean de impresión, como a los productos de impresión.
+              Para los productos que sean de impresión se deberá realizar una configuración adicional en el procedimiento de adición con la API de AJAX, para que en caso de que el producto personalizado cuente con canon digital, se añada la cantidad adecuada de productos canon de un céntimo y se agrupe con el resto de artículos del paquete de impresión en el carrito.
+              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente (customize bundles), se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
           \end{itemize}
 \end{itemize}
 
