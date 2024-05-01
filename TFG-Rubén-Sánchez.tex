@@ -890,8 +890,26 @@ lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Fig
     \vspace{\fill}
 \end{figure}
 
-Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación.
+Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación. Para ello se va a emplear la Shopify CLI \cite{shopify-cli}, esta herramienta
+de línea de comandos proporciona mecanismos para automatizar la generación de una aplicación para Shopify, además de muchas otras funcionalidades.
+Para generar la aplicación se ejecuta el siguiente comando desde el directorio en el que se desee: 
+\begin{lstlisting}
+    npm init @shopify/app@latest -- --template=node
+\end{lstlisting}
 
+Este comando establece una estructura base sobre la cual comenzar a trabajar. Es importante destacar que se especifica el uso del template de aplicación basada en Node.js 
+para la generación del proyecto.
+
+Después de haber creado la aplicación inicial, el siguiente paso es generar una ``theme app extension'' sobre la cual se trabajará la parte visual del tema. Esta
+extensión permite la integración de la aplicación (frontend) con el tema de la tienda de Shopify.
+
+Para generar la extensión se volverá a emplear la Shopify CLI y se introducirá el siguiente comando:
+
+\begin{lstlisting}
+    shopify app generate extension
+\end{lstlisting}
+
+Al introducirlo se selecciona el tipo de extensión que se desea implementar y se le proporciona un nombre.
 
 \clearpage
 \subsubsection{Implementación de las tareas adicionales}
@@ -1194,6 +1212,10 @@ es muy poco intuitiva y atractiva para los clientes.
     \bibitem{paquete-personalizado} 
     Shopify.
     \textit{``Add a customized bundle''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/apps/selling-strategies/bundles/add-a-customized-bundle} (visitado 25-11-2023).
+
+    \bibitem{shopify-cli} 
+    Shopify.
+    \textit{``Shopify CLI''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/api/shopify-cli} (visitado 01-05-2024).
 
     \bibitem{nodemon} 
     José Luis
