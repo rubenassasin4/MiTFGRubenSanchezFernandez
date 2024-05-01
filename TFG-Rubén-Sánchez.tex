@@ -916,17 +916,18 @@ el tema de la tienda.
 Una vez se tiene la aplicación base con su theme app extensión correspondiente, ya se puede empezar a trabajar sobre la extensión para implementar la funcionalidades básicas.
 
 En primer lugar se crea la sección sobre la cual se va a implementar toda la funcionalidad. El contenido de esta sección solo debe ejecutarse y estar disponible en las 
-páginas de productos que sean personalizables. En la Figura~\ref{fig:creacionSeccion} se puede ver como se ha creado la sección \textit{botonPersonalizar.liquid} y en ella, lo primero
+páginas de productos que sean personalizables. En la Figura~\ref{fig:creacionSeccion} se puede ver como se ha creado la sección \textit{botonPersonalizar.liquid}. En ella lo primero
 que se hace es recuperar las areas de impresión del producto actual. Una vez se obtienen las areas de impresión, se ejecuta una condición para comprobar
 si el producto posee áreas de impresión o no. En caso afirmativo, se ejecutará la funcionalidad de la sección.
 
-En primer lugar, en esta sección se ha creado un botón que será el encargado de mostrar un modal con todas las opciones de personalización. Gracias a la comprobación
+En esta sección se ha creado un botón que será el encargado de mostrar un modal con todas las opciones de personalización. Gracias a la comprobación
 que se realiza al principio de la sección, este botón junto con la funcionalidad que lleva detrás solo estará disponible en las páginas de productos personalizables.
-El texto de este botón y todos los textos que se emplean en esta aplicación son obtenidos de los ficheros locales. Estos son archivos de idioma en formato 
-JSON que sirven para almacenar las diferentes traducciones. Cada archivo de idioma corresponde a un idioma específico y contiene un conjunto de etiquetas con su valor-traducción correspondiente.
+El texto del botón y todos los textos que se emplean en esta aplicación son obtenidos de los ficheros locales. Estos son archivos de idioma en formato 
+JSON que sirven para almacenar las diferentes traducciones. Cada archivo de idioma corresponde a un idioma específico y contiene un conjunto de etiquetas con su valor-traducción correspondiente. Esto nos 
+permite preparar traducciones en varios idiomas para garantizar una experiencia multilinüe completa.
 
 En la parte izquierda de la Figura~\ref{fig:locales} se puede observar como en el directorio de locales existen 2 ficheros, uno para el idioma ingles y otro para el español. 
-Ambos contienen las mismas etiquetas, pero cada uno posee las traducciones en su idioma. En un futuro si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
+Ambos contienen las mismas etiquetas pero, cada uno posee las traducciones en su idioma. En un futuro si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
 necesarios con sus traducciones correspondientes.
 
 
@@ -945,6 +946,17 @@ necesarios con sus traducciones correspondientes.
     \caption{\label{fig:locales}}
     \vspace{\fill}
 \end{figure}
+
+Por lo que respecta a la creación y apertura del modal, se ha tomado la decisión de generar dinámicamente el contenido del mismo y su funcionalidad
+asociada mediante JavaScript. El uso de JavaScript permite una interacción más fluida y una mejor experiencia de usuario. Además, al tener acceso directo 
+a los valores y elementos necesarios, se pueden realizar los cálculos y validaciones de manera directa y eficiente, porporcionando una personalización
+más precisa y completa. El hecho de que el modal tenga tanta funcionalidad, datos y elementos cambiantes según la interacción del usuario, hace que 
+el empleo de JavaScript para implementarlo sea una buena opción para facilitar ese acceso a datos y cambios dinámicos del contenido del modal.
+Esta estrategia también simplifica el mantenimiento del código, al centralizar todas las funciones relacionadas con el modal en un solo lugar, lo que facilita
+futuras actualizaciones y mejoras. Debido a esta decisión tanto el contenido como la funcionalidad de este modal se han desarrollado en un mismo fichero javaScript.
+
+
+
 
 
 \clearpage
