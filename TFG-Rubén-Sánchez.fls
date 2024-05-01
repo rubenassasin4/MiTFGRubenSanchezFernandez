@@ -289,6 +289,7 @@ OUTPUT TFG-Rubén-Sánchez.toc
 INPUT .\TFG-Rubén-Sánchez.lof
 INPUT .\TFG-Rubén-Sánchez.lof
 INPUT TFG-Rubén-Sánchez.lof
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 OUTPUT TFG-Rubén-Sánchez.lof
 INPUT .\Anexo_Firmado_Upango.png
 INPUT .\Anexo_Firmado_Upango.png
@@ -313,7 +314,6 @@ INPUT .\imagenes\Interfaz de adminsitración elección de tema.png
 INPUT .\imagenes\Interfaz de adminsitración elección de tema.png
 INPUT .\imagenes\Interfaz de adminsitración elección de tema.png
 INPUT .\imagenes\Interfaz de adminsitración elección de tema.png
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -374,6 +374,27 @@ INPUT .\imagenesUS1\locales.png
 INPUT .\imagenesUS1\locales.png
 INPUT .\imagenesUS1\locales.png
 INPUT .\imagenesUS1\locales.png
+INPUT .\imagenesUS3-section\funcioncargarLocales.png
+INPUT .\imagenesUS3-section\funcioncargarLocales.png
+INPUT .\imagenesUS3-section\funcioncargarLocales.png
+INPUT .\imagenesUS3-section\funcioncargarLocales.png
+INPUT .\imagenesUS3-section\funcioncargarLocales.png
+INPUT .\imagenesUS3-section\funcioncargarLocales.png
+INPUT .\imagenesUS3-section\funcioncargarLocales.png
+INPUT .\imagenesUS3-section\funcionAlmacenarDatosProductos.png
+INPUT .\imagenesUS3-section\funcionAlmacenarDatosProductos.png
+INPUT .\imagenesUS3-section\funcionAlmacenarDatosProductos.png
+INPUT .\imagenesUS3-section\funcionAlmacenarDatosProductos.png
+INPUT .\imagenesUS3-section\funcionAlmacenarDatosProductos.png
+INPUT .\imagenesUS3-section\funcionAlmacenarDatosProductos.png
+INPUT .\imagenesUS3-section\funcionAlmacenarDatosProductos.png
+INPUT .\imagenesUS3-section\finalSeccion.png
+INPUT .\imagenesUS3-section\finalSeccion.png
+INPUT .\imagenesUS3-section\finalSeccion.png
+INPUT .\imagenesUS3-section\finalSeccion.png
+INPUT .\imagenesUS3-section\finalSeccion.png
+INPUT .\imagenesUS3-section\finalSeccion.png
+INPUT .\imagenesUS3-section\finalSeccion.png
 INPUT .\imagenes\package.json.scripts.png
 INPUT .\imagenes\package.json.scripts.png
 INPUT .\imagenes\package.json.scripts.png

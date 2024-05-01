@@ -943,7 +943,7 @@ necesarios con sus traducciones correspondientes.
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.8\textwidth]{imagenesUS1/locales.png}
-    \caption{\label{fig:locales}}
+    \caption{\label{fig:locales}Ficheros locales}
     \vspace{\fill}
 \end{figure}
 
@@ -955,11 +955,49 @@ el empleo de JavaScript para implementarlo sea una buena opción para facilitar 
 Esta estrategia también simplifica el mantenimiento del código, al centralizar todas las funciones relacionadas con el modal en un solo lugar, lo que facilita
 futuras actualizaciones y mejoras. Debido a esta decisión tanto el contenido como la funcionalidad de este modal se han desarrollado en un mismo fichero javaScript.
 
-Antes de proceder con la creación e implementación de funcionalidad del modal, se han implementado unas funciones en la sección \textit{botonPersonalizar.liquid} para emplear liquid para crear e inicializar unas estructuras JavaScript que 
-contendrán todos los datos relevantes del producto de impresión así como todos los textos traducidos necesarios para crear el modal y sus elementos. El acceso a datos que proporciona liquid permite poder crear 
-esta estructura para tener los datos disponibles en el modal sin necesidad de realizar llamadas adicionales al Admin API.
+Antes de proceder con la creación e implementación de funcionalidad del modal, se han implementado unas funciones en la sección \textit{botonPersonalizar.liquid} que emplean liquid para crear e inicializar unas estructuras JavaScript que 
+contendrán todos los datos relevantes del producto de impresión, así como todos los textos traducidos necesarios para crear el modal y sus elementos. El acceso a datos que proporciona liquid permite poder crear 
+esta estructura para tener los datos disponibles en el modal sin necesidad de realizar llamadas adicionales al Admin API. Estas funciones serán llamadas desde el fichero 
+javaScript que maneje la funcionalidad y creación del modal para inicializar y tener acceso a todos los datos en caso de que lo necesite.
+
+En la Figura~\ref{fig:cargarlocales} se puede observar la función \textit{cargarLocales()} al ejecutar esta función, la estructura \textit{localesModal} se carga con 
+todas las traducciones de textos que deben aparecer en el modal, pues desde javascript no tenemos acceso directo a esta funcionalidad de archivos locales para la implementación 
+de esta experiencia multilingüe.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS3-section/funcioncargarLocales.png}
+    \caption{\label{fig:cargarlocales} Función para almacenar locales en estructura javaScript}
+    \vspace{\fill}
+\end{figure}
+
+En la Figura~\ref{fig:cargardatos} se puede ver la implementación de la función \textit{almacenarDatosProductos()}. Esta desempeña un papel crucial en 
+la recopilación y estructuración de la información sobre el producto actual de la tienda. En esta se recopilan y almacenan en la estructura \textit{infoProduct} los datos generales del producto, como su nombre, precio, identificador y cantidad de
+unidades seleccionada. Después itera sobre las áreas de impresión del producto, obteniendo detalles como el nombre, dimensiones, imágenes, trabajos asociados con todos sus elementos, cliches asociados a los trabajos y toda la información necesaria. Esta función
+almacena todos los datos de las áreas del producto en la estructura \textit{areasData}.
 
 
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS3-section/funcionAlmacenarDatosProductos.png}
+    \caption{\label{fig:cargardatos} Función para almacenar datos en estructura javaScript}
+    \vspace{\fill}
+\end{figure}
+
+Por último, hay que destacar que en esta sección se encuentran unas líneas que importan los archivos JavaScript necesarios, entre los que se debe destacar
+el fichero \textit{ventanta-modal.js}, este se carga de manera diferida para optimizar el rendimiento, y es el script en el que se ha desarrollado toda la funcionalidad y creación del
+personalizador (modal) (Figura~\ref{fig:finalSeccion}). También destacar que en esta sección se encuentran otras líneas que importan archivos CSS que se emplean en la aplicación para aplicar estilos 
+a los elementos de la página como los botones o los elementos del modal (Figura~\ref{fig:creacionSeccion}).
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS3-section/finalSeccion.png}
+    \caption{\label{fig:finalSeccion} Final de sección \textit{botonPersonalizar.liquid}}
+    \vspace{\fill}
+\end{figure}
 
 
 
