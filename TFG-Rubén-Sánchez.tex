@@ -833,6 +833,14 @@ de ruta clara y organizada para la implementación del proyecto. Esta estructura
 sobre los pasos a seguir y los objetivos a alcanzar en cada etapa del desarrollo. 
 
 \subsubsection{Implementación de las tareas básicas}
+Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una tienda de desarrollo de Shopify Plus que constituye un entorno de pruebas con datos ficticios.
+Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todos las modificaciones e implementaciones
+que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y adaptaciones que se deberán hacer en una tienda real a la hora de adaptarla para instalar la aplicación final.
+
+En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los metafields y metaobjetos necesarios para gestionar
+los trabajos de impresión. Para ello se debe acceder a la pantalla de configuración del panel de administración de la tienda. En la Figura~\ref{fig:configuracionMetafields} se puede ver
+esta pantalla de configuración, en la que se debe acceder a la sección de Datos personalizados. En este apartado se pueden crear de forma manual,
+tanto definiciones de metaobjetos como de metacampos.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -841,6 +849,20 @@ sobre los pasos a seguir y los objetivos a alcanzar en cada etapa del desarrollo
     \caption{\label{fig:configuracionMetafields}Pantalla de configuración de la interfaz de administración de la tienda}
     \vspace{\fill}
 \end{figure}
+
+Los productos personalizables de las tiendas, deberán contar con sus correspondientes areas de impresión, estas representan
+las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
+Para representar estas areas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
+objeto. Este cuenta con un nombre del área, la imagen que respresnta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
+los trabajos de impresión asociados al área (lista de referencias de producto). 
+
+Los trabajos son los diferentes tipos de impresión que se pueden aplicar a un área de un producto, por ejemplo, impresión láser, serigrafía, entre otros.
+Estos trabajos se van a representar en la tienda como productos especiales con su precio correspondiente. Estos estarán configurados de tal forma que no sean accesibles a través de la tienda, y
+no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo que no tendrán stock y tampoco requeriran de envio.
+
+Otro tipo de productos especiales que deberán existir en las tiendas son los clichés. Estos hacen referencia a las planchas tipográficas donde se reproduce una composición o grabado
+a imprimir. Este tipo de productos tampoco será visible ni se permitirá comprar por separado en la web de la tienda y tampoco permitirá envío  ni tendrá stock.
+Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el cliché es de repetición o no (Esta funcionalidad se especificará mas adelante).
 
 
 \begin{figure}[ht]
@@ -851,6 +873,14 @@ sobre los pasos a seguir y los objetivos a alcanzar en cada etapa del desarrollo
     \vspace{\fill}
 \end{figure}
 
+En cada trabajo de impresión se hace uso de un cliché determinado, por lo que cada trabajo debe tener asociado su producto cliché correspondiente. Por ello se debe 
+crear la definición del metacampo Clicé del trabajo, para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
+
+Además cada trabajo también cuenta con un número de colores que permite, por lo que se deberá crear también una definición de metadato ``Número de colores para trabajo'' que permita
+introducir el número de colores que permite cada trabajo de la tienda.
+
+Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro metadato para el tipo de elemento ``Producto''. Este será una 
+lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones los 3 tipos de metadatos configurados para los productos.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -860,6 +890,7 @@ sobre los pasos a seguir y los objetivos a alcanzar en cada etapa del desarrollo
     \vspace{\fill}
 \end{figure}
 
+Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación.
 
 
 \clearpage
