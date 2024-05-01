@@ -839,7 +839,7 @@ que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y ada
 
 En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los metafields y metaobjetos necesarios para gestionar
 los trabajos de impresión. Para ello se debe acceder a la pantalla de configuración del panel de administración de la tienda. En la Figura~\ref{fig:configuracionMetafields} se puede ver
-esta pantalla de configuración, en la que se debe acceder a la sección de Datos personalizados. En este apartado se pueden crear de forma manual,
+esta pantalla de configuración, en la que se debe acceder a la sección de ``Datos personalizados''. En este apartado se pueden crear de forma manual,
 tanto definiciones de metaobjetos como de metacampos.
 
 \begin{figure}[ht]
@@ -850,15 +850,15 @@ tanto definiciones de metaobjetos como de metacampos.
     \vspace{\fill}
 \end{figure}
 
-Los productos personalizables de las tiendas, deberán contar con sus correspondientes areas de impresión, estas representan
+Los productos personalizables de las tiendas, deberán contar con sus correspondientes áreas de impresión, estas representan
 las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
-Para representar estas areas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
+Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
 objeto. Este cuenta con un nombre del área, la imagen que respresnta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
 los trabajos de impresión asociados al área (lista de referencias de producto). 
 
 Los trabajos son los diferentes tipos de impresión que se pueden aplicar a un área de un producto, por ejemplo, impresión láser, serigrafía, entre otros.
 Estos trabajos se van a representar en la tienda como productos especiales con su precio correspondiente. Estos estarán configurados de tal forma que no sean accesibles a través de la tienda, y
-no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo que no tendrán stock y tampoco requeriran de envio.
+no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo que no tendrán stock y tampoco requeriran de envío.
 
 Otro tipo de productos especiales que deberán existir en las tiendas son los clichés. Estos hacen referencia a las planchas tipográficas donde se reproduce una composición o grabado
 a imprimir. Este tipo de productos tampoco será visible ni se permitirá comprar por separado en la web de la tienda y tampoco permitirá envío  ni tendrá stock.
@@ -874,7 +874,7 @@ Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el clich
 \end{figure}
 
 En cada trabajo de impresión se hace uso de un cliché determinado, por lo que cada trabajo debe tener asociado su producto cliché correspondiente. Por ello se debe 
-crear la definición del metacampo Clicé del trabajo, para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
+crear la definición del metacampo ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
 
 Además cada trabajo también cuenta con un número de colores que permite, por lo que se deberá crear también una definición de metadato ``Número de colores para trabajo'' que permita
 introducir el número de colores que permite cada trabajo de la tienda.
@@ -890,9 +890,9 @@ lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Fig
     \vspace{\fill}
 \end{figure}
 
-Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación. Para ello se va a emplear la Shopify CLI \cite{shopify-cli}, esta herramienta
+Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación. Para ello se ha hecho uso de la Shopify CLI \cite{shopify-cli}, esta herramienta
 de línea de comandos proporciona mecanismos para automatizar la generación de una aplicación para Shopify, además de muchas otras funcionalidades.
-Para generar la aplicación se ejecuta el siguiente comando desde el directorio en el que se desee: 
+Para generar la aplicación se ejecuta el siguiente comando desde el directorio en el que se desee almacenar la aplicación: 
 \begin{lstlisting}
     npm init @shopify/app@latest -- --template=node
 \end{lstlisting}
@@ -903,13 +903,49 @@ para la generación del proyecto.
 Después de haber creado la aplicación inicial, el siguiente paso es generar una ``theme app extension'' sobre la cual se trabajará la parte visual del tema. Esta
 extensión permite la integración de la aplicación (frontend) con el tema de la tienda de Shopify.
 
-Para generar la extensión se volverá a emplear la Shopify CLI y se introducirá el siguiente comando:
+Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el siguiente comando:
 
 \begin{lstlisting}
     shopify app generate extension
 \end{lstlisting}
 
-Al introducirlo se selecciona el tipo de extensión que se desea implementar y se le proporciona un nombre.
+Al ejecutar este comando hay que seleccionar el tipo de extensión que se desea implementar y proporcionar el nombre de la extensión. Una vez completado este proceso,
+se generará la estructura inicial de la extensión del tema, proporcionando una base sobre la que poder trabajar y desarrollar la parte del frontend de la aplicación que se integrará con
+el tema de la tienda.
+
+Una vez se tiene la aplicación base con su theme app extensión correspondiente, ya se puede empezar a trabajar sobre la extensión para implementar la funcionalidades básicas.
+
+En primer lugar se crea la sección sobre la cual se va a implementar toda la funcionalidad. El contenido de esta sección solo debe ejecutarse y estar disponible en las 
+páginas de productos que sean personalizables. En la Figura~\ref{fig:creacionSeccion} se puede ver como se ha creado la sección \textit{botonPersonalizar.liquid} y en ella, lo primero
+que se hace es recuperar las areas de impresión del producto actual. Una vez se obtienen las areas de impresión, se ejecuta una condición para comprobar
+si el producto posee áreas de impresión o no. En caso afirmativo, se ejecutará la funcionalidad de la sección.
+
+En primer lugar, en esta sección se ha creado un botón que será el encargado de mostrar un modal con todas las opciones de personalización. Gracias a la comprobación
+que se realiza al principio de la sección, este botón junto con la funcionalidad que lleva detrás solo estará disponible en las páginas de productos personalizables.
+El texto de este botón y todos los textos que se emplean en esta aplicación son obtenidos de los ficheros locales. Estos son archivos de idioma en formato 
+JSON que sirven para almacenar las diferentes traducciones. Cada archivo de idioma corresponde a un idioma específico y contiene un conjunto de etiquetas con su valor-traducción correspondiente.
+
+En la parte izquierda de la Figura~\ref{fig:locales} se puede observar como en el directorio de locales existen 2 ficheros, uno para el idioma ingles y otro para el español. 
+Ambos contienen las mismas etiquetas, pero cada uno posee las traducciones en su idioma. En un futuro si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
+necesarios con sus traducciones correspondientes.
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS1/seccionPersonalizarBoton.png}
+    \caption{\label{fig:creacionSeccion}Creación de la sección botonPersonalizar.liquid}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS1/locales.png}
+    \caption{\label{fig:locales}}
+    \vspace{\fill}
+\end{figure}
+
 
 \clearpage
 \subsubsection{Implementación de las tareas adicionales}
