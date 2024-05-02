@@ -825,7 +825,7 @@ La implementación de esta aplicación, se ha llevado a cabo siguiendo una guía
 Es importante remarcar que el proceso de implementación siguió una metodología iterativa e incremental como ya se ha comentado. Inicialmente, se llevó a cabo el desarrollo
 de las historias de usuario y el diseño detallado de las tareas en base a dichas historias, centrándose unicamente en las funcionalidades básicas. Se priorizó
 la implementación de estas tareas, las cuales abordaban los requisitos esenciales de la aplicación. Una vez que se obtuvo la primera implementación del
-proyecto básico, se procedión a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
+proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
 En este apartado se muestra la implementación en sus dos partes: la de las tareas básicas y la de las tareas adicionales. Estas tareas proporcionan una hoja
@@ -853,7 +853,7 @@ tanto definiciones de metaobjetos como de metacampos.
 Los productos personalizables de las tiendas, deberán contar con sus correspondientes áreas de impresión, estas representan
 las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
 Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
-objeto. Este cuenta con un nombre del área, la imagen que respresnta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
+objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
 los trabajos de impresión asociados al área (lista de referencias de producto). 
 
 Los trabajos son los diferentes tipos de impresión que se pueden aplicar a un área de un producto, por ejemplo, impresión láser, serigrafía, entre otros.
@@ -862,7 +862,7 @@ no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo qu
 
 Otro tipo de productos especiales que deberán existir en las tiendas son los clichés. Estos hacen referencia a las planchas tipográficas donde se reproduce una composición o grabado
 a imprimir. Este tipo de productos tampoco será visible ni se permitirá comprar por separado en la web de la tienda y tampoco permitirá envío  ni tendrá stock.
-Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el cliché es de repetición o no (Esta funcionalidad se especificará mas adelante).
+Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el cliché es de repetición o no (esta funcionalidad se especificará mas adelante).
 
 
 \begin{figure}[ht]
@@ -962,7 +962,7 @@ javaScript que maneje la funcionalidad y creación del modal para inicializar y 
 
 En la Figura~\ref{fig:cargarlocales} se puede observar la función \textit{cargarLocales()} al ejecutar esta función, la estructura \textit{localesModal} se carga con 
 todas las traducciones de textos que deben aparecer en el modal, pues desde javascript no tenemos acceso directo a esta funcionalidad de archivos locales para la implementación 
-de esta experiencia multilingüe.
+de la experiencia multilingüe.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -986,7 +986,7 @@ almacena todos los datos de las áreas del producto en la estructura \textit{are
     \vspace{\fill}
 \end{figure}
 
-Por último, hay que destacar que en esta sección se encuentran unas líneas que importan los archivos JavaScript necesarios, entre los que se debe destacar
+En esta sección también se pueden destacar las líneas que importan los archivos JavaScript necesarios, entre los que se debe destacar
 el fichero \textit{ventanta-modal.js}, este se carga de manera diferida para optimizar el rendimiento, y es el script en el que se ha desarrollado toda la funcionalidad y creación del
 personalizador (modal) (Figura~\ref{fig:finalSeccion}). También destacar que en esta sección se encuentran otras líneas que importan archivos CSS que se emplean en la aplicación para aplicar estilos 
 a los elementos de la página como los botones o los elementos del modal (Figura~\ref{fig:creacionSeccion}).
@@ -998,6 +998,48 @@ a los elementos de la página como los botones o los elementos del modal (Figura
     \caption{\label{fig:finalSeccion} Final de sección \textit{botonPersonalizar.liquid}}
     \vspace{\fill}
 \end{figure}
+
+Una vez implementada toda la funcionalidad en la sección \textit{botonPersonalizar.liquid} ya se puede proceder con la implementación de la ventana
+modal y toda su funcionalidad asociada.
+
+En primer lugar, en la Figura~\ref{fig:iniciojs} se puede observar un evento que engloba a todo el contenido del fichero. Este evento se dispara cuando el DOM (Modelo de Objetos del Documento) ha 
+sido completamente cargado y analizado, lo que garantiza que el código dentro de la función se ejecute una vez que la página esté lista. Esto se emplea para evitar errores.
+A continuación se obtiene mediante su identificador, el botón ``Personalizar'' encargado de abrir el modal. Y posteriormente se crea el contenedor ``div'' que albergará 
+todo el contenido y funcionalidad. Este contarará con todos los estilos CSS que se han creado e importado para darle un aspecto de ventana modal. Del mismo modo, todos los elementos
+creados, cuentan con clases de estilos implementadas en los dos ficheros CSS que se han creado para este proyecto \textit{form-modal.css} y \textit{customize-button.css}.
+
+Después en la Imagen~\ref{fig:finaljs} se puede ver como se ha creado la función \textit{openModal()}. Esta es la función principal que se encarga
+de generar y mostrar el modal. En primer lugar se establece el estilo CSS del elemento ``customModal'' (contenedor del modal) para que sea visible (``display:block'').
+Luego, se vaacía el contenido HTML dentro de este modal para asegurarse de que esté limpio y listo para generar dinámicamente y mostrar todo el contenido de este modal.
+A continuación, se realizan varias llamadas a funciones: Se llama a ``cargarLocales()'' para cargar las traducciones locales necesarias, ``almacenarDatosProductos()'' para que se generen
+y se almacenen las estructuras de datos necesarios para la generación de este modal, y por último se llama a ``generateAreaTable()'' para generar todo el contenido y funcionalidades
+del modal. 
+
+Al final del documento se agrega un event listener al botón ``Personalizar'' que activa la apertura del modal. De forma que cuando se haga clic en este botón, se 
+ejecute la función ``openModal()'', mostrando el modal con todos sus elementos y funcionalidad asociada.
+
+En la función \textit{generateAreaTable()} se ha realizado toda la implementación de elementos y funcionalidad. En el comienzo de esta función (Figura~\ref{fig:iniciojs}) se puede destacar la creación del botón
+``cloeModalButton'' que se empleará para cerrar la ventana modal. En la Figura~\ref{fig:finaljs} se observa como al final de la función se ha creado un eventListener para este botón, que se mantiene en espera de un evento
+click para realizar una llamada a la función \textit{closeModal()} que es la encargada de ocultar el modal mediante la modificación de su visibilidad.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png}
+    \caption{\label{fig:iniciojs} Creación de la ventana modal en \textit{ventana-modal.js}}
+    \vspace{\fill}
+\end{figure}
+
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS3-modal/FinalDeOpenModal.png}
+    \caption{\label{fig:finaljs} Apertura y generación del modal en \textit{ventana-modal.js}}
+    \vspace{\fill}
+\end{figure}
+
 
 
 

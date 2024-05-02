@@ -11,24 +11,26 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Función para almacenar locales en estructura javaScript}}{32}{figure.10}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Función para almacenar datos en estructura javaScript}}{33}{figure.11}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Final de sección \textit {botonPersonalizar.liquid}}}{34}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces package.json}}{38}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Variables de entorno de la aplicación}}{39}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Configuración de la aplicación}}{40}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Distribución de la aplicación}}{40}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Generar link de distribución}}{40}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Personalizar tema en el panel de administración}}{46}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Añadir la extensión de tema de la App en el tema de la tienda}}{47}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Panel de administración de la tienda}}{47}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Funcionalidades de la parte de administración de la App}}{48}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Página principal de la tienda de demostración}}{49}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Página de producto no personalizable}}{49}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Página de producto personalizable}}{50}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Pantalla del personalizador del producto seleccionado}}{50}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Personalizador con el Area 1 seleccionada}}{51}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Personalizador con varias áreas seleccionadas}}{51}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Personalizador con trabajo de impresión y colores seleccionados}}{52}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Personalizador con opciones de repetición de cliche y doble pasada}}{52}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Personalizador con selección de logo}}{52}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Botón de carrito}}{53}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Pantalla del carrito de la tienda}}{53}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Pantalla de checkout de la tienda}}{53}{figure.33}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Creación de la ventana modal en \textit {ventana-modal.js}}}{35}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Apertura y generación del modal en \textit {ventana-modal.js}}}{36}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces package.json}}{40}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Variables de entorno de la aplicación}}{41}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Configuración de la aplicación}}{42}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Distribución de la aplicación}}{42}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Generar link de distribución}}{42}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Personalizar tema en el panel de administración}}{48}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Añadir la extensión de tema de la App en el tema de la tienda}}{49}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Panel de administración de la tienda}}{49}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Funcionalidades de la parte de administración de la App}}{50}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Página principal de la tienda de demostración}}{51}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Página de producto no personalizable}}{51}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Página de producto personalizable}}{52}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Pantalla del personalizador del producto seleccionado}}{52}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Personalizador con el Area 1 seleccionada}}{53}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Personalizador con varias áreas seleccionadas}}{53}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Personalizador con trabajo de impresión y colores seleccionados}}{54}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Personalizador con opciones de repetición de cliche y doble pasada}}{54}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Personalizador con selección de logo}}{54}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Botón de carrito}}{55}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Pantalla del carrito de la tienda}}{55}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Pantalla de checkout de la tienda}}{55}{figure.35}%
