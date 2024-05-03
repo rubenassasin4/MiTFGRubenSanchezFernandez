@@ -828,11 +828,10 @@ la implementación de estas tareas, las cuales abordaban los requisitos esencial
 proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
-En este apartado se muestra la implementación en sus dos partes: la de las tareas básicas y la de las tareas adicionales. Estas tareas proporcionan una hoja
-de ruta clara y organizada para la implementación del proyecto. Esta estructuración facilitó el proceso de implementación al proporcionar una orientación clara 
-sobre los pasos a seguir y los objetivos a alcanzar en cada etapa del desarrollo. 
+En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollod el backend, la elaboración del frontend de la parte de administración y una última sección donde se detallará el empleo de los customize boundles y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
+proporciona una visión clara y organizada de la implementación del proyecto.
 
-\subsubsection{Implementación de las tareas básicas}
+\subsubsection{Creación de la aplicación e implementación del theme app extension}
 Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una tienda de desarrollo de Shopify Plus que constituye un entorno de pruebas con datos ficticios.
 Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todos las modificaciones e implementaciones
 que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y adaptaciones que se deberán hacer en una tienda real a la hora de adaptarla para instalar la aplicación final.
@@ -1010,7 +1009,7 @@ creados, cuentan con clases de estilos implementadas en los dos ficheros CSS que
 
 Después en la Imagen~\ref{fig:finaljs} se puede ver como se ha creado la función \textit{openModal()}. Esta es la función principal que se encarga
 de generar y mostrar el modal. En primer lugar se establece el estilo CSS del elemento ``customModal'' (contenedor del modal) para que sea visible (``display:block'').
-Luego, se vaacía el contenido HTML dentro de este modal para asegurarse de que esté limpio y listo para generar dinámicamente y mostrar todo el contenido de este modal.
+Luego, se vacía el contenido HTML dentro de este modal para asegurarse de que esté limpio y listo para generar dinámicamente y mostrar todo el contenido de este modal.
 A continuación, se realizan varias llamadas a funciones: Se llama a ``cargarLocales()'' para cargar las traducciones locales necesarias, ``almacenarDatosProductos()'' para que se generen
 y se almacenen las estructuras de datos necesarios para la generación de este modal, y por último se llama a ``generateAreaTable()'' para generar todo el contenido y funcionalidades
 del modal. 
@@ -1019,7 +1018,7 @@ Al final del documento se agrega un event listener al botón ``Personalizar'' qu
 ejecute la función ``openModal()'', mostrando el modal con todos sus elementos y funcionalidad asociada.
 
 En la función \textit{generateAreaTable()} se ha realizado toda la implementación de elementos y funcionalidad. En el comienzo de esta función (Figura~\ref{fig:iniciojs}) se puede destacar la creación del botón
-``cloeModalButton'' que se empleará para cerrar la ventana modal. En la Figura~\ref{fig:finaljs} se observa como al final de la función se ha creado un eventListener para este botón, que se mantiene en espera de un evento
+``closeModalButton'' que se empleará para cerrar la ventana modal. En la Figura~\ref{fig:finaljs} se observa como al final de la función se ha creado un eventListener para este botón, que se mantiene en espera de un evento
 click para realizar una llamada a la función \textit{closeModal()} que es la encargada de ocultar el modal mediante la modificación de su visibilidad.
 
 \begin{figure}[ht]
@@ -1044,7 +1043,13 @@ click para realizar una llamada a la función \textit{closeModal()} que es la en
 
 
 \clearpage
-\subsubsection{Implementación de las tareas adicionales}
+\subsubsection{Implementación del frontend de la parte de administración}
+
+
+\subsubsection{Implementación del backend}
+
+
+\subsubsection{Implementación de customize boundles y modificación de tema estandar}
 
 \clearpage
 \subsection{Pruebas}

@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
 \vspace {\baselineskip }
-\contentsline {section}{\numberline {1}Resumen}{\es@scroman {iv}}{section.1}%
-\contentsline {section}{\numberline {2}Extended abstract}{\es@scroman {v}}{section.2}%
+\contentsline {section}{\numberline {1}Resumen}{\es@scroman {v}}{section.1}%
+\contentsline {section}{\numberline {2}Extended abstract}{\es@scroman {vi}}{section.2}%
 \contentsline {section}{\numberline {3}Introducción}{1}{section.3}%
 \contentsline {section}{\numberline {4}Estado del arte}{2}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Contexto y análisis de la situación de partida}{2}{subsection.4.1}%
@@ -31,8 +31,10 @@
 \contentsline {subsubsection}{\numberline {6.2.1}Tareas básicas}{19}{subsubsection.6.2.1}%
 \contentsline {subsubsection}{\numberline {6.2.2}Tareas adicionales}{23}{subsubsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.3}Implementación}{26}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Implementación de las tareas básicas}{26}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Implementación de las tareas adicionales}{37}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.1}Creación de la aplicación e implementación del theme app extension}{26}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Implementación del frontend de la parte de administración}{37}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Implementación del backend}{37}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize boundles y modificación de tema estandar}{37}{subsubsection.6.3.4}%
 \contentsline {subsection}{\numberline {6.4}Pruebas}{38}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Despliegue}{39}{subsection.6.5}%
 \contentsline {section}{\numberline {7}Conclusiones y vías futuras}{43}{section.7}%
