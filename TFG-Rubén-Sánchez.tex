@@ -1045,9 +1045,10 @@ click para realizar una llamada a la función \textit{closeModal()} que es la en
 
 \clearpage
 \subsubsection{Implementación del frontend de la parte de administración}
-Al crear una aplicación Shopify, se genera una estructura frontend que sigue los principios de una aplicación React. Esta estructura incluye directorios como assets para 
-archivos estáticos como imágenes, fuentes y estolos CSS; components para componentes de React reutilizables como botones, barras de navegación  y tarjetas de producto; 
-hooks que encapsulan la lógica de la aplicación; locales para almacenar las traducciones en los distintos idioms; pages para definir las páginas principales de la aplicación; El fichero App.jsx como
+
+Al crear una aplicación para Shopify, se genera una estructura frontend que sigue los principios de una aplicación React. Esta estructura incluye directorios como assets para 
+archivos estáticos como imágenes, fuentes y ficheros CSS; components para componentes de React reutilizables como botones, barras de navegación y tarjetas de producto; 
+hooks que encapsulan la lógica de la aplicación; locales para almacenar las traducciones en los distintos idiomas; pages para definir las páginas principales de la aplicación; El fichero App.jsx como
 componente principal que actúa como contenedor de toda la interfaz de usuario y maneja el enrutamiento de la aplicación; index.jsx como el punto de entrada de la aplicación React donde
 se inicializa y se monta la aplicación enn el DOM del navegador; y Routes.jsx donde se definen las rutas de la aplicación utilizando un enrutador, para determinar qué componentes
 deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se puede observar una representación visual de esta estructura.
@@ -1060,6 +1061,12 @@ deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se 
     \vspace{\fill}
 \end{figure}
 
+En la parte del frontend de la aplicación, se ha implementado una funcionalidad muy básica que consta de dos componentes de React (Figura~\ref{fig:componentes}). Cada componente representa una tarjeta que 
+contiene un texto explicativo de la acción que se llevará a cabo y un botón. Estas tarjetas están diseñadas para activar un par de llamadas al backend cuando se hace clic en los 
+botones correspondientes. Este diseño proporciona una experiencia interactiva para los administradores de las tiendas, para que desde la interfaz de administración de la misma
+puedan activar un par de funcionalidades para crear los metadatos y metaobjetos necesarios para integrar la aplicación con la tienda y crear el objeto cart-transform que activa una funcionalidad
+de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observar la página principal en la que se renderizan estos componentes reutilizables.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -1067,6 +1074,25 @@ deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se 
     \caption{\label{fig:componentes} Componentes del frontend }
     \vspace{\fill}
 \end{figure}
+
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.3\textwidth]{imagenes-admin/paginaHome.png}
+    \caption{\label{fig:homepage} Página principal del frontend de la aplicación }
+    \vspace{\fill}
+\end{figure}
+
+En la Figura~\ref{fig:componenteMetafield} se puede observar uno de los componentes. Este hace uso de la biblioteca Polaris de Shopify, que proporciona una serie de componentes predefinidos
+y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una aparencia coherente con el resto del panel de administración de la tienda.
+La función handlePopulate desempeña el papel de realizar la llamada a la ruta ``/api/meta/create'' para crear los metafields y metaobject necesarios para la funcionalidad de personalización de productos.
+Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además se hace uso del componente Toast de app-bridge-react para mostrar
+mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el backend. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
+de traducción que emplea los archivos de traducciones locales que se proporcionan (mostrados en la Figura~\ref{fig:localesAdmin}), para permitir una experiencia multilingüe, lo que mejora
+la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
+
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1080,21 +1106,17 @@ deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-admin/ComponenteCartTransBueno.png}
-    \caption{\label{fig:componenteCart} Componente para la creación del objeto cart-transform }
-    \vspace{\fill}
-\end{figure}
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
     \includegraphics[width=0.5\textwidth]{imagenes-admin/locales-admin.png}
     \caption{\label{fig:localesAdmin} Ficheros locales }
     \vspace{\fill}
 \end{figure}
 
+El otro componente (``CartTrans'') es similar al anterior en estructura y funcionalidad. Este se encarga de renderizar la interfaz que permite al usuario realizar una llamada al backend mediante
+la ruta ``/api/cart/create'' que ejecuta la funcionalidad para la creación del objeto cart-transform en la tienda.
 
-
+Por último, es importante destacar el empleo del app bridge en esta parte del frontend. Su utilización proporciona una conexión deirecta entre la aplicación y el panel 
+de administración de Shopify, lo que permite a los administradore de la tienda poder interactuar con la interfaz de usuario implementada y acceder a las funcionalidades que estas aportan
+desde el panel de administración del a tienda.
 
 \clearpage
 \subsubsection{Implementación del backend}
