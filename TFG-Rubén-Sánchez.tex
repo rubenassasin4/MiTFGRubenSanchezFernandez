@@ -1045,11 +1045,104 @@ click para realizar una llamada a la función \textit{closeModal()} que es la en
 \clearpage
 \subsubsection{Implementación del frontend de la parte de administración}
 
-
+\clearpage
 \subsubsection{Implementación del backend}
 
+\clearpage
+\subsubsection{Implementación de customize bundles y modificación de tema estandar}
+En esta sección se mostrará la investigación e implementación de los ``customize bundles'' para agrupar y vincular los
+productos de los paquetes de impresión. Una vez añadidos los productos al carrito, esta funcionalidad permitirá relacionar en paquetes, los productos de los pedidos personalizados, de forma que no se puedan borrar
+o editar por separado. Además, se realizará una nueva versión de la sección de desglose de artículos del carrito. Esto se debe a que en el tema estandar no se muestran los artículos de un paquete 
+de impresión. En esta, se pinta un solo elemento con el precio total del conjunto. El usuario final debe poder visualizar en el carrito un desglose de los paquetes con todos los artículos que incluye y su precio 
+total para obtener una buena experiencia de compra.
 
-\subsubsection{Implementación de customize boundles y modificación de tema estandar}
+Las \textbf{funciones de Shopify} \cite{shopify-functions} permiten a los desarrolladores personalizar la lógica del backend de Shopify, incluyendo casos de uso como la implementación de los
+``customize bundles''. Estas funciones se basan en destinos de extensión que inyectan código en la lógica de backend de Shopify. La entrada de estas funciónes es un objecto JSON resultado de una
+consulta de GraphQL, permitiendo seleccionar datos específicos como los de la línea de carrito en este caso. La lógica de la funcion se realizará en JavaScript, y se compila en módulos de WebAssembly.
+La salida de esta función es un documento JSON que describe las operaciones deseadas y que Shopify se encargará de interpretar. Además Shopify proporciona esquemas que especifican los 
+destinos, entradas y salidas esperadas para la API de Functions.
+
+En este caso se usarán estas funciones para realizar una modificación del carrito. Para ello, mediante la Shopify CLI se debe crear en la aplicación una extensión de transformación de carrito. Esta proporciona 
+la estructura básica para poder definir la query y la función que ejecutará y devolverá el resultado JSON con las operaciones de modificación a Shopify (Figura~\ref{fig:estructuracarttrans}). 
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/estructuraCartTransform.png}
+    \caption{\label{fig:estructuracarttrans} Estructura de la extensión \textit{cart-transform}}
+    \vspace{\fill}
+\end{figure}
+
+Una vez creada la extensión \textit{cart-transform}, se debe configurar la query de la consulta GraphQL cuyo resultado será la entrada de la función. Esta consulta (Figura~\ref{fig:queryCart}) está diseñada para obtener
+información detallada sobre los elementos del carrito de la tienda. En este caso, se solicitan datos como el identificador de la línea de carrito, la cantidad, una serie de propiedades que se han introducido al añadir los productos personalizados 
+y que servirán para localizar los elementos que deben pertenecer a un mismo paquete y poder asociarlos, y también se recupera el 
+metafield \textit{importe-canon} con el que pueden contar algunos productos y que servirá para aplicar el impuesto canon digital.
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/queryCartTransform.png}
+    \caption{\label{fig:queryCart} Fichero \textit{run.graphql}}
+    \vspace{\fill}
+\end{figure}
+
+Por lo que respecta a la implementación de la función, esta se divide en dos partes principales: la primera parte (Figura~\ref{fig:runpart1})  se encarga de procesar las las líneas de carrito que contienen
+propiedades definidas (artículos de personalización), mientras que la segunda parte se encarga de las líneas del carrito que no tienen propiedades definidas (artículos normales sin personalización).
+
+En la primera parte, se filtran las líneas del carrito que tienen la propiedad 'idProps' y 'value' definidas, y se agrupan según su identificador. Si una línea comparte el mismo identificador que la anterior
+o es la primera línea del carrito, se agregan a una estructura de datos que representa un grupo de líneas. Cuando se encuentra una línea con un identificador diferente, se crea una nueva operación 
+que combina las líneas del grupo anterior y se reinicia el proceso para el nuevo grupo. Con este procedimento se generan una serie de operaciones de tipo ``merge'' que se van añadiendo al array de operaciones que retorna 
+la función. Estas operaciones serán interpretadas por el backend de Shopify y resultarán en una transformación del carrito que mostrará los items de un mismo producto de personalización asociados.
+
+En la segunda parte (Figura~\ref{fig:runpart2}), se procesan las líneas del carrito que no tienen propiedades definidas, que corresponden a productos que no son personalizados. Estos productos se recorren y en función de si cuentan con canon digital o no, se expanden agregando 
+el producto especial canon con su cantidad correspondiente. Con este procedimiento se generan una serie de operaciones de tipo ``expand'' que se van añadiendo al array de operaciones. Este tipo de operaciones
+serán interpretadas por el backend de Shopify y resultarán en una transformación del carrito que añadirá el canon digital a los productos normales que deban contar con él, asociados en un mismo paquete. Es decir, esta operación añade los productos canon al carrito
+y los asocia con los productos no personalizados correspondientes.
+
+Como último paso para activar esta funcionalidad en la tienda en la que se instale la aplicación, habría que ejecutar una mutación GraphQL para crear un objeto de tipo \textit{cart-transform}, que cuente con el identificador de la función que se ha implementado
+y que se debe aplicar. Este objeto es el encargado de llamar a la función de transformación correspondiente cuando el usuario entra al carrito de la tienda.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/queryCartTransform.png}
+    \caption{\label{fig:runpart1} Funcionalidad para crear paquetes de impresión} 
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/queryCartTransform.png}
+    \caption{\label{fig:runpart2} Funcionalidad para añadir canon digital} 
+    \vspace{\fill}
+\end{figure}
+
+Al aplicar los customize bundles, se observa que los paquetes de productos de personalización, no muestran los detalles de los artículos que contienen. Estos 
+paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no está visible. Por ello se ha implementado una nueva sección en un tema estandar en el que 
+se desglose el contenido de este paquete (Figura~\ref{fig:seccionTema}).
+
+Esta es una versión actualizada de la sección \textit{main-cart-items.liquid}. En ella (Figura~\ref{fig:modificacionTema}) se recorren los 
+elementos de los item que contienen otros artículos (paquetes) y se van imprimiendo todos estos productos que contiene. Se emplea liquid para mostrar sus precios, imágenes y toda la información pertinente,
+con el objetivo de mejorar la experiencia del usuario.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/creacionSeccionTema.png}
+    \caption{\label{fig:seccionTema} Nueva versión de la sección \textit{main-cart-items.liquid}} 
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/modificaciondetema.png}
+    \caption{\label{fig:modificacionTema} Modificación de la sección \textit{main-cart-items.liquid}} 
+    \vspace{\fill}
+\end{figure}
+
 
 \clearpage
 \subsection{Pruebas}
@@ -1353,6 +1446,10 @@ es muy poco intuitiva y atractiva para los clientes.
     \bibitem{shopify-cli} 
     Shopify.
     \textit{``Shopify CLI''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/api/shopify-cli} (visitado 01-05-2024).
+
+    \bibitem{shopify-functions} 
+    Shopify.
+    \textit{``Shopify Functions overview''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/apps/functions} (visitado 04-05-2024).
 
     \bibitem{nodemon} 
     José Luis
