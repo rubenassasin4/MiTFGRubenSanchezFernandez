@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
 \vspace {\baselineskip }
-\contentsline {section}{\numberline {1}Resumen}{\es@scroman {v}}{section.1}%
-\contentsline {section}{\numberline {2}Extended abstract}{\es@scroman {vi}}{section.2}%
+\contentsline {section}{\numberline {1}Resumen}{\es@scroman {iv}}{section.1}%
+\contentsline {section}{\numberline {2}Extended abstract}{\es@scroman {v}}{section.2}%
 \contentsline {section}{\numberline {3}Introducción}{1}{section.3}%
 \contentsline {section}{\numberline {4}Estado del arte}{2}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Contexto y análisis de la situación de partida}{2}{subsection.4.1}%
@@ -34,7 +34,7 @@
 \contentsline {subsubsection}{\numberline {6.3.1}Creación de la aplicación e implementación del theme app extension}{26}{subsubsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.2}Implementación del frontend de la parte de administración}{37}{subsubsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.3}Implementación del backend}{38}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize bundles y modificación de tema estandar}{39}{subsubsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize bundles y modificación de tema}{39}{subsubsection.6.3.4}%
 \contentsline {subsection}{\numberline {6.4}Pruebas}{46}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Despliegue}{47}{subsection.6.5}%
 \contentsline {section}{\numberline {7}Conclusiones y vías futuras}{51}{section.7}%
