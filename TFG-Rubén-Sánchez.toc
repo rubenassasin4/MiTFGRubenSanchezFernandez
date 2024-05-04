@@ -35,11 +35,11 @@
 \contentsline {subsubsection}{\numberline {6.3.2}Implementación del frontend de la parte de administración}{37}{subsubsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.3}Implementación del backend}{38}{subsubsection.6.3.3}%
 \contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize bundles y modificación de tema}{39}{subsubsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.4}Pruebas}{46}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Despliegue}{47}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{51}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conclusiones}{51}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{51}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Bibliografía}{53}{section.8}%
-\contentsline {section}{\numberline {9}Anexos}{56}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Manual de usuario}{56}{subsection.9.1}%
+\contentsline {subsection}{\numberline {6.4}Pruebas}{44}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Despliegue}{45}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{49}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conclusiones}{49}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{49}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Bibliografía}{51}{section.8}%
+\contentsline {section}{\numberline {9}Anexos}{54}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Manual de usuario}{54}{subsection.9.1}%
