@@ -1127,8 +1127,11 @@ esenciales, como la gestión de archivos mediante ``multer'' para subir archivos
 las acciones necesarias. Además, establece el puerto en el que el servidor escuchará las solicitudes entrantes, ya sea el puerto definido en las 
 variables de entorno o el puerto 3000 por defecto. Este fichero es fundamental para el funcionamiento del backend.
 
-En la Figura~\ref{fig:configIndex} se observa la parte del código encargada de gestionar la subida de imágenes al servidor. Primero se define 
-una función ``getFormattedDate()'' que obtiene la fecha actual. Luego, se utiliza esta fecha para crear una ruta de almacenamiento específica para 
+En la Figura~\ref{fig:configIndex} se observa la parte del código encargada de gestionar la subida de imágenes al servidor. El objetivo de esta 
+funcionalidad es permitir a los usuarios (que estén configurando un producto en el personalizador) subir una imagen por área, que represente la impresión que desea
+realizar en el producto. 
+
+Primero se define una función ``getFormattedDate()'' que obtiene la fecha actual. Luego, se utiliza esta fecha para crear una ruta de almacenamiento específica para 
 las imágenes que los usuario subirán desde la tienda, dentro de una carpeta llamada ``imagenes\_area\_pedidos'' con la fecha actual como nombre de subcarpeta (Figura~\ref{fig:carpetaImagenes}).
 Posteriormente, se configura el almacenamiento de multer para que las imágenes se guarden en la carpeta correspondiente según la fecha actual.
 
@@ -1165,6 +1168,19 @@ que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devo
     \vspace{\fill}
 \end{figure}
 
+En la Figura~\ref{fig:endpointsAdmin}, se ilustran dos endpoints: ``/api/meta/create'' y ``/api/cart/create''. Estos endpoints serán
+llamados desde la parte de adminsitración de la aplicación para llevar a cabo las acciones específicas.
+
+El primer endpoint, /api/meta/create, es responsable de crear metadatos y metaobjetos necesarios para la aplicación. Cuando se realiza
+una solicitud GET a esta ruta, se ejecuta una función asíncrona que intenta crear estos metadatos utilizando la sesión de Shopify proporcionada.
+Si la operación se realiza correctamente, se devuelve una respuesta con un código de estado 200 y un cuerpo que indica el éxito de la operación. 
+En caso de que ocurra algún error durante el proceso, se captura la excepción, se registra en la consola y se devuelve una respuesta con un código 
+de estado 500 indicando el error.
+
+El segundo endpoint, /api/cart/create, busca crear el objeto cart-transform necesario para la aplicación. Al igual que el primer endpoint, al recibir
+una solicitud GET en esta ruta, se ejecuta una función asíncrona que intenta crear el objeto cart-transform. En este caso también se devuelve un 
+mensaje de éxito o error, dependiendo del resultado de la operación.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -1172,6 +1188,7 @@ que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devo
     \caption{\label{fig:endpointsAdmin} EndPoints para la parte de administración }
     \vspace{\fill}
 \end{figure}
+
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
