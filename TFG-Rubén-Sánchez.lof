@@ -24,30 +24,31 @@
 \contentsline {figure}{\numberline {23}{\ignorespaces EndPoints para la parte de administración }}{41}{figure.23}%
 \contentsline {figure}{\numberline {24}{\ignorespaces Función para la creación de metadatos y metaobjetos}}{42}{figure.24}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Constantes para estandarizar la funcionalidad de creación de metadatos }}{43}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Estructura de la extensión \textit {cart-transform}}}{44}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Fichero \textit {run.graphql}}}{45}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Funcionalidad para crear paquetes de impresión}}{46}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Funcionalidad para añadir canon digital}}{47}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Nueva versión de la sección \textit {main-cart-items.liquid}}}{47}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Modificación de la sección \textit {main-cart-items.liquid}}}{48}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces package.json}}{51}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Variables de entorno de la aplicación}}{52}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Configuración de la aplicación}}{53}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Distribución de la aplicación}}{53}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Generar link de distribución}}{53}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Personalizar tema en el panel de administración}}{59}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Añadir la extensión de tema de la App en el tema de la tienda}}{60}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Panel de administración de la tienda}}{60}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Funcionalidades de la parte de administración de la App}}{61}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Página principal de la tienda de demostración}}{62}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Página de producto no personalizable}}{62}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Página de producto personalizable}}{63}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Pantalla del personalizador del producto seleccionado}}{63}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Personalizador con el Area 1 seleccionada}}{64}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Personalizador con varias áreas seleccionadas}}{64}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Personalizador con trabajo de impresión y colores seleccionados}}{65}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Personalizador con opciones de repetición de cliche y doble pasada}}{65}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Personalizador con selección de logo}}{65}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Botón de carrito}}{66}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Pantalla del carrito de la tienda}}{66}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Pantalla de checkout de la tienda}}{66}{figure.52}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Función para la creación del objeto cart-transform}}{43}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Estructura de la extensión \textit {cart-transform}}}{44}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Fichero \textit {run.graphql}}}{45}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Funcionalidad para crear paquetes de impresión}}{46}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Funcionalidad para añadir canon digital}}{47}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Nueva versión de la sección \textit {main-cart-items.liquid}}}{47}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Modificación de la sección \textit {main-cart-items.liquid}}}{48}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces package.json}}{51}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Variables de entorno de la aplicación}}{52}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Configuración de la aplicación}}{53}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Distribución de la aplicación}}{53}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Generar link de distribución}}{53}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Personalizar tema en el panel de administración}}{59}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Añadir la extensión de tema de la App en el tema de la tienda}}{60}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Panel de administración de la tienda}}{60}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Funcionalidades de la parte de administración de la App}}{61}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Página principal de la tienda de demostración}}{62}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Página de producto no personalizable}}{62}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Página de producto personalizable}}{63}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Pantalla del personalizador del producto seleccionado}}{63}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Personalizador con el Area 1 seleccionada}}{64}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Personalizador con varias áreas seleccionadas}}{64}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Personalizador con trabajo de impresión y colores seleccionados}}{65}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Personalizador con opciones de repetición de cliche y doble pasada}}{65}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Personalizador con selección de logo}}{65}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Botón de carrito}}{66}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Pantalla del carrito de la tienda}}{66}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Pantalla de checkout de la tienda}}{66}{figure.53}%

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1714937252.86594 "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" "TFG-Rubén-Sánchez.pdf" "TFG-Rubén-Sánchez" 1714937261.45295 0
+["pdflatex"] 1714948011.55136 "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" "TFG-Rubén-Sánchez.pdf" "TFG-Rubén-Sánchez" 1714948020.29896 0
   "Anexo_Firmado_Upango.png" 1714416615 111310 da9d8050b0e3cb3a20ece5bfb9cb663d ""
   "C:/Users/RubénSanchezFernande/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1714416033 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/RubénSanchezFernande/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710354637 24232598 b087d821289dcfad177ae35441a81227 ""
@@ -150,12 +150,12 @@
   "C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "TFG-Rubén-Sánchez.aux" 1714937261 23137 7bccfee024c35e5d262c78cea0bbc21a "pdflatex"
-  "TFG-Rubén-Sánchez.lof" 1714937261 6094 1f02fce848668520d13fd9b1de8c6373 "pdflatex"
-  "TFG-Rubén-Sánchez.out" 1714937261 6130 f83d88c7352565ce206d156c314b10c8 "pdflatex"
-  "TFG-Rubén-Sánchez.tex" 1714937252 155701 29eeafd6b1f944c915add90aa8a52255 ""
-  "TFG-Rubén-Sánchez.toc" 1714937261 4353 cff5cd817e41b33081ea665f5131bc47 "pdflatex"
-  "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" 1714937252 155701 29eeafd6b1f944c915add90aa8a52255 ""
+  "TFG-Rubén-Sánchez.aux" 1714948019 23413 8b143deef54ca49fb17a69d37162f1af "pdflatex"
+  "TFG-Rubén-Sánchez.lof" 1714948019 6219 2375c34d21e0f351a2603c6fc027ade6 "pdflatex"
+  "TFG-Rubén-Sánchez.out" 1714948019 6130 f83d88c7352565ce206d156c314b10c8 "pdflatex"
+  "TFG-Rubén-Sánchez.tex" 1714948002 156782 facf9b0d2ce1cc481e3c41d6e90ba3c5 ""
+  "TFG-Rubén-Sánchez.toc" 1714948019 4353 cff5cd817e41b33081ea665f5131bc47 "pdflatex"
+  "c:/Users/RubénSanchezFernande/Desktop/TFG/TFG-Rubén-Proyecto-latex/TFG-Rubén-Sánchez.tex" 1714948002 156782 facf9b0d2ce1cc481e3c41d6e90ba3c5 ""
   "imagenes-admin/EstructuraDirectoriosReact.png" 1714757315 18687 0fa4579bf846ce7eecbacd5d32609d1d ""
   "imagenes-admin/componentes-admin.png" 1714756358 5148 230ff70f94c6705b9182856f1737bb16 ""
   "imagenes-admin/locales-admin.png" 1714756309 137380 ec3ff121d4f7e141c517431d4c779824 ""
@@ -165,6 +165,7 @@
   "imagenes-back/almacenamientoCarpetaImagenes.png" 1714761117 6399 bb87980ba5edbae15bdbe8cc5b28f135 ""
   "imagenes-back/configuracionIndexjs.png" 1714760406 66005 e3fe9862434bf0b540bffc3075903373 ""
   "imagenes-back/endpointSubirImagen.png" 1714760455 96019 08e1f8f638aeeade0f4ace4ae43cadbc ""
+  "imagenes-back/funcionCartCreator.png" 1714761026 49254 d4df7c624e0b21898c66f0c7766f019b ""
   "imagenes-back/funcionmetaCreator.png" 1714760941 53088 a00719e464257c5c49839a1ac09aa29a ""
   "imagenes-back/metafieldCreatorConstantes1.png" 1714760628 64960 772eddfe971972d58bf32bd289df2710 ""
   "imagenes-tema/creacionSeccionTema.png" 1714763258 7132 9fb809c268efbfd0a267fbd9d4b2cf5d ""
