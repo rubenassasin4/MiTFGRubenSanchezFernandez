@@ -1189,6 +1189,34 @@ mensaje de éxito o error, dependiendo del resultado de la operación.
     \vspace{\fill}
 \end{figure}
 
+Las funciones a las que se llama en estos endpoints están implementadas en los ficheros ``metafield-creator.js'' y ``function-cart-creator.js''.
+En la Figura~\ref{fig:funcionMetafields} se puede observar la función ``metaCreator''. Esta es una función asíncrona que acepta dos argumentos:
+``session'' y ``count'', este último tiene un valor predeterminado según las constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
+
+Dentro de la función se instancia un cliente de GraphQL utilizando la sesión proporcionada. Luego, se ejecuta una consulta GraphQL para crear
+un metaobjeto (que representa la áreas de impresión) con la definición proporcionada en las constantes ``CREATE\_METAOBJECT\_MUTATION'' (que almacena la consulta), ``NAMEMETAOBJECT'', 
+``TYPEMETAOBJECT'' y ``FIELDMETAOBJECT''. Si la creación del metaobjeto tiene éxito, se guardará el ID del nuevo objeto y se añadirá a las constantes 
+la información correspondiente para poder crear un metadato de este tipo.
+
+A continuación se realiza un bucle para crear metadatos utilizando las definiciones proporcionadas en las constantes ``CREATE\_META\_MUTATION'', ``NAMES'',
+``NAMESPACE'', ``KEYS'', ``DESCRIPCION'', ``TIPO'', ``OWNERTIPO''. Dentro del bucle se ejecuta una consulta GraphQL para cada metafield cuya mutación
+está definida en la constante  ``CREATE\_META\_MUTATION''.
+
+En caso de que se produzca algún error durante el proceso, se captura y maneja adecuadamente para lanzar el mensaje de error apropiado.
+
+El uso de constantes para definir las configuraciones de los metafields y metaobjetos (Figura~\ref{fig:constantesMetafields}), así como las consulta GraphQL, permite que la creación
+de metafields sea configurable, lo que implica que la aplicación puede crecer y permita añadir nuevos metafields de manera más sencilla en el futuro 
+sin necesidad de modificar directamente el código fuente. Esto hace que el código sea más mantenible y escalable a medida que la 
+aplicación evoluciona.
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/funcionmetaCreator.png}
+    \caption{\label{fig:funcionMetafields} Función para la creación de metadatos y metaobjetos}
+    \vspace{\fill}
+\end{figure}
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -1198,13 +1226,9 @@ mensaje de éxito o error, dependiendo del resultado de la operación.
     \vspace{\fill}
 \end{figure}
 
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/funcionmetaCreator.png}
-    \caption{\label{fig:funcionMetafields} Función para la creación de metadatos y metaobjetos}
-    \vspace{\fill}
-\end{figure}
+La función ``cartCreator'' es similar a esta función. Utiliza GraphQL para buscar la función necesaria y crear el objeto ``cart-transform''.
+al igual que en ``metaCreator'', se manejan debidamente los errores y se emplea el uso de constatnes para definir las consultas GraphQL, lo que 
+hace que el proceso sea configurable y adaptable en el futuro.
 
 \clearpage
 \subsubsection{Implementación de customize bundles y modificación de tema}
