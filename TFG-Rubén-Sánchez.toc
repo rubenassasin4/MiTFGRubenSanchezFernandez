@@ -34,12 +34,12 @@
 \contentsline {subsubsection}{\numberline {6.3.1}Creación de la aplicación e implementación del theme app extension}{26}{subsubsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.2}Implementación del frontend de la parte de administración}{36}{subsubsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.3}Implementación del backend}{39}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize bundles y modificación de tema}{42}{subsubsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.4}Pruebas}{47}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Despliegue}{48}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{52}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conclusiones}{52}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{52}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Bibliografía}{54}{section.8}%
-\contentsline {section}{\numberline {9}Anexos}{57}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Manual de usuario}{57}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize bundles y modificación de tema}{43}{subsubsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.4}Pruebas}{48}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Despliegue}{49}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{53}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conclusiones}{53}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{53}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Bibliografía}{55}{section.8}%
+\contentsline {section}{\numberline {9}Anexos}{58}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Manual de usuario}{58}{subsection.9.1}%

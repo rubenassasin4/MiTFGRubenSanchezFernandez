@@ -249,7 +249,7 @@ a crear experiencias que se parezcan al resto del panel de administración. Prop
 elementos y estilos de interfaz empaquetados a través de código. Además proporciona tokens, es decir valores CSS con nombre que representan decisiones
 de diseño para elementos como el color, el espaciado y la tipografía se puede aplicar a los diseños para ayudar a unificar las experiencias de los usuarios.
 También proporciona iconos cuidadosamente diseñados que se centran en el comercio y el emprendimiento, que se pueden emplear como ayudas visuales para ayudar a los 
-usuarios a completar tareas. Y por último proporciona patrones, soluciones repetibles a problemas comunes de experiencia de usuario (UX, en ingles "User eXperience") en una situación expecífica del usuario
+usuarios a completar tareas. Y por último proporciona patrones, soluciones repetibles a problemas comunes de experiencia de usuario (UX, en ingles ``User eXperience'') en una situación expecífica del usuario
 El buen uso de estos patrones hace que el panel de administración sea familiar y facil de usar \cite{shopify-dev}.
 
 La otra parte del frontend de esta aplicación, es la extensión del tema de la tienda. Un tema en Shopify es un conjunto de recursos
@@ -1121,6 +1121,17 @@ desde el panel de administración del a tienda.
 \clearpage
 \subsubsection{Implementación del backend}
 
+Para entender cómo funciona el backend de esta aplicación, en primer lugar se va a examinar el archivo ``index.js''. Este fichero sirve como 
+punto de entrada de la aplicación, configurando y ejecutando el servidor Express para manejar las solicitudes HTTP entrantes. Este define funcionalidades
+esenciales, como la gestión de archivos mediante ``multer'' para subir archivos al servidor y la definición de rutas y controladores para ejecutar
+las acciones necesarias. Además, establece el puerto en el que el servidor escuchará las solicitudes entrantes, ya sea el puerto definido en las 
+variables de entorno o el puerto 3000 por defecto. Este fichero es fundamental para el funcionamiento del backend.
+
+En la Figura~\ref{fig:configIndex} se observa la parte del código encargada de gestionar la subida de imágenes al servidor. Primero se define 
+una función ``getFormattedDate()'' que obtiene la fecha actual. Luego, se utiliza esta fecha para crear una ruta de almacenamiento específica para 
+las imágenes que los usuario subirán desde la tienda, dentro de una carpeta llamada ``imagenes\_area\_pedidos'' con la fecha actual como nombre de subcarpeta (Figura~\ref{fig:carpetaImagenes}).
+Posteriormente, se configura el almacenamiento de multer para que las imágenes se guarden en la carpeta correspondiente según la fecha actual.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -1132,16 +1143,25 @@ desde el panel de administración del a tienda.
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/endpointSubirImagen.png}
-    \caption{\label{fig:endpointImagen} EndPoint para el almacenamiento de imágenes }
+    \includegraphics[width=0.5\textwidth]{imagenes-back/almacenamientoCarpetaImagenes.png}
+    \caption{\label{fig:carpetaImagenes} Directorio para el almacenamiento de las imágenes }
     \vspace{\fill}
 \end{figure}
+
+Cuando se recibe una solicitud POST en la ruta ``/upng-api/subir\_imagen'' (Figura~\ref{fig:endpointImagen}), se ejecuta una función asíncrona que verifica si se ha enviado
+un archivo en la solicitud. El endpoint espera recibir un archivo de imagen en el cuerpo de la solicitud, junto con dos parámetros adicionales: el ``id'', que 
+representa el identificador único del pedido de impresión al que pertenece la imagen, y el ``index'', que indica el ínice del área del producto al 
+que pertenece la imagen. Estos datos se utilizan para generar un nombre de archivo único que incluye el ``id'' del pedido de impresión y el ``index'' del área,
+lo que faiclita al administrador de la tienda asociar las imágenes con los pedidos de los clientes correspondientes. Si se ha enviado el archivo y estos parámetros, se procede a generar un nuevo nombre de archivo. Luego, se lista y filtran los archivos del directorio para asegurarse de que no existen
+archivos con el mismo nombre base. Si existen, se eliminan. Después se renombra el archivo subido con el nuevo nombre generado y se envía una respuesta de éxito indicando
+que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devolverá una respuesta indicando que ha habido un error. 
+
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/almacenamientoCarpetaImagenes.png}
-    \caption{\label{fig:carpetaImagenes} Directorio para el almacenamiento de las imágenes }
+    \includegraphics[width=0.5\textwidth]{imagenes-back/endpointSubirImagen.png}
+    \caption{\label{fig:endpointImagen} EndPoint para el almacenamiento de imágenes }
     \vspace{\fill}
 \end{figure}
 
