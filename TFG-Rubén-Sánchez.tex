@@ -886,10 +886,8 @@ Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el clich
 En cada trabajo de impresión se hace uso de un cliché determinado, por lo que cada trabajo debe tener asociado su producto cliché correspondiente. Por ello se debe 
 crear la definición del metacampo ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
 
-Además cada trabajo también cuenta con un número de colores que permite, por lo que se deberá crear también una definición de metadato ``Número de colores para trabajo'' que permita
-introducir el número de colores que permite cada trabajo de la tienda.
-
-Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro metadato para el tipo de elemento ``Producto''. Este será una 
+Además cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de metadato ``Número de colores para trabajo'' que permita
+introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro metadato para el tipo de elemento ``Producto''. Este será una 
 lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones los 3 tipos de metadatos configurados para los productos.
 
 \begin{figure}[ht]
@@ -897,6 +895,18 @@ lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Fig
     \centering
     \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetafields.png}
     \caption{\label{fig:metadatos}Estructura de los metadatos}
+    \vspace{\fill}
+\end{figure}
+
+Posteriormente, junto con la implementación de funcionalidades adicionales, se llevo a cabo la creación de otros dos metadatos visibles en la En la Figura~\ref{fig:metafieldsAdicionales}. 
+Se crea el metadato  ``Canon digital'' que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
+se crea el metadato ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuistica de doble pasada.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS2/metafieldsAdicionales.png}
+    \caption{\label{fig:metafieldsAdicionales}Estructura de metadatos adicionales}
     \vspace{\fill}
 \end{figure}
 
