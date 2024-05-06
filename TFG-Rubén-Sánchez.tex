@@ -1038,7 +1038,7 @@ del modal.
 Al final del documento se agrega un event listener al botón ``Personalizar'' que activa la apertura del modal. De forma que cuando se haga clic en este botón, se 
 ejecute la función ``openModal()'', mostrando el modal con todos sus elementos y funcionalidad asociada.
 
-En la función \textit{generateAreaTable()} se ha realizado toda la implementación de elementos y funcionalidad. En el comienzo de esta función (Figura~\ref{fig:iniciojs}) se puede destacar la creación del botón
+En la función \textit{generateAreaTable()} se ha llevado a cabo toda la implementación de elementos y funcionalidad del modal. En el comienzo (Figura~\ref{fig:iniciojs}) se puede destacar la creación del botón
 ``closeModalButton'' que se empleará para cerrar la ventana modal. En la Figura~\ref{fig:finaljs} se observa como al final de la función se ha creado un eventListener para este botón, que se mantiene en espera de un evento
 click para realizar una llamada a la función \textit{closeModal()} que es la encargada de ocultar el modal mediante la modificación de su visibilidad.
 
@@ -1050,7 +1050,6 @@ click para realizar una llamada a la función \textit{closeModal()} que es la en
     \vspace{\fill}
 \end{figure}
 
-
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -1059,6 +1058,71 @@ click para realizar una llamada a la función \textit{closeModal()} que es la en
     \vspace{\fill}
 \end{figure}
 
+En esta función se hace uso de la estructura de datos del producto y se recorren todas sus areas de impresión.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/recorrerAreasyMostrar.png}
+    \caption{\label{fig:recorrerAreas} Recorrido de todas la áreas de impresión del producto}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/manejoDesabilitarElementos.png}
+    \caption{\label{fig:deshabilitarElementos} Evento de cambio del check de las areas}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/AdjuntarLogoFetch.png}
+    \caption{\label{fig:adjuntarLogo} Adjuntar y enviar el logo al servidor}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/FuncionalidadEspecialImagen.png}
+    \caption{\label{fig:pintarLogo} Funcionalidad para mostrar logo sobre la zona adecuada del producto}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/variableDatosArea.png}
+    \caption{\label{fig:variableConfiguracion} Variable para almacenar la configuración actual del personalizador}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/generarResumen.png}
+    \caption{\label{fig:resumen1} Función para generar el resumen del pedido}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png}
+    \caption{\label{fig:addCarritoEvento} Evento recopilar la información y añadir los productos al carrito}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/fetchAñadirCarrito.png}
+    \caption{\label{fig:addCarritoFuncion} Añadir los productos al carrito}
+    \vspace{\fill}
+\end{figure}
 
 
 \clearpage
