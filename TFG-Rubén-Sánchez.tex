@@ -1193,13 +1193,12 @@ Las funciones a las que se llama en estos endpoints están implementadas en los 
 En la Figura~\ref{fig:funcionMetafields} se puede observar la función ``metaCreator''. Esta es una función asíncrona que acepta dos argumentos:
 ``session'' y ``count'', este último tiene un valor predeterminado según las constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
 
-Dentro de la función se instancia un cliente de GraphQL utilizando la sesión proporcionada. Luego, se ejecuta una consulta GraphQL para crear
-un metaobjeto (que representa la áreas de impresión) con la definición proporcionada en las constantes ``CREATE\_METAOBJECT\_MUTATION'' (que almacena la consulta), ``NAMEMETAOBJECT'', 
+Dentro de la función se instancia un cliente de GraphQL utilizando la sesión proporcionada. Luego, se ejecuta una consulta GraphQL cuya query está definida en la constante ``CREATE\_METAOBJECT\_MUTATION''.  
+Esta mutación se lleva a cabo con el objetivo de crear el metaobjeto que representa las áreas de impresión. En la consulta, se introducen una serie de variantes definidas en constantes como ``NAMEMETAOBJECT'', 
 ``TYPEMETAOBJECT'' y ``FIELDMETAOBJECT''. Si la creación del metaobjeto tiene éxito, se guardará el ID del nuevo objeto y se añadirá a las constantes 
 la información correspondiente para poder crear un metadato de este tipo.
 
-A continuación se realiza un bucle para crear metadatos utilizando las definiciones proporcionadas en las constantes ``CREATE\_META\_MUTATION'', ``NAMES'',
-``NAMESPACE'', ``KEYS'', ``DESCRIPCION'', ``TIPO'', ``OWNERTIPO''. Dentro del bucle se ejecuta una consulta GraphQL para cada metafield a crear, cuya mutación
+A continuación se realiza un bucle para crear metadatos utilizando definiciones en su mayoría configuradas en constantes. Dentro del bucle se ejecuta una consulta GraphQL para cada metafield a crear, cuya mutación
 está definida en la constante  ``CREATE\_META\_MUTATION''.
 
 En caso de que se produzca algún error durante el proceso, se captura y maneja adecuadamente para lanzar el mensaje de error apropiado.
@@ -1228,8 +1227,8 @@ aplicación evoluciona.
 
 La función ``cartCreator'' es similar a ``metaCreator'' en su estructura. En ella se instancia un cliente GraphQL haciendo uso de la sesión
 proporcionada. Luego se ejecuta una consulta GraphQL empleando la mutación correspondiente. Esta consulta 
-busca entre todas las funciones registradas en la tienda y filtra aquella que corresponde con esta aplicación y tiene el título ``cart-transform''.
-Es decir trata de buscar la función que se ha definido en esta aplicación para aplicar la transformación de carrito.Si la encuentra, guarda su ID.
+busca entre todas las funciones registradas en la tienda (Shopify functions) y filtra aquella que corresponde con esta aplicación y tiene el título ``cart-transform''.
+Es decir trata de buscar la función que se ha definido en esta aplicación para aplicar la transformación de carrito. Si la encuentra, guarda su ID.
 
 Después, se ejecuta una mutación GraphQL para crear el objeto ``cart-transform'' empleando la mutación adecuada (definida también en una constante), pasándole
 el ID de la función como variable en la mutación. En esta función también se realiza el correspondiente tratamiento de errores y como se ha comentado
