@@ -853,7 +853,10 @@ Los productos personalizables de las tiendas, deberán contar con sus correspond
 las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
 Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
 objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
-los trabajos de impresión asociados al área (lista de referencias de producto). 
+los trabajos de impresión asociados al área (lista de referencias de producto). Posteriormente, este objeto fué modificado para añadir nuevos datos a las áreas. Estos son necesarios
+para la implementación de la funcionalidad adicional que permite mostrar el logo del cliente en la zona adecuada del producto. 
+En la Figura~\ref{fig:metaobjetoAdicional} pueden observarse tres nuevos elementos que corresponden con el tamaño en el que se imprimirá el logo, y las coordenadas ``logo\_left'' 
+y ``logo\_top'' que indican la posición en la que se mostrará sobre la imagen del producto.
 
 Los trabajos son los diferentes tipos de impresión que se pueden aplicar a un área de un producto, por ejemplo, impresión láser, serigrafía, entre otros.
 Estos trabajos se van a representar en la tienda como productos especiales con su precio correspondiente. Estos estarán configurados de tal forma que no sean accesibles a través de la tienda, y
@@ -869,6 +872,14 @@ Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el clich
     \centering
     \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetaobjeto.png}
     \caption{\label{fig:metaobjeto}Estructura del metaobjeto}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS2/elementosMetaobjectAdicionales.png}
+    \caption{\label{fig:metaobjetoAdicional}Datos adicionales para las áreas de impresión}
     \vspace{\fill}
 \end{figure}
 
@@ -1038,8 +1049,6 @@ click para realizar una llamada a la función \textit{closeModal()} que es la en
     \caption{\label{fig:finaljs} Apertura y generación del modal en \textit{ventana-modal.js}}
     \vspace{\fill}
 \end{figure}
-
-
 
 
 
