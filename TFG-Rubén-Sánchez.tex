@@ -678,7 +678,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \end{itemize}
     \item \textbf{Tarea 5:} Mostrar áreas de impresión:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Mostrar todas las áreas de impresión disponibles para el producto, incluyendo todos sus elementos imagen, nombre y medidas ajustables (ancho y largo). Estos datos se obtendran del la estructura javascript que se habrá preparado con todos los datos del prodcuto actual y estarán disponibles en el modal. Se habilitará un checkbox junto a cada nombre para que el usuario pueda seleccionar las áreas en las que desea imprimir.
+              \item \textbf{Descripción:} Mostrar todas las áreas de impresión disponibles para el producto, incluyendo todos sus elementos imagen, nombre y medidas ajustables (inputs para ancho y largo). Estos datos se obtendran de la estructura javascript que se habrá preparado con todos los datos del prodcuto actual y estarán disponibles en el modal. Se habilitará un checkbox junto a cada nombre para que el usuario pueda seleccionar las áreas en las que desea imprimir.
           \end{itemize}
     \item \textbf{Tarea 6:} Imagen por defecto para áreas sin imagen:
           \begin{itemize}[label=--]
@@ -1058,13 +1058,69 @@ click para realizar una llamada a la función \textit{closeModal()} que es la en
     \vspace{\fill}
 \end{figure}
 
-En esta función se hace uso de la estructura de datos del producto y se recorren todas sus areas de impresión.
+La función en cuestión hace uso de la estructura ``areasData'', permitiendo recorrer todas las áreas de impresión asociadas al producto (Figura~\ref{fig:recorrerAreas}). 
+Para cada área, se muestra su nombre, su imagen correspondiente y todos los elementos necesarios para su configuración. Además, se incorpora
+un checkbox junto al nombre del área para que el usuario pueda seleccionar las áreas en las que desea imprimir.
+
+Se generan dos inputs, uno para el ancho y otro para el largo, controlando las medidas máximas permitidas según lo almacenado en la estructura de datos.
+Se incluye también un campo de observaciones para que el usuario pueda agregar notas pertinentes a cada área de impresión.
+
+Asimismo, se añade un checkbox para que el usuario pueda indicar si el cliché es de repetición o no, lo que afecta al precio final del producto. Luego, 
+en cada área se crea un desplegable que lista los trabajos disponibles, obteniendo todos estos datos de ``areasData''. Junto al desplegable de trabajos se agrega 
+otro desplegable para los colores, limitado por el número máximo de colores permitido para cada trabajo.
+
+Este desplegable de colores depende de la selección que realice el usuario en el desplegable de trabajos. Se implementa un evento que detecta los cambios en el 
+desplegable de trabajos y llama a la función ``createColoresList()'' para renderizar el desplegable de colores asociado.
+
+Además, al seleccionar un número de colores en el desplegable, se crea un contenedor que renderiza un campo de texto junto con un selector de colores por cada 
+color seleccionado en el desplegable. Se ha establecido un ``eventListener'' que escucha los cambios en el desplegable de colores y llama a la función 
+``createColorContainers()'', que renderiza y actualiza estos selectores de colores con sus inputs de texto correspondientes. De esta manera, 
+la configuración del área se actualiza automáticamente cada vez que el usuario modifica alguno de los desplegables.
+
+Se ha implementado una lógica para determinar si se renderiza o no un check para aplicar la casuística de "doble pasada". Si el producto que se está 
+personalizando permite la doble pasada (con el metafield a true) y el trabajo seleccionado por el usuario también la permite 
+(metafield a true), se renderiza este check, permitiendo a los usuarios aplicar una capa más de pintura a sus impresiones, 
+con un sobrecoste adicional. La función ``createCheckDoblePasada()'' se encarga de controlar la renderización de este check (si se cumplen los requisitos), 
+actualizándola cada vez que se modifica el trabajo.
+
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/recorrerAreasyMostrar.png}
     \caption{\label{fig:recorrerAreas} Recorrido de todas la áreas de impresión del producto}
+    \vspace{\fill}
+\end{figure}
+
+Cada área también cuenta con un input para que el usuario pueda adjuntar una imagen con el logo que desea imprimir. Se ha creado un endpoint en 
+la parte del backend de la aplicación para recibir esta imagen junto con el identificador del pedido y el área correspondiente, 
+almacenándola adecuadamente. Al adjuntar una imagen, se activa un eventListener (Figura~\ref{fig:adjuntarLogo}) que llama a la función ``subirImagenArea()'', 
+la cual envía la imagen junto con el ID y el área al backend utilizando el método API desarrollado. Además, este eventListener 
+también activa la función ``handleResize()'', que renderiza el logo que el cliente ha adjuntado sobre la imagen del producto en la posición adecuada.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/AdjuntarLogoFetch.png}
+    \caption{\label{fig:adjuntarLogo} Adjuntar y enviar el logo al servidor}
+    \vspace{\fill}
+\end{figure}
+
+La función ``handleResize()'' es un controlador de eventos que responde a cambios en el tamaño de la ventana del navegador. 
+Dentro de esta función, se invoca a ``initFabricModal()'' con parámetros específicos obtenidos de areasData. Según el tamaño de la ventana del navegador
+los parámetros que se le pasarán a la función estarán escalados o serán los originales, cumpliendo así con el diseño responsive de esta aplicación. 
+Esta función genera un canvas, que es un lienzo virtual sobre el cual se pueden realizar dibujos y manipulaciones gráficas.
+
+El canvas creado por ``initFabricModal()'' (Figura~\ref{fig:pintarLogo}) permite mostrar visualmente cómo quedaría la personalización de un producto. Para lograr esto, la 
+función dibuja el logo que adjunta el cliente sobre la imagen del producto en la posición adecuada. Cada área de impresión tiene coordenadas 
+predefinidas que indican dónde debe situarse el logo. Por lo tanto, gracias a esta funcionalidad, el usuario puede obtener una representación 
+realista de cómo luciría la personalización de su prenda.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/FuncionalidadEspecialImagen.png}
+    \caption{\label{fig:pintarLogo} Funcionalidad para mostrar logo sobre la zona adecuada del producto}
     \vspace{\fill}
 \end{figure}
 
@@ -1076,21 +1132,6 @@ En esta función se hace uso de la estructura de datos del producto y se recorre
     \vspace{\fill}
 \end{figure}
 
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/AdjuntarLogoFetch.png}
-    \caption{\label{fig:adjuntarLogo} Adjuntar y enviar el logo al servidor}
-    \vspace{\fill}
-\end{figure}
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/FuncionalidadEspecialImagen.png}
-    \caption{\label{fig:pintarLogo} Funcionalidad para mostrar logo sobre la zona adecuada del producto}
-    \vspace{\fill}
-\end{figure}
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
