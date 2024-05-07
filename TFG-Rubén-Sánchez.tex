@@ -1106,10 +1106,15 @@ también activa la función ``handleResize()'', que renderiza el logo que el cli
     \vspace{\fill}
 \end{figure}
 
+
 La función ``handleResize()'' es un controlador de eventos que responde a cambios en el tamaño de la ventana del navegador. 
 Dentro de esta función, se invoca a ``initFabricModal()'' con parámetros específicos obtenidos de areasData. Según el tamaño de la ventana del navegador
 los parámetros que se le pasarán a la función estarán escalados o serán los originales, cumpliendo así con el diseño responsive de esta aplicación. 
 Esta función genera un canvas, que es un lienzo virtual sobre el cual se pueden realizar dibujos y manipulaciones gráficas.
+
+La función ``initFabricModal()'' hace uso de la biblioteca fabric.js \cite{fabric.js}, que es una biblioteca de JavaScript 
+para trabajar con canvas HTML de forma sencilla y poderosa. Esta biblioteca permite la manipulación de gráficos 
+en tiempo real, incluida la creación, edición y renderizado de elementos gráficos como imágenes y formas.
 
 El canvas creado por ``initFabricModal()'' (Figura~\ref{fig:pintarLogo}) permite mostrar visualmente cómo quedaría la personalización de un producto. Para lograr esto, la 
 función dibuja el logo que adjunta el cliente sobre la imagen del producto en la posición adecuada. Cada área de impresión tiene coordenadas 
@@ -1769,6 +1774,10 @@ es muy poco intuitiva y atractiva para los clientes.
     \bibitem{shopify-functions} 
     Shopify.
     \textit{``Shopify Functions overview''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/apps/functions} (visitado 04-05-2024).
+
+    \bibitem{fabric.js} 
+    fabricjs.github.io.
+    \textit{``Frabric.js is a powerfulll and simple Javascript HTML5 canvas library''}, última actualización: 1 enero 2024, dirección: \url{https://fabricjs.github.io/} (visitado 07-05-2024).
 
     \bibitem{nodemon} 
     José Luis
