@@ -1199,8 +1199,8 @@ productos al carrito (Figura~\ref{fig:addCarritoEvento}). En esta función, se c
 y propiedades. Para completar este array de items, se recorre la estructura "areasDataContenido" y se utiliza la información del producto principal 
 almacenada en "infoProduct". Se verifica si hay un canon digital y se añade o no este producto con su cantidad correspondiente. Luego, se recorren las
 áreas y se añaden todos los productos asociados con las cantidades adecuadas (trabajos, cargo extra por colores, cargo de doble pasada y cliché). 
-Finalmente, se añade al array el producto principal con su cantidad y propiedades. Se utiliza la API de Ajax para especificar 
-algunos atributos y datos extra en cada producto añadido al carrito. Se asigna un id único a todos los productos pertenecientes 
+Finalmente, se añade al array el producto principal con su cantidad y propiedades. Se utilizan las ``properties'' que ofrece la API de Ajax para especificar 
+algunos atributos y datos necesarios en cada producto añadido al carrito. Estas se emplean para guardar junto al pedido toda la información sobre la impresión configurada, para que se reciba en el panel de administración de la tienda. Se asigna un id único a todos los productos pertenecientes 
 al pedido de impresión, que servirá para asociar posteriormente todos estos productos en un solo paquete. Además, se añaden 
 otros atributos, como el área a la que pertenece cada elemento, los números de colores en el cliché, las dimensiones en el trabajo, 
 las observaciones y la imagen seleccionada.
