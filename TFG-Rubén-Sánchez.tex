@@ -1112,7 +1112,7 @@ Dentro de esta función, se invoca a ``initFabricModal()'' con parámetros espec
 los parámetros que se le pasarán a la función estarán escalados o serán los originales, cumpliendo así con el diseño responsive de esta aplicación. 
 Esta función genera un canvas, que es un lienzo virtual sobre el cual se pueden realizar dibujos y manipulaciones gráficas.
 
-La función ``initFabricModal()'' hace uso de la biblioteca fabric.js \cite{fabric.js}, que es una biblioteca de JavaScript 
+La función ``initFabricModal()'' hace uso de fabric.js \cite{fabric.js}, que es una biblioteca de JavaScript 
 para trabajar con canvas HTML de forma sencilla y poderosa. Esta biblioteca permite la manipulación de gráficos 
 en tiempo real, incluida la creación, edición y renderizado de elementos gráficos como imágenes y formas.
 
@@ -1129,6 +1129,17 @@ realista de cómo luciría la personalización de su prenda.
     \vspace{\fill}
 \end{figure}
 
+Para cada área de impresión, se implementa una funcionalidad que responde a los eventos del checkbox del área, permitiendo habilitar o deshabilitar 
+el área correspondiente (Figura~\ref{fig:deshabilitarElementos}). Cuando el usuario marca o desmarca este checkbox, se activan o desactivan todos los elementos configurables asociados, 
+como los trabajos disponibles, la selección de colores, las medidas, el input de imagen, entre otros. Esta funcionalidad permite al usuario seleccionar
+únicamente las áreas que desea personalizar, así como configurar exclusivamente las áreas que han sido marcadas.
+
+Para mejorar la experiencia del usuario, esta función también gestiona la aplicación o eliminación dinámica de una clase de estilos CSS en función del 
+estado del checkbox. Esta clase se añade o se quita para aplicar estilos visuales distintivos a las áreas habilitadas y deshabilitadas, lo que facilita 
+al usuario diferenciar entre ellas de manera intuitiva. De este modo, cuando el checkbox se marca, se aplica una clase CSS que realza visualmente el área activa,
+mientras que al desmarcarlo, se elimina esta clase para restaurar el aspecto visual estándar. Este enfoque contribuye significativamente a la usabilidad de la 
+aplicación al proporcionar una retroalimentación visual clara sobre el estado de las áreas de impresión.
+
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
@@ -1137,14 +1148,23 @@ realista de cómo luciría la personalización de su prenda.
     \vspace{\fill}
 \end{figure}
 
+Se ha creado un array para almacenar la configuración actualizada de cada área de impresión, permitiendo acceder en cualquier momento a la personalización completa.
+Para cada área, se guardan distintos atributos, incluyendo su nombre, dimensiones (ancho y alto), el trabajo seleccionado, 
+el número de colores elegidos, observaciones, la habilitación del área, la repetición del cliché, la imagen seleccionada, 
+los colores seleccionados, y un indicador booleano para la opción de ``doble pasada''. Esta estructura de datos se mantiene dinámicamente actualizada,
+ya que cada elemento de configuración de área cuenta con un eventListener que (además de realizar sus acciones pertinentes en cada caso) se encarga de actualizar el 
+valor que le corresponde en esta estructura. Por ejemplo, al modificar el checkbox de área, se activarán las acciones correspondientes 
+al evento asociado. Entre estas acciones, se modificará el valor del checkbox para esa área específica dentro de la estructura de datos.
+En Figura~\ref{fig:variableConfiguracion} se muestra cómo se carga el array ``areasDataContenido'' con los datos iniciales de un área.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/variableDatosArea.png}
-    \caption{\label{fig:variableConfiguracion} Variable para almacenar la configuración actual del personalizador}
+    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/variableDatosArreglada.png}
+    \caption{\label{fig:variableConfiguracion} Estructura para almacenar la configuración actual del personalizador}
     \vspace{\fill}
 \end{figure}
+
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}

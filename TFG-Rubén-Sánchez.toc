@@ -32,14 +32,14 @@
 \contentsline {subsubsection}{\numberline {6.2.2}Tareas adicionales}{23}{subsubsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.3}Implementación}{26}{subsection.6.3}%
 \contentsline {subsubsection}{\numberline {6.3.1}Creación de la aplicación e implementación del theme app extension}{26}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Implementación del frontend de la parte de administración}{42}{subsubsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3}Implementación del backend}{45}{subsubsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize bundles y modificación de tema}{50}{subsubsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.4}Pruebas}{55}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Despliegue}{56}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{60}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Conclusiones}{60}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{60}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Bibliografía}{62}{section.8}%
-\contentsline {section}{\numberline {9}Anexos}{65}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Manual de usuario}{65}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Implementación del frontend de la parte de administración}{43}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3}Implementación del backend}{46}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.4}Implementación de customize bundles y modificación de tema}{51}{subsubsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.4}Pruebas}{56}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Despliegue}{57}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Conclusiones y vías futuras}{61}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conclusiones}{61}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Trabajo futuro}{61}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Bibliografía}{63}{section.8}%
+\contentsline {section}{\numberline {9}Anexos}{66}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Manual de usuario}{66}{subsection.9.1}%
