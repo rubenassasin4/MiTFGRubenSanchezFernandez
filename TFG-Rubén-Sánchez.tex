@@ -1165,6 +1165,42 @@ En Figura~\ref{fig:variableConfiguracion} se muestra cómo se carga el array ``a
     \vspace{\fill}
 \end{figure}
 
+En los elementos del configurador que afectan al precio y a los productos a añadir al carrito, se llama y actualiza la función ''generarResumen()'' 
+en su manejador de eventos. Esta función despliega una sección de resumen en el personalizador, presentando de forma clara y detallada todos 
+los elementos seleccionados por el usuario, junto con sus cantidades, precios individuales y el importe total. Además, 
+se incluye un botón que invoca la funcionalidad para agregar el pedido personalizado al carrito.
+
+
+En la función ``generarResumen()'', se crea una tabla detallada que muestra todos los productos configurados por el usuario, junto con sus precios,
+unidades, subtotales y el total del pedido en ese momento. Para recopilar esta información, se utiliza tanto la estructura "infoProduct", 
+que contiene todos los datos del producto principal, como la estructura "areasDataContenido", que almacena la configuración actualizada 
+de todas las áreas de impresión.
+
+Inicialmente, se añade a la tabla el nombre del producto, sus unidades (cabe destacar que la cantidad de unidades se obtiene del input de 
+la ficha de producto, lo que requiere que el usuario indique la cantidad en el personalizador y luego pulse el botón para abrir el modal 
+y configurar el número deseado de productos personalizados), el precio por unidad y el subtotal. Si el producto tiene un canon digital, 
+se agrega otra fila a la tabla con el nombre del impuesto, la cantidad, el coste y el subtotal.
+
+Luego, se recorre la estructura "areasDataContenido", iterando sobre cada configuración de área. Para cada área habilitada 
+(es decir, con el checkbox activo), se añaden a la tabla los productos, cantidades y precios correspondientes a esa configuración.
+En caso contrario, no se tiene en cuenta. Para cada área, se muestra el nombre del trabajo seleccionado, junto con sus unidades, 
+coste y subtotal. Si el trabajo tiene más de un color seleccionado, se agrega una fila adicional con un cargo extra por emplear 
+más de un color. Este cargo extra se calcula mediante otra variante del producto de trabajo, que tiene un precio diferente. 
+Para incluir la línea del trabajo en el resumen con sus datos, se aplica el precio por unidad establecido en la variante 
+"Primer color" y para el cargo extra se aplica el precio por unidad de la variante "Resto colores". Además, 
+se agrega otra línea con un cargo extra si el área tiene marcado el checkbox de "doblePasada", en cuyo caso se aplica 
+otro cargo extra utilizando el precio de la segunda variante del trabajo "Resto colores". Posteriormente, se añade a la tabla 
+una línea para el cliché asociado al trabajo seleccionado para esa área de impresión, mostrando el precio correspondiente a la 
+variante "SI" o "NO" del cliché, dependiendo de si el usuario ha marcado la casilla de repetición de cliché.
+
+En cuanto a la visualización de este resumen, se muestra el total del pedido y un botón para añadir al carrito toda la personalización 
+con sus productos asociados. Al hacer clic en este botón, se activa un eventListener que ejecuta la funcionalidad para añadir todos estos 
+productos al carrito. En esta función, se crea un array llamado "items" en el que se van añadiendo todos estos productos, junto con su cantidad 
+y propiedades. Para completar este array de items, se recorre la estructura "areasDataContenido" y se utiliza la información del producto principal 
+almacenada en "infoProduct". Se verifica si hay un canon digital y se añade o no este producto con su cantidad correspondiente. Luego, se recorren las áreas y se añaden todos los productos asociados con las cantidades adecuadas (trabajos, cargo extra por colores, cargo de doble pasada y cliché). Finalmente, se añade al array el producto principal con su cantidad y propiedades. Se utiliza la API de Ajax para especificar algunos atributos y datos extra en cada producto añadido al carrito. Se asigna un id único a todos los productos pertenecientes al pedido de impresión, que servirá para asociar posteriormente todos estos productos en un solo paquete. Además, se añaden otros atributos, como el área a la que pertenece cada elemento, los números de colores en el cliché, las dimensiones en el trabajo, las observaciones y la imagen seleccionada.
+
+Por último, se realiza una solicitud POST empleando fetch a la API de AJAX de Shopify, añadiendo estos items en el cuerpo 
+del mensaje formateado correctamente, y se culmina con la adición de todos estos productos al carrito.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
