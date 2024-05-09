@@ -139,23 +139,146 @@
 
 \clearpage
 \section{Resumen}
-Este es el resumen…
-ESTILO DE REDACCIÓN APLICABLE A TODO EL DOCUMENTO: evitaremos el uso de la primera persona; en su lugar se suele emplear el reflexivo (“hemos desarrollado” “se ha desarrollado”).
+El crecimiento del comercio electrónico ha llevado a los comerciantes a buscar maneras de sobresalir en un mercado competitivo y mejorar 
+la experiencia del cliente. La personalización de productos se ha vuelto esencial para satisfacer las preferencias individuales de los consumidores. 
+Sin embargo, a pesar de la robustez de la plataforma Shopify en cuanto a estructura y funcionalidades para productos predefinidos, carece de herramientas 
+para la personalización. Por ello, este proyecto se enfoca en desarrollar una aplicación que integre la personalización en las tiendas Shopify, 
+ampliando sus capacidades y respondiendo a la creciente demanda de los clientes.
+
+En colaboración con Upango, especialista en transformaciones digitales B2B, este Trabajo de Fin de Grado (TFG) surge en respuesta a la observación 
+de una creciente demanda de personalización de productos en el desarrollo de tiendas online personalizadas. La migración de Upango de ePages 
+a Shopify subrayó la necesidad de adaptarse a las nuevas herramientas y funcionalidades de la plataforma. El objetivo del proyecto es crear 
+una aplicación versátil y escalable para Shopify, manteniendo el compromiso con la excelencia en el desarrollo de soluciones digitales para el comercio electrónico.
+
+Las herramientas y tecnologías seleccionadas incluyen Shopify como plataforma base, React para el frontend para la parte de administración, Liquid, JavaScript y HTML 
+para la extensión del tema, Node.js junto con Express para el backend, 
+y Visual Studio Code como entorno de desarrollo. Se siguió una metodología ágil con iteraciones e incrementos, priorizando la adaptabilidad a las 
+necesidades de los clientes. El diseño se centró en historias de usuario, que sirvieron como guía para comprender las necesidades de los usuarios y 
+traducirlas en funcionalidades concretas.
+
+La implementación de la aplicación se dividió en cuatro partes: creación de la aplicación y extensión del tema de la tienda, desarrollo del backend, 
+elaboración del frontend de la parte de administración, y detalles de la implementación de customize bundles. Se llevaron a cabo pruebas continuas 
+para verificar el funcionamiento de las funcionalidades implementadas, con pruebas manuales en el frontend y backend.
+
+El despliegue de la aplicación se realizó de forma local utilizando herramientas de Shopify y Cloudflare. En conclusión, el proyecto logró sus 
+objetivos iniciales y se desarrolló con un enfoque adaptable para futuras mejoras y personalizaciones según las demandas del mercado y los 
+requisitos de los clientes. Se visualiza la aplicación como un proyecto en constante evolución y mejora, con planes para mantenerla en una 
+rama principal de un repositorio centralizado y derivar ramas individuales para cada cliente con el fin de realizar personalizaciones específicas.
 
 \clearpage
 
 \section{Extended abstract}
-Resumen extendido en inglés (2000 palabras). En el abstract conviene replicar de algún modo la estructura de la memoria en sí: (i) introducción, (ii) estado del arte, (iii) objetivos y metodología, (iv) diseño y resolución del trabajo, (v) conclusiones y trabajo futuro. El contenido del abstract tiene que abarcar todos esos conceptos en ese orden.
 
 \subsection{Introduction}
+The rising popularity of e-commerce has led merchants to seek ways to stand out in a competitive market and enhance the customer experience.
+Product customization has become a crucial aspect to meet individual customer preferences. However, the Shopify platform, while solid in 
+structure and functionalities for predefined products, lacks tools for customization. Therefore, this project aims to develop an application 
+that integrates customization into Shopify stores, thereby expanding their capabilities and meeting the growing demand from customers.
 
 \subsection{State of the art}
+The Bachelor's Thesis (TFG) has been carried out in collaboration with Upango, a company specialized in B2B digital transformations. Over time,
+Upango has observed a growing demand for product customization features in the development of personalized online stores. Recently, they decided
+to migrate from ePages to Shopify, which generated the need to adapt to the new tools and functionalities of this platform. The project's objective 
+is to create a versatile and scalable application for Shopify that allows product customization, maintaining a commitment to excellence in the development
+of digital solutions for e-commerce.
+
+Regarding the tools and technologies used, Shopify was selected as the base platform. This platform offers a wide range of tools and functionalities 
+for e-commerce and is known for its ease of use and support. For the frontend, React was used to develop the store management interface in Shopify, 
+while Liquid, HTML, CSS, and JavaScript were employed for extending the store theme. App Bridge and Polaris were used for integration and consistent 
+design in the Shopify admin panel. Additionally, the Shopify Ajax API was utilized to add dynamic functionalities to the frontend.
+
+As for the backend, Node.js was used along with Express to create the web server. Node.js offers optimal performance and great compatibility, 
+while Express simplifies web application development by providing a set of essential features. The Shopify GraphQL Admin API was employed to 
+interact with the store and access the necessary data.
+
+Visual Studio Code was used as the development environment for the project, with a series of extensions that facilitated the work. Git was 
+used for version control, and Azure DevOps was utilized to optimize the software development process, offering features such as source code 
+management, task planning, and work tracking.
 
 \subsection{Goal analysis and methodology}
+The main objective of the Bachelor's Thesis (TFG) is to develop an application for the Shopify platform, focused on enabling product customization
+in the stores that implement it. To achieve this purpose, various specific objectives are established, ranging from the study of relevant technologies
+and tools to the implementation of functionality and deployment in a test store. The adopted methodology is divided into five 
+fundamental stages: initial analysis, requirements analysis and design, implementation, deployment in a sample store, and documentation of the process for the TFG.
+
+The development process follows an agile methodology, with iterations and adaptation to changes. Functionalities are implemented incrementally,
+allowing adjustments based on the feedback received. Adaptability to customer needs is prioritized, with the ability to develop specific customizations.
+The use of Azure DevOps facilitates task management and visualization of project progress, following a Kanban or Scrum approach. Both the frontend 
+and backend are developed in a correlated manner, improving functionality with each iteration and preparing for future growth.
 
 \subsection{Design and resolution of completed work }
+The project analysis has focused on creating user stories, which concisely describe the desired functionality from the end user's perspective.
+These stories have served as a guide to understand user needs and translate them into specific functionalities for the application. 
+Each user story includes a detailed description of the required functionality and acceptance criteria to validate its proper implementation.
+
+User stories are divided into two categories: basic functionalities and additional functionalities. Among the basic functionalities is 
+the creation of a button on the product page that opens a modal window with features and elements to customize the product and the necessary
+functionality to add this product with its customization elements to the cart.
+
+On the other hand, additional functionalities expand the utility and user experience by providing advanced and personalized features. 
+These include grouped display of print products in the cart, attractive display of the customer's logo in the product customizer, 
+automation of metadata and necessary object creation, management of scenarios such as "double pass" on products and jobs, and management
+of digital canon and its automatic addition to the cart.
+
+The application design has been a fundamental part that has laid the groundwork for implementing the required functionalities. 
+A thorough study of relevant technologies and a detailed understanding of user stories that defined the project's goals 
+and requirements have been conducted. This design has been structured around defining various tasks that have been carefully crafted.
+
+Design tasks are divided into two categories: basic tasks, focused on implementing the main functionality of the application and meeting
+the acceptance criteria of basic functionality user stories, and additional tasks, which add additional functionality and complexity 
+and focus on meeting the acceptance criteria of additional functionality user stories.
+
+The implementation of this application has been carried out following a structured guide based on tasks defined during the design phase.
+It is important to note that the implementation process followed an iterative and incremental methodology as previously mentioned. Initially,
+user stories were developed and detailed task design based on these stories, focusing solely on basic functionalities. 
+The implementation of these tasks, which addressed the essential requirements of the application, was prioritized. 
+Once the first implementation of the basic project was obtained, the additional tasks were analyzed, developed, and implemented.
+This iterative and incremental approach allowed for an orderly and efficient implementation, ensuring that each development 
+phase was built on a solid foundation and that changes and improvements were responded to agilely.
+
+The project implementation is organized into four distinct parts. First, the creation of the application and the extension 
+of the store theme are addressed, focusing on incorporating product customization functionality into the store. Then, 
+the backend development is proceeded, where the necessary functionality is created to manage a series of endpoints to receive 
+images associated with custom orders and handle requests for the automatic creation of metadata and metaobjects. Subsequently, 
+the focus is on the frontend development of the administration part, which allows administrators to manage the automatic creation 
+of metadata and necessary objects for integrating this application with the store from the store's administration interface. 
+Finally, the implementation of customize bundles and the adaptations made to a standard store theme to improve the user experience 
+by displaying customizable products as unified product bundles that do not allow separate modification in the store cart. Each stage
+contributes integrally to the creation of a complete and functional application.
+
+During the application development, continuous testing was carried out to verify the correct functioning 
+of the implemented functionalities. These tests were performed manually as the tasks defined for each user story were completed,
+ensuring that the application grew in functionalities while its correct operation was verified. Each new implemented functionality
+underwent exhaustive testing both in the frontend and backend. Manual testing was chosen over automated testing due to the relatively
+small size of the application and limited functionality in the backend. To facilitate testing, Nodemon, a tool that monitors project files 
+and automatically restarts the application when changes in the source code are detected, was used, thus streamlining the development process 
+and allowing the results of each change to be observed in real time. Postman was used to test backend endpoints, while calls from the frontend 
+underwent additional testing to ensure proper communication between both parties. Additionally, compatibility and performance tests were carried 
+out in various browsers, using tools to simulate different screen sizes to test the responsive design of the application throughout development.
+
+The deployment of the application has been carried out locally using tools provided by Shopify since no requests from clients have 
+been received to implement it in stores under development. The Shopify CLI was used to execute the npm run dev command, which starts 
+a local server for both the backend and frontend. Cloudflare has been leveraged to establish a secure connection between the local 
+environment and the development store, using Cloudflare Tunnel functionality to expose local services through the Cloudflare network. 
+In the case of a real deployment, a standard procedure would be followed, including hiring hosting services, configuring a public domain, 
+and installing essential tools such as Apache, npm, and Git on the server. Once configured, the application source code would be downloaded 
+from the remote repository, necessary dependencies would be installed, and frontend files would be compiled. The application would run in 
+production mode, and the server domain would be configured, generating SSL certificates to support HTTPS connections. Finally, the application 
+configuration would be adjusted from the Shopify Partner Administration Panel, and an installation link would be generated to add the application 
+to the requesting store.
 
 \subsection{Conclusions and future work }
+In conclusion, the Final Degree Project (TFG) has successfully achieved all initially established objectives. A Shopify application has been 
+designed and developed, allowing for product customization, thus meeting the needs of associated stores and their customers. From initial 
+analysis to implementation and deployment, a structured methodology has been followed, facilitating the effective completion of each project stage.
+
+Furthermore, the application has been developed with a standardized and adaptable approach, prepared to incorporate new functionalities 
+and adjustments according to market demands and future customer requirements. A solid foundation has been established upon which to 
+continuously build and expand the application, applying further iterations in the future to enhance its functionality and adaptability.
+
+Regarding future work, the application is envisioned as a project in constant evolution and improvement. It is expected to continue 
+developing to meet the changing demands of the market and the individual preferences of future customers. The plan is to maintain 
+the application in a main branch of a centralized repository, deriving individual branches for each client to make specific customizations.
 
 % Fin de la primera parte
 \cleardoublepage

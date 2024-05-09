@@ -5,8 +5,8 @@
 \contentsline {subsection}{\numberline {2.1}Introduction}{\es@scroman {vii}}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}State of the art}{\es@scroman {vii}}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Goal analysis and methodology}{\es@scroman {vii}}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Design and resolution of completed work }{\es@scroman {vii}}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Conclusions and future work }{\es@scroman {vii}}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.4}Design and resolution of completed work }{\es@scroman {viii}}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Conclusions and future work }{\es@scroman {x}}{subsection.2.5}%
 \contentsline {section}{\numberline {3}Introducción}{1}{section.3}%
 \contentsline {section}{\numberline {4}Estado del arte}{3}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Contexto y análisis de la situación de partida}{3}{subsection.4.1}%
