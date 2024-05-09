@@ -1177,8 +1177,7 @@ que contiene todos los datos del producto principal, como la estructura "areasDa
 de todas las áreas de impresión.
 
 Inicialmente, se añade a la tabla el nombre del producto, sus unidades (cabe destacar que la cantidad de unidades se obtiene del input de 
-la ficha de producto, lo que requiere que el usuario indique la cantidad en el personalizador y luego pulse el botón para abrir el modal 
-y configurar el número deseado de productos personalizados), el precio por unidad y el subtotal. Si el producto tiene canon digital, 
+la ficha de producto), el precio por unidad y el subtotal. Si el producto tiene canon digital, 
 se agrega otra fila a la tabla con el nombre del impuesto, la cantidad, el coste y el subtotal.
 
 Luego, se recorre la estructura "areasDataContenido", iterando sobre cada configuración de área. Para cada área habilitada 
@@ -1200,10 +1199,14 @@ y propiedades. Para completar este array de items, se recorre la estructura "are
 almacenada en "infoProduct". Se verifica si hay un canon digital y se añade o no este producto con su cantidad correspondiente. Luego, se recorren las
 áreas y se añaden todos los productos asociados con las cantidades adecuadas (trabajos, cargo extra por colores, cargo de doble pasada y cliché). 
 Finalmente, se añade al array el producto principal con su cantidad y propiedades. Se utilizan las ``properties'' que ofrece la API de Ajax para especificar 
-algunos atributos y datos necesarios en cada producto añadido al carrito. Estas se emplean para guardar junto al pedido toda la información sobre la impresión configurada, para que se reciba en el panel de administración de la tienda. Se asigna un id único a todos los productos pertenecientes 
-al pedido de impresión, que servirá para asociar posteriormente todos estos productos en un solo paquete. Además, se añaden 
-otros atributos, como el área a la que pertenece cada elemento, los números de colores en el cliché, las dimensiones en el trabajo, 
-las observaciones y la imagen seleccionada.
+algunos atributos y datos necesarios en cada producto añadido al carrito. Estas se emplean para guardar junto al pedido toda la información sobre la impresión 
+configurada, para que se reciba en el panel de administración de la tienda. Se asigna un id único a todos los productos pertenecientes 
+al pedido de impresión, que servirá para asociar posteriormente todos estos productos en un solo paquete. Además, se incluyen otras propiedades importantes
+para cada elemento del pedido. Por ejemplo, se especifica el área a la que pertenece cada elemento. Para el cliché, se añaden 
+propiedades que detallan los colores seleccionados por el usuario. En el caso del producto que se añade para la casuística de doble pasada, se incluye una
+propiedad que identifica claramente este tipo de impuesto, dado que en realidad se añade como una variante de "Resto colores" de trabajo y no se diferenciaría. Además, 
+al añadir el impuesto extra de colores, se indica el número de colores a emplear. Para el trabajo, se proporcionan las dimensiones (ancho y alto), 
+así como el número de colores, las observaciones y el identificador de la imagen seleccionada, que permitirá localizarla en el servidor donde se ha almacenado.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
