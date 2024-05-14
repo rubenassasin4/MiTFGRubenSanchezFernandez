@@ -1334,36 +1334,36 @@ En Figura~\ref{fig:variableConfiguracion} se muestra cómo se carga el array ``a
     \vspace{\fill}
 \end{figure}
 
-En los elementos del configurador que afectan al precio y a los productos a añadir al carrito, se llama y actualiza la función ''generarResumen()'' 
+En los elementos del configurador que afectan al precio y a los productos a añadir al carrito, se llama y actualiza la función ``generarResumen()'' 
 en su manejador de eventos. Esta función despliega una sección de resumen en el personalizador, presentando de forma clara y detallada todos 
 los elementos seleccionados por el usuario, junto con sus cantidades, precios individuales y el importe total. Además, 
 se incluye un botón que invoca la funcionalidad para agregar el pedido personalizado al carrito.
 
 
 En la función ``generarResumen()'' (Figura~\ref{fig:resumen1}), se crea una tabla detallada que muestra todos los productos configurados por el usuario, junto con sus precios,
-unidades, subtotales y el total del pedido en ese momento. Para recopilar esta información, se utiliza tanto la estructura "infoProduct", 
-que contiene todos los datos del producto principal, como la estructura "areasDataContenido", que almacena la configuración actualizada 
+unidades, subtotales y el total del pedido en ese momento. Para recopilar esta información, se utiliza tanto la estructura ``infoProduct'', 
+que contiene todos los datos del producto principal, como la estructura ``areasDataContenido'', que almacena la configuración actualizada 
 de todas las áreas de impresión.
 
 Inicialmente, se añade a la tabla el nombre del producto, sus unidades (cabe destacar que la cantidad de unidades se obtiene del input de 
 la ficha de producto), el precio por unidad y el subtotal. Si el producto tiene canon digital, 
 se agrega otra fila a la tabla con el nombre del impuesto, la cantidad, el coste y el subtotal.
 
-Luego, se recorre la estructura "areasDataContenido", iterando sobre cada configuración de área. Para cada área habilitada 
+Luego, se recorre la estructura ``areasDataContenido'', iterando sobre cada configuración de área. Para cada área habilitada 
 (es decir, con el checkbox activo), se añaden a la tabla los productos, cantidades y precios correspondientes a esa configuración.
 En caso contrario, no se tiene en cuenta. Para cada área, se muestra el nombre del trabajo seleccionado, junto con sus unidades, 
 coste y subtotal. Si el trabajo tiene más de un color seleccionado, se agrega una fila adicional con un cargo extra por emplear 
 más de un color. Este cargo extra se calcula mediante otra variante del producto de trabajo, que tiene un precio diferente. 
 Para incluir la línea del trabajo en el resumen con sus datos, se aplica el precio por unidad establecido en la variante 
-"Primer color" y para el cargo extra se aplica el precio por unidad de la variante "Resto colores". Además, 
-se agrega otra línea con un cargo extra si el área tiene marcado el checkbox de "doblePasada", en cuyo caso se aplica 
-otro cargo extra utilizando el precio de la segunda variante del trabajo "Resto colores". Posteriormente, se añade a la tabla 
+``Primer color'' y para el cargo extra se aplica el precio por unidad de la variante ``Resto colores''. Además, 
+se agrega otra línea con un cargo extra si el área tiene marcado el checkbox de ``doblePasada'', en cuyo caso se aplica 
+otro cargo extra utilizando el precio de la segunda variante del trabajo ``Resto colores''. Posteriormente, se añade a la tabla 
 una línea para el cliché asociado al trabajo seleccionado para esa área de impresión, mostrando el precio correspondiente a la 
-variante "SI" o "NO" del cliché, dependiendo de si el usuario ha marcado la casilla de repetición de cliché.
+variante ``SI'' o ``NO'' del cliché, dependiendo de si el usuario ha marcado la casilla de repetición de cliché.
 
 Por último en cuanto a la visualización de este resumen, se muestra el total del pedido y un botón para añadir al carrito toda la personalización 
 con sus productos asociados. Al hacer clic en este botón, se activa un eventListener que ejecuta la funcionalidad para añadir todos estos 
-productos al carrito (Figura~\ref{fig:addCarritoEvento}). En esta función, se crea un array llamado "items" en el que se van añadiendo todos estos productos, junto con su cantidad 
+productos al carrito (Figura~\ref{fig:addCarritoEvento}). En esta función, se crea un array llamado ``items'' en el que se van añadiendo todos estos productos, junto con su cantidad 
 y propiedades. Para completar este array de items, se recorre la estructura "areasDataContenido" y se utiliza la información del producto principal 
 almacenada en "infoProduct". Se verifica si hay un canon digital y se añade o no este producto con su cantidad correspondiente. Luego, se recorren las
 áreas y se añaden todos los productos asociados con las cantidades adecuadas (trabajos, cargo extra por colores, cargo de doble pasada y cliché). 
@@ -1373,7 +1373,7 @@ configurada, para que se reciba en el panel de administración de la tienda. Se 
 al pedido de impresión, que servirá para asociar posteriormente todos estos productos en un solo paquete. Además, se incluyen otras propiedades importantes
 para cada elemento del pedido. Por ejemplo, se especifica el área a la que pertenece cada elemento. Para el cliché, se añaden 
 propiedades que detallan los colores seleccionados por el usuario. En el caso del producto que se añade para la casuística de doble pasada, se incluye una
-propiedad que identifica claramente este tipo de impuesto, dado que en realidad se añade como una variante de "Resto colores" de trabajo y no se diferenciaría. Además, 
+propiedad que identifica claramente este tipo de impuesto, dado que en realidad se añade como una variante de ``Resto colores'' de trabajo y no se diferenciaría. Además, 
 al añadir el impuesto extra de colores, se indica el número de colores a emplear. Para el trabajo, se proporcionan las dimensiones (ancho y alto), 
 así como el número de colores, las observaciones y el identificador de la imagen seleccionada, que permitirá localizarla en el servidor donde se ha almacenado.
 
