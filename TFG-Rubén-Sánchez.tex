@@ -25,6 +25,7 @@
 \usepackage{hyperref}
 \usepackage{breakurl}
 \usepackage[T1]{fontenc}
+\usepackage{titlesec} % Paquete para personalizar títulos de sección
 \usepackage{color}
 \usepackage{tocloft} % Añadido el paquete tocloft
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -52,6 +53,9 @@
 
 \lstset{style=mystyle}
 
+% Cambiar la numeración de las secciones a números romanos
+\renewcommand\thesection{\Roman{section}}
+\renewcommand\thesubsection{\thesection.\Roman{subsection}} % Restablecer la numeración de las subsecciones a la normal
 
 \pagestyle{fancy}
 
@@ -284,8 +288,12 @@ the application in a main branch of a centralized repository, deriving individua
 \cleardoublepage
 
 \part*{}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}} % Restablecer la numeración de las subsecciones a la normal
 \pagenumbering{arabic} % Números arábigos para la segunda parte
 \setcounter{page}{1} % Reinicia el contador de página
+\setcounter{section}{0} % Reinicia el contador de secciones
+
 
 \section{Introducción}
 La creciente popularidad del comercio electrónico ha generado un gran auge en la industria, con cada vez más consumidores optando por realizar 
