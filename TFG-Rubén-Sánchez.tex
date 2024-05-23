@@ -152,17 +152,17 @@ ampliando sus capacidades y respondiendo a la creciente demanda de los clientes.
 En colaboración con Upango, especialista en transformaciones digitales B2B, este Trabajo de Fin de Grado (TFG) surge en respuesta a la observación 
 de una creciente demanda de personalización de productos en el desarrollo de tiendas online personalizadas. La migración de Upango de ePages 
 a Shopify subrayó la necesidad de adaptarse a las nuevas herramientas y funcionalidades de la plataforma. El objetivo del proyecto es crear 
-una aplicación versátil y escalable para Shopify, manteniendo el compromiso con la excelencia en el desarrollo de soluciones digitales para el comercio electrónico.
+una aplicación versátil y escalable para Shopify, que proporcione a los comerciantes la capacidad de ofrecer productos personalizados en sus tiendas.
 
-Las herramientas y tecnologías seleccionadas incluyen Shopify como plataforma base, React para el frontend para la parte de administración, Liquid, JavaScript y HTML 
-para la extensión del tema, Node.js junto con Express para el backend, 
+Las herramientas y tecnologías seleccionadas incluyen Shopify como plataforma base, React para el \textit{frontend} para la parte de administración, Liquid, JavaScript y HTML 
+para la extensión del tema, Node.js junto con Express para el \textit{backend}, 
 y Visual Studio Code como entorno de desarrollo. Se siguió una metodología ágil con iteraciones e incrementos, priorizando la adaptabilidad a las 
 necesidades de los clientes. El diseño se centró en historias de usuario, que sirvieron como guía para comprender las necesidades de los usuarios y 
 traducirlas en funcionalidades concretas.
 
-La implementación de la aplicación se dividió en cuatro partes: creación de la aplicación y extensión del tema de la tienda, desarrollo del backend, 
-elaboración del frontend de la parte de administración, y detalles de la implementación de customize bundles. Se llevaron a cabo pruebas continuas 
-para verificar el funcionamiento de las funcionalidades implementadas, con pruebas manuales en el frontend y backend.
+La implementación de la aplicación se dividió en cuatro partes: creación de la aplicación y extensión del tema de la tienda, desarrollo del \textit{backend}, 
+elaboración del \textit{frontend} de la parte de administración, y detalles de la implementación de paquetes personalizados (\textit{customize bundles}). Se llevaron a cabo pruebas continuas 
+para verificar el funcionamiento de las funcionalidades implementadas, con pruebas manuales en el \textit{frontend} y \textit{backend}.
 
 El despliegue de la aplicación se realizó de forma local utilizando herramientas de Shopify y Cloudflare. En conclusión, el proyecto logró sus 
 objetivos iniciales y se desarrolló con un enfoque adaptable para futuras mejoras y personalizaciones según las demandas del mercado y los 
@@ -313,7 +313,7 @@ A continuación, se detalla la estructura principal de este trabajo, que abarca 
 
 \begin{itemize}
     \item \textbf{Estado del arte:} En esta sección, se proporciona un contexto inicial detallado que destaca el objetivo del proyecto y profundiza
-    en la problemática que busca abordar. Se exploran las herramientas y tecnologías utilizadas tanto en el frontend como en el backend, además 
+    en la problemática que busca abordar. Se exploran las herramientas y tecnologías utilizadas tanto en el \textit{frontend} como en el \textit{backend}, además 
     de otras tecnologías relevantes para el desarrollo del proyecto.
     
     \item \textbf{Análisis de objetivos y metodología:} Se detallan los objetivos específicos del proyecto y la metodología utilizada para alcanzarlos.
@@ -321,7 +321,7 @@ A continuación, se detalla la estructura principal de este trabajo, que abarca 
     
     \item \textbf{Diseño y resolución del trabajo realizado:} Esta sección se divide en varias subsecciones que abordan diferentes aspectos
     del diseño y la resolución del trabajo realizado. Se analizan las historias de usuario, se describe el diseño de la aplicación y se detalla
-    la implementación tanto del frontend como del backend. También se cubren las pruebas realizadas y el proceso de despliegue de la aplicación.
+    la implementación tanto del \textit{frontend} como del \textit{backend}. También se cubren las pruebas realizadas y el proceso de despliegue de la aplicación.
     
     \item \textbf{Conclusiones y vías futuras:} Aquí se presentan las conclusiones obtenidas a partir del trabajo realizado, así como las posibles
     vías de investigación y desarrollo futuro.
@@ -384,11 +384,11 @@ o crear experiencias de compra únicas para los clientes. Gracias a esto los usu
 su negocio, integrarse con servicios externos y agregar funciones a su panel de control de Shopify \cite{shopify-dev}. 
 
 \subsubsection{Frontend}
-En cuanto al frontend de la aplicación se pueden observar dos partes. 
-Por un lado se puede encontrar el frontend asociado a la parte de administración de Shopify. 
+En cuanto al \textit{frontend} de la aplicación se pueden observar dos partes. 
+Por un lado se puede encontrar el \textit{frontend} asociado a la parte de administración de Shopify. 
 Esta parte hace referencia a la interfaz del usuario que los administradores de la tienda emplean para gestionar y controlar los diversos aspectos de
 la misma, como la gestión de productos, pedidos, clientes, configuración de temas, traducciones y otros muchos aspectos de configuración de la tienda.
-Al instalar la aplicación en las tiendas que necesiten de sus funcionalidades esta parte del frontend se integrará con la página de administración de 
+Al instalar la aplicación en las tiendas que necesiten de sus funcionalidades esta parte del \textit{frontend} se integrará con la página de administración de 
 cada tienda, proporcionando la interfaz y las funcionalidades que se configuren en esta parte del desarrollo. En la Figura~\ref{fig:1} se puede observar la 
 interfaz de administración de una tienda Shopify en desarrollo.
 
@@ -400,9 +400,9 @@ interfaz de administración de una tienda Shopify en desarrollo.
     \vspace{\fill}
 \end{figure}
 
-Esta parte del frontend ha sido desarrollada empleando la biblioteca de JavaScript \textbf{React} \cite{react-pag-1}. Se trata de una libería de código abierto creada por el equipo de la
+Esta parte del \textit{frontend} ha sido desarrollada empleando la biblioteca de JavaScript \textbf{React} \cite{react-pag-1}. Se trata de una libería de código abierto creada por el equipo de la
 compañia Facebook (Meta) junto a una gran comunidad de desarrolladores independientes que, desde su lanzamiento en 2013, se ha convertido en una
-de las tecnologías de frontend más usadas, ya que permite construir interfaces de usuario dinámicas y escalables. Esta se usa en el desarrollo de aplicaciones web y móviles. 
+de las tecnologías de \textit{frontend} más usadas, ya que permite construir interfaces de usuario dinámicas y escalables. Esta se usa en el desarrollo de aplicaciones web y móviles. 
 
 Toda aplicación web React, se compone de componentes reutilizables que conforman partes de la interfaz de usuario. Permite tener un componente distinto para
 la barra de navegación, otro para el pie de página, otro para el contenido principal, etc.
@@ -429,10 +429,10 @@ También proporciona iconos cuidadosamente diseñados que se centran en el comer
 usuarios a completar tareas. Y por último proporciona patrones, soluciones repetibles a problemas comunes de experiencia de usuario (UX, en ingles ``User eXperience'') en una situación expecífica del usuario
 El buen uso de estos patrones hace que el panel de administración sea familiar y facil de usar \cite{shopify-dev}.
 
-La otra parte del frontend de esta aplicación, es la extensión del tema de la tienda. Un tema en Shopify es un conjunto de recursos
+La otra parte del \textit{frontend} de esta aplicación, es la extensión del tema de la tienda. Un tema en Shopify es un conjunto de recursos
 y archivos que determinan la apariencia, funcionalidad y sensación de una tienda en línea en esta plataforma, tanto para los comerciantes como para
 sus clientes \cite{theme}. Estos temas se construyen empleando un lenguaje de plantillas llamado \textbf{Liquid} \cite{liquid} que, junto con \textbf{HTML}, \textbf{CSS} y \textbf{JavaScript}, conforman la apariencia
-y funcionalidades del frontend de la tienda online. Los desarrolladores pueden crear temas personalizados para las tiendas y ajustar los temas existentes 
+y funcionalidades del \textit{frontend} de la tienda online. Los desarrolladores pueden crear temas personalizados para las tiendas y ajustar los temas existentes 
 para adaptarse a las necesidades de los comerciantes \cite{shopify-dev}. 
 
 Los administradores tienen la posibilidad de elegir entre varios temas para aplicar a su tienda desde la propia interfaz de administración,
@@ -473,13 +473,13 @@ Además, en las plantillas junto con Liquid se ha empleado \textbf{HTML}, \textb
 el contenido y crear elementos de las páginas, CSS para definir y dar estilos visuales a los elementos, y JavaScript para agregar la interactividad y la 
 funcionalidad dinámica a la página. 
 
-En el desarrollo frontend de la parte del tema, se ha hecho uso de una de las herramientas que proporciona Shopify, la \textbf{Shopify Ajax API} \cite{shopify-ajax-api}. La API de Ajax
+En el desarrollo \textit{frontend} de la parte del tema, se ha hecho uso de una de las herramientas que proporciona Shopify, la \textbf{Shopify Ajax API} \cite{shopify-ajax-api}. La API de Ajax
 proporciona un conjunto de puntos finales ligeros para el desarrollo de temas: permite agregar productos al carrito y actualizar el contador
 de artículos del mismo, mostrar recomendaciones de productos relaccionados, sugerir productos y colecciones a los visitantes a medida que escriben
 en un campo de búsqueda y una larga lista de funcionalidades que serán útiles para interactuar con la tienda \cite{shopify-dev}.
 
 \subsubsection{Backend}
-En cuanto al Backend de la aplicación se ha hecho uso de \textbf{Node.js} \cite{node}. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
+En cuanto al \textit{backend} de la aplicación se ha hecho uso de \textbf{Node.js} \cite{node}. Node es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, 
 que permite a los desarrolladores crear toda clase de herramientas del lado del servidor y aplicaciones en \textbf{JavaScript}. 
 Además proporciona un gran numero de ventajas. 
 
@@ -556,21 +556,21 @@ llevado a cabo durante todo este periodo.
     necesarias para llevar a cabo el desarrollo y en base al estudio se va realizando un primer planteamiento de la solución a desarrollar. Esta etapa se puede dividir en las siguientes fases.
     \begin{enumerate}
         \item Estudiar la plataforma Shopify y todas sus funcionalidades, como controlar la parte de administración de una tienda, aprender a crear aplicaciones, desarrollar temas y configurarlos y demás.
-        \item Estudiar las tecnologías para la primera parte del Frontend en este caso React y sus bibliotecas.
-        \item Estudiar las tecnologías para la segunda parte del Frontend (Extensión de tema), ponerse al día con Liquid, HTML, CSS y JavaScript.
-        \item Estudiar las tecnologías para la parte del Backend en nuestro caso Node.js y su libería Express. 
+        \item Estudiar las tecnologías para la primera parte del \textit{frontend} en este caso React y sus bibliotecas.
+        \item Estudiar las tecnologías para la segunda parte del \textit{frontend} (Extensión de tema), ponerse al día con Liquid, HTML, CSS y JavaScript.
+        \item Estudiar las tecnologías para la parte del \textit{backend} en nuestro caso Node.js y su libería Express. 
     \end{enumerate}
     \item \textbf{Etapa 2. Análisis de requisitos y diseño de funcionalidades principales.} Esta etapa comprende el objetivo \ref{item:objetivo2}.
     Durante esta estapa se realiza un análisis de requisitos básicos que debe tener la aplicación, se crean las historias de usuario correspondientes en base a esos requisitos y se realiza un diseño de cada
     funcionalidad a implementar dividiendo su desarrollo en tareas.
     \item \textbf{Etapa 3. Implementación de la aplicación.} Esta etapa comprende los objetivos \ref{item:objetivo4}, \ref{item:objetivo5} y \ref{item:objetivo6}.
     Esta es la etapa mas larga del desarrollo, en ella se implementan las tareas diseñadas, y se van cumpliendo todas esas historias de usuario y requisitos analizados previamente.
-    La implementación tanto de la parte Backend como del Frontend se ha ido alternando y desarrollando correlativamente según estaba diseñado en las tareas. Cabe destacar que el desarrollo de esta aplicación se ha focalizado
-    más en el Frontend que en el Backend, pues la mayor parte de funcionalidades de la misma recaen sobre la parte Frontend. En esta etapa se han ido probando en una tienda de desarrollo cada una de las funcionalidades implementadas en las tareas, 
+    La implementación tanto de la parte \textit{backend} como del \textit{frontend} se ha ido alternando y desarrollando correlativamente según estaba diseñado en las tareas. Cabe destacar que el desarrollo de esta aplicación se ha focalizado
+    más en el \textit{frontend} que en el \textit{backend}, pues la mayor parte de funcionalidades de la misma recaen sobre la parte \textit{frontend}. En esta etapa se han ido probando en una tienda de desarrollo cada una de las funcionalidades implementadas en las tareas, 
     para ir comprobando el funcionamiento de la aplicación. Una vez desarrolladas y comprobadas todas las tareas de la funcionalidad básica de la aplicación, se han llevado a cabo nuevas historias de usuario de funcionalidad adicional y se han diseñado, implementado y probado estas casuísticas y funcionalidades
     extra que los futuros clientes podrían solicitar en sus desarrollos personalizados.
     \item \textbf{Etapa 4. Despliegue en tienda de muestra.} Esta etapa comprende el objetivo \ref{item:objetivo7}. 
-    Durante esta etapa, se instala la aplicación en una tienda de muestra y se realiza el diseño y maquetación del tema de la misma. Además se rediseña el frontend (extensión de tema) de la aplicación de modo que el diseño del personalizador de artículos
+    Durante esta etapa, se instala la aplicación en una tienda de muestra y se realiza el diseño y maquetación del tema de la misma. Además se rediseña el \textit{frontend} (extensión de tema) de la aplicación de modo que el diseño del personalizador de artículos
     encaje con el diseño general de la tienda. En esta etapa también se realizan pruebas de todo el funcionamiento del personalizador y se realizan pedidos ficticios para comprobar el correcto
     funcionamiento de todo el desarrollo. Gracias al trabajo de esta etapa se ha conseguido desarrollar una tienda de demostración con la funcionalidad de personalización de artículos, que permite
     mostrar esta aplicación a esos posibles clientes para realizarles una demostración del potencial de las funcionalidades de personalización de artículos.
@@ -592,7 +592,7 @@ Ofrece una funcionalidad de backlogs \ref{fig:3}, en la cual se permite crear y 
 en el producto y estos elementos están descritos en forma de historias de usuario que representan las necesidades del cliente y que contienen las tareas que se deben seguir para el desarrollo.
 Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el producto \ref{fig:4} y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto.
 Además esta herramienta cuenta también con una funcionalidad que permite marcar las tareas con diferentes estados como ``Nueva'', ``Activa'', ``Lista para pruebas'', ``Testing'', ``Resuelta'' y ``Cerrada'' \ref{fig:4}. Esto permite un seguimiento claro y conciso del flujo de trabajo de cada tarea
-y permite una gestión eficiente del trabajo pendiente. También hay que destacar en cuanto al proceso de desarrollo, que tanto la parte de frontend como de backend se ha ido desarrollando y probando correlativamente en función de las necesidades de cada tarea y las funcionalidades a implementar, por lo que como se puede ver, 
+y permite una gestión eficiente del trabajo pendiente. También hay que destacar en cuanto al proceso de desarrollo, que tanto la parte de \textit{frontend} como de \textit{backend} se ha ido desarrollando y probando correlativamente en función de las necesidades de cada tarea y las funcionalidades a implementar, por lo que como se puede ver, 
 este desarrollo ha ido creciendo iteración tras iteración y tarea tras tarea en todo su conjunto, mejorando en funcionalidad. Este ha sido creado de tal manera que está preparado para crecer en un futuro continuando con este proceso incremental.
 
 \begin{figure}[ht]
@@ -706,7 +706,7 @@ para mejorar la experiencia de compra y facilitar la gestión de los productos d
               \item Los productos ``trabajo'' seleccionados en diferentes áreas, con la variante adecuada según el número de colores seleccionados.
               \item Los productos ``clichés'' asociados al trabajo, con la variante adecuada según si es de repetición o no.
           \end{itemize}
-    \item Se debe investigar si el uso de customized bundles es adecuado para agrupar y vincular los productos relacionados en el carrito.
+    \item Se debe investigar si el uso de \textit{customized bundles} es adecuado para agrupar y vincular los productos relacionados en el carrito.
     \item Estos productos tienen que estar agrupados y de forma que no se puedan eliminar o editar por separado.
     \item Toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) debe guardarse al añadir al carrito, para que pueda transferirse al pedido durante el proceso de checkout.
     \item La cantidad de cada producto añadido al carrito debe ser considerada y reflejada correctamente.
@@ -717,7 +717,7 @@ para mejorar la experiencia de compra y facilitar la gestión de los productos d
 \subsubsubsection{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}\label{sec:historia5}
 
 Como administrador de la plataforma,
-quiero que los paquetes de productos de impresión (customize bundles), se visualicen completamente de forma agrupada en el carrito de la tienda,
+quiero que los paquetes de productos de impresión (\textit{customize bundles}), se visualicen completamente de forma agrupada en el carrito de la tienda,
 para proporcionar una experiencia de compra clara y comprensible para los clientes.
 
 \vspace{0.5cm}
@@ -790,7 +790,7 @@ para aplicar un importe fijo adicional al precio de algunos productos específic
     \item Se debe crear un producto especial con un precio de un céntimo, que se utilizará para añadir el importe del canon digital al carrito de compra.
     \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto (ya sea un producto normal o uno personalizado).
     \item La línea de canon digital debe estar vinculada al producto correspondiente y reflejar el importe del canon establecido para ese producto.
-    \item Se deben utilizar customize bundles para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
+    \item Se deben utilizar \textit{customize bundles} para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
 \end{enumerate}
 
 \subsection{Diseño}
@@ -908,7 +908,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \end{itemize}
     \item \textbf{Tarea 3:} Investigar el Uso de Customized Bundles para Agrupar y Vincular Productos:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Investigar si los \textbf{customized bundles} \cite{paquete-personalizado} son una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado. Analizar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos. Si no se considera viable el uso de customized bundles, explorar la posibilidad de utilizar JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
+              \item \textbf{Descripción:} Investigar si los \textbf{customized bundles} \cite{paquete-personalizado} son una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado. Analizar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos. Si no se considera viable el uso de \textit{customized bundles}, explorar la posibilidad de utilizar JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
           \end{itemize} 
 \end{itemize}
 
@@ -918,7 +918,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
 \begin{itemize}
     \item \textbf{Tarea 1:} Modificar el Theme para Mostrar el Detalle de los Bundles de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Como se ha podido observar, los paquetes de productos de personalización que se muestran en el carrito (customized bundles), no muestran los detalles de los artículos que contienen con sus precios. Estos paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no se puede visualizar. El objetivo de esta tarea es desarrollar una sección en el tema de una tienda estandar, que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de estos paquetes de impresión de manera similar a la visualización en el proceso de checkout.
+              \item \textbf{Descripción:} Como se ha podido observar, los paquetes de productos de personalización que se muestran en el carrito (\textit{customized bundles}), no muestran los detalles de los artículos que contienen con sus precios. Estos paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no se puede visualizar. El objetivo de esta tarea es desarrollar una sección en el tema de una tienda estandar, que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de estos paquetes de impresión de manera similar a la visualización en el proceso de checkout.
           \end{itemize}
 \end{itemize}
 
@@ -941,13 +941,13 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Incorporar un botón en la interfaz de administración por cada acción que se desea realizar. Uno para activar la creación de metadatos y otro para activar la creación del objeto cart-transform. Cada botón llamará al método de la app correspondiente para crear los elementos adecuados.
           \end{itemize}
-    \item \textbf{Tarea 3:} Desarrollar el Endpoint y el Método para Crear los Metafields Necesarios y asociarlo al botón correspondiente:
+    \item \textbf{Tarea 3:} Desarrollar el \textit{endpoint} y el Método para Crear los Metafields Necesarios y asociarlo al botón correspondiente:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un endpoint y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen. Además realizar la llamada correspondiente desde la parte del frontend para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
+              \item \textbf{Descripción:} Crear un \textit{endpoint} y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen. Además realizar la llamada correspondiente desde la parte del \textit{frontend} para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
           \end{itemize}
-    \item \textbf{Tarea 4:} Desarrollar el Endpoint y el Método para Crear el objeto cart-transform y asociarlo al botón correspondiente:
+    \item \textbf{Tarea 4:} Desarrollar el \textit{endpoint} y el Método para Crear el objeto cart-transform y asociarlo al botón correspondiente:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un endpoint y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear el objeto cart-transform, controlando si ya existe. Además realizar la llamada correspondiente desde la parte del frontend para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
+              \item \textbf{Descripción:} Crear un \textit{endpoint} y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear el objeto cart-transform, controlando si ya existe. Además realizar la llamada correspondiente desde la parte del \textit{frontend} para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
           \end{itemize}
     \item \textbf{Tarea 5:} Implementar la Funcionalidad de Feedback para el Usuario:
           \begin{itemize}[label=--]
@@ -985,14 +985,14 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Crear un producto especial con un precio de un céntimo, que se utilizará únicamente para añadir el importe del canon digital al carrito de compra. Este producto especial asegurará que el importe del canon se aplique correctamente al total del carrito de compra.
           \end{itemize}
-    \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con customize bundles:
+    \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con \textit{customize bundles}:
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Cuando se añada un producto con canon al carrito, se deberá añadir una línea de canon digital (producto especial creado) para repercutir el canon.
               Cómo el producto especial tiene un precio de un céntimo, se deberá jugar con la cantidad de este artículo para conseguir obtener el importe del canon de producto al que se le está aplicando. Por ejemplo
               si un producto tiene 1,20€ de canon digital, se añadirá el producto especial con cantidad 120.
               Este canon digital se deberá añadir tanto a los productos ``normales'' que no sean de impresión, como a los productos de impresión.
               Para los productos que sean de impresión se deberá realizar una configuración adicional en el procedimiento de adición con la API de AJAX, para que en caso de que el producto personalizado cuente con canon digital, se añada la cantidad adecuada de productos canon de un céntimo y se agrupe con el resto de artículos del paquete de impresión en el carrito.
-              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente (customize bundles), se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
+              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente (\textit{customize bundles}), se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
           \end{itemize}
 \end{itemize}
 
@@ -1005,7 +1005,7 @@ la implementación de estas tareas, las cuales abordaban los requisitos esencial
 proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
-En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollod el backend, la elaboración del frontend de la parte de administración y una última sección donde se detallará el empleo de los customize boundles y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
+En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollod el \textit{backend}, la elaboración del \textit{rontend} de la parte de administración y una última sección donde se detallará el empleo de los customize boundles y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
 proporciona una visión clara y organizada de la implementación del proyecto.
 
 \subsubsection{Creación de la aplicación e implementación del theme app extension}
@@ -1098,7 +1098,7 @@ Este comando establece una estructura base sobre la cual comenzar a trabajar. Es
 para la generación del proyecto.
 
 Después de haber creado la aplicación inicial, el siguiente paso es generar una ``theme app extension'' sobre la cual se trabajará la parte visual del tema. Esta
-extensión permite la integración de la aplicación (frontend) con el tema de la tienda de Shopify.
+extensión permite la integración de la aplicación (\textit{frontend}) con el tema de la tienda de Shopify.
 
 Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el siguiente comando:
 
@@ -1107,7 +1107,7 @@ Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el 
 \end{lstlisting}
 
 Al ejecutar este comando hay que seleccionar el tipo de extensión que se desea implementar y proporcionar el nombre de la extensión. Una vez completado este proceso,
-se generará la estructura inicial de la extensión del tema, proporcionando una base sobre la que poder trabajar y desarrollar la parte del frontend de la aplicación que se integrará con
+se generará la estructura inicial de la extensión del tema, proporcionando una base sobre la que poder trabajar y desarrollar la parte del \textit{frontend} de la aplicación que se integrará con
 el tema de la tienda.
 
 Una vez se tiene la aplicación base con su theme app extensión correspondiente, ya se puede empezar a trabajar sobre la extensión para implementar la funcionalidades básicas.
@@ -1269,10 +1269,10 @@ actualizándola cada vez que se modifica el trabajo.
     \vspace{\fill}
 \end{figure}
 
-Cada área también cuenta con un input para que el usuario pueda adjuntar una imagen con el logo que desea imprimir. Se ha creado un endpoint en 
-la parte del backend de la aplicación para recibir esta imagen junto con el identificador del pedido y el área correspondiente, 
+Cada área también cuenta con un input para que el usuario pueda adjuntar una imagen con el logo que desea imprimir. Se ha creado un \textit{endpoint} en 
+la parte del \textit{backend} de la aplicación para recibir esta imagen junto con el identificador del pedido y el área correspondiente, 
 almacenándola adecuadamente. Al adjuntar una imagen, se activa un eventListener (Figura~\ref{fig:adjuntarLogo}) que llama a la función ``subirImagenArea()'', 
-la cual envía la imagen junto con el ID y el área al backend utilizando el método API desarrollado. Además, este eventListener 
+la cual envía la imagen junto con el ID y el área al \textit{backend} utilizando el método API desarrollado. Además, este eventListener 
 también activa la función ``handleResize()'', que renderiza el logo que el cliente ha adjuntado sobre la imagen del producto en la posición adecuada.
 
 \begin{figure}[ht]
@@ -1415,9 +1415,9 @@ observar esta operación.
 
 
 \clearpage
-\subsubsection{Implementación del frontend de la parte de administración}
+\subsubsection{Implementación del \textit{frontend} de la parte de administración}
 
-Al crear una aplicación para Shopify, se genera una estructura frontend que sigue los principios de una aplicación React. Esta estructura incluye directorios como assets para 
+Al crear una aplicación para Shopify, se genera una estructura \textit{frontend} que sigue los principios de una aplicación React. Esta estructura incluye directorios como assets para 
 archivos estáticos como imágenes, fuentes y ficheros CSS; components para componentes de React reutilizables como botones, barras de navegación y tarjetas de producto; 
 hooks que encapsulan la lógica de la aplicación; locales para almacenar las traducciones en los distintos idiomas; pages para definir las páginas principales de la aplicación; El fichero App.jsx como
 componente principal que actúa como contenedor de toda la interfaz de usuario y maneja el enrutamiento de la aplicación; index.jsx como el punto de entrada de la aplicación React donde
@@ -1428,12 +1428,12 @@ deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se 
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.1\textwidth]{imagenes-admin/EstructuraDirectoriosReact.png}
-    \caption{\label{fig:estructuraFront} Estructura de directorios del frontend de React}
+    \caption{\label{fig:estructuraFront} Estructura de directorios del \textit{frontend} de React}
     \vspace{\fill}
 \end{figure}
 
-En la parte del frontend de la aplicación, se ha implementado una funcionalidad muy básica que consta de dos componentes de React (Figura~\ref{fig:componentes}). Cada componente representa una tarjeta que 
-contiene un texto explicativo de la acción que se llevará a cabo y un botón. Estas tarjetas están diseñadas para activar un par de llamadas al backend cuando se hace clic en los 
+En la parte del \textit{frontend} de la aplicación, se ha implementado una funcionalidad muy básica que consta de dos componentes de React (Figura~\ref{fig:componentes}). Cada componente representa una tarjeta que 
+contiene un texto explicativo de la acción que se llevará a cabo y un botón. Estas tarjetas están diseñadas para activar un par de llamadas al \textit{backend} cuando se hace clic en los 
 botones correspondientes. Este diseño proporciona una experiencia interactiva para los administradores de las tiendas, para que desde la interfaz de administración de la misma
 puedan activar un par de funcionalidades para crear los metadatos y metaobjetos necesarios para integrar la aplicación con la tienda y crear el objeto cart-transform que activa una funcionalidad
 de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observar la página principal en la que se renderizan estos componentes reutilizables.
@@ -1442,7 +1442,7 @@ de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observa
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.3\textwidth]{imagenes-admin/componentes-admin.png}
-    \caption{\label{fig:componentes} Componentes del frontend }
+    \caption{\label{fig:componentes} Componentes del \textit{frontend} }
     \vspace{\fill}
 \end{figure}
 
@@ -1452,7 +1452,7 @@ de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observa
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.3\textwidth]{imagenes-admin/paginaHome.png}
-    \caption{\label{fig:homepage} Página principal del frontend de la aplicación }
+    \caption{\label{fig:homepage} Página principal del \textit{frontend} de la aplicación }
     \vspace{\fill}
 \end{figure}
 
@@ -1460,7 +1460,7 @@ En la Figura~\ref{fig:componenteMetafield} se puede observar uno de los componen
 y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una aparencia coherente con el resto del panel de administración de la tienda.
 La función handlePopulate desempeña el papel de realizar la llamada a la ruta ``/api/meta/create'' para crear los metafields y metaobject necesarios para la funcionalidad de personalización de productos.
 Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además se hace uso del componente Toast de app-bridge-react para mostrar
-mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el backend. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
+mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el \textit{backend}. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
 de traducción que emplea los archivos de traducciones locales que se proporcionan (mostrados en la Figura~\ref{fig:localesAdmin}), para permitir una experiencia multilingüe, lo que mejora
 la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
 
@@ -1482,21 +1482,21 @@ la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
     \vspace{\fill}
 \end{figure}
 
-El otro componente (``CartTrans'') es similar al anterior en estructura y funcionalidad. Este se encarga de renderizar la interfaz que permite al usuario realizar una llamada al backend mediante
+El otro componente (``CartTrans'') es similar al anterior en estructura y funcionalidad. Este se encarga de renderizar la interfaz que permite al usuario realizar una llamada al \textit{backend} mediante
 la ruta ``/api/cart/create'' que ejecuta la funcionalidad para la creación del objeto cart-transform en la tienda.
 
-Por último, es importante destacar el empleo del app bridge en esta parte del frontend. Su utilización proporciona una conexión deirecta entre la aplicación y el panel 
+Por último, es importante destacar el empleo del app bridge en esta parte del \textit{frontend}. Su utilización proporciona una conexión deirecta entre la aplicación y el panel 
 de administración de Shopify, lo que permite a los administradore de la tienda poder interactuar con la interfaz de usuario implementada y acceder a las funcionalidades que estas aportan
 desde el panel de administración del a tienda.
 
 \clearpage
 \subsubsection{Implementación del backend}
 
-Para entender cómo funciona el backend de esta aplicación, en primer lugar se va a examinar el archivo ``index.js''. Este fichero sirve como 
+Para entender cómo funciona el \textit{backend} de esta aplicación, en primer lugar se va a examinar el archivo ``index.js''. Este fichero sirve como 
 punto de entrada de la aplicación, configurando y ejecutando el servidor Express para manejar las solicitudes HTTP entrantes. Este define funcionalidades
 esenciales, como la gestión de archivos mediante ``multer'' para subir archivos al servidor y la definición de rutas y controladores para ejecutar
 las acciones necesarias. Además, establece el puerto en el que el servidor escuchará las solicitudes entrantes, ya sea el puerto definido en las 
-variables de entorno o el puerto 3000 por defecto. Este fichero es fundamental para el funcionamiento del backend.
+variables de entorno o el puerto 3000 por defecto. Este fichero es fundamental para el funcionamiento del \textit{backend}.
 
 En la Figura~\ref{fig:configIndex} se observa la parte del código encargada de gestionar la subida de imágenes al servidor. El objetivo de esta 
 funcionalidad es permitir a los usuarios (que estén configurando un producto en el personalizador) subir una imagen por área, que represente la impresión que desea
@@ -1523,7 +1523,7 @@ Posteriormente, se configura el almacenamiento de multer para que las imágenes 
 \end{figure}
 
 Cuando se recibe una solicitud POST en la ruta ``/upng-api/subir\_imagen'' (Figura~\ref{fig:endpointImagen}), se ejecuta una función asíncrona que verifica si se ha enviado
-un archivo en la solicitud. El endpoint espera recibir un archivo de imagen en el cuerpo de la solicitud, junto con dos parámetros adicionales: el ``id'', que 
+un archivo en la solicitud. El \textit{endpoint} espera recibir un archivo de imagen en el cuerpo de la solicitud, junto con dos parámetros adicionales: el ``id'', que 
 representa el identificador único del pedido de impresión al que pertenece la imagen, y el ``index'', que indica el ínice del área del producto al 
 que pertenece la imagen. Estos datos se utilizan para generar un nombre de archivo único que incluye el ``id'' del pedido de impresión y el ``index'' del área,
 lo que faiclita al administrador de la tienda asociar las imágenes con los pedidos de los clientes correspondientes. Si se ha enviado el archivo y estos parámetros, se procede a generar un nuevo nombre de archivo. Luego, se lista y filtran los archivos del directorio para asegurarse de que no existen
@@ -1539,16 +1539,16 @@ que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devo
     \vspace{\fill}
 \end{figure}
 
-En la Figura~\ref{fig:endpointsAdmin}, se ilustran dos endpoints: ``/api/meta/create'' y ``/api/cart/create''. Estos endpoints serán
+En la Figura~\ref{fig:endpointsAdmin}, se ilustran dos \textit{endpoints}: ``/api/meta/create'' y ``/api/cart/create''. Estos \textit{endpoints} serán
 llamados desde la parte de adminsitración de la aplicación para llevar a cabo las acciones específicas.
 
-El primer endpoint, ``/api/meta/create'', es responsable de crear metadatos y metaobjetos necesarios para la aplicación. Cuando se realiza
+El primer \textit{endpoint}, ``/api/meta/create'', es responsable de crear metadatos y metaobjetos necesarios para la aplicación. Cuando se realiza
 una solicitud GET a esta ruta, se ejecuta una función asíncrona que intenta crear estos metadatos utilizando la sesión de Shopify proporcionada.
 Si la operación se realiza correctamente, se devuelve una respuesta con un código de estado 200 y un cuerpo que indica el éxito de la operación. 
 En caso de que ocurra algún error durante el proceso, se captura la excepción y se devuelve una respuesta con un código 
 de estado 500 indicando el error.
 
-El segundo endpoint, ``/api/cart/create'', busca crear el objeto cart-transform necesario para la aplicación. Al igual que el primer endpoint, al recibir
+El segundo \textit{endpoint}, ``/api/cart/create'', busca crear el objeto cart-transform necesario para la aplicación. Al igual que el primer \textit{endpoint}, al recibir
 una solicitud GET en esta ruta, se ejecuta una función asíncrona que intenta crear el objeto cart-transform. En este caso también se devuelve un 
 mensaje de éxito o error, dependiendo del resultado de la operación.
 
@@ -1556,11 +1556,11 @@ mensaje de éxito o error, dependiendo del resultado de la operación.
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.5\textwidth]{imagenes-back/EndpointsAdmin.png}
-    \caption{\label{fig:endpointsAdmin} EndPoints para la parte de administración }
+    \caption{\label{fig:endpointsAdmin} \textit{EndPoints} para la parte de administración }
     \vspace{\fill}
 \end{figure}
 
-Las funciones a las que se llama en estos endpoints están implementadas en los ficheros ``metafield-creator.js'' y ``function-cart-creator.js''.
+Las funciones a las que se llama en estos \textit{endpoints} están implementadas en los ficheros ``metafield-creator.js'' y ``function-cart-creator.js''.
 En la Figura~\ref{fig:funcionMetafields} se puede observar la función ``metaCreator''. Esta es una función asíncrona que acepta dos argumentos:
 ``session'' y ``count'', este último tiene un valor predeterminado según las constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
 
@@ -1617,14 +1617,14 @@ o consultas para facilitar la mantenibilidad del código. En la Figura~\ref{fig:
 
 \clearpage
 \subsubsection{Implementación de customize bundles y modificación de tema}
-En esta sección se mostrará la investigación e implementación de los ``customize bundles'' para agrupar y vincular los
+En esta sección se mostrará la investigación e implementación de los \textit{customize bundles} para agrupar y vincular los
 productos de los paquetes de impresión. Una vez añadidos los productos al carrito, esta funcionalidad permitirá relacionar en paquetes, los productos de los pedidos personalizados, de forma que no se puedan borrar
 o editar por separado. Además, se realizará una nueva versión de la sección de desglose de artículos del carrito. Esto se debe a que en el tema estandar no se muestran los artículos de un paquete 
 de impresión. En esta, se pinta un solo elemento con el precio total del conjunto. El usuario final debe poder visualizar en el carrito un desglose de los paquetes con todos los artículos que incluye y su precio 
 total para obtener una buena experiencia de compra.
 
-Las \textbf{funciones de Shopify} \cite{shopify-functions} permiten a los desarrolladores personalizar la lógica del backend de Shopify, incluyendo casos de uso como la implementación de los
-``customize bundles''. Estas funciones se basan en destinos de extensión que inyectan código en la lógica de backend de Shopify. La entrada de estas funciónes es un objecto JSON resultado de una
+Las \textbf{funciones de Shopify} \cite{shopify-functions} permiten a los desarrolladores personalizar la lógica del \textit{backend} de Shopify, incluyendo casos de uso como la implementación de los
+``customize bundles''. Estas funciones se basan en destinos de extensión que inyectan código en la lógica de \textit{backend} de Shopify. La entrada de estas funciónes es un objecto JSON resultado de una
 consulta de GraphQL, permitiendo seleccionar datos específicos como los de la línea de carrito en este caso. La lógica de la funcion se realizará en JavaScript, y se compila en módulos de WebAssembly.
 La salida de esta función es un documento JSON que describe las operaciones deseadas y que Shopify se encargará de interpretar. Además Shopify proporciona esquemas que especifican los 
 destinos, entradas y salidas esperadas para la API de Functions.
@@ -1660,11 +1660,11 @@ propiedades definidas (artículos de personalización), mientras que la segunda 
 En la primera parte, se filtran las líneas del carrito que tienen la propiedad 'idProps' y 'value' definidas, y se agrupan según su identificador. Si una línea comparte el mismo identificador que la anterior
 o es la primera línea del carrito, se agregan a una estructura de datos que representa un grupo de líneas. Cuando se encuentra una línea con un identificador diferente, se crea una nueva operación 
 que combina las líneas del grupo anterior y se reinicia el proceso para el nuevo grupo. Con este procedimento se generan una serie de operaciones de tipo ``merge'' que se van añadiendo al array de operaciones que retorna 
-la función. Estas operaciones serán interpretadas por el backend de Shopify y resultarán en una transformación del carrito que mostrará los items de un mismo producto de personalización asociados.
+la función. Estas operaciones serán interpretadas por el \textit{backend} de Shopify y resultarán en una transformación del carrito que mostrará los items de un mismo producto de personalización asociados.
 
 En la segunda parte (Figura~\ref{fig:runpart2}), se procesan las líneas del carrito que no tienen propiedades definidas, que corresponden a productos que no son personalizados. Estos productos se recorren y en función de si cuentan con canon digital o no, se expanden agregando 
 el producto especial canon con su cantidad correspondiente. Con este procedimiento se generan una serie de operaciones de tipo ``expand'' que se van añadiendo al array de operaciones. Este tipo de operaciones
-serán interpretadas por el backend de Shopify y resultarán en una transformación del carrito que añadirá el canon digital a los productos normales que deban contar con él, asociados en un mismo paquete. Es decir, esta operación añade los productos canon al carrito
+serán interpretadas por el \textit{backend} de Shopify y resultarán en una transformación del carrito que añadirá el canon digital a los productos normales que deban contar con él, asociados en un mismo paquete. Es decir, esta operación añade los productos canon al carrito
 y los asocia con los productos no personalizados correspondientes.
 
 Como último paso para activar esta funcionalidad en la tienda en la que se instale la aplicación, habría que ejecutar una mutación GraphQL para crear un objeto de tipo \textit{cart-transform}, que cuente con el identificador de la función que se ha implementado
@@ -1686,7 +1686,7 @@ y que se debe aplicar. Este objeto es el encargado de llamar a la función de tr
     \vspace{\fill}
 \end{figure}
 
-Al aplicar los customize bundles, se observa que los paquetes de productos de personalización, no muestran los detalles de los artículos que contienen. Estos 
+Al aplicar los \textit{customize bundles}, se observa que los paquetes de productos de personalización, no muestran los detalles de los artículos que contienen. Estos 
 paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no está visible. Por ello se ha implementado una nueva sección en un tema estandar en el que 
 se desglose el contenido de este paquete (Figura~\ref{fig:seccionTema}).
 
@@ -1719,11 +1719,11 @@ a medida que se iban complentando las diferentes tareas definidas para cada hist
 a la par que se comprobaba su correcto funcionamiento.
 
 Cada vez que se implementaba una nueva funcionalidad, se realizaban pruebas exhaustivas para asegurar su correcto funcionamiento antes de proceder con la 
-siguiente tarea. Estas pruebas se han enfocado en verificar el correcto funcionamiento tanto del frontend como del backend, pues como se ha comentado anteriormente, 
+siguiente tarea. Estas pruebas se han enfocado en verificar el correcto funcionamiento tanto del \textit{frontend} como del \textit{backend}, pues como se ha comentado anteriormente, 
 el desarrollo de ambas partes se ha ido realizando de forma conjunta.
 
 Es importante destacar que se optó por la realización de pruebas manuales en lugar de la implementación de pruebas automatizadas debido a que se 
-trata de una aplicación relativamente pequeña y con una funcionalidad en la parte de backend bastante limitada. Se consideró que el esfuerzo necesario y la inversión
+trata de una aplicación relativamente pequeña y con una funcionalidad en la parte de \textit{backend} bastante limitada. Se consideró que el esfuerzo necesario y la inversión
 en tiempo y recursos para establecer pruebas automatizadas no justificaba su implementación. Esta decisión permitio una mayor flexibilidad y agilidad durante
 el proceso de desarrollo de la aplicación.
 
@@ -1734,17 +1734,17 @@ Esta herramienta ha eliminado la necesidad de detener y reiniciar manualmente el
 lo que ha agilizado el proceso de desarrollo y ha permitido comprobar el funcionamiento de cada tarea a la par que se implementaba, pues permitía observar como
 cada cambio reciente se reflejaba automáticamente.
 
-El uso de nodemon, ha facilitado tanto la implementación y pruebas de la parte de frontend como la de backend. En cuanto a la parte del frontend
+El uso de nodemon, ha facilitado tanto la implementación y pruebas de la parte de \textit{frontend} como la de \textit{backend}. En cuanto a la parte del \textit{frontend}
 ha permitido ir creando funcionalidades y dando diseño a esta parte, puediendo observar los resultados de cada cambio en el código en tiempo real,
-lo que ha agilizado muchisimo el desarrollo. Por lo que respecta al backend mas de lo mismo, se han podido ir realizando modificaciones y pruebas de las funcionalidades
+lo que ha agilizado muchisimo el desarrollo. Por lo que respecta al \textit{backend} mas de lo mismo, se han podido ir realizando modificaciones y pruebas de las funcionalidades
 hasta conseguir el resultado esperado, permitiendo solucionar los errores, mejorar el código y probarlo de forma muy ágil y rápida. 
 
-Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los EndPoints de la parte del backend, esta plataforma ha permitido enviar 
-solicitudes HTTP a los EndPoints de la aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
-las llamadas desde la parte del frontend, se realizaron pruebas adicionales para garantizar la correcta comunicación entre backend y frontend y asegurando una
+Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los \textit{endPoints} de la parte del \textit{backend}, esta plataforma ha permitido enviar 
+solicitudes HTTP a los \textit{endPoints} de la aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
+las llamadas desde la parte del frontend, se realizaron pruebas adicionales para garantizar la correcta comunicación entre \textit{backend} y \textit{frontend} y asegurando una
 experiencia del usuario fluida y sin errores.
 
-Por último añadir que durante todo el proceso de desarrollo, se han ido realizando pruebas de la parte del frontend del tema (theme app extensión) en diversos
+Por último añadir que durante todo el proceso de desarrollo, se han ido realizando pruebas de la parte del \textit{frontend} del tema (theme app extensión) en diversos
 navegadores para probar la aplicación desde diferentes entornos y permitir identificar problemas de compatibilidad y rendimiento.
 Además se ha hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que proporciona la capacidad de simular diferentes 
 tamaños de pantalla y dispositivos actuales, lo que ha facilitado el poder probar el diseño responsive de esta aplicación a lo largo del desarrollo.
@@ -1758,7 +1758,7 @@ específico para esta aplicación.
 Por esta razón, se ha desplegado esta aplicación de manera local y haciendo uso de las herramientas que proporciona Shopify. Para desplegar la aplicación,
 se han aprovechado las funcionalidades de la Shopify CLI. Esta herramienta cuenta con una interfaz de línea de comandos que proporciona diversas funcionalidades para desplegar la aplicación.
 Empleando la Shopify CLI, se ha ejecutado el comando \textit{npm run dev} que ejecuta el script definido en el archivo package.json bajo la clave dev. En este caso como se muestra en la Figura~\ref{fig:scriptsPackageJson} se estaría ejecutando \textit{shopify app dev} el cual es el comando específico para lanzar la aplicación.
-Este al ejecutarse inicia un servidor local tanto para el backend como para el frontend, proporcionando
+Este al ejecutarse inicia un servidor local tanto para el \textit{backend} como para el \textit{frontend}, proporcionando
 una dirección URL pública temporal la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL permite lanzar y compartir esta aplicación para probarla durante el desarrollo, con la ventaja de que 
 Shopify se encarga de gestionar su seguridad y privacidad.
 
@@ -1802,8 +1802,8 @@ tener diferentes aplicaciones en el servidor con distintas variables, en lugar d
     \vspace{\fill}
 \end{figure}
 
-A continuación se procede a compilar los archivos del frontend, pues en producción es necesario compilar los ficheros de react que hay en el directorio \textit{web/frontend} 
-para generar la carpeta \textit{web/frontend/dist} que contiene los compilados. Al hacer esto, hay que ejecutar \textit{npm install} para instalar las dependencias del frontend como vite,
+A continuación se procede a compilar los archivos del \textit{frontend}, pues en producción es necesario compilar los ficheros de react que hay en el directorio \textit{web/frontend} 
+para generar la carpeta \textit{web/frontend/dist} que contiene los compilados. Al hacer esto, hay que ejecutar \textit{npm install} para instalar las dependencias del \textit{frontend} como vite,
 se indica el valor de la siguiente variable de entorno que necesita para compilar \textit{export SHOPIFY\_API\_KEY=193f58fc9600c8084a97860c490eeb41} y por último hay que ejecutar \textit{npm run build} para realizar
 la compilación.
 

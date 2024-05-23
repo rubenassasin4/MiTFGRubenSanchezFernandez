@@ -285,11 +285,11 @@ INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\pub
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx8.tfm
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 OUTPUT TFG-Rubén-Sánchez.toc
 INPUT .\TFG-Rubén-Sánchez.lof
 INPUT .\TFG-Rubén-Sánchez.lof
 INPUT TFG-Rubén-Sánchez.lof
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 OUTPUT TFG-Rubén-Sánchez.lof
 INPUT .\Anexo_Firmado_Upango.png
 INPUT .\Anexo_Firmado_Upango.png
@@ -480,6 +480,7 @@ INPUT .\imagenesUS3-modal\fetchAñadirCarrito.png
 INPUT .\imagenesUS3-modal\fetchAñadirCarrito.png
 INPUT .\imagenesUS3-modal\fetchAñadirCarrito.png
 INPUT .\imagenesUS3-modal\fetchAñadirCarrito.png
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT .\imagenes-admin\EstructuraDirectoriosReact.png
 INPUT .\imagenes-admin\EstructuraDirectoriosReact.png
 INPUT .\imagenes-admin\EstructuraDirectoriosReact.png
@@ -761,6 +762,8 @@ INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\p
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx8.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx8.pfb
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsco10.pfb

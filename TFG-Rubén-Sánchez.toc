@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {4.2.2}Tareas adicionales}{24}{subsubsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Implementación}{27}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Creación de la aplicación e implementación del theme app extension}{27}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Implementación del frontend de la parte de administración}{45}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}Implementación del \textit {frontend} de la parte de administración}{45}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}Implementación del backend}{48}{subsubsection.4.3.3}%
 \contentsline {subsubsection}{\numberline {4.3.4}Implementación de customize bundles y modificación de tema}{53}{subsubsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.4}Pruebas}{58}{subsection.4.4}%
