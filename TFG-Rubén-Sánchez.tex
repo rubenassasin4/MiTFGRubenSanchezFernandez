@@ -612,9 +612,9 @@ cada cliente solicita desarrollos personalizados que difieren bastante unos de o
 
 Además, el uso de Azure DevOps para gestionar, las historias de usuario y las tareas asociadas a esas historias, añade otro elemento característico y fundamental de las metodologías ágiles, especialmente con un enfoque como Kanban o Scrum.
 Esto se debe a que Azure DevOps proporciona una interfaz visual para organizar las tareas de este proyecto, y donde todo el equipo tiene visible el progreso y desarrollo del mismo.
-Ofrece una funcionalidad de backlogs (ver \ref{fig:3}), en la cual se permite crear y gestionar una lista prioritaria de elementos que representan el trabajo pendiente de un proyecto, en este caso la aplicación de personalización de artículos. En el marco de trabajo, este backlog contiene todas las funcionalidades, características, mejoras y correcciones que se desean implementar
+Ofrece una funcionalidad de backlogs (ver Figura \ref{fig:3}), en la cual se permite crear y gestionar una lista prioritaria de elementos que representan el trabajo pendiente de un proyecto, en este caso la aplicación de personalización de artículos. En el marco de trabajo, este backlog contiene todas las funcionalidades, características, mejoras y correcciones que se desean implementar
 en el producto y estos elementos están descritos en forma de historias de usuario que representan las necesidades del cliente y que contienen las tareas que se deben seguir para el desarrollo.
-Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el producto (ver \ref{fig:4}) y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto.
+Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el producto (ver Figura \ref{fig:4}) y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto.
 
 En el ámbito de una empresa, el jefe de proyecto es quien asigna las prioridades a las tareas pertenecientes a cada historia de usuario, y estas prioridades marcan
 el desarrollo y el orden de implementación de dichas tareas. Los desarrolladores irán implementando las tareas según su prioridad, 
@@ -624,7 +624,7 @@ En este caso, al tratarse de un proyecto especial para la empresa, ya que se tra
 cuyo personal involucrado se reduce al autor, los tutores y colaboraciones esporádicas de integrantes de la empresa, la asignación de prioridades 
 de las tareas se ha realizado en consenso entre los involucrados.
 
-Además esta herramienta cuenta también con una funcionalidad que permite marcar las tareas con diferentes estados como ``Nueva'', ``Activa'', ``Lista para pruebas'', ``Testing'', ``Resuelta'' y ``Cerrada'' (ver \ref{fig:4}). Esto permite un seguimiento claro y conciso del flujo de trabajo de cada tarea
+Además esta herramienta cuenta también con una funcionalidad que permite marcar las tareas con diferentes estados como ``Nueva'', ``Activa'', ``Lista para pruebas'', ``Testing'', ``Resuelta'' y ``Cerrada'' (ver Figura \ref{fig:4}). Esto permite un seguimiento claro y conciso del flujo de trabajo de cada tarea
 y permite una gestión eficiente del trabajo pendiente. También hay que destacar en cuanto al proceso de desarrollo, que tanto la parte de \textit{frontend} como de \textit{backend} se ha ido desarrollando y probando correlativamente en función de las necesidades de cada tarea y las funcionalidades a implementar, por lo que como se puede ver, 
 este desarrollo ha ido creciendo iteración tras iteración y tarea tras tarea en todo su conjunto, mejorando en funcionalidad. Este ha sido creado de tal manera que está preparado para crecer en un futuro continuando con este proceso incremental.
 
@@ -650,13 +650,22 @@ este desarrollo ha ido creciendo iteración tras iteración y tarea tras tarea e
 
 \subsection{Análisis}
 El análisis de este proyecto se ha centrado en la creación de historias de usuario, estas son narrativas 
-concisas que describen la funcionalidad deseada desde la perspectiva del usuario final. 
+cortas y simples que describen la funcionalidad deseada desde la perspectiva del usuario final \cite{hu}. 
 Estas historias de usuario han servido como guía para entender las necesidades de los usuarios y traducirlas en 
-funcionalidades concretas que  la aplicación debe proporcionar. Se ha hecho uso de ellas para crear
+funcionalidades concretas que la aplicación debe proporcionar. Se ha hecho uso de ellas para crear
 las tareas que se han ido siguiendo para implementar esta aplicación.
 
-Cada historia de usuario está compuesta por una descripción detallada de la funcionalidad requerida, así como por criterios de aceptación que 
-permiten validar que la funcionalidad ha sido implementada de manera adecuada. Estas son la bases sobre las cuales se ha construido y evaluado el éxito de esta aplicación.
+Cada historia de usuario está compuesta por una descripción corta que describe una funcionalidad requerida, así como por una serie de criterios de aceptación que 
+permiten extender el detalle de la funcionalidad a implementar. Además los criterios de aceptación permiten validar que la funcionalidad 
+ha sido implementada de manera adecuada. Estas son la bases sobre las cuales se ha construido y evaluado el éxito de esta aplicación.
+
+Para la redacción de las historias de usuario se ha hecho uso de la siguiente plantilla simple:
+
+\begin{itemize}
+    \item Como \textbf{[Usuario]}
+    \item Quiero \textbf{[algún objetivo]}
+    \item Para que \textbf{[motivo]}
+\end{itemize}
 
 \subsubsection{Historias de usuario de las funcionalidades básicas}
 
@@ -1843,6 +1852,10 @@ es muy poco intuitiva y atractiva para los clientes.
     Eric Martinez. AO Data Cloud.
     \textit{``Azure DevOps: La herramienta esencial para el desarrollo de software''}, última actualización: 26 enero 2024, dirección: \url{https://aodatacloud.es/blog/que-es-azure-devops-y-para-que-sirve/#%C2%BFQue_es_Azure_DevOps} (visitado 31-03-2024).
 
+    \bibitem{hu} 
+    Scrum México.
+    \textit{``Escribiendo Historias de Usuario''}, última actualización: 2 ago 2024, dirección: \url{https://scrum.mx/informate/historias-de-usuario} (visitado 26-05-2024).
+    
     \bibitem{properties-lineitem} 
     Shopify.
     \textit{``Cart API reference''}, última actualización: 1 enero 2024, dirección: \url{https://shopify.dev/docs/api/ajax/reference/cart#private-properties-and-attributes} (visitado 25-11-2023).

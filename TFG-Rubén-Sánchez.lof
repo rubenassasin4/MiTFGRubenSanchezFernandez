@@ -3,11 +3,11 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Selección de tema en la interfaz de administración}}{7}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Backlogs del proyecto en Azure DevOps}}{14}{figure.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Estados y prioridad de una tarea del Backlog}}{14}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla de configuración de la interfaz de administración de la tienda}}{21}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Estructura del metaobjeto}}{22}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Datos adicionales para las áreas de impresión}}{23}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Estructura de los metadatos}}{23}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Estructura de metadatos adicionales}}{23}{figure.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla de configuración de la interfaz de administración de la tienda}}{22}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Estructura del metaobjeto}}{23}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Datos adicionales para las áreas de impresión}}{24}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Estructura de los metadatos}}{24}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Estructura de metadatos adicionales}}{25}{figure.9}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Creación de la sección botonPersonalizar.liquid}}{25}{figure.10}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Ficheros locales}}{26}{figure.11}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Función para almacenar locales en estructura javaScript}}{27}{figure.12}%
@@ -17,10 +17,10 @@
 \contentsline {figure}{\numberline {16}{\ignorespaces Apertura y generación del modal en \textit {ventana-modal.js}}}{31}{figure.16}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Recorrido de todas la áreas de impresión del producto}}{31}{figure.17}%
 \contentsline {figure}{\numberline {18}{\ignorespaces Adjuntar y enviar el logo al servidor}}{32}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Funcionalidad para mostrar logo sobre la zona adecuada del producto}}{32}{figure.19}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Funcionalidad para mostrar logo sobre la zona adecuada del producto}}{33}{figure.19}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Evento de cambio del check de las areas}}{33}{figure.20}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Estructura para almacenar la configuración actual del personalizador}}{34}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Función para generar el resumen del pedido}}{35}{figure.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Función para generar el resumen del pedido}}{36}{figure.22}%
 \contentsline {figure}{\numberline {23}{\ignorespaces Evento recopilar la información y añadir los productos al carrito}}{36}{figure.23}%
 \contentsline {figure}{\numberline {24}{\ignorespaces Añadir los productos al carrito}}{37}{figure.24}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Estructura de directorios del \textit {frontend} de React}}{38}{figure.25}%
