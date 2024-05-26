@@ -683,7 +683,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
           \end{itemize}
     \item El botón ``Personalizar'' solo debe mostrarse si el producto es de impresión,
           \begin{itemize}[label=--]
-              \item Un producto se considerará de impresión si tiene información específica en su metafield denominado \textit{upng.areas\_impresion}.
+              \item Un producto se considerará de impresión si tiene información específica en su \textit{metafield} denominado \textit{upng.areas\_impresion}.
           \end{itemize}
     \item El título del botón debe ser recuperado de los archivos de locales,
           \begin{itemize}[label=--]
@@ -695,12 +695,12 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \subsubsubsection{Historia de Usuario 2: Creación de Metafields y Metaobjects para la Gestión de Trabajos de Impresión}\label{sec:historia2}
 
 \textbf{Como} administrador de la tienda,
-\textbf{quiero} tener los metafields y metaobjects necesarios \textbf{para} poder gestionar los trabajos de impresión en la tienda.
+\textbf{quiero} tener los \textit{metafields} y \textit{metaobjects} necesarios \textbf{para} poder gestionar los trabajos de impresión en la tienda.
 
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Deben existir los metafields y metaobjects requeridos para la gestión de trabajos de impresión.
+    \item Deben existir los \textit{metafields} y \textit{metaobjects} requeridos para la gestión de trabajos de impresión.
 \end{enumerate}
 
 
@@ -789,17 +789,17 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \subsubsubsection{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios y objeto cart-transform}\label{sec:historia7}
 
 \textbf{Como} administrador de la tienda,
-\textbf{quiero} unas opciones en el panel de administración de la tienda para crear automáticamente los metafields necesarios para la app y el objeto cart-transform,
+\textbf{quiero} unas opciones en el panel de administración de la tienda para crear automáticamente los \textit{metafields} necesarios para la app y el objeto cart-transform,
 \textbf{para} simplificar y agilizar el proceso de configuración al instalar la app en una nueva tienda y evitar posibles errores manuales.
 
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Se debe proporcionar una opción en el panel de configuración de la tienda para crear automáticamente los metafields necesarios.
+    \item Se debe proporcionar una opción en el panel de configuración de la tienda para crear automáticamente los \textit{metafields} necesarios.
     \item Se debe proporcionar una opción en el panel de configuración de la tienda para crear automáticamente el objeto cart-transform.
     \item La creación de estos elementos debe realizarse de manera controlada y asegurarse de no duplicar campos ya existentes.
-    \item Después de ejecutar la creación de metafields y el cart-transform, se debe mostrar un mensaje de feedback al usuario indicando el resultado de la operación.
-    \item La configuración de los metafields que se crearán debe ser configurable para facilitar la expansión y reutilización de la funcionalidad en otras aplicaciones.
+    \item Después de ejecutar la creación de \textit{metafields} y el cart-transform, se debe mostrar un mensaje de feedback al usuario indicando el resultado de la operación.
+    \item La configuración de los \textit{metafields} que se crearán debe ser configurable para facilitar la expansión y reutilización de la funcionalidad en otras aplicaciones.
 \end{enumerate}
 
 
@@ -812,7 +812,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Debe existir un nuevo metafield booleano llamado ``DOBLE PASADA'' para los productos y los trabajos.
+    \item Debe existir un nuevo \textit{metafield} booleano llamado ``DOBLE PASADA'' para los productos y los trabajos.
     \item Si se selecciona un producto con la opción ``DOBLE PASADA'' activada y se elige un trabajo que también tenga esta opción activada, se debe mostrar en el presupuestador un check para permitir al usuario seleccionar la opción de ``doble pasada''.
     \item Si se cambia el trabajo seleccionado a uno que no tenga la opción de ``doble pasada'', el check debe ocultarse automáticamente.
     \item Este recargo adicional debe mostrarse en el resumen del pedido del presupuestador y aplicarse al pedido debidamente.
@@ -828,7 +828,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Debe existir un metafield llamado ``Importe Canon'' para los productos, que permita indicar si un producto tiene canon digital y especificar el importe correspondiente.
+    \item Debe existir un \textit{metafield} llamado ``Importe Canon'' para los productos, que permita indicar si un producto tiene canon digital y especificar el importe correspondiente.
     \item Se debe crear un producto especial con un precio de un céntimo, que se utilizará para añadir el importe del canon digital al carrito de compra.
     \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto (ya sea un producto normal o uno personalizado).
     \item La línea de canon digital debe estar vinculada al producto correspondiente y reflejar el importe del canon establecido para ese producto.
@@ -855,7 +855,7 @@ Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una
 Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todos las modificaciones e implementaciones
 que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y adaptaciones que se deberán hacer en una tienda real a la hora de adaptarla para instalar la aplicación final.
 
-En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los metafields y metaobjetos necesarios para gestionar
+En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los \textit{metafields} y metaobjetos necesarios para gestionar
 los trabajos de impresión. Para ello se debe acceder a la pantalla de configuración del panel de administración de la tienda. En la Figura~\ref{fig:configuracionMetafields} se puede ver
 esta pantalla de configuración, en la que se debe acceder a la sección de ``Datos personalizados''. En este apartado se pueden crear de forma manual,
 tanto definiciones de metaobjetos como de metacampos.
@@ -1097,8 +1097,8 @@ color seleccionado en el desplegable. Se ha establecido un ``eventListener'' que
 la configuración del área se actualiza automáticamente cada vez que el usuario modifica alguno de los desplegables.
 
 Se ha implementado una lógica para determinar si se renderiza o no un check para aplicar la casuística de "doble pasada". Si el producto que se está 
-personalizando permite la doble pasada (con el metafield a true) y el trabajo seleccionado por el usuario también la permite 
-(metafield a true), se renderiza este check, permitiendo a los usuarios aplicar una capa más de pintura a sus impresiones, 
+personalizando permite la doble pasada (con el \textit{metafield} a true) y el trabajo seleccionado por el usuario también la permite 
+(\textit{metafield} a true), se renderiza este check, permitiendo a los usuarios aplicar una capa más de pintura a sus impresiones, 
 con un sobrecoste adicional. La función ``createCheckDoblePasada()'' se encarga de controlar la renderización de este check (si se cumplen los requisitos), 
 actualizándola cada vez que se modifica el trabajo.
 
@@ -1300,7 +1300,7 @@ de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observa
 
 En la Figura~\ref{fig:componenteMetafield} se puede observar uno de los componentes. Este hace uso de la biblioteca Polaris de Shopify, que proporciona una serie de componentes predefinidos
 y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una aparencia coherente con el resto del panel de administración de la tienda.
-La función handlePopulate desempeña el papel de realizar la llamada a la ruta ``/api/meta/create'' para crear los metafields y metaobject necesarios para la funcionalidad de personalización de productos.
+La función handlePopulate desempeña el papel de realizar la llamada a la ruta ``/api/meta/create'' para crear los \textit{metafields} y \textit{metaobjects} necesarios para la funcionalidad de personalización de productos.
 Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además se hace uso del componente Toast de app-bridge-react para mostrar
 mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el \textit{backend}. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
 de traducción que emplea los archivos de traducciones locales que se proporcionan (mostrados en la Figura~\ref{fig:localesAdmin}), para permitir una experiencia multilingüe, lo que mejora
@@ -1311,7 +1311,7 @@ la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.5\textwidth]{imagenes-admin/metafieldComponent.png}
-    \caption{\label{fig:componenteMetafield} Componente para la creación de metafields }
+    \caption{\label{fig:componenteMetafield} Componente para la creación de \textit{metafields} }
     \vspace{\fill}
 \end{figure}
 
@@ -1411,13 +1411,13 @@ Esta mutación se lleva a cabo con el objetivo de crear el metaobjeto que repres
 ``TYPEMETAOBJECT'' y ``FIELDMETAOBJECT''. Si la creación del metaobjeto tiene éxito, se guardará el ID del nuevo objeto y se añadirá a las constantes 
 la información correspondiente para poder crear un metadato de este tipo.
 
-A continuación se realiza un bucle para crear metadatos utilizando definiciones en su mayoría configuradas en constantes. Dentro del bucle se ejecuta una consulta GraphQL para cada metafield a crear, cuya mutación
+A continuación se realiza un bucle para crear metadatos utilizando definiciones en su mayoría configuradas en constantes. Dentro del bucle se ejecuta una consulta GraphQL para cada \textit{metafield} a crear, cuya mutación
 está definida en la constante  ``CREATE\_META\_MUTATION''.
 
 En caso de que se produzca algún error durante el proceso, se captura y maneja adecuadamente para lanzar el mensaje de error apropiado.
 
-El uso de constantes para definir las configuraciones de los metafields y metaobjetos (Figura~\ref{fig:constantesMetafields}), así como las consulta GraphQL, permite que la creación
-de metafields sea configurable, lo que implica que la aplicación puede crecer y permita añadir nuevos metafields de manera más sencilla en el futuro 
+El uso de constantes para definir las configuraciones de los \textit{metafields} y metaobjetos (Figura~\ref{fig:constantesMetafields}), así como las consulta GraphQL, permite que la creación
+de \textit{metafields} sea configurable, lo que implica que la aplicación puede crecer y permita añadir nuevos \textit{metafields} de manera más sencilla en el futuro 
 sin necesidad de modificar directamente el código fuente. Esto hace que el código sea más mantenible y escalable a medida que la 
 aplicación evoluciona.
 
@@ -1485,7 +1485,7 @@ la estructura básica para poder definir la query y la función que ejecutará y
 Una vez creada la extensión \textit{cart-transform}, se debe configurar la query de la consulta GraphQL cuyo resultado será la entrada de la función. Esta consulta (Figura~\ref{fig:queryCart}) está diseñada para obtener
 información detallada sobre los elementos del carrito de la tienda. En este caso, se solicitan datos como el identificador de la línea de carrito, la cantidad, una serie de propiedades que se han introducido al añadir los productos personalizados 
 y que servirán para localizar los elementos que deben pertenecer a un mismo paquete y poder asociarlos, y también se recupera el 
-metafield \textit{importe-canon} con el que pueden contar algunos productos y que servirá para aplicar el impuesto canon digital.
+\textit{metafield} \textit{importe-canon} con el que pueden contar algunos productos y que servirá para aplicar el impuesto canon digital.
 
 
 \begin{figure}[ht]
@@ -2113,7 +2113,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \end{itemize}
     \item \textbf{Tarea 2:} Crear la sección con el botón y mostrarlo solo si el Producto es de Impresión:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear una sección en el theme app extension y añadir en ella un botón. Utilizar liquid para verificar si el producto de la página en la que se ejecute es de impresión. Un producto se considerará de impresión si tiene información específica en su metafield denominado \textit{upng.areas\_impresion}.
+              \item \textbf{Descripción:} Crear una sección en el theme app extension y añadir en ella un botón. Utilizar liquid para verificar si el producto de la página en la que se ejecute es de impresión. Un producto se considerará de impresión si tiene información específica en su \textit{metafield} denominado \textit{upng.areas\_impresion}.
               \item Mostrar el botón ``Personalizar'' si el producto cumple con los criterios establecidos; de lo contrario, ocultar el botón.
           \end{itemize}
     \item \textbf{Tarea 3:} Recuperar el Texto del Botón de los Archivos de Locales:
@@ -2126,7 +2126,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Manualmente los Metafields y Metaobjects Necesarios:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear manualmente los metafields y metaobjects necesarios para la gestión de trabajos de impresión. Habrá que crear un metaobjeto area de impresión, que contenga todos los atributos necesarios que se van a necesitar (nombre, imagen, alto, ancho y trabajos). Se crearán metacampos para la entidad producto que contengan una lista de metaobjetos del tipo area de impresión, el número de colores para los productos de tipo trabajo y una metacampo que sea una referencia al cliche (producto especial).
+              \item \textbf{Descripción:} Crear manualmente los \textit{metafields} y \textit{metaobjects} necesarios para la gestión de trabajos de impresión. Habrá que crear un metaobjeto area de impresión, que contenga todos los atributos necesarios que se van a necesitar (nombre, imagen, alto, ancho y trabajos). Se crearán metacampos para la entidad producto que contengan una lista de metaobjetos del tipo area de impresión, el número de colores para los productos de tipo trabajo y una metacampo que sea una referencia al cliche (producto especial).
           \end{itemize}
 \end{itemize}
 
@@ -2238,7 +2238,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \end{itemize}
     \item \textbf{Tarea 3:} Desarrollar el \textit{endpoint} y el Método para Crear los Metafields Necesarios y asociarlo al botón correspondiente:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un \textit{endpoint} y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear los metafields y los metaobject necesarios, controlando si ya existen. Además realizar la llamada correspondiente desde la parte del \textit{frontend} para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
+              \item \textbf{Descripción:} Crear un \textit{endpoint} y un método en la app al que llame, que utilice llamadas al API de GraphQL para crear los \textit{metafields} y los \textit{metaobjects} necesarios, controlando si ya existen. Además realizar la llamada correspondiente desde la parte del \textit{frontend} para que al pulsar el botón se llame al método creado y se ejecute la acción pertinente.
           \end{itemize}
     \item \textbf{Tarea 4:} Desarrollar el \textit{endpoint} y el Método para Crear el objeto cart-transform y asociarlo al botón correspondiente:
           \begin{itemize}[label=--]
@@ -2250,7 +2250,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \end{itemize}
     \item \textbf{Tarea 6:} Hacer Configurable la Creación de Metafields:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un fichero de configuración o constantes que definan los metafields que se crearán, para qué entidad y de qué tipo. Adaptar el código para usar esta configuración, permitiendo así una fácil expansión y reutilización de la funcionalidad en otras aplicaciones.
+              \item \textbf{Descripción:} Crear un fichero de configuración o constantes que definan los \textit{metafields} que se crearán, para qué entidad y de qué tipo. Adaptar el código para usar esta configuración, permitiendo así una fácil expansión y reutilización de la funcionalidad en otras aplicaciones.
           \end{itemize}
 \end{itemize}
 
@@ -2258,7 +2258,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Metafields para ``Doble Pasada'' en Productos:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Utilizar la funcionalidad de creación automática de metafields para crear un metafield booleano llamado ``DOBLE PASADA'' para los productos.
+              \item \textbf{Descripción:} Utilizar la funcionalidad de creación automática de \textit{metafields} para crear un \textit{metafield} booleano llamado ``DOBLE PASADA'' para los productos.
           \end{itemize}
     \item \textbf{Tarea 2:} Mostrar el Check para ``Doble Pasada'':
           \begin{itemize}[label=--]
@@ -2274,7 +2274,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Metafield para el Importe del Canon Digital:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado ``Importe Canon'', utilizando la funcionalidad de creación automática de metafields. Este metafield se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente. Los productos sin canon no tendrán nada en este metacampo, y los productos con canon tendrán en este metacampo el importe correspondiente.
+              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado ``Importe Canon'', utilizando la funcionalidad de creación automática de \textit{metafields}. Este \textit{metafield} se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente. Los productos sin canon no tendrán nada en este metacampo, y los productos con canon tendrán en este metacampo el importe correspondiente.
           \end{itemize}
     \item \textbf{Tarea 2:} Crear Producto Especial para Añadir el Importe al Carrito:
           \begin{itemize}[label=--]
