@@ -1,64 +1,64 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Interfaz de administración de tienda Shopify}}{5}{figure.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Selección de tema en la interfaz de administración}}{7}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Backlogs del proyecto en Azure DevOps}}{13}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Estados y prioridad de una tarea del Backlog}}{13}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla de configuración de la interfaz de administración de la tienda}}{20}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Estructura del metaobjeto}}{21}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Datos adicionales para las áreas de impresión}}{22}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Estructura de los metadatos}}{22}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Estructura de metadatos adicionales}}{22}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Creación de la sección botonPersonalizar.liquid}}{24}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Ficheros locales}}{25}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Función para almacenar locales en estructura javaScript}}{26}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Función para almacenar datos en estructura javaScript}}{27}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Final de sección \textit {botonPersonalizar.liquid}}}{28}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Creación de la ventana modal en \textit {ventana-modal.js}}}{29}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Apertura y generación del modal en \textit {ventana-modal.js}}}{30}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Recorrido de todas la áreas de impresión del producto}}{30}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Adjuntar y enviar el logo al servidor}}{31}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Funcionalidad para mostrar logo sobre la zona adecuada del producto}}{31}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Evento de cambio del check de las areas}}{32}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Estructura para almacenar la configuración actual del personalizador}}{33}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Función para generar el resumen del pedido}}{34}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Evento recopilar la información y añadir los productos al carrito}}{35}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Añadir los productos al carrito}}{36}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Estructura de directorios del \textit {frontend} de React}}{37}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Componentes del \textit {frontend} }}{38}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Página principal del \textit {frontend} de la aplicación }}{38}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Componente para la creación de metafields }}{39}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Ficheros locales }}{39}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Configuración del fichero \textit {index.js} }}{40}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Directorio para el almacenamiento de las imágenes }}{41}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces EndPoint para el almacenamiento de imágenes }}{41}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces \textit {EndPoints} para la parte de administración }}{42}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Función para la creación de metadatos y metaobjetos}}{43}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Constantes para estandarizar la funcionalidad de creación de metadatos }}{44}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Función para la creación del objeto cart-transform}}{44}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Estructura de la extensión \textit {cart-transform}}}{45}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Fichero \textit {run.graphql}}}{46}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Funcionalidad para crear paquetes de impresión}}{47}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Funcionalidad para añadir canon digital}}{48}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Nueva versión de la sección \textit {main-cart-items.liquid}}}{48}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Modificación de la sección \textit {main-cart-items.liquid}}}{49}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces package.json}}{52}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Variables de entorno de la aplicación}}{53}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Configuración de la aplicación}}{54}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Distribución de la aplicación}}{54}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Generar link de distribución}}{54}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Personalizar tema en el panel de administración}}{60}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Añadir la extensión de tema de la App en el tema de la tienda}}{61}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Panel de administración de la tienda}}{61}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Funcionalidades de la parte de administración de la App}}{62}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Página principal de la tienda de demostración}}{63}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Página de producto no personalizable}}{63}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Página de producto personalizable}}{64}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Pantalla del personalizador del producto seleccionado}}{64}{figure.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Personalizador con el Area 1 seleccionada}}{65}{figure.56}%
-\contentsline {figure}{\numberline {57}{\ignorespaces Personalizador con varias áreas seleccionadas}}{65}{figure.57}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Personalizador con trabajo de impresión y colores seleccionados}}{66}{figure.58}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Personalizador con opciones de repetición de cliche y doble pasada}}{66}{figure.59}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Personalizador con selección de logo}}{66}{figure.60}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Botón de carrito}}{67}{figure.61}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Pantalla del carrito de la tienda}}{67}{figure.62}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Pantalla de checkout de la tienda}}{67}{figure.63}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Backlogs del proyecto en Azure DevOps}}{14}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Estados y prioridad de una tarea del Backlog}}{14}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla de configuración de la interfaz de administración de la tienda}}{21}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Estructura del metaobjeto}}{22}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Datos adicionales para las áreas de impresión}}{23}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Estructura de los metadatos}}{23}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Estructura de metadatos adicionales}}{23}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Creación de la sección botonPersonalizar.liquid}}{25}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Ficheros locales}}{26}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Función para almacenar locales en estructura javaScript}}{27}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Función para almacenar datos en estructura javaScript}}{28}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Final de sección \textit {botonPersonalizar.liquid}}}{29}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Creación de la ventana modal en \textit {ventana-modal.js}}}{30}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Apertura y generación del modal en \textit {ventana-modal.js}}}{31}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Recorrido de todas la áreas de impresión del producto}}{31}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Adjuntar y enviar el logo al servidor}}{32}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Funcionalidad para mostrar logo sobre la zona adecuada del producto}}{32}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Evento de cambio del check de las areas}}{33}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Estructura para almacenar la configuración actual del personalizador}}{34}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Función para generar el resumen del pedido}}{35}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Evento recopilar la información y añadir los productos al carrito}}{36}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Añadir los productos al carrito}}{37}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Estructura de directorios del \textit {frontend} de React}}{38}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Componentes del \textit {frontend} }}{39}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Página principal del \textit {frontend} de la aplicación }}{39}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Componente para la creación de metafields }}{40}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Ficheros locales }}{40}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Configuración del fichero \textit {index.js} }}{41}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Directorio para el almacenamiento de las imágenes }}{42}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces EndPoint para el almacenamiento de imágenes }}{42}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces \textit {EndPoints} para la parte de administración }}{43}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Función para la creación de metadatos y metaobjetos}}{44}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Constantes para estandarizar la funcionalidad de creación de metadatos }}{45}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Función para la creación del objeto cart-transform}}{45}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Estructura de la extensión \textit {cart-transform}}}{46}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Fichero \textit {run.graphql}}}{47}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Funcionalidad para crear paquetes de impresión}}{48}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Funcionalidad para añadir canon digital}}{49}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Nueva versión de la sección \textit {main-cart-items.liquid}}}{49}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Modificación de la sección \textit {main-cart-items.liquid}}}{50}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces package.json}}{53}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Variables de entorno de la aplicación}}{54}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Configuración de la aplicación}}{55}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Distribución de la aplicación}}{55}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Generar link de distribución}}{55}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Personalizar tema en el panel de administración}}{61}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Añadir la extensión de tema de la App en el tema de la tienda}}{62}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Panel de administración de la tienda}}{62}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Funcionalidades de la parte de administración de la App}}{63}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Página principal de la tienda de demostración}}{64}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Página de producto no personalizable}}{64}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Página de producto personalizable}}{65}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Pantalla del personalizador del producto seleccionado}}{65}{figure.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Personalizador con el Area 1 seleccionada}}{66}{figure.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Personalizador con varias áreas seleccionadas}}{66}{figure.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Personalizador con trabajo de impresión y colores seleccionados}}{67}{figure.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Personalizador con opciones de repetición de cliche y doble pasada}}{67}{figure.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Personalizador con selección de logo}}{67}{figure.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Botón de carrito}}{68}{figure.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Pantalla del carrito de la tienda}}{68}{figure.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Pantalla de checkout de la tienda}}{68}{figure.63}%
