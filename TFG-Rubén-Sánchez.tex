@@ -992,7 +992,7 @@ a los valores y elementos necesarios, se pueden realizar los cálculos y validac
 más precisa y completa. El hecho de que el modal tenga tanta funcionalidad, datos y elementos cambiantes según la interacción del usuario, hace que 
 el empleo de JavaScript para implementarlo sea una buena opción para facilitar ese acceso a datos y cambios dinámicos del contenido del modal.
 Esta estrategia también simplifica el mantenimiento del código, al centralizar todas las funciones relacionadas con el modal en un solo lugar, lo que facilita
-futuras actualizaciones y mejoras. Debido a esta decisión tanto el contenido como la funcionalidad de este modal se han desarrollado en un mismo fichero javaScript.
+futuras actualizaciones y mejoras. Debido a esta decisión tanto el contenido como la funcionalidad de este modal se han desarrollado en un mismo fichero JavaScript.
 
 Antes de proceder con la creación e implementación de funcionalidad del modal, se han implementado unas funciones en la sección \textit{botonPersonalizar.liquid} que emplean liquid para crear e inicializar unas estructuras JavaScript que 
 contendrán todos los datos relevantes del producto de impresión, así como todos los textos traducidos necesarios para crear el modal y sus elementos. El acceso a datos que proporciona liquid permite poder crear 
@@ -1000,14 +1000,14 @@ esta estructura para tener los datos disponibles en el modal sin necesidad de re
 JavaScript que maneje la funcionalidad y creación del modal para inicializar y tener acceso a todos los datos en caso de que lo necesite.
 
 En la Figura~\ref{fig:cargarlocales} se puede observar la función \textit{cargarLocales()}. Al ejecutar esta función, la estructura \textit{localesModal} se carga con 
-todas las traducciones de textos que deben aparecer en el modal, pues desde javascript no tenemos acceso directo a esta funcionalidad de archivos locales para la implementación 
+todas las traducciones de textos que deben aparecer en el modal, pues desde Javascript no tenemos acceso directo a esta funcionalidad de archivos locales para la implementación 
 de la experiencia multilingüe.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.8\textwidth]{imagenesUS3-section/funcioncargarLocales.png}
-    \caption{\label{fig:cargarlocales} Función para almacenar locales en estructura javaScript}
+    \caption{\label{fig:cargarlocales} Función para almacenar locales en estructura JavaScript}
     \vspace{\fill}
 \end{figure}
 
@@ -1021,7 +1021,7 @@ almacena todos los datos de las áreas del producto en la estructura \textit{are
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.8\textwidth]{imagenesUS3-section/funcionAlmacenarDatosProductos.png}
-    \caption{\label{fig:cargardatos} Función para almacenar datos en estructura javaScript}
+    \caption{\label{fig:cargardatos} Función para almacenar datos en estructura JavaScript}
     \vspace{\fill}
 \end{figure}
 
@@ -2149,7 +2149,7 @@ añaden una funcionalidad y complejidad adicional, y se centran en cumplir los c
           \end{itemize}
     \item \textbf{Tarea 5:} Mostrar áreas de impresión:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Mostrar todas las áreas de impresión disponibles para el producto, incluyendo todos sus elementos imagen, nombre y medidas ajustables (inputs para ancho y largo). Estos datos se obtendran de la estructura javascript que se habrá preparado con todos los datos del prodcuto actual y estarán disponibles en el modal. Se habilitará un checkbox junto a cada nombre para que el usuario pueda seleccionar las áreas en las que desea imprimir.
+              \item \textbf{Descripción:} Mostrar todas las áreas de impresión disponibles para el producto, incluyendo todos sus elementos imagen, nombre y medidas ajustables (inputs para ancho y largo). Estos datos se obtendran de la estructura Javascript que se habrá preparado con todos los datos del prodcuto actual y estarán disponibles en el modal. Se habilitará un checkbox junto a cada nombre para que el usuario pueda seleccionar las áreas en las que desea imprimir.
           \end{itemize}
     \item \textbf{Tarea 6:} Imagen por defecto para áreas sin imagen:
           \begin{itemize}[label=--]
