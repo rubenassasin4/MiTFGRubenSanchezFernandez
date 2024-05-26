@@ -847,12 +847,12 @@ la implementación de estas tareas, las cuales abordaban los requisitos esencial
 proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
-En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollod el \textit{backend}, la elaboración del \textit{rontend} de la parte de administración y una última sección donde se detallará el empleo de los customize boundles y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
+En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollo del \textit{backend}, la elaboración del \textit{frontend} de la parte de administración y una última sección donde se detallará el empleo de los paquetes personalizados (\textit{customize boundles}) y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
 proporciona una visión clara y organizada de la implementación del proyecto.
 
 \subsubsection{Creación de la aplicación e implementación del theme app extension}
 Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una tienda de desarrollo de Shopify Plus que constituye un entorno de pruebas con datos ficticios.
-Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todos las modificaciones e implementaciones
+Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todas las modificaciones e implementaciones
 que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y adaptaciones que se deberán hacer en una tienda real a la hora de adaptarla para instalar la aplicación final.
 
 En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los \textit{metafields} y metaobjetos necesarios para gestionar
@@ -872,7 +872,7 @@ Los productos personalizables de las tiendas, deberán contar con sus correspond
 las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
 Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
 objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
-los trabajos de impresión asociados al área (lista de referencias de producto). Posteriormente, este objeto fué modificado para añadir nuevos datos a las áreas. Estos son necesarios
+los trabajos de impresión asociados al área (lista de referencias de producto). Posteriormente, este objeto fue modificado para añadir nuevos datos a las áreas. Estos son necesarios
 para la implementación de la funcionalidad adicional que permite mostrar el logo del cliente en la zona adecuada del producto. 
 En la Figura~\ref{fig:metaobjetoAdicional} pueden observarse tres nuevos elementos que corresponden con el tamaño en el que se imprimirá el logo, y las coordenadas ``logo\_left'' 
 y ``logo\_top'' que indican la posición en la que se mostrará sobre la imagen del producto.
@@ -965,7 +965,7 @@ El texto del botón y todos los textos que se emplean en esta aplicación son ob
 JSON que sirven para almacenar las diferentes traducciones. Cada archivo de idioma corresponde a un idioma específico y contiene un conjunto de etiquetas con su valor-traducción correspondiente. Esto nos 
 permite preparar traducciones en varios idiomas para garantizar una experiencia multilinüe completa.
 
-En la parte izquierda de la Figura~\ref{fig:locales} se puede observar como en el directorio de locales existen 2 ficheros, uno para el idioma ingles y otro para el español. 
+En la parte izquierda de la Figura~\ref{fig:locales} se puede observar como en el directorio de locales existen dos ficheros, uno para el idioma ingles y otro para el español. 
 Ambos contienen las mismas etiquetas pero, cada uno posee las traducciones en su idioma. En un futuro si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
 necesarios con sus traducciones correspondientes.
 
@@ -997,9 +997,9 @@ futuras actualizaciones y mejoras. Debido a esta decisión tanto el contenido co
 Antes de proceder con la creación e implementación de funcionalidad del modal, se han implementado unas funciones en la sección \textit{botonPersonalizar.liquid} que emplean liquid para crear e inicializar unas estructuras JavaScript que 
 contendrán todos los datos relevantes del producto de impresión, así como todos los textos traducidos necesarios para crear el modal y sus elementos. El acceso a datos que proporciona liquid permite poder crear 
 esta estructura para tener los datos disponibles en el modal sin necesidad de realizar llamadas adicionales al Admin API. Estas funciones serán llamadas desde el fichero 
-javaScript que maneje la funcionalidad y creación del modal para inicializar y tener acceso a todos los datos en caso de que lo necesite.
+JavaScript que maneje la funcionalidad y creación del modal para inicializar y tener acceso a todos los datos en caso de que lo necesite.
 
-En la Figura~\ref{fig:cargarlocales} se puede observar la función \textit{cargarLocales()} al ejecutar esta función, la estructura \textit{localesModal} se carga con 
+En la Figura~\ref{fig:cargarlocales} se puede observar la función \textit{cargarLocales()}. Al ejecutar esta función, la estructura \textit{localesModal} se carga con 
 todas las traducciones de textos que deben aparecer en el modal, pues desde javascript no tenemos acceso directo a esta funcionalidad de archivos locales para la implementación 
 de la experiencia multilingüe.
 
