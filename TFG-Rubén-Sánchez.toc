@@ -28,7 +28,7 @@
 \contentsline {paragraph}{Historia de Usuario 4: Funcionalidad de Añadir al Carrito}{17}{paragraph*.6}%
 \contentsline {subsubsection}{\numberline {4.1.2}Historias de usuario de las funcionalidades adicionales}{18}{subsubsection.4.1.2}%
 \contentsline {paragraph}{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}{18}{paragraph*.7}%
-\contentsline {paragraph}{Historia de Usuario 6: Visualización Atractiva del Logo del Cliente en el Producto}{19}{paragraph*.8}%
+\contentsline {paragraph}{Historia de Usuario 6: Visualización Atractiva del Logo del Cliente en el Producto}{18}{paragraph*.8}%
 \contentsline {paragraph}{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios y objeto cart-transform}{19}{paragraph*.9}%
 \contentsline {paragraph}{Historia de Usuario 8: Gestión de Casuística ``Doble Pasada'' en Productos y Trabajos}{19}{paragraph*.10}%
 \contentsline {paragraph}{Historia de Usuario 9: Gestión del Canon Digital y Adición Automática al Carrito}{20}{paragraph*.11}%
