@@ -610,13 +610,14 @@ Además una vez implementadas y probadas las funcionalidades básicas de la apli
 requisitos futuros. Esto demuestra la capacidad de adaptación a los cambios según las necesidades de los clientes. De hecho esta es una aplicación con una funcionalidad estandarizada, pero 
 cada cliente solicita desarrollos personalizados que difieren bastante unos de otros, por lo que la adaptabilidad a los cambios de esta aplicación es una característica fundamental para el ámbito en el que se ha creado.
 
-Además, el uso de Azure DevOps para gestionar, las historias de usuario y las tareas asociadas a esas historias, añade otro elemento característico y fundamental de las metodologías ágiles, especialmente con un enfoque como Kanban o Scrum.
+Además, el uso de Azure DevOps para gestionar las historias de usuario y las tareas asociadas a esas historias, añade otro elemento característico y fundamental de las metodologías ágiles, especialmente con un enfoque como Kanban o Scrum.
 Esto se debe a que Azure DevOps proporciona una interfaz visual para organizar las tareas de este proyecto, y donde todo el equipo tiene visible el progreso y desarrollo del mismo.
 Ofrece una funcionalidad de backlogs (ver Figura \ref{fig:3}), en la cual se permite crear y gestionar una lista prioritaria de elementos que representan el trabajo pendiente de un proyecto, en este caso la aplicación de personalización de artículos. En el marco de trabajo, este backlog contiene todas las funcionalidades, características, mejoras y correcciones que se desean implementar
 en el producto y estos elementos están descritos en forma de historias de usuario que representan las necesidades del cliente y que contienen las tareas que se deben seguir para el desarrollo.
-Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el producto (ver Figura \ref{fig:4}) y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto.
 
-En el ámbito de una empresa, el jefe de proyecto es quien asigna las prioridades a las tareas pertenecientes a cada historia de usuario, y estas prioridades marcan
+Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el 
+producto (ver Figura \ref{fig:4}) y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto. En el ámbito de una empresa con
+un equipo de desarrollo, el jefe de proyecto es quien asigna las prioridades a las tareas pertenecientes a cada historia de usuario, y estas prioridades marcan
 el desarrollo y el orden de implementación de dichas tareas. Los desarrolladores irán implementando las tareas según su prioridad, 
 teniendo en cuenta que habrá tareas que dependan de la implementación de otras y, por tanto, la dependiente debe tener menor prioridad.
 Cada tarea puede tener tareas asociadas y elementos relacionados, ofreciendo una gran variedad de posibilidades y formas de organizar el flujo de trabajo. 
@@ -840,7 +841,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 
 
 \subsection{Implementación}
-La implementación de esta aplicación, se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas durante la fase de diseño.
+La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas durante la fase de diseño.
 Es importante remarcar que el proceso de implementación siguió una metodología iterativa e incremental como ya se ha comentado. Inicialmente, se llevó a cabo el desarrollo
 de las historias de usuario y el diseño detallado de las tareas en base a dichas historias, centrándose unicamente en las funcionalidades básicas. Se priorizó
 la implementación de estas tareas, las cuales abordaban los requisitos esenciales de la aplicación. Una vez que se obtuvo la primera implementación del
@@ -857,7 +858,7 @@ que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y ada
 
 En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los \textit{metafields} y metaobjetos necesarios para gestionar
 los trabajos de impresión. Para ello se debe acceder a la pantalla de configuración del panel de administración de la tienda. En la Figura~\ref{fig:configuracionMetafields} se puede ver
-esta pantalla de configuración, en la que se debe acceder a la sección de ``Datos personalizados''. En este apartado se pueden crear de forma manual,
+esta pantalla de configuración, en la que se debe acceder a la sección de ``Datos personalizados''. En este apartado se pueden crear de forma manual
 tanto definiciones de metaobjetos como de metacampos.
 
 \begin{figure}[ht]
@@ -868,7 +869,7 @@ tanto definiciones de metaobjetos como de metacampos.
     \vspace{\fill}
 \end{figure}
 
-Los productos personalizables de las tiendas, deberán contar con sus correspondientes áreas de impresión, estas representan
+Los productos personalizables de las tiendas deberán contar con sus correspondientes áreas de impresión, estas representan
 las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
 Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
 objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
@@ -966,7 +967,7 @@ JSON que sirven para almacenar las diferentes traducciones. Cada archivo de idio
 permite preparar traducciones en varios idiomas para garantizar una experiencia multilinüe completa.
 
 En la parte izquierda de la Figura~\ref{fig:locales} se puede observar como en el directorio de locales existen dos ficheros, uno para el idioma ingles y otro para el español. 
-Ambos contienen las mismas etiquetas pero, cada uno posee las traducciones en su idioma. En un futuro si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
+Ambos contienen las mismas etiquetas pero cada uno posee las traducciones en su idioma. En un futuro si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
 necesarios con sus traducciones correspondientes.
 
 
@@ -2098,9 +2099,9 @@ Estas tareas abarcan desde la creación de la estructura inicial de la aplicaci�
 garantizan una experiencia fluida y eficiente para los usuarios finales. Se han tenido en consideración, tanto las necesidades básicas de funcionamiento, como aquellas funcionalidades
 adicionales que agregan más valor al sistema.
 
-Es importante destacar, que en este apartado las tareas de implementación se dividen en dos categorías: las tareas básicas, que se centran en la implementación de la funcionalidad
-principal de la aplicación y en conseguir cumplir con éxito los criterios de aceptación de las historias de usuario de funcionalidad básica y las tareas adicionales, que 
-añaden una funcionalidad y complejidad adicional, y se centran en cumplir los criterios de aceptación de las historias de usuario de la funcionalidad adicional.
+Es importante destacar que en este apartado las tareas de implementación se dividen en dos categorías: las tareas básicas, que se centran en la implementación de la funcionalidad
+principal de la aplicación y en conseguir cumplir con éxito los criterios de aceptación de las historias de usuario de funcionalidad básica; y las tareas adicionales, que 
+añaden una funcionalidad y complejidad adicional y se centran en cumplir los criterios de aceptación de las historias de usuario de la funcionalidad adicional.
 
 \subsubsection{Tareas básicas}
 
