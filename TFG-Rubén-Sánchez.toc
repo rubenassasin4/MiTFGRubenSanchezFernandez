@@ -34,10 +34,11 @@
 \contentsline {paragraph}{Historia de Usuario 9: Gestión del Canon Digital y Adición Automática al Carrito}{20}{paragraph*.11}%
 \contentsline {subsection}{\numberline {4.2}Diseño}{20}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Implementación}{20}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Creación de la aplicación e implementación del theme app extension}{21}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Implementación del \textit {frontend} de la parte de administración}{38}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Implementación del backend}{41}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Implementación de customized bundles y modificación de tema}{46}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.1}Implementación del Theme app extension}{21}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Aplicación}{36}{subsubsection.4.3.2}%
+\contentsline {paragraph}{Implementación del frontend}{38}{paragraph*.12}%
+\contentsline {paragraph}{Implementación del backend}{41}{paragraph*.13}%
+\contentsline {subsubsection}{\numberline {4.3.3}Implementación de la extensión de transformación de carrito}{46}{subsubsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.4}Pruebas}{51}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Despliegue}{52}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Conclusiones y vías futuras}{56}{section.5}%
