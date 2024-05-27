@@ -749,7 +749,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
               \item Los productos ``trabajo'' seleccionados en diferentes áreas, con la variante adecuada según el número de colores seleccionados.
               \item Los productos ``clichés'' asociados al trabajo, con la variante adecuada según si es de repetición o no.
           \end{itemize}
-    \item Se debe investigar si el uso de la funcionalidad de paquetes personalizados (\textit{customized bundles}) es adecuado para agrupar y vincular los productos relacionados en el carrito.
+    \item Se debe investigar si el uso de la funcionalidad de paquetes de productos personalizados (\textit{customized bundles}) es adecuado para agrupar y vincular los productos relacionados en el carrito.
     \item Estos productos tienen que estar agrupados y de forma que no se puedan eliminar o editar por separado.
     \item Toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) debe guardarse al añadir al carrito, para que pueda transferirse al pedido durante el proceso de checkout.
     \item La cantidad de cada producto añadido al carrito debe ser considerada y reflejada correctamente.
@@ -1923,7 +1923,7 @@ el botón para abrir el personalizador de artículos que lleva detrás toda la f
 Una vez añadida la extensión del tema, hay que dirigirse a la pantalla del panel de administración que se ha desarrollado en la aplicación. En la Figura~\ref{fig:PanelAdministracion} se puede
 ver un enlace a esta pantalla en la sección \textit{Aplicaciones} $\rightarrow$  \textit{upango\_pedidos\_impresion}. En la Figura~\ref{fig:FuncionalidadAdministracion} se observa dicha pantalla, en ella se puede pulsar el botón \textit{Crear Metadatos} para que se creen 
 automáticamente los metacampos de producto necesarios, y el botón \textit{cart-transform} para que se cree automáticamente en la tienda el objeto cart-transform, el cuál hara uso de una función de la aplicación, que 
-dotará al carrito y al checkout de la tienda de una funcionalidad y apariencia de paquetes customizados.
+dotará al carrito y al checkout de la tienda de una funcionalidad y apariencia de paquetes de productos personalizados.
 
 \begin{figure}[ht]
     \floatplacement{figure}{!t}
@@ -2203,7 +2203,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
           \end{itemize}
     \item \textbf{Tarea 3:} Investigar el Uso de Customized Bundles para Agrupar y Vincular Productos:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Investigar si la funcionalidad de paquetes personalizados (\textit{customized bundles}) es una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado. Analizar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos. Si no se considera viable el uso de \textit{customized bundles}, explorar la posibilidad de utilizar JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
+              \item \textbf{Descripción:} Investigar si la funcionalidad de paquetes de productos personalizados (\textit{customized bundles}) es una solución adecuada para agrupar y vincular los productos relacionados en el carrito de manera que no se puedan borrar o editar por separado. Analizar visualmente cómo se mostrarían en el carrito, el checkout y en el historial de pedidos. Si no se considera viable el uso de \textit{customized bundles}, explorar la posibilidad de utilizar JavaScript para agregar esta funcionalidad al carrito, especialmente enfocado en impedir cambios individuales en los productos relacionados.
           \end{itemize} 
 \end{itemize}
 
@@ -2213,7 +2213,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Modificar el Theme para Mostrar el Detalle de los Bundles de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Como se ha podido observar, los paquetes de productos de personalización que se muestran en el carrito (\textit{customized bundles}), no muestran los detalles de los artículos que contienen con sus precios. Estos paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no se puede visualizar. El objetivo de esta tarea es desarrollar una sección en el tema de una tienda estandar, que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de estos paquetes de impresión de manera similar a la visualización en el proceso de checkout.
+              \item \textbf{Descripción:} Como se ha podido observar, los paquetes de productos de personalizados (\textit{customized bundles}) que se muestran en el carrito, no muestran los detalles de los artículos que contienen con sus precios. Estos paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no se puede visualizar. El objetivo de esta tarea es desarrollar una sección en el tema de una tienda estandar, que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de estos paquetes de impresión de manera similar a la visualización en el proceso de checkout.
           \end{itemize}
 \end{itemize}
 
