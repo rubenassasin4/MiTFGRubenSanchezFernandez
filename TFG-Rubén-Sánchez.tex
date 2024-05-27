@@ -844,18 +844,123 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 
 
 \subsection{Implementación}
-La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas durante la fase de diseño.
+La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas.
 Es importante remarcar que el proceso de implementación siguió una metodología iterativa e incremental como ya se ha comentado. Inicialmente, se llevó a cabo el desarrollo
-de las historias de usuario y el diseño detallado de las tareas en base a dichas historias, centrándose unicamente en las funcionalidades básicas. Se priorizó
+de las historias de usuario, el diseño de la aplicación y la creación detallada de las tareas en base a dichas historias y diseño realizado, centrándose unicamente en las funcionalidades básicas. Se priorizó
 la implementación de estas tareas, las cuales abordaban los requisitos esenciales de la aplicación. Una vez que se obtuvo la primera implementación del
 proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
-En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollo del \textit{backend}, la elaboración del \textit{frontend} de la parte de administración y una última sección donde se detallará el empleo de los paquetes personalizados (\textit{customized boundles}) y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
-proporciona una visión clara y organizada de la implementación del proyecto.
+En esta sección, se detalla la implementación dividida en tres partes principales: la creación de la aplicación, 
+la cual se subdivide a su vez en el desarrollo del \textit{frontend} (parte de administración) y del \textit{backend}; la configuración de la extensión 
+"theme app extension"; y la implementación de la extensión ``cart-transform'', encargada de transformar el carrito de compras y aplicar los \textit{customized bundles}.
 
 
-\subsubsection{Aplicación}
+\subsubsection{Implementación de la aplicación}
+
+Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una tienda de desarrollo de Shopify Plus que constituye un entorno de pruebas con datos ficticios.
+Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todas las modificaciones e implementaciones
+que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y adaptaciones que se deberán hacer en una tienda real a la hora de adaptarla para instalar la aplicación final.
+
+En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los \textit{metafields} y metaobjetos necesarios para gestionar
+los trabajos de impresión. Para ello se debe acceder a la pantalla de configuración del panel de administración de la tienda. En la Figura~\ref{fig:configuracionMetafields} se puede ver
+esta pantalla de configuración, en la que se debe acceder a la sección de ``Datos personalizados''. En este apartado se pueden crear de forma manual
+tanto definiciones de metaobjetos como de metacampos.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS2/configuracionAdministradorTienda.png}
+    \caption{\label{fig:configuracionMetafields}Pantalla de configuración de la interfaz de administración de la tienda}
+    \vspace{\fill}
+\end{figure}
+
+Los productos personalizables de las tiendas deberán contar con sus correspondientes áreas de impresión, estas representan
+las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
+Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
+objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
+los trabajos de impresión asociados al área (lista de referencias de producto). Posteriormente, este objeto fue modificado para añadir nuevos datos a las áreas. Estos son necesarios
+para la implementación de la funcionalidad adicional que permite mostrar el logo del cliente en la zona adecuada del producto. 
+En la Figura~\ref{fig:metaobjetoAdicional} pueden observarse tres nuevos elementos que corresponden con el tamaño en el que se imprimirá el logo, y las coordenadas ``logo\_left'' 
+y ``logo\_top'' que indican la posición en la que se mostrará sobre la imagen del producto.
+
+Los trabajos son los diferentes tipos de impresión que se pueden aplicar a un área de un producto, por ejemplo, impresión láser, serigrafía, entre otros.
+Estos trabajos se van a representar en la tienda como productos especiales con su precio correspondiente. Estos estarán configurados de tal forma que no sean accesibles a través de la tienda, y
+no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo que no tendrán stock y tampoco requeriran de envío.
+
+Otro tipo de productos especiales que deberán existir en las tiendas son los clichés. Estos hacen referencia a las planchas tipográficas donde se reproduce una composición o grabado
+a imprimir. Este tipo de productos tampoco será visible ni se permitirá comprar por separado en la web de la tienda y tampoco permitirá envío  ni tendrá stock.
+Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el cliché es de repetición o no (esta funcionalidad se especificará mas adelante).
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetaobjeto.png}
+    \caption{\label{fig:metaobjeto}Estructura del metaobjeto}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS2/elementosMetaobjectAdicionales.png}
+    \caption{\label{fig:metaobjetoAdicional}Datos adicionales para las áreas de impresión}
+    \vspace{\fill}
+\end{figure}
+
+En cada trabajo de impresión se hace uso de un cliché determinado, por lo que cada trabajo debe tener asociado su producto cliché correspondiente. Por ello se debe 
+crear la definición del metacampo ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
+
+Además cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de metadato ``Número de colores para trabajo'' que permita
+introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro metadato para el tipo de elemento ``Producto''. Este será una 
+lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones los 3 tipos de metadatos configurados para los productos.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetafields.png}
+    \caption{\label{fig:metadatos}Estructura de los metadatos}
+    \vspace{\fill}
+\end{figure}
+
+Posteriormente, junto con la implementación de funcionalidades adicionales, se llevo a cabo la creación de otros dos metadatos visibles en la En la Figura~\ref{fig:metafieldsAdicionales}. 
+Se crea el metadato  ``Canon digital'' que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
+se crea el metadato ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuistica de doble pasada.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imagenesUS2/metafieldsAdicionales.png}
+    \caption{\label{fig:metafieldsAdicionales}Estructura de metadatos adicionales}
+    \vspace{\fill}
+\end{figure}
+
+Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación. Para ello se ha hecho uso de la Shopify CLI \cite{shopify-cli}, esta herramienta
+de línea de comandos proporciona mecanismos para automatizar la generación de una aplicación para Shopify, además de muchas otras funcionalidades.
+Para generar la aplicación se ejecuta el siguiente comando desde el directorio en el que se desee almacenar la aplicación: 
+\begin{lstlisting}
+    npm init @shopify/app@latest -- --template=node
+\end{lstlisting}
+
+Este comando establece una estructura base sobre la cual comenzar a trabajar en la aplicación. Es importante destacar que se utiliza un template 
+basado en Node.js (\textit{backend}) y React (\textit{frontend}) para la generación del proyecto. Esta estructura inicial incluye tanto el \textit{frontend}, que se 
+integrará en el panel de administración de la tienda Shopify, como el \textit{backend} de la aplicación.
+
+Después de haber creado la aplicación inicial, el siguiente paso es generar un ``theme app extension'',
+la cual constituye la interfaz de usuario que debe integrarse con el tema de la tienda. Esta extensión 
+permite ampliar la interfaz de la tienda directamente desde la aplicación, integrándose de manera perfecta 
+con el tema de la tienda en la que se instala.
+
+Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el siguiente comando:
+
+\begin{lstlisting}
+    shopify app generate extension
+\end{lstlisting}
+
+Al ejecutar este comando hay que seleccionar el tipo de extensión que se desea implementar y proporcionar el nombre de la extensión. Una vez completado este proceso,
+se generará la estructura inicial de la extensión del tema, proporcionando una base sobre la que poder trabajar y desarrollar la parte del \textit{frontend} de la aplicación que se integrará con
+el tema de la tienda.
 
 \clearpage
 \subsubsubsection{Implementación del frontend}
@@ -1059,106 +1164,6 @@ o consultas para facilitar la mantenibilidad del código. En la Figura~\ref{fig:
 
 \clearpage
 \subsubsection{Implementación del Theme app extension}
-Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una tienda de desarrollo de Shopify Plus que constituye un entorno de pruebas con datos ficticios.
-Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todas las modificaciones e implementaciones
-que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y adaptaciones que se deberán hacer en una tienda real a la hora de adaptarla para instalar la aplicación final.
-
-En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los \textit{metafields} y metaobjetos necesarios para gestionar
-los trabajos de impresión. Para ello se debe acceder a la pantalla de configuración del panel de administración de la tienda. En la Figura~\ref{fig:configuracionMetafields} se puede ver
-esta pantalla de configuración, en la que se debe acceder a la sección de ``Datos personalizados''. En este apartado se pueden crear de forma manual
-tanto definiciones de metaobjetos como de metacampos.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/configuracionAdministradorTienda.png}
-    \caption{\label{fig:configuracionMetafields}Pantalla de configuración de la interfaz de administración de la tienda}
-    \vspace{\fill}
-\end{figure}
-
-Los productos personalizables de las tiendas deberán contar con sus correspondientes áreas de impresión, estas representan
-las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
-Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
-objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
-los trabajos de impresión asociados al área (lista de referencias de producto). Posteriormente, este objeto fue modificado para añadir nuevos datos a las áreas. Estos son necesarios
-para la implementación de la funcionalidad adicional que permite mostrar el logo del cliente en la zona adecuada del producto. 
-En la Figura~\ref{fig:metaobjetoAdicional} pueden observarse tres nuevos elementos que corresponden con el tamaño en el que se imprimirá el logo, y las coordenadas ``logo\_left'' 
-y ``logo\_top'' que indican la posición en la que se mostrará sobre la imagen del producto.
-
-Los trabajos son los diferentes tipos de impresión que se pueden aplicar a un área de un producto, por ejemplo, impresión láser, serigrafía, entre otros.
-Estos trabajos se van a representar en la tienda como productos especiales con su precio correspondiente. Estos estarán configurados de tal forma que no sean accesibles a través de la tienda, y
-no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo que no tendrán stock y tampoco requeriran de envío.
-
-Otro tipo de productos especiales que deberán existir en las tiendas son los clichés. Estos hacen referencia a las planchas tipográficas donde se reproduce una composición o grabado
-a imprimir. Este tipo de productos tampoco será visible ni se permitirá comprar por separado en la web de la tienda y tampoco permitirá envío  ni tendrá stock.
-Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el cliché es de repetición o no (esta funcionalidad se especificará mas adelante).
-
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetaobjeto.png}
-    \caption{\label{fig:metaobjeto}Estructura del metaobjeto}
-    \vspace{\fill}
-\end{figure}
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/elementosMetaobjectAdicionales.png}
-    \caption{\label{fig:metaobjetoAdicional}Datos adicionales para las áreas de impresión}
-    \vspace{\fill}
-\end{figure}
-
-En cada trabajo de impresión se hace uso de un cliché determinado, por lo que cada trabajo debe tener asociado su producto cliché correspondiente. Por ello se debe 
-crear la definición del metacampo ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
-
-Además cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de metadato ``Número de colores para trabajo'' que permita
-introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro metadato para el tipo de elemento ``Producto''. Este será una 
-lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones los 3 tipos de metadatos configurados para los productos.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetafields.png}
-    \caption{\label{fig:metadatos}Estructura de los metadatos}
-    \vspace{\fill}
-\end{figure}
-
-Posteriormente, junto con la implementación de funcionalidades adicionales, se llevo a cabo la creación de otros dos metadatos visibles en la En la Figura~\ref{fig:metafieldsAdicionales}. 
-Se crea el metadato  ``Canon digital'' que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
-se crea el metadato ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuistica de doble pasada.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/metafieldsAdicionales.png}
-    \caption{\label{fig:metafieldsAdicionales}Estructura de metadatos adicionales}
-    \vspace{\fill}
-\end{figure}
-
-Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación. Para ello se ha hecho uso de la Shopify CLI \cite{shopify-cli}, esta herramienta
-de línea de comandos proporciona mecanismos para automatizar la generación de una aplicación para Shopify, además de muchas otras funcionalidades.
-Para generar la aplicación se ejecuta el siguiente comando desde el directorio en el que se desee almacenar la aplicación: 
-\begin{lstlisting}
-    npm init @shopify/app@latest -- --template=node
-\end{lstlisting}
-
-Este comando establece una estructura base sobre la cual comenzar a trabajar. Es importante destacar que se especifica el uso del template de aplicación basada en Node.js 
-para la generación del proyecto.
-
-Después de haber creado la aplicación inicial, el siguiente paso es generar una ``theme app extension'' sobre la cual se trabajará la parte visual del tema. Esta
-extensión permite la integración de la aplicación (\textit{frontend}) con el tema de la tienda de Shopify.
-
-Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el siguiente comando:
-
-\begin{lstlisting}
-    shopify app generate extension
-\end{lstlisting}
-
-Al ejecutar este comando hay que seleccionar el tipo de extensión que se desea implementar y proporcionar el nombre de la extensión. Una vez completado este proceso,
-se generará la estructura inicial de la extensión del tema, proporcionando una base sobre la que poder trabajar y desarrollar la parte del \textit{frontend} de la aplicación que se integrará con
-el tema de la tienda.
 
 Una vez se tiene la aplicación base con su theme app extensión correspondiente, ya se puede empezar a trabajar sobre la extensión para implementar la funcionalidades básicas.
 
