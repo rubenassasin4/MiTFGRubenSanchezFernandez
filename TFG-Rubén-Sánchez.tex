@@ -854,6 +854,210 @@ ordenada y eficiente, garantizando que cada fase del desarrollo se construyera s
 En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollo del \textit{backend}, la elaboración del \textit{frontend} de la parte de administración y una última sección donde se detallará el empleo de los paquetes personalizados (\textit{customized boundles}) y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
 proporciona una visión clara y organizada de la implementación del proyecto.
 
+
+\subsubsection{Aplicación}
+
+\clearpage
+\subsubsubsection{Implementación del frontend}
+
+Al crear una aplicación para Shopify, se genera una estructura \textit{frontend} que sigue los principios de una aplicación React. Esta estructura incluye directorios como assets para 
+archivos estáticos como imágenes, fuentes y ficheros CSS; components para componentes de React reutilizables como botones, barras de navegación y tarjetas de producto; 
+hooks que encapsulan la lógica de la aplicación; locales para almacenar las traducciones en los distintos idiomas; pages para definir las páginas principales de la aplicación; El fichero App.jsx como
+componente principal que actúa como contenedor de toda la interfaz de usuario y maneja el enrutamiento de la aplicación; index.jsx como el punto de entrada de la aplicación React donde
+se inicializa y se monta la aplicación enn el DOM del navegador; y Routes.jsx donde se definen las rutas de la aplicación utilizando un enrutador, para determinar qué componentes
+deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se puede observar una representación visual de esta estructura.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.1\textwidth]{imagenes-admin/EstructuraDirectoriosReact.png}
+    \caption{\label{fig:estructuraFront} Estructura de directorios del \textit{frontend} de React}
+    \vspace{\fill}
+\end{figure}
+
+En la parte del \textit{frontend} de la aplicación, se ha implementado una funcionalidad muy básica que consta de dos componentes de React (Figura~\ref{fig:componentes}). Cada componente representa una tarjeta que 
+contiene un texto explicativo de la acción que se llevará a cabo y un botón. Estas tarjetas están diseñadas para activar un par de llamadas al \textit{backend} cuando se hace clic en los 
+botones correspondientes. Este diseño proporciona una experiencia interactiva para los administradores de las tiendas, para que desde la interfaz de administración de la misma
+puedan activar un par de funcionalidades para crear los metadatos y metaobjetos necesarios para integrar la aplicación con la tienda y crear el objeto cart-transform que activa una funcionalidad
+de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observar la página principal en la que se renderizan estos componentes reutilizables.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.3\textwidth]{imagenes-admin/componentes-admin.png}
+    \caption{\label{fig:componentes} Componentes del \textit{frontend} }
+    \vspace{\fill}
+\end{figure}
+
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.3\textwidth]{imagenes-admin/paginaHome.png}
+    \caption{\label{fig:homepage} Página principal del \textit{frontend} de la aplicación }
+    \vspace{\fill}
+\end{figure}
+
+En la Figura~\ref{fig:componenteMetafield} se puede observar uno de los componentes. Este hace uso de la biblioteca Polaris de Shopify, que proporciona una serie de componentes predefinidos
+y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una aparencia coherente con el resto del panel de administración de la tienda.
+La función handlePopulate desempeña el papel de realizar la llamada a la ruta ``/api/meta/create'' para crear los \textit{metafields} y \textit{metaobjects} necesarios para la funcionalidad de personalización de productos.
+Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además se hace uso del componente Toast de app-bridge-react para mostrar
+mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el \textit{backend}. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
+de traducción que emplea los archivos de traducciones locales que se proporcionan (mostrados en la Figura~\ref{fig:localesAdmin}), para permitir una experiencia multilingüe, lo que mejora
+la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-admin/metafieldComponent.png}
+    \caption{\label{fig:componenteMetafield} Componente para la creación de \textit{metafields} }
+    \vspace{\fill}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-admin/locales-admin.png}
+    \caption{\label{fig:localesAdmin} Ficheros locales }
+    \vspace{\fill}
+\end{figure}
+
+El otro componente (``CartTrans'') es similar al anterior en estructura y funcionalidad. Este se encarga de renderizar la interfaz que permite al usuario realizar una llamada al \textit{backend} mediante
+la ruta ``/api/cart/create'' que ejecuta la funcionalidad para la creación del objeto cart-transform en la tienda.
+
+Por último, es importante destacar el empleo del app bridge en esta parte del \textit{frontend}. Su utilización proporciona una conexión deirecta entre la aplicación y el panel 
+de administración de Shopify, lo que permite a los administradore de la tienda poder interactuar con la interfaz de usuario implementada y acceder a las funcionalidades que estas aportan
+desde el panel de administración del a tienda.
+
+\clearpage
+\subsubsubsection{Implementación del backend}
+
+Para entender cómo funciona el \textit{backend} de esta aplicación, en primer lugar se va a examinar el archivo ``index.js''. Este fichero sirve como 
+punto de entrada de la aplicación, configurando y ejecutando el servidor Express para manejar las solicitudes HTTP entrantes. Este define funcionalidades
+esenciales, como la gestión de archivos mediante ``multer'' para subir archivos al servidor y la definición de rutas y controladores para ejecutar
+las acciones necesarias. Además, establece el puerto en el que el servidor escuchará las solicitudes entrantes, ya sea el puerto definido en las 
+variables de entorno o el puerto 3000 por defecto. Este fichero es fundamental para el funcionamiento del \textit{backend}.
+
+En la Figura~\ref{fig:configIndex} se observa la parte del código encargada de gestionar la subida de imágenes al servidor. El objetivo de esta 
+funcionalidad es permitir a los usuarios (que estén configurando un producto en el personalizador) subir una imagen por área, que represente la impresión que desea
+realizar en el producto. 
+
+Primero se define una función ``getFormattedDate()'' que obtiene la fecha actual. Luego, se utiliza esta fecha para crear una ruta de almacenamiento específica para 
+las imágenes que los usuario subirán desde la tienda, dentro de una carpeta llamada ``imagenes\_area\_pedidos'' con la fecha actual como nombre de subcarpeta (Figura~\ref{fig:carpetaImagenes}).
+Posteriormente, se configura el almacenamiento de multer para que las imágenes se guarden en la carpeta correspondiente según la fecha actual.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/configuracionIndexjs.png}
+    \caption{\label{fig:configIndex} Configuración del fichero \textit{index.js} }
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/almacenamientoCarpetaImagenes.png}
+    \caption{\label{fig:carpetaImagenes} Directorio para el almacenamiento de las imágenes }
+    \vspace{\fill}
+\end{figure}
+
+Cuando se recibe una solicitud POST en la ruta ``/upng-api/subir\_imagen'' (Figura~\ref{fig:endpointImagen}), se ejecuta una función asíncrona que verifica si se ha enviado
+un archivo en la solicitud. El \textit{endpoint} espera recibir un archivo de imagen en el cuerpo de la solicitud, junto con dos parámetros adicionales: el ``id'', que 
+representa el identificador único del pedido de impresión al que pertenece la imagen, y el ``index'', que indica el ínice del área del producto al 
+que pertenece la imagen. Estos datos se utilizan para generar un nombre de archivo único que incluye el ``id'' del pedido de impresión y el ``index'' del área,
+lo que faiclita al administrador de la tienda asociar las imágenes con los pedidos de los clientes correspondientes. Si se ha enviado el archivo y estos parámetros, se procede a generar un nuevo nombre de archivo. Luego, se lista y filtran los archivos del directorio para asegurarse de que no existen
+archivos con el mismo nombre base. Si existen, se eliminan. Después se renombra el archivo subido con el nuevo nombre generado y se envía una respuesta de éxito indicando
+que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devolverá una respuesta indicando que ha habido un error. 
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/endpointSubirImagen.png}
+    \caption{\label{fig:endpointImagen} EndPoint para el almacenamiento de imágenes }
+    \vspace{\fill}
+\end{figure}
+
+En la Figura~\ref{fig:endpointsAdmin}, se ilustran dos \textit{endpoints}: ``/api/meta/create'' y ``/api/cart/create''. Estos \textit{endpoints} serán
+llamados desde la parte de adminsitración de la aplicación para llevar a cabo las acciones específicas.
+
+El primer \textit{endpoint}, ``/api/meta/create'', es responsable de crear metadatos y metaobjetos necesarios para la aplicación. Cuando se realiza
+una solicitud GET a esta ruta, se ejecuta una función asíncrona que intenta crear estos metadatos utilizando la sesión de Shopify proporcionada.
+Si la operación se realiza correctamente, se devuelve una respuesta con un código de estado 200 y un cuerpo que indica el éxito de la operación. 
+En caso de que ocurra algún error durante el proceso, se captura la excepción y se devuelve una respuesta con un código 
+de estado 500 indicando el error.
+
+El segundo \textit{endpoint}, ``/api/cart/create'', busca crear el objeto cart-transform necesario para la aplicación. Al igual que el primer \textit{endpoint}, al recibir
+una solicitud GET en esta ruta, se ejecuta una función asíncrona que intenta crear el objeto cart-transform. En este caso también se devuelve un 
+mensaje de éxito o error, dependiendo del resultado de la operación.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/EndpointsAdmin.png}
+    \caption{\label{fig:endpointsAdmin} \textit{EndPoints} para la parte de administración }
+    \vspace{\fill}
+\end{figure}
+
+Las funciones a las que se llama en estos \textit{endpoints} están implementadas en los ficheros ``metafield-creator.js'' y ``function-cart-creator.js''.
+En la Figura~\ref{fig:funcionMetafields} se puede observar la función ``metaCreator''. Esta es una función asíncrona que acepta dos argumentos:
+``session'' y ``count'', este último tiene un valor predeterminado según las constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
+
+Dentro de la función se instancia un cliente de GraphQL utilizando la sesión proporcionada. Luego, se ejecuta una consulta GraphQL cuya query está definida en la constante ``CREATE\_METAOBJECT\_MUTATION''.  
+Esta mutación se lleva a cabo con el objetivo de crear el metaobjeto que representa las áreas de impresión. En la consulta, se introducen una serie de variantes definidas en constantes como ``NAMEMETAOBJECT'', 
+``TYPEMETAOBJECT'' y ``FIELDMETAOBJECT''. Si la creación del metaobjeto tiene éxito, se guardará el ID del nuevo objeto y se añadirá a las constantes 
+la información correspondiente para poder crear un metadato de este tipo.
+
+A continuación se realiza un bucle para crear metadatos utilizando definiciones en su mayoría configuradas en constantes. Dentro del bucle se ejecuta una consulta GraphQL para cada \textit{metafield} a crear, cuya mutación
+está definida en la constante  ``CREATE\_META\_MUTATION''.
+
+En caso de que se produzca algún error durante el proceso, se captura y maneja adecuadamente para lanzar el mensaje de error apropiado.
+
+El uso de constantes para definir las configuraciones de los \textit{metafields} y metaobjetos (Figura~\ref{fig:constantesMetafields}), así como las consulta GraphQL, permite que la creación
+de \textit{metafields} sea configurable, lo que implica que la aplicación puede crecer y permita añadir nuevos \textit{metafields} de manera más sencilla en el futuro 
+sin necesidad de modificar directamente el código fuente. Esto hace que el código sea más mantenible y escalable a medida que la 
+aplicación evoluciona.
+
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/funcionmetaCreator.png}
+    \caption{\label{fig:funcionMetafields} Función para la creación de metadatos y metaobjetos}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/metafieldCreatorConstantes1.png}
+    \caption{\label{fig:constantesMetafields} Constantes para estandarizar la funcionalidad de creación de metadatos }
+    \vspace{\fill}
+\end{figure}
+
+La función ``cartCreator'' es similar a ``metaCreator'' en su estructura. En ella se instancia un cliente GraphQL haciendo uso de la sesión
+proporcionada. Luego se ejecuta una consulta GraphQL empleando la mutación correspondiente. Esta consulta 
+busca entre todas las funciones registradas en la tienda (Shopify functions) y filtra aquella que corresponde con esta aplicación y tiene el título ``cart-transform''.
+Es decir trata de buscar la función que se ha definido en esta aplicación para aplicar la transformación de carrito. Si la encuentra, guarda su ID.
+
+Después, se ejecuta una mutación GraphQL para crear el objeto ``cart-transform'' empleando la mutación adecuada (definida también en una constante), pasándole
+el ID de la función como variable en la mutación. En esta función también se realiza el correspondiente tratamiento de errores y como se ha comentado
+se hace uso de constantes para definir las consultas GraphQL permitiendo que el proceso sea configurable y adaptable a cualquier cambio en las mutaciones
+o consultas para facilitar la mantenibilidad del código. En la Figura~\ref{fig:funcioncartCreat} puede observarse la función descrita.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes-back/funcionCartCreator.png}
+    \caption{\label{fig:funcioncartCreat} Función para la creación del objeto cart-transform}
+    \vspace{\fill}
+\end{figure}
+
+\clearpage
 \subsubsection{Implementación del Theme app extension}
 Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una tienda de desarrollo de Shopify Plus que constituye un entorno de pruebas con datos ficticios.
 Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todas las modificaciones e implementaciones
@@ -1258,209 +1462,6 @@ observar esta operación.
     \caption{\label{fig:addCarritoFuncion} Añadir los productos al carrito}
     \vspace{\fill}
 \end{figure}
-
-\subsubsection{Aplicación}
-
-\clearpage
-\subsubsubsection{Implementación del frontend}
-
-Al crear una aplicación para Shopify, se genera una estructura \textit{frontend} que sigue los principios de una aplicación React. Esta estructura incluye directorios como assets para 
-archivos estáticos como imágenes, fuentes y ficheros CSS; components para componentes de React reutilizables como botones, barras de navegación y tarjetas de producto; 
-hooks que encapsulan la lógica de la aplicación; locales para almacenar las traducciones en los distintos idiomas; pages para definir las páginas principales de la aplicación; El fichero App.jsx como
-componente principal que actúa como contenedor de toda la interfaz de usuario y maneja el enrutamiento de la aplicación; index.jsx como el punto de entrada de la aplicación React donde
-se inicializa y se monta la aplicación enn el DOM del navegador; y Routes.jsx donde se definen las rutas de la aplicación utilizando un enrutador, para determinar qué componentes
-deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se puede observar una representación visual de esta estructura.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.1\textwidth]{imagenes-admin/EstructuraDirectoriosReact.png}
-    \caption{\label{fig:estructuraFront} Estructura de directorios del \textit{frontend} de React}
-    \vspace{\fill}
-\end{figure}
-
-En la parte del \textit{frontend} de la aplicación, se ha implementado una funcionalidad muy básica que consta de dos componentes de React (Figura~\ref{fig:componentes}). Cada componente representa una tarjeta que 
-contiene un texto explicativo de la acción que se llevará a cabo y un botón. Estas tarjetas están diseñadas para activar un par de llamadas al \textit{backend} cuando se hace clic en los 
-botones correspondientes. Este diseño proporciona una experiencia interactiva para los administradores de las tiendas, para que desde la interfaz de administración de la misma
-puedan activar un par de funcionalidades para crear los metadatos y metaobjetos necesarios para integrar la aplicación con la tienda y crear el objeto cart-transform que activa una funcionalidad
-de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observar la página principal en la que se renderizan estos componentes reutilizables.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.3\textwidth]{imagenes-admin/componentes-admin.png}
-    \caption{\label{fig:componentes} Componentes del \textit{frontend} }
-    \vspace{\fill}
-\end{figure}
-
-
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.3\textwidth]{imagenes-admin/paginaHome.png}
-    \caption{\label{fig:homepage} Página principal del \textit{frontend} de la aplicación }
-    \vspace{\fill}
-\end{figure}
-
-En la Figura~\ref{fig:componenteMetafield} se puede observar uno de los componentes. Este hace uso de la biblioteca Polaris de Shopify, que proporciona una serie de componentes predefinidos
-y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una aparencia coherente con el resto del panel de administración de la tienda.
-La función handlePopulate desempeña el papel de realizar la llamada a la ruta ``/api/meta/create'' para crear los \textit{metafields} y \textit{metaobjects} necesarios para la funcionalidad de personalización de productos.
-Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además se hace uso del componente Toast de app-bridge-react para mostrar
-mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el \textit{backend}. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
-de traducción que emplea los archivos de traducciones locales que se proporcionan (mostrados en la Figura~\ref{fig:localesAdmin}), para permitir una experiencia multilingüe, lo que mejora
-la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
-
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-admin/metafieldComponent.png}
-    \caption{\label{fig:componenteMetafield} Componente para la creación de \textit{metafields} }
-    \vspace{\fill}
-\end{figure}
-
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-admin/locales-admin.png}
-    \caption{\label{fig:localesAdmin} Ficheros locales }
-    \vspace{\fill}
-\end{figure}
-
-El otro componente (``CartTrans'') es similar al anterior en estructura y funcionalidad. Este se encarga de renderizar la interfaz que permite al usuario realizar una llamada al \textit{backend} mediante
-la ruta ``/api/cart/create'' que ejecuta la funcionalidad para la creación del objeto cart-transform en la tienda.
-
-Por último, es importante destacar el empleo del app bridge en esta parte del \textit{frontend}. Su utilización proporciona una conexión deirecta entre la aplicación y el panel 
-de administración de Shopify, lo que permite a los administradore de la tienda poder interactuar con la interfaz de usuario implementada y acceder a las funcionalidades que estas aportan
-desde el panel de administración del a tienda.
-
-\clearpage
-\subsubsubsection{Implementación del backend}
-
-Para entender cómo funciona el \textit{backend} de esta aplicación, en primer lugar se va a examinar el archivo ``index.js''. Este fichero sirve como 
-punto de entrada de la aplicación, configurando y ejecutando el servidor Express para manejar las solicitudes HTTP entrantes. Este define funcionalidades
-esenciales, como la gestión de archivos mediante ``multer'' para subir archivos al servidor y la definición de rutas y controladores para ejecutar
-las acciones necesarias. Además, establece el puerto en el que el servidor escuchará las solicitudes entrantes, ya sea el puerto definido en las 
-variables de entorno o el puerto 3000 por defecto. Este fichero es fundamental para el funcionamiento del \textit{backend}.
-
-En la Figura~\ref{fig:configIndex} se observa la parte del código encargada de gestionar la subida de imágenes al servidor. El objetivo de esta 
-funcionalidad es permitir a los usuarios (que estén configurando un producto en el personalizador) subir una imagen por área, que represente la impresión que desea
-realizar en el producto. 
-
-Primero se define una función ``getFormattedDate()'' que obtiene la fecha actual. Luego, se utiliza esta fecha para crear una ruta de almacenamiento específica para 
-las imágenes que los usuario subirán desde la tienda, dentro de una carpeta llamada ``imagenes\_area\_pedidos'' con la fecha actual como nombre de subcarpeta (Figura~\ref{fig:carpetaImagenes}).
-Posteriormente, se configura el almacenamiento de multer para que las imágenes se guarden en la carpeta correspondiente según la fecha actual.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/configuracionIndexjs.png}
-    \caption{\label{fig:configIndex} Configuración del fichero \textit{index.js} }
-    \vspace{\fill}
-\end{figure}
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/almacenamientoCarpetaImagenes.png}
-    \caption{\label{fig:carpetaImagenes} Directorio para el almacenamiento de las imágenes }
-    \vspace{\fill}
-\end{figure}
-
-Cuando se recibe una solicitud POST en la ruta ``/upng-api/subir\_imagen'' (Figura~\ref{fig:endpointImagen}), se ejecuta una función asíncrona que verifica si se ha enviado
-un archivo en la solicitud. El \textit{endpoint} espera recibir un archivo de imagen en el cuerpo de la solicitud, junto con dos parámetros adicionales: el ``id'', que 
-representa el identificador único del pedido de impresión al que pertenece la imagen, y el ``index'', que indica el ínice del área del producto al 
-que pertenece la imagen. Estos datos se utilizan para generar un nombre de archivo único que incluye el ``id'' del pedido de impresión y el ``index'' del área,
-lo que faiclita al administrador de la tienda asociar las imágenes con los pedidos de los clientes correspondientes. Si se ha enviado el archivo y estos parámetros, se procede a generar un nuevo nombre de archivo. Luego, se lista y filtran los archivos del directorio para asegurarse de que no existen
-archivos con el mismo nombre base. Si existen, se eliminan. Después se renombra el archivo subido con el nuevo nombre generado y se envía una respuesta de éxito indicando
-que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devolverá una respuesta indicando que ha habido un error. 
-
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/endpointSubirImagen.png}
-    \caption{\label{fig:endpointImagen} EndPoint para el almacenamiento de imágenes }
-    \vspace{\fill}
-\end{figure}
-
-En la Figura~\ref{fig:endpointsAdmin}, se ilustran dos \textit{endpoints}: ``/api/meta/create'' y ``/api/cart/create''. Estos \textit{endpoints} serán
-llamados desde la parte de adminsitración de la aplicación para llevar a cabo las acciones específicas.
-
-El primer \textit{endpoint}, ``/api/meta/create'', es responsable de crear metadatos y metaobjetos necesarios para la aplicación. Cuando se realiza
-una solicitud GET a esta ruta, se ejecuta una función asíncrona que intenta crear estos metadatos utilizando la sesión de Shopify proporcionada.
-Si la operación se realiza correctamente, se devuelve una respuesta con un código de estado 200 y un cuerpo que indica el éxito de la operación. 
-En caso de que ocurra algún error durante el proceso, se captura la excepción y se devuelve una respuesta con un código 
-de estado 500 indicando el error.
-
-El segundo \textit{endpoint}, ``/api/cart/create'', busca crear el objeto cart-transform necesario para la aplicación. Al igual que el primer \textit{endpoint}, al recibir
-una solicitud GET en esta ruta, se ejecuta una función asíncrona que intenta crear el objeto cart-transform. En este caso también se devuelve un 
-mensaje de éxito o error, dependiendo del resultado de la operación.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/EndpointsAdmin.png}
-    \caption{\label{fig:endpointsAdmin} \textit{EndPoints} para la parte de administración }
-    \vspace{\fill}
-\end{figure}
-
-Las funciones a las que se llama en estos \textit{endpoints} están implementadas en los ficheros ``metafield-creator.js'' y ``function-cart-creator.js''.
-En la Figura~\ref{fig:funcionMetafields} se puede observar la función ``metaCreator''. Esta es una función asíncrona que acepta dos argumentos:
-``session'' y ``count'', este último tiene un valor predeterminado según las constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
-
-Dentro de la función se instancia un cliente de GraphQL utilizando la sesión proporcionada. Luego, se ejecuta una consulta GraphQL cuya query está definida en la constante ``CREATE\_METAOBJECT\_MUTATION''.  
-Esta mutación se lleva a cabo con el objetivo de crear el metaobjeto que representa las áreas de impresión. En la consulta, se introducen una serie de variantes definidas en constantes como ``NAMEMETAOBJECT'', 
-``TYPEMETAOBJECT'' y ``FIELDMETAOBJECT''. Si la creación del metaobjeto tiene éxito, se guardará el ID del nuevo objeto y se añadirá a las constantes 
-la información correspondiente para poder crear un metadato de este tipo.
-
-A continuación se realiza un bucle para crear metadatos utilizando definiciones en su mayoría configuradas en constantes. Dentro del bucle se ejecuta una consulta GraphQL para cada \textit{metafield} a crear, cuya mutación
-está definida en la constante  ``CREATE\_META\_MUTATION''.
-
-En caso de que se produzca algún error durante el proceso, se captura y maneja adecuadamente para lanzar el mensaje de error apropiado.
-
-El uso de constantes para definir las configuraciones de los \textit{metafields} y metaobjetos (Figura~\ref{fig:constantesMetafields}), así como las consulta GraphQL, permite que la creación
-de \textit{metafields} sea configurable, lo que implica que la aplicación puede crecer y permita añadir nuevos \textit{metafields} de manera más sencilla en el futuro 
-sin necesidad de modificar directamente el código fuente. Esto hace que el código sea más mantenible y escalable a medida que la 
-aplicación evoluciona.
-
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/funcionmetaCreator.png}
-    \caption{\label{fig:funcionMetafields} Función para la creación de metadatos y metaobjetos}
-    \vspace{\fill}
-\end{figure}
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/metafieldCreatorConstantes1.png}
-    \caption{\label{fig:constantesMetafields} Constantes para estandarizar la funcionalidad de creación de metadatos }
-    \vspace{\fill}
-\end{figure}
-
-La función ``cartCreator'' es similar a ``metaCreator'' en su estructura. En ella se instancia un cliente GraphQL haciendo uso de la sesión
-proporcionada. Luego se ejecuta una consulta GraphQL empleando la mutación correspondiente. Esta consulta 
-busca entre todas las funciones registradas en la tienda (Shopify functions) y filtra aquella que corresponde con esta aplicación y tiene el título ``cart-transform''.
-Es decir trata de buscar la función que se ha definido en esta aplicación para aplicar la transformación de carrito. Si la encuentra, guarda su ID.
-
-Después, se ejecuta una mutación GraphQL para crear el objeto ``cart-transform'' empleando la mutación adecuada (definida también en una constante), pasándole
-el ID de la función como variable en la mutación. En esta función también se realiza el correspondiente tratamiento de errores y como se ha comentado
-se hace uso de constantes para definir las consultas GraphQL permitiendo que el proceso sea configurable y adaptable a cualquier cambio en las mutaciones
-o consultas para facilitar la mantenibilidad del código. En la Figura~\ref{fig:funcioncartCreat} puede observarse la función descrita.
-
-\begin{figure}[ht]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/funcionCartCreator.png}
-    \caption{\label{fig:funcioncartCreat} Función para la creación del objeto cart-transform}
-    \vspace{\fill}
-\end{figure}
-
 
 \clearpage
 \subsubsection{Implementación de la extensión de transformación de carrito}
