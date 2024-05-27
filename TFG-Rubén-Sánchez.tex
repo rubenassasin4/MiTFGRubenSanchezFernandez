@@ -19,6 +19,9 @@
 \usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
 \usepackage{listings}
 \usepackage{amsmath, amsthm, amssymb, tabu}
 \usepackage{array}
@@ -32,6 +35,7 @@
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \definecolor{gray}{rgb}{0.5, 0.5, 0.5}
+\geometry{a4paper, margin=1in}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
@@ -137,6 +141,7 @@
 \addtocontents{toc}{\vspace{\baselineskip}}
 \newpage
 \listoffigures
+\listoftables
 \newpage
 \clearpage
 \pagestyle{fancy}
@@ -160,10 +165,10 @@ una aplicación versátil y escalable para Shopify, que proporcione a los comerc
 Las herramientas y tecnologías seleccionadas incluyen Shopify como plataforma base, React para el \textit{frontend} para la parte de administración, Liquid, JavaScript y HTML 
 para la extensión del tema, Node.js junto con Express para el \textit{backend}, 
 y Visual Studio Code como entorno de desarrollo. Se siguió una metodología ágil con iteraciones e incrementos, priorizando la adaptabilidad a las 
-necesidades de los clientes. El diseño se centró en historias de usuario, que sirvieron como guía para comprender las necesidades de los usuarios y 
+necesidades de los clientes. El análisis y diseño se centraron en historias de usuario, que sirvieron como guía para comprender las necesidades de los usuarios y 
 traducirlas en funcionalidades concretas.
 
-La implementación de la aplicación se dividió en cuatro partes: creación de la aplicación y extensión del tema de la tienda, desarrollo del \textit{backend}, 
+La implementación de la aplicación se dividió en tres partes fundamentales: creación de la aplicación (\textit{backend} y \textit{frontend}), creación de la extensión del tema de la tienda (interfaz de la tienda), desarrollo del \textit{backend}, 
 elaboración del \textit{frontend} de la parte de administración, y detalles de la implementación de paquetes personalizados (\textit{customized bundles}). Se llevaron a cabo pruebas continuas 
 para verificar el funcionamiento de las funcionalidades implementadas, con pruebas manuales en el \textit{frontend} y \textit{backend}.
 
@@ -839,10 +844,118 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
     \item Se debe utilizar la funcionalidad de paquetes de productos personalizados (\textit{customized bundles}) para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
 \end{enumerate}
 
+\clearpage
 \subsection{Diseño}
 
+En cuanto al diseño de la aplicación, en la Figura~\ref{fig:esquemaAplicacion} se puede observar el esquema del diseño de la app.
+Se distinguen tres grandes componentes principales:
 
+En primer lugar, está la aplicación principal, que consta de una parte de \textit{backend} y una parte de \textit{frontend}.
+El \textit{backend} es responsable del desarrollo de todos los endpoints y funcionalidades necesarias para el correcto 
+funcionamiento de la aplicación. Por su parte, el \textit{frontend} se encargará de implementar la interfaz de usuario, 
+la cual se integrará en el panel de administración de la tienda. Esta interfaz permitirá al administrador acceder 
+a todas las funcionalidades implementadas en la app desde el propio panel de administración. Entre estas funcionalidades 
+se incluyen la creación automática de los metadatos y metaobjetos necesarios, así como la creación del objeto de transformación de carrito.
 
+En segundo lugar, se encuentra la extensión de tema. Esta extensión se integrará en el tema de la tienda, 
+ampliando la interfaz de usuario con funcionalidades y elementos específicos para la personalización de artículos. 
+La extensión de tema realizará llamadas al \textit{backend} de la aplicación para enviar y almacenar las imágenes que los usuarios 
+configuren para la impresión de sus productos personalizados desde la interfaz de la tienda.
+
+Finalmente, la tercera componente es una extensión denominada \textit{cart-transform}. Esta extensión se implementará utilizando 
+una funcionalidad de Shopify que permite realizar transformaciones en el carrito, asociando los elementos de un mismo 
+pedido de personalización en un único paquete.
+
+En la Figura~\ref{fig:esquemaAplicacionReal} se aprecia la estructura de la aplicación, donde se distingue claramente
+la aplicación principal ubicada en el directorio \textit{web}, junto con las dos extensiones adicionales ubicadas en el directorio \textit{extensions}.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes-diseño/Esquema de diseño de la aplicación.png}
+    \caption{\label{fig:esquemaAplicacion}Esquema del diseño de la aplicación}
+    \vspace{\fill}
+\end{figure}
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.2\textwidth]{imagenes-diseño/estructura-aplicacion.png}
+    \caption{\label{fig:esquemaAplicacionReal}Estructura de la aplicación}
+    \vspace{\fill}
+\end{figure}
+
+A continuación, se presentarán varios subapartados que explican tanto el diseño de los dos componentes
+de la aplicación principal como el diseño de la extensión de tema. 
+
+\subsubsection{Diseño del frontend}
+
+En lo que respecta al \textit{frontend} de la aplicación, se ha optado por un diseño que busca reflejar una interfaz atractiva
+y que se integre visualmente de manera armoniosa con el panel de administración de la tienda. 
+Este diseño se basa en una interfaz de ejemplo generada al crear una aplicación en Shopify utilizando 
+una plantilla predeterminada. En esta interfaz, se presentan una serie de tarjetas, cada una con un mensaje 
+explicativo y un botón destinado a activar una funcionalidad específica. En este caso, se generará una tarjeta 
+para cada funcionalidad necesaria(creación de metadatos y objeto de transformación de carrito), junto con su respectivo botón encargado de 
+activar dichas funcionalidades. En la Figura~\ref{fig:disenoFront} se puede observar el ejemplo en el que se ha basado el diseño de esta interfaz.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes-diseño/diseñoFrontend.png}
+    \caption{\label{fig:disenoFront}Ejemplo para el diseño del frontend de la aplicación}
+    \vspace{\fill}
+\end{figure}
+
+\subsubsection{Diseño del backend}
+En cuanto al diseño del \textit{backend}, como se ha comentado, este recibirá llamadas tanto de la interfaz de administración {\textit{frontend} de la app} como
+desde la propia tienda (extensión de la aplicación de tema). Cada punto de acceso realizará las acciones oportunas para cumplir con su propósito.
+
+En la Tabla \ref{tab:endpoints} se detallan los \textit{endpoints} de la API diseñados para la aplicación. 
+Cada fila de la tabla representa un endpoint único, proporcionando información sobre el método HTTP 
+utilizado (POST o GET), la ruta del punto de acceso, una breve descripción de su función y los parámetros 
+requeridos para la solicitud.
+
+El primer \textit{endpoint} permite la carga de imágenes al servidor para su almacenamiento, siendo esta ruta invocada 
+desde la extensión de tema. Los otros dos \textit{endpoints} se refieren a las llamadas necesarias para crear metadatos, 
+metacampos y objetos esenciales para la configuración de la aplicación. Estas rutas son activadas desde el frontend de la aplicación.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \textbf{Método} & \textbf{Ruta} & \textbf{Descripción} & \textbf{Parámetros} \\
+        \hline
+        POST & \texttt{/upng-api/subir
+        \_imagen} & Subir una imagen & 
+        \texttt{req.body.id}, \texttt{req.body.index}, \texttt{req.file} \\
+        \hline
+        GET & \texttt{/api/meta/create} & Crear metadatos y metaobjetos necesarios & Ninguno \\
+        \hline
+        GET & \texttt{/api/cart/create} & Crear objeto 
+        cart-transform & Ninguno \\
+        \hline
+    \end{tabularx}
+    \caption{Endpoints de la API}
+    \label{tab:endpoints}
+\end{table}
+
+\subsubsection{Diseño de la extensión de tema}
+En lo que respecta a la extensión del tema, su diseño viene fuertemente influenciado por algunos ejemplos de implementaciones reales que la empresa ha desarrollado para otros clientes 
+mediante la tecnología \textit{epages}. En la Figura~\ref{fig:disenoExtension} se puede observar uno de los ejemplos en los que se ha basado la creación de la interfaz
+de personalización de productos. En la página de producto existe un botón encargado de abrir este modal que proporciona todas los elementos de configuración necesarios.
+
+\begin{figure}[ht]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes-diseño/diseñoPersonalizador.png}
+    \caption{\label{fig:disenoExtension}Ejemplo para el diseño de la extensión de tema}
+    \vspace{\fill}
+\end{figure}
+
+Una vez análizadas las historias de usuario y elaborado el diseño de la aplicación, se elaboraron una serie de tareas que sirvieron para guiar la implementación del proyecto.
+En el Anexo~\ref{sec:tareas}, pueden observarse las tareas que se han elaborado.
+
+\clearpage
 \subsection{Implementación}
 La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas.
 Es importante remarcar que el proceso de implementación siguió una metodología iterativa e incremental como ya se ha comentado. Inicialmente, se llevó a cabo el desarrollo
@@ -1702,6 +1815,8 @@ para instalarla en la tienda que lo solicite (Figura~\ref{fig:DistributionAppPar
     \vspace{\fill}
 \end{figure}
 
+En el Anexo~\ref{sec:manual}, se puede observar un manual de usuario en el que puede verse la aplicación desplegada en una tienda de pruebas, su integración
+con la misma y el modo de empleo de las funcionalidades que aporta.
 
 \clearpage
 \section{Conclusiones y vías futuras}
@@ -1903,7 +2018,7 @@ es muy poco intuitiva y atractiva para los clientes.
 \clearpage
 \section{Anexos}
 
-\subsection{Manual de usuario}
+\subsection{Manual de usuario}\label{sec:manual}
 En este apartado se mostrará y explicará de una forma visual la manera de uso de la aplicación desarrollada. Se mostrará tanto el proceso para integrar la aplicación con una tienda, como
 su funcionamiento dentro de la misma.
 
@@ -2101,7 +2216,7 @@ y completar el pedido.
 \end{figure}
 
 \clearpage
-\subsection{Tareas}
+\subsection{Tareas}\label{sec:tareas}
 
 En el desarrollo de este Trabajo de Fin de Grado (TFG), el diseño de la aplicación ha sido una parte fundamental que ha sentado las bases para la implementación
 de las funcionalidades requeridas. Este diseño se ha basado en un minucioso estudio de las tecnologías pertinentes, así como en la comprensión detallada de las

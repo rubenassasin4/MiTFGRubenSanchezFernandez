@@ -164,6 +164,10 @@ INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\dat
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\datetime\dt-spanish.def
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
@@ -180,8 +184,6 @@ INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\ams
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tabu\tabu.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tabu\tabu.sty
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
-INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\varwidth\varwidth.sty
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\tools\multicol.sty
@@ -291,6 +293,10 @@ INPUT .\TFG-Rubén-Sánchez.lof
 INPUT TFG-Rubén-Sánchez.lof
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 OUTPUT TFG-Rubén-Sánchez.lof
+INPUT .\TFG-Rubén-Sánchez.lot
+INPUT .\TFG-Rubén-Sánchez.lot
+INPUT TFG-Rubén-Sánchez.lot
+OUTPUT TFG-Rubén-Sánchez.lot
 INPUT .\Anexo_Firmado_Upango.png
 INPUT .\Anexo_Firmado_Upango.png
 INPUT .\Anexo_Firmado_Upango.png
@@ -334,45 +340,73 @@ INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT .\imagenes\Estados y prioridad de tarea.png
 INPUT .\imagenes\Estados y prioridad de tarea.png
-INPUT .\imagenesUS2\configuracionAdministradorTienda.png
-INPUT .\imagenesUS2\configuracionAdministradorTienda.png
-INPUT .\imagenesUS2\configuracionAdministradorTienda.png
-INPUT .\imagenesUS2\configuracionAdministradorTienda.png
-INPUT .\imagenesUS2\configuracionAdministradorTienda.png
-INPUT .\imagenesUS2\configuracionAdministradorTienda.png
-INPUT .\imagenesUS2\configuracionAdministradorTienda.png
-INPUT .\imagenesUS2\creacionMetaobjeto.png
-INPUT .\imagenesUS2\creacionMetaobjeto.png
-INPUT .\imagenesUS2\creacionMetaobjeto.png
-INPUT .\imagenesUS2\creacionMetaobjeto.png
-INPUT .\imagenesUS2\creacionMetaobjeto.png
-INPUT .\imagenesUS2\creacionMetaobjeto.png
-INPUT .\imagenesUS2\creacionMetaobjeto.png
-INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
-INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
-INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
-INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
-INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
-INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
-INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
-INPUT .\imagenesUS2\creacionMetafields.png
-INPUT .\imagenesUS2\creacionMetafields.png
-INPUT .\imagenesUS2\creacionMetafields.png
-INPUT .\imagenesUS2\creacionMetafields.png
-INPUT .\imagenesUS2\creacionMetafields.png
-INPUT .\imagenesUS2\creacionMetafields.png
-INPUT .\imagenesUS2\creacionMetafields.png
-INPUT .\imagenesUS2\metafieldsAdicionales.png
-INPUT .\imagenesUS2\metafieldsAdicionales.png
-INPUT .\imagenesUS2\metafieldsAdicionales.png
-INPUT .\imagenesUS2\metafieldsAdicionales.png
-INPUT .\imagenesUS2\metafieldsAdicionales.png
-INPUT .\imagenesUS2\metafieldsAdicionales.png
-INPUT .\imagenesUS2\metafieldsAdicionales.png
+INPUT .\imagenes-diseño\Esquema de diseño de la aplicación.png
+INPUT .\imagenes-diseño\Esquema de diseño de la aplicación.png
+INPUT .\imagenes-diseño\Esquema de diseño de la aplicación.png
+INPUT .\imagenes-diseño\Esquema de diseño de la aplicación.png
+INPUT .\imagenes-diseño\Esquema de diseño de la aplicación.png
+INPUT .\imagenes-diseño\Esquema de diseño de la aplicación.png
+INPUT .\imagenes-diseño\Esquema de diseño de la aplicación.png
+INPUT .\imagenes-diseño\estructura-aplicacion.png
+INPUT .\imagenes-diseño\estructura-aplicacion.png
+INPUT .\imagenes-diseño\estructura-aplicacion.png
+INPUT .\imagenes-diseño\estructura-aplicacion.png
+INPUT .\imagenes-diseño\estructura-aplicacion.png
+INPUT .\imagenes-diseño\estructura-aplicacion.png
+INPUT .\imagenes-diseño\estructura-aplicacion.png
+INPUT .\imagenes-diseño\diseñoFrontend.png
+INPUT .\imagenes-diseño\diseñoFrontend.png
+INPUT .\imagenes-diseño\diseñoFrontend.png
+INPUT .\imagenes-diseño\diseñoFrontend.png
+INPUT .\imagenes-diseño\diseñoFrontend.png
+INPUT .\imagenes-diseño\diseñoFrontend.png
+INPUT .\imagenes-diseño\diseñoFrontend.png
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
+INPUT .\imagenes-diseño\diseñoPersonalizador.png
+INPUT .\imagenes-diseño\diseñoPersonalizador.png
+INPUT .\imagenes-diseño\diseñoPersonalizador.png
+INPUT .\imagenes-diseño\diseñoPersonalizador.png
+INPUT .\imagenes-diseño\diseñoPersonalizador.png
+INPUT .\imagenes-diseño\diseñoPersonalizador.png
+INPUT .\imagenes-diseño\diseñoPersonalizador.png
+INPUT .\imagenesUS2\configuracionAdministradorTienda.png
+INPUT .\imagenesUS2\configuracionAdministradorTienda.png
+INPUT .\imagenesUS2\configuracionAdministradorTienda.png
+INPUT .\imagenesUS2\configuracionAdministradorTienda.png
+INPUT .\imagenesUS2\configuracionAdministradorTienda.png
+INPUT .\imagenesUS2\configuracionAdministradorTienda.png
+INPUT .\imagenesUS2\configuracionAdministradorTienda.png
+INPUT .\imagenesUS2\creacionMetaobjeto.png
+INPUT .\imagenesUS2\creacionMetaobjeto.png
+INPUT .\imagenesUS2\creacionMetaobjeto.png
+INPUT .\imagenesUS2\creacionMetaobjeto.png
+INPUT .\imagenesUS2\creacionMetaobjeto.png
+INPUT .\imagenesUS2\creacionMetaobjeto.png
+INPUT .\imagenesUS2\creacionMetaobjeto.png
+INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
+INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
+INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
+INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
+INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
+INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
+INPUT .\imagenesUS2\elementosMetaobjectAdicionales.png
+INPUT .\imagenesUS2\creacionMetafields.png
+INPUT .\imagenesUS2\creacionMetafields.png
+INPUT .\imagenesUS2\creacionMetafields.png
+INPUT .\imagenesUS2\creacionMetafields.png
+INPUT .\imagenesUS2\creacionMetafields.png
+INPUT .\imagenesUS2\creacionMetafields.png
+INPUT .\imagenesUS2\creacionMetafields.png
+INPUT .\imagenesUS2\metafieldsAdicionales.png
+INPUT .\imagenesUS2\metafieldsAdicionales.png
+INPUT .\imagenesUS2\metafieldsAdicionales.png
+INPUT .\imagenesUS2\metafieldsAdicionales.png
+INPUT .\imagenesUS2\metafieldsAdicionales.png
+INPUT .\imagenesUS2\metafieldsAdicionales.png
+INPUT .\imagenesUS2\metafieldsAdicionales.png
 INPUT C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT .\imagenes-admin\EstructuraDirectoriosReact.png
 INPUT .\imagenes-admin\EstructuraDirectoriosReact.png
