@@ -161,7 +161,7 @@ necesidades de los clientes. El diseño se centró en historias de usuario, que 
 traducirlas en funcionalidades concretas.
 
 La implementación de la aplicación se dividió en cuatro partes: creación de la aplicación y extensión del tema de la tienda, desarrollo del \textit{backend}, 
-elaboración del \textit{frontend} de la parte de administración, y detalles de la implementación de paquetes personalizados (\textit{customize bundles}). Se llevaron a cabo pruebas continuas 
+elaboración del \textit{frontend} de la parte de administración, y detalles de la implementación de paquetes personalizados (\textit{customized bundles}). Se llevaron a cabo pruebas continuas 
 para verificar el funcionamiento de las funcionalidades implementadas, con pruebas manuales en el \textit{frontend} y \textit{backend}.
 
 El despliegue de la aplicación se realizó de forma local utilizando herramientas de Shopify y Cloudflare. En conclusión, el proyecto logró sus 
@@ -749,7 +749,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
               \item Los productos ``trabajo'' seleccionados en diferentes áreas, con la variante adecuada según el número de colores seleccionados.
               \item Los productos ``clichés'' asociados al trabajo, con la variante adecuada según si es de repetición o no.
           \end{itemize}
-    \item Se debe investigar si el uso de \textit{customized bundles} es adecuado para agrupar y vincular los productos relacionados en el carrito.
+    \item Se debe investigar si el uso de la funcionalidad de paquetes personalizados (\textit{customized bundles}) es adecuado para agrupar y vincular los productos relacionados en el carrito.
     \item Estos productos tienen que estar agrupados y de forma que no se puedan eliminar o editar por separado.
     \item Toda la información de impresión configurada (medidas, colores, imagen adjunta y observaciones de cada área) debe guardarse al añadir al carrito, para que pueda transferirse al pedido durante el proceso de checkout.
     \item La cantidad de cada producto añadido al carrito debe ser considerada y reflejada correctamente.
@@ -760,7 +760,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \subsubsubsection{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}\label{sec:historia5}
 
 \textbf{Como} administrador de la plataforma,
-\textbf{quiero} que los paquetes de productos de impresión (\textit{customize bundles}), se visualicen completamente de forma agrupada en el carrito de la tienda,
+\textbf{quiero} que los paquetes de productos de impresión (\textit{customized bundles}), se visualicen completamente de forma agrupada en el carrito de la tienda,
 \textbf{para} proporcionar una experiencia de compra clara y comprensible para los clientes.
 
 \vspace{0.5cm}
@@ -833,7 +833,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
     \item Se debe crear un producto especial con un precio de un céntimo, que se utilizará para añadir el importe del canon digital al carrito de compra.
     \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto (ya sea un producto normal o uno personalizado).
     \item La línea de canon digital debe estar vinculada al producto correspondiente y reflejar el importe del canon establecido para ese producto.
-    \item Se deben utilizar \textit{customize bundles} para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
+    \item Se debe utilizar la funcionalidad de paquetes de productos personalizados (\textit{customized bundles}) para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
 \end{enumerate}
 
 \subsection{Diseño}
@@ -848,7 +848,7 @@ la implementación de estas tareas, las cuales abordaban los requisitos esencial
 proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
-En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollo del \textit{backend}, la elaboración del \textit{frontend} de la parte de administración y una última sección donde se detallará el empleo de los paquetes personalizados (\textit{customize boundles}) y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
+En esta sección, se presentará la implementación dividida en cuatro partes: la creación de la aplicación y la extensión de tema, el desarrollo del \textit{backend}, la elaboración del \textit{frontend} de la parte de administración y una última sección donde se detallará el empleo de los paquetes personalizados (\textit{customized boundles}) y las modificaciones realizadas en un tema estandar de la tienda. Esta división 
 proporciona una visión clara y organizada de la implementación del proyecto.
 
 \subsubsection{Creación de la aplicación e implementación del theme app extension}
@@ -1459,15 +1459,15 @@ o consultas para facilitar la mantenibilidad del código. En la Figura~\ref{fig:
 
 
 \clearpage
-\subsubsection{Implementación de customize bundles y modificación de tema}
-En esta sección se mostrará la investigación e implementación de los paquetes personalizados (\textit{customize bundles}) para agrupar y vincular los
+\subsubsection{Implementación de customized bundles y modificación de tema}
+En esta sección se mostrará la investigación e implementación de los paquetes personalizados (\textit{customized bundles}) para agrupar y vincular los
 productos de los paquetes de impresión. Una vez añadidos los productos al carrito, esta funcionalidad permitirá relacionar en paquetes, los productos de los pedidos personalizados, de forma que no se puedan borrar
 o editar por separado. Además, se realizará una nueva versión de la sección de desglose de artículos del carrito. Esto se debe a que en el tema estandar no se muestran los artículos de un paquete 
 de impresión. En esta, se pinta un solo elemento con el precio total del conjunto. El usuario final debe poder visualizar en el carrito un desglose de los paquetes con todos los artículos que incluye y su precio 
 total para obtener una buena experiencia de compra.
 
 Las \textbf{funciones de Shopify} \cite{shopify-functions} permiten a los desarrolladores personalizar la lógica del \textit{backend} de Shopify, incluyendo casos de uso como la implementación de los
-``customize bundles'' \cite{paquete-personalizado}. Estas funciones se basan en destinos de extensión que inyectan código en la lógica de \textit{backend} de Shopify. La entrada de estas funciónes es un objecto JSON resultado de una
+\textit{customized bundles} \cite{paquete-personalizado}. Estas funciones se basan en destinos de extensión que inyectan código en la lógica de \textit{backend} de Shopify. La entrada de estas funciónes es un objecto JSON resultado de una
 consulta de GraphQL, permitiendo seleccionar datos específicos como los de la línea de carrito en este caso. La lógica de la funcion se realizará en JavaScript, y se compila en módulos de WebAssembly.
 La salida de esta función es un documento JSON que describe las operaciones deseadas y que Shopify se encargará de interpretar. Además Shopify proporciona esquemas que especifican los 
 destinos, entradas y salidas esperadas para la API de Functions.
@@ -1529,7 +1529,7 @@ y que se debe aplicar. Este objeto es el encargado de llamar a la función de tr
     \vspace{\fill}
 \end{figure}
 
-Al aplicar los \textit{customize bundles}, se observa que los paquetes de productos de personalización, no muestran los detalles de los artículos que contienen. Estos 
+Al aplicar los \textit{customized bundles}, se observa que los paquetes de productos de personalización, no muestran los detalles de los artículos que contienen. Estos 
 paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no está visible. Por ello se ha implementado una nueva sección en un tema estandar en el que 
 se desglose el contenido de este paquete (Figura~\ref{fig:seccionTema}).
 
@@ -2280,14 +2280,14 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Crear un producto especial con un precio de un céntimo, que se utilizará únicamente para añadir el importe del canon digital al carrito de compra. Este producto especial asegurará que el importe del canon se aplique correctamente al total del carrito de compra.
           \end{itemize}
-    \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con \textit{customize bundles}:
+    \item \textbf{Tarea 3:} Añadir Líneas de Canon al Carrito y Asociarlas a sus Productos Correspondientes con \textit{customized bundles}:
           \begin{itemize}[label=--]
               \item \textbf{Descripción:} Cuando se añada un producto con canon al carrito, se deberá añadir una línea de canon digital (producto especial creado) para repercutir el canon.
               Cómo el producto especial tiene un precio de un céntimo, se deberá jugar con la cantidad de este artículo para conseguir obtener el importe del canon de producto al que se le está aplicando. Por ejemplo
               si un producto tiene 1,20€ de canon digital, se añadirá el producto especial con cantidad 120.
               Este canon digital se deberá añadir tanto a los productos ``normales'' que no sean de impresión, como a los productos de impresión.
               Para los productos que sean de impresión se deberá realizar una configuración adicional en el procedimiento de adición con la API de AJAX, para que en caso de que el producto personalizado cuente con canon digital, se añada la cantidad adecuada de productos canon de un céntimo y se agrupe con el resto de artículos del paquete de impresión en el carrito.
-              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente (\textit{customize bundles}), se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
+              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente (\textit{customized bundles}), se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
           \end{itemize}
 \end{itemize}
 

@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{\numberline {4.3.1}Creación de la aplicación e implementación del theme app extension}{21}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}Implementación del \textit {frontend} de la parte de administración}{38}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}Implementación del backend}{41}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Implementación de customize bundles y modificación de tema}{46}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.4}Implementación de customized bundles y modificación de tema}{46}{subsubsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.4}Pruebas}{51}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Despliegue}{52}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Conclusiones y vías futuras}{56}{section.5}%
