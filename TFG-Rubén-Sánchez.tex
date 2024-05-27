@@ -852,8 +852,10 @@ proyecto básico, se procedió a analizar, desarrollar e implementar las tareas 
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
 En esta sección, se detalla la implementación dividida en tres partes principales: la creación de la aplicación, 
-la cual se subdivide a su vez en el desarrollo del \textit{frontend} (parte de administración) y del \textit{backend}; la configuración de la extensión 
-"theme app extension"; y la implementación de la extensión ``cart-transform'', encargada de transformar el carrito de compras y aplicar los \textit{customized bundles}.
+la cual se subdivide a su vez en el desarrollo del \textit{frontend} (parte de administración) y del \textit{backend}; la implementación de la extensión 
+``theme app extension'', en la que se desarrolla la interfaz de usuario que se integra en el tema de la tienda; y la implementación de 
+la extensión ``cart-transform'', encargada de transformar el carrito de compras y aplicar la funcionalidad de paquetes de productos 
+personalizados (\textit{customized bundles}).
 
 
 \subsubsection{Implementación de la aplicación}
@@ -959,8 +961,8 @@ Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el 
 \end{lstlisting}
 
 Al ejecutar este comando hay que seleccionar el tipo de extensión que se desea implementar y proporcionar el nombre de la extensión. Una vez completado este proceso,
-se generará la estructura inicial de la extensión del tema, proporcionando una base sobre la que poder trabajar y desarrollar la parte del \textit{frontend} de la aplicación que se integrará con
-el tema de la tienda.
+se generará la estructura inicial de la extensión del tema, proporcionando una base sobre la que poder trabajar y desarrollar esta extensión 
+de la interfaz de usuario de la tienda.
 
 \clearpage
 \subsubsubsection{Implementación del frontend}
@@ -1165,7 +1167,8 @@ o consultas para facilitar la mantenibilidad del código. En la Figura~\ref{fig:
 \clearpage
 \subsubsection{Implementación del Theme app extension}
 
-Una vez se tiene la aplicación base con su theme app extensión correspondiente, ya se puede empezar a trabajar sobre la extensión para implementar la funcionalidades básicas.
+En la creación de la aplicación se ha configurado una extensión del tipo \textit{Theme app extension} que proporciona la base para poder trabajar e implementar nuevas funcionalidades
+y elementos que se integrarán con el tema de la tienda en la que se instale la aplicación.
 
 En primer lugar se crea la sección sobre la cual se va a implementar toda la funcionalidad. El contenido de esta sección solo debe ejecutarse y estar disponible en las 
 páginas de productos que sean personalizables. En la Figura~\ref{fig:creacionSeccion} se puede ver como se ha creado la sección \textit{botonPersonalizar.liquid}. En ella lo primero
