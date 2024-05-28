@@ -232,31 +232,27 @@ These include grouped display of print products in the cart, attractive display 
 automation of metadata and necessary object creation, management of scenarios such as "double pass" on products and jobs, and management
 of digital canon and its automatic addition to the cart.
 
-The application design has been a fundamental part that has laid the groundwork for implementing the required functionalities. 
-A thorough study of relevant technologies and a detailed understanding of user stories that defined the project's goals 
-and requirements have been conducted. This design has been structured around defining various tasks that have been carefully crafted.
+The design of the application has been a fundamental part that laid the foundation for implementing the required functionalities. 
+A thorough study of relevant technologies was conducted, along with a detailed understanding of the user stories that defined 
+the project's goals and requirements.
 
-Design tasks are divided into two categories: basic tasks, focused on implementing the main functionality of the application and meeting
-the acceptance criteria of basic functionality user stories, and additional tasks, which add additional functionality and complexity 
-and focus on meeting the acceptance criteria of additional functionality user stories.
+This design consists of three main components: the main application, the theme extension, and the \textit{cart-transform} extension.
+The main application includes a backend and a frontend. The backend is responsible for developing all the necessary 
+endpoints and functionalities for the application’s operation, while the frontend handles implementing the user interface 
+in the store's admin panel, allowing the administrator to access all the implemented functionalities. The theme extension 
+integrates into the store’s theme, expanding the user interface with specific elements for product customization and making 
+calls to the backend to send and store images that users configure for printing personalized products. The \textit{cart-transform} 
+extension uses a Shopify feature to group the items of a customization order into a single package. Based on the user stories and 
+the established design, a series of tasks were developed to guide the application’s implementation process.
 
-The implementation of this application has been carried out following a structured guide based on tasks defined during the design phase.
-It is important to note that the implementation process followed an iterative and incremental methodology as previously mentioned. Initially,
-user stories were developed and detailed task design based on these stories, focusing solely on basic functionalities. 
-The implementation of these tasks, which addressed the essential requirements of the application, was prioritized. 
-Once the first implementation of the basic project was obtained, the additional tasks were analyzed, developed, and implemented.
-This iterative and incremental approach allowed for an orderly and efficient implementation, ensuring that each development 
-phase was built on a solid foundation and that changes and improvements were responded to agilely.
-
-The project implementation is organized into four distinct parts. First, the creation of the application and the extension 
-of the store theme are addressed, focusing on incorporating product customization functionality into the store. Then, 
-the backend development is proceeded, where the necessary functionality is created to manage a series of endpoints to receive 
-images associated with custom orders and handle requests for the automatic creation of metadata and metaobjects. Subsequently, 
-the focus is on the frontend development of the administration part, which allows administrators to manage the automatic creation 
-of metadata and necessary objects for integrating this application with the store from the store's administration interface. 
-Finally, the implementation of customize bundles and the adaptations made to a standard store theme to improve the user experience 
-by displaying customizable products as unified product bundles that do not allow separate modification in the store cart. Each stage
-contributes integrally to the creation of a complete and functional application.
+The implementation of this application was carried out following a structured guide based on the defined tasks. 
+It is important to highlight that the implementation process followed an iterative and incremental methodology, 
+as previously mentioned. Initially, the user stories were developed along with the detailed design of the tasks 
+based on these stories, focusing solely on basic functionalities. The implementation of these tasks, which addressed 
+the essential requirements of the application, was prioritized. Once the first implementation of the basic project was 
+achieved, additional tasks were analyzed, developed, and implemented. This iterative and incremental approach allowed 
+for an orderly and efficient implementation, ensuring that each development phase was built on a solid foundation and 
+responded agilely to changes and improvements.
 
 During the application development, continuous testing was carried out to verify the correct functioning 
 of the implemented functionalities. These tests were performed manually as the tasks defined for each user story were completed,
