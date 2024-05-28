@@ -607,6 +607,7 @@ llevado a cabo durante todo este periodo.
     la aplicación y se llevan cabo reuniones con el tutor para ir revisando y compartiendo opiniones sobre la documentación.
 \end{enumerate}
 
+\clearpage
 \subsubsection{Proceso de desarrollo}
 En la implementación de este proyecto se ha seguido un proceso de desarrollo enfocado en las metodologías ágiles, caracterizado por su naturaleza iterativa e incremental y por su fácil adaptabilidad a los cambios. Como se ha podido observar en las etapas del desarrollo,
 se han implementado las funcionalidades de manera iterativa, lo que ha permitido construir las distintas partes de la aplicación paso a paso e ir probándolas en varios ciclos.
@@ -617,8 +618,18 @@ cada cliente solicita desarrollos personalizados que difieren bastante unos de o
 
 Además, el uso de Azure DevOps para gestionar las historias de usuario y las tareas asociadas a esas historias, añade otro elemento característico y fundamental de las metodologías ágiles, especialmente con un enfoque como Kanban o Scrum.
 Esto se debe a que Azure DevOps proporciona una interfaz visual para organizar las tareas de este proyecto, y donde todo el equipo tiene visible el progreso y desarrollo del mismo.
-Ofrece una funcionalidad de backlogs (ver Figura \ref{fig:3}), en la cual se permite crear y gestionar una lista prioritaria de elementos que representan el trabajo pendiente de un proyecto, en este caso la aplicación de personalización de artículos. En el marco de trabajo, este backlog contiene todas las funcionalidades, características, mejoras y correcciones que se desean implementar
-en el producto y estos elementos están descritos en forma de historias de usuario que representan las necesidades del cliente y que contienen las tareas que se deben seguir para el desarrollo.
+Ofrece una funcionalidad de backlogs (ver Figura \ref{fig:3}), en la cual se permite crear y gestionar una lista prioritaria de elementos que representan el trabajo pendiente de un proyecto, en este caso la aplicación de personalización de artículos. 
+En el marco de trabajo, este backlog contiene todas las funcionalidades, características, mejoras y correcciones que se desean implementar
+en el producto y estos elementos están descritos en forma de historias de usuario que representan las necesidades del cliente y que contienen las 
+tareas que se deben seguir para el desarrollo.
+
+\begin{figure}[H]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes/Backlogs de Devops.png}
+    \caption{\label{fig:3}Backlogs del proyecto en Azure DevOps}
+    \vspace{\fill}
+\end{figure}
 
 Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el 
 producto (ver Figura \ref{fig:4}) y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto. En el ámbito de una empresa con
@@ -634,13 +645,6 @@ Además esta herramienta cuenta también con una funcionalidad que permite marca
 y permite una gestión eficiente del trabajo pendiente. También hay que destacar en cuanto al proceso de desarrollo, que tanto la parte de \textit{frontend} como de \textit{backend} se ha ido desarrollando y probando correlativamente en función de las necesidades de cada tarea y las funcionalidades a implementar, por lo que como se puede ver, 
 este desarrollo ha ido creciendo iteración tras iteración y tarea tras tarea en todo su conjunto, mejorando en funcionalidad. Este ha sido creado de tal manera que está preparado para crecer en un futuro continuando con este proceso incremental.
 
-\begin{figure}[H]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.6\textwidth]{imagenes/Backlogs de Devops.png}
-    \caption{\label{fig:3}Backlogs del proyecto en Azure DevOps}
-    \vspace{\fill}
-\end{figure}
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -1723,6 +1727,7 @@ navegadores para probar la aplicación desde diferentes entornos y permitir iden
 Además se ha hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que proporciona la capacidad de simular diferentes 
 tamaños de pantalla y dispositivos actuales, lo que ha facilitado el poder probar el diseño responsive de esta aplicación a lo largo del desarrollo.
 
+\clearpage
 \subsection{Despliegue}
 Hasta la fecha, en Upango no se ha recibido ninguna solicitud por parte de los clientes que requiera hacer uso de las funciones de personalización de productos
 que ofrece esta aplicación. Dado que no se ha tenido la necesidad de implementar esta aplicación en las tiendas en desarrollo para los clientes hasta el momento, tampoco ha sido 
