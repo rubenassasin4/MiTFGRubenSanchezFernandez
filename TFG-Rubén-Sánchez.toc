@@ -13,43 +13,43 @@
 \contentsline {subsection}{\numberline {2.2}Herramientas y tecnologías empleadas}{2}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Frontend}{3}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Backend}{6}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Otras tecnologías}{8}{subsubsection.2.2.3}%
-\contentsline {section}{\numberline {3}Análisis de objetivos y metodología}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Objetivos}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Metodología}{9}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Temporalización}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Proceso de desarrollo}{10}{subsubsection.3.2.2}%
-\contentsline {section}{\numberline {4}Diseño y resolución del trabajo realizado}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Análisis}{13}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Historias de usuario de las funcionalidades básicas}{13}{subsubsection.4.1.1}%
-\contentsline {paragraph}{Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}{13}{paragraph*.3}%
-\contentsline {paragraph}{Historia de Usuario 2: Creación de Metafields y Metaobjects para la Gestión de Trabajos de Impresión}{14}{paragraph*.4}%
-\contentsline {paragraph}{Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}{14}{paragraph*.5}%
-\contentsline {paragraph}{Historia de Usuario 4: Funcionalidad de Añadir al Carrito}{15}{paragraph*.6}%
-\contentsline {subsubsection}{\numberline {4.1.2}Historias de usuario de las funcionalidades adicionales}{16}{subsubsection.4.1.2}%
-\contentsline {paragraph}{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}{16}{paragraph*.7}%
-\contentsline {paragraph}{Historia de Usuario 6: Visualización Atractiva del Logo del Cliente en el Producto}{16}{paragraph*.8}%
-\contentsline {paragraph}{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios y objeto cart-transform}{17}{paragraph*.9}%
-\contentsline {paragraph}{Historia de Usuario 8: Gestión de Casuística ``Doble Pasada'' en Productos y Trabajos}{17}{paragraph*.10}%
-\contentsline {paragraph}{Historia de Usuario 9: Gestión del Canon Digital y Adición Automática al Carrito}{18}{paragraph*.11}%
-\contentsline {subsection}{\numberline {4.2}Diseño}{19}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Diseño del frontend}{19}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Diseño del backend}{21}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Diseño de la extensión de tema}{21}{subsubsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.3}Implementación}{23}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Implementación de la aplicación}{23}{subsubsection.4.3.1}%
-\contentsline {paragraph}{Implementación del frontend}{27}{paragraph*.12}%
-\contentsline {paragraph}{Implementación del backend}{30}{paragraph*.13}%
-\contentsline {subsubsection}{\numberline {4.3.2}Implementación del Theme app extension}{35}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Implementación de la extensión de transformación de carrito}{47}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Pruebas}{51}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Despliegue}{52}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Conclusiones y vías futuras}{56}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Conclusiones}{56}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Trabajo futuro}{56}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Bibliografía}{58}{section.6}%
-\contentsline {section}{\numberline {7}Anexos}{61}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Manual de usuario}{61}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Tareas}{69}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Tareas básicas}{69}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Tareas adicionales}{73}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Otras tecnologías}{7}{subsubsection.2.2.3}%
+\contentsline {section}{\numberline {3}Análisis de objetivos y metodología}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Objetivos}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Metodología}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Temporalización}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Proceso de desarrollo}{9}{subsubsection.3.2.2}%
+\contentsline {section}{\numberline {4}Diseño y resolución del trabajo realizado}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Análisis}{12}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Historias de usuario de las funcionalidades básicas}{12}{subsubsection.4.1.1}%
+\contentsline {paragraph}{Historia de Usuario 1: Botón de Personalizar en la Ficha de Producto}{12}{paragraph*.3}%
+\contentsline {paragraph}{Historia de Usuario 2: Creación de Metafields y Metaobjects para la Gestión de Trabajos de Impresión}{12}{paragraph*.4}%
+\contentsline {paragraph}{Historia de Usuario 3: Configurar Impresión al Añadir al Pedido}{13}{paragraph*.5}%
+\contentsline {paragraph}{Historia de Usuario 4: Funcionalidad de Añadir al Carrito}{14}{paragraph*.6}%
+\contentsline {subsubsection}{\numberline {4.1.2}Historias de usuario de las funcionalidades adicionales}{15}{subsubsection.4.1.2}%
+\contentsline {paragraph}{Historia de Usuario 5: Visualización Agrupada de Productos de Impresión en el Carrito}{15}{paragraph*.7}%
+\contentsline {paragraph}{Historia de Usuario 6: Visualización Atractiva del Logo del Cliente en el Producto}{15}{paragraph*.8}%
+\contentsline {paragraph}{Historia de Usuario 7: Automatización de la Creación de Metafields Necesarios y objeto cart-transform}{15}{paragraph*.9}%
+\contentsline {paragraph}{Historia de Usuario 8: Gestión de Casuística ``Doble Pasada'' en Productos y Trabajos}{16}{paragraph*.10}%
+\contentsline {paragraph}{Historia de Usuario 9: Gestión del Canon Digital y Adición Automática al Carrito}{16}{paragraph*.11}%
+\contentsline {subsection}{\numberline {4.2}Diseño}{17}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Diseño del frontend}{17}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Diseño del backend}{18}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Diseño de la extensión de tema}{18}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Implementación}{20}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Implementación de la aplicación}{20}{subsubsection.4.3.1}%
+\contentsline {paragraph}{Implementación del frontend}{23}{paragraph*.12}%
+\contentsline {paragraph}{Implementación del backend}{26}{paragraph*.13}%
+\contentsline {subsubsection}{\numberline {4.3.2}Implementación del Theme app extension}{31}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Implementación de la extensión de transformación de carrito}{42}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Pruebas}{46}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Despliegue}{46}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conclusiones y vías futuras}{50}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Conclusiones}{50}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Trabajo futuro}{50}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Bibliografía}{52}{section.6}%
+\contentsline {section}{\numberline {7}Anexos}{55}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Manual de usuario}{55}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Tareas}{63}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Tareas básicas}{63}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Tareas adicionales}{67}{subsubsection.7.2.2}%
