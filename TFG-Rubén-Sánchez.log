@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  28 MAY 2024 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  2 JUN 2024 14:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -756,7 +756,7 @@ Package hyperref Info: Link coloring ON on input line 94.
 \openout4 = `TFG-Rubén-Sánchez.out'.
 
 \c@lstlisting=\count364
-<imagenes/logo.jpg, id=167, 501.875pt x 501.875pt>
+<imagenes/logo.jpg, id=171, 501.875pt x 501.875pt>
 File: imagenes/logo.jpg Graphic file (type jpg)
 <use imagenes/logo.jpg>
 Package pdftex.def Info: imagenes/logo.jpg  used on input line 101.
@@ -844,7 +844,7 @@ LaTeX Info: Redefining \% on input line 1.
 \openout7 = `TFG-Rubén-Sánchez.lot'.
 
  [4]
-<Anexo_Firmado_Upango.png, id=375, 345.08925pt x 489.027pt>
+<Anexo_Firmado_Upango.png, id=379, 345.08925pt x 489.027pt>
 File: Anexo_Firmado_Upango.png Graphic file (type png)
 <use Anexo_Firmado_Upango.png>
 Package pdftex.def Info: Anexo_Firmado_Upango.png  used on input line 151.
@@ -877,811 +877,791 @@ LaTeX Info: Redefining \% on input line 293.
 LaTeX Info: Redefining \. on input line 293.
 LaTeX Info: Redefining \% on input line 293.
  [9]
-pdfTeX warning (ext4): destination with the same identifier (name{section.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.303 \section{Introducción}
-                             
-LaTeX Info: Redefining \. on input line 343.
-LaTeX Info: Redefining \% on input line 343.
+LaTeX Info: Redefining \. on input line 347.
+LaTeX Info: Redefining \% on input line 347.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.343 \clearpage
+l.347 \clearpage
                  [1
 
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{section.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.344 \section{Estado del arte}
-                               
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.2.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.347 ... y análisis de la situación de partida}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{subsection.2.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.365 ...on{Herramientas y tecnologías empleadas}
-                                                  
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
+LaTeX Info: Redefining \. on input line 390.
+LaTeX Info: Redefining \% on input line 390.
  [2
 
 ]
-<imagenes/Interfaz de administración.png, id=421, 1123.19624pt x 519.1395pt>
+<imagenes/Interfaz de administración.png, id=425, 1123.19624pt x 519.1395pt>
 File: imagenes/Interfaz de administración.png Graphic file (type png)
 <use imagenes/Interfaz de administración.png>
-Package pdftex.def Info: imagenes/Interfaz de administración.png  used on input line 412.
+Package pdftex.def Info: imagenes/Interfaz de administración.png  used on input line 416.
 (pdftex.def)             Requested size: 271.7835pt x 125.61787pt.
-LaTeX Info: Redefining \. on input line 420.
-LaTeX Info: Redefining \% on input line 420.
-LaTeX Info: Redefining \. on input line 420.
-LaTeX Info: Redefining \% on input line 420.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
  [3 <./imagenes/Interfaz de administración.png>]
-LaTeX Info: Redefining \. on input line 458.
-LaTeX Info: Redefining \% on input line 458.
-LaTeX Info: Redefining \. on input line 458.
-LaTeX Info: Redefining \% on input line 458.
+LaTeX Info: Redefining \. on input line 462.
+LaTeX Info: Redefining \% on input line 462.
+LaTeX Info: Redefining \. on input line 462.
+LaTeX Info: Redefining \% on input line 462.
  [4]
-<imagenes/Interfaz de adminsitración elección de tema.png, id=455, 1108.74225pt x 498.06075pt>
+<imagenes/Interfaz de adminsitración elección de tema.png, id=459, 1108.74225pt x 498.06075pt>
 File: imagenes/Interfaz de adminsitración elección de tema.png Graphic file (type png)
 <use imagenes/Interfaz de adminsitración elección de tema.png>
-Package pdftex.def Info: imagenes/Interfaz de adminsitración elección de tema.png  used on input line 462.
+Package pdftex.def Info: imagenes/Interfaz de adminsitración elección de tema.png  used on input line 466.
 (pdftex.def)             Requested size: 271.7835pt x 122.09055pt.
-LaTeX Info: Redefining \. on input line 494.
-LaTeX Info: Redefining \% on input line 494.
-LaTeX Info: Redefining \. on input line 494.
-LaTeX Info: Redefining \% on input line 494.
+LaTeX Info: Redefining \. on input line 498.
+LaTeX Info: Redefining \% on input line 498.
+LaTeX Info: Redefining \. on input line 498.
+LaTeX Info: Redefining \% on input line 498.
  [5 <./imagenes/Interfaz de adminsitración elección de tema.png>]
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
+LaTeX Info: Redefining \. on input line 536.
+LaTeX Info: Redefining \% on input line 536.
+LaTeX Info: Redefining \. on input line 536.
+LaTeX Info: Redefining \% on input line 536.
  [6]
-LaTeX Info: Redefining \. on input line 556.
-LaTeX Info: Redefining \% on input line 556.
-LaTeX Info: Redefining \. on input line 556.
-LaTeX Info: Redefining \% on input line 556.
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
  [7]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 583.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 587.
  (C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 594.
-LaTeX Info: Redefining \% on input line 594.
+LaTeX Info: Redefining \. on input line 598.
+LaTeX Info: Redefining \% on input line 598.
  [8
 
 {C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Info: Redefining \. on input line 610.
-LaTeX Info: Redefining \% on input line 610.
-LaTeX Info: Redefining \. on input line 610.
-LaTeX Info: Redefining \% on input line 610.
+LaTeX Info: Redefining \. on input line 614.
+LaTeX Info: Redefining \% on input line 614.
+LaTeX Info: Redefining \. on input line 614.
+LaTeX Info: Redefining \% on input line 614.
  [9]
-<imagenes/Backlogs de Devops.png, id=533, 1131.47719pt x 599.99156pt>
+<imagenes/Backlogs de Devops.png, id=537, 1131.47719pt x 599.99156pt>
 File: imagenes/Backlogs de Devops.png Graphic file (type png)
 <use imagenes/Backlogs de Devops.png>
-Package pdftex.def Info: imagenes/Backlogs de Devops.png  used on input line 629.
+Package pdftex.def Info: imagenes/Backlogs de Devops.png  used on input line 633.
 (pdftex.def)             Requested size: 317.07614pt x 168.13382pt.
-LaTeX Info: Redefining \. on input line 643.
-LaTeX Info: Redefining \% on input line 643.
-LaTeX Info: Redefining \. on input line 643.
-LaTeX Info: Redefining \% on input line 643.
+LaTeX Info: Redefining \. on input line 647.
+LaTeX Info: Redefining \% on input line 647.
+LaTeX Info: Redefining \. on input line 647.
+LaTeX Info: Redefining \% on input line 647.
  [10
 
  <./imagenes/Backlogs de Devops.png>]
-<imagenes/Estados y prioridad de tarea.png, id=541, 858.20625pt x 261.97874pt>
+<imagenes/Estados y prioridad de tarea.png, id=545, 858.20625pt x 261.97874pt>
 File: imagenes/Estados y prioridad de tarea.png Graphic file (type png)
 <use imagenes/Estados y prioridad de tarea.png>
-Package pdftex.def Info: imagenes/Estados y prioridad de tarea.png  used on input line 652.
+Package pdftex.def Info: imagenes/Estados y prioridad de tarea.png  used on input line 656.
 (pdftex.def)             Requested size: 362.37569pt x 110.62195pt.
-LaTeX Info: Redefining \. on input line 658.
-LaTeX Info: Redefining \% on input line 658.
-LaTeX Info: Redefining \. on input line 658.
-LaTeX Info: Redefining \% on input line 658.
+LaTeX Info: Redefining \. on input line 662.
+LaTeX Info: Redefining \% on input line 662.
+LaTeX Info: Redefining \. on input line 662.
+LaTeX Info: Redefining \% on input line 662.
  [11 <./imagenes/Estados y prioridad de tarea.png>]
-LaTeX Info: Redefining \. on input line 722.
-LaTeX Info: Redefining \% on input line 722.
+LaTeX Info: Redefining \. on input line 726.
+LaTeX Info: Redefining \% on input line 726.
  [12
 
 ]
-LaTeX Info: Redefining \. on input line 740.
-LaTeX Info: Redefining \% on input line 740.
-LaTeX Info: Redefining \. on input line 740.
-LaTeX Info: Redefining \% on input line 740.
+LaTeX Info: Redefining \. on input line 744.
+LaTeX Info: Redefining \% on input line 744.
+LaTeX Info: Redefining \. on input line 744.
+LaTeX Info: Redefining \% on input line 744.
  [13]
-LaTeX Info: Redefining \. on input line 776.
-LaTeX Info: Redefining \% on input line 776.
-LaTeX Info: Redefining \. on input line 776.
-LaTeX Info: Redefining \% on input line 776.
+LaTeX Info: Redefining \. on input line 780.
+LaTeX Info: Redefining \% on input line 780.
+LaTeX Info: Redefining \. on input line 780.
+LaTeX Info: Redefining \% on input line 780.
  [14]
-LaTeX Info: Redefining \. on input line 813.
-LaTeX Info: Redefining \% on input line 813.
-LaTeX Info: Redefining \. on input line 813.
-LaTeX Info: Redefining \% on input line 813.
+LaTeX Info: Redefining \. on input line 817.
+LaTeX Info: Redefining \% on input line 817.
+LaTeX Info: Redefining \. on input line 817.
+LaTeX Info: Redefining \% on input line 817.
  [15]
-LaTeX Info: Redefining \. on input line 848.
-LaTeX Info: Redefining \% on input line 848.
-LaTeX Info: Redefining \. on input line 848.
-LaTeX Info: Redefining \% on input line 848.
+LaTeX Info: Redefining \. on input line 852.
+LaTeX Info: Redefining \% on input line 852.
+LaTeX Info: Redefining \. on input line 852.
+LaTeX Info: Redefining \% on input line 852.
  [16]
-<imagenes-diseño/Esquema de diseño de la aplicación.png, id=629, 588.39825pt x 308.352pt>
+<imagenes-diseño/Esquema de diseño de la aplicación.png, id=633, 588.39825pt x 308.352pt>
 File: imagenes-diseño/Esquema de diseño de la aplicación.png Graphic file (type png)
 <use imagenes-diseño/Esquema de diseño de la aplicación.png>
-Package pdftex.def Info: imagenes-diseño/Esquema de diseño de la aplicación.png  used on input line 876.
+Package pdftex.def Info: imagenes-diseño/Esquema de diseño de la aplicación.png  used on input line 880.
 (pdftex.def)             Requested size: 407.66833pt x 213.64766pt.
-<imagenes-diseño/estructura-aplicacion.png, id=630, 125.268pt x 284.262pt>
+<imagenes-diseño/estructura-aplicacion.png, id=634, 125.268pt x 284.262pt>
 File: imagenes-diseño/estructura-aplicacion.png Graphic file (type png)
 <use imagenes-diseño/estructura-aplicacion.png>
-Package pdftex.def Info: imagenes-diseño/estructura-aplicacion.png  used on input line 884.
+Package pdftex.def Info: imagenes-diseño/estructura-aplicacion.png  used on input line 888.
 (pdftex.def)             Requested size: 45.29955pt x 102.794pt.
-LaTeX Info: Redefining \. on input line 888.
-LaTeX Info: Redefining \% on input line 888.
-LaTeX Info: Redefining \. on input line 888.
-LaTeX Info: Redefining \% on input line 888.
+LaTeX Info: Redefining \. on input line 892.
+LaTeX Info: Redefining \% on input line 892.
+LaTeX Info: Redefining \. on input line 892.
+LaTeX Info: Redefining \% on input line 892.
  [17
 
  <./imagenes-diseño/Esquema de diseño de la aplicación.png>]
-<imagenes-diseño/diseñoFrontend.png, id=637, 772.68675pt x 438.438pt>
+<imagenes-diseño/diseñoFrontend.png, id=641, 772.68675pt x 438.438pt>
 File: imagenes-diseño/diseñoFrontend.png Graphic file (type png)
 <use imagenes-diseño/diseñoFrontend.png>
-Package pdftex.def Info: imagenes-diseño/diseñoFrontend.png  used on input line 905.
+Package pdftex.def Info: imagenes-diseño/diseñoFrontend.png  used on input line 909.
 (pdftex.def)             Requested size: 317.07614pt x 179.9213pt.
-LaTeX Info: Redefining \. on input line 922.
-LaTeX Info: Redefining \% on input line 922.
-LaTeX Info: Redefining \. on input line 922.
-LaTeX Info: Redefining \% on input line 922.
+LaTeX Info: Redefining \. on input line 926.
+LaTeX Info: Redefining \% on input line 926.
+LaTeX Info: Redefining \. on input line 926.
+LaTeX Info: Redefining \% on input line 926.
  [18 <./imagenes-diseño/estructura-aplicacion.png> <./imagenes-diseño/diseñoFrontend.png>] (C:\Users\RubénSanchezFernande\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
 []|\T1/lmtt/m/n/10.95 /upng-api/subir
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
 []|\T1/lmtt/m/n/10.95 req.body.id\T1/lmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--938
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
 \T1/lmtt/m/n/10.95 req.body.index\T1/lmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 938--938
+Underfull \hbox (badness 3118) in paragraph at lines 942--942
 []|\T1/lmr/m/n/10.95 Crear me-ta-da-tos y
  []
 
 
-Underfull \hbox (badness 2189) in paragraph at lines 938--938
+Underfull \hbox (badness 2189) in paragraph at lines 942--942
 \T1/lmr/m/n/10.95 me-ta-ob-je-tos ne-ce-sa-
  []
 
 
-Underfull \hbox (badness 5954) in paragraph at lines 938--938
+Underfull \hbox (badness 5954) in paragraph at lines 942--942
 []|\T1/lmr/m/n/10.95 Crear ob-je-to cart-
  []
 
-<imagenes-diseño/diseñoPersonalizador.png, id=646, 922.647pt x 519.1395pt>
+<imagenes-diseño/diseñoPersonalizador.png, id=650, 922.647pt x 519.1395pt>
 File: imagenes-diseño/diseñoPersonalizador.png Graphic file (type png)
 <use imagenes-diseño/diseñoPersonalizador.png>
-Package pdftex.def Info: imagenes-diseño/diseñoPersonalizador.png  used on input line 951.
+Package pdftex.def Info: imagenes-diseño/diseñoPersonalizador.png  used on input line 955.
 (pdftex.def)             Requested size: 362.37569pt x 203.89735pt.
-LaTeX Info: Redefining \. on input line 959.
-LaTeX Info: Redefining \% on input line 959.
-LaTeX Info: Redefining \. on input line 959.
-LaTeX Info: Redefining \% on input line 959.
+LaTeX Info: Redefining \. on input line 963.
+LaTeX Info: Redefining \% on input line 963.
+LaTeX Info: Redefining \. on input line 963.
+LaTeX Info: Redefining \% on input line 963.
 [19 <./imagenes-diseño/diseñoPersonalizador.png>]
-<imagenesUS2/configuracionAdministradorTienda.png, id=655, 1105.12875pt x 522.15076pt>
+<imagenesUS2/configuracionAdministradorTienda.png, id=659, 1105.12875pt x 522.15076pt>
 File: imagenesUS2/configuracionAdministradorTienda.png Graphic file (type png)
 <use imagenesUS2/configuracionAdministradorTienda.png>
-Package pdftex.def Info: imagenesUS2/configuracionAdministradorTienda.png  used on input line 989.
+Package pdftex.def Info: imagenesUS2/configuracionAdministradorTienda.png  used on input line 993.
 (pdftex.def)             Requested size: 362.37569pt x 171.21078pt.
-LaTeX Info: Redefining \. on input line 1000.
-LaTeX Info: Redefining \% on input line 1000.
-LaTeX Info: Redefining \. on input line 1000.
-LaTeX Info: Redefining \% on input line 1000.
+LaTeX Info: Redefining \. on input line 1004.
+LaTeX Info: Redefining \% on input line 1004.
+LaTeX Info: Redefining \. on input line 1004.
+LaTeX Info: Redefining \% on input line 1004.
  [20
 
  <./imagenesUS2/configuracionAdministradorTienda.png>]
-<imagenesUS2/creacionMetaobjeto.png, id=662, 425.1885pt x 393.26926pt>
+<imagenesUS2/creacionMetaobjeto.png, id=666, 425.1885pt x 393.26926pt>
 File: imagenesUS2/creacionMetaobjeto.png Graphic file (type png)
 <use imagenesUS2/creacionMetaobjeto.png>
-Package pdftex.def Info: imagenesUS2/creacionMetaobjeto.png  used on input line 1004.
+Package pdftex.def Info: imagenesUS2/creacionMetaobjeto.png  used on input line 1008.
 (pdftex.def)             Requested size: 317.07614pt x 293.28899pt.
-<imagenesUS2/elementosMetaobjectAdicionales.png, id=664, 516.7305pt x 148.75575pt>
+<imagenesUS2/elementosMetaobjectAdicionales.png, id=668, 516.7305pt x 148.75575pt>
 File: imagenesUS2/elementosMetaobjectAdicionales.png Graphic file (type png)
 <use imagenesUS2/elementosMetaobjectAdicionales.png>
-Package pdftex.def Info: imagenesUS2/elementosMetaobjectAdicionales.png  used on input line 1024.
+Package pdftex.def Info: imagenesUS2/elementosMetaobjectAdicionales.png  used on input line 1028.
 (pdftex.def)             Requested size: 362.37569pt x 104.32123pt.
-LaTeX Info: Redefining \. on input line 1028.
-LaTeX Info: Redefining \% on input line 1028.
-LaTeX Info: Redefining \. on input line 1028.
-LaTeX Info: Redefining \% on input line 1028.
+LaTeX Info: Redefining \. on input line 1032.
+LaTeX Info: Redefining \% on input line 1032.
+LaTeX Info: Redefining \. on input line 1032.
+LaTeX Info: Redefining \% on input line 1032.
  [21 <./imagenesUS2/creacionMetaobjeto.png>]
-<imagenesUS2/creacionMetafields.png, id=672, 428.19975pt x 187.902pt>
+<imagenesUS2/creacionMetafields.png, id=676, 428.19975pt x 187.902pt>
 File: imagenesUS2/creacionMetafields.png Graphic file (type png)
 <use imagenesUS2/creacionMetafields.png>
-Package pdftex.def Info: imagenesUS2/creacionMetafields.png  used on input line 1039.
+Package pdftex.def Info: imagenesUS2/creacionMetafields.png  used on input line 1043.
 (pdftex.def)             Requested size: 362.37569pt x 159.02072pt.
-<imagenesUS2/metafieldsAdicionales.png, id=674, 536.60475pt x 94.55325pt>
+<imagenesUS2/metafieldsAdicionales.png, id=678, 536.60475pt x 94.55325pt>
 File: imagenesUS2/metafieldsAdicionales.png Graphic file (type png)
 <use imagenesUS2/metafieldsAdicionales.png>
-Package pdftex.def Info: imagenesUS2/metafieldsAdicionales.png  used on input line 1051.
+Package pdftex.def Info: imagenesUS2/metafieldsAdicionales.png  used on input line 1055.
 (pdftex.def)             Requested size: 362.37569pt x 63.85387pt.
-LaTeX Info: Redefining \. on input line 1059.
-LaTeX Info: Redefining \% on input line 1059.
-LaTeX Info: Redefining \. on input line 1059.
-LaTeX Info: Redefining \% on input line 1059.
+LaTeX Info: Redefining \. on input line 1063.
+LaTeX Info: Redefining \% on input line 1063.
+LaTeX Info: Redefining \. on input line 1063.
+LaTeX Info: Redefining \% on input line 1063.
  [22 <./imagenesUS2/elementosMetaobjectAdicionales.png> <./imagenesUS2/creacionMetafields.png> <./imagenesUS2/metafieldsAdicionales.png>]
-<imagenes-admin/EstructuraDirectoriosReact.png, id=684, 94.55325pt x 304.7385pt>
+<imagenes-admin/EstructuraDirectoriosReact.png, id=688, 94.55325pt x 304.7385pt>
 File: imagenes-admin/EstructuraDirectoriosReact.png Graphic file (type png)
 <use imagenes-admin/EstructuraDirectoriosReact.png>
-Package pdftex.def Info: imagenes-admin/EstructuraDirectoriosReact.png  used on input line 1095.
+Package pdftex.def Info: imagenes-admin/EstructuraDirectoriosReact.png  used on input line 1099.
 (pdftex.def)             Requested size: 45.29955pt x 145.99846pt.
-LaTeX Info: Redefining \. on input line 1105.
-LaTeX Info: Redefining \% on input line 1105.
-LaTeX Info: Redefining \. on input line 1105.
-LaTeX Info: Redefining \% on input line 1105.
+LaTeX Info: Redefining \. on input line 1109.
+LaTeX Info: Redefining \% on input line 1109.
+LaTeX Info: Redefining \. on input line 1109.
+LaTeX Info: Redefining \% on input line 1109.
  [23 <./imagenes-admin/EstructuraDirectoriosReact.png>]
-<imagenes-admin/componentes-admin.png, id=699, 97.5645pt x 75.8835pt>
+<imagenes-admin/componentes-admin.png, id=703, 97.5645pt x 75.8835pt>
 File: imagenes-admin/componentes-admin.png Graphic file (type png)
 <use imagenes-admin/componentes-admin.png>
-Package pdftex.def Info: imagenes-admin/componentes-admin.png  used on input line 1109.
+Package pdftex.def Info: imagenes-admin/componentes-admin.png  used on input line 1113.
 (pdftex.def)             Requested size: 135.89174pt x 105.69542pt.
-<imagenes-admin/paginaHome.png, id=700, 354.123pt x 539.01375pt>
+<imagenes-admin/paginaHome.png, id=704, 354.123pt x 539.01375pt>
 File: imagenes-admin/paginaHome.png Graphic file (type png)
 <use imagenes-admin/paginaHome.png>
-Package pdftex.def Info: imagenes-admin/paginaHome.png  used on input line 1119.
+Package pdftex.def Info: imagenes-admin/paginaHome.png  used on input line 1123.
 (pdftex.def)             Requested size: 135.89174pt x 206.84239pt.
-<imagenes-admin/metafieldComponent.png, id=703, 332.442pt x 537.80925pt>
+<imagenes-admin/metafieldComponent.png, id=707, 332.442pt x 537.80925pt>
 File: imagenes-admin/metafieldComponent.png Graphic file (type png)
 <use imagenes-admin/metafieldComponent.png>
-Package pdftex.def Info: imagenes-admin/metafieldComponent.png  used on input line 1136.
+Package pdftex.def Info: imagenes-admin/metafieldComponent.png  used on input line 1140.
 (pdftex.def)             Requested size: 135.89174pt x 219.8385pt.
-LaTeX Info: Redefining \. on input line 1139.
-LaTeX Info: Redefining \% on input line 1139.
-LaTeX Info: Redefining \. on input line 1139.
-LaTeX Info: Redefining \% on input line 1139.
+LaTeX Info: Redefining \. on input line 1143.
+LaTeX Info: Redefining \% on input line 1143.
+LaTeX Info: Redefining \. on input line 1143.
+LaTeX Info: Redefining \% on input line 1143.
  [24 <./imagenes-admin/componentes-admin.png> <./imagenes-admin/paginaHome.png>]
-<imagenes-admin/locales-admin.png, id=710, 1045.506pt x 480.5955pt>
+<imagenes-admin/locales-admin.png, id=714, 1045.506pt x 480.5955pt>
 File: imagenes-admin/locales-admin.png Graphic file (type png)
 <use imagenes-admin/locales-admin.png>
-Package pdftex.def Info: imagenes-admin/locales-admin.png  used on input line 1145.
+Package pdftex.def Info: imagenes-admin/locales-admin.png  used on input line 1149.
 (pdftex.def)             Requested size: 226.48395pt x 104.10335pt.
-LaTeX Info: Redefining \. on input line 1169.
-LaTeX Info: Redefining \% on input line 1169.
-LaTeX Info: Redefining \. on input line 1169.
-LaTeX Info: Redefining \% on input line 1169.
+LaTeX Info: Redefining \. on input line 1173.
+LaTeX Info: Redefining \% on input line 1173.
+LaTeX Info: Redefining \. on input line 1173.
+LaTeX Info: Redefining \% on input line 1173.
  [25 <./imagenes-admin/metafieldComponent.png> <./imagenes-admin/locales-admin.png>]
-<imagenes-back/configuracionIndexjs.png, id=720, 410.7345pt x 390.258pt>
+<imagenes-back/configuracionIndexjs.png, id=724, 410.7345pt x 390.258pt>
 File: imagenes-back/configuracionIndexjs.png Graphic file (type png)
 <use imagenes-back/configuracionIndexjs.png>
-Package pdftex.def Info: imagenes-back/configuracionIndexjs.png  used on input line 1177.
+Package pdftex.def Info: imagenes-back/configuracionIndexjs.png  used on input line 1181.
 (pdftex.def)             Requested size: 226.48395pt x 215.19635pt.
-<imagenes-back/almacenamientoCarpetaImagenes.png, id=721, 164.41425pt x 82.50826pt>
+<imagenes-back/almacenamientoCarpetaImagenes.png, id=725, 164.41425pt x 82.50826pt>
 File: imagenes-back/almacenamientoCarpetaImagenes.png Graphic file (type png)
 <use imagenes-back/almacenamientoCarpetaImagenes.png>
-Package pdftex.def Info: imagenes-back/almacenamientoCarpetaImagenes.png  used on input line 1185.
+Package pdftex.def Info: imagenes-back/almacenamientoCarpetaImagenes.png  used on input line 1189.
 (pdftex.def)             Requested size: 181.18439pt x 90.92804pt.
-<imagenes-back/endpointSubirImagen.png, id=723, 566.71725pt x 471.56175pt>
+<imagenes-back/endpointSubirImagen.png, id=727, 566.71725pt x 471.56175pt>
 File: imagenes-back/endpointSubirImagen.png Graphic file (type png)
 <use imagenes-back/endpointSubirImagen.png>
-Package pdftex.def Info: imagenes-back/endpointSubirImagen.png  used on input line 1202.
+Package pdftex.def Info: imagenes-back/endpointSubirImagen.png  used on input line 1206.
 (pdftex.def)             Requested size: 226.48395pt x 188.45586pt.
-LaTeX Info: Redefining \. on input line 1205.
-LaTeX Info: Redefining \% on input line 1205.
-LaTeX Info: Redefining \. on input line 1205.
-LaTeX Info: Redefining \% on input line 1205.
+LaTeX Info: Redefining \. on input line 1209.
+LaTeX Info: Redefining \% on input line 1209.
+LaTeX Info: Redefining \. on input line 1209.
+LaTeX Info: Redefining \% on input line 1209.
  [26 <./imagenes-back/configuracionIndexjs.png> <./imagenes-back/almacenamientoCarpetaImagenes.png>]
-<imagenes-back/EndpointsAdmin.png, id=731, 349.305pt x 331.2375pt>
+<imagenes-back/EndpointsAdmin.png, id=735, 349.305pt x 331.2375pt>
 File: imagenes-back/EndpointsAdmin.png Graphic file (type png)
 <use imagenes-back/EndpointsAdmin.png>
-Package pdftex.def Info: imagenes-back/EndpointsAdmin.png  used on input line 1223.
+Package pdftex.def Info: imagenes-back/EndpointsAdmin.png  used on input line 1227.
 (pdftex.def)             Requested size: 135.89174pt x 128.86368pt.
-LaTeX Info: Redefining \. on input line 1236.
-LaTeX Info: Redefining \% on input line 1236.
-LaTeX Info: Redefining \. on input line 1236.
-LaTeX Info: Redefining \% on input line 1236.
+LaTeX Info: Redefining \. on input line 1240.
+LaTeX Info: Redefining \% on input line 1240.
+LaTeX Info: Redefining \. on input line 1240.
+LaTeX Info: Redefining \% on input line 1240.
  [27 <./imagenes-back/endpointSubirImagen.png> <./imagenes-back/EndpointsAdmin.png>]
-<imagenes-back/funcionmetaCreator.png, id=741, 380.622pt x 526.96875pt>
+<imagenes-back/funcionmetaCreator.png, id=745, 380.622pt x 526.96875pt>
 File: imagenes-back/funcionmetaCreator.png Graphic file (type png)
 <use imagenes-back/funcionmetaCreator.png>
-Package pdftex.def Info: imagenes-back/funcionmetaCreator.png  used on input line 1251.
+Package pdftex.def Info: imagenes-back/funcionmetaCreator.png  used on input line 1255.
 (pdftex.def)             Requested size: 181.18439pt x 250.85149pt.
-<imagenes-back/metafieldCreatorConstantes1.png, id=742, 551.661pt x 470.9595pt>
+<imagenes-back/metafieldCreatorConstantes1.png, id=746, 551.661pt x 470.9595pt>
 File: imagenes-back/metafieldCreatorConstantes1.png Graphic file (type png)
 <use imagenes-back/metafieldCreatorConstantes1.png>
-Package pdftex.def Info: imagenes-back/metafieldCreatorConstantes1.png  used on input line 1259.
+Package pdftex.def Info: imagenes-back/metafieldCreatorConstantes1.png  used on input line 1263.
 (pdftex.def)             Requested size: 226.48395pt x 193.34616pt.
-LaTeX Info: Redefining \. on input line 1263.
-LaTeX Info: Redefining \% on input line 1263.
-LaTeX Info: Redefining \. on input line 1263.
-LaTeX Info: Redefining \% on input line 1263.
+LaTeX Info: Redefining \. on input line 1267.
+LaTeX Info: Redefining \% on input line 1267.
+LaTeX Info: Redefining \. on input line 1267.
+LaTeX Info: Redefining \% on input line 1267.
  [28 <./imagenes-back/funcionmetaCreator.png>]
-<imagenes-back/funcionCartCreator.png, id=749, 383.63326pt x 504.6855pt>
+<imagenes-back/funcionCartCreator.png, id=753, 383.63326pt x 504.6855pt>
 File: imagenes-back/funcionCartCreator.png Graphic file (type png)
 <use imagenes-back/funcionCartCreator.png>
-Package pdftex.def Info: imagenes-back/funcionCartCreator.png  used on input line 1277.
+Package pdftex.def Info: imagenes-back/funcionCartCreator.png  used on input line 1281.
 (pdftex.def)             Requested size: 181.18439pt x 238.35735pt.
-LaTeX Info: Redefining \. on input line 1284.
-LaTeX Info: Redefining \% on input line 1284.
-LaTeX Info: Redefining \. on input line 1284.
-LaTeX Info: Redefining \% on input line 1284.
+LaTeX Info: Redefining \. on input line 1288.
+LaTeX Info: Redefining \% on input line 1288.
+LaTeX Info: Redefining \. on input line 1288.
+LaTeX Info: Redefining \% on input line 1288.
  [29 <./imagenes-back/metafieldCreatorConstantes1.png> <./imagenes-back/funcionCartCreator.png>]
-<imagenesUS1/seccionPersonalizarBoton.png, id=758, 822.6735pt x 452.28975pt>
+<imagenesUS1/seccionPersonalizarBoton.png, id=762, 822.6735pt x 452.28975pt>
 File: imagenesUS1/seccionPersonalizarBoton.png Graphic file (type png)
 <use imagenesUS1/seccionPersonalizarBoton.png>
-Package pdftex.def Info: imagenesUS1/seccionPersonalizarBoton.png  used on input line 1309.
+Package pdftex.def Info: imagenesUS1/seccionPersonalizarBoton.png  used on input line 1313.
 (pdftex.def)             Requested size: 362.37569pt x 199.22894pt.
-<imagenesUS1/locales.png, id=759, 917.22675pt x 615.4995pt>
+<imagenesUS1/locales.png, id=763, 917.22675pt x 615.4995pt>
 File: imagenesUS1/locales.png Graphic file (type png)
 <use imagenesUS1/locales.png>
-Package pdftex.def Info: imagenesUS1/locales.png  used on input line 1317.
+Package pdftex.def Info: imagenesUS1/locales.png  used on input line 1321.
 (pdftex.def)             Requested size: 362.37569pt x 243.17128pt.
-LaTeX Info: Redefining \. on input line 1321.
-LaTeX Info: Redefining \% on input line 1321.
-LaTeX Info: Redefining \. on input line 1321.
-LaTeX Info: Redefining \% on input line 1321.
+LaTeX Info: Redefining \. on input line 1325.
+LaTeX Info: Redefining \% on input line 1325.
+LaTeX Info: Redefining \. on input line 1325.
+LaTeX Info: Redefining \% on input line 1325.
  [30
 
  <./imagenesUS1/seccionPersonalizarBoton.png>]
-<imagenesUS3-section/funcioncargarLocales.png, id=766, 440.24475pt x 492.6405pt>
+<imagenesUS3-section/funcioncargarLocales.png, id=770, 440.24475pt x 492.6405pt>
 File: imagenesUS3-section/funcioncargarLocales.png Graphic file (type png)
 <use imagenesUS3-section/funcioncargarLocales.png>
-Package pdftex.def Info: imagenesUS3-section/funcioncargarLocales.png  used on input line 1342.
+Package pdftex.def Info: imagenesUS3-section/funcioncargarLocales.png  used on input line 1346.
 (pdftex.def)             Requested size: 181.18439pt x 202.75066pt.
-LaTeX Info: Redefining \. on input line 1346.
-LaTeX Info: Redefining \% on input line 1346.
-LaTeX Info: Redefining \. on input line 1346.
-LaTeX Info: Redefining \% on input line 1346.
+LaTeX Info: Redefining \. on input line 1350.
+LaTeX Info: Redefining \% on input line 1350.
+LaTeX Info: Redefining \. on input line 1350.
+LaTeX Info: Redefining \% on input line 1350.
  [31 <./imagenesUS1/locales.png>]
-<imagenesUS3-section/funcionAlmacenarDatosProductos.png, id=773, 497.4585pt x 529.98pt>
+<imagenesUS3-section/funcionAlmacenarDatosProductos.png, id=777, 497.4585pt x 529.98pt>
 File: imagenesUS3-section/funcionAlmacenarDatosProductos.png Graphic file (type png)
 <use imagenesUS3-section/funcionAlmacenarDatosProductos.png>
-Package pdftex.def Info: imagenesUS3-section/funcionAlmacenarDatosProductos.png  used on input line 1356.
+Package pdftex.def Info: imagenesUS3-section/funcionAlmacenarDatosProductos.png  used on input line 1360.
 (pdftex.def)             Requested size: 226.48395pt x 241.28682pt.
-LaTeX Info: Redefining \. on input line 1365.
-LaTeX Info: Redefining \% on input line 1365.
-LaTeX Info: Redefining \. on input line 1365.
-LaTeX Info: Redefining \% on input line 1365.
+LaTeX Info: Redefining \. on input line 1369.
+LaTeX Info: Redefining \% on input line 1369.
+LaTeX Info: Redefining \. on input line 1369.
+LaTeX Info: Redefining \% on input line 1369.
  [32 <./imagenesUS3-section/funcioncargarLocales.png> <./imagenesUS3-section/funcionAlmacenarDatosProductos.png>]
-<imagenesUS3-section/finalSeccion.png, id=782, 445.665pt x 492.6405pt>
+<imagenesUS3-section/finalSeccion.png, id=786, 445.665pt x 492.6405pt>
 File: imagenesUS3-section/finalSeccion.png Graphic file (type png)
 <use imagenesUS3-section/finalSeccion.png>
-Package pdftex.def Info: imagenesUS3-section/finalSeccion.png  used on input line 1369.
+Package pdftex.def Info: imagenesUS3-section/finalSeccion.png  used on input line 1373.
 (pdftex.def)             Requested size: 226.48395pt x 250.35631pt.
-LaTeX Info: Redefining \. on input line 1396.
-LaTeX Info: Redefining \% on input line 1396.
-LaTeX Info: Redefining \. on input line 1396.
-LaTeX Info: Redefining \% on input line 1396.
+LaTeX Info: Redefining \. on input line 1400.
+LaTeX Info: Redefining \% on input line 1400.
+LaTeX Info: Redefining \. on input line 1400.
+LaTeX Info: Redefining \% on input line 1400.
  [33 <./imagenesUS3-section/finalSeccion.png>]
-<imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png, id=793, 422.7795pt x 519.74174pt>
+<imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png, id=797, 422.7795pt x 519.74174pt>
 File: imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png Graphic file (type png)
 <use imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png>
-Package pdftex.def Info: imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png  used on input line 1400.
+Package pdftex.def Info: imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png  used on input line 1404.
 (pdftex.def)             Requested size: 226.48395pt x 278.42786pt.
-<imagenesUS3-modal/FinalDeOpenModal.png, id=794, 386.04225pt x 305.34074pt>
+<imagenesUS3-modal/FinalDeOpenModal.png, id=798, 386.04225pt x 305.34074pt>
 File: imagenesUS3-modal/FinalDeOpenModal.png Graphic file (type png)
 <use imagenesUS3-modal/FinalDeOpenModal.png>
-Package pdftex.def Info: imagenesUS3-modal/FinalDeOpenModal.png  used on input line 1408.
+Package pdftex.def Info: imagenesUS3-modal/FinalDeOpenModal.png  used on input line 1412.
 (pdftex.def)             Requested size: 226.48395pt x 179.13844pt.
-<imagenesUS3-modal/recorrerAreasyMostrar.png, id=796, 460.72125pt x 395.076pt>
+<imagenesUS3-modal/recorrerAreasyMostrar.png, id=800, 460.72125pt x 395.076pt>
 File: imagenesUS3-modal/recorrerAreasyMostrar.png Graphic file (type png)
 <use imagenesUS3-modal/recorrerAreasyMostrar.png>
-Package pdftex.def Info: imagenesUS3-modal/recorrerAreasyMostrar.png  used on input line 1420.
+Package pdftex.def Info: imagenesUS3-modal/recorrerAreasyMostrar.png  used on input line 1424.
 (pdftex.def)             Requested size: 226.48395pt x 194.20985pt.
-LaTeX Info: Redefining \. on input line 1424.
-LaTeX Info: Redefining \% on input line 1424.
-LaTeX Info: Redefining \. on input line 1424.
-LaTeX Info: Redefining \% on input line 1424.
+LaTeX Info: Redefining \. on input line 1428.
+LaTeX Info: Redefining \% on input line 1428.
+LaTeX Info: Redefining \. on input line 1428.
+LaTeX Info: Redefining \% on input line 1428.
  [34 <./imagenesUS3-modal/AbrirModalPrimeraParte y función generateAreaTable.png> <./imagenesUS3-modal/FinalDeOpenModal.png>]
-<imagenesUS3-modal/AdjuntarLogoFetch.png, id=804, 482.40225pt x 483.0045pt>
+<imagenesUS3-modal/AdjuntarLogoFetch.png, id=808, 482.40225pt x 483.0045pt>
 File: imagenesUS3-modal/AdjuntarLogoFetch.png Graphic file (type png)
 <use imagenesUS3-modal/AdjuntarLogoFetch.png>
-Package pdftex.def Info: imagenesUS3-modal/AdjuntarLogoFetch.png  used on input line 1455.
+Package pdftex.def Info: imagenesUS3-modal/AdjuntarLogoFetch.png  used on input line 1459.
 (pdftex.def)             Requested size: 226.48395pt x 226.76892pt.
-LaTeX Info: Redefining \. on input line 1459.
-LaTeX Info: Redefining \% on input line 1459.
-LaTeX Info: Redefining \. on input line 1459.
-LaTeX Info: Redefining \% on input line 1459.
+LaTeX Info: Redefining \. on input line 1463.
+LaTeX Info: Redefining \% on input line 1463.
+LaTeX Info: Redefining \. on input line 1463.
+LaTeX Info: Redefining \% on input line 1463.
  [35 <./imagenesUS3-modal/recorrerAreasyMostrar.png>]
-<imagenesUS3-modal/FuncionalidadEspecialImagen.png, id=812, 489.027pt x 331.2375pt>
+<imagenesUS3-modal/FuncionalidadEspecialImagen.png, id=816, 489.027pt x 331.2375pt>
 File: imagenesUS3-modal/FuncionalidadEspecialImagen.png Graphic file (type png)
 <use imagenesUS3-modal/FuncionalidadEspecialImagen.png>
-Package pdftex.def Info: imagenesUS3-modal/FuncionalidadEspecialImagen.png  used on input line 1478.
+Package pdftex.def Info: imagenesUS3-modal/FuncionalidadEspecialImagen.png  used on input line 1482.
 (pdftex.def)             Requested size: 226.48395pt x 153.40721pt.
-LaTeX Info: Redefining \. on input line 1487.
-LaTeX Info: Redefining \% on input line 1487.
-LaTeX Info: Redefining \. on input line 1487.
-LaTeX Info: Redefining \% on input line 1487.
+LaTeX Info: Redefining \. on input line 1491.
+LaTeX Info: Redefining \% on input line 1491.
+LaTeX Info: Redefining \. on input line 1491.
+LaTeX Info: Redefining \% on input line 1491.
  [36 <./imagenesUS3-modal/AdjuntarLogoFetch.png> <./imagenesUS3-modal/FuncionalidadEspecialImagen.png>]
-<imagenesUS3-modal/manejoDesabilitarElementos.png, id=821, 389.0535pt x 320.397pt>
+<imagenesUS3-modal/manejoDesabilitarElementos.png, id=825, 389.0535pt x 320.397pt>
 File: imagenesUS3-modal/manejoDesabilitarElementos.png Graphic file (type png)
 <use imagenesUS3-modal/manejoDesabilitarElementos.png>
-Package pdftex.def Info: imagenesUS3-modal/manejoDesabilitarElementos.png  used on input line 1497.
+Package pdftex.def Info: imagenesUS3-modal/manejoDesabilitarElementos.png  used on input line 1501.
 (pdftex.def)             Requested size: 226.48395pt x 186.51482pt.
-<imagenesUS3-modal/variableDatosArreglada.png, id=823, 299.9205pt x 230.0595pt>
+<imagenesUS3-modal/variableDatosArreglada.png, id=827, 299.9205pt x 230.0595pt>
 File: imagenesUS3-modal/variableDatosArreglada.png Graphic file (type png)
 <use imagenesUS3-modal/variableDatosArreglada.png>
-Package pdftex.def Info: imagenesUS3-modal/variableDatosArreglada.png  used on input line 1514.
+Package pdftex.def Info: imagenesUS3-modal/variableDatosArreglada.png  used on input line 1518.
 (pdftex.def)             Requested size: 226.48395pt x 173.73422pt.
-LaTeX Info: Redefining \. on input line 1518.
-LaTeX Info: Redefining \% on input line 1518.
-LaTeX Info: Redefining \. on input line 1518.
-LaTeX Info: Redefining \% on input line 1518.
+LaTeX Info: Redefining \. on input line 1522.
+LaTeX Info: Redefining \% on input line 1522.
+LaTeX Info: Redefining \. on input line 1522.
+LaTeX Info: Redefining \% on input line 1522.
  [37 <./imagenesUS3-modal/manejoDesabilitarElementos.png>]
-<imagenesUS3-modal/generarResumen.png, id=830, 608.87476pt x 509.5035pt>
+<imagenesUS3-modal/generarResumen.png, id=834, 608.87476pt x 509.5035pt>
 File: imagenesUS3-modal/generarResumen.png Graphic file (type png)
 <use imagenesUS3-modal/generarResumen.png>
-Package pdftex.def Info: imagenesUS3-modal/generarResumen.png  used on input line 1537.
+Package pdftex.def Info: imagenesUS3-modal/generarResumen.png  used on input line 1541.
 (pdftex.def)             Requested size: 226.48395pt x 189.524pt.
-LaTeX Info: Redefining \. on input line 1553.
-LaTeX Info: Redefining \% on input line 1553.
-LaTeX Info: Redefining \. on input line 1553.
-LaTeX Info: Redefining \% on input line 1553.
+LaTeX Info: Redefining \. on input line 1557.
+LaTeX Info: Redefining \% on input line 1557.
+LaTeX Info: Redefining \. on input line 1557.
+LaTeX Info: Redefining \% on input line 1557.
  [38 <./imagenesUS3-modal/variableDatosArreglada.png> <./imagenesUS3-modal/generarResumen.png>]
-<imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png, id=838, 299.9205pt x 513.117pt>
+<imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png, id=842, 299.9205pt x 513.117pt>
 File: imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png Graphic file (type png)
 <use imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png>
-Package pdftex.def Info: imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png  used on input line 1562.
+Package pdftex.def Info: imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png  used on input line 1566.
 (pdftex.def)             Requested size: 226.48395pt x 387.49101pt.
-LaTeX Info: Redefining \. on input line 1581.
-LaTeX Info: Redefining \% on input line 1581.
-LaTeX Info: Redefining \. on input line 1581.
-LaTeX Info: Redefining \% on input line 1581.
+LaTeX Info: Redefining \. on input line 1585.
+LaTeX Info: Redefining \% on input line 1585.
+LaTeX Info: Redefining \. on input line 1585.
+LaTeX Info: Redefining \% on input line 1585.
  [39 <./imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png>]
-<imagenesUS3-modal/fetchAñadirCarrito.png, id=846, 420.3705pt x 442.65375pt>
+<imagenesUS3-modal/fetchAñadirCarrito.png, id=850, 420.3705pt x 442.65375pt>
 File: imagenesUS3-modal/fetchAñadirCarrito.png Graphic file (type png)
 <use imagenesUS3-modal/fetchAñadirCarrito.png>
-Package pdftex.def Info: imagenesUS3-modal/fetchAñadirCarrito.png  used on input line 1589.
+Package pdftex.def Info: imagenesUS3-modal/fetchAñadirCarrito.png  used on input line 1593.
 (pdftex.def)             Requested size: 271.7835pt x 286.20178pt.
-LaTeX Info: Redefining \. on input line 1594.
-LaTeX Info: Redefining \% on input line 1594.
-LaTeX Info: Redefining \. on input line 1594.
-LaTeX Info: Redefining \% on input line 1594.
+LaTeX Info: Redefining \. on input line 1598.
+LaTeX Info: Redefining \% on input line 1598.
+LaTeX Info: Redefining \. on input line 1598.
+LaTeX Info: Redefining \% on input line 1598.
  [40 <./imagenesUS3-modal/fetchAñadirCarrito.png>]
-<imagenes-tema/estructuraCartTransform.png, id=855, 133.6995pt x 193.9245pt>
+<imagenes-tema/estructuraCartTransform.png, id=859, 133.6995pt x 193.9245pt>
 File: imagenes-tema/estructuraCartTransform.png Graphic file (type png)
 <use imagenes-tema/estructuraCartTransform.png>
-Package pdftex.def Info: imagenes-tema/estructuraCartTransform.png  used on input line 1614.
+Package pdftex.def Info: imagenes-tema/estructuraCartTransform.png  used on input line 1618.
 (pdftex.def)             Requested size: 181.18439pt x 262.81946pt.
-LaTeX Info: Redefining \. on input line 1623.
-LaTeX Info: Redefining \% on input line 1623.
-LaTeX Info: Redefining \. on input line 1623.
-LaTeX Info: Redefining \% on input line 1623.
+LaTeX Info: Redefining \. on input line 1627.
+LaTeX Info: Redefining \% on input line 1627.
+LaTeX Info: Redefining \. on input line 1627.
+LaTeX Info: Redefining \% on input line 1627.
  [41
 
  <./imagenes-tema/estructuraCartTransform.png>]
-<imagenes-tema/queryCartTransform.png, id=864, 208.98074pt x 486.01575pt>
+<imagenes-tema/queryCartTransform.png, id=868, 208.98074pt x 486.01575pt>
 File: imagenes-tema/queryCartTransform.png Graphic file (type png)
 <use imagenes-tema/queryCartTransform.png>
-Package pdftex.def Info: imagenes-tema/queryCartTransform.png  used on input line 1628.
+Package pdftex.def Info: imagenes-tema/queryCartTransform.png  used on input line 1632.
 (pdftex.def)             Requested size: 181.18439pt x 421.39159pt.
-<imagenes-tema/primeraParteFunction.png, id=866, 383.63326pt x 508.90125pt>
+<imagenes-tema/primeraParteFunction.png, id=870, 383.63326pt x 508.90125pt>
 File: imagenes-tema/primeraParteFunction.png Graphic file (type png)
 <use imagenes-tema/primeraParteFunction.png>
-Package pdftex.def Info: imagenes-tema/primeraParteFunction.png  used on input line 1644.
+Package pdftex.def Info: imagenes-tema/primeraParteFunction.png  used on input line 1648.
 (pdftex.def)             Requested size: 163.06871pt x 216.31511pt.
-LaTeX Info: Redefining \. on input line 1648.
-LaTeX Info: Redefining \% on input line 1648.
-LaTeX Info: Redefining \. on input line 1648.
-LaTeX Info: Redefining \% on input line 1648.
+LaTeX Info: Redefining \. on input line 1652.
+LaTeX Info: Redefining \% on input line 1652.
+LaTeX Info: Redefining \. on input line 1652.
+LaTeX Info: Redefining \% on input line 1652.
  [42 <./imagenes-tema/queryCartTransform.png>]
-<imagenes-tema/segundaParteFunction.png, id=873, 405.31425pt x 380.622pt>
+<imagenes-tema/segundaParteFunction.png, id=877, 405.31425pt x 380.622pt>
 File: imagenes-tema/segundaParteFunction.png Graphic file (type png)
 <use imagenes-tema/segundaParteFunction.png>
-Package pdftex.def Info: imagenes-tema/segundaParteFunction.png  used on input line 1658.
+Package pdftex.def Info: imagenes-tema/segundaParteFunction.png  used on input line 1662.
 (pdftex.def)             Requested size: 226.48395pt x 212.68222pt.
-LaTeX Info: Redefining \. on input line 1667.
-LaTeX Info: Redefining \% on input line 1667.
-LaTeX Info: Redefining \. on input line 1667.
-LaTeX Info: Redefining \% on input line 1667.
+LaTeX Info: Redefining \. on input line 1671.
+LaTeX Info: Redefining \% on input line 1671.
+LaTeX Info: Redefining \. on input line 1671.
+LaTeX Info: Redefining \% on input line 1671.
  [43 <./imagenes-tema/primeraParteFunction.png> <./imagenes-tema/segundaParteFunction.png>]
-<imagenes-tema/creacionSeccionTema.png, id=882, 158.39175pt x 80.09924pt>
+<imagenes-tema/creacionSeccionTema.png, id=886, 158.39175pt x 80.09924pt>
 File: imagenes-tema/creacionSeccionTema.png Graphic file (type png)
 <use imagenes-tema/creacionSeccionTema.png>
-Package pdftex.def Info: imagenes-tema/creacionSeccionTema.png  used on input line 1678.
+Package pdftex.def Info: imagenes-tema/creacionSeccionTema.png  used on input line 1682.
 (pdftex.def)             Requested size: 181.18439pt x 91.62572pt.
-<imagenes-tema/modificaciondetema.png, id=883, 604.05675pt x 395.67825pt>
+<imagenes-tema/modificaciondetema.png, id=887, 604.05675pt x 395.67825pt>
 File: imagenes-tema/modificaciondetema.png Graphic file (type png)
 <use imagenes-tema/modificaciondetema.png>
-Package pdftex.def Info: imagenes-tema/modificaciondetema.png  used on input line 1686.
+Package pdftex.def Info: imagenes-tema/modificaciondetema.png  used on input line 1690.
 (pdftex.def)             Requested size: 362.37569pt x 237.37254pt.
-LaTeX Info: Redefining \. on input line 1692.
-LaTeX Info: Redefining \% on input line 1692.
-LaTeX Info: Redefining \. on input line 1692.
-LaTeX Info: Redefining \% on input line 1692.
+LaTeX Info: Redefining \. on input line 1696.
+LaTeX Info: Redefining \% on input line 1696.
+LaTeX Info: Redefining \. on input line 1696.
+LaTeX Info: Redefining \% on input line 1696.
  [44 <./imagenes-tema/creacionSeccionTema.png> <./imagenes-tema/modificaciondetema.png>]
-LaTeX Info: Redefining \. on input line 1730.
-LaTeX Info: Redefining \% on input line 1730.
-LaTeX Info: Redefining \. on input line 1730.
-LaTeX Info: Redefining \% on input line 1730.
+LaTeX Info: Redefining \. on input line 1734.
+LaTeX Info: Redefining \% on input line 1734.
+LaTeX Info: Redefining \. on input line 1734.
+LaTeX Info: Redefining \% on input line 1734.
  [45
 
 ]
-<imagenes/package.json.scripts.png, id=898, 352.9185pt x 221.02576pt>
+<imagenes/package.json.scripts.png, id=902, 352.9185pt x 221.02576pt>
 File: imagenes/package.json.scripts.png Graphic file (type png)
 <use imagenes/package.json.scripts.png>
-Package pdftex.def Info: imagenes/package.json.scripts.png  used on input line 1747.
+Package pdftex.def Info: imagenes/package.json.scripts.png  used on input line 1751.
 (pdftex.def)             Requested size: 181.18439pt x 113.47372pt.
-LaTeX Info: Redefining \. on input line 1767.
-LaTeX Info: Redefining \% on input line 1767.
-LaTeX Info: Redefining \. on input line 1767.
-LaTeX Info: Redefining \% on input line 1767.
+LaTeX Info: Redefining \. on input line 1771.
+LaTeX Info: Redefining \% on input line 1771.
+LaTeX Info: Redefining \. on input line 1771.
+LaTeX Info: Redefining \% on input line 1771.
  [46
 
  <./imagenes/package.json.scripts.png>]
-<imagenes/variablesEntornoDespliegue.png, id=907, 665.48625pt x 127.677pt>
+<imagenes/variablesEntornoDespliegue.png, id=911, 665.48625pt x 127.677pt>
 File: imagenes/variablesEntornoDespliegue.png Graphic file (type png)
 <use imagenes/variablesEntornoDespliegue.png>
-Package pdftex.def Info: imagenes/variablesEntornoDespliegue.png  used on input line 1779.
+Package pdftex.def Info: imagenes/variablesEntornoDespliegue.png  used on input line 1783.
 (pdftex.def)             Requested size: 271.7835pt x 52.14334pt.
 
-Overfull \hbox (22.58313pt too wide) in paragraph at lines 1784--1788
+Overfull \hbox (22.58313pt too wide) in paragraph at lines 1788--1792
 \T1/lmr/m/n/10.95 torno que ne-ce-si-ta pa-ra com-pi-lar \T1/lmr/m/it/10.95 ex-port SHO-PIFY_API_KEY=193f58fc9600c8084a97860c490eeb41
  []
 
-<imagenes/panelPartnersDistribution.png, id=911, 1121.3895pt x 506.49225pt>
+<imagenes/panelPartnersDistribution.png, id=915, 1121.3895pt x 506.49225pt>
 File: imagenes/panelPartnersDistribution.png Graphic file (type png)
 <use imagenes/panelPartnersDistribution.png>
-Package pdftex.def Info: imagenes/panelPartnersDistribution.png  used on input line 1807.
+Package pdftex.def Info: imagenes/panelPartnersDistribution.png  used on input line 1811.
 (pdftex.def)             Requested size: 271.7835pt x 122.7508pt.
-LaTeX Info: Redefining \. on input line 1811.
-LaTeX Info: Redefining \% on input line 1811.
-LaTeX Info: Redefining \. on input line 1811.
-LaTeX Info: Redefining \% on input line 1811.
+LaTeX Info: Redefining \. on input line 1815.
+LaTeX Info: Redefining \% on input line 1815.
+LaTeX Info: Redefining \. on input line 1815.
+LaTeX Info: Redefining \% on input line 1815.
 [47 <./imagenes/variablesEntornoDespliegue.png>]
-<imagenes/distribucionAppEnlace.png, id=917, 1052.733pt x 379.4175pt>
+<imagenes/distribucionAppEnlace.png, id=921, 1052.733pt x 379.4175pt>
 File: imagenes/distribucionAppEnlace.png Graphic file (type png)
 <use imagenes/distribucionAppEnlace.png>
-Package pdftex.def Info: imagenes/distribucionAppEnlace.png  used on input line 1815.
+Package pdftex.def Info: imagenes/distribucionAppEnlace.png  used on input line 1819.
 (pdftex.def)             Requested size: 317.07614pt x 114.2777pt.
-<imagenes/generarLinkDistribution.png, id=918, 412.54124pt x 239.09325pt>
+<imagenes/generarLinkDistribution.png, id=922, 412.54124pt x 239.09325pt>
 File: imagenes/generarLinkDistribution.png Graphic file (type png)
 <use imagenes/generarLinkDistribution.png>
-Package pdftex.def Info: imagenes/generarLinkDistribution.png  used on input line 1823.
+Package pdftex.def Info: imagenes/generarLinkDistribution.png  used on input line 1827.
 (pdftex.def)             Requested size: 226.48395pt x 131.2609pt.
-LaTeX Info: Redefining \. on input line 1831.
-LaTeX Info: Redefining \% on input line 1831.
-LaTeX Info: Redefining \. on input line 1831.
-LaTeX Info: Redefining \% on input line 1831.
+LaTeX Info: Redefining \. on input line 1835.
+LaTeX Info: Redefining \% on input line 1835.
+LaTeX Info: Redefining \. on input line 1835.
+LaTeX Info: Redefining \% on input line 1835.
  [48 <./imagenes/panelPartnersDistribution.png> <./imagenes/distribucionAppEnlace.png> <./imagenes/generarLinkDistribution.png>]
-LaTeX Info: Redefining \. on input line 1878.
-LaTeX Info: Redefining \% on input line 1878.
+LaTeX Info: Redefining \. on input line 1882.
+LaTeX Info: Redefining \% on input line 1882.
  [49
 
 ]
-LaTeX Info: Redefining \. on input line 1879.
-LaTeX Info: Redefining \% on input line 1879.
-LaTeX Info: Redefining \. on input line 1879.
-LaTeX Info: Redefining \% on input line 1879.
+LaTeX Info: Redefining \. on input line 1883.
+LaTeX Info: Redefining \% on input line 1883.
+LaTeX Info: Redefining \. on input line 1883.
+LaTeX Info: Redefining \% on input line 1883.
  [50]
-Underfull \hbox (badness 4713) in paragraph at lines 1890--1892
+Underfull \hbox (badness 4713) in paragraph at lines 1894--1896
 \T1/lmtt/m/n/10.95 / / www . shopify . com / partners / blog / differentiate-[]your-[]ecommerce-[]store$[][] \T1/lmr/m/n/10.95 (vi-si-ta-
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1919--1921
+Underfull \hbox (badness 1728) in paragraph at lines 1923--1925
 []\T1/lmr/m/n/10.95 wikipedia.org \T1/lmr/m/it/10.95 ``Html''\T1/lmr/m/n/10.95 , �l-ti-ma ac-tua-li-za-ci�n: 19 abr 2024, di-rec-ci�n: [][]$\T1/lmtt/m/n/10.95 https : / / es .
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 1927--1929
+Underfull \hbox (badness 3098) in paragraph at lines 1931--1933
 []\T1/lmr/m/n/10.95 kinsta.com \T1/lmr/m/it/10.95 ``�Qu� es React.js? Un Vis-ta-zo a la Po-pu-lar Bi-blio-te-ca de Ja-vaS-
  []
 
-LaTeX Info: Redefining \. on input line 1950.
-LaTeX Info: Redefining \% on input line 1950.
+LaTeX Info: Redefining \. on input line 1954.
+LaTeX Info: Redefining \% on input line 1954.
 [51
 
 ]
-Underfull \hbox (badness 3138) in paragraph at lines 1955--1957
+Underfull \hbox (badness 3138) in paragraph at lines 1959--1961
 []\T1/lmr/m/n/10.95 Nodejs.org. \T1/lmr/m/it/10.95 ``In-tro-duc-tion to No-de.js''\T1/lmr/m/n/10.95 , �l-ti-ma ac-tua-li-za-ci�n: 25 enero 2022, di-
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 1967--1969
+Underfull \hbox (badness 2894) in paragraph at lines 1971--1973
 []\T1/lmr/m/n/10.95 kinsta.com. \T1/lmr/m/it/10.95 ``�Qu� es Ex-press.js? To-do lo que De-bes Sa-ber''\T1/lmr/m/n/10.95 , �l-ti-ma ac-tua-li-za-
  []
 
 
-Underfull \hbox (badness 6493) in paragraph at lines 1987--1989
+Underfull \hbox (badness 6493) in paragraph at lines 1991--1993
 []\T1/lmr/m/n/10.95 Microsoft. \T1/lmr/m/it/10.95 ``�Qu� es Azu-re De-vOps?''\T1/lmr/m/n/10.95 , �l-ti-ma ac-tua-li-za-ci�n: 25 mar-zo 2024,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1987--1989
+Underfull \hbox (badness 10000) in paragraph at lines 1991--1993
 \T1/lmr/m/n/10.95 di-rec-ci�n: [][]$\T1/lmtt/m/n/10.95 https : / / learn . microsoft . com / es-[]es / azure / devops / user-[]guide /
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 2011--2013
+Underfull \hbox (badness 4647) in paragraph at lines 2015--2017
 []\T1/lmr/m/n/10.95 Shopify. \T1/lmr/m/it/10.95 ``Add a cus-to-mi-zed bund-le''\T1/lmr/m/n/10.95 , �l-ti-ma ac-tua-li-za-ci�n: 1 enero 2024, di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2011--2013
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2017
 \T1/lmr/m/n/10.95 rec-ci�n: [][]$\T1/lmtt/m/n/10.95 https : / / shopify . dev / docs / apps / selling-[]strategies / bundles /
  []
 
-LaTeX Info: Redefining \. on input line 2017.
-LaTeX Info: Redefining \% on input line 2017.
-LaTeX Info: Redefining \. on input line 2017.
-LaTeX Info: Redefining \% on input line 2017.
+LaTeX Info: Redefining \. on input line 2021.
+LaTeX Info: Redefining \% on input line 2021.
+LaTeX Info: Redefining \. on input line 2021.
+LaTeX Info: Redefining \% on input line 2021.
 [52]
-Underfull \hbox (badness 10000) in paragraph at lines 2023--2025
+Underfull \hbox (badness 10000) in paragraph at lines 2027--2029
 []\T1/lmr/m/n/10.95 Shopify. \T1/lmr/m/it/10.95 ``Cart API re-fe-ren-ce''\T1/lmr/m/n/10.95 , �l-ti-ma ac-tua-li-za-ci�n: 1 enero 2024,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2023--2025
+Underfull \hbox (badness 10000) in paragraph at lines 2027--2029
 \T1/lmr/m/n/10.95 di-rec-ci�n: [][]$\T1/lmtt/m/n/10.95 https : / / shopify . dev / docs / api / ajax / reference / cart #
  []
 
-LaTeX Info: Redefining \. on input line 2028.
-LaTeX Info: Redefining \% on input line 2028.
-LaTeX Info: Redefining \. on input line 2028.
-LaTeX Info: Redefining \% on input line 2028.
+LaTeX Info: Redefining \. on input line 2032.
+LaTeX Info: Redefining \% on input line 2032.
+LaTeX Info: Redefining \. on input line 2032.
+LaTeX Info: Redefining \% on input line 2032.
 [53]
-<imagenes/ManualUsuario/PantallaDePersonalizarTema.png, id=1004, 1120.78725pt x 430.60875pt>
+<imagenes/ManualUsuario/PantallaDePersonalizarTema.png, id=1008, 1120.78725pt x 430.60875pt>
 File: imagenes/ManualUsuario/PantallaDePersonalizarTema.png Graphic file (type png)
 <use imagenes/ManualUsuario/PantallaDePersonalizarTema.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PantallaDePersonalizarTema.png  used on input line 2043.
+Package pdftex.def Info: imagenes/ManualUsuario/PantallaDePersonalizarTema.png  used on input line 2047.
 (pdftex.def)             Requested size: 362.37569pt x 139.22342pt.
-<imagenes/ManualUsuario/AñadirBloqueThemeExtension.png, id=1006, 1115.367pt x 549.252pt>
+<imagenes/ManualUsuario/AñadirBloqueThemeExtension.png, id=1010, 1115.367pt x 549.252pt>
 File: imagenes/ManualUsuario/AñadirBloqueThemeExtension.png Graphic file (type png)
 <use imagenes/ManualUsuario/AñadirBloqueThemeExtension.png>
-Package pdftex.def Info: imagenes/ManualUsuario/AñadirBloqueThemeExtension.png  used on input line 2056.
+Package pdftex.def Info: imagenes/ManualUsuario/AñadirBloqueThemeExtension.png  used on input line 2060.
 (pdftex.def)             Requested size: 362.37569pt x 178.4461pt.
-LaTeX Info: Redefining \. on input line 2065.
-LaTeX Info: Redefining \% on input line 2065.
+LaTeX Info: Redefining \. on input line 2069.
+LaTeX Info: Redefining \% on input line 2069.
  [54
 
 {C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./imagenes/ManualUsuario/PantallaDePersonalizarTema.png> <./imagenes/ManualUsuario/AñadirBloqueThemeExtension.png>]
-<imagenes/ManualUsuario/PaginaAdministracion.png, id=1016, 1385.175pt x 685.05937pt>
+<imagenes/ManualUsuario/PaginaAdministracion.png, id=1020, 1385.175pt x 685.05937pt>
 File: imagenes/ManualUsuario/PaginaAdministracion.png Graphic file (type png)
 <use imagenes/ManualUsuario/PaginaAdministracion.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PaginaAdministracion.png  used on input line 2069.
+Package pdftex.def Info: imagenes/ManualUsuario/PaginaAdministracion.png  used on input line 2073.
 (pdftex.def)             Requested size: 362.37569pt x 179.21927pt.
-<imagenes/ManualUsuario/FuncionalidadPaginaAdministracion.png, id=1017, 919.0335pt x 516.12825pt>
+<imagenes/ManualUsuario/FuncionalidadPaginaAdministracion.png, id=1021, 919.0335pt x 516.12825pt>
 File: imagenes/ManualUsuario/FuncionalidadPaginaAdministracion.png Graphic file (type png)
 <use imagenes/ManualUsuario/FuncionalidadPaginaAdministracion.png>
-Package pdftex.def Info: imagenes/ManualUsuario/FuncionalidadPaginaAdministracion.png  used on input line 2077.
+Package pdftex.def Info: imagenes/ManualUsuario/FuncionalidadPaginaAdministracion.png  used on input line 2081.
 (pdftex.def)             Requested size: 362.37569pt x 203.50221pt.
-<imagenes/ManualUsuario/HomeTiendaDemo.png, id=1019, 865.43324pt x 452.892pt>
+<imagenes/ManualUsuario/HomeTiendaDemo.png, id=1023, 865.43324pt x 452.892pt>
 File: imagenes/ManualUsuario/HomeTiendaDemo.png Graphic file (type png)
 <use imagenes/ManualUsuario/HomeTiendaDemo.png>
-Package pdftex.def Info: imagenes/ManualUsuario/HomeTiendaDemo.png  used on input line 2092.
+Package pdftex.def Info: imagenes/ManualUsuario/HomeTiendaDemo.png  used on input line 2096.
 (pdftex.def)             Requested size: 362.37569pt x 189.63976pt.
-LaTeX Info: Redefining \. on input line 2095.
-LaTeX Info: Redefining \% on input line 2095.
-LaTeX Info: Redefining \. on input line 2095.
-LaTeX Info: Redefining \% on input line 2095.
+LaTeX Info: Redefining \. on input line 2099.
+LaTeX Info: Redefining \% on input line 2099.
+LaTeX Info: Redefining \. on input line 2099.
+LaTeX Info: Redefining \% on input line 2099.
  [55 <./imagenes/ManualUsuario/PaginaAdministracion.png> <./imagenes/ManualUsuario/FuncionalidadPaginaAdministracion.png>]
-<imagenes/ManualUsuario/PaginaProductoSinPersonalizacion.png, id=1028, 910.602pt x 474.573pt>
+<imagenes/ManualUsuario/PaginaProductoSinPersonalizacion.png, id=1032, 910.602pt x 474.573pt>
 File: imagenes/ManualUsuario/PaginaProductoSinPersonalizacion.png Graphic file (type png)
 <use imagenes/ManualUsuario/PaginaProductoSinPersonalizacion.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PaginaProductoSinPersonalizacion.png  used on input line 2106.
+Package pdftex.def Info: imagenes/ManualUsuario/PaginaProductoSinPersonalizacion.png  used on input line 2110.
 (pdftex.def)             Requested size: 362.37569pt x 188.85548pt.
-<imagenes/ManualUsuario/PaginaProductoConPersonalizacion.png, id=1029, 967.2135pt x 501.072pt>
+<imagenes/ManualUsuario/PaginaProductoConPersonalizacion.png, id=1033, 967.2135pt x 501.072pt>
 File: imagenes/ManualUsuario/PaginaProductoConPersonalizacion.png Graphic file (type png)
 <use imagenes/ManualUsuario/PaginaProductoConPersonalizacion.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PaginaProductoConPersonalizacion.png  used on input line 2114.
+Package pdftex.def Info: imagenes/ManualUsuario/PaginaProductoConPersonalizacion.png  used on input line 2118.
 (pdftex.def)             Requested size: 362.37569pt x 187.73334pt.
-LaTeX Info: Redefining \. on input line 2118.
-LaTeX Info: Redefining \% on input line 2118.
-LaTeX Info: Redefining \. on input line 2118.
-LaTeX Info: Redefining \% on input line 2118.
+LaTeX Info: Redefining \. on input line 2122.
+LaTeX Info: Redefining \% on input line 2122.
+LaTeX Info: Redefining \. on input line 2122.
+LaTeX Info: Redefining \% on input line 2122.
  [56 <./imagenes/ManualUsuario/HomeTiendaDemo.png> <./imagenes/ManualUsuario/PaginaProductoSinPersonalizacion.png>]
-<imagenes/ManualUsuario/PersonalizadorArtículosCamiseta.png, id=1037, 1052.13075pt x 429.40425pt>
+<imagenes/ManualUsuario/PersonalizadorArtículosCamiseta.png, id=1041, 1052.13075pt x 429.40425pt>
 File: imagenes/ManualUsuario/PersonalizadorArtículosCamiseta.png Graphic file (type png)
 <use imagenes/ManualUsuario/PersonalizadorArtículosCamiseta.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorArtículosCamiseta.png  used on input line 2127.
+Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorArtículosCamiseta.png  used on input line 2131.
 (pdftex.def)             Requested size: 362.37569pt x 147.89563pt.
-<imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png, id=1040, 1037.0745pt x 424.58624pt>
+<imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png, id=1044, 1037.0745pt x 424.58624pt>
 File: imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png Graphic file (type png)
 <use imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png  used on input line 2139.
+Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png  used on input line 2143.
 (pdftex.def)             Requested size: 362.37569pt x 148.35474pt.
-LaTeX Info: Redefining \. on input line 2143.
-LaTeX Info: Redefining \% on input line 2143.
-LaTeX Info: Redefining \. on input line 2143.
-LaTeX Info: Redefining \% on input line 2143.
+LaTeX Info: Redefining \. on input line 2147.
+LaTeX Info: Redefining \% on input line 2147.
+LaTeX Info: Redefining \. on input line 2147.
+LaTeX Info: Redefining \% on input line 2147.
  [57 <./imagenes/ManualUsuario/PaginaProductoConPersonalizacion.png> <./imagenes/ManualUsuario/PersonalizadorArtículosCamiseta.png>]
-<imagenes/ManualUsuario/PersonalizadorVariasAreasDeImpresiónSeleccionadas.png, id=1048, 1037.0745pt x 425.1885pt>
+<imagenes/ManualUsuario/PersonalizadorVariasAreasDeImpresiónSeleccionadas.png, id=1052, 1037.0745pt x 425.1885pt>
 File: imagenes/ManualUsuario/PersonalizadorVariasAreasDeImpresiónSeleccionadas.png Graphic file (type png)
 <use imagenes/ManualUsuario/PersonalizadorVariasAreasDeImpresiónSeleccionadas.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorVariasAreasDeImpresiónSeleccionadas.png  used on input line 2147.
+Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorVariasAreasDeImpresiónSeleccionadas.png  used on input line 2151.
 (pdftex.def)             Requested size: 362.37569pt x 148.56517pt.
-<imagenes/ManualUsuario/PersonalizadorArea1ColoresSeleccionados.png, id=1050, 1037.67674pt x 425.79076pt>
+<imagenes/ManualUsuario/PersonalizadorArea1ColoresSeleccionados.png, id=1054, 1037.67674pt x 425.79076pt>
 File: imagenes/ManualUsuario/PersonalizadorArea1ColoresSeleccionados.png Graphic file (type png)
 <use imagenes/ManualUsuario/PersonalizadorArea1ColoresSeleccionados.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorArea1ColoresSeleccionados.png  used on input line 2162.
+Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorArea1ColoresSeleccionados.png  used on input line 2166.
 (pdftex.def)             Requested size: 362.37569pt x 148.69115pt.
-LaTeX Info: Redefining \. on input line 2166.
-LaTeX Info: Redefining \% on input line 2166.
-LaTeX Info: Redefining \. on input line 2166.
-LaTeX Info: Redefining \% on input line 2166.
+LaTeX Info: Redefining \. on input line 2170.
+LaTeX Info: Redefining \% on input line 2170.
+LaTeX Info: Redefining \. on input line 2170.
+LaTeX Info: Redefining \% on input line 2170.
  [58 <./imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png> <./imagenes/ManualUsuario/PersonalizadorVariasAreasDeImpresiónSeleccionadas.png>]
-<imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png, id=1058, 1037.0745pt x 425.1885pt>
+<imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png, id=1062, 1037.0745pt x 425.1885pt>
 File: imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png Graphic file (type png)
 <use imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png  used on input line 2175.
+Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png  used on input line 2179.
 (pdftex.def)             Requested size: 362.37569pt x 148.56517pt.
-<imagenes/ManualUsuario/PersonalizadorLogoSeleccionado.png, id=1060, 679.338pt x 411.33675pt>
+<imagenes/ManualUsuario/PersonalizadorLogoSeleccionado.png, id=1064, 679.338pt x 411.33675pt>
 File: imagenes/ManualUsuario/PersonalizadorLogoSeleccionado.png Graphic file (type png)
 <use imagenes/ManualUsuario/PersonalizadorLogoSeleccionado.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorLogoSeleccionado.png  used on input line 2189.
+Package pdftex.def Info: imagenes/ManualUsuario/PersonalizadorLogoSeleccionado.png  used on input line 2193.
 (pdftex.def)             Requested size: 362.37569pt x 219.41965pt.
-LaTeX Info: Redefining \. on input line 2193.
-LaTeX Info: Redefining \% on input line 2193.
-LaTeX Info: Redefining \. on input line 2193.
-LaTeX Info: Redefining \% on input line 2193.
+LaTeX Info: Redefining \. on input line 2197.
+LaTeX Info: Redefining \% on input line 2197.
+LaTeX Info: Redefining \. on input line 2197.
+LaTeX Info: Redefining \% on input line 2197.
  [59 <./imagenes/ManualUsuario/PersonalizadorArea1ColoresSeleccionados.png> <./imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png>]
-<imagenes/ManualUsuario/BotonCarrito.png, id=1071, 776.9025pt x 85.5195pt>
+<imagenes/ManualUsuario/BotonCarrito.png, id=1075, 776.9025pt x 85.5195pt>
 File: imagenes/ManualUsuario/BotonCarrito.png Graphic file (type png)
 <use imagenes/ManualUsuario/BotonCarrito.png>
-Package pdftex.def Info: imagenes/ManualUsuario/BotonCarrito.png  used on input line 2207.
+Package pdftex.def Info: imagenes/ManualUsuario/BotonCarrito.png  used on input line 2211.
 (pdftex.def)             Requested size: 362.37569pt x 39.8901pt.
-<imagenes/ManualUsuario/PantallaCarrito.png, id=1072, 792.561pt x 354.123pt>
+<imagenes/ManualUsuario/PantallaCarrito.png, id=1076, 792.561pt x 354.123pt>
 File: imagenes/ManualUsuario/PantallaCarrito.png Graphic file (type png)
 <use imagenes/ManualUsuario/PantallaCarrito.png>
-Package pdftex.def Info: imagenes/ManualUsuario/PantallaCarrito.png  used on input line 2215.
+Package pdftex.def Info: imagenes/ManualUsuario/PantallaCarrito.png  used on input line 2219.
 (pdftex.def)             Requested size: 362.37569pt x 161.91512pt.
-LaTeX Info: Redefining \. on input line 2219.
-LaTeX Info: Redefining \% on input line 2219.
-LaTeX Info: Redefining \. on input line 2219.
-LaTeX Info: Redefining \% on input line 2219.
+LaTeX Info: Redefining \. on input line 2223.
+LaTeX Info: Redefining \% on input line 2223.
+LaTeX Info: Redefining \. on input line 2223.
+LaTeX Info: Redefining \% on input line 2223.
  [60 <./imagenes/ManualUsuario/PersonalizadorLogoSeleccionado.png> <./imagenes/ManualUsuario/BotonCarrito.png>]
-<imagenes/ManualUsuario/ImagenCheckout.png, id=1079, 800.9925pt x 505.89pt>
+<imagenes/ManualUsuario/ImagenCheckout.png, id=1083, 800.9925pt x 505.89pt>
 File: imagenes/ManualUsuario/ImagenCheckout.png Graphic file (type png)
 <use imagenes/ManualUsuario/ImagenCheckout.png>
-Package pdftex.def Info: imagenes/ManualUsuario/ImagenCheckout.png  used on input line 2223.
+Package pdftex.def Info: imagenes/ManualUsuario/ImagenCheckout.png  used on input line 2227.
 (pdftex.def)             Requested size: 362.37569pt x 228.86803pt.
-LaTeX Info: Redefining \. on input line 2228.
-LaTeX Info: Redefining \% on input line 2228.
-LaTeX Info: Redefining \. on input line 2228.
-LaTeX Info: Redefining \% on input line 2228.
+LaTeX Info: Redefining \. on input line 2232.
+LaTeX Info: Redefining \% on input line 2232.
+LaTeX Info: Redefining \. on input line 2232.
+LaTeX Info: Redefining \% on input line 2232.
  [61 <./imagenes/ManualUsuario/PantallaCarrito.png> <./imagenes/ManualUsuario/ImagenCheckout.png>]
-LaTeX Info: Redefining \. on input line 2273.
-LaTeX Info: Redefining \% on input line 2273.
-LaTeX Info: Redefining \. on input line 2273.
-LaTeX Info: Redefining \% on input line 2273.
+LaTeX Info: Redefining \. on input line 2277.
+LaTeX Info: Redefining \% on input line 2277.
+LaTeX Info: Redefining \. on input line 2277.
+LaTeX Info: Redefining \% on input line 2277.
  [62
 
 ]
-LaTeX Info: Redefining \. on input line 2300.
-LaTeX Info: Redefining \% on input line 2300.
-LaTeX Info: Redefining \. on input line 2300.
-LaTeX Info: Redefining \% on input line 2300.
+LaTeX Info: Redefining \. on input line 2304.
+LaTeX Info: Redefining \% on input line 2304.
+LaTeX Info: Redefining \. on input line 2304.
+LaTeX Info: Redefining \% on input line 2304.
  [63]
-LaTeX Info: Redefining \. on input line 2321.
-LaTeX Info: Redefining \% on input line 2321.
-LaTeX Info: Redefining \. on input line 2321.
-LaTeX Info: Redefining \% on input line 2321.
+LaTeX Info: Redefining \. on input line 2325.
+LaTeX Info: Redefining \% on input line 2325.
+LaTeX Info: Redefining \. on input line 2325.
+LaTeX Info: Redefining \% on input line 2325.
  [64]
-LaTeX Info: Redefining \. on input line 2354.
-LaTeX Info: Redefining \% on input line 2354.
-LaTeX Info: Redefining \. on input line 2354.
-LaTeX Info: Redefining \% on input line 2354.
+LaTeX Info: Redefining \. on input line 2358.
+LaTeX Info: Redefining \% on input line 2358.
+LaTeX Info: Redefining \. on input line 2358.
+LaTeX Info: Redefining \% on input line 2358.
  [65]
-LaTeX Info: Redefining \. on input line 2384.
-LaTeX Info: Redefining \% on input line 2384.
-LaTeX Info: Redefining \. on input line 2384.
-LaTeX Info: Redefining \% on input line 2384.
+LaTeX Info: Redefining \. on input line 2388.
+LaTeX Info: Redefining \% on input line 2388.
+LaTeX Info: Redefining \. on input line 2388.
+LaTeX Info: Redefining \% on input line 2388.
  [66]
-LaTeX Info: Redefining \. on input line 2423.
-LaTeX Info: Redefining \% on input line 2423.
-LaTeX Info: Redefining \. on input line 2423.
-LaTeX Info: Redefining \% on input line 2423.
+LaTeX Info: Redefining \. on input line 2427.
+LaTeX Info: Redefining \% on input line 2427.
+LaTeX Info: Redefining \. on input line 2427.
+LaTeX Info: Redefining \% on input line 2427.
  [67]
-LaTeX Info: Redefining \. on input line 2432.
-LaTeX Info: Redefining \% on input line 2432.
-LaTeX Info: Redefining \. on input line 2432.
-LaTeX Info: Redefining \% on input line 2432.
+LaTeX Info: Redefining \. on input line 2436.
+LaTeX Info: Redefining \% on input line 2436.
+LaTeX Info: Redefining \. on input line 2436.
+LaTeX Info: Redefining \% on input line 2436.
  [68] (TFG-Rubén-Sánchez.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
@@ -1695,20 +1675,20 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `TFG-Rubén-Sánchez.out' has not changed.
-(rerunfilecheck)             Checksum: F08C03A17E18BB58093630D53D773515;7257.
+(rerunfilecheck)             Checksum: 324F61D942DD18264644188692924089;7383.
  ) 
 Here is how much of TeX's memory you used:
- 19414 strings out of 474486
- 323149 string characters out of 5736203
+ 19422 strings out of 474486
+ 323389 string characters out of 5736203
  1950542 words of memory out of 5000000
- 41079 multiletter control sequences out of 15000+600000
+ 41083 multiletter control sequences out of 15000+600000
  623342 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1137b,1064s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsco10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on TFG-Rubén-Sánchez.pdf (78 pages, 5365701 bytes).
+Output written on TFG-Rubén-Sánchez.pdf (78 pages, 5366455 bytes).
 PDF statistics:
- 1250 PDF objects out of 1440 (max. 8388607)
- 300 named destinations out of 1000 (max. 500000)
+ 1255 PDF objects out of 1440 (max. 8388607)
+ 304 named destinations out of 1000 (max. 500000)
  682 words of extra memory for PDF output out of 10000 (max. 10000000)
 

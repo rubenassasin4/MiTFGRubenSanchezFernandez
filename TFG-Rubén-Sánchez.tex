@@ -298,6 +298,10 @@ the application in a main branch of a centralized repository, deriving individua
 \pagenumbering{arabic} % Números arábigos para la segunda parte
 \setcounter{page}{1} % Reinicia el contador de página
 \setcounter{section}{0} % Reinicia el contador de secciones
+\makeatletter
+\@addtoreset{section}{part} % Reinicia el contador de secciones al comenzar una nueva parte
+\makeatother
+
 
 
 \section{Introducción}
