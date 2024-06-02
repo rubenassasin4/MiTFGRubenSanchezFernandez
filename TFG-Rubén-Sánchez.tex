@@ -133,6 +133,9 @@
     \end{center}
 \end{titlepage}
 
+% Cambiar el tamaño de la letra a 10pt a partir de aquí
+\fontsize{10pt}{12pt}\selectfont
+
 \pagestyle{empty}
 \pagenumbering{roman} % Números romanos para la primera parte
 \setcounter{page}{1}
@@ -413,7 +416,7 @@ interfaz de administración de una tienda Shopify en desarrollo.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.6\textwidth]{imagenes/Interfaz de administración.png}
+    \includegraphics[width=0.7\textwidth]{imagenes/Interfaz de administración.png}
     \caption{\label{fig:1}Interfaz de administración de tienda Shopify}
     \vspace{\fill}
 \end{figure}
@@ -463,7 +466,7 @@ sobre el tema que está activo; este abriría un editor que permitiría ajustar 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.6\textwidth]{imagenes/Interfaz de adminsitración elección de tema.png}
+    \includegraphics[width=0.7\textwidth]{imagenes/Interfaz de adminsitración elección de tema.png}
     \caption{\label{fig:2}Selección de tema en la interfaz de administración}
     \vspace{\fill}
 \end{figure}
@@ -611,7 +614,6 @@ llevado a cabo durante todo este periodo.
     la aplicación y se llevan cabo reuniones con el tutor para ir revisando y compartiendo opiniones sobre la documentación.
 \end{enumerate}
 
-\clearpage
 \subsubsection{Proceso de desarrollo}
 En la implementación de este proyecto se ha seguido un proceso de desarrollo enfocado en las metodologías ágiles, caracterizado por su naturaleza iterativa e incremental y por su fácil adaptabilidad a los cambios. Como se ha podido observar en las etapas del desarrollo,
 se han implementado las funcionalidades de manera iterativa, lo que ha permitido construir las distintas partes de la aplicación paso a paso e ir probándolas en varios ciclos.
@@ -749,16 +751,16 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \subsubsubsection{Historia de Usuario 4: Funcionalidad de Añadir al Carrito}\label{sec:historia4}
 
 \textbf{Como} administrador de la tienda,
-\textbf{quiero} poder añadir productos al carrito con su configuración y que al añadir estos productos relacionados (productos normales, trabajos y clichés), estos estén agrupados y vinculados de manera que no se puedan borrar o editar por separado,
+\textbf{quiero} poder añadir productos al carrito con su configuración y que al añadir estos productos relacionados (productos predeterminados, trabajos y clichés), estos estén agrupados y vinculados de manera que no se puedan borrar o editar por separado,
 \textbf{para} mejorar la experiencia de compra y facilitar la gestión de los productos de impresión.
 
 \vspace{0.5cm}
 \textbf{Criterios de Aceptación:}
 \begin{enumerate}[label=\arabic*.]
-    \item Los productos, junto con su configuración completa (productos normales, trabajos y clichés relacionados), deben agregarse correctamente al carrito al seleccionar la opción ``Añadir al Carrito''.
+    \item Los productos, junto con su configuración completa (productos predeterminados, trabajos y clichés relacionados), deben agregarse correctamente al carrito al seleccionar la opción ``Añadir al Carrito''.
     \item Al añadir productos al carrito, se deben incluir:
           \begin{itemize}
-              \item El producto ``normal''.
+              \item El producto ``predeterminado''.
               \item Los productos ``trabajo'' seleccionados en diferentes áreas, con la variante adecuada según el número de colores seleccionados.
               \item Los productos ``clichés'' asociados al trabajo, con la variante adecuada según si es de repetición o no.
           \end{itemize}
@@ -844,7 +846,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \begin{enumerate}[label=\arabic*.]
     \item Debe existir un \textit{metafield} llamado ``Importe Canon'' para los productos, que permita indicar si un producto tiene canon digital y especificar el importe correspondiente.
     \item Se debe crear un producto especial con un precio de un céntimo, que se utilizará para añadir el importe del canon digital al carrito de compra.
-    \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto (ya sea un producto normal o uno personalizado).
+    \item Cuando se añada un producto al carrito, se debe agregar automáticamente una línea de canon digital asociada al producto (ya sea un producto predeterminado o uno personalizado).
     \item La línea de canon digital debe estar vinculada al producto correspondiente y reflejar el importe del canon establecido para ese producto.
     \item Se debe utilizar la funcionalidad de paquetes de productos personalizados (\textit{customized bundles}) para asociar cada línea de producto con su línea de canon digital correspondiente en el carrito.
 \end{enumerate}
@@ -895,7 +897,7 @@ activar dichas funcionalidades. En la Figura~\ref{fig:disenoFront} se puede obse
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.7\textwidth]{imagenes-diseño/diseñoFrontend.png}
+    \includegraphics[width=0.8\textwidth]{imagenes-diseño/diseñoFrontend.png}
     \caption{\label{fig:disenoFront}Ejemplo para el diseño del frontend de la aplicación}
     \vspace{\fill}
 \end{figure}
@@ -949,8 +951,7 @@ de personalización de productos. En la página de producto existe un botón enc
 \clearpage
 \subsection{Implementación}
 Una vez analizadas las historias de usuario y elaborado el diseño de la aplicación, se redactaron una serie de tareas que sirvieron para guiar 
-la implementación del proyecto. En el Anexo~\ref{sec:tareas}, pueden observarse dichas tareas.
-La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas. 
+la implementación del proyecto. En el Anexo~\ref{sec:tareas}, pueden observarse dichas tareas. La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas. 
 Es importante remarcar que el proceso de implementación siguió una metodología iterativa e incremental como ya se ha comentado. Inicialmente, se llevó a cabo el desarrollo
 de las historias de usuario, el diseño de la aplicación y la creación detallada de las tareas en base a dichas historias y diseño realizado, centrándose unicamente en las funcionalidades básicas. Se priorizó
 la implementación de estas tareas, las cuales abordaban los requisitos esenciales de la aplicación. Una vez que se obtuvo la primera implementación del
@@ -963,7 +964,7 @@ la aplicación principal ubicada en el directorio \textit{web} junto con las dos
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.1\textwidth]{imagenes-diseño/estructura-aplicacion.png}
+    \includegraphics[width=0.2\textwidth]{imagenes-diseño/estructura-aplicacion.png}
     \caption{\label{fig:esquemaAplicacionReal}Estructura de la aplicación}
     \vspace{\fill}
 \end{figure}
@@ -988,7 +989,7 @@ tanto definiciones de \textit{metaobjects} como de \textit{metafields}.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/configuracionAdministradorTienda.png}
+    \includegraphics[width=0.7\textwidth]{imagenesUS2/configuracionAdministradorTienda.png}
     \caption{\label{fig:configuracionMetafields}Pantalla de configuración de la interfaz de administración de la tienda}
     \vspace{\fill}
 \end{figure}
@@ -1003,7 +1004,7 @@ para la implementación de la funcionalidad adicional que permite mostrar el log
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.7\textwidth]{imagenesUS2/creacionMetaobjeto.png}
+    \includegraphics[width=0.5\textwidth]{imagenesUS2/creacionMetaobjeto.png}
     \caption{\label{fig:metaobjeto}Estructura del \textit{metaobject}}
     \vspace{\fill}
 \end{figure}
@@ -1023,7 +1024,7 @@ Además este contará con dos variantes, ``SI'' y ``NO'', para indicar si el cli
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/elementosMetaobjectAdicionales.png}
+    \includegraphics[width=0.6\textwidth]{imagenesUS2/elementosMetaobjectAdicionales.png}
     \caption{\label{fig:metaobjetoAdicional}Datos adicionales para las áreas de impresión}
     \vspace{\fill}
 \end{figure}
@@ -1032,13 +1033,13 @@ En cada trabajo de impresión se hace uso de un cliché determinado, por lo que 
 crear la definición del \textit{metafield} ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma, al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
 
 Además, cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de \textit{metafield} ``Número de colores para trabajo'' que permita
-introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro \textit{metafield} para el tipo de elemento ``Producto''. Este será una 
+introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto predeterminado de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro \textit{metafield} para el tipo de elemento ``Producto''. Este será una 
 lista del \textit{metaobject} que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones de los tres tipos de \textit{metafields} configurados para los productos.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetafields.png}
+    \includegraphics[width=0.6\textwidth]{imagenesUS2/creacionMetafields.png}
     \caption{\label{fig:metadatos}Estructura de los \textit{metafields}}
     \vspace{\fill}
 \end{figure}
@@ -1050,7 +1051,7 @@ se crea el \textit{metafield} ``Doble pasada'', que es un valor booleano que ind
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.8\textwidth]{imagenesUS2/metafieldsAdicionales.png}
+    \includegraphics[width=0.6\textwidth]{imagenesUS2/metafieldsAdicionales.png}
     \caption{\label{fig:metafieldsAdicionales}Estructura de \textit{metafields} adicionales}
     \vspace{\fill}
 \end{figure}
@@ -1092,7 +1093,7 @@ deben mostrarse según la URL actual.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.1\textwidth]{imagenes-admin/EstructuraDirectoriosReact.png}
+    \includegraphics[width=0.15\textwidth]{imagenes-admin/EstructuraDirectoriosReact.png}
     \caption{\label{fig:estructuraFront} Estructura de directorios del \textit{frontend} de React}
     \vspace{\fill}
 \end{figure}
@@ -1106,7 +1107,7 @@ de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observa
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.3\textwidth]{imagenes-admin/componentes-admin.png}
+    \includegraphics[width=0.2\textwidth]{imagenes-admin/componentes-admin.png}
     \caption{\label{fig:componentes} Componentes del \textit{frontend} }
     \vspace{\fill}
 \end{figure}
@@ -1116,7 +1117,7 @@ de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observa
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.3\textwidth]{imagenes-admin/paginaHome.png}
+    \includegraphics[width=0.7\textwidth]{imagenes-admin/paginaHome.png}
     \caption{\label{fig:homepage} Página principal del \textit{frontend} de la aplicación }
     \vspace{\fill}
 \end{figure}
@@ -1133,7 +1134,7 @@ la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.3\textwidth]{imagenes-admin/metafieldComponent.png}
+    \includegraphics[width=0.7\textwidth]{imagenes-admin/metafieldComponent.png}
     \caption{\label{fig:componenteMetafield} Componente para la creación de \textit{metafields} }
     \vspace{\fill}
 \end{figure}
@@ -1142,7 +1143,7 @@ la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-admin/locales-admin.png}
+    \includegraphics[width=0.9\textwidth]{imagenes-admin/locales-admin.png}
     \caption{\label{fig:localesAdmin} Ficheros locales }
     \vspace{\fill}
 \end{figure}
@@ -1174,7 +1175,7 @@ Posteriormente, se configura el almacenamiento de multer para que las imágenes 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/configuracionIndexjs.png}
+    \includegraphics[width=0.7\textwidth]{imagenes-back/configuracionIndexjs.png}
     \caption{\label{fig:configIndex} Configuración del fichero \textit{index.js} }
     \vspace{\fill}
 \end{figure}
@@ -1199,7 +1200,7 @@ que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devo
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/endpointSubirImagen.png}
+    \includegraphics[width=0.6\textwidth]{imagenes-back/endpointSubirImagen.png}
     \caption{\label{fig:endpointImagen} EndPoint para el almacenamiento de imágenes }
     \vspace{\fill}
 \end{figure}
@@ -1220,7 +1221,7 @@ mensaje de éxito o error, dependiendo del resultado de la operación.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.3\textwidth]{imagenes-back/EndpointsAdmin.png}
+    \includegraphics[width=0.5\textwidth]{imagenes-back/EndpointsAdmin.png}
     \caption{\label{fig:endpointsAdmin} \textit{EndPoints} para la parte de administración }
     \vspace{\fill}
 \end{figure}
@@ -1248,7 +1249,7 @@ aplicación evoluciona.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.4\textwidth]{imagenes-back/funcionmetaCreator.png}
+    \includegraphics[width=0.6\textwidth]{imagenes-back/funcionmetaCreator.png}
     \caption{\label{fig:funcionMetafields} Función para la creación de \textit{metafields} y \textit{metaobjects}}
     \vspace{\fill}
 \end{figure}
@@ -1256,7 +1257,7 @@ aplicación evoluciona.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-back/metafieldCreatorConstantes1.png}
+    \includegraphics[width=0.9\textwidth]{imagenes-back/metafieldCreatorConstantes1.png}
     \caption{\label{fig:constantesMetafields} Constantes para estandarizar la funcionalidad de creación de \textit{metafields} }
     \vspace{\fill}
 \end{figure}
@@ -1274,14 +1275,12 @@ o consultas para facilitar la mantenibilidad del código.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.4\textwidth]{imagenes-back/funcionCartCreator.png}
+    \includegraphics[width=0.7\textwidth]{imagenes-back/funcionCartCreator.png}
     \caption{\label{fig:funcioncartCreat} Función para la creación del objeto cart-transform}
     \vspace{\fill}
 \end{figure}
 
 
-
-\clearpage
 \subsubsection{Implementación del Theme app extension}
 
 En la creación de la aplicación se ha configurado una extensión del tipo \textit{Theme app extension} que proporciona la base para poder trabajar e implementar nuevas funcionalidades
@@ -1339,7 +1338,7 @@ de la experiencia multilingüe.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.4\textwidth]{imagenesUS3-section/funcioncargarLocales.png}
+    \includegraphics[width=0.7\textwidth]{imagenesUS3-section/funcioncargarLocales.png}
     \caption{\label{fig:cargarlocales} Función para almacenar locales en estructura JavaScript}
     \vspace{\fill}
 \end{figure}
@@ -1353,7 +1352,7 @@ almacena todos los datos de las áreas del producto en la estructura \textit{are
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-section/funcionAlmacenarDatosProductos.png}
+    \includegraphics[width=0.6\textwidth]{imagenesUS3-section/funcionAlmacenarDatosProductos.png}
     \caption{\label{fig:cargardatos} Función para almacenar datos en estructura JavaScript}
     \vspace{\fill}
 \end{figure}
@@ -1417,7 +1416,7 @@ un checkbox junto al nombre del área para que el usuario pueda seleccionar las 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/recorrerAreasyMostrar.png}
+    \includegraphics[width=0.6\textwidth]{imagenesUS3-modal/recorrerAreasyMostrar.png}
     \caption{\label{fig:recorrerAreas} Recorrido de todas la áreas de impresión del producto}
     \vspace{\fill}
 \end{figure}
@@ -1473,7 +1472,7 @@ realista de cómo luciría la personalización de su prenda.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/FuncionalidadEspecialImagen.png}
+    \includegraphics[width=0.7\textwidth]{imagenesUS3-modal/FuncionalidadEspecialImagen.png}
     \caption{\label{fig:pintarLogo} Funcionalidad para mostrar logo sobre la zona adecuada del producto}
     \vspace{\fill}
 \end{figure}
@@ -1492,7 +1491,7 @@ aplicación al proporcionar una retroalimentación visual clara sobre el estado 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/manejoDesabilitarElementos.png}
+    \includegraphics[width=0.6\textwidth]{imagenesUS3-modal/manejoDesabilitarElementos.png}
     \caption{\label{fig:deshabilitarElementos} Evento de cambio del check de las areas}
     \vspace{\fill}
 \end{figure}
@@ -1509,7 +1508,7 @@ En Figura~\ref{fig:variableConfiguracion} se muestra cómo se carga el array ``a
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/variableDatosArreglada.png}
+    \includegraphics[width=0.3\textwidth]{imagenesUS3-modal/variableDatosArreglada.png}
     \caption{\label{fig:variableConfiguracion} Estructura para almacenar la configuración actual del personalizador}
     \vspace{\fill}
 \end{figure}
@@ -1524,7 +1523,7 @@ de todas las áreas de impresión. Además, se incluye un botón que invoca la f
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenesUS3-modal/generarResumen.png}
+    \includegraphics[width=0.7\textwidth]{imagenesUS3-modal/generarResumen.png}
     \caption{\label{fig:resumen1} Función para generar el resumen del pedido}
     \vspace{\fill}
 \end{figure}
@@ -1604,7 +1603,7 @@ la estructura básica para poder definir la query y la función que ejecutará y
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.4\textwidth]{imagenes-tema/estructuraCartTransform.png}
+    \includegraphics[width=0.3\textwidth]{imagenes-tema/estructuraCartTransform.png}
     \caption{\label{fig:estructuracarttrans} Estructura de la extensión \textit{cart-transform}}
     \vspace{\fill}
 \end{figure}
@@ -1618,13 +1617,13 @@ y que servirán para localizar los elementos que deben pertenecer a un mismo paq
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.4\textwidth]{imagenes-tema/queryCartTransform.png}
+    \includegraphics[width=0.45\textwidth]{imagenes-tema/queryCartTransform.png}
     \caption{\label{fig:queryCart} Fichero \textit{run.graphql}}
     \vspace{\fill}
 \end{figure}
 
 Por lo que respecta a la implementación de la función, esta se divide en dos partes principales: la primera parte (Figura~\ref{fig:runpart1})  se encarga de procesar las líneas de carrito que contienen
-propiedades definidas (artículos de personalización), mientras que la segunda parte (ver Figura~\ref{fig:runpart2}) se encarga de las líneas del carrito que no tienen propiedades definidas (artículos normales sin personalización).
+propiedades definidas (artículos de personalización), mientras que la segunda parte (ver Figura~\ref{fig:runpart2}) se encarga de las líneas del carrito que no tienen propiedades definidas (artículos predeterminados sin personalización).
 
 En la primera parte, se filtran las líneas del carrito que tienen la propiedad ``idProps'' y ``value'' definidas, y se agrupan según su identificador. Si una línea comparte el mismo identificador que la anterior
 o es la primera línea del carrito, se agrega a una estructura de datos que representa un grupo de líneas. Cuando se encuentra una línea con un identificador diferente, se crea una nueva operación 
@@ -1634,21 +1633,21 @@ la función. Estas operaciones serán interpretadas por el \textit{backend} de S
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.36\textwidth]{imagenes-tema/primeraParteFunction.png}
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/primeraParteFunction.png}
     \caption{\label{fig:runpart1} Funcionalidad para crear paquetes de impresión} 
     \vspace{\fill}
 \end{figure}
 
 En la segunda parte (Figura~\ref{fig:runpart2}), se procesan las líneas del carrito que no tienen propiedades definidas, que corresponden a productos que no son personalizados. Estos productos se recorren y, en función de si cuentan con canon digital o no, se expanden agregando 
 el producto especial canon con su cantidad correspondiente. Con este procedimiento se generan una serie de operaciones de tipo ``expand'' que se van añadiendo al array de operaciones. Este tipo de operaciones
-serán interpretadas por el \textit{backend} de Shopify y resultarán en una transformación del carrito que añadirá el canon digital a los productos normales que deban contar con él, asociados en un mismo paquete. Es decir, esta operación añade los productos canon al carrito
+serán interpretadas por el \textit{backend} de Shopify y resultarán en una transformación del carrito que añadirá el canon digital a los productos predeterminados que deban contar con él, asociados en un mismo paquete. Es decir, esta operación añade los productos canon al carrito
 y los asocia con los productos no personalizados correspondientes.
 
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.5\textwidth]{imagenes-tema/segundaParteFunction.png}
+    \includegraphics[width=0.8\textwidth]{imagenes-tema/segundaParteFunction.png}
     \caption{\label{fig:runpart2} Funcionalidad para añadir canon digital} 
     \vspace{\fill}
 \end{figure}
@@ -1737,7 +1736,7 @@ Shopify se encarga de gestionar su seguridad y privacidad.
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.4\textwidth]{imagenes/package.json.scripts.png}
+    \includegraphics[width=0.5\textwidth]{imagenes/package.json.scripts.png}
     \caption{\label{fig:scriptsPackageJson}package.json}
     \vspace{\fill}
 \end{figure}
@@ -1769,7 +1768,7 @@ tener diferentes aplicaciones en el servidor con distintas variables, en lugar d
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.6\textwidth]{imagenes/variablesEntornoDespliegue.png}
+    \includegraphics[width=0.7\textwidth]{imagenes/variablesEntornoDespliegue.png}
     \caption{\label{fig:VariablesEntorno}Variables de entorno de la aplicación}
     \vspace{\fill}
 \end{figure}
@@ -1797,7 +1796,7 @@ para instalarla en la tienda que lo solicite (Figura~\ref{fig:DistributionAppPar
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
-    \includegraphics[width=0.6\textwidth]{imagenes/panelPartnersDistribution.png}
+    \includegraphics[width=0.7\textwidth]{imagenes/panelPartnersDistribution.png}
     \caption{\label{fig:ConfiguracionAppPartners}Configuración de la aplicación}
     \vspace{\fill}
 \end{figure}
@@ -2298,7 +2297,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
     
     \item \textbf{Tarea 9:} Marcar cliché de repetición:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} En cada area, debe aparecer un checkbox para que el usuario pueda indicar si el cliché es de repetición (no es la primera vez que se hace una impresión con la imagen que desea el cliente) o no. Este factor afectará al precio final de la impresión. El cliche será un producto especial que contará con dos variantes, una con su precio normal (variante: NO) y otra con un precio más económico (variante: SI) correspondiente a la repetición de cliche. En caso de marcar este checkbox se tendrá en cuenta la variante de repetición y en caso contrario su variante normal, aplicando de este modo un precio u otro al pedido. Además, hay que tener en cuenta que en un área de impresión configurada, se añadiran tantos cliches al pedido de personalización como colores haya seleccionado el usuario. Esto se debe a que el proveedor de la tienda deberá fabricar un cliche por cada color en el que se desee imprimir, por lo que el cliente debe acarrear con su coste.
+              \item \textbf{Descripción:} En cada area, debe aparecer un checkbox para que el usuario pueda indicar si el cliché es de repetición (no es la primera vez que se hace una impresión con la imagen que desea el cliente) o no. Este factor afectará al precio final de la impresión. El cliche será un producto especial que contará con dos variantes, una con su precio estándar (variante: NO) y otra con un precio más económico (variante: SI) correspondiente a la repetición de cliche. En caso de marcar este checkbox se tendrá en cuenta la variante de repetición y en caso contrario su variante estándar, aplicando de este modo un precio u otro al pedido. Además, hay que tener en cuenta que en un área de impresión configurada, se añadiran tantos cliches al pedido de personalización como colores haya seleccionado el usuario. Esto se debe a que el proveedor de la tienda deberá fabricar un cliche por cada color en el que se desee imprimir, por lo que el cliente debe acarrear con su coste.
           \end{itemize}
     \item \textbf{Tarea 10:} Seleccionar áreas:
           \begin{itemize}[label=--]
@@ -2326,7 +2325,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Añadir Productos Relacionados al Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto ``normal'', los ``trabajos'' seleccionados en las diferentes areas con la variante adecuada según el número de colores seleccionados y los ``clichés'' asociados, teniendo en cuenta las cantidades según las selecciones del usuario. Investigar y utilizar el ajax API para añadir todos los elementos al carrito.
+              \item \textbf{Descripción:} Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto ``predeterminado'', los ``trabajos'' seleccionados en las diferentes areas con la variante adecuada según el número de colores seleccionados y los ``clichés'' asociados, teniendo en cuenta las cantidades según las selecciones del usuario. Investigar y utilizar el ajax API para añadir todos los elementos al carrito.
           \end{itemize}
     \item \textbf{Tarea 2:} Guardar Información de Impresión en el Carrito:
           \begin{itemize}[label=--]
@@ -2416,9 +2415,9 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
               \item \textbf{Descripción:} Cuando se añada un producto con canon al carrito, se deberá añadir una línea de canon digital (producto especial creado) para repercutir el canon.
               Cómo el producto especial tiene un precio de un céntimo, se deberá jugar con la cantidad de este artículo para conseguir obtener el importe del canon de producto al que se le está aplicando. Por ejemplo
               si un producto tiene 1,20€ de canon digital, se añadirá el producto especial con cantidad 120.
-              Este canon digital se deberá añadir tanto a los productos ``normales'' que no sean de impresión, como a los productos de impresión.
+              Este canon digital se deberá añadir tanto a los productos ``predeterminados'' que no sean de impresión, como a los productos de impresión.
               Para los productos que sean de impresión se deberá realizar una configuración adicional en el procedimiento de adición con la API de AJAX, para que en caso de que el producto personalizado cuente con canon digital, se añada la cantidad adecuada de productos canon de un céntimo y se agrupe con el resto de artículos del paquete de impresión en el carrito.
-              Para los productos normales, se debe investigar si modificando la funcionalidad de los cart-tranform existente (\textit{customized bundles}), se pueden extender los productos ``normales'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto normal y su canon asociado, con la cantidad adecuada.
+              Para los productos predeterminados, se debe investigar si modificando la funcionalidad de los cart-tranform existente (\textit{customized bundles}), se pueden extender los productos ``predeterminados'' que cuenten con canon digital y que en el carrito, se cree automáticamente un paquete con cada producto predeterminado y su canon asociado, con la cantidad adecuada.
           \end{itemize}
 \end{itemize}
 
