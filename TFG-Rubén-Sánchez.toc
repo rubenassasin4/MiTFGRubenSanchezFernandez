@@ -33,23 +33,23 @@
 \contentsline {paragraph}{Historia de Usuario 8: Gestión de Casuística ``Doble Pasada'' en Productos y Trabajos}{16}{paragraph*.10}%
 \contentsline {paragraph}{Historia de Usuario 9: Gestión del Canon Digital y Adición Automática al Carrito}{16}{paragraph*.11}%
 \contentsline {subsection}{\numberline {4.2}Diseño}{17}{subsection.0.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Diseño del frontend}{18}{subsubsection.0.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1}Diseño del frontend}{17}{subsubsection.0.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Diseño del backend}{18}{subsubsection.0.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Diseño de la extensión de tema}{19}{subsubsection.0.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3}Diseño de la extensión de tema}{18}{subsubsection.0.4.2.3}%
 \contentsline {subsection}{\numberline {4.3}Implementación}{20}{subsection.0.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Implementación de la aplicación}{20}{subsubsection.0.4.3.1}%
 \contentsline {paragraph}{Implementación del frontend}{23}{paragraph*.12}%
-\contentsline {paragraph}{Implementación del backend}{25}{paragraph*.13}%
-\contentsline {subsubsection}{\numberline {4.3.2}Implementación del Theme app extension}{30}{subsubsection.0.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Implementación de la extensión de transformación de carrito}{41}{subsubsection.0.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Pruebas}{45}{subsection.0.4.4}%
-\contentsline {subsection}{\numberline {4.5}Despliegue}{46}{subsection.0.4.5}%
-\contentsline {section}{\numberline {5}Conclusiones y vías futuras}{49}{section.0.5}%
-\contentsline {subsection}{\numberline {5.1}Conclusiones}{49}{subsection.0.5.1}%
-\contentsline {subsection}{\numberline {5.2}Trabajo futuro}{49}{subsection.0.5.2}%
-\contentsline {section}{\numberline {6}Bibliografía}{51}{section.0.6}%
-\contentsline {section}{\numberline {7}Anexos}{54}{section.0.7}%
-\contentsline {subsection}{\numberline {7.1}Manual de usuario}{54}{subsection.0.7.1}%
-\contentsline {subsection}{\numberline {7.2}Tareas}{62}{subsection.0.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Tareas básicas}{62}{subsubsection.0.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Tareas adicionales}{66}{subsubsection.0.7.2.2}%
+\contentsline {paragraph}{Implementación del backend}{26}{paragraph*.13}%
+\contentsline {subsubsection}{\numberline {4.3.2}Implementación del Theme app extension}{31}{subsubsection.0.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Implementación de la extensión de transformación de carrito}{42}{subsubsection.0.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Pruebas}{46}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {4.5}Despliegue}{47}{subsection.0.4.5}%
+\contentsline {section}{\numberline {5}Conclusiones y vías futuras}{50}{section.0.5}%
+\contentsline {subsection}{\numberline {5.1}Conclusiones}{50}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {5.2}Trabajo futuro}{50}{subsection.0.5.2}%
+\contentsline {section}{\numberline {6}Bibliografía}{52}{section.0.6}%
+\contentsline {section}{\numberline {7}Anexos}{55}{section.0.7}%
+\contentsline {subsection}{\numberline {7.1}Manual de usuario}{55}{subsection.0.7.1}%
+\contentsline {subsection}{\numberline {7.2}Tareas}{63}{subsection.0.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Tareas básicas}{63}{subsubsection.0.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Tareas adicionales}{67}{subsubsection.0.7.2.2}%

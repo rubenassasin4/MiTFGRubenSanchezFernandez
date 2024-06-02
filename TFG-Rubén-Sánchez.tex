@@ -860,7 +860,7 @@ El \textit{backend} es responsable del desarrollo de todos los endpoints y funci
 funcionamiento de la aplicación. Por su parte, el \textit{frontend} se encargará de implementar la interfaz de usuario, 
 la cual se integrará en el panel de administración de la tienda. Esta interfaz permitirá al administrador acceder 
 a todas las funcionalidades implementadas en la app desde el propio panel de administración. Entre estas funcionalidades 
-se incluyen la creación automática de los metadatos y metaobjetos necesarios, así como la creación del objeto de transformación de carrito.
+se incluyen la creación automática de los \textit{metafields} y \textit{metaobjects} necesarios, así como la creación del objeto de transformación de carrito.
 
 En segundo lugar, se encuentra la extensión de tema. Esta extensión se integrará en el tema de la tienda, 
 ampliando la interfaz de usuario con funcionalidades y elementos específicos para la personalización de artículos. 
@@ -871,22 +871,11 @@ Finalmente, el tercer componente es una extensión denominada \textit{cart-trans
 una funcionalidad de Shopify que permite realizar transformaciones en el carrito, asociando los elementos de un mismo 
 pedido de personalización en un único paquete.
 
-En la Figura~\ref{fig:esquemaAplicacionReal} se aprecia la estructura de la aplicación, donde se distingue claramente
-la aplicación principal ubicada en el directorio \textit{web} junto con las dos extensiones adicionales ubicadas en el directorio \textit{extensions}.
-
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.9\textwidth]{imagenes-diseño/Esquema de diseño de la aplicación.png}
     \caption{\label{fig:esquemaAplicacion}Esquema del diseño de la aplicación}
-    \vspace{\fill}
-\end{figure}
-
-\begin{figure}[H]
-    \floatplacement{figure}{!t}
-    \centering
-    \includegraphics[width=0.1\textwidth]{imagenes-diseño/estructura-aplicacion.png}
-    \caption{\label{fig:esquemaAplicacionReal}Estructura de la aplicación}
     \vspace{\fill}
 \end{figure}
 
@@ -900,7 +889,7 @@ y que se integre visualmente de manera armoniosa con el panel de administración
 Este diseño se basa en una interfaz de ejemplo generada al crear una aplicación en Shopify utilizando 
 una plantilla predeterminada. En esta interfaz, se presentan una serie de tarjetas, cada una con un mensaje 
 explicativo y un botón destinado a activar una funcionalidad específica. En este caso, se generará una tarjeta 
-para cada funcionalidad necesaria (creación de metadatos y objeto de transformación de carrito), junto con su respectivo botón encargado de 
+para cada funcionalidad necesaria (creación de \textit{metafields} y objeto de transformación de carrito), junto con su respectivo botón encargado de 
 activar dichas funcionalidades. En la Figura~\ref{fig:disenoFront} se puede observar el ejemplo en el que se ha basado el diseño de esta interfaz.
 
 \begin{figure}[H]
@@ -921,8 +910,8 @@ utilizado (POST o GET), la ruta del punto de acceso, una breve descripción de s
 requeridos para la solicitud.
 
 El primer \textit{endpoint} permite la carga de imágenes al servidor para su almacenamiento, siendo esta ruta invocada 
-desde la extensión de tema. Los otros dos \textit{endpoints} se refieren a las llamadas necesarias para crear metadatos, 
-metacampos y objetos esenciales para la configuración de la aplicación. Estas rutas son activadas desde el frontend de la aplicación.
+desde la extensión de tema. Los otros dos \textit{endpoints} se refieren a las llamadas necesarias para crear \textit{metafields}, 
+\textit{metaobjects} y objetos esenciales para la configuración de la aplicación. Estas rutas son activadas desde el frontend de la aplicación.
 
 \begin{table}[h!]
     \centering
@@ -934,7 +923,7 @@ metacampos y objetos esenciales para la configuración de la aplicación. Estas 
         \_imagen} & Subir una imagen & 
         \texttt{req.body.id}, \texttt{req.body.index}, \texttt{req.file} \\
         \hline
-        GET & \texttt{/api/meta/create} & Crear metadatos y metaobjetos necesarios & Ninguno \\
+        GET & \texttt{/api/meta/create} & Crear \textit{metafields} y \textit{metaobjects} necesarios & Ninguno \\
         \hline
         GET & \texttt{/api/cart/create} & Crear objeto 
         cart-transform & Ninguno \\
@@ -957,24 +946,33 @@ de personalización de productos. En la página de producto existe un botón enc
     \vspace{\fill}
 \end{figure}
 
-Una vez análizadas las historias de usuario y elaborado el diseño de la aplicación, se elaboraron una serie de tareas que sirvieron para guiar la implementación del proyecto.
-En el Anexo~\ref{sec:tareas}, pueden observarse las tareas que se han elaborado.
-
 \clearpage
 \subsection{Implementación}
-La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas.
+Una vez analizadas las historias de usuario y elaborado el diseño de la aplicación, se redactaron una serie de tareas que sirvieron para guiar 
+la implementación del proyecto. En el Anexo~\ref{sec:tareas}, pueden observarse dichas tareas.
+La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas. 
 Es importante remarcar que el proceso de implementación siguió una metodología iterativa e incremental como ya se ha comentado. Inicialmente, se llevó a cabo el desarrollo
 de las historias de usuario, el diseño de la aplicación y la creación detallada de las tareas en base a dichas historias y diseño realizado, centrándose unicamente en las funcionalidades básicas. Se priorizó
 la implementación de estas tareas, las cuales abordaban los requisitos esenciales de la aplicación. Una vez que se obtuvo la primera implementación del
 proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
 
-En esta sección, se detalla la implementación dividida en tres partes principales: la creación de la aplicación, 
+En la Figura~\ref{fig:esquemaAplicacionReal} se aprecia la estructura de la aplicación, donde se distingue claramente
+la aplicación principal ubicada en el directorio \textit{web} junto con las dos extensiones adicionales ubicadas en el directorio \textit{extensions}.
+
+\begin{figure}[H]
+    \floatplacement{figure}{!t}
+    \centering
+    \includegraphics[width=0.1\textwidth]{imagenes-diseño/estructura-aplicacion.png}
+    \caption{\label{fig:esquemaAplicacionReal}Estructura de la aplicación}
+    \vspace{\fill}
+\end{figure}
+
+En esta sección, se detalla la implementación dividida en tres apartados principales: la creación de la aplicación, 
 la cual se subdivide a su vez en el desarrollo del \textit{frontend} (parte de administración) y del \textit{backend}; la implementación de la extensión 
 ``theme app extension'', en la que se desarrolla la interfaz de usuario que se integra en el tema de la tienda; y la implementación de 
 la extensión ``cart-transform'', encargada de transformar el carrito de compras y aplicar la funcionalidad de paquetes de productos 
 personalizados (\textit{customized bundles}).
-
 
 \subsubsection{Implementación de la aplicación}
 
@@ -982,10 +980,10 @@ Para empezar con este desarrollo, cabe destacar que de partida se cuenta con una
 Este entorno de trabajo sería similar a una tienda real de un cliente que podía solicitar los servicios de la aplicación a desarrollar, por lo que todas las modificaciones e implementaciones
 que se lleven a cabo en la tienda, serán un ejemplo de las modificaciones y adaptaciones que se deberán hacer en una tienda real a la hora de adaptarla para instalar la aplicación final.
 
-En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los \textit{metafields} y metaobjetos necesarios para gestionar
+En primer lugar antes de comenzar con la implementación de la aplicación, se crean en la tienda de desarrollo los \textit{metafields} y \textit{metaobjects} necesarios para gestionar
 los trabajos de impresión. Para ello se debe acceder a la pantalla de configuración del panel de administración de la tienda. En la Figura~\ref{fig:configuracionMetafields} se puede ver
 esta pantalla de configuración, en la que se debe acceder a la sección de ``Datos personalizados''. En este apartado se pueden crear de forma manual
-tanto definiciones de metaobjetos como de metacampos.
+tanto definiciones de \textit{metaobjects} como de \textit{metafields}.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -997,7 +995,7 @@ tanto definiciones de metaobjetos como de metacampos.
 
 Los productos personalizables de las tiendas deberán contar con sus correspondientes áreas de impresión; estas representan
 las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
-Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
+Para representar estas áreas se debe crear un \textit{metaobject} de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
 objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
 los trabajos de impresión asociados al área (lista de referencias de producto). Posteriormente, este objeto fue modificado para añadir nuevos datos a las áreas. Estos son necesarios
 para la implementación de la funcionalidad adicional que permite mostrar el logo del cliente en la zona adecuada del producto. 
@@ -1006,7 +1004,7 @@ para la implementación de la funcionalidad adicional que permite mostrar el log
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.7\textwidth]{imagenesUS2/creacionMetaobjeto.png}
-    \caption{\label{fig:metaobjeto}Estructura del metaobjeto}
+    \caption{\label{fig:metaobjeto}Estructura del \textit{metaobject}}
     \vspace{\fill}
 \end{figure}
 
@@ -1031,29 +1029,29 @@ Además este contará con dos variantes, ``SI'' y ``NO'', para indicar si el cli
 \end{figure}
 
 En cada trabajo de impresión se hace uso de un cliché determinado, por lo que cada trabajo debe tener asociado su producto cliché correspondiente. Por ello se debe 
-crear la definición del metacampo ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma, al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
+crear la definición del \textit{metafield} ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma, al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
 
-Además, cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de metadato ``Número de colores para trabajo'' que permita
-introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro metadato para el tipo de elemento ``Producto''. Este será una 
-lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones de los tres tipos de metadatos configurados para los productos.
+Además, cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de \textit{metafield} ``Número de colores para trabajo'' que permita
+introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro \textit{metafield} para el tipo de elemento ``Producto''. Este será una 
+lista del \textit{metaobject} que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones de los tres tipos de \textit{metafields} configurados para los productos.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.8\textwidth]{imagenesUS2/creacionMetafields.png}
-    \caption{\label{fig:metadatos}Estructura de los metadatos}
+    \caption{\label{fig:metadatos}Estructura de los \textit{metafields}}
     \vspace{\fill}
 \end{figure}
 
-Posteriormente, junto con la implementación de funcionalidades adicionales, se llevó a cabo la creación de otros dos metadatos visibles en la Figura~\ref{fig:metafieldsAdicionales}: ``Canon digital'' y ``Doble pasada''. 
-Se crea el metadato  ``Canon digital'', que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
-se crea el metadato ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuistica de doble pasada.
+Posteriormente, junto con la implementación de funcionalidades adicionales, se llevó a cabo la creación de otros dos \textit{metafields} visibles en la Figura~\ref{fig:metafieldsAdicionales}: ``Canon digital'' y ``Doble pasada''. 
+Se crea el \textit{metafield}  ``Canon digital'', que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
+se crea el \textit{metafield} ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuistica de doble pasada.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.8\textwidth]{imagenesUS2/metafieldsAdicionales.png}
-    \caption{\label{fig:metafieldsAdicionales}Estructura de metadatos adicionales}
+    \caption{\label{fig:metafieldsAdicionales}Estructura de \textit{metafields} adicionales}
     \vspace{\fill}
 \end{figure}
 
@@ -1102,7 +1100,7 @@ deben mostrarse según la URL actual.
 En la parte del \textit{frontend} de la aplicación, se ha implementado una funcionalidad muy básica que consta de dos componentes de React (Figura~\ref{fig:componentes}). Cada componente representa una tarjeta que 
 contiene un texto explicativo de la acción que se llevará a cabo y un botón. Estas tarjetas están diseñadas para activar un par de llamadas al \textit{backend} cuando se hace clic en los 
 botones correspondientes. Este diseño proporciona una experiencia interactiva para los administradores de las tiendas, para que desde la interfaz de administración de la misma
-puedan activar un par de funcionalidades para crear los metadatos y metaobjetos necesarios para integrar la aplicación con la tienda y crear el objeto cart-transform que activa una funcionalidad
+puedan activar un par de funcionalidades para crear los \textit{metafields} y \textit{metaobjects} necesarios para integrar la aplicación con la tienda y crear el objeto cart-transform que activa una funcionalidad
 de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observar la página principal en la que se renderizan estos componentes reutilizables.
 
 \begin{figure}[H]
@@ -1209,8 +1207,8 @@ que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devo
 En la Figura~\ref{fig:endpointsAdmin}, se ilustran dos \textit{endpoints}: ``/api/meta/create'' y ``/api/cart/create''. Estos \textit{endpoints} serán
 llamados desde la parte de adminsitración de la aplicación para llevar a cabo las acciones específicas.
 
-El primer \textit{endpoint}, ``/api/meta/create'', es responsable de crear metadatos y metaobjetos necesarios para la aplicación. Cuando se realiza
-una solicitud GET a esta ruta, se ejecuta una función asíncrona que intenta crear estos metadatos utilizando la sesión de Shopify proporcionada.
+El primer \textit{endpoint}, ``/api/meta/create'', es responsable de crear \textit{metafields} y \textit{metaobjects} necesarios para la aplicación. Cuando se realiza
+una solicitud GET a esta ruta, se ejecuta una función asíncrona que intenta crear estos \textit{metafields} utilizando la sesión de Shopify proporcionada.
 Si la operación se realiza correctamente, se devuelve una respuesta con un código de estado 200 y un cuerpo que indica el éxito de la operación. 
 En caso de que ocurra algún error durante el proceso, se captura la excepción y se devuelve una respuesta con un código 
 de estado 500 indicando el error.
@@ -1229,19 +1227,19 @@ mensaje de éxito o error, dependiendo del resultado de la operación.
 
 Las funciones a las que se llama en estos \textit{endpoints} están implementadas en los ficheros ``metafield-creator.js'' y ``function-cart-creator.js''.
 En la Figura~\ref{fig:funcionMetafields} se puede observar la función ``metaCreator''. Esta es una función asíncrona que acepta dos argumentos:
-``session'' y ``count'', este último tiene un valor predeterminado según la constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
+``session'' y ``count'', este último tiene un valor predeterminado según la constante ``DEFAULT\_META\_COUNT'' que representa el número de \textit{metafields} a crear.
 
 Dentro de la función se instancia un cliente de GraphQL utilizando la sesión proporcionada. Luego, se ejecuta una consulta GraphQL cuya query está definida en la constante ``CREATE\_METAOBJECT\_MUTATION''.  
-Esta mutación se lleva a cabo con el objetivo de crear el metaobjeto que representa las áreas de impresión. En la consulta, se introducen una serie de variantes definidas en constantes como ``NAMEMETAOBJECT'', 
-``TYPEMETAOBJECT'' y ``FIELDMETAOBJECT''. Si la creación del metaobjeto tiene éxito, se guardará el ID del nuevo objeto y se añadirá a las constantes 
-la información correspondiente para poder crear un metadato de este tipo.
+Esta mutación se lleva a cabo con el objetivo de crear el \textit{metaobject} que representa las áreas de impresión. En la consulta, se introducen una serie de variantes definidas en constantes como ``NAMEMETAOBJECT'', 
+``TYPEMETAOBJECT'' y ``FIELDMETAOBJECT''. Si la creación del \textit{metaobject} tiene éxito, se guardará el ID del nuevo objeto y se añadirá a las constantes 
+la información correspondiente para poder crear un \textit{metafield} de este tipo.
 
-A continuación se realiza un bucle para crear metadatos utilizando definiciones en su mayoría configuradas en constantes. Dentro del bucle se ejecuta una consulta GraphQL para cada \textit{metafield} a crear, cuya mutación
+A continuación se realiza un bucle para crear \textit{metafields} utilizando definiciones en su mayoría configuradas en constantes. Dentro del bucle se ejecuta una consulta GraphQL para cada \textit{metafield} a crear, cuya mutación
 está definida en la constante  ``CREATE\_META\_MUTATION''.
 
 En caso de que se produzca algún error durante el proceso, se captura y maneja adecuadamente para lanzar el mensaje de error apropiado.
 
-El uso de constantes para definir las configuraciones de los \textit{metafields} y metaobjetos (Figura~\ref{fig:constantesMetafields}), así como las consulta GraphQL, permite que la creación
+El uso de constantes para definir las configuraciones de los \textit{metafields} y \textit{metaobjects} (Figura~\ref{fig:constantesMetafields}), así como las consulta GraphQL, permite que la creación
 de \textit{metafields} sea configurable, lo que implica que la aplicación puede crecer y permita añadir nuevos \textit{metafields} de manera más sencilla en el futuro 
 sin necesidad de modificar directamente el código fuente. Esto hace que el código sea más mantenible y escalable a medida que la 
 aplicación evoluciona.
@@ -1251,7 +1249,7 @@ aplicación evoluciona.
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.4\textwidth]{imagenes-back/funcionmetaCreator.png}
-    \caption{\label{fig:funcionMetafields} Función para la creación de metadatos y metaobjetos}
+    \caption{\label{fig:funcionMetafields} Función para la creación de \textit{metafields} y \textit{metaobjects}}
     \vspace{\fill}
 \end{figure}
 
@@ -1259,7 +1257,7 @@ aplicación evoluciona.
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.5\textwidth]{imagenes-back/metafieldCreatorConstantes1.png}
-    \caption{\label{fig:constantesMetafields} Constantes para estandarizar la funcionalidad de creación de metadatos }
+    \caption{\label{fig:constantesMetafields} Constantes para estandarizar la funcionalidad de creación de \textit{metafields} }
     \vspace{\fill}
 \end{figure}
 
@@ -2055,7 +2053,7 @@ el botón para abrir el personalizador de artículos que lleva detrás toda la f
 
 Una vez añadida la extensión del tema, hay que dirigirse a la pantalla del panel de administración que se ha desarrollado en la aplicación. En la Figura~\ref{fig:PanelAdministracion} se puede
 ver un enlace a esta pantalla en la sección \textit{Aplicaciones} $\rightarrow$  \textit{upango\_pedidos\_impresion}. En la Figura~\ref{fig:FuncionalidadAdministracion} se observa dicha pantalla, en ella se puede pulsar el botón \textit{Crear Metadatos} para que se creen 
-automáticamente los metacampos de producto necesarios, y el botón \textit{cart-transform} para que se cree automáticamente en la tienda el objeto cart-transform, el cuál hara uso de una función de la aplicación, que 
+automáticamente los \textit{metafields} de producto necesarios, y el botón \textit{cart-transform} para que se cree automáticamente en la tienda el objeto cart-transform, el cuál hara uso de una función de la aplicación, que 
 dotará al carrito y al checkout de la tienda de una funcionalidad y apariencia de paquetes de productos personalizados.
 
 \begin{figure}[H]
@@ -2259,7 +2257,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Manualmente los Metafields y Metaobjects Necesarios:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear manualmente los \textit{metafields} y \textit{metaobjects} necesarios para la gestión de trabajos de impresión. Habrá que crear un metaobjeto area de impresión, que contenga todos los atributos necesarios que se van a necesitar (nombre, imagen, alto, ancho y trabajos). Se crearán metacampos para la entidad producto que contengan una lista de metaobjetos del tipo area de impresión, el número de colores para los productos de tipo trabajo y una metacampo que sea una referencia al cliche (producto especial).
+              \item \textbf{Descripción:} Crear manualmente los \textit{metafields} y \textit{metaobjects} necesarios para la gestión de trabajos de impresión. Habrá que crear un \textit{metaobject} area de impresión, que contenga todos los atributos necesarios que se van a necesitar (nombre, imagen, alto, ancho y trabajos). Se crearán \textit{metafields} para la entidad producto que contengan una lista de \textit{metaobjects} del tipo area de impresión, el número de colores para los productos de tipo trabajo y una \textit{metafield} que sea una referencia al cliche (producto especial).
           \end{itemize}
 \end{itemize}
 
@@ -2367,7 +2365,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
           \end{itemize}
     \item \textbf{Tarea 2:} Agregar un Botón ``Crear Metacampos Necesarios'' y otro ``Crear objeto cart-transform'' en la Interfaz de Administración :
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Incorporar un botón en la interfaz de administración por cada acción que se desea realizar. Uno para activar la creación de metadatos y otro para activar la creación del objeto cart-transform. Cada botón llamará al método de la app correspondiente para crear los elementos adecuados.
+              \item \textbf{Descripción:} Incorporar un botón en la interfaz de administración por cada acción que se desea realizar. Uno para activar la creación de \textit{metafields} y otro para activar la creación del objeto cart-transform. Cada botón llamará al método de la app correspondiente para crear los elementos adecuados.
           \end{itemize}
     \item \textbf{Tarea 3:} Desarrollar el \textit{endpoint} y el Método para Crear los Metafields Necesarios y asociarlo al botón correspondiente:
           \begin{itemize}[label=--]
@@ -2407,7 +2405,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Metafield para el Importe del Canon Digital:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado ``Importe Canon'', utilizando la funcionalidad de creación automática de \textit{metafields}. Este \textit{metafield} se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente. Los productos sin canon no tendrán nada en este metacampo, y los productos con canon tendrán en este metacampo el importe correspondiente.
+              \item \textbf{Descripción:} Crear un metafield de tipo número decimal, llamado ``Importe Canon'', utilizando la funcionalidad de creación automática de \textit{metafields}. Este \textit{metafield} se usará para indicar si un producto tiene canon digital y especificar el importe correspondiente. Los productos sin canon no tendrán nada en este \textit{metafield}, y los productos con canon tendrán en este \textit{metafield} el importe correspondiente.
           \end{itemize}
     \item \textbf{Tarea 2:} Crear Producto Especial para Añadir el Importe al Carrito:
           \begin{itemize}[label=--]
