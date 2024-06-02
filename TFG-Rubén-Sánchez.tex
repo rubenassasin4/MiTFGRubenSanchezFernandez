@@ -230,7 +230,7 @@ functionality to add this product with its customization elements to the cart.
 
 On the other hand, additional functionalities expand the utility and user experience by providing advanced and personalized features. 
 These include grouped display of print products in the cart, attractive display of the customer's logo in the product customizer, 
-automation of metadata and necessary object creation, management of scenarios such as "double pass" on products and jobs, and management
+automation of metadata and necessary object creation, management of scenarios such as ``double pass'' on products and jobs, and management
 of digital canon and its automatic addition to the cart.
 
 The design of the application has been a fundamental part that laid the foundation for implementing the required functionalities. 
@@ -607,7 +607,7 @@ llevado a cabo durante todo este periodo.
     funcionamiento de todo el desarrollo. Gracias al trabajo de esta etapa se ha conseguido desarrollar una tienda de demostración con la funcionalidad de personalización de artículos, que permite
     mostrar esta aplicación a esos posibles clientes para realizarles una demostración del potencial de las funcionalidades de personalización de artículos.
     \item \textbf{Etapa 5. Documentación y desarrollo del TFG.} Esta última estapa comprende el objetivo \ref{item:objetivo8}. Durante esta etapa
-    se lleva a acabo la documentación del Trabajo de Fin de Grado, se redacta de una forma estructurada todo el procedimiento llevado a cabo para desarrollar
+    se lleva a acabo la documentación del TFG, se redacta de una forma estructurada todo el procedimiento llevado a cabo para desarrollar
     la aplicación y se llevan cabo reuniones con el tutor para ir revisando y compartiendo opiniones sobre la documentación.
 \end{enumerate}
 
@@ -637,11 +637,11 @@ tareas que se deben seguir para el desarrollo.
 
 Este backlog es dinámico y evoluciona a lo largo del proyecto, y sus elementos se priorizan en función de su valor para el 
 producto (ver Figura \ref{fig:4}) y se ajustan continuamente en función de los cambios en los requisitos o las necesidades del proyecto. En el ámbito de una empresa con
-un equipo de desarrollo, el jefe de proyecto es quien asigna las prioridades las historias de usuario (según el valor que aporten al proyecto). Estas prioridades marcan
+un equipo de desarrollo, el jefe de proyecto es quien asigna las prioridades a las historias de usuario (según el valor que aporten al proyecto). Estas prioridades marcan
 el desarrollo y el orden de implementación de las tareas perteneciente a cada historia de usuario. Los desarrolladores irán implementando las tareas según su prioridad, 
 teniendo en cuenta que habrá tareas que dependan de la implementación de otras y, por tanto, la dependiente debe tener menor prioridad.
 Cada tarea puede tener tareas asociadas y elementos relacionados, ofreciendo una gran variedad de posibilidades y formas de organizar el flujo de trabajo. 
-En este caso, al tratarse de un proyecto especial para la empresa, ya que se trata de un Trabajo de Fin de Grado (TFG) 
+En este caso, al tratarse de un proyecto especial para la empresa, ya que se trata de un TFG 
 cuyo personal involucrado se reduce al autor, los tutores y colaboraciones esporádicas de integrantes de la empresa, la asignación de prioridades 
 de las tareas se ha realizado en consenso entre los involucrados.
 
@@ -663,14 +663,14 @@ este desarrollo ha ido creciendo iteración tras iteración y tarea tras tarea e
 \section{Diseño y resolución del trabajo realizado}
 
 \subsection{Análisis}
-El análisis de este proyecto se ha centrado en la creación de historias de usuario, estas son narrativas 
+El análisis de este proyecto se ha centrado en la creación de historias de usuario, que son narrativas 
 cortas y simples que describen la funcionalidad deseada desde la perspectiva del usuario final \cite{hu}. 
 Estas historias de usuario han servido como guía para entender las necesidades de los usuarios y traducirlas en 
 funcionalidades concretas que la aplicación debe proporcionar. Se ha hecho uso de ellas para realizar el diseño y crear
 las tareas que se han ido siguiendo para implementar esta aplicación.
 
 Cada historia de usuario está compuesta por una descripción corta que describe una funcionalidad requerida, así como por una serie de criterios de aceptación que 
-permiten extender el detalle de la funcionalidad a implementar. Además estos criterios de aceptación permiten validar que la funcionalidad 
+permiten extender el detalle de la funcionalidad a implementar. Además, estos criterios de aceptación permiten validar que la funcionalidad 
 ha sido implementada de manera adecuada. Estas son las bases sobre las cuales se ha construido y evaluado el éxito de esta aplicación.
 
 Para la redacción de las historias de usuario se ha hecho uso de la siguiente plantilla simple:
@@ -853,9 +853,9 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
 \subsection{Diseño}
 
 En cuanto al diseño de la aplicación, en la Figura~\ref{fig:esquemaAplicacion} se puede observar el esquema del diseño de la app.
-Se distinguen tres grandes componentes principales:
+Se distinguen tres grandes componentes principales: la aplicación principal, la extensión de tema y la extensión ``cart-transform''.
 
-En primer lugar, está la aplicación principal, que consta de una parte de \textit{backend} y una parte de \textit{frontend}.
+En primer lugar está la aplicación principal, que consta de una parte de \textit{backend} y una parte de \textit{frontend}.
 El \textit{backend} es responsable del desarrollo de todos los endpoints y funcionalidades necesarias para el correcto 
 funcionamiento de la aplicación. Por su parte, el \textit{frontend} se encargará de implementar la interfaz de usuario, 
 la cual se integrará en el panel de administración de la tienda. Esta interfaz permitirá al administrador acceder 
@@ -911,7 +911,7 @@ activar dichas funcionalidades. En la Figura~\ref{fig:disenoFront} se puede obse
     \vspace{\fill}
 \end{figure}
 
-\subsubsection{Diseño del backend}
+\subsubsection{Diseño del backend} \label{subsec:diseno-backend}
 En cuanto al diseño del \textit{backend}, como se ha comentado, este recibirá llamadas tanto de la interfaz de administración {\textit{frontend} de la app} como
 desde la propia tienda (extensión de la aplicación de tema). Cada punto de acceso realizará las acciones oportunas para cumplir con su propósito.
 
@@ -995,7 +995,7 @@ tanto definiciones de metaobjetos como de metacampos.
     \vspace{\fill}
 \end{figure}
 
-Los productos personalizables de las tiendas deberán contar con sus correspondientes áreas de impresión, estas representan
+Los productos personalizables de las tiendas deberán contar con sus correspondientes áreas de impresión; estas representan
 las zonas del producto donde se puede realizar una personalización y cuentan con información relevante sobre dicha zona.
 Para representar estas áreas se debe crear un metaobjeto de ``Área de impresión''. En la Figura~\ref{fig:metaobjeto} se puede ver la estructura de este 
 objeto. Este cuenta con un nombre del área, la imagen que respresenta la zona del producto a personalizar, el alto y ancho máximo que puede tener la impresión y 
@@ -1015,11 +1015,11 @@ y ``logo\_top'' que indican la posición en la que se mostrará sobre la imagen 
 
 Los trabajos son los diferentes tipos de impresión que se pueden aplicar a un área de un producto, por ejemplo, impresión láser, serigrafía, entre otros.
 Estos trabajos se van a representar en la tienda como productos especiales con su precio correspondiente. Estos estarán configurados de tal forma que no sean accesibles a través de la tienda, y
-no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo que no tendrán stock y tampoco requeriran de envío.
+no se puedan comprar por separado, no permitirá rastrear su cantidad, por lo que no tendrán stock y tampoco requerirán de envío.
 
 Otro tipo de productos especiales que deberán existir en las tiendas son los clichés. Estos hacen referencia a las planchas tipográficas donde se reproduce una composición o grabado
 a imprimir. Este tipo de productos tampoco será visible ni se permitirá comprar por separado en la web de la tienda y tampoco permitirá envío  ni tendrá stock.
-Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el cliché es de repetición o no (esta funcionalidad se especificará mas adelante).
+Además este contará con dos variantes, ``SI'' y ``NO'', para indicar si el cliché es de repetición o no (esta funcionalidad se especificará mas adelante).
 
 
 \begin{figure}[H]
@@ -1031,11 +1031,11 @@ Además este contará con dos variantes ``SI'' y ``NO'' para indicar si el clich
 \end{figure}
 
 En cada trabajo de impresión se hace uso de un cliché determinado, por lo que cada trabajo debe tener asociado su producto cliché correspondiente. Por ello se debe 
-crear la definición del metacampo ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
+crear la definición del metacampo ``Cliché del trabajo'', para el tipo de elemento ``Producto''. Esta definición será del tipo ``referencia de produto''. De esta forma, al crear los productos trabajos correspondientes se le podrá asociar su producto cliché vinculado.
 
-Además cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de metadato ``Número de colores para trabajo'' que permita
+Además, cada trabajo cuenta con un número de colores que permite, por lo que se deberá crear una definición de metadato ``Número de colores para trabajo'' que permita
 introducir el número de colores que permite cada trabajo de la tienda. Por último como se ha comentado, cada producto normal de la tienda debe contar con sus correspondientes áreas de impresión, por lo que se debe crear otro metadato para el tipo de elemento ``Producto''. Este será una 
-lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones los 3 tipos de metadatos configurados para los productos.
+lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Figura~\ref{fig:metadatos} se pueden observar las definiciones de los tres tipos de metadatos configurados para los productos.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -1045,8 +1045,8 @@ lista del metaobjeto que se ha configurado (``Áreas de impresión''). En la Fig
     \vspace{\fill}
 \end{figure}
 
-Posteriormente, junto con la implementación de funcionalidades adicionales, se llevo a cabo la creación de otros dos metadatos visibles en la En la Figura~\ref{fig:metafieldsAdicionales}. 
-Se crea el metadato  ``Canon digital'' que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
+Posteriormente, junto con la implementación de funcionalidades adicionales, se llevó a cabo la creación de otros dos metadatos visibles en la Figura~\ref{fig:metafieldsAdicionales}: ``Canon digital'' y ``Doble pasada''. 
+Se crea el metadato  ``Canon digital'', que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
 se crea el metadato ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuistica de doble pasada.
 
 \begin{figure}[H]
@@ -1057,8 +1057,8 @@ se crea el metadato ``Doble pasada'', que es un valor booleano que indica si los
     \vspace{\fill}
 \end{figure}
 
-Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación. Para ello se ha hecho uso de la Shopify CLI \cite{shopify-cli}, esta herramienta
-de línea de comandos proporciona mecanismos para automatizar la generación de una aplicación para Shopify, además de muchas otras funcionalidades.
+Una vez configurados los elementos necesarios en la tienda, se procede a crear la aplicación. Para ello se ha hecho uso de la Shopify CLI \cite{shopify-cli}, herramienta
+de línea de comandos que proporciona mecanismos para automatizar la generación de una aplicación para Shopify, además de muchas otras funcionalidades.
 Para generar la aplicación se ejecuta el siguiente comando desde el directorio en el que se desee almacenar la aplicación: 
 \begin{lstlisting}
     npm init @shopify/app@latest -- --template=node
@@ -1068,12 +1068,10 @@ Este comando establece una estructura base sobre la cual comenzar a trabajar en 
 basado en Node.js (\textit{backend}) y React (\textit{frontend}) para la generación del proyecto. Esta estructura inicial incluye tanto el \textit{frontend}, que se 
 integrará en el panel de administración de la tienda Shopify, como el \textit{backend} de la aplicación.
 
-Después de haber creado la aplicación inicial, el siguiente paso es generar un ``theme app extension'',
+Después de haber creado la aplicación inicial, el siguiente paso es generar una ``theme app extension'',
 la cual constituye la interfaz de usuario que debe integrarse con el tema de la tienda. Esta extensión 
 permite ampliar la interfaz de la tienda directamente desde la aplicación, integrándose de manera perfecta 
-con el tema de la tienda en la que se instala.
-
-Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el siguiente comando:
+con el tema de la tienda en la que se instala. Para generar la extensión se vuelve a emplear la Shopify CLI y se introduce el siguiente comando:
 
 \begin{lstlisting}
     shopify app generate extension
@@ -1086,12 +1084,12 @@ de la interfaz de usuario de la tienda.
 
 \subsubsubsection{Implementación del frontend}
 
-Al crear una aplicación para Shopify, se genera una estructura \textit{frontend} que sigue los principios de una aplicación React. Esta estructura incluye directorios como assets para 
-archivos estáticos como imágenes, fuentes y ficheros CSS; components para componentes de React reutilizables como botones, barras de navegación y tarjetas de producto; 
-hooks que encapsulan la lógica de la aplicación; locales para almacenar las traducciones en los distintos idiomas; pages para definir las páginas principales de la aplicación; El fichero App.jsx como
-componente principal que actúa como contenedor de toda la interfaz de usuario y maneja el enrutamiento de la aplicación; index.jsx como el punto de entrada de la aplicación React donde
-se inicializa y se monta la aplicación enn el DOM del navegador; y Routes.jsx donde se definen las rutas de la aplicación utilizando un enrutador, para determinar qué componentes
-deben mostrarse según la URL actual. En la Figura~\ref{fig:estructuraFront} se puede observar una representación visual de esta estructura.
+Al crear una aplicación para Shopify, se genera una estructura \textit{frontend} que sigue los principios de una aplicación React (ver Figura~\ref{fig:estructuraFront}). Esta estructura incluye directorios como \textit{assets} para 
+archivos estáticos como imágenes, fuentes y ficheros CSS; \textit{components} para componentes de React reutilizables como botones, barras de navegación y tarjetas de producto; 
+\textit{hooks} que encapsulan la lógica de la aplicación; \textit{locales} para almacenar las traducciones en los distintos idiomas; \textit{pages} para definir las páginas principales de la aplicación; el fichero \textit{App.jsx},
+componente principal que actúa como contenedor de toda la interfaz de usuario y maneja el enrutamiento de la aplicación; \textit{index.jsx}, punto de entrada de la aplicación React donde
+se inicializa y se monta la aplicación en el DOM del navegador; y \textit{Routes.jsx}, donde se definen las rutas de la aplicación utilizando un enrutador, para determinar qué componentes
+deben mostrarse según la URL actual.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -1127,8 +1125,8 @@ de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observa
 
 En la Figura~\ref{fig:componenteMetafield} se puede observar uno de los componentes. Este hace uso de la biblioteca Polaris de Shopify, que proporciona una serie de componentes predefinidos
 y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una aparencia coherente con el resto del panel de administración de la tienda.
-La función handlePopulate desempeña el papel de realizar la llamada a la ruta ``/api/meta/create'' para crear los \textit{metafields} y \textit{metaobjects} necesarios para la funcionalidad de personalización de productos.
-Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además se hace uso del componente Toast de app-bridge-react para mostrar
+La función \textit{handlePopulate} desempeña el papel de realizar la llamada a la ruta \textit{``/api/meta/create''} para crear los \textit{metafields} y \textit{metaobjects} necesarios para la funcionalidad de personalización de productos.
+Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además, se hace uso del componente \textit{Toast} de \textit{app-bridge-react} para mostrar
 mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el \textit{backend}. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
 de traducción que emplea los archivos de traducciones locales que se proporcionan (mostrados en la Figura~\ref{fig:localesAdmin}), para permitir una experiencia multilingüe, lo que mejora
 la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
@@ -1155,8 +1153,8 @@ El otro componente (``CartTrans'') es similar al anterior en estructura y funcio
 la ruta ``/api/cart/create'' que ejecuta la funcionalidad para la creación del objeto cart-transform en la tienda.
 
 Por último, es importante destacar el empleo del app bridge en esta parte del \textit{frontend}. Su utilización proporciona una conexión deirecta entre la aplicación y el panel 
-de administración de Shopify, lo que permite a los administradore de la tienda poder interactuar con la interfaz de usuario implementada y acceder a las funcionalidades que estas aportan
-desde el panel de administración del a tienda.
+de administración de Shopify, lo que permite a los administradores de la tienda poder interactuar con la interfaz de usuario implementada y acceder a las funcionalidades que estas aportan
+desde el panel de administración de la tienda.
 
 
 \subsubsubsection{Implementación del backend}
@@ -1195,7 +1193,7 @@ Cuando se recibe una solicitud POST en la ruta ``/upng-api/subir\_imagen'' (Figu
 un archivo en la solicitud. El \textit{endpoint} espera recibir un archivo de imagen en el cuerpo de la solicitud, junto con dos parámetros adicionales: el ``id'', que 
 representa el identificador único del pedido de impresión al que pertenece la imagen, y el ``index'', que indica el ínice del área del producto al 
 que pertenece la imagen. Estos datos se utilizan para generar un nombre de archivo único que incluye el ``id'' del pedido de impresión y el ``index'' del área,
-lo que faiclita al administrador de la tienda asociar las imágenes con los pedidos de los clientes correspondientes. Si se ha enviado el archivo y estos parámetros, se procede a generar un nuevo nombre de archivo. Luego, se lista y filtran los archivos del directorio para asegurarse de que no existen
+lo que facilita al administrador de la tienda asociar las imágenes con los pedidos de los clientes correspondientes. Si se ha enviado el archivo y estos parámetros, se procede a generar un nuevo nombre de archivo. Luego, se listan y filtran los archivos del directorio para asegurarse de que no existen
 archivos con el mismo nombre base. Si existen, se eliminan. Después se renombra el archivo subido con el nuevo nombre generado y se envía una respuesta de éxito indicando
 que la imagen ha sido recibida y almacenada correctamente. En otro caso, se devolverá una respuesta indicando que ha habido un error. 
 
@@ -1231,7 +1229,7 @@ mensaje de éxito o error, dependiendo del resultado de la operación.
 
 Las funciones a las que se llama en estos \textit{endpoints} están implementadas en los ficheros ``metafield-creator.js'' y ``function-cart-creator.js''.
 En la Figura~\ref{fig:funcionMetafields} se puede observar la función ``metaCreator''. Esta es una función asíncrona que acepta dos argumentos:
-``session'' y ``count'', este último tiene un valor predeterminado según las constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
+``session'' y ``count'', este último tiene un valor predeterminado según la constante ``DEFAULT\_META\_COUNT'' que representa el número de metadatos a crear.
 
 Dentro de la función se instancia un cliente de GraphQL utilizando la sesión proporcionada. Luego, se ejecuta una consulta GraphQL cuya query está definida en la constante ``CREATE\_METAOBJECT\_MUTATION''.  
 Esta mutación se lleva a cabo con el objetivo de crear el metaobjeto que representa las áreas de impresión. En la consulta, se introducen una serie de variantes definidas en constantes como ``NAMEMETAOBJECT'', 
@@ -1265,15 +1263,15 @@ aplicación evoluciona.
     \vspace{\fill}
 \end{figure}
 
-La función ``cartCreator'' es similar a ``metaCreator'' en su estructura. En ella se instancia un cliente GraphQL haciendo uso de la sesión
+La función ``cartCreator'' (ver Figura~\ref{fig:funcioncartCreat}) es similar a ``metaCreator'' en su estructura. En ella se instancia un cliente GraphQL haciendo uso de la sesión
 proporcionada. Luego se ejecuta una consulta GraphQL empleando la mutación correspondiente. Esta consulta 
-busca entre todas las funciones registradas en la tienda (Shopify functions) y filtra aquella que corresponde con esta aplicación y tiene el título ``cart-transform''.
-Es decir trata de buscar la función que se ha definido en esta aplicación para aplicar la transformación de carrito. Si la encuentra, guarda su ID.
+busca entre todas las funciones registradas en la tienda \textit{(Shopify functions)} y filtra aquella que corresponde con esta aplicación y tiene el título ``cart-transform''.
+Es decir, trata de buscar la función que se ha definido en esta aplicación para aplicar la transformación de carrito. Si la encuentra, guarda su ID.
 
 Después, se ejecuta una mutación GraphQL para crear el objeto ``cart-transform'' empleando la mutación adecuada (definida también en una constante), pasándole
-el ID de la función como variable en la mutación. En esta función también se realiza el correspondiente tratamiento de errores y como se ha comentado
+el ID de la función como variable en la mutación. En esta función también se realiza el correspondiente tratamiento de errores y, como se ha comentado,
 se hace uso de constantes para definir las consultas GraphQL permitiendo que el proceso sea configurable y adaptable a cualquier cambio en las mutaciones
-o consultas para facilitar la mantenibilidad del código. En la Figura~\ref{fig:funcioncartCreat} puede observarse la función descrita.
+o consultas para facilitar la mantenibilidad del código.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -1302,8 +1300,8 @@ El texto del botón y todos los textos que se emplean en esta aplicación son ob
 JSON que sirven para almacenar las diferentes traducciones. Cada archivo de idioma corresponde a un idioma específico y contiene un conjunto de etiquetas con su valor-traducción correspondiente. Esto nos 
 permite preparar traducciones en varios idiomas para garantizar una experiencia multilinüe completa.
 
-En la parte izquierda de la Figura~\ref{fig:locales} se puede observar como en el directorio de locales existen dos ficheros, uno para el idioma ingles y otro para el español. 
-Ambos contienen las mismas etiquetas pero cada uno posee las traducciones en su idioma. En un futuro si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
+En la parte izquierda de la Figura~\ref{fig:locales} se puede observar como en el directorio \textit{locales} existen dos ficheros, uno para el idioma inglés y otro para el español. 
+Ambos contienen las mismas etiquetas, pero cada uno posee las traducciones en su idioma. En un futuro, si la aplicación necesitase adaptarse a más idiomas, se podrían crear los ficheros locales
 necesarios con sus traducciones correspondientes.
 
 
@@ -1332,7 +1330,7 @@ Esta estrategia también simplifica el mantenimiento del código, al centralizar
 futuras actualizaciones y mejoras. Debido a esta decisión tanto el contenido como la funcionalidad de este modal se han desarrollado en un mismo fichero JavaScript.
 
 Antes de proceder con la creación e implementación de funcionalidad del modal, se han implementado unas funciones en la sección \textit{botonPersonalizar.liquid} que emplean liquid para crear e inicializar unas estructuras JavaScript que 
-contendrán todos los datos relevantes del producto de impresión, así como todos los textos traducidos necesarios para crear el modal y sus elementos. El acceso a datos que proporciona liquid permite poder crear 
+contendrán todos los datos relevantes del producto de impresión, así como todos los textos traducidos necesarios para crear el modal y sus elementos. El acceso a datos que proporciona liquid permite crear 
 esta estructura para tener los datos disponibles en el modal sin necesidad de realizar llamadas adicionales al Admin API. Estas funciones serán llamadas desde el fichero 
 JavaScript que maneje la funcionalidad y creación del modal para inicializar y tener acceso a todos los datos en caso de que lo necesite.
 
@@ -1363,7 +1361,7 @@ almacena todos los datos de las áreas del producto en la estructura \textit{are
 \end{figure}
 
 En esta sección también se pueden destacar las líneas que importan los archivos JavaScript necesarios, entre los que se debe destacar
-el fichero \textit{ventanta-modal.js}, este se carga de manera diferida para optimizar el rendimiento, y es el script en el que se ha desarrollado toda la funcionalidad y creación del
+el fichero \textit{ventanta-modal.js}, que se carga de manera diferida para optimizar el rendimiento, y es el script en el que se ha desarrollado toda la funcionalidad y creación del
 personalizador (modal) (Figura~\ref{fig:finalSeccion}). También destacar que en esta sección se encuentran otras líneas que importan archivos CSS que se emplean en la aplicación para aplicar estilos 
 a los elementos de la página como los botones o los elementos del modal (Figura~\ref{fig:creacionSeccion}).
 
@@ -1380,23 +1378,23 @@ modal y toda su funcionalidad asociada.
 
 En primer lugar, en la Figura~\ref{fig:iniciojs} se puede observar un evento que engloba a todo el contenido del fichero. Este evento se dispara cuando el DOM (Modelo de Objetos del Documento) ha 
 sido completamente cargado y analizado, lo que garantiza que el código dentro de la función se ejecute una vez que la página esté lista. Esto se emplea para evitar errores.
-A continuación se obtiene mediante su identificador, el botón ``Personalizar'' encargado de abrir el modal. Y posteriormente se crea el contenedor ``div'' que albergará 
-todo el contenido y funcionalidad. Este contarará con todos los estilos CSS que se han creado e importado para darle un aspecto de ventana modal. Del mismo modo, todos los elementos
-creados, cuentan con clases de estilos implementadas en los dos ficheros CSS que se han creado para este proyecto \textit{form-modal.css} y \textit{customize-button.css}.
+A continuación se obtiene mediante su identificador el botón ``Personalizar'', encargado de abrir el modal. Y posteriormente se crea el contenedor ``div'' que albergará 
+todo el contenido y funcionalidad. Este contará con todos los estilos CSS que se han creado e importado para darle un aspecto de ventana modal. Del mismo modo, todos los elementos
+creados cuentan con clases de estilos implementadas en los dos ficheros CSS que se han creado para este proyecto: \textit{form-modal.css} y \textit{customize-button.css}.
 
-Después en la Imagen~\ref{fig:finaljs} se puede ver como se ha creado la función \textit{openModal()}. Esta es la función principal que se encarga
-de generar y mostrar el modal. En primer lugar se establece el estilo CSS del elemento ``customModal'' (contenedor del modal) para que sea visible (``display:block'').
+Después, en la Figura~\ref{fig:finaljs} se puede ver como se ha creado la función \textit{openModal()}. Esta es la función principal que se encarga
+de generar y mostrar el modal. En primer lugar, se establece el estilo CSS del elemento ``customModal'' (contenedor del modal) para que sea visible (``display:block'').
 Luego, se vacía el contenido HTML dentro de este modal para asegurarse de que esté limpio y listo para generar dinámicamente y mostrar todo el contenido de este modal.
-A continuación, se realizan varias llamadas a funciones: Se llama a ``cargarLocales()'' para cargar las traducciones locales necesarias, ``almacenarDatosProductos()'' para que se generen
-y se almacenen las estructuras de datos necesarios para la generación de este modal, y por último se llama a ``generateAreaTable()'' para generar todo el contenido y funcionalidades
+A continuación, se realizan varias llamadas a funciones: ``cargarLocales()'', para cargar las traducciones locales necesarias, ``almacenarDatosProductos()'', para que se generen
+y se almacenen las estructuras de datos necesarios para la generación de este modal y, por último, ``generateAreaTable()'', para generar todo el contenido y funcionalidades
 del modal. 
 
-Al final del documento se agrega un event listener al botón ``Personalizar'' que activa la apertura del modal. De forma que cuando se haga clic en este botón, se 
+Al final del documento se agrega un event listener al botón ``Personalizar'' que activa la apertura del modal de forma que cuando se haga clic en este botón, se 
 ejecute la función ``openModal()'', mostrando el modal con todos sus elementos y funcionalidad asociada.
 
 En la función \textit{generateAreaTable()} se ha llevado a cabo toda la implementación de elementos y funcionalidad del modal. En el comienzo (Figura~\ref{fig:iniciojs}) se puede destacar la creación del botón
 ``closeModalButton'' que se empleará para cerrar la ventana modal. En la Figura~\ref{fig:finaljs} se observa como al final de la función se ha creado un eventListener para este botón, que se mantiene en espera de un evento
-click para realizar una llamada a la función \textit{closeModal()} que es la encargada de ocultar el modal mediante la modificación de su visibilidad.
+click para realizar una llamada a la función \textit{closeModal()}, que es la encargada de ocultar el modal mediante la modificación de su visibilidad.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -1431,9 +1429,7 @@ Se incluye también un campo de observaciones para que el usuario pueda agregar 
 
 Asimismo, se añade un checkbox para que el usuario pueda indicar si el cliché es de repetición o no, lo que afecta al precio final del producto. Luego, 
 en cada área se crea un desplegable que lista los trabajos disponibles, obteniendo todos estos datos de ``areasData''. Junto al desplegable de trabajos se agrega 
-otro desplegable para los colores, limitado por el número máximo de colores permitido para cada trabajo.
-
-Este desplegable de colores depende de la selección que realice el usuario en el desplegable de trabajos. Se implementa un evento que detecta los cambios en el 
+otro desplegable para los colores, limitado por el número máximo de colores permitido para cada trabajo. Este desplegable de colores depende de la selección que realice el usuario en el desplegable de trabajos. Se implementa un evento que detecta los cambios en el 
 desplegable de trabajos y llama a la función ``createColoresList()'' para renderizar el desplegable de colores asociado.
 
 Además, al seleccionar un número de colores en el desplegable, se crea un contenedor que renderiza un campo de texto junto con un selector de colores por cada 
@@ -1441,16 +1437,16 @@ color seleccionado en el desplegable. Se ha establecido un ``eventListener'' que
 ``createColorContainers()'', que renderiza y actualiza estos selectores de colores con sus inputs de texto correspondientes. De esta manera, 
 la configuración del área se actualiza automáticamente cada vez que el usuario modifica alguno de los desplegables.
 
-Se ha implementado una lógica para determinar si se renderiza o no un check para aplicar la casuística de "doble pasada". Si el producto que se está 
-personalizando permite la doble pasada (con el \textit{metafield} a true) y el trabajo seleccionado por el usuario también la permite 
-(\textit{metafield} a true), se renderiza este check, permitiendo a los usuarios aplicar una capa más de pintura a sus impresiones, 
+Se ha implementado una lógica para determinar si se renderiza o no un check para aplicar la casuística de ``doble pasada''. Si el producto que se está 
+personalizando permite la doble pasada (con el \textit{metafield} a \textit{true}) y el trabajo seleccionado por el usuario también la permite 
+(\textit{metafield} a \textit{true}), se renderiza este check, permitiendo a los usuarios aplicar una capa más de pintura a sus impresiones, 
 con un sobrecoste adicional. La función ``createCheckDoblePasada()'' se encarga de controlar la renderización de este check (si se cumplen los requisitos), 
 actualizándola cada vez que se modifica el trabajo.
 
 Cada área también cuenta con un input para que el usuario pueda adjuntar una imagen con el logo que desea imprimir. Se ha creado un \textit{endpoint} en 
 la parte del \textit{backend} de la aplicación para recibir esta imagen junto con el identificador del pedido y el área correspondiente, 
 almacenándola adecuadamente. Al adjuntar una imagen, se activa un eventListener (Figura~\ref{fig:adjuntarLogo}) que llama a la función ``subirImagenArea()'', 
-la cual envía la imagen junto con el ID y el área al \textit{backend} utilizando el método API desarrollado. Además, este eventListener 
+la cual envía la imagen junto con el ID y el área al \textit{backend} utilizando el método de la API descrito en el apartado \ref{subsec:diseno-backend}. Además, este eventListener 
 también activa la función ``handleResize()'', que renderiza el logo que el cliente ha adjuntado sobre la imagen del producto en la posición adecuada.
 
 \begin{figure}[H]
@@ -1463,7 +1459,7 @@ también activa la función ``handleResize()'', que renderiza el logo que el cli
 
 
 La función ``handleResize()'' es un controlador de eventos que responde a cambios en el tamaño de la ventana del navegador. 
-Dentro de esta función, se invoca a ``initFabricModal()'' con parámetros específicos obtenidos de areasData. Según el tamaño de la ventana del navegador
+Dentro de esta función, se invoca a ``initFabricModal()'' con parámetros específicos obtenidos de \textit{areasData}. Según el tamaño de la ventana del navegador
 los parámetros que se le pasarán a la función estarán escalados o serán los originales, cumpliendo así con el diseño responsive de esta aplicación. 
 Esta función genera un canvas, que es un lienzo virtual sobre el cual se pueden realizar dibujos y manipulaciones gráficas.
 
@@ -1507,7 +1503,7 @@ Se ha creado un array para almacenar la configuración actualizada de cada área
 Para cada área, se guardan distintos atributos, incluyendo su nombre, dimensiones (ancho y alto), el trabajo seleccionado, 
 el número de colores elegidos, observaciones, la habilitación del área, la repetición del cliché, la imagen seleccionada, 
 los colores seleccionados, y un indicador booleano para la opción de ``doble pasada''. Esta estructura de datos se mantiene dinámicamente actualizada,
-ya que cada elemento de configuración de área cuenta con un eventListener que (además de realizar sus acciones pertinentes en cada caso) se encarga de actualizar el 
+ya que cada elemento de configuración de área cuenta con un \textit{eventListener} que (además de realizar sus acciones pertinentes en cada caso) se encarga de actualizar el 
 valor que le corresponde en esta estructura. Por ejemplo, al modificar el checkbox de área, se activarán las acciones correspondientes 
 al evento asociado. Entre estas acciones, se modificará el valor del checkbox para esa área específica dentro de la estructura de datos.
 En Figura~\ref{fig:variableConfiguracion} se muestra cómo se carga el array ``areasDataContenido'' con los datos iniciales de un área.
@@ -1520,20 +1516,12 @@ En Figura~\ref{fig:variableConfiguracion} se muestra cómo se carga el array ``a
     \vspace{\fill}
 \end{figure}
 
-En los elementos del configurador que afectan al precio y a los productos a añadir al carrito, se llama y actualiza la función ``generarResumen()'' 
+En los elementos del configurador que afectan al precio y a los productos a añadir al carrito, se llama y actualiza la función ``generarResumen()'' (Figura~\ref{fig:resumen1}) 
 en su manejador de eventos. Esta función despliega una sección de resumen en el personalizador, presentando de forma clara y detallada todos 
-los elementos seleccionados por el usuario, junto con sus cantidades, precios individuales y el importe total. Además, 
-se incluye un botón que invoca la funcionalidad para agregar el pedido personalizado al carrito.
-
-
-En la función ``generarResumen()'' (Figura~\ref{fig:resumen1}), se crea una tabla detallada que muestra todos los productos configurados por el usuario, junto con sus precios,
+los elementos seleccionados por el usuario. Se crea una tabla detallada que muestra todos los productos configurados por el usuario, junto con sus precios,
 unidades, subtotales y el total del pedido en ese momento. Para recopilar esta información, se utiliza tanto la estructura ``infoProduct'', 
 que contiene todos los datos del producto principal, como la estructura ``areasDataContenido'', que almacena la configuración actualizada 
-de todas las áreas de impresión.
-
-Inicialmente, se añade a la tabla el nombre del producto, sus unidades (cabe destacar que la cantidad de unidades se obtiene del input de 
-la ficha de producto), el precio por unidad y el subtotal. Si el producto tiene canon digital, 
-se agrega otra fila a la tabla con el nombre del impuesto, la cantidad, el coste y el subtotal.
+de todas las áreas de impresión. Además, se incluye un botón que invoca la funcionalidad para agregar el pedido personalizado al carrito.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -1543,15 +1531,18 @@ se agrega otra fila a la tabla con el nombre del impuesto, la cantidad, el coste
     \vspace{\fill}
 \end{figure}
 
-Luego, se recorre la estructura ``areasDataContenido'', iterando sobre cada configuración de área. Para cada área habilitada 
+Inicialmente, se añade a la tabla el nombre del producto, sus unidades (cabe destacar que la cantidad de unidades se obtiene del input de 
+la ficha de producto), el precio por unidad y el subtotal. Si el producto tiene canon digital, 
+se agrega otra fila a la tabla con el nombre del impuesto, la cantidad, el coste y el subtotal. Luego, se recorre la estructura ``areasDataContenido'', 
+iterando sobre cada configuración de área. Para cada área habilitada 
 (es decir, con el checkbox activo), se añaden a la tabla los productos, cantidades y precios correspondientes a esa configuración.
 En caso contrario, no se tiene en cuenta. Para cada área, se muestra el nombre del trabajo seleccionado, junto con sus unidades, 
 coste y subtotal. Si el trabajo tiene más de un color seleccionado, se agrega una fila adicional con un cargo extra por emplear 
-más de un color. Este cargo extra se calcula mediante otra variante del producto de trabajo, que tiene un precio diferente. 
+más de un color. Este cargo se calcula mediante otra variante del producto de trabajo, que tiene un precio diferente. 
 Para incluir la línea del trabajo en el resumen con sus datos, se aplica el precio por unidad establecido en la variante 
 ``Primer color'' y para el cargo extra se aplica el precio por unidad de la variante ``Resto colores''. Además, 
 se agrega otra línea con un cargo extra si el área tiene marcado el checkbox de ``doblePasada'', en cuyo caso se aplica 
-otro cargo extra utilizando el precio de la segunda variante del trabajo ``Resto colores''. Posteriormente, se añade a la tabla 
+otro importe adicional utilizando el precio de la segunda variante del trabajo ``Resto colores''. Posteriormente, se añade a la tabla 
 una línea para el cliché asociado al trabajo seleccionado para esa área de impresión, mostrando el precio correspondiente a la 
 variante ``SI'' o ``NO'' del cliché, dependiendo de si el usuario ha marcado la casilla de repetición de cliché.
 
@@ -1570,16 +1561,16 @@ productos al carrito (Figura~\ref{fig:addCarritoEvento}).
 
 
 En esta función, se crea un array llamado ``items'' en el que se van añadiendo todos estos productos, junto con su cantidad 
-y propiedades. Para completar este array de items, se recorre la estructura "areasDataContenido" y se utiliza la información del producto principal 
-almacenada en "infoProduct". Se verifica si hay un canon digital y se añade o no este producto con su cantidad correspondiente. Luego, se recorren las
+y propiedades. Para completar este array de items, se recorre la estructura ``areasDataContenido'' y se utiliza la información del producto principal 
+almacenada en ``infoProduct''. Se verifica si hay un canon digital y se añade o no este producto con su cantidad correspondiente. Luego, se recorren las
 áreas y se añaden todos los productos asociados con las cantidades adecuadas (trabajos, cargo extra por colores, cargo de doble pasada y cliché). 
 Finalmente, se añade al array el producto principal con su cantidad y propiedades. Se utilizan las ``properties'' que ofrece la API de Ajax para especificar 
-algunos atributos y datos necesarios en cada producto añadido al carrito. Estas se emplean para guardar junto al pedido toda la información sobre la impresión 
+algunos atributos y datos necesarios en cada producto añadido al carrito. Estas se emplean para guardar, junto al pedido, toda la información sobre la impresión 
 configurada, para que se reciba en el panel de administración de la tienda. Se asigna un id único a todos los productos pertenecientes 
 al pedido de impresión, que servirá para asociar posteriormente todos estos productos en un solo paquete. Además, se incluyen otras propiedades importantes
 para cada elemento del pedido. Por ejemplo, se especifica el área a la que pertenece cada elemento. Para el cliché, se añaden 
 propiedades que detallan los colores seleccionados por el usuario. En el caso del producto que se añade para la casuística de doble pasada, se incluye una
-propiedad que identifica claramente este tipo de impuesto, dado que en realidad se añade como una variante de ``Resto colores'' de trabajo y no se diferenciaría. Además, 
+propiedad que identifica claramente este tipo de importe, dado que en realidad se añade como una variante de ``Resto colores'' de trabajo y no se diferenciaría. Además, 
 al añadir el impuesto extra de colores, se indica el número de colores a emplear. Para el trabajo, se proporcionan las dimensiones (ancho y alto), 
 así como el número de colores, las observaciones y el identificador de la imagen seleccionada, que permitirá localizarla en el servidor donde se ha almacenado.
 
@@ -1599,15 +1590,15 @@ observar esta operación.
 \subsubsection{Implementación de la extensión de transformación de carrito}
 En esta sección se mostrará la investigación e implementación de los paquetes personalizados (\textit{customized bundles}) para agrupar y vincular los
 productos de los paquetes de impresión. Una vez añadidos los productos al carrito, esta funcionalidad permitirá relacionar en paquetes, los productos de los pedidos personalizados, de forma que no se puedan borrar
-o editar por separado. Además, se realizará una nueva versión de la sección de desglose de artículos del carrito. Esto se debe a que en el tema estandar no se muestran los artículos de un paquete 
+o editar por separado. Además, se realizará una nueva versión de la sección de desglose de artículos del carrito. Esto se debe a que en el tema estándar no se muestran los artículos de un paquete 
 de impresión. En esta, se pinta un solo elemento con el precio total del conjunto. El usuario final debe poder visualizar en el carrito un desglose de los paquetes con todos los artículos que incluye y su precio 
 total para obtener una buena experiencia de compra.
 
 Las \textbf{funciones de Shopify} \cite{shopify-functions} permiten a los desarrolladores personalizar la lógica del \textit{backend} de Shopify, incluyendo casos de uso como la implementación de los
-\textit{customized bundles} \cite{paquete-personalizado}. Estas funciones se basan en destinos de extensión que inyectan código en la lógica de \textit{backend} de Shopify. La entrada de estas funciónes es un objecto JSON resultado de una
-consulta de GraphQL, permitiendo seleccionar datos específicos como los de la línea de carrito en este caso. La lógica de la funcion se realizará en JavaScript, y se compila en módulos de WebAssembly.
+\textit{customized bundles} \cite{paquete-personalizado}. Estas funciones se basan en destinos de extensión que inyectan código en la lógica de \textit{backend} de Shopify. La entrada de estas funciones es un objecto JSON resultado de una
+consulta de GraphQL, permitiendo seleccionar datos específicos como los de la línea de carrito en este caso. La lógica de la función se realizará en JavaScript, y se compila en módulos de WebAssembly.
 La salida de esta función es un documento JSON que describe las operaciones deseadas y que Shopify se encargará de interpretar. Además Shopify proporciona esquemas que especifican los 
-destinos, entradas y salidas esperadas para la API de Functions.
+destinos, entradas y salidas esperadas para la API de funciones de Shopify.
 
 En este caso se usarán estas funciones para realizar una modificación del carrito. Para ello, mediante la Shopify CLI se debe crear en la aplicación una extensión de transformación de carrito. Esta proporciona 
 la estructura básica para poder definir la query y la función que ejecutará y devolverá el resultado JSON con las operaciones de modificación a Shopify (Figura~\ref{fig:estructuracarttrans}). 
@@ -1634,11 +1625,11 @@ y que servirán para localizar los elementos que deben pertenecer a un mismo paq
     \vspace{\fill}
 \end{figure}
 
-Por lo que respecta a la implementación de la función, esta se divide en dos partes principales: la primera parte (Figura~\ref{fig:runpart1})  se encarga de procesar las las líneas de carrito que contienen
-propiedades definidas (artículos de personalización), mientras que la segunda parte se encarga de las líneas del carrito que no tienen propiedades definidas (artículos normales sin personalización).
+Por lo que respecta a la implementación de la función, esta se divide en dos partes principales: la primera parte (Figura~\ref{fig:runpart1})  se encarga de procesar las líneas de carrito que contienen
+propiedades definidas (artículos de personalización), mientras que la segunda parte (ver Figura~\ref{fig:runpart2}) se encarga de las líneas del carrito que no tienen propiedades definidas (artículos normales sin personalización).
 
-En la primera parte, se filtran las líneas del carrito que tienen la propiedad 'idProps' y 'value' definidas, y se agrupan según su identificador. Si una línea comparte el mismo identificador que la anterior
-o es la primera línea del carrito, se agregan a una estructura de datos que representa un grupo de líneas. Cuando se encuentra una línea con un identificador diferente, se crea una nueva operación 
+En la primera parte, se filtran las líneas del carrito que tienen la propiedad ``idProps'' y ``value'' definidas, y se agrupan según su identificador. Si una línea comparte el mismo identificador que la anterior
+o es la primera línea del carrito, se agrega a una estructura de datos que representa un grupo de líneas. Cuando se encuentra una línea con un identificador diferente, se crea una nueva operación 
 que combina las líneas del grupo anterior y se reinicia el proceso para el nuevo grupo. Con este procedimento se generan una serie de operaciones de tipo ``merge'' que se van añadiendo al array de operaciones que retorna 
 la función. Estas operaciones serán interpretadas por el \textit{backend} de Shopify y resultarán en una transformación del carrito que mostrará los items de un mismo producto de personalización asociados.
 
@@ -1650,7 +1641,7 @@ la función. Estas operaciones serán interpretadas por el \textit{backend} de S
     \vspace{\fill}
 \end{figure}
 
-En la segunda parte (Figura~\ref{fig:runpart2}), se procesan las líneas del carrito que no tienen propiedades definidas, que corresponden a productos que no son personalizados. Estos productos se recorren y en función de si cuentan con canon digital o no, se expanden agregando 
+En la segunda parte (Figura~\ref{fig:runpart2}), se procesan las líneas del carrito que no tienen propiedades definidas, que corresponden a productos que no son personalizados. Estos productos se recorren y, en función de si cuentan con canon digital o no, se expanden agregando 
 el producto especial canon con su cantidad correspondiente. Con este procedimiento se generan una serie de operaciones de tipo ``expand'' que se van añadiendo al array de operaciones. Este tipo de operaciones
 serán interpretadas por el \textit{backend} de Shopify y resultarán en una transformación del carrito que añadirá el canon digital a los productos normales que deban contar con él, asociados en un mismo paquete. Es decir, esta operación añade los productos canon al carrito
 y los asocia con los productos no personalizados correspondientes.
@@ -1665,11 +1656,11 @@ y los asocia con los productos no personalizados correspondientes.
 \end{figure}
 
 
-Como último paso para activar esta funcionalidad en la tienda en la que se instale la aplicación, habría que ejecutar una mutación GraphQL para crear un objeto de tipo \textit{cart-transform}, que cuente con el identificador de la función que se ha implementado
+Como último paso, para activar esta funcionalidad en la tienda en la que se instale la aplicación habría que ejecutar una mutación GraphQL para crear un objeto de tipo \textit{cart-transform}, que cuente con el identificador de la función que se ha implementado
 y que se debe aplicar. Este objeto es el encargado de llamar a la función de transformación correspondiente cuando el usuario entra al carrito de la tienda.
 
-Al aplicar los \textit{customized bundles}, se observa que los paquetes de productos de personalización, no muestran los detalles de los artículos que contienen. Estos 
-paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no está visible. Por ello se ha implementado una nueva sección en un tema estandar en el que 
+Al aplicar los \textit{customized bundles}, se observa que los paquetes de productos de personalización no muestran los detalles de los artículos que contienen. Estos 
+paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no está visible. Por ello se ha implementado una nueva sección en un tema estándar en el que 
 se desglose el contenido de este paquete (Figura~\ref{fig:seccionTema}).
 
 Esta es una versión actualizada de la sección \textit{main-cart-items.liquid}. En ella (Figura~\ref{fig:modificacionTema}) se recorren los 
@@ -1695,9 +1686,9 @@ con el objetivo de mejorar la experiencia del usuario.
 
 \clearpage
 \subsection{Pruebas}
-En cuanto a las pruebas realizadas, a lo largo de todo el proceso de desarrollo de la aplicación, se han ido llevando a cabo pruebas continuas
+En cuanto a las pruebas realizadas, a lo largo de todo el proceso de desarrollo de la aplicación se han ido llevando a cabo pruebas continuas
 con el objetivo de verificar el correcto funcionamiento de las funcionalidades implementadas. Estas pruebas se han ido realizando de manera manual 
-a medida que se iban complentando las diferentes tareas definidas para cada historia de usuario, de modo que la aplicación iba creciendo en funcionalidades 
+a medida que se iban completando las diferentes tareas definidas para cada historia de usuario, de modo que la aplicación iba creciendo en funcionalidades 
 a la par que se comprobaba su correcto funcionamiento.
 
 Cada vez que se implementaba una nueva funcionalidad, se realizaban pruebas exhaustivas para asegurar su correcto funcionamiento antes de proceder con la 
@@ -1706,27 +1697,27 @@ el desarrollo de ambas partes se ha ido realizando de forma conjunta.
 
 Es importante destacar que se optó por la realización de pruebas manuales en lugar de la implementación de pruebas automatizadas debido a que se 
 trata de una aplicación relativamente pequeña y con una funcionalidad en la parte de \textit{backend} bastante limitada. Se consideró que el esfuerzo necesario y la inversión
-en tiempo y recursos para establecer pruebas automatizadas no justificaba su implementación. Esta decisión permitio una mayor flexibilidad y agilidad durante
+en tiempo y recursos para establecer pruebas automatizadas no justificaba su implementación. Esta decisión permitió una mayor flexibilidad y agilidad durante
 el proceso de desarrollo de la aplicación.
 
 Para realizar las pruebas manuales a la par que se iban desarrollando las funcionalidades de la aplicación, se ha hecho uso de \textbf{Nodemon}. 
 Esta es una herramienta de línea de comandos para Node.js, cuya función principal es monitorizar los archivos del proyecto y reiniciar autómaticamente
 la aplicación cuando se detectan cambios en el código fuente \cite{nodemon}. 
 Esta herramienta ha eliminado la necesidad de detener y reiniciar manualmente el servidor cada vez que se han realizado modificaciones en el código, 
-lo que ha agilizado el proceso de desarrollo y ha permitido comprobar el funcionamiento de cada tarea a la par que se implementaba, pues permitía observar como
+lo que ha agilizado el proceso de desarrollo y ha permitido comprobar el funcionamiento de cada tarea a la par que se implementaba, pues permitía observar cómo
 cada cambio reciente se reflejaba automáticamente.
 
 El uso de nodemon, ha facilitado tanto la implementación y pruebas de la parte de \textit{frontend} como la de \textit{backend}. En cuanto a la parte del \textit{frontend}
 ha permitido ir creando funcionalidades y dando diseño a esta parte, puediendo observar los resultados de cada cambio en el código en tiempo real,
-lo que ha agilizado muchisimo el desarrollo. Por lo que respecta al \textit{backend} mas de lo mismo, se han podido ir realizando modificaciones y pruebas de las funcionalidades
+lo que ha agilizado muchísimo el desarrollo. Por lo que respecta al \textit{backend}, más de lo mismo, se han podido ir realizando modificaciones y pruebas de las funcionalidades
 hasta conseguir el resultado esperado, permitiendo solucionar los errores, mejorar el código y probarlo de forma muy ágil y rápida. 
 
-Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los \textit{endPoints} de la parte del \textit{backend}, esta plataforma ha permitido enviar 
-solicitudes HTTP a los \textit{endPoints} de la aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
-las llamadas desde la parte del frontend, se realizaron pruebas adicionales para garantizar la correcta comunicación entre \textit{backend} y \textit{frontend} y asegurando una
+Se ha hecho uso de \textbf{Postman} para llevar a cabo las pruebas de los \textit{endpoints} de la parte del \textit{backend}. Esta plataforma ha permitido enviar 
+solicitudes HTTP a los \textit{endpoints} de la aplicación, permitiendo así verificar la correcta funcionalidad de los servicios web. Asimismo, una vez implementadas
+las llamadas desde la parte del frontend, se realizaron pruebas adicionales para garantizar la correcta comunicación entre \textit{backend} y \textit{frontend}, asegurando una
 experiencia del usuario fluida y sin errores.
 
-Por último añadir que durante todo el proceso de desarrollo, se han ido realizando pruebas de la parte del \textit{frontend} del tema (theme app extensión) en diversos
+Por último, añadir que durante todo el proceso de desarrollo se han ido realizando pruebas de la parte del \textit{frontend} del tema (theme app extensión) en diversos
 navegadores para probar la aplicación desde diferentes entornos y permitir identificar problemas de compatibilidad y rendimiento.
 Además se ha hecho uso de una herramienta clave con la que cuentan la mayoría de navegadores, que proporciona la capacidad de simular diferentes 
 tamaños de pantalla y dispositivos actuales, lo que ha facilitado el poder probar el diseño responsive de esta aplicación a lo largo del desarrollo.
@@ -1740,9 +1731,9 @@ específico para esta aplicación.
 
 Por esta razón, se ha desplegado esta aplicación de manera local y haciendo uso de las herramientas que proporciona Shopify. Para desplegar la aplicación,
 se han aprovechado las funcionalidades de la Shopify CLI. Esta herramienta cuenta con una interfaz de línea de comandos que proporciona diversas funcionalidades para desplegar la aplicación.
-Empleando la Shopify CLI, se ha ejecutado el comando \textit{npm run dev} que ejecuta el script definido en el archivo package.json bajo la clave dev. En este caso como se muestra en la Figura~\ref{fig:scriptsPackageJson} se estaría ejecutando \textit{shopify app dev} el cual es el comando específico para lanzar la aplicación.
-Este al ejecutarse inicia un servidor local tanto para el \textit{backend} como para el \textit{frontend}, proporcionando
-una dirección URL pública temporal la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL permite lanzar y compartir esta aplicación para probarla durante el desarrollo, con la ventaja de que 
+Empleando la Shopify CLI, se ha ejecutado el comando \textit{npm run dev} que ejecuta el script definido en el archivo package.json bajo la clave dev. En este caso, como se muestra en la Figura~\ref{fig:scriptsPackageJson}, se estaría ejecutando \textit{shopify app dev} el cual es el comando específico para lanzar la aplicación.
+Este, al ejecutarse, inicia un servidor local tanto para el \textit{backend} como para el \textit{frontend}, proporcionando
+una dirección URL pública temporal, la cual Shopify se encarga de gestionar automáticamente actualizándola según sea necesario. Esta URL permite lanzar y compartir esta aplicación para probarla durante el desarrollo, con la ventaja de que 
 Shopify se encarga de gestionar su seguridad y privacidad.
 
 \begin{figure}[H]
@@ -1759,13 +1750,13 @@ exponer directamente los servidores locales a internet, los túneles de Cloudfla
 servidores de posibles ataques maliciosos, proporcionando una mayor confiabilidad en la entrega de contenido \cite{cloudflare}. 
 
 Al crear un túnel entre el entorno local y la tienda de desarrollo y pruebas empleando Cloudflare, se puede permitir que los servicios que se ejecutan en la infraestructura local
-sean accesibles a través de internet de una manera segura y aprovechándo la gran infraestructura de red global con la que cuenta Coudflare para enrrutar el tráfico.
+sean accesibles a través de internet de una manera segura y aprovechando la gran infraestructura de red global con la que cuenta Coudflare para enrutar el tráfico.
 
 En el caso de que los clientes de Upango solicitasen los servicios de esta aplicación y se necesitase hacer un despliegue real, se seguiría el siguiente procendimiento que ya se ha utilizado para
 desplegar otro tipo de aplicaciones.
 En primer lugar se contratarían los servicios de hosting para alojar la aplicación en un servidor y habría que hacerse con un dominio o subdominio
-que esté apuntando a ese servidor. Una vez obtenido el servidor, habría que conectarse a el mediante SSH para proceder a configurarlo. En este caso para trabajar cómodamente en este servidor remoto,
-se haría uso de herramientas como \textbf{Remote Explorer} y \textbf{Remote SSH}, estas son extensiones de Visual Studio Code que permiten trabajar de una manera mas eficiente y comoda con los archivos del
+que esté apuntando a ese servidor. Una vez obtenido el servidor, habría que conectarse a él mediante SSH para proceder a configurarlo. En este caso, para trabajar cómodamente en este servidor remoto,
+se haría uso de herramientas como \textbf{Remote Explorer} y \textbf{Remote SSH}. Se trata de extensiones de Visual Studio Code que permiten trabajar de una manera mas eficiente y cómoda con los archivos del
 servidor empleando el editor de código. Estas herramientas facilitan la conexión al servidor, las configuraciones y despliegue de aplicaciones que se realizan en él, y a la hora 
 de tener que analizar errores y solucionarlos una vez la aplicación está en producción, amenizan estas tareas de manipular el código.
 
@@ -1836,7 +1827,7 @@ con la misma y el modo de empleo de las funcionalidades que aporta.
 \section{Conclusiones y vías futuras}
 
 \subsection{Conclusiones}
-A modo de conclusión se puede decir que en este Trabajo de Fin de Grado (TFG) se han logrado cumplir todos
+A modo de conclusión se puede decir que en este TFG se han logrado cumplir todos
 los objetivos propuestos inicialmente. Se ha diseñado y desarrollado una aplicación para la plataforma Shopify que 
 permite la personalización de productos para su posterior compra en las tiendas de los clientes que la empleen.
 Desde el análisis inicial hasta la implementación y despliegue, se ha seguido una metodología estructurada que ha permitido
@@ -1852,7 +1843,7 @@ ha sido fundamental no solo para cumplir con los requisitos establecidos, sino t
 preparar la aplicación para seguir creciendo de manera continua, aplicando más iteraciones.
 
 \subsection{Trabajo futuro}
-En el ámbito del desarrollo futuro, la aplicación se vislumbra como un proyecto en constatne evolución y mejora. Actualmente, su estructura básica se ha 
+En el ámbito del desarrollo futuro, la aplicación se vislumbra como un proyecto en constante evolución y mejora. Actualmente, su estructura básica se ha 
 establecido en función de los requisitos de proyectos previos de la empresa y las necesidades específicas de los clientes en ese momento. Sin embargo, su 
 verdadero potencial radica en su capacidad de adaptación y expansión para satisfacer las demandas cambiantes del mercado y las preferencias individuales de los 
 clientes venideros.
@@ -2232,7 +2223,7 @@ y completar el pedido.
 \clearpage
 \subsection{Tareas}\label{sec:tareas}
 
-En el desarrollo de este Trabajo de Fin de Grado (TFG), el diseño de la aplicación ha sido una parte fundamental que ha sentado las bases para la implementación
+En el desarrollo de este TFG, el diseño de la aplicación ha sido una parte fundamental que ha sentado las bases para la implementación
 de las funcionalidades requeridas. Este diseño se ha basado en un minucioso estudio de las tecnologías pertinentes, así como en la comprensión detallada de las
 historias de usuario que definían los objetivos y requisitos del proyecto. La realización del diseño de la aplicación dió pie a la definición de diversas tareas que han sido cuidadosamente 
 elaboradas.
@@ -2355,7 +2346,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Modificar el Theme para Mostrar el Detalle de los Bundles de Impresión en el Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Como se ha podido observar, los paquetes de productos de personalizados (\textit{customized bundles}) que se muestran en el carrito, no muestran los detalles de los artículos que contienen con sus precios. Estos paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no se puede visualizar. El objetivo de esta tarea es desarrollar una sección en el tema de una tienda estandar, que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de estos paquetes de impresión de manera similar a la visualización en el proceso de checkout.
+              \item \textbf{Descripción:} Como se ha podido observar, los paquetes de productos de personalizados (\textit{customized bundles}) que se muestran en el carrito, no muestran los detalles de los artículos que contienen con sus precios. Estos paquetes se muestran como un solo artículo de tipo paquete cuyo contenido no se puede visualizar. El objetivo de esta tarea es desarrollar una sección en el tema de una tienda estándar, que sea una versión de la sección \texttt{main-cart-items.liquid} (sección en la que se muestran los productos del carrito) en la que se muestre el detalle de estos paquetes de impresión de manera similar a la visualización en el proceso de checkout.
           \end{itemize}
 \end{itemize}
 
