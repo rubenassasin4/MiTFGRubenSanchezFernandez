@@ -385,8 +385,8 @@ atendiendo a millones de comerciantes en todo el mundo.
 
 Cuenta con multitud de ventajas frente a otras plataformas de comercio electrónico muy populares en el mercado. Una de las ventajas
 mas trascendentales y que ha influenciado fuertemente  la decisión de Upango de migrar de \textbf{ePages} a esta tecnología, es el hecho de que Shopify elimina
-las barreras iniciales al ofrecer un servicio completo que incluye registro de dominio y hosting web ilimitado. Esto simplifica el proceso de lanzamiento y mantenimiento
-de una tienda al eliminar la necesidad de buscar proveedores de hosting externos, además de dotar a los usuarios de tecnologías avanzadas como servidores de alta
+las barreras iniciales al ofrecer un servicio completo que incluye registro de dominio y \textit{hosting} web ilimitado. Esto simplifica el proceso de lanzamiento y mantenimiento
+de una tienda al eliminar la necesidad de buscar proveedores de \textit{hosting} externos, además de dotar a los usuarios de tecnologías avanzadas como servidores de alta
 calidad, redes optimizadas y un CDN global para garantizar una velocidad de carga rápida \cite{shopify-tutorial}. Esto no solo mejora la experiencia del usuario, sino que también 
 tiene un impacto positivo en el posicionamiento SEO y en la tasa de conversión. Cabe destacar que Shopify cuenta con una tasa de conversión de las más
 elevadas del mercado \cite{shopify-tasa-conversion}. 
@@ -421,8 +421,8 @@ interfaz de administración de una tienda Shopify en desarrollo.
     \vspace{\fill}
 \end{figure}
 
-Esta parte del \textit{frontend} ha sido desarrollada empleando la biblioteca de JavaScript \textbf{React} \cite{react-pag-1}. Se trata de una libería de código abierto creada por el equipo de la
-compañia Facebook (Meta) junto a una gran comunidad de desarrolladores independientes que, desde su lanzamiento en 2013, se ha convertido en una
+Esta parte del \textit{frontend} ha sido desarrollada empleando la biblioteca de JavaScript \textbf{React} \cite{react-pag-1}. Se trata de una librería de código abierto creada por el equipo de la
+compañía Facebook (Meta) junto a una gran comunidad de desarrolladores independientes que, desde su lanzamiento en 2013, se ha convertido en una
 de las tecnologías de \textit{frontend} más usadas, ya que permite construir interfaces de usuario dinámicas y escalables. Esta se usa en el desarrollo de aplicaciones web y móviles. 
 
 Toda aplicación web React, se compone de componentes reutilizables que conforman partes de la interfaz de usuario. Permite tener un componente distinto para
@@ -447,8 +447,8 @@ a crear experiencias que se parezcan al resto del panel de administración. Prop
 elementos y estilos de interfaz empaquetados a través de código. Además proporciona tokens, es decir valores CSS con nombre que representan decisiones
 de diseño para elementos como el color, el espaciado y la tipografía se puede aplicar a los diseños para ayudar a unificar las experiencias de los usuarios.
 También proporciona iconos cuidadosamente diseñados que se centran en el comercio y el emprendimiento, que se pueden emplear como ayudas visuales para ayudar a los 
-usuarios a completar tareas. Y por último proporciona patrones, soluciones repetibles a problemas comunes de experiencia de usuario (UX, en ingles ``User eXperience'') en una situación expecífica del usuario
-El buen uso de estos patrones hace que el panel de administración sea familiar y facil de usar \cite{shopify-dev}.
+usuarios a completar tareas. Y por último proporciona patrones, soluciones repetibles a problemas comunes de experiencia de usuario (UX, en ingles ``User eXperience'') en una situación específica del usuario
+El buen uso de estos patrones hace que el panel de administración sea familiar y fácil de usar \cite{shopify-dev}.
 
 Por lo que respecta a la otra parte del \textit{frontend} de esta aplicación (extensión del tema de la tienda). Un tema en Shopify es un conjunto de recursos
 y archivos que determinan la apariencia, funcionalidad y sensación de una tienda en línea en esta plataforma, tanto para los comerciantes como para
@@ -476,7 +476,7 @@ artículos, se ha creado en la aplicación lo que se conoce como \textbf{App The
 agregar fácilmente elementos dinámicos a sus temas sin tener que interactuar directamente con las plantillas o el código \textbf{Liquid} del tema. Estas extensiones
 se integran con el tema de la tienda exponiendo automáticamente en el editor de temas las secciones y elementos que haya programados en la aplicación. \cite{shopify-dev}
 Una de las ventajas de desarrollar estas partes del tema en la aplicación y no directamente en el tema de la tienda, es que las secciones de código y funcionalidades
-que se progarmen en la aplicación pasarán a estar disponibles en el tema de la tienda en la que se instale directamente sin necesidad de tener que ir modificando el tema
+que se programen en la aplicación pasarán a estar disponibles en el tema de la tienda en la que se instale directamente sin necesidad de tener que ir modificando el tema
 de cada tienda en la que se necesite instalar la aplicación. Es decir, puede implementarse la aplicación al mismo tiempo en todas las tiendas que la usan,
 sin necesidad de que los comerciantes tengan que editar manualmente el código del tema.
 
@@ -496,7 +496,7 @@ funcionalidad dinámica a la página.
 
 En el desarrollo \textit{frontend} de la parte del tema, se ha hecho uso de una de las herramientas que proporciona Shopify, la \textbf{Shopify Ajax API} \cite{shopify-ajax-api}. La API de Ajax
 proporciona un conjunto de puntos finales ligeros para el desarrollo de temas: permite agregar productos al carrito y actualizar el contador
-de artículos del mismo, mostrar recomendaciones de productos relaccionados, sugerir productos y colecciones a los visitantes a medida que escriben
+de artículos del mismo, mostrar recomendaciones de productos relacionados, sugerir productos y colecciones a los visitantes a medida que escriben
 en un campo de búsqueda y una larga lista de funcionalidades que serán útiles para interactuar con la tienda \cite{shopify-dev}.
 
 Por último destacar que la decisión de utilizar estas tecnologías en la parte de administración del \textit{frontend} proviene de la necesidad de que la aplicación sea
@@ -521,7 +521,7 @@ de contexto entre diferentes lenguajes al escribir tanto el código del navegado
 gran parte de la cadena de herramientas de compilación. 
 \item Node es portable y compatible con multitud de sistemas operativos y está soportado por muchos proveedores de alojamiento web, contando con un gran ecosistema y una comunidad de desarrolladores muy activa. 
 \item Por último, este entorno brinda muchas facilidades para crear servidores web básicos capaces de responder a cualquier solicitud empleando el paquete HTTP de Node y simplificando el proceso de desarrollo y despliegue de
-aplicaciones Web \cite{node-express}.
+aplicaciones web \cite{node-express}.
 \end{itemize}
 
 Además se ha empleado \textbf{Express} \cite{express}, el \textit{framework} web más popular de Node \cite{express-popular}, que simplifica enormemente el desarrollo de aplicaciones web al proporcionar
@@ -530,10 +530,10 @@ verbos HTTP (esto es 'GET', 'POST', 'PUT', 'DELETE', etc.) en diversas rutas URL
 aplicaciones web de manera intuitiva. Además, permite la adición de procesamiento de middleware adicional en cualquier punto de la tubería de manejo de 
 la petición, brindando flexibilidad y modularidad al desarrollo \cite{node-express}. 
 
-En esta parte de la aplicación, se ha hecho uso de la API de administración \textbf{GraphQL} que proporciona Shopify \cite{api-administracion-graphql}. Esta consituye la principal forma en la que 
+En esta parte de la aplicación, se ha hecho uso de la API de administración \textbf{GraphQL} que proporciona Shopify \cite{api-administracion-graphql}. Esta constituye la principal forma en la que 
 las aplicaciones pueden interactuar con la tienda, permitiendo leer y escribir la información de la tienda incluidos los productos, inventario, pedidos,
 envíos y mucho más, y facilitando ampliar la funcionalidad existente de Shopify. Gracias a esta API es posible conectar el inventario
-de la tienda con otros marketplaces, ofreciendo infinidad de posibilidades para incluir nuevas funcionalidades en el panel de control.
+de la tienda con otros \textit{marketplaces}, ofreciendo infinidad de posibilidades para incluir nuevas funcionalidades en el panel de control.
 Esta API es compatible tanto con GraphQL como con REST aunque para este desarrollo se empleará GraphQL. Para interactuar con esta API las aplicaciones
 deben autenticarse además de contar con los ámbitos de acceso pertinentes para acceder a los datos que se necesiten o se quieran modificar \cite{shopify-dev}.
 
@@ -544,17 +544,17 @@ y características que ofrecen Node.js y Express, dos de las tecnologías más e
 
 \subsubsection{Otras tecnologías}
 Para la elaboración de este TFG se ha empleado \textbf{Visual Studio Code} \cite{vsc} como entorno de desarrollo tanto para la creación de la aplicación como para
-la redación del propio TFG en \textbf{LaTeX} \cite{latex}, empleando una serie de extensiones que han facilitado el trabajo. 
+la redacción del propio TFG en \textbf{LaTeX} \cite{latex}, empleando una serie de extensiones que han facilitado el trabajo. 
 Se han aprovechado extensiones como Shopify Liquid Templates, Shopify Liquid, 
 Polaris for VS Code, JavaScript (ES6), GraphQL, Latex Language support, Latex Workshop y ESLint para garantizar un desarrollo y documentación
 fluida y eficaz. Estas extensiones han proporcionado una serie de funcionalidades como resaltado de sintaxis, autocompletado y validación de código, 
 acceso rápido a la documentación, formateo de código y una serie de ventajas que han facilitado significativamente la creación y documentación de la aplicación.
 
 Se ha empleado \textbf{Git} \cite{git} para llevar un control de versiones de la aplicación junto con \textbf{Azure DevOps} \cite{azure-devops}, una plataforma de Microsoft que ofrece una amplia
-gama de características y funcionalidades que permiten a los equipos de desarrolo colaborar de manera efectiva en equipo y optimizar el proceso de desarrollo
+gama de características y funcionalidades que permiten a los equipos de desarrollo colaborar de manera efectiva en equipo y optimizar el proceso de desarrollo
 de software. Esta herramienta ofrece gestión del código fuente, permitiendo almacenar y administrar el código fuente de nuestro proyecto en 
 repositorios de código. También facilita la planificación, asignación y seguimiento de las tareas, problemas y requisitos del proyecto, haciendo
-un seguimiento del trabajo, y muchas otras fucionalidades útiles para el desarrollo como seguimiento, pruebas y gestión del ciclo de vida de los proyectos \cite{devOps}. 
+un seguimiento del trabajo, y muchas otras funcionalidades útiles para el desarrollo como seguimiento, pruebas y gestión del ciclo de vida de los proyectos \cite{devOps}. 
 
 Cabe destacar que herramientas como Git y Azure DevOps se han integrado en el flujo de trabajo de este proyecto debido a la influencia directa de la empresa, la cual las 
 utiliza de manera activa en su día a día. En contraste, las demás tecnologías como Visual Studio Code, LaTeX y sus extensiones, fueron seleccionadas 
@@ -593,13 +593,13 @@ llevado a cabo durante todo este periodo.
         \item Estudiar la plataforma Shopify y todas sus funcionalidades, como controlar la parte de administración de una tienda, aprender a crear aplicaciones, desarrollar temas y configurarlos y demás.
         \item Estudiar las tecnologías para la primera parte del \textit{frontend} en este caso React y sus bibliotecas.
         \item Estudiar las tecnologías para la segunda parte del \textit{frontend} (Extensión de tema), ponerse al día con Liquid, HTML, CSS y JavaScript.
-        \item Estudiar las tecnologías para la parte del \textit{backend} en nuestro caso Node.js y su libería Express. 
+        \item Estudiar las tecnologías para la parte del \textit{backend} en nuestro caso Node.js y su librería Express. 
     \end{enumerate}
     \item \textbf{Etapa 2. Análisis de requisitos y diseño de funcionalidades principales.} Esta etapa comprende el objetivo \ref{item:objetivo2}.
-    Durante esta estapa se realiza un análisis de requisitos básicos que debe tener la aplicación, se crean las historias de usuario correspondientes en base a esos requisitos y se realiza un diseño de cada
+    Durante esta etapa se realiza un análisis de requisitos básicos que debe tener la aplicación, se crean las historias de usuario correspondientes en base a esos requisitos y se realiza un diseño de cada
     funcionalidad a implementar dividiendo su desarrollo en tareas.
     \item \textbf{Etapa 3. Implementación de la aplicación.} Esta etapa comprende los objetivos \ref{item:objetivo4}, \ref{item:objetivo5} y \ref{item:objetivo6}.
-    Esta es la etapa mas larga del desarrollo, en ella se implementan las tareas diseñadas, y se van cumpliendo todas esas historias de usuario y requisitos analizados previamente.
+    Esta es la etapa más larga del desarrollo, en ella se implementan las tareas diseñadas, y se van cumpliendo todas esas historias de usuario y requisitos analizados previamente.
     La implementación tanto de la parte \textit{backend} como del \textit{frontend} se ha ido alternando y desarrollando correlativamente según estaba diseñado en las tareas. Cabe destacar que el desarrollo de esta aplicación se ha focalizado
     más en el \textit{frontend} que en el \textit{backend}, pues la mayor parte de funcionalidades de la misma recaen sobre la parte \textit{frontend}. En esta etapa se han ido probando en una tienda de desarrollo cada una de las funcionalidades implementadas en las tareas, 
     para ir comprobando el funcionamiento de la aplicación. Una vez desarrolladas y comprobadas todas las tareas de la funcionalidad básica de la aplicación, se han llevado a cabo nuevas historias de usuario de funcionalidad adicional y se han diseñado, implementado y probado estas casuísticas y funcionalidades
@@ -609,7 +609,7 @@ llevado a cabo durante todo este periodo.
     encaje con el diseño general de la tienda. En esta etapa también se realizan pruebas de todo el funcionamiento del personalizador y se realizan pedidos ficticios para comprobar el correcto
     funcionamiento de todo el desarrollo. Gracias al trabajo de esta etapa se ha conseguido desarrollar una tienda de demostración con la funcionalidad de personalización de artículos, que permite
     mostrar esta aplicación a esos posibles clientes para realizarles una demostración del potencial de las funcionalidades de personalización de artículos.
-    \item \textbf{Etapa 5. Documentación y desarrollo del TFG.} Esta última estapa comprende el objetivo \ref{item:objetivo8}. Durante esta etapa
+    \item \textbf{Etapa 5. Documentación y desarrollo del TFG.} Esta última etapa comprende el objetivo \ref{item:objetivo8}. Durante esta etapa
     se lleva a acabo la documentación del TFG, se redacta de una forma estructurada todo el procedimiento llevado a cabo para desarrollar
     la aplicación y se llevan cabo reuniones con el tutor para ir revisando y compartiendo opiniones sobre la documentación.
 \end{enumerate}
@@ -737,7 +737,7 @@ Para la redacción de las historias de usuario se ha hecho uso de la siguiente p
     \item Las imágenes de las áreas que no tengan una definida deben mostrar una imagen por defecto, configurable a través del Theme App Extension.
     \item Cada área debe mostrar los trabajos disponibles en un desplegable para que el usuario pueda seleccionar el que desee.
     \item Cada trabajo tiene un número máximo de colores, por lo que al lado del desplegable de trabajos debe aparecer un desplegable de colores para que el usuario elija el número de colores que necesita. Y cada vez que se actualice el trabajo seleccionado deberá refrescarse este desplegable.
-    \item Todos los elementos configurables de las areas, como selectores, inputs, checkbox que el usuario no haya seleccionado deberán aparecer como desactivados.
+    \item Todos los elementos configurables de las áreas, como selectores, inputs, checkbox que el usuario no haya seleccionado deberán aparecer como desactivados.
     \item Se debe habilitar un campo de observaciones en cada área donde el usuario pueda agregar las notas pertinentes.
     \item Para cada trabajo, se debe permitir al usuario seleccionar el número de colores y especificar los colores deseados. Para ello según la selección del usuario en el desplegable de colores se deberán añadir tantos selectores de colores como colores se hayan seleccionado en el mismo. Además del selector de colores se añadirán campos de texto libre para que el usuario pueda especificar cada color mediante esta forma.
     \item Se debe incluir la opción de marcar si un cliché es de repetición, afectando al precio final.
@@ -976,7 +976,7 @@ una comprensión completa de su funcionamiento y su integración en la aplicaci�
 Una vez analizadas las historias de usuario y elaborado el diseño de la aplicación, se redactaron una serie de tareas que sirvieron para guiar 
 la implementación del proyecto. En el Anexo~\ref{sec:tareas}, pueden observarse dichas tareas. La implementación de esta aplicación se ha llevado a cabo siguiendo una guía estructurada en base a las tareas definidas. 
 Es importante remarcar que el proceso de implementación siguió una metodología iterativa e incremental como ya se ha comentado. Inicialmente, se llevó a cabo el desarrollo
-de las historias de usuario, el diseño de la aplicación y la creación detallada de las tareas en base a dichas historias y diseño realizado, centrándose unicamente en las funcionalidades básicas. Se priorizó
+de las historias de usuario, el diseño de la aplicación y la creación detallada de las tareas en base a dichas historias y diseño realizado, centrándose únicamente en las funcionalidades básicas. Se priorizó
 la implementación de estas tareas, las cuales abordaban los requisitos esenciales de la aplicación. Una vez que se obtuvo la primera implementación del
 proyecto básico, se procedió a analizar, desarrollar e implementar las tareas adicionales. Este enfoque iterativo e incremental permitió una implementación
 ordenada y eficiente, garantizando que cada fase del desarrollo se construyera sobre una base sólida y que se respondiera de manera ágil a los cambios y mejoras.
@@ -1069,7 +1069,7 @@ lista del \textit{metaobject} que se ha configurado (``Áreas de impresión''). 
 
 Posteriormente, junto con la implementación de funcionalidades adicionales, se llevó a cabo la creación de otros dos \textit{metafields} visibles en la Figura~\ref{fig:metafieldsAdicionales}: ``Canon digital'' y ``Doble pasada''. 
 Se crea el \textit{metafield}  ``Canon digital'', que representa un número decimal empleado para indicar si un producto cuenta con canon digital y especificar su importe correspondiente. Y además
-se crea el \textit{metafield} ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuistica de doble pasada.
+se crea el \textit{metafield} ``Doble pasada'', que es un valor booleano que indica si los productos y trabajos aceptan la casuística de doble pasada.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -1146,10 +1146,10 @@ de transformación del carrito. En la Figura~\ref{fig:homepage} se puede observa
 \end{figure}
 
 En la Figura~\ref{fig:componenteMetafield} se puede observar uno de los componentes. Este hace uso de la biblioteca Polaris de Shopify, que proporciona una serie de componentes predefinidos
-y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una aparencia coherente con el resto del panel de administración de la tienda.
+y diseñados específicamente para aplicaciones de Shopify, lo que garantiza un diseño profesional y una apariencia coherente con el resto del panel de administración de la tienda.
 La función \textit{handlePopulate} desempeña el papel de realizar la llamada a la ruta \textit{``/api/meta/create''} para crear los \textit{metafields} y \textit{metaobjects} necesarios para la funcionalidad de personalización de productos.
 Esta función se activará cuando el usuario pulse el botón que se renderizará con este componente. Además, se hace uso del componente \textit{Toast} de \textit{app-bridge-react} para mostrar
-mensajes de notificacióon al usuario con el resultado de la operación que se realiza en el \textit{backend}. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
+mensajes de notificación al usuario con el resultado de la operación que se realiza en el \textit{backend}. De esta manera se refleja el éxito o fracaso de la función. Por último, destacar el uso de la función
 de traducción que emplea los archivos de traducciones locales que se proporcionan (mostrados en la Figura~\ref{fig:localesAdmin}), para permitir una experiencia multilingüe, lo que mejora
 la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
 
@@ -1174,7 +1174,7 @@ la accesibilidad y usabilidad de la aplicación para una audiencia más amplia.
 El otro componente (``CartTrans'') es similar al anterior en estructura y funcionalidad. Este se encarga de renderizar la interfaz que permite al usuario realizar una llamada al \textit{backend} mediante
 la ruta ``/api/cart/create'' que ejecuta la funcionalidad para la creación del objeto cart-transform en la tienda.
 
-Por último, es importante destacar el empleo del app bridge en esta parte del \textit{frontend}. Su utilización proporciona una conexión deirecta entre la aplicación y el panel 
+Por último, es importante destacar el empleo del app bridge en esta parte del \textit{frontend}. Su utilización proporciona una conexión directa entre la aplicación y el panel 
 de administración de Shopify, lo que permite a los administradores de la tienda poder interactuar con la interfaz de usuario implementada y acceder a las funcionalidades que estas aportan
 desde el panel de administración de la tienda.
 
@@ -1213,7 +1213,7 @@ Posteriormente, se configura el almacenamiento de multer para que las imágenes 
 
 Cuando se recibe una solicitud POST en la ruta ``/upng-api/subir\_imagen'' (Figura~\ref{fig:endpointImagen}), se ejecuta una función asíncrona que verifica si se ha enviado
 un archivo en la solicitud. El \textit{endpoint} espera recibir un archivo de imagen en el cuerpo de la solicitud, junto con dos parámetros adicionales: el ``id'', que 
-representa el identificador único del pedido de impresión al que pertenece la imagen, y el ``index'', que indica el ínice del área del producto al 
+representa el identificador único del pedido de impresión al que pertenece la imagen, y el ``index'', que indica el índice del área del producto al 
 que pertenece la imagen. Estos datos se utilizan para generar un nombre de archivo único que incluye el ``id'' del pedido de impresión y el ``index'' del área,
 lo que facilita al administrador de la tienda asociar las imágenes con los pedidos de los clientes correspondientes. Si se ha enviado el archivo y estos parámetros, se procede a generar un nuevo nombre de archivo. Luego, se listan y filtran los archivos del directorio para asegurarse de que no existen
 archivos con el mismo nombre base. Si existen, se eliminan. Después se renombra el archivo subido con el nuevo nombre generado y se envía una respuesta de éxito indicando
@@ -1311,7 +1311,7 @@ y elementos que se integrarán con el tema de la tienda en la que se instale la 
 
 En primer lugar se crea la sección sobre la cual se va a implementar toda la funcionalidad. El contenido de esta sección solo debe ejecutarse y estar disponible en las 
 páginas de productos que sean personalizables. En la Figura~\ref{fig:creacionSeccion} se puede ver como se ha creado la sección \textit{botonPersonalizar.liquid}. En ella lo primero
-que se hace es recuperar las areas de impresión del producto actual. Una vez se obtienen las areas de impresión, se ejecuta una condición para comprobar
+que se hace es recuperar las áreas de impresión del producto actual. Una vez se obtienen las áreas de impresión, se ejecuta una condición para comprobar
 si el producto posee áreas de impresión o no. En caso afirmativo, se ejecutará la funcionalidad de la sección.
 
 En esta sección se ha creado un botón que será el encargado de mostrar un modal con todas las opciones de personalización. Gracias a la comprobación
@@ -1343,7 +1343,7 @@ necesarios con sus traducciones correspondientes.
 
 Por lo que respecta a la creación y apertura del modal, se ha tomado la decisión de generar dinámicamente el contenido del mismo y su funcionalidad
 asociada mediante JavaScript. El uso de JavaScript permite una interacción más fluida y una mejor experiencia de usuario. Además, al tener acceso directo 
-a los valores y elementos necesarios, se pueden realizar los cálculos y validaciones de manera directa y eficiente, porporcionando una personalización
+a los valores y elementos necesarios, se pueden realizar los cálculos y validaciones de manera directa y eficiente, proporcionando una personalización
 más precisa y completa. El hecho de que el modal tenga tanta funcionalidad, datos y elementos cambiantes según la interacción del usuario, hace que 
 el empleo de JavaScript para implementarlo sea una buena opción para facilitar ese acceso a datos y cambios dinámicos del contenido del modal.
 Esta estrategia también simplifica el mantenimiento del código, al centralizar todas las funciones relacionadas con el modal en un solo lugar, lo que facilita
@@ -1368,7 +1368,7 @@ de la experiencia multilingüe.
 
 En la Figura~\ref{fig:cargardatos} se puede ver la implementación de la función \textit{almacenarDatosProductos()}. Esta desempeña un papel crucial en 
 la recopilación y estructuración de la información sobre el producto actual de la tienda. En esta se recopilan y almacenan en la estructura \textit{infoProduct} los datos generales del producto, como su nombre, precio, identificador y cantidad de
-unidades seleccionada. Después itera sobre las áreas de impresión del producto, obteniendo detalles como el nombre, dimensiones, imágenes, trabajos asociados con todos sus elementos, cliches asociados a los trabajos y toda la información necesaria. Esta función
+unidades seleccionada. Después itera sobre las áreas de impresión del producto, obteniendo detalles como el nombre, dimensiones, imágenes, trabajos asociados con todos sus elementos, clichés asociados a los trabajos y toda la información necesaria. Esta función
 almacena todos los datos de las áreas del producto en la estructura \textit{areasData}.
 
 
@@ -1515,7 +1515,7 @@ aplicación al proporcionar una retroalimentación visual clara sobre el estado 
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.6\textwidth]{imagenesUS3-modal/manejoDesabilitarElementos.png}
-    \caption{\label{fig:deshabilitarElementos} Evento de cambio del check de las areas}
+    \caption{\label{fig:deshabilitarElementos} Evento de cambio del check de las áreas}
     \vspace{\fill}
 \end{figure}
 
@@ -1650,7 +1650,7 @@ propiedades definidas (artículos de personalización), mientras que la segunda 
 
 En la primera parte, se filtran las líneas del carrito que tienen la propiedad ``idProps'' y ``value'' definidas, y se agrupan según su identificador. Si una línea comparte el mismo identificador que la anterior
 o es la primera línea del carrito, se agrega a una estructura de datos que representa un grupo de líneas. Cuando se encuentra una línea con un identificador diferente, se crea una nueva operación 
-que combina las líneas del grupo anterior y se reinicia el proceso para el nuevo grupo. Con este procedimento se generan una serie de operaciones de tipo ``merge'' que se van añadiendo al array de operaciones que retorna 
+que combina las líneas del grupo anterior y se reinicia el proceso para el nuevo grupo. Con este procedimiento se generan una serie de operaciones de tipo ``merge'' que se van añadiendo al array de operaciones que retorna 
 la función. Estas operaciones serán interpretadas por el \textit{backend} de Shopify y resultarán en una transformación del carrito que mostrará los items de un mismo producto de personalización asociados.
 
 \begin{figure}[H]
@@ -1721,14 +1721,14 @@ en tiempo y recursos para establecer pruebas automatizadas no justificaba su imp
 el proceso de desarrollo de la aplicación.
 
 Para realizar las pruebas manuales a la par que se iban desarrollando las funcionalidades de la aplicación, se ha hecho uso de \textbf{Nodemon}. 
-Esta es una herramienta de línea de comandos para Node.js, cuya función principal es monitorizar los archivos del proyecto y reiniciar autómaticamente
+Esta es una herramienta de línea de comandos para Node.js, cuya función principal es monitorizar los archivos del proyecto y reiniciar automáticamente
 la aplicación cuando se detectan cambios en el código fuente \cite{nodemon}. 
 Esta herramienta ha eliminado la necesidad de detener y reiniciar manualmente el servidor cada vez que se han realizado modificaciones en el código, 
 lo que ha agilizado el proceso de desarrollo y ha permitido comprobar el funcionamiento de cada tarea a la par que se implementaba, pues permitía observar cómo
 cada cambio reciente se reflejaba automáticamente.
 
 El uso de nodemon, ha facilitado tanto la implementación y pruebas de la parte de \textit{frontend} como la de \textit{backend}. En cuanto a la parte del \textit{frontend}
-ha permitido ir creando funcionalidades y dando diseño a esta parte, puediendo observar los resultados de cada cambio en el código en tiempo real,
+ha permitido ir creando funcionalidades y dando diseño a esta parte, pudiendo observar los resultados de cada cambio en el código en tiempo real,
 lo que ha agilizado muchísimo el desarrollo. Por lo que respecta al \textit{backend}, más de lo mismo, se han podido ir realizando modificaciones y pruebas de las funcionalidades
 hasta conseguir el resultado esperado, permitiendo solucionar los errores, mejorar el código y probarlo de forma muy ágil y rápida. 
 
@@ -1746,7 +1746,7 @@ tamaños de pantalla y dispositivos actuales, lo que ha facilitado el poder prob
 \subsection{Despliegue}
 Hasta la fecha, en Upango no se ha recibido ninguna solicitud por parte de los clientes que requiera hacer uso de las funciones de personalización de productos
 que ofrece esta aplicación. Dado que no se ha tenido la necesidad de implementar esta aplicación en las tiendas en desarrollo para los clientes hasta el momento, tampoco ha sido 
-necesario contratar los servicios de una empresa de hosting y desplegarla en un servidor privado. Del mismo modo, tampoco se ha adquirido un dominio web público 
+necesario contratar los servicios de una empresa de \textit{hosting} y desplegarla en un servidor privado. Del mismo modo, tampoco se ha adquirido un dominio web público 
 específico para esta aplicación.
 
 Por esta razón, se ha desplegado esta aplicación de manera local y haciendo uso de las herramientas que proporciona Shopify. Para desplegar la aplicación,
@@ -1772,9 +1772,9 @@ servidores de posibles ataques maliciosos, proporcionando una mayor confiabilida
 Al crear un túnel entre el entorno local y la tienda de desarrollo y pruebas empleando Cloudflare, se puede permitir que los servicios que se ejecutan en la infraestructura local
 sean accesibles a través de internet de una manera segura y aprovechando la gran infraestructura de red global con la que cuenta Coudflare para enrutar el tráfico.
 
-En el caso de que los clientes de Upango solicitasen los servicios de esta aplicación y se necesitase hacer un despliegue real, se seguiría el siguiente procendimiento que ya se ha utilizado para
+En el caso de que los clientes de Upango solicitasen los servicios de esta aplicación y se necesitase hacer un despliegue real, se seguiría el siguiente procedimiento que ya se ha utilizado para
 desplegar otro tipo de aplicaciones.
-En primer lugar se contratarían los servicios de hosting para alojar la aplicación en un servidor y habría que hacerse con un dominio o subdominio
+En primer lugar se contratarían los servicios de \textit{hosting} para alojar la aplicación en un servidor y habría que hacerse con un dominio o subdominio
 que esté apuntando a ese servidor. Una vez obtenido el servidor, habría que conectarse a él mediante SSH para proceder a configurarlo. En este caso, para trabajar cómodamente en este servidor remoto,
 se haría uso de herramientas como \textbf{Remote Explorer} y \textbf{Remote SSH}. Se trata de extensiones de Visual Studio Code que permiten trabajar de una manera mas eficiente y cómoda con los archivos del
 servidor empleando el editor de código. Estas herramientas facilitan la conexión al servidor, las configuraciones y despliegue de aplicaciones que se realizan en él, y a la hora 
@@ -1784,7 +1784,7 @@ Estando ya dentro del servidor, es necesario instalar varias herramientas esenci
 al público; \textbf{npm} y \textbf{Node.js} que permitirán ejecutar el código JavaScript en el servidor y administrar las dependencias del proyecto a través de npm; \textbf{Git}, para poder descargar el código fuente de la aplicación desde 
 el repositorio remoto y en caso realizar modificaciones en el código del servidor poder actualizarlo en el repositorio; y \textbf{pm2}, un administrador de 
 procesos para aplicaciones Node.js que garantiza que las aplicaciones se ejecuten de manera continua gestionando múltiples instancias y permitiendo su reinicio en caso de fallos.
-Una vez vez preparado el entorno, se descarga la aplicación desde el repositorio remoto y se instalan las dependencias necesarias ejecutando \textit{npm install}. Despues se deben buscar las variables de entorno que genera y configura Shopify al crear una aplicación,
+Una vez vez preparado el entorno, se descarga la aplicación desde el repositorio remoto y se instalan las dependencias necesarias ejecutando \textit{npm install}. Después se deben buscar las variables de entorno que genera y configura Shopify al crear una aplicación,
 estas se pueden obtener de varias maneras, o bien a través del panel de partners de Shopify o introduciendo el comando \textbf{npm run shopify app env show}. En la Figura~\ref{fig:VariablesEntorno} se pueden observar dichos tokens. Para poder 
 tener diferentes aplicaciones en el servidor con distintas variables, en lugar de crear variables de entorno como tal, se deben pasar como parámetros al proceso de node.
 
@@ -1880,15 +1880,15 @@ Esa aplicación estándar crecerá principalmente en función de las distintas a
 específicas que se repiten en varios proyectos para distintos clientes, o si consideran que ciertas características pueden ser de utilidad para un público más amplio, estas
 funcionalidades se integrarán en la versión estándar de la aplicación. Este enfoque fomenta la reutilización del código y garantiza que la aplicación evolucione de manera
 orgánica y se enriquezca con el tiempo, incorporando nuevas características y mejoras basadas en la retroalimentación de los usuarios y en las tendencias de mercado.
-De sta manera, esta aplciación se convierte en un producto dinámico y en constante evolución, capaz de adaptarse a las necesidades cambiantes de los clientes y mantener 
+De esta manera, esta aplicación se convierte en un producto dinámico y en constante evolución, capaz de adaptarse a las necesidades cambiantes de los clientes y mantener 
 su relevancia en un entorno competitivo.
 
 Una de las áreas identificadas para mejora futura en esta aplicación es la funcionalidad para la gestión del Canon Digital. La falta de herramientas específicas en Shopify
 para abordar esta casuística ha requerido la implementación de soluciones que, aunque funcionales, no resultan totalmente satisfactorias para el cliente.
 Por tanto, se considera fundamental mejorar la forma en la que se implementa y gestiona este tipo de impuesto en la aplicación estándar una vez se disponga
 de las herramientas necesarias. Es importante tener en cuenta que Shopify está en continua evolución y tiene previsto incorporar nuevas funcionalidades que podrían servir
-para llevar a cabo una nueva implementación para casuisticas de impuestos como la del Canon Digital, sin tener que aplicar soluciones alternativas poco atractivas para los clientes. En este caso en particular
-sería conveniente evitar añadir un producto impuesto al carrito con un valor de 0,01 centimos tantas veces como sea necesario hasta alcanzar el valor del impuesto que debería llevar cierto producto. Esta implementación
+para llevar a cabo una nueva implementación para casuísticas de impuestos como la del Canon Digital, sin tener que aplicar soluciones alternativas poco atractivas para los clientes. En este caso en particular
+sería conveniente evitar añadir un producto impuesto al carrito con un valor de 0,01 céntimos tantas veces como sea necesario hasta alcanzar el valor del impuesto que debería llevar cierto producto. Esta implementación
 es muy poco intuitiva y atractiva para los clientes.
 
 \clearpage
@@ -2098,7 +2098,7 @@ dotará al carrito y al checkout de la tienda de una funcionalidad y apariencia 
     \vspace{\fill}
 \end{figure}
 
-Una vez realizadas estas configuraciones y creados en la tienda todos los productos necesarios, trabajos de impresión, tipos de cliche, asociados los productos con sus areas de impresión, y todos los elementos necesarios relacionados con
+Una vez realizadas estas configuraciones y creados en la tienda todos los productos necesarios, trabajos de impresión, tipos de cliché, asociados los productos con sus áreas de impresión, y todos los elementos necesarios relacionados con
 la impresión de artículos, ya se puede hacer uso de la tienda con las funcionalidades de personalización de productos integrada.
 
 En la Figura~\ref{fig:HomeTiendaDemo} se puede observar la página principal de la tienda, en ella el usuario puede navegar hacia otros apartados de la tienda, como el catálogo de productos, se puede buscar secciones y productos con el buscador, ir al carrito, seleccionar el idioma y otras funcionalidades.También
@@ -2136,9 +2136,9 @@ y comprarlo sin personalización, o es posible seleccionar la cantidad que se de
 \end{figure}
 
 Si se pulsa en el botón de personalizar, se abrirá el personalizador de artículos. En este, como se puede ver en la Figura~\ref{fig:Personalizador}, se encuentran
-las distintas areas de impresión con las que cuenta el producto con sus atributos personalizables y a la derecha se puede ir viendo el resumen del pedido personalizado actualizado.
+las distintas áreas de impresión con las que cuenta el producto con sus atributos personalizables y a la derecha se puede ir viendo el resumen del pedido personalizado actualizado.
 Como se puede observar, ahora mismo en el resumen del pedido solamente aparece el producto con las unidades, el precio por unidad y el precio total, pues todavía se ha seleccionado ni configurado
-ningún area del producto.
+ningún área del producto.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -2149,14 +2149,14 @@ ningún area del producto.
 \end{figure}
 
 Si se selecciona un área de impresión, como se puede observar en la Figura~\ref{fig:PersonalizadorAreaMarcada}, se observa como se refresca el resumen de pedido y se le agrega tanto el trabajo de impresión
-seleccionado por defecto, como su cliche asociado. Una vez seleccionada el área se pueden configurar todos los elementos que contiene. Además también permite seleccionar varias áreas en una misma personalización, como 
-se puede ver en la Figura~\ref{fig:PersonalizadorVariasAreas}. En ella aparecen varias áreas del producto seleccionadas y en el resumen aparecen reflejados los trabajos y cliches de dichas áreas y su importe total.
+seleccionado por defecto, como su cliché asociado. Una vez seleccionada el área se pueden configurar todos los elementos que contiene. Además también permite seleccionar varias áreas en una misma personalización, como 
+se puede ver en la Figura~\ref{fig:PersonalizadorVariasAreas}. En ella aparecen varias áreas del producto seleccionadas y en el resumen aparecen reflejados los trabajos y clichés de dichas áreas y su importe total.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.8\textwidth]{imagenes/ManualUsuario/PersonalizadorArea1Seleccionada.png}
-    \caption{\label{fig:PersonalizadorAreaMarcada}Personalizador con el Area 1 seleccionada}
+    \caption{\label{fig:PersonalizadorAreaMarcada}Personalizador con el Área 1 seleccionada}
     \vspace{\fill}
 \end{figure}
 
@@ -2173,7 +2173,7 @@ realizar en el artículo, uno para el ancho y otro para el alto. Además se pued
 afectará al selector de colores de su derecha, pues cada trabajo de impresión cuenta con un número máximo de colores con los que puede trabajar, y al modificar el trabajo se renderizará automáticamente el selector de colores.
 También hay unos inputs en los que se pueden introducir los colores con los que se desea que se realice la impresión, existen tantos inputs como colores se hayan seleccionado en el select de colores y estos
 se refrescan al modificar el valor de ese select. En este caso se ha seleccionado el tipo de trabajo \textit{transfer serigráfico}, también se ha introducido que se desea una impresión en 3 colores y se han seleccionado dichos colores en los inputs.
-En el resumen de pedido se puede observar como aparece el trabajo de impresión, su cliche asociado y un cargo extra por la adicción de 2 colores extra.
+En el resumen de pedido se puede observar como aparece el trabajo de impresión, su cliché asociado y un cargo extra por la adicción de 2 colores extra.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
@@ -2183,16 +2183,16 @@ En el resumen de pedido se puede observar como aparece el trabajo de impresión,
     \vspace{\fill}
 \end{figure}
 
-En la personalización del área de impresión, también se pueden observar dos checks. Un check de repetición de cliche para marcar si ya se ha realizado algún otro pedido similar con el mismo tipo de impresión,
+En la personalización del área de impresión, también se pueden observar dos checks. Un check de repetición de cliché para marcar si ya se ha realizado algún otro pedido similar con el mismo tipo de impresión,
 y otro check de doble pasada para indicar si se desea que la impresión se aplique dos veces. En la Figura~\ref{fig:PersonalizadorCheckboxes} se pueden apreciar estos dos checks marcados y como estos
-afectan al precio total de impresión. En el resumen puede observarse como al haber marcado el check de repetición de cliche, el precio del cliche se ha reducido debido a que la empresa ahorraría costes al no tener que 
-fabricar un nuevo cliche. Además al haber marcado el check de doble pasada se observa como en el resumen aparece un cargo extra por doble pasada.
+afectan al precio total de impresión. En el resumen puede observarse como al haber marcado el check de repetición de cliché, el precio del cliché se ha reducido debido a que la empresa ahorraría costes al no tener que 
+fabricar un nuevo cliché. Además al haber marcado el check de doble pasada se observa como en el resumen aparece un cargo extra por doble pasada.
 
 \begin{figure}[H]
     \floatplacement{figure}{!t}
     \centering
     \includegraphics[width=0.8\textwidth]{imagenes/ManualUsuario/PersonalizadorRepeticiónClicheDoblePasada.png}
-    \caption{\label{fig:PersonalizadorCheckboxes}Personalizador con opciones de repetición de cliche y doble pasada}
+    \caption{\label{fig:PersonalizadorCheckboxes}Personalizador con opciones de repetición de cliché y doble pasada}
     \vspace{\fill}
 \end{figure}
 
@@ -2249,7 +2249,7 @@ y completar el pedido.
 
 En el desarrollo de este TFG, el diseño de la aplicación ha sido una parte fundamental que ha sentado las bases para la implementación
 de las funcionalidades requeridas. Este diseño se ha basado en un minucioso estudio de las tecnologías pertinentes, así como en la comprensión detallada de las
-historias de usuario que definían los objetivos y requisitos del proyecto. La realización del diseño de la aplicación dió pie a la definición de diversas tareas que han sido cuidadosamente 
+historias de usuario que definían los objetivos y requisitos del proyecto. La realización del diseño de la aplicación dio pie a la definición de diversas tareas que han sido cuidadosamente 
 elaboradas.
 
 Estas tareas abarcan desde la creación de la estructura inicial de la aplicación, hasta la implementación de características específicas que 
@@ -2283,7 +2283,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Crear Manualmente los Metafields y Metaobjects Necesarios:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Crear manualmente los \textit{metafields} y \textit{metaobjects} necesarios para la gestión de trabajos de impresión. Habrá que crear un \textit{metaobject} area de impresión, que contenga todos los atributos necesarios que se van a necesitar (nombre, imagen, alto, ancho y trabajos). Se crearán \textit{metafields} para la entidad producto que contengan una lista de \textit{metaobjects} del tipo area de impresión, el número de colores para los productos de tipo trabajo y una \textit{metafield} que sea una referencia al cliche (producto especial).
+              \item \textbf{Descripción:} Crear manualmente los \textit{metafields} y \textit{metaobjects} necesarios para la gestión de trabajos de impresión. Habrá que crear un \textit{metaobject} área de impresión, que contenga todos los atributos necesarios que se van a necesitar (nombre, imagen, alto, ancho y trabajos). Se crearán \textit{metafields} para la entidad producto que contengan una lista de \textit{metaobjects} del tipo área de impresión, el número de colores para los productos de tipo trabajo y una \textit{metafield} que sea una referencia al cliché (producto especial).
           \end{itemize}
 \end{itemize}
 
@@ -2303,15 +2303,15 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
           \end{itemize}
     \item \textbf{Tarea 4:} Ajustar la cantidad de productos:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Se pueden configurar a la vez tantas unidades de producto como se quieran. En principio se compartira el mismo input de cantidad ya existente en la ficha del producto. Al ingresar un número de unidades en la ficha de producto y pulsar el botón del configurador, se tendrá en cuenta el valor de dicho input para establecer el número de productos a configurar. Se hará uso del valor del mismo a la hora de hacer los cálculos del resumen y añadir los elementos necesarios al carrito.
+              \item \textbf{Descripción:} Se pueden configurar a la vez tantas unidades de producto como se quieran. En principio se compartirá el mismo input de cantidad ya existente en la ficha del producto. Al ingresar un número de unidades en la ficha de producto y pulsar el botón del configurador, se tendrá en cuenta el valor de dicho input para establecer el número de productos a configurar. Se hará uso del valor del mismo a la hora de hacer los cálculos del resumen y añadir los elementos necesarios al carrito.
           \end{itemize}
     \item \textbf{Tarea 5:} Mostrar áreas de impresión:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Mostrar todas las áreas de impresión disponibles para el producto, incluyendo todos sus elementos imagen, nombre y medidas ajustables (inputs para ancho y largo). Estos datos se obtendran de la estructura Javascript que se habrá preparado con todos los datos del prodcuto actual y estarán disponibles en el modal. Se habilitará un checkbox junto a cada nombre para que el usuario pueda seleccionar las áreas en las que desea imprimir.
+              \item \textbf{Descripción:} Mostrar todas las áreas de impresión disponibles para el producto, incluyendo todos sus elementos imagen, nombre y medidas ajustables (inputs para ancho y largo). Estos datos se obtendran de la estructura Javascript que se habrá preparado con todos los datos del producto actual y estarán disponibles en el modal. Se habilitará un checkbox junto a cada nombre para que el usuario pueda seleccionar las áreas en las que desea imprimir.
           \end{itemize}
     \item \textbf{Tarea 6:} Imagen por defecto para áreas sin imagen:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Configurar una imagen por defecto para las áreas que no tengan una imagen definida. Para ello en el Schema de la configuración de la sección, se añadira una settings de imagen, para que el administrador de la tienda pueda escoger esta imagen desde el panel de administración del tema. En los assets de la aplicación se incluirá otra imagen de reserva por si el administrador no hubiera configurado esta opción. A la hora de mostrar las areas se comprobará si tienen o no imagen, en caso negativo se empleará la configurada en esta setting y como último recurso la almacenada en assets.
+              \item \textbf{Descripción:} Configurar una imagen por defecto para las áreas que no tengan una imagen definida. Para ello en el Schema de la configuración de la sección, se añadirá una settings de imagen, para que el administrador de la tienda pueda escoger esta imagen desde el panel de administración del tema. En los assets de la aplicación se incluirá otra imagen de reserva por si el administrador no hubiera configurado esta opción. A la hora de mostrar las áreas se comprobará si tienen o no imagen, en caso negativo se empleará la configurada en esta setting y como último recurso la almacenada en assets.
           \end{itemize}
     \item \textbf{Tarea 7:} Mostrar trabajos para cada área y número de colores del trabajo:
           \begin{itemize}[label=--]
@@ -2324,11 +2324,11 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
     
     \item \textbf{Tarea 9:} Marcar cliché de repetición:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} En cada area, debe aparecer un checkbox para que el usuario pueda indicar si el cliché es de repetición (no es la primera vez que se hace una impresión con la imagen que desea el cliente) o no. Este factor afectará al precio final de la impresión. El cliche será un producto especial que contará con dos variantes, una con su precio estándar (variante: NO) y otra con un precio más económico (variante: SI) correspondiente a la repetición de cliche. En caso de marcar este checkbox se tendrá en cuenta la variante de repetición y en caso contrario su variante estándar, aplicando de este modo un precio u otro al pedido. Además, hay que tener en cuenta que en un área de impresión configurada, se añadiran tantos cliches al pedido de personalización como colores haya seleccionado el usuario. Esto se debe a que el proveedor de la tienda deberá fabricar un cliche por cada color en el que se desee imprimir, por lo que el cliente debe acarrear con su coste.
+              \item \textbf{Descripción:} En cada área, debe aparecer un checkbox para que el usuario pueda indicar si el cliché es de repetición (no es la primera vez que se hace una impresión con la imagen que desea el cliente) o no. Este factor afectará al precio final de la impresión. El cliché será un producto especial que contará con dos variantes, una con su precio estándar (variante: NO) y otra con un precio más económico (variante: SI) correspondiente a la repetición de cliché. En caso de marcar este checkbox se tendrá en cuenta la variante de repetición y en caso contrario su variante estándar, aplicando de este modo un precio u otro al pedido. Además, hay que tener en cuenta que en un área de impresión configurada, se añadirán tantos clichés al pedido de personalización como colores haya seleccionado el usuario. Esto se debe a que el proveedor de la tienda deberá fabricar un cliché por cada color en el que se desee imprimir, por lo que el cliente debe acarrear con su coste.
           \end{itemize}
     \item \textbf{Tarea 10:} Seleccionar áreas:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Cuando se marque un area se deben habilitar y deshabilitar todos los elementos configurables de la misma (campos de trabajos, colores, medidas, etc.). Se debe actualizar la información del resumen con los elementos y precios correspondientes, sumando los precios del trabajo seleccionado, colores, cliche y demás elementos. En caso de que se desmarque la opción no se tendrán en cuenta los elementos y configuracions de esta area y no aparecerá en el resumen.
+              \item \textbf{Descripción:} Cuando se marque un área se deben habilitar y deshabilitar todos los elementos configurables de la misma (campos de trabajos, colores, medidas, etc.). Se debe actualizar la información del resumen con los elementos y precios correspondientes, sumando los precios del trabajo seleccionado, colores, cliché y demás elementos. En caso de que se desmarque la opción no se tendrán en cuenta los elementos y configuraciones de esta área y no aparecerá en el resumen.
           \end{itemize}
     \item \textbf{Tarea 11:} Mostrar selectores de colores:
           \begin{itemize}[label=--]
@@ -2336,7 +2336,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
           \end{itemize}
     \item \textbf{Tarea 12:} Adjuntar imagen por área:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Para cada area, se mostrará un campo para poder adjuntar una imagen. Se deberá crear un método de API en nuestra aplicación, para que el usuario pueda subir la imagen realizando una llamada a la misma y almacenando la imagen en el servidor del administrador. Se deberá nombrar a la imagen en el servidor con un nombre que nos permita identificarla y asociarla al area del pedido del cliente. Para ello se generará un identificador aleatorio que se asociará al producto de impresión y que deberá almacenarse junto con el resto de datos de impresión que se configuran. Se empleará este identificador como parte del nombre de la imagen. Para mejor clasificación se puede crear una subcarpeta con la fecha actual en el directorio de imagenes del servidor, de este modo se realizará un almacenamiento de las imagenes más ordenado de cara al administrador de la tienda.
+              \item \textbf{Descripción:} Para cada área, se mostrará un campo para poder adjuntar una imagen. Se deberá crear un método de API en nuestra aplicación, para que el usuario pueda subir la imagen realizando una llamada a la misma y almacenando la imagen en el servidor del administrador. Se deberá nombrar a la imagen en el servidor con un nombre que nos permita identificarla y asociarla al área del pedido del cliente. Para ello se generará un identificador aleatorio que se asociará al producto de impresión y que deberá almacenarse junto con el resto de datos de impresión que se configuran. Se empleará este identificador como parte del nombre de la imagen. Para mejor clasificación se puede crear una subcarpeta con la fecha actual en el directorio de imágenes del servidor, de este modo se realizará un almacenamiento de las imágenes más ordenado de cara al administrador de la tienda.
           \end{itemize}
     \item \textbf{Tarea 13:} Diseño responsive:
           \begin{itemize}[label=--]
@@ -2344,7 +2344,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
           \end{itemize}
     \item \textbf{Tarea 14:} Precios diferenciados para trabajos según colores:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} En este tipo de pedidos de impresión, los trabajos serán productos especiales que han de tener dos variantes con dos precios distintos. Habrá una variante ``Primer color'' y otra variante ``Resto colores''. Si el usuario selecciona un color en el area, se le cobrará un trabajo principal, pero si ha seleccionado más de un color, se le cobrará el primero como trabajo principal y el resto con el precio del trabajo secundario, que es más económico pero representa un coste adicional de trabajo al tener que imprimir en varios colores. Es decir se deberá añadir una variante de trabajo de resto colores por cada color adicional.
+              \item \textbf{Descripción:} En este tipo de pedidos de impresión, los trabajos serán productos especiales que han de tener dos variantes con dos precios distintos. Habrá una variante ``Primer color'' y otra variante ``Resto colores''. Si el usuario selecciona un color en el área, se le cobrará un trabajo principal, pero si ha seleccionado más de un color, se le cobrará el primero como trabajo principal y el resto con el precio del trabajo secundario, que es más económico pero representa un coste adicional de trabajo al tener que imprimir en varios colores. Es decir se deberá añadir una variante de trabajo de resto colores por cada color adicional.
           \end{itemize}
 \end{itemize}
 
@@ -2352,7 +2352,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Añadir Productos Relacionados al Carrito:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto ``predeterminado'', los ``trabajos'' seleccionados en las diferentes areas con la variante adecuada según el número de colores seleccionados y los ``clichés'' asociados, teniendo en cuenta las cantidades según las selecciones del usuario. Investigar y utilizar el ajax API para añadir todos los elementos al carrito.
+              \item \textbf{Descripción:} Implementar la lógica para añadir al carrito los productos relacionados, incluyendo el producto ``predeterminado'', los ``trabajos'' seleccionados en las diferentes áreas con la variante adecuada según el número de colores seleccionados y los ``clichés'' asociados, teniendo en cuenta las cantidades según las selecciones del usuario. Investigar y utilizar el ajax API para añadir todos los elementos al carrito.
           \end{itemize}
     \item \textbf{Tarea 2:} Guardar Información de Impresión en el Carrito:
           \begin{itemize}[label=--]
@@ -2379,7 +2379,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
 \begin{itemize}
     \item \textbf{Tarea 1:} Investigar Opciones para Mostrar el Logo del Cliente en la Zona Adecuada del Producto e implementarlo:
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Realizar una investigación exhaustiva para identificar opciones, librerías u herramientas que permitan mostrar la imagen del logo que adjunta el cliente para cada area en el personalizador de productos. Esta imagen se debe mostrar en la zona adecuada del producto de una forma atractiva y en la posición adecuada. Evaluar la viabilidad de cada opción en función de la información disponible sobre el producto de impresión y las necesidades específicas del cliente. Por último, implementar la solución elegida.
+              \item \textbf{Descripción:} Realizar una investigación exhaustiva para identificar opciones, librerías u herramientas que permitan mostrar la imagen del logo que adjunta el cliente para cada área en el personalizador de productos. Esta imagen se debe mostrar en la zona adecuada del producto de una forma atractiva y en la posición adecuada. Evaluar la viabilidad de cada opción en función de la información disponible sobre el producto de impresión y las necesidades específicas del cliente. Por último, implementar la solución elegida.
           \end{itemize}
 \end{itemize}
 
@@ -2423,7 +2423,7 @@ añaden una funcionalidad y complejidad adicional y se centran en cumplir los cr
           \end{itemize}
     \item \textbf{Tarea 3:} Aplicar cargo extra de ``Doble Pasada'':
           \begin{itemize}[label=--]
-              \item \textbf{Descripción:} Si el usuario marca el check de doble pasada, se deberá aplicar al pedido, un cargo por doble pasada equivalente a añadir un color más (añadir una variante ``Resto colores'' del tabajo al pedido). En el resumen de impresión debe mostrarse este concepto y el importe añadido correspondiente. Además al añadir este cargo al carrito, se debe reflejar de algún modo que esta variante de trabajo añadida corresponde a este tipo de cargo adicional, para ello sería conveniente usar las propiedades de la API de carrito de Shopify.
+              \item \textbf{Descripción:} Si el usuario marca el check de doble pasada, se deberá aplicar al pedido, un cargo por doble pasada equivalente a añadir un color más (añadir una variante ``Resto colores'' del trabajo al pedido). En el resumen de impresión debe mostrarse este concepto y el importe añadido correspondiente. Además al añadir este cargo al carrito, se debe reflejar de algún modo que esta variante de trabajo añadida corresponde a este tipo de cargo adicional, para ello sería conveniente usar las propiedades de la API de carrito de Shopify.
           \end{itemize}
 \end{itemize}
 
