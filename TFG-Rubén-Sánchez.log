@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  3 JUN 2024 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  3 JUN 2024 21:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1302,7 +1302,7 @@ LaTeX Info: Redefining \% on input line 1568.
 File: imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png Graphic file (type png)
 <use imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png>
 Package pdftex.def Info: imagenesUS3-modal/AnadirCarritoParte1addEventListenerCracionBoton.png  used on input line 1577.
-(pdftex.def)             Requested size: 226.48395pt x 387.49101pt.
+(pdftex.def)             Requested size: 235.54523pt x 402.99347pt.
 LaTeX Info: Redefining \. on input line 1596.
 LaTeX Info: Redefining \% on input line 1596.
 LaTeX Info: Redefining \. on input line 1596.
@@ -1312,7 +1312,7 @@ LaTeX Info: Redefining \% on input line 1596.
 File: imagenesUS3-modal/fetchAñadirCarrito.png Graphic file (type png)
 <use imagenesUS3-modal/fetchAñadirCarrito.png>
 Package pdftex.def Info: imagenesUS3-modal/fetchAñadirCarrito.png  used on input line 1604.
-(pdftex.def)             Requested size: 271.7835pt x 286.20178pt.
+(pdftex.def)             Requested size: 317.07614pt x 333.90096pt.
 LaTeX Info: Redefining \. on input line 1609.
 LaTeX Info: Redefining \% on input line 1609.
 LaTeX Info: Redefining \. on input line 1609.
@@ -1398,12 +1398,12 @@ LaTeX Info: Redefining \% on input line 1790.
 File: imagenes/variablesEntornoDespliegue.png Graphic file (type png)
 <use imagenes/variablesEntornoDespliegue.png>
 Package pdftex.def Info: imagenes/variablesEntornoDespliegue.png  used on input line 1794.
-(pdftex.def)             Requested size: 317.07614pt x 60.83228pt.
+(pdftex.def)             Requested size: 407.66833pt x 78.21404pt.
 <imagenes/panelPartnersDistribution.png, id=919, 1121.3895pt x 506.49225pt>
 File: imagenes/panelPartnersDistribution.png Graphic file (type png)
 <use imagenes/panelPartnersDistribution.png>
 Package pdftex.def Info: imagenes/panelPartnersDistribution.png  used on input line 1822.
-(pdftex.def)             Requested size: 317.07614pt x 143.20798pt.
+(pdftex.def)             Requested size: 362.37569pt x 163.67288pt.
 LaTeX Info: Redefining \. on input line 1826.
 LaTeX Info: Redefining \% on input line 1826.
 LaTeX Info: Redefining \. on input line 1826.
@@ -1413,12 +1413,12 @@ LaTeX Info: Redefining \% on input line 1826.
 File: imagenes/distribucionAppEnlace.png Graphic file (type png)
 <use imagenes/distribucionAppEnlace.png>
 Package pdftex.def Info: imagenes/distribucionAppEnlace.png  used on input line 1830.
-(pdftex.def)             Requested size: 317.07614pt x 114.2777pt.
+(pdftex.def)             Requested size: 362.37569pt x 130.60391pt.
 <imagenes/generarLinkDistribution.png, id=926, 412.54124pt x 239.09325pt>
 File: imagenes/generarLinkDistribution.png Graphic file (type png)
 <use imagenes/generarLinkDistribution.png>
 Package pdftex.def Info: imagenes/generarLinkDistribution.png  used on input line 1838.
-(pdftex.def)             Requested size: 226.48395pt x 131.2609pt.
+(pdftex.def)             Requested size: 317.07614pt x 183.76671pt.
 LaTeX Info: Redefining \. on input line 1846.
 LaTeX Info: Redefining \% on input line 1846.
 LaTeX Info: Redefining \. on input line 1846.
@@ -1662,7 +1662,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,1143b,1065s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsco10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/RubénSanchezFernande/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on TFG-Rubén-Sánchez.pdf (74 pages, 5351856 bytes).
+Output written on TFG-Rubén-Sánchez.pdf (74 pages, 5351845 bytes).
 PDF statistics:
  1252 PDF objects out of 1440 (max. 8388607)
  302 named destinations out of 1000 (max. 500000)
