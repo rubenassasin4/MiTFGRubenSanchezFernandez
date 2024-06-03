@@ -36,6 +36,7 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Diseño del frontend}{15}{subsubsection.0.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Diseño del backend}{16}{subsubsection.0.4.2.2}%
 \contentsline {subsubsection}{\numberline {4.2.3}Diseño de la extensión de tema}{16}{subsubsection.0.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Modelo de datos}{17}{subsubsection.0.4.2.4}%
 \contentsline {subsection}{\numberline {4.3}Implementación}{18}{subsection.0.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Implementación de la aplicación}{18}{subsubsection.0.4.3.1}%
 \contentsline {paragraph}{Implementación del frontend}{21}{paragraph*.12}%

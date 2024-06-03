@@ -881,8 +881,10 @@ pedido de personalización en un único paquete.
     \vspace{\fill}
 \end{figure}
 
-A continuación, se presentarán varios subapartados que explican tanto el diseño de los dos componentes
-de la aplicación principal como el diseño de la extensión de tema. 
+A continuación, se presentarán varios subapartados que explican el diseño de los dos componentes
+de la aplicación principal, el diseño de la extensión de tema y un apartado adicional en el que 
+se especifica la estructura de datos (\textit{metafields} y \textit{metaobjects}) que se debe utilizar
+en las tiendas Shopify que integren la aplicación. 
 
 \subsubsection{Diseño del frontend}
 
@@ -947,6 +949,27 @@ de personalización de productos. En la página de producto existe un botón enc
     \caption{\label{fig:disenoExtension}Ejemplo para el diseño de la extensión de tema}
     \vspace{\fill}
 \end{figure}
+
+\subsubsection{Modelo de datos}
+El backend de Shopify es una plataforma cerrada y no se puede modificar directamente, lo que garantiza estabilidad y 
+seguridad para todos los usuarios. Sin embargo, Shopify ofrece funcionalidades flexibles que permiten extender las 
+capacidades de la tienda. Entre estas funcionalidades se encuentran los \textbf{metafields} y \textbf{metaobjects}, 
+que son atributos y objetos adicionales y personalizados que se pueden agregar a los objetos existentes en una tienda Shopify \cite{metadatos}. 
+Estas herramientas proporcionan a los desarrolladores la posibilidad de enriquecer los productos, 
+colecciones y otras partes de la tienda con información adicional, adaptándose mejor a las necesidades 
+específicas de cada negocio sin comprometer la integridad del sistema base.
+
+Como primer paso antes de la implementación de la aplicación, resulta fundamental establecer la configuración inicial 
+de los \textit{metafields} y \textit{metaobjects} en la tienda de desarrollo para administrar eficientemente los trabajos 
+de impresión. En esta fase, se definirán \textit{metaobjects} específicos destinados a representar con precisión las áreas 
+de impresión de los productos, garantizando su correcta identificación y asociación con los productos correspondientes. 
+Además, se procederá a configurar productos especiales que representen los diversos trabajos de impresión y clichés necesarios. 
+Será necesario también crear una serie de \textit{metafields} de producto para registrar el número de colores permitidos por 
+cada trabajo y su cliché asociado. Asimismo, se gestionarán otros \textit{metafields} para representar tipos de importes adicionales, 
+como "Canon digital" y "Doble pasada".
+
+En el siguiente apartado se detallará con precisión la estructura y el proceso de creación e implementación de estos \textit{metafields} y \textit{metaobjects}, brindando 
+una comprensión completa de su funcionamiento y su integración en la aplicación.
 
 \clearpage
 \subsection{Implementación}
@@ -1986,6 +2009,10 @@ es muy poco intuitiva y atractiva para los clientes.
     \bibitem{hu} 
     Scrum México.
     \textit{``Escribiendo Historias de Usuario''}, última actualización: 2 ago 2024, dirección: \url{https://scrum.mx/informate/historias-de-usuario} (visitado 26-05-2024).
+
+    \bibitem{metadatos} 
+    Lucas Fromweiller.
+    \textit{``Shopify: ¿Qué son los Metacampos y Metaobjetos?''}, última actualización: 3 ago 2023, dirección: \url{https://www.gradiweb.com/es/shopify-ecommerce/que-son-metacampos-metaobjetos/} (visitado 03-06-2024).
 
     \bibitem{shopify-cli} 
     Shopify.
